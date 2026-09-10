@@ -9,14 +9,8 @@
     "whisper_n": 1,
     "backfill_n": 1,
     "sample": [
-      {
-        "pid": 775048,
-        "cmd": "z77JFTjccxQ"
-      },
-      {
-        "pid": 713131,
-        "cmd": "backfill"
-      }
+      { "pid": 775048, "cmd": "whisper z77JFTjccxQ" },
+      { "pid": 713131, "cmd": "backfill" }
     ]
   },
   "resources": {
@@ -38,7 +32,5 @@
     "last_id": "m_71LZju6BU"
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  }
+  "git_sync": { "pull": "ok" }
 }
