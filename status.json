@@ -10,7 +10,7 @@
     "backfill_n": 1,
     "sample": [
       { "pid": 767735, "cmd": "whisper m_71LZju6BU" },
-      { "pid": 713131, "cmd": "backfill public" }
+      { "pid": 713131, "cmd": "backfill" }
     ]
   },
   "resources": {
@@ -19,7 +19,11 @@
     "disk_avail": "107G",
     "tmp_du": "1.4G"
   },
-  "cookies": { "present": true, "age_hours": 2.8, "stale": false },
+  "cookies": {
+    "present": true,
+    "age_hours": 2.8,
+    "stale": false
+  },
   "collector": {
     "found": true,
     "done": 649,
