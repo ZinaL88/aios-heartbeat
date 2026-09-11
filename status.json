@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-11T21:35:02Z",
-  "written_at_hkt": "2026-09-12 05:35 HKT",
+  "written_at_utc": "2026-09-11T21:40:02Z",
+  "written_at_hkt": "2026-09-12 05:40 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -18,7 +18,7 @@
   },
   "cookies": {
     "present": true,
-    "age_hours": 12.6,
+    "age_hours": 12.7,
     "stale": false
   },
   "collector": {
