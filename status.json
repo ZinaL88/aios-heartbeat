@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-11T05:05:01Z",
-  "written_at_hkt": "2026-09-11 13:05 HKT",
+  "written_at_utc": "2026-09-11T05:10:02Z",
+  "written_at_hkt": "2026-09-11 13:10 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -10,8 +10,8 @@
     "backfill_n": 1,
     "sample": [
       {
-        "pid": 960224,
-        "cmd": "CTcMvIZFQcw"
+        "pid": 963518,
+        "cmd": "9uUB421L2oo"
       },
       {
         "pid": 713131,
@@ -21,9 +21,9 @@
   },
   "resources": {
     "mem_available_gi": 6.3,
-    "load1": 4.25,
+    "load1": 4.02,
     "disk_avail": "108G",
-    "tmp_du": "457M"
+    "tmp_du": "240M"
   },
   "cookies": {
     "present": true,
@@ -32,10 +32,10 @@
   },
   "collector": {
     "found": true,
-    "done": 761,
+    "done": 762,
     "total": null,
-    "inflight": "CTcMvIZFQcw",
-    "last_id": "9LKJ8JdLtfI"
+    "inflight": "9uUB421L2oo",
+    "last_id": "CTcMvIZFQcw"
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
   "git_sync": {
