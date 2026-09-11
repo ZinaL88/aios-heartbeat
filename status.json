@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-11T13:20:02Z",
-  "written_at_hkt": "2026-09-11 21:20 HKT",
+  "written_at_utc": "2026-09-11T13:25:02Z",
+  "written_at_hkt": "2026-09-11 21:25 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -12,13 +12,13 @@
   },
   "resources": {
     "mem_available_gi": 11.3,
-    "load1": 0.13,
+    "load1": 0.1,
     "disk_avail": "104G",
     "tmp_du": "4.6G"
   },
   "cookies": {
     "present": true,
-    "age_hours": 4.3,
+    "age_hours": 4.4,
     "stale": false
   },
   "collector": {
