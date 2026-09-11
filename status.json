@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-11T09:45:02Z",
-  "written_at_hkt": "2026-09-11 17:45 HKT",
+  "written_at_utc": "2026-09-11T09:50:01Z",
+  "written_at_hkt": "2026-09-11 17:50 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -10,8 +10,8 @@
     "backfill_n": 1,
     "sample": [
       {
-        "pid": 1051571,
-        "cmd": "NyVd3ZPNNBk"
+        "pid": 1053327,
+        "cmd": "vx15aj-ah1c"
       },
       {
         "pid": 713131,
@@ -20,10 +20,10 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.4,
-    "load1": 3.96,
+    "mem_available_gi": 7.5,
+    "load1": 3.59,
     "disk_avail": "108G",
-    "tmp_du": "112M"
+    "tmp_du": "89M"
   },
   "cookies": {
     "present": true,
@@ -32,10 +32,10 @@
   },
   "collector": {
     "found": true,
-    "done": 815,
+    "done": 817,
     "total": null,
-    "inflight": "NyVd3ZPNNBk",
-    "last_id": "fM85luVCpPY",
+    "inflight": "vx15aj-ah1c",
+    "last_id": "IWLo9iLnnfM",
     "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ"
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
