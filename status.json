@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-11T08:45:02Z",
-  "written_at_hkt": "2026-09-11 16:45 HKT",
+  "written_at_utc": "2026-09-11T08:50:01Z",
+  "written_at_hkt": "2026-09-11 16:50 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -10,8 +10,8 @@
     "backfill_n": 1,
     "sample": [
       {
-        "pid": 1032477,
-        "cmd": "NibvAnZ6e5s"
+        "pid": 1033182,
+        "cmd": "R_efH9lWbH0"
       },
       {
         "pid": 713131,
@@ -20,24 +20,26 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.5,
-    "load1": 3.73,
+    "mem_available_gi": 6.7,
+    "load1": 4.0,
     "disk_avail": "108G",
-    "tmp_du": null
+    "tmp_du": "150M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 16.6,
+    "age_hours": 16.7,
     "stale": false
   },
   "collector": {
     "found": true,
-    "done": 805,
+    "done": 806,
     "total": null,
-    "inflight": "NibvAnZ6e5s",
-    "last_id": "tEbm8tuNlfY",
+    "inflight": "R_efH9lWbH0",
+    "last_id": "NibvAnZ6e5s",
     "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ"
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {}
+  "git_sync": {
+    "pull": "ok"
+  }
 }
