@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-11T16:20:02Z",
-  "written_at_hkt": "2026-09-12 00:20 HKT",
+  "written_at_utc": "2026-09-11T16:25:01Z",
+  "written_at_hkt": "2026-09-12 00:25 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -12,13 +12,13 @@
   },
   "resources": {
     "mem_available_gi": 11.3,
-    "load1": 0.14,
+    "load1": 0.05,
     "disk_avail": "104G",
-    "tmp_du": null
+    "tmp_du": "4.6G"
   },
   "cookies": {
     "present": true,
-    "age_hours": 7.3,
+    "age_hours": 7.4,
     "stale": false
   },
   "collector": {
@@ -30,5 +30,7 @@
     "channel_id": null
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {}
+  "git_sync": {
+    "pull": "ok"
+  }
 }
