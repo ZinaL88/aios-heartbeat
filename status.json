@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-11T09:15:01Z",
-  "written_at_hkt": "2026-09-11 17:15 HKT",
+  "written_at_utc": "2026-09-11T09:20:02Z",
+  "written_at_hkt": "2026-09-11 17:20 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -20,8 +20,8 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.3,
-    "load1": 3.66,
+    "mem_available_gi": 5.2,
+    "load1": 3.82,
     "disk_avail": "107G",
     "tmp_du": "858M"
   },
