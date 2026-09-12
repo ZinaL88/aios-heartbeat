@@ -40,12 +40,20 @@ function paint(d){
   if($("src")) $("src").textContent="live GitHub API · no page reload · cache bypassed";
   killRefresh();
 }
+function timed(url, headers){
+  var c=new AbortController();
+  var t=setTimeout(function(){c.abort();},4000);
+  return fetch(url,{cache:"no-store",headers:headers||{},signal:c.signal}).finally(function(){clearTimeout(t);});
+}
 function pull(){
-  gh("/repos/ZinaL88/aios-heartbeat/contents/status.json",{raw:true}).then(function(r){
+  timed("status.json?t="+Date.now()).then(function(r){
     if(!r.ok) throw r.status;
     return r.json();
   }).then(paint).catch(function(){
-    fetch("status.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(paint).catch(function(){});
+    gh("/repos/ZinaL88/aios-heartbeat/contents/status.json",{raw:true}).then(function(r){
+      if(!r.ok) throw r.status;
+      return r.json();
+    }).then(paint).catch(function(){});
   });
 }
 function move(li, dir){
