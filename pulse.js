@@ -25,7 +25,9 @@ function paint(d){
   if($("allNum")) $("allNum").textContent=((capLeft||0)+sttPend)+" left";
   if($("allEta")) $("allEta").textContent=eta((cap.eta_min||0)+(stt.eta_min||0));
   if($("capDot")) $("capDot").className="dot"+(cap.running?" on":"");
-  if($("capState")) $("capState").textContent=(cap.running?((d.processes&&d.processes.backfill_n)||cap.jobs||1)+" jobs":"idle");
+  var jobs=(d.processes&&d.processes.backfill_n)||cap.jobs||0;
+  if($("capHead")) $("capHead").textContent="CAPTIONS ×"+jobs;
+  if($("capState")) $("capState").textContent=(cap.running?("×"+jobs+" jobs"):"idle");
   if($("capCh")) $("capCh").textContent=title(cap.channel_id);
   if($("capNum")) $("capNum").textContent=capTot?(capDone+" / "+capTot):"—";
   if($("capEta")) $("capEta").textContent=capLeft+" left · "+eta(cap.eta_min);
@@ -54,11 +56,10 @@ function slot(backMin){
 }
 function pull(){
   function ok(r){ if(!r.ok) throw r.status; return r.json(); }
-  timed(slot(0)).then(ok).then(paint).catch(function(){
-    timed(slot(5)).then(ok).then(paint).catch(function(){
+  timed("https://api.github.com/repos/ZinaL88/aios-heartbeat/contents/status.json",
+    {Accept:"application/vnd.github.raw+json"}).then(ok).then(paint).catch(function(){
       timed("status.json?t="+Date.now()).then(ok).then(paint).catch(function(){});
     });
-  });
 }
 function move(li, dir){
   var ol=li.parentNode;
@@ -119,10 +120,15 @@ function save(){
 function addCh(){
   var ol=$("channels"); if(!ol) return;
   var li=document.createElement("li");
-  li.innerHTML='<span class="mv"><button type="button">▲</button><button type="button">▼</button></span><span class="n">+</span><div class="ed"><input class="nm" placeholder="name"/><input class="uc" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk"/> skip</label><button type="button" class="rm" onclick="this.closest(\'li\').remove()">remove</button></div>';
+  li.innerHTML='<span class="mv"><button type="button">▲</button><button type="button">▼</button></span><span class="n">+</span><div class="txt"><b>new</b></div><div class="edit-only"><input class="nm" placeholder="name"/><input class="uc" placeholder="UC…"/><label class="skl"><input type="checkbox" class="sk"/> skip — box will not start this</label><button type="button" class="rm" onclick="this.closest(\'li\').remove()">remove</button></div>';
   ol.appendChild(li);
 }
 function bootEdit(){
+  var ed=$("editBtn");
+  if(ed) ed.onclick=function(){
+    document.body.classList.toggle("editing");
+    ed.textContent=document.body.classList.contains("editing")?"Done editing":"Edit names / skip / add / remove";
+  };
   var sv=$("saveBtn"); if(sv) sv.onclick=save;
   var ad=$("addCh"); if(ad) ad.onclick=addCh;
   var inp=$("patIn");
