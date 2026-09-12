@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T11:18:59Z",
-  "written_at_hkt": "2026-09-12 19:18 HKT",
+  "written_at_utc": "2026-09-12T11:24:02Z",
+  "written_at_hkt": "2026-09-12 19:24 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -14,11 +14,11 @@
         "cmd": "backfill"
       },
       {
-        "pid": 121006,
+        "pid": 123702,
         "cmd": "backfill"
       },
       {
-        "pid": 121015,
+        "pid": 123711,
         "cmd": "backfill"
       }
     ]
@@ -29,7 +29,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.02,
+        "rss_gi": 3.06,
         "n": 33
       },
       {
@@ -81,12 +81,12 @@
     "meminfo": {
       "buffers_gi": 0.3,
       "cached_gi": 2.7,
-      "anon_gi": 2.4,
+      "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 5.6
     },
-    "load1": 0.37,
+    "load1": 0.89,
     "disk_avail": "110G",
     "tmp_du": "3.7M"
   },
@@ -100,7 +100,7 @@
     "done": 49,
     "total": null,
     "inflight": null,
-    "last_id": "Bf68E12bp_M",
+    "last_id": "o9ShAyqLoAc",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ"
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
@@ -108,8 +108,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T11:20:00Z",
-    "next_cron_hkt": "2026-09-12 19:20 HKT",
+    "next_cron_utc": "2026-09-12T11:25:00Z",
+    "next_cron_hkt": "2026-09-12 19:25 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -140,38 +140,38 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:18:58Z reboost captions pid 121015"
+      "summary": "2026-09-12T11:24:02Z reboost captions pid 123711"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:18:58Z reboost captions pid 121015"
+      "summary": "2026-09-12T11:24:02Z reboost captions pid 123711"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:18:59Z STT already running — no second Whisper"
+      "summary": "2026-09-12T11:24:02Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:18:59Z STT already running — no second Whisper"
+      "summary": "2026-09-12T11:24:02Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:18:59Z STT already running — no second Whisper"
+      "summary": "2026-09-12T11:24:02Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:18:59Z STT already running — no second Whisper"
+      "summary": "2026-09-12T11:24:02Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T11:18:59Z STT already running — no second Whisper",
-    "2026-09-12T11:18:59Z STT already running — no second Whisper",
-    "2026-09-12T11:18:59Z STT already running — no second Whisper",
+    "2026-09-12T11:24:02Z STT already running — no second Whisper",
+    "2026-09-12T11:24:02Z STT already running — no second Whisper",
+    "2026-09-12T11:24:02Z STT already running — no second Whisper",
     "backfill-captions.log: No --inventory; listing via yt-dlp (public videos tab; members need inventory).",
     "}",
     "Nothing to do.",
