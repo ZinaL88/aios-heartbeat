@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T14:22:01Z",
-  "written_at_hkt": "2026-09-12 22:22 HKT",
+  "written_at_utc": "2026-09-12T14:27:05Z",
+  "written_at_hkt": "2026-09-12 22:27 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -22,12 +22,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.6,
+    "mem_available_gi": 6.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.07,
+        "rss_gi": 3.14,
         "n": 33
       },
       {
@@ -71,20 +71,20 @@
         "n": 2
       },
       {
-        "comm": "python3",
-        "rss_gi": 0.05,
-        "n": 3
+        "comm": "yt-dlp",
+        "rss_gi": 0.06,
+        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
       "cached_gi": 2.8,
-      "anon_gi": 2.4,
+      "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
       "committed_gi": 5.6
     },
-    "load1": 0.66,
+    "load1": 0.59,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
@@ -98,7 +98,7 @@
     "done": 49,
     "total": 737,
     "inflight": null,
-    "last_id": "2bd7feqcrtA",
+    "last_id": "RUgYeEf2ZMA",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -121,10 +121,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-        "done": 501,
-        "left": 89,
+        "done": 586,
+        "left": 4,
         "total": 590,
-        "eta_min": 7
+        "eta_min": 1
       }
     }
   },
@@ -133,8 +133,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T14:25:00Z",
-    "next_cron_hkt": "2026-09-12 22:25 HKT",
+    "next_cron_utc": "2026-09-12T14:30:00Z",
+    "next_cron_hkt": "2026-09-12 22:30 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -155,53 +155,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:22:01Z captions already running"
+      "summary": "2026-09-12T14:27:05Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:22:01Z captions already running"
+      "summary": "2026-09-12T14:27:05Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:22:01Z captions already running"
+      "summary": "2026-09-12T14:27:05Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:22:01Z captions already running"
+      "summary": "2026-09-12T14:27:05Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:22:01Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:27:05Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:22:01Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:27:05Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:22:01Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:27:05Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:22:01Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:27:05Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T14:22:01Z STT already running — no second Whisper",
-    "2026-09-12T14:22:01Z STT already running — no second Whisper",
-    "2026-09-12T14:22:01Z STT already running — no second Whisper",
-    "backfill-captions.log: ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests"
+    "2026-09-12T14:27:05Z STT already running — no second Whisper",
+    "2026-09-12T14:27:05Z STT already running — no second Whisper",
+    "2026-09-12T14:27:05Z STT already running — no second Whisper",
+    "backfill-captions.log: [536<path> BcIEym81uow (Eps.46)特斯拉历史新高 525， 还能买吗？现在买还是回调买？",
+    "[535<path> 6-Rha2BWwX0 (Eps.47)几乎满仓特斯拉是一种什么样的体验？ 我是赌徒吗？聊仓位管理",
+    "sleep 2.1s",
+    "sleep 4.5s",
+    "[536<path> BcIEym81uow (Eps.46)特斯拉历史新高 525， 还能买吗？现在买还是回调买？"
   ],
   "pm": {
     "token_free": true,
