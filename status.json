@@ -1,20 +1,16 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T14:01:44Z",
-  "written_at_hkt": "2026-09-12 22:01 HKT",
+  "written_at_utc": "2026-09-12T14:06:48Z",
+  "written_at_hkt": "2026-09-12 22:06 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 1,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "UCaIIFXfdQUYf3OHPIFNDdrQ",
     "sample": [
-      {
-        "pid": 224113,
-        "cmd": "qB_3Eq8wp-k"
-      },
       {
         "pid": 210746,
         "cmd": "backfill"
@@ -26,12 +22,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.5,
+    "mem_available_gi": 6.6,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.07,
+        "rss_gi": 3.05,
         "n": 33
       },
       {
@@ -55,11 +51,6 @@
         "n": 4
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.12,
-        "n": 2
-      },
-      {
         "comm": "Xvfb",
         "rss_gi": 0.11,
         "n": 3
@@ -78,31 +69,36 @@
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.06,
+        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
-      "cached_gi": 2.9,
+      "cached_gi": 2.8,
       "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
-      "committed_gi": 5.8
+      "committed_gi": 5.6
     },
-    "load1": 0.49,
+    "load1": 1.06,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.0,
+    "age_hours": 0.1,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "qB_3Eq8wp-k",
-    "last_id": "zNj4uRgivuo",
+    "inflight": null,
+    "last_id": "4B9_kfKcAaA",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -125,10 +121,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-        "done": 31,
-        "left": 559,
+        "done": 143,
+        "left": 447,
         "total": 590,
-        "eta_min": 47
+        "eta_min": 37
       }
     }
   },
@@ -137,8 +133,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T14:05:00Z",
-    "next_cron_hkt": "2026-09-12 22:05 HKT",
+    "next_cron_utc": "2026-09-12T14:10:00Z",
+    "next_cron_hkt": "2026-09-12 22:10 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -159,53 +155,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:01:43Z captions already running"
+      "summary": "2026-09-12T14:06:48Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:01:43Z captions already running"
+      "summary": "2026-09-12T14:06:48Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:01:43Z captions already running"
+      "summary": "2026-09-12T14:06:48Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:01:43Z captions already running"
+      "summary": "2026-09-12T14:06:48Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:01:43Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:06:48Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:01:43Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:06:48Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:01:43Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:06:48Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:01:43Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:06:48Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T14:01:43Z STT already running — no second Whisper",
-    "2026-09-12T14:01:43Z STT already running — no second Whisper",
-    "2026-09-12T14:01:43Z STT already running — no second Whisper",
-    "backfill-captions.log: Refusing large unattended scrape without --inventory and modest --limit. Pass an inventory JSON and keep --limit small per night.",
-    "\"done_count\": 102",
-    "}",
-    "No --inventory; listing via yt-dlp (public videos tab; members need inventory).",
-    "Refusing large unattended scrape without --inventory and modest --limit. Pass an inventory JSON and keep --limit small per night."
+    "2026-09-12T14:06:48Z STT already running — no second Whisper",
+    "2026-09-12T14:06:48Z STT already running — no second Whisper",
+    "2026-09-12T14:06:48Z STT already running — no second Whisper",
+    "backfill-captions.log: [125<path> D01RvQNOcn0 风暴中的权力大戏：马斯克、特朗普和鲍威尔的“三角battle”",
+    "sleep 2.6s",
+    "[124<path> AIaR02mJQBc 特朗普为什么要对哈佛开刀？",
+    "sleep 3.6s",
+    "[125<path> D01RvQNOcn0 风暴中的权力大戏：马斯克、特朗普和鲍威尔的“三角battle”"
   ],
   "pm": {
     "token_free": true,
