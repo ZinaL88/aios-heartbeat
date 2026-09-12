@@ -44,11 +44,11 @@ body.editing #editTools { display:block; }
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">connecting</span></div>
-<p class="mono" id="ping">connecting · not the baked clock</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-13 02:08 HKT</span></div>
+<p class="mono" id="ping">2026-09-13 02:08 HKT</p>
 
 <div class="card">
-  <div class="row"><h2>STT LEFT</h2><span class="mono" id="allEta">wGShVjHvECw</span></div>
+  <div class="row"><h2>STT LEFT</h2><span class="mono" id="allEta"></span></div>
   <p class="big" id="allNum">754</p>
 </div>
 <div class="card">
@@ -63,21 +63,21 @@ body.editing #editTools { display:block; }
     <span class="mono" id="sttState">running</span></div>
   <p class="ch" id="sttCh">一个狠人</p>
   <div class="row"><span class="big" id="sttNum">754 pending</span>
-    <span class="mono" id="sttEta">wGShVjHvECw</span></div>
+    <span class="mono" id="sttEta">this video —</span></div>
 </div>
 </div>
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 6.6G / 15.6G · load 0.79</p>
+  <p class="ch" id="ram">RAM 6.6G / 15.6G · load 0.7</p>
   <p class="mono" id="box2">disk 110G · tmp 4.1M · cookies yes · 0.1h</p>
-  <p class="mono" id="sched">next ping 2026-09-13 02:05 HKT · Whisper on · captions idle (reboost captions if RAM≥1.2)</p>
+  <p class="mono" id="sched">next ping 2026-09-13 02:10 HKT · Whisper on · captions idle (reboost captions if RAM≥1.2)</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li><b>STT</b> · 一个狠人 · 754 pending</li><li class="mono">pid 341347 · proc</li><li class="mono">pid 355618 · proc</li></ol>
+  <ol id="running"><li><b>STT</b> · 一个狠人 · 754 pending</li><li class="mono">pid 341347 · proc</li></ol>
 </div>
 
 <div class="card">
@@ -100,7 +100,7 @@ body.editing #editTools { display:block; }
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-12T18:03:52Z captions already running</li><li><span class="mono">reboost.log</span> 2026-09-12T18:03:52Z STT already running — no second Whisper</li><li><span class="mono">reboost.log</span> 2026-09-12T18:03:52Z skip captions — no channel</li><li class="mono">&quot;dry_run&quot;: false</li><li class="mono">}</li><li class="mono">Nothing to do.</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-12T18:08:57Z skip captions — no channel</li><li><span class="mono">reboost.log</span> 2026-09-12T18:08:57Z STT already running — no second Whisper</li><li class="mono">&quot;dry_run&quot;: false</li><li class="mono">}</li><li class="mono">Nothing to do.</li></ol>
 </div>
 
 <div class="card">
@@ -184,12 +184,18 @@ function pull(){
     }catch(e){}
     if($("ping")) $("ping").textContent="live fetch failed";
   }
-  var url="https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t="+Date.now();
+  var url="status.json?t="+Date.now();
   timed(url).then(ok).then(function(d){
     try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
     paint(d);
     window.__hbIn=0;
-  }).catch(fail);
+  }).catch(function(){
+    timed("https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json?t="+Date.now()).then(ok).then(function(d){
+      try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
+      paint(d);
+      window.__hbIn=0;
+    }).catch(fail);
+  });
 }
 function move(li, dir){
   var ol=li.parentNode;
