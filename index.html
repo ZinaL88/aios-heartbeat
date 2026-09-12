@@ -4,9 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <base href="https://zinal88.github.io/aios-heartbeat/" />
   <title>HEARTBEAT</title>
   <style>
-    :root { --bg:#0f1210; --fg:#e8ebe6; --muted:#9aa39a; --subtle:#6b736b; --live:#3dd68c; --bar:#2a2f2a; --accent:#c4f542; }
+    :root { --bg:#0f1210; --fg:#e8ebe6; --muted:#9aa39a; --subtle:#6b736b; --live:#3dd68c; --bar:#2a2f2a; --accent:#c4f542; --warn:#e8b84a; }
     * { box-sizing: border-box; }
     body { margin:0; background:var(--bg); color:var(--fg); font: 15px/1.4 -apple-system, system-ui, sans-serif; padding: 16px; padding-top: max(16px, env(safe-area-inset-top)); }
     h1 { font-size: 14px; letter-spacing: .08em; margin: 0; }
@@ -19,7 +20,7 @@
     .dot { width:8px; height:8px; border-radius:99px; display:inline-block; background:#555; margin-right:6px; }
     .dot.on { background: var(--live); box-shadow: 0 0 8px var(--live); }
     .big { font-size: 28px; font-variant-numeric: tabular-nums; font-weight: 600; }
-    .warn { color: #e8b84a; }
+    .warn { color: var(--warn); }
   </style>
 </head>
 <body>
@@ -46,7 +47,7 @@
     <div class="bar"><i id="sttBar" style="width:0%"></i></div>
   </div>
   <p id="ram" class="mono" style="margin-top:24px"></p>
-  <p class="mono">Read-only. Public ping only. Refresh 20s. Add to Home Screen.</p>
+  <p class="mono">Read-only. Bookmark <b>zinal88.github.io/aios-heartbeat/</b> (not the site root). Refresh 20s.</p>
 <script>
 const NAMES = {
   UC_5lJHgnMP_lb_VpIiXV0hQ: "#11 课代表立正",
@@ -73,36 +74,61 @@ function ageLabel(utc){
   if (s < 720) return Math.round(s/60) + "m old";
   return "STALE " + Math.round(s/60) + "m";
 }
+function urls(){
+  const t = Date.now();
+  return [
+    "https://zinal88.github.io/aios-heartbeat/status.json?t=" + t,
+    "status.json?t=" + t,
+    "https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json?t=" + t,
+    "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t=" + t
+  ];
+}
+async function loadJson(){
+  const errors = [];
+  for (const u of urls()){
+    try {
+      const r = await fetch(u, { cache: "no-store", mode: "cors" });
+      if (!r.ok) { errors.push(u + " " + r.status); continue; }
+      return await r.json();
+    } catch (e) {
+      errors.push(u + " " + (e && e.message ? e.message : "fail"));
+    }
+  }
+  throw new Error(errors.join(" | "));
+}
 async function pull(){
-  const r = await fetch("https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t=" + Date.now(), { cache: "no-store" });
-  if (!r.ok) throw new Error(r.status);
-  const d = await r.json();
-  const tr = (d.collector && d.collector.tracks) || {};
-  const cap = tr.captions || {};
-  const stt = tr.stt || {};
-  const capDone = cap.done ?? 0, capLeft = cap.left ?? 0, capTot = cap.total || (capDone+capLeft);
-  const sttPend = stt.pending ?? 0;
-  const allLeft = (capLeft||0) + sttPend;
-  document.getElementById("ping").textContent = (d.written_at_hkt || "—") + " · head " + (d.repo_head || "");
-  document.getElementById("age").textContent = ageLabel(d.written_at_utc);
-  document.getElementById("age").className = "mono " + ((Date.now()-Date.parse(d.written_at_utc))/1000 < 720 ? "live" : "warn");
-  document.getElementById("allNum").textContent = allLeft + " left";
-  document.getElementById("allEta").textContent = eta((cap.eta_min||0)+(stt.eta_min||0));
-  document.getElementById("capDot").className = "dot" + (cap.running ? " on" : "");
-  document.getElementById("capState").textContent = cap.running ? "running" : "idle";
-  document.getElementById("capCh").textContent = title(cap.channel_id);
-  document.getElementById("capNum").textContent = capTot ? (capDone + " / " + capTot) : "—";
-  document.getElementById("capEta").textContent = (capLeft != null ? capLeft + " left · " : "") + eta(cap.eta_min);
-  document.getElementById("capBar").style.width = (capTot ? Math.min(99, capDone/capTot*100) : 0) + "%";
-  document.getElementById("sttDot").className = "dot" + (stt.running ? " on" : "");
-  document.getElementById("sttState").textContent = stt.running ? "running" : "idle";
-  document.getElementById("sttCh").textContent = title(stt.channel_id);
-  document.getElementById("sttNum").textContent = sttPend + " pending";
-  document.getElementById("sttEta").textContent = eta(stt.eta_min);
-  const sttTot = sttPend + 1;
-  document.getElementById("sttBar").style.width = stt.running ? "12%" : (sttPend ? "4%" : "100%");
-  const res = d.resources || {};
-  document.getElementById("ram").textContent = "RAM avail " + (res.mem_available_gi ?? "—") + "G / " + (res.mem_total_gi ?? "—") + "G · load " + (res.load1 ?? "—");
+  try {
+    const d = await loadJson();
+    const tr = (d.collector && d.collector.tracks) || {};
+    const cap = tr.captions || {};
+    const stt = tr.stt || {};
+    const capDone = cap.done ?? 0, capLeft = cap.left ?? 0, capTot = cap.total || (capDone+capLeft);
+    const sttPend = stt.pending ?? 0;
+    const allLeft = (capLeft||0) + sttPend;
+    document.getElementById("ping").textContent = (d.written_at_hkt || "—");
+    document.getElementById("age").textContent = ageLabel(d.written_at_utc);
+    document.getElementById("age").className = "mono " + ((Date.now()-Date.parse(d.written_at_utc))/1000 < 720 ? "live" : "warn");
+    document.getElementById("allNum").textContent = allLeft + " left";
+    document.getElementById("allEta").textContent = eta((cap.eta_min||0)+(stt.eta_min||0));
+    document.getElementById("capDot").className = "dot" + (cap.running ? " on" : "");
+    document.getElementById("capState").textContent = cap.running ? "running" : "idle";
+    document.getElementById("capCh").textContent = title(cap.channel_id);
+    document.getElementById("capNum").textContent = capTot ? (capDone + " / " + capTot) : "—";
+    document.getElementById("capEta").textContent = (capLeft != null ? capLeft + " left · " : "") + eta(cap.eta_min);
+    document.getElementById("capBar").style.width = (capTot ? Math.min(99, capDone/capTot*100) : 0) + "%";
+    document.getElementById("sttDot").className = "dot" + (stt.running ? " on" : "");
+    document.getElementById("sttState").textContent = stt.running ? "running" : "idle";
+    document.getElementById("sttCh").textContent = title(stt.channel_id);
+    document.getElementById("sttNum").textContent = sttPend + " pending";
+    document.getElementById("sttEta").textContent = eta(stt.eta_min);
+    document.getElementById("sttBar").style.width = stt.running ? "12%" : (sttPend ? "4%" : "100%");
+    const res = d.resources || {};
+    document.getElementById("ram").textContent = "RAM avail " + (res.mem_available_gi ?? "—") + "G / " + (res.mem_total_gi ?? "—") + "G · load " + (res.load1 ?? "—");
+  } catch (e) {
+    document.getElementById("ping").textContent = "fetch failed — use /aios-heartbeat/  " + (e && e.message ? e.message : e);
+    document.getElementById("age").textContent = "ERR";
+    document.getElementById("age").className = "mono warn";
+  }
 }
 pull();
 setInterval(pull, 20000);
