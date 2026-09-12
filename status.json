@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T07:55:24Z",
-  "written_at_hkt": "2026-09-12 15:55 HKT",
+  "written_at_utc": "2026-09-12T08:00:17Z",
+  "written_at_hkt": "2026-09-12 16:00 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -21,7 +21,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.73,
+        "rss_gi": 3.8,
         "n": 38
       },
       {
@@ -78,7 +78,7 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 7.5
     },
-    "load1": 0.08,
+    "load1": 0.22,
     "disk_avail": "110G",
     "tmp_du": "3.6M"
   },
@@ -92,7 +92,7 @@
     "done": 49,
     "total": null,
     "inflight": null,
-    "last_id": "8uuwvA-0BLw",
+    "last_id": "j-DjZxhw4Lk",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ"
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
@@ -100,8 +100,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T08:00:00Z",
-    "next_cron_hkt": "2026-09-12 16:00 HKT",
+    "next_cron_utc": "2026-09-12T08:05:00Z",
+    "next_cron_hkt": "2026-09-12 16:05 HKT",
     "cron": "*/5",
     "job_restart": "jobs running — no reboost",
     "job_restart_at_hkt": null,
@@ -122,53 +122,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T06:57:19Z skip STT — MemAvailable 5.4G < 6G (captions may still run)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T06:57:19Z skip STT — MemAvailable 5.4G < 6G (captions may still run)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T07:55:24Z queue pick UCJAPsTtcJJWGk8e-_CJL8TQ"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T07:55:24Z queue pick UCJAPsTtcJJWGk8e-_CJL8TQ"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T07:55:24Z captions already running"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T07:55:24Z captions already running"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-12T07:55:24Z skip STT — MemAvailable 5.3G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-12T07:55:24Z skip STT — MemAvailable 5.3G < 6G (captions may still run)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T08:00:16Z queue pick UCJAPsTtcJJWGk8e-_CJL8TQ"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T08:00:16Z queue pick UCJAPsTtcJJWGk8e-_CJL8TQ"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T08:00:16Z captions already running"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T08:00:16Z captions already running"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T08:00:16Z skip STT — MemAvailable 5.1G < 6G (captions may still run)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T08:00:16Z skip STT — MemAvailable 5.1G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-12T07:55:24Z captions already running",
-    "2026-09-12T07:55:24Z skip STT — MemAvailable 5.3G < 6G (captions may still run)",
-    "2026-09-12T07:55:24Z skip STT — MemAvailable 5.3G < 6G (captions may still run)",
-    "backfill-captions.log: [650<path> oQJBctvBUjU 头悬梁，锥刺骨这种故事是中国学生痛苦命运叙事的开端！苦难为什么值得歌颂？这是畸形的价值观!",
-    "sleep 4.7s",
-    "[649<path> QkknHsnhNgM 中共這次確實應該是急了眼了，開始賭國運了！烈火烹油，繁花似錦？狗屁，當成一個正在啟動的龐氏騙局就好，魚餌要吃，魚鉤不咬！",
+    "2026-09-12T08:00:16Z captions already running",
+    "2026-09-12T08:00:16Z skip STT — MemAvailable 5.1G < 6G (captions may still run)",
+    "2026-09-12T08:00:16Z skip STT — MemAvailable 5.1G < 6G (captions may still run)",
+    "backfill-captions.log: [712<path> jWdvj-3Ehos 6月23日,圣上，原来您才是腐败的土壤，您可不能造反啊！！说说投资策略构建的那点事儿！",
     "sleep 2.9s",
-    "[650<path> oQJBctvBUjU 头悬梁，锥刺骨这种故事是中国学生痛苦命运叙事的开端！苦难为什么值得歌颂？这是畸形的价值观!"
+    "[711<path> 0lzcNMe5dOk 如何用正确的姿勢攻擊，分析與黑美國經濟",
+    "sleep 4.5s",
+    "[712<path> jWdvj-3Ehos 6月23日,圣上，原来您才是腐败的土壤，您可不能造反啊！！说说投资策略构建的那点事儿！"
   ],
   "pm": {
     "token_free": true,
