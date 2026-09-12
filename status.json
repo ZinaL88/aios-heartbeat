@@ -1,17 +1,19 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T12:19:46Z",
-  "written_at_hkt": "2026-09-12 20:19 HKT",
+  "written_at_utc": "2026-09-12T12:24:50Z",
+  "written_at_hkt": "2026-09-12 20:24 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
     "whisper_n": 2,
     "backfill_n": 1,
+    "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+    "captions_channel": "UCGWYKICLOE8Wxy7q3eYXmPA",
     "sample": [
       {
-        "pid": 156345,
-        "cmd": "0RoilMFL6S4"
+        "pid": 159647,
+        "cmd": "9oy3FcSvb1Q"
       },
       {
         "pid": 146844,
@@ -29,18 +31,13 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.05,
+        "rss_gi": 3.08,
         "n": 33
       },
       {
         "comm": "python",
         "rss_gi": 0.43,
         "n": 4
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.15,
-        "n": 3
       },
       {
         "comm": "xfwm4",
@@ -73,43 +70,75 @@
         "n": 2
       },
       {
-        "comm": "python3",
+        "comm": "csnaps",
         "rss_gi": 0.07,
-        "n": 4
+        "n": 1
+      },
+      {
+        "comm": "python3",
+        "rss_gi": 0.05,
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
-      "cached_gi": 2.9,
-      "anon_gi": 2.5,
+      "cached_gi": 2.7,
+      "anon_gi": 2.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 5.8
+      "committed_gi": 5.5
     },
-    "load1": 0.97,
+    "load1": 0.88,
     "disk_avail": "110G",
     "tmp_du": "3.8M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.5,
+    "age_hours": 0.6,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "0RoilMFL6S4",
-    "last_id": "DwwM4_B02dk",
-    "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ"
+    "inflight": "9oy3FcSvb1Q",
+    "last_id": "9oy3FcSvb1Q",
+    "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+    "inventory": {
+      "public_total": 737,
+      "public_done": 14,
+      "members_total": 0,
+      "members_done": 0,
+      "pending_stt_n": 754,
+      "captions_done": 737,
+      "captions_left": 0,
+      "source": "inventory",
+      "public_left": 723
+    },
+    "tracks": {
+      "stt": {
+        "running": true,
+        "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+        "pending": 754,
+        "eta_min": 3016
+      },
+      "captions": {
+        "running": true,
+        "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
+        "done": 672,
+        "left": 643,
+        "total": 1315,
+        "eta_min": 54
+      }
+    }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
   "git_sync": {
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T12:20:00Z",
-    "next_cron_hkt": "2026-09-12 20:20 HKT",
+    "next_cron_utc": "2026-09-12T12:25:00Z",
+    "next_cron_hkt": "2026-09-12 20:25 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -130,53 +159,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:19:46Z captions already running"
+      "summary": "2026-09-12T12:24:50Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:19:46Z captions already running"
+      "summary": "2026-09-12T12:24:50Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:19:46Z captions already running"
+      "summary": "2026-09-12T12:24:50Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:19:46Z captions already running"
+      "summary": "2026-09-12T12:24:50Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:19:46Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:24:50Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:19:46Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:24:50Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:19:46Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:24:50Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:19:46Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:24:50Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T12:19:46Z STT already running — no second Whisper",
-    "2026-09-12T12:19:46Z STT already running — no second Whisper",
-    "2026-09-12T12:19:46Z STT already running — no second Whisper",
-    "backfill-captions.log: [547<path> roAgE4glhqM 【人工智能】早期经验范式 | AI Agent正在迈向经验时代 | 让AI从自身试错中学习 | Rich Sutton | 隐式世界建模 | 自我反思 | 有效性 | 泛化性 | RL兼容性",
-    "sleep 4.3s",
-    "[546<path> rADZ8xw3SA0 【AI动态】每日科技新闻 | 20251016 | 谷歌正式推出Veo 3.1 | 基于Gemma的单细胞分析模型 | Coral NPU | AI音乐疗法 | Claude Haiku 4.5",
-    "sleep 3.5s",
-    "[547<path> roAgE4glhqM 【人工智能】早期经验范式 | AI Agent正在迈向经验时代 | 让AI从自身试错中学习 | Rich Sutton | 隐式世界建模 | 自我反思 | 有效性 | 泛化性 | RL兼容性"
+    "2026-09-12T12:24:50Z STT already running — no second Whisper",
+    "2026-09-12T12:24:50Z STT already running — no second Whisper",
+    "2026-09-12T12:24:50Z STT already running — no second Whisper",
+    "backfill-captions.log: [660<path> jqdzR90yuW0 【人工智能】340页《人工智能趋势报告》十大核心观点解读 | Mary Meeker | 互联网女皇回归之作 | 前所未有的变革 | 增长 | 投入 | 竞争 | 开源 | 门户 | 工作 | 政治",
+    "[659<path> doCpUndN9MI 【人工智能】2030年左右AGI到来是行业的共识 | Claude 4核心成员Sholto Douglas | 时间跨度的扩展 | 产品指数 | AI编程 | 能源瓶颈 | AI 2027",
+    "sleep 3.7s",
+    "sleep 3.2s",
+    "[660<path> jqdzR90yuW0 【人工智能】340页《人工智能趋势报告》十大核心观点解读 | Mary Meeker | 互联网女皇回归之作 | 前所未有的变革 | 增长 | 投入 | 竞争 | 开源 | 门户 | 工作 | 政治"
   ],
   "pm": {
     "token_free": true,
