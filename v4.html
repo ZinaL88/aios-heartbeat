@@ -2,38 +2,95 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-<meta http-equiv="refresh" content="180;url=v4.html?n=1789223101"/>
-<title>HEARTBEAT 4</title>
+<meta http-equiv="refresh" content="45;url=v4.html?n=1789222662"/>
+<meta http-equiv="Cache-Control" content="no-store"/>
+<title>HEARTBEAT</title>
 <style>
-:root { --bg:#0f1210; --fg:#e8ebe6; --muted:#9aa39a; --live:#3dd68c; --bar:#2a2f2a; --accent:#c4f542; }
+:root { --bg:#0f1210; --fg:#e8ebe6; --muted:#9aa39a; --live:#3dd68c; --bar:#2a2f2a; --accent:#c4f542; --card:#161a16; }
 * { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.4 -apple-system,system-ui,sans-serif; padding:20px; padding-top:max(20px,env(safe-area-inset-top)); }
-h1 { font-size:13px; letter-spacing:.12em; margin:0; font-weight:600; }
+body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 -apple-system,system-ui,sans-serif;
+  padding:20px; padding-bottom:48px; padding-top:max(20px,env(safe-area-inset-top)); }
+h1 { font-size:13px; letter-spacing:.12em; margin:0; font-weight:700; }
+h2 { font-size:12px; letter-spacing:.1em; color:var(--muted); font-weight:700; margin:0; }
 .mono { font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--muted); }
-.row { display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-top:8px; }
+.row { display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
 .bar { height:10px; background:var(--bar); border-radius:99px; overflow:hidden; margin-top:12px; }
 .bar>i { display:block; height:100%; background:var(--accent); }
-.card { margin-top:28px; padding-top:20px; border-top:1px solid #222; }
+.card { margin-top:26px; padding-top:18px; border-top:1px solid #222; }
 .dot { width:8px; height:8px; border-radius:99px; display:inline-block; background:#555; margin-right:8px; }
 .dot.on { background:var(--live); }
-.big { font-size:34px; font-variant-numeric:tabular-nums; font-weight:700; letter-spacing:-.03em; }
-.label { font-size:12px; letter-spacing:.08em; color:var(--muted); font-weight:600; }
+.big { font-size:34px; font-variant-numeric:tabular-nums; font-weight:700; letter-spacing:-.03em; margin:8px 0 0; }
 .ch { font-size:17px; font-weight:500; margin:8px 0 0; }
+ol { margin:8px 0 0; padding-left:0; list-style:none; }
+li { display:flex; gap:10px; padding:8px 0; border-bottom:1px solid #1c1c1c; }
+details { margin-top:8px; background:var(--card); border-radius:8px; padding:4px 10px; }
+summary { min-height:44px; display:flex; align-items:center; font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--muted); }
+details ol li { display:block; font-size:13px; padding:6px 0; }
+.n { width:18px; color:var(--muted); font-family:ui-monospace,Menlo,monospace; font-size:12px; }
 </style></head><body>
-<div class="row"><h1>HEARTBEAT 4</h1><span class="mono" id="age">2026-09-12 22:22 HKT</span></div>
-<p class="mono" id="ping">2026-09-12 22:22 HKT</p>
-<div class="card"><div class="row"><span class="label">ALL LEFT</span><span class="mono" id="allEta">~50h 23m</span></div>
-<p class="big" id="allNum">843 left</p>
-<div class="bar"><i id="allBar" style="width:16%"></i></div></div>
-<div class="card"><div class="row"><span class="label"><span class="dot on" id="capDot"></span>CAPTIONS</span><span class="mono" id="capState">running</span></div>
-<p class="ch" id="capCh">Alan</p>
-<div class="row"><span class="big" id="capNum">501 / 590</span><span class="mono" id="capEta">89 left · ~7m</span></div>
-<div class="bar"><i id="capBar" style="width:84%"></i></div></div>
-<div class="card"><div class="row"><span class="label"><span class="dot on" id="sttDot"></span>STT</span><span class="mono" id="sttState">running</span></div>
-<p class="ch" id="sttCh">一个狠人</p>
-<div class="row"><span class="big" id="sttNum">754 pending</span><span class="mono" id="sttEta">~50h 16m</span></div>
-<div class="bar"><i id="sttBar" style="width:12%"></i></div></div>
-<p class="mono" id="ram" style="margin-top:28px">RAM avail 6.6G / 15.6G · load 0.66</p>
-<p class="mono" id="src">Auto-reload 3 min. Pull to refresh sooner.</p>
-<script src="pulse.js" defer></script>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-12 22:16 HKT</span></div>
+<p class="mono" id="ping">2026-09-12 22:16 HKT · auto 45s</p>
+
+<div class="card">
+  <div class="row"><h2>ALL LEFT</h2><span class="mono" id="allEta">~50h 33m</span></div>
+  <p class="big" id="allNum">962 left</p>
+  <div class="bar"><i id="allBar" style="width:36%"></i></div>
+</div>
+<div class="card">
+  <div class="row"><h2><span class="dot on" id="capDot"></span>CAPTIONS</h2>
+    <span class="mono" id="capState">running</span></div>
+  <p class="ch" id="capCh">Alan</p>
+  <div class="row"><span class="big" id="capNum">382 / 590</span>
+    <span class="mono" id="capEta">208 left · ~17m</span></div>
+  <div class="bar"><i id="capBar" style="width:64%"></i></div>
+</div>
+<div class="card">
+  <div class="row"><h2><span class="dot on" id="sttDot"></span>STT</h2>
+    <span class="mono" id="sttState">running</span></div>
+  <p class="ch" id="sttCh">一个狠人</p>
+  <div class="row"><span class="big" id="sttNum">754 pending</span>
+    <span class="mono" id="sttEta">~50h 16m</span></div>
+  <div class="bar"><i id="sttBar" style="width:12%"></i></div>
+</div>
+
+<div class="card">
+  <h2>BOX</h2>
+  <p class="ch" id="ram">RAM 6.5G / 15.6G · load 0.41</p>
+  <p class="mono" id="box2">disk 110G · tmp 3.9M · cookies yes · 0.3h</p>
+  <p class="mono" id="sched">next ping 2026-09-12 22:20 HKT · captions + Whisper running</p>
+  <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
+</div>
+
+<div class="card">
+  <h2>RUNNING</h2>
+  <ol id="running"><li><b>STT</b> · 一个狠人 · 754 pending</li><li><b>CAPTIONS</b> · Alan · 382/590 · n=1</li><li class="mono">pid 234028 · mOIYwMq0PZg</li><li class="mono">pid 210746 · backfill</li><li class="mono">pid 223513 · backfill</li></ol>
+</div>
+
+<div class="card">
+  <h2>CHANNEL QUEUE · 9</h2>
+  <ol id="channels"><li><span class="n">1</span><div><b>#11 课代表立正</b><div class="mono">skip · public captions exhausted (834 done). STT leftover only if RAM&gt;=6G later.</div></div></li><li><span class="n">2</span><div><b>一个狠人</b><div class="mono">running · members done · public pending — NOW</div></div></li><li><span class="n">3</span><div><b>bestpartners</b><div class="mono">queued</div></div></li><li><span class="n">4</span><div><b>huanyihe777</b><div class="mono">queued</div></div></li><li><span class="n">5</span><div><b>mike1111</b><div class="mono">queued</div></div></li><li><span class="n">6</span><div><b>清流君</b><div class="mono">queued</div></div></li><li><span class="n">7</span><div><b>大卢和小田</b><div class="mono">queued</div></div></li><li><span class="n">8</span><div><b>王理元</b><div class="mono">queued</div></div></li><li><span class="n">9</span><div><b>Alan</b><div class="mono">running</div></div></li></ol>
+</div>
+
+<div class="card">
+  <h2>PLAYLISTS · 96 (not collecting yet)</h2>
+  <div id="playlists"><details open><summary>P0 · 15</summary><ol><li>Thinking · 2603</li><li>Job hunting · 283</li><li>Learning how to learn · 863</li><li>理財 · 2997</li><li>Latest Routine · 98</li><li>理財 Strategy · 632</li><li>How To Systemize Your Business So It Runs Without You · 14</li><li>Trend · 644</li><li>Innovation · 178</li><li>The Agent Factory · 30</li><li>AI · 25</li><li>Build your own LLM Workshop · 26</li><li>郭宇AI實踐分享 · 十講 · 9</li><li>Stanford CS221 AI · 60</li><li>AI Fundamentals · 13</li></ol></details><details><summary>P1 · 45</summary><ol><li>⚡️ Framework Thinking &amp; Mental Models ⚡️ · 140</li><li>The Startup Ideas Podcast Episodes · 412</li><li>【機器學習2021】(中文版) · 40</li><li>Automate the Boring Stuff with Python · 15</li><li>MIT RES.6-012 Intro to Probability · 266</li><li>MIT 18.650 Statistics · 22</li><li>6.041 Probabilistic Systems · 25</li><li>CS329A Self-Improving AI Agents · 9</li><li>LLM / AI · 92</li><li>AI Product Management · 5</li><li>Machine Learning &amp; Data Science · 12</li><li>Kaggle CareerCon 2019 | Full Sessions · 15</li><li>Geospatial Analysis using Real Python · 11</li><li>Large Language Models (LLMs) · 26</li><li>LLM · 14</li><li>LLM · 2</li><li>MCP · 19</li><li>Claude ChatGPT · 424</li><li>Stanford CS230: Deep Learning I Autumn 2025 · 9</li><li>The Age of A.I. · 9</li><li>Algorithms · 64</li><li>Automation · 33</li><li>Blockchain · 154</li><li>Bots &amp; Exchanges · 43</li><li>Crypto · 411</li><li>Engineering · 7</li><li>MIT 14.129 Blockchain and the Design of Financial Systems, Spring 2025 · 11</li><li>Personal Finance · 13</li><li>Stock Trading Principles · 22</li><li>〈宏觀散打〉謎米香港財經專欄 · 404</li><li>指數化投資 · 39</li><li>章濤投資日記 · 9</li><li>AA203 Optimal and Learning-Based Control | Spring 2026 · 19</li><li>Product Management · 918</li><li>Statistics · 116</li><li>Statistics · 67</li><li>Biz ideas · 433</li><li>Data Science · 1429</li><li>Economics · 36</li><li>Economics Amplified · 16</li><li>How to Delegate Like a Millionaire Entrepreneur · 20</li><li>How to Start a Startup · 21</li><li>Millionaire Productivity Habits · 29</li><li>Smart Note Taking (Obsidian &amp; Zettelkasten) · 28</li><li>Business idea · 1</li></ol></details><details><summary>P2 · 13</summary><ol><li>下班經濟學 · 775</li><li>尼可拉斯楊Live精發財系列大全集 · 67</li><li>Python Programming for Finance · 28</li><li>MIT 15.S12 Blockchain and Money · 23</li><li>MIT 18.642 Math for Finance · 22</li><li>Econ 2450A Public Economics | Raj Chetty · 28</li><li>数据科学读书会 · 18</li><li>Careers · 285</li><li>Debate, Argument, Reasoning · 248</li><li>Emerging Leaders Initiative: Leadership Lab · 34</li><li>Entrepreneur · 3464</li><li>Productivity · 1498</li><li>English for Work · 74</li></ol></details><details><summary>P3 · 13</summary><ol><li>Productivity Hacks · 21</li><li>職場事業心理學 · 46</li><li>個人成長心理學 · 198</li><li>Algorithms for Big Data (COMPSCI 229r) · 25</li><li>Advanced Algorithms (COMPSCI 224) · 25</li><li>MIT 14.12 Game Theory, Fall 2025 · 25</li><li>Career growth · 898</li><li>Charisma · 1024</li><li>Emotional Intelligence · 2314</li><li>Interpersonal · 1248</li><li>Presentation, Public Speaking, Story Telling · 1218</li><li>English · 1323</li><li>八字教学从基础入门到精通 · 57</li></ol></details><details><summary>P4 · 7</summary><ol><li>Podcast《不增不減兩分滿》 · 60</li><li>十分鐘心理學 · 144</li><li>斷捨離 簡單匠 Podcast · 483</li><li>Full Podcast Episodes · 260</li><li>Business Soft Skills · 18</li><li>Computational Journalism (JMSC 6041) · 8</li><li>常用英语口语训练 · 30</li></ol></details><details><summary>P5 · 3</summary><ol><li>【入門級命理課】八字命盤看——天干五合 · 5</li><li>【入門級命理課】命盤中的十二地支 · 13</li><li>【入門級命理課】命盤中的十神 · 13</li></ol></details></div>
+</div>
+
+<div class="card">
+  <h2>LOG</h2>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-12T14:16:56Z captions already running</li><li><span class="mono">reboost.log</span> 2026-09-12T14:16:56Z STT already running — no second Whisper</li><li class="mono">sleep 2.4s</li><li class="mono">[330&lt;path&gt; 7ULZtBEljuw （Eps.247)可以媲美Model X的宝马电动SUV iX |特斯拉车主试驾 电动BMW i X SUV</li><li class="mono">[331&lt;path&gt; v74k2j2McKQ （Eps.246)马斯克买推特，特斯拉暴涨，上海工厂疫情最新更新</li></ol>
+</div>
+
+<div class="card">
+  <h2>NEXT / BACKLOG</h2>
+  <ol><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ol>
+</div>
+
+<div class="card">
+  <h2>DO NOT</h2>
+  <ol><li>Second Whisper</li><li>Parallel Chrome OCR</li><li>Store full video libraries</li><li>Clear-all YouTube History</li><li>Enable Cursor on-demand to keep Jarvis up</li></ol>
+</div>
+
+<p class="mono" id="src" style="margin-top:28px">If this page sits still, it will reload itself every 45s onto a new URL (GitHub cache bypass). Queue editor stays in Grok Build preview.</p>
+<script src="pulse.js?n=1789222662" defer></script>
 </body></html>
