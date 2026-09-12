@@ -44,8 +44,8 @@ body.editing #editTools { display:block; }
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">connecting</span></div>
-<p class="mono" id="ping">connecting · not the baked clock</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-13 02:03 HKT</span></div>
+<p class="mono" id="ping">2026-09-13 02:03 HKT</p>
 
 <div class="card">
   <div class="row"><h2>STT LEFT</h2><span class="mono" id="allEta">wGShVjHvECw</span></div>
@@ -184,12 +184,18 @@ function pull(){
     }catch(e){}
     if($("ping")) $("ping").textContent="live fetch failed";
   }
-  var url="https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t="+Date.now();
+  var url="status.json?t="+Date.now();
   timed(url).then(ok).then(function(d){
     try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
     paint(d);
     window.__hbIn=0;
-  }).catch(fail);
+  }).catch(function(){
+    timed("https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json?t="+Date.now()).then(ok).then(function(d){
+      try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
+      paint(d);
+      window.__hbIn=0;
+    }).catch(fail);
+  });
 }
 function move(li, dir){
   var ol=li.parentNode;
