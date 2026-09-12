@@ -1,18 +1,22 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T13:36:18Z",
-  "written_at_hkt": "2026-09-12 21:36 HKT",
+  "written_at_utc": "2026-09-12T13:41:22Z",
+  "written_at_hkt": "2026-09-12 21:41 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 1,
+    "whisper_n": 2,
     "backfill_n": 1,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
     "sample": [
       {
-        "pid": 146844,
+        "pid": 211297,
+        "cmd": "YMNM2bV4CE0"
+      },
+      {
+        "pid": 210746,
         "cmd": "backfill"
       },
       {
@@ -22,12 +26,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.4,
+    "mem_available_gi": 6.6,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.09,
+        "rss_gi": 3.04,
         "n": 33
       },
       {
@@ -56,6 +60,11 @@
         "n": 3
       },
       {
+        "comm": "yt-dlp",
+        "rss_gi": 0.1,
+        "n": 2
+      },
+      {
         "comm": "csnaps",
         "rss_gi": 0.08,
         "n": 1
@@ -69,11 +78,6 @@
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
-      },
-      {
-        "comm": "python3",
-        "rss_gi": 0.05,
-        "n": 3
       }
     ],
     "meminfo": {
@@ -82,23 +86,23 @@
       "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
-      "committed_gi": 5.6
+      "committed_gi": 5.7
     },
-    "load1": 1.21,
+    "load1": 0.31,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.5,
+    "age_hours": 0.6,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": null,
-    "last_id": "uWBiUw6eJpg",
+    "inflight": "YMNM2bV4CE0",
+    "last_id": "PL3Vpo96Las",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -121,10 +125,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-        "done": 654,
-        "left": 124,
+        "done": 775,
+        "left": 3,
         "total": 778,
-        "eta_min": 10
+        "eta_min": 1
       }
     }
   },
@@ -133,8 +137,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T13:40:00Z",
-    "next_cron_hkt": "2026-09-12 21:40 HKT",
+    "next_cron_utc": "2026-09-12T13:45:00Z",
+    "next_cron_hkt": "2026-09-12 21:45 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -155,53 +159,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:36:17Z captions already running"
+      "summary": "2026-09-12T13:41:22Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:36:17Z captions already running"
+      "summary": "2026-09-12T13:41:22Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:36:17Z captions already running"
+      "summary": "2026-09-12T13:41:22Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:36:17Z captions already running"
+      "summary": "2026-09-12T13:41:22Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:36:17Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:41:22Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:36:17Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:41:22Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:36:17Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:41:22Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:36:17Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:41:22Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T13:36:17Z STT already running — no second Whisper",
-    "2026-09-12T13:36:17Z STT already running — no second Whisper",
-    "2026-09-12T13:36:17Z STT already running — no second Whisper",
-    "backfill-captions.log: ERROR: [youtube] r4hyBuaADoE: Join this channel to get access to members-only content like this video, and other exclusive perks.",
+    "2026-09-12T13:41:22Z STT already running — no second Whisper",
+    "2026-09-12T13:41:22Z STT already running — no second Whisper",
+    "2026-09-12T13:41:22Z STT already running — no second Whisper",
+    "backfill-captions.log: ERROR: [youtube] bxqmJseTNZc: Join this channel to get access to members-only content like this video, and other exclusive perks.",
     "captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
-    "ERROR: [youtube] YpaKGzw6xDo: Join this channel to get access to members-only content like this video, and other exclusive perks.",
+    "ERROR: [youtube] 6A2BlMi_CGQ: Join this channel to get access to members-only content like this video, and other exclusive perks.",
     "captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
-    "ERROR: [youtube] r4hyBuaADoE: Join this channel to get access to members-only content like this video, and other exclusive perks."
+    "ERROR: [youtube] bxqmJseTNZc: Join this channel to get access to members-only content like this video, and other exclusive perks."
   ],
   "pm": {
     "token_free": true,
