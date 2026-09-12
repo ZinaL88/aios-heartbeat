@@ -3,327 +3,47 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-<meta http-equiv="Cache-Control" content="no-store"/>
+<meta http-equiv="refresh" content="180;url=v4.html?n=1789220968"/>
 <title>HEARTBEAT 4</title>
 <style>
-:root { --bg:#0f1210; --fg:#e8ebe6; --muted:#9aa39a; --live:#3dd68c; --bar:#2a2f2a; --accent:#c4f542; --warn:#e8b84a; }
+:root { --bg:#0f1210; --fg:#e8ebe6; --muted:#9aa39a; --live:#3dd68c; --bar:#2a2f2a; --accent:#c4f542; }
 * { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.4 -apple-system,system-ui,sans-serif; padding:16px; padding-top:max(16px,env(safe-area-inset-top)); }
-h1 { font-size:14px; letter-spacing:.08em; margin:0; }
+body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.4 -apple-system,system-ui,sans-serif; padding:20px; padding-top:max(20px,env(safe-area-inset-top)); }
+h1 { font-size:13px; letter-spacing:.12em; margin:0; font-weight:600; }
 .mono { font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--muted); }
 .row { display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-top:8px; }
-.bar { height:8px; background:var(--bar); border-radius:99px; overflow:hidden; margin-top:8px; }
+.bar { height:10px; background:var(--bar); border-radius:99px; overflow:hidden; margin-top:12px; }
 .bar>i { display:block; height:100%; background:var(--accent); }
-.live { color:var(--live); }
-.card { margin-top:20px; padding-top:16px; border-top:1px solid #222; }
-.dot { width:8px; height:8px; border-radius:99px; display:inline-block; background:#555; margin-right:6px; }
+.card { margin-top:28px; padding-top:20px; border-top:1px solid #222; }
+.dot { width:8px; height:8px; border-radius:99px; display:inline-block; background:#555; margin-right:8px; }
 .dot.on { background:var(--live); }
-.big { font-size:28px; font-variant-numeric:tabular-nums; font-weight:600; }
-.warn { color:var(--warn); }
+.big { font-size:34px; font-variant-numeric:tabular-nums; font-weight:700; letter-spacing:-.03em; }
+.label { font-size:12px; letter-spacing:.08em; color:var(--muted); font-weight:600; }
+.ch { font-size:17px; font-weight:500; margin:8px 0 0; }
 </style>
 </head>
 <body>
-<div class="row"><h1>HEARTBEAT 4</h1><span class="mono" id="age">2026-09-12 21:31 HKT</span></div>
-<p class="mono" id="ping">2026-09-12 21:31 HKT · baked (JS off still shows this)</p>
+<div class="row"><h1>HEARTBEAT 4</h1><span class="mono" id="age">2026-09-12 21:46 HKT</span></div>
+<p class="mono" id="ping">2026-09-12 21:46 HKT</p>
 <div class="card">
-  <div class="row"><span class="mono">ALL LEFT</span><span class="mono" id="allEta">~50h 36m</span></div>
-  <p class="big" id="allNum">1000 left</p>
-  <div class="bar"><i id="allBar" style="width:32%"></i></div>
+  <div class="row"><span class="label">ALL LEFT</span><span class="mono" id="allEta">~50h 19m</span></div>
+  <p class="big" id="allNum">787 left</p>
+  <div class="bar"><i id="allBar" style="width:24%"></i></div>
 </div>
 <div class="card">
-  <div class="row"><span class="mono"><span class="dot on" id="capDot"></span>CAPTIONS</span><span class="mono" id="capState">running</span></div>
-  <p id="capCh">mike1111</p>
-  <div class="row"><span class="big" id="capNum">532 / 778</span><span class="mono" id="capEta">246 left · ~20m</span></div>
-  <div class="bar"><i id="capBar" style="width:68%"></i></div>
+  <div class="row"><span class="label"><span class="dot on" id="capDot"></span>CAPTIONS</span><span class="mono" id="capState">running</span></div>
+  <p class="ch" id="capCh">清流君</p>
+  <div class="row"><span class="big" id="capNum">108 / 141</span><span class="mono" id="capEta">33 left · ~3m</span></div>
+  <div class="bar"><i id="capBar" style="width:76%"></i></div>
 </div>
 <div class="card">
-  <div class="row"><span class="mono"><span class="dot on" id="sttDot"></span>STT</span><span class="mono" id="sttState">running</span></div>
-  <p id="sttCh">一个狠人</p>
+  <div class="row"><span class="label"><span class="dot on" id="sttDot"></span>STT</span><span class="mono" id="sttState">running</span></div>
+  <p class="ch" id="sttCh">一个狠人</p>
   <div class="row"><span class="big" id="sttNum">754 pending</span><span class="mono" id="sttEta">~50h 16m</span></div>
   <div class="bar"><i id="sttBar" style="width:12%"></i></div>
 </div>
-<p class="mono" id="ram" style="margin-top:24px">RAM avail 6.5G / 15.6G · load 0.58</p>
-<p class="mono" id="src">v4 · numbers are in the HTML. If you see HEARTBEAT 4 and still dashes, this is the wrong file.</p>
-<script type="application/json" id="seed">{
-  "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T13:31:14Z",
-  "written_at_hkt": "2026-09-12 21:31 HKT",
-  "token_free": true,
-  "processes": {
-    "whisper": true,
-    "backfill": true,
-    "whisper_n": 1,
-    "backfill_n": 1,
-    "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-    "captions_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
-    "sample": [
-      {
-        "pid": 146844,
-        "cmd": "backfill"
-      },
-      {
-        "pid": 189912,
-        "cmd": "backfill"
-      }
-    ]
-  },
-  "resources": {
-    "mem_available_gi": 6.5,
-    "mem_total_gi": 15.6,
-    "mem_top": [
-      {
-        "comm": "node",
-        "rss_gi": 3.11,
-        "n": 33
-      },
-      {
-        "comm": "python",
-        "rss_gi": 0.43,
-        "n": 4
-      },
-      {
-        "comm": "xfwm4",
-        "rss_gi": 0.13,
-        "n": 3
-      },
-      {
-        "comm": "plank",
-        "rss_gi": 0.12,
-        "n": 3
-      },
-      {
-        "comm": "uv",
-        "rss_gi": 0.12,
-        "n": 4
-      },
-      {
-        "comm": "Xvfb",
-        "rss_gi": 0.11,
-        "n": 3
-      },
-      {
-        "comm": "csnaps",
-        "rss_gi": 0.08,
-        "n": 1
-      },
-      {
-        "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 35
-      },
-      {
-        "comm": "websockify",
-        "rss_gi": 0.07,
-        "n": 2
-      },
-      {
-        "comm": "python3",
-        "rss_gi": 0.05,
-        "n": 3
-      }
-    ],
-    "meminfo": {
-      "buffers_gi": 0.3,
-      "cached_gi": 2.8,
-      "anon_gi": 2.5,
-      "shmem_gi": 0.0,
-      "sreclaimable_gi": 0.5,
-      "committed_gi": 5.6
-    },
-    "load1": 0.58,
-    "disk_avail": "110G",
-    "tmp_du": "3.9M"
-  },
-  "cookies": {
-    "present": true,
-    "age_hours": 0.4,
-    "stale": false
-  },
-  "collector": {
-    "found": true,
-    "done": 49,
-    "total": 737,
-    "inflight": null,
-    "last_id": "inwh2fnEerM",
-    "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-    "inventory": {
-      "public_total": 737,
-      "public_done": 14,
-      "members_total": 0,
-      "members_done": 0,
-      "pending_stt_n": 754,
-      "captions_done": 737,
-      "captions_left": 0,
-      "source": "inventory",
-      "public_left": 723
-    },
-    "tracks": {
-      "stt": {
-        "running": true,
-        "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-        "pending": 754,
-        "eta_min": 3016
-      },
-      "captions": {
-        "running": true,
-        "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-        "done": 532,
-        "left": 246,
-        "total": 778,
-        "eta_min": 20
-      }
-    }
-  },
-  "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
-  "schedule": {
-    "next_cron_utc": "2026-09-12T13:35:00Z",
-    "next_cron_hkt": "2026-09-12 21:35 HKT",
-    "cron": "*/5",
-    "job_restart": "captions + Whisper running",
-    "job_restart_at_hkt": null,
-    "box_reboot": "not scheduled — we do not reboot the host",
-    "ram_gate_gi": 6.0
-  },
-  "changelog": [
-    {
-      "at_hkt": "2026-09-12 12:32 HKT",
-      "kind": "ops",
-      "summary": "Token-free reboost: if Whisper+backfill dead and RAM ≥ 6G, restart public #11"
-    },
-    {
-      "at_hkt": "2026-09-12 13:05 HKT",
-      "kind": "plan",
-      "summary": "Plan B: captions worker (1.2G) parallel to one Whisper (6G). Plan C stays backlog."
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z captions already running"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z captions already running"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z captions already running"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z captions already running"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
-    }
-  ],
-  "reboost_log": [
-    "2026-09-12T13:31:13Z STT already running — no second Whisper",
-    "2026-09-12T13:31:13Z STT already running — no second Whisper",
-    "2026-09-12T13:31:13Z STT already running — no second Whisper",
-    "backfill-captions.log: ERROR: [youtube] P9gmmPKV39A: Join this channel to get access to members-only content like this video, and other exclusive perks.",
-    "sleep 2.8s",
-    "[485\u003cpath> sz9OZ0dzzOw 粉絲十萬收入公開｜10萬訂閱 收入｜十萬訂閱收入｜怎麼做YouTube頻道",
-    "美國股票｜俄羅斯滅門  captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:\u003cpath>  for details on installing one",
-    "ERROR: [youtube] P9gmmPKV39A: Join this channel to get access to members-only content like this video, and other exclusive perks."
-  ],
-  "pm": {
-    "token_free": true,
-    "engine": "cron-rules",
-    "now": "plan-b: captions worker (cpu_light, RAM>=1.2G) parallel to one Whisper (ram_heavy, RAM>=6G)",
-    "backlog": [
-      "plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)"
-    ]
-  }
-}
-</script>
-<script>
-window.onerror=function(m){document.getElementById('src').textContent='js error: '+m;};
-function title(id){return {
-  UC_5lJHgnMP_lb_VpIiXV0hQ:"#11 课代表立正",
-  UCJAPsTtcJJWGk8e-_CJL8TQ:"一个狠人",
-  UCGWYKICLOE8Wxy7q3eYXmPA:"bestpartners",
-  UCPpdGTNbIKdiWgxCrbka4Zw:"huanyihe777",
-  UCAxQ8sjHgjXh26la7jEBw3w:"mike1111",
-  UCeTLfPD7thTMabtL7w87Aug:"清流君",
-  UCP76ZVB1x9udP2UFcQkSvMA:"大卢和小田",
-  UCROR3SZDrohSela1sjD1STg:"王理元",
-  UCaIIFXfdQUYf3OHPIFNDdrQ:"Alan"
-}[id]||id||"—";}
-function eta(min){if(min==null)return "—";if(min<=0)return "done";if(min<60)return "~"+min+"m";return "~"+Math.floor(min/60)+"h "+(min%60)+"m";}
-function paint(d,src){
-  var tr=(d.collector&&d.collector.tracks)||{};
-  var cap=tr.captions||{}, stt=tr.stt||{};
-  var capDone=cap.done||0, capLeft=cap.left||0, capTot=cap.total||(capDone+capLeft);
-  var sttPend=stt.pending||0;
-  document.getElementById("ping").textContent=(d.written_at_hkt||"—")+" · "+src;
-  document.getElementById("age").textContent=d.written_at_hkt||"—";
-  document.getElementById("allNum").textContent=((capLeft||0)+sttPend)+" left";
-  document.getElementById("allEta").textContent=eta((cap.eta_min||0)+(stt.eta_min||0));
-  document.getElementById("capDot").className="dot"+(cap.running?" on":"");
-  document.getElementById("capState").textContent=cap.running?"running":"idle";
-  document.getElementById("capCh").textContent=title(cap.channel_id);
-  document.getElementById("capNum").textContent=capTot?(capDone+" / "+capTot):"—";
-  document.getElementById("capEta").textContent=capLeft+" left · "+eta(cap.eta_min);
-  document.getElementById("capBar").style.width=(capTot?Math.min(99,capDone/capTot*100):0)+"%";
-  document.getElementById("sttDot").className="dot"+(stt.running?" on":"");
-  document.getElementById("sttState").textContent=stt.running?"running":"idle";
-  document.getElementById("sttCh").textContent=title(stt.channel_id);
-  document.getElementById("sttNum").textContent=sttPend+" pending";
-  document.getElementById("sttEta").textContent=eta(stt.eta_min);
-  var res=d.resources||{};
-  document.getElementById("ram").textContent="RAM avail "+(res.mem_available_gi??"—")+"G / "+(res.mem_total_gi??"—")+"G · load "+(res.load1??"—");
-  document.getElementById("src").textContent="v4 · "+src;
-}
-function get(url,ms){
-  var ctl=new AbortController();
-  var t=setTimeout(function(){ctl.abort();},ms);
-  return fetch(url,{cache:"no-store",mode:"cors",signal:ctl.signal}).then(function(r){
-    if(!r.ok) throw new Error(r.status);
-    return r.json();
-  }).finally(function(){clearTimeout(t);});
-}
-function refresh(){
-  var t=Date.now();
-  var list=[
-    "https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json?t="+t,
-    "https://zinal88.github.io/aios-heartbeat/status.json?t="+t
-  ];
-  var i=0;
-  function next(){
-    if(i>=list.length) { document.getElementById("src").textContent="v4 · live blocked, baked numbers stay"; return; }
-    get(list[i++],4000).then(function(d){paint(d,"live");}).catch(next);
-  }
-  next();
-}
-try {
-  var el=document.getElementById("seed");
-  if(el&&el.textContent) paint(JSON.parse(el.textContent),"baked");
-} catch(e) { document.getElementById("src").textContent="seed parse "+e; }
-refresh();
-setInterval(refresh,20000);
-</script>
+<p class="mono" id="ram" style="margin-top:28px">RAM avail 6.5G / 15.6G · load 0.74</p>
+<p class="mono" id="src">Auto-reload 3 min (no JS). Pull to refresh sooner.</p>
+<script src="pulse.js?n=1789220968" defer></script>
 </body>
 </html>
