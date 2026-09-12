@@ -37,7 +37,7 @@ function paint(d){
   if($("sttState")) $("sttState").textContent=stt.running?"running":"idle";
   if($("sttCh")) $("sttCh").textContent=title(stt.channel_id);
   if($("sttNum")) $("sttNum").textContent=sttPend+" pending";
-  if($("sttEta")) $("sttEta").textContent=stt.eta_hkt||eta(stt.eta_min);
+  if($("sttEta")) $("sttEta").textContent="ETA "+(stt.eta_hkt||"unknown"); if($("sttDeadline")) $("sttDeadline").textContent="ETA "+(stt.eta_hkt||"unknown"); if($("sttDisk")) $("sttDisk").textContent=(stt.transcripts_on_disk!=null?stt.transcripts_on_disk:"—")+" transcripts on disk"; if($("capNum") && d.collector && d.collector.tracks && d.collector.tracks.captions) $("capNum").textContent=String(d.collector.tracks.captions.left!=null?d.collector.tracks.captions.left:0);
   var res=d.resources||{};
   if($("ram")) $("ram").textContent="RAM "+(res.mem_available_gi!=null?res.mem_available_gi:"—")+"G / "+(res.mem_total_gi!=null?res.mem_total_gi:"—")+"G · load "+(res.load1!=null?res.load1:"—");
   if($("src")) $("src").textContent="live GitHub API · no page reload · cache bypassed";
@@ -164,12 +164,15 @@ function bootTabs(){
     });
   });
 }
+function toggleEdit(){
+  document.body.classList.toggle("editing");
+  var ed=$("editBtn");
+  if(ed) ed.textContent=document.body.classList.contains("editing")?"Done":"Edit";
+}
+window.toggleEdit=toggleEdit;
 function bootEdit(){
   var ed=$("editBtn");
-  if(ed) ed.onclick=function(){
-    document.body.classList.toggle("editing");
-    ed.textContent=document.body.classList.contains("editing")?"Done":"Edit";
-  };
+  if(ed) ed.onclick=toggleEdit;
   var sv=$("saveBtn"); if(sv) sv.onclick=save;
   var ad=$("addCh"); if(ad) ad.onclick=addCh;
   var inp=$("patIn");
