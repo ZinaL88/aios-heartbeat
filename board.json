@@ -1,0 +1,733 @@
+{
+  "written_at_hkt": "2026-09-12 22:16 HKT",
+  "queue": [
+    {
+      "name": "#11 课代表立正",
+      "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
+      "skip": true,
+      "reason": "public captions exhausted (834 done). STT leftover only if RAM>=6G later."
+    },
+    {
+      "name": "一个狠人",
+      "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+      "skip": false,
+      "reason": "members done · public pending — NOW"
+    },
+    {
+      "name": "bestpartners",
+      "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
+      "skip": false,
+      "reason": ""
+    },
+    {
+      "name": "huanyihe777",
+      "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "skip": false,
+      "reason": ""
+    },
+    {
+      "name": "mike1111",
+      "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
+      "skip": false,
+      "reason": ""
+    },
+    {
+      "name": "清流君",
+      "channel_id": "UCeTLfPD7thTMabtL7w87Aug",
+      "skip": false,
+      "reason": ""
+    },
+    {
+      "name": "大卢和小田",
+      "channel_id": "UCP76ZVB1x9udP2UFcQkSvMA",
+      "skip": false,
+      "reason": ""
+    },
+    {
+      "name": "王理元",
+      "channel_id": "UCROR3SZDrohSela1sjD1STg",
+      "skip": false,
+      "reason": ""
+    },
+    {
+      "name": "Alan",
+      "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "skip": false,
+      "reason": ""
+    }
+  ],
+  "tasks": [
+    {
+      "tier": "P0",
+      "title": "Thinking",
+      "videos": 2603,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLLanlFkLFxt_QgLKujKcO_I"
+    },
+    {
+      "tier": "P0",
+      "title": "Job hunting",
+      "videos": 283,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
+    },
+    {
+      "tier": "P0",
+      "title": "Learning how to learn",
+      "videos": 863,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN"
+    },
+    {
+      "tier": "P0",
+      "title": "理財",
+      "videos": 2997,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
+    },
+    {
+      "tier": "P0",
+      "title": "Latest Routine",
+      "videos": 98,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLJ7n9jWvfSInh4Xi_QwyWgf"
+    },
+    {
+      "tier": "P0",
+      "title": "理財 Strategy",
+      "videos": 632,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLK-5XxqWjpetKxUCiLOdhDE"
+    },
+    {
+      "tier": "P0",
+      "title": "How To Systemize Your Business So It Runs Without You",
+      "videos": 14,
+      "skip": false,
+      "playlist_id": "PLEmTTOfet46PtZClnUPi51RJWhJ4CPo4J"
+    },
+    {
+      "tier": "P0",
+      "title": "Trend",
+      "videos": 644,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLJwbkDuCRY8lypvThTxp2Vq"
+    },
+    {
+      "tier": "P0",
+      "title": "Innovation",
+      "videos": 178,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLLAQ9txP7pKAqZIO1LJIjBt"
+    },
+    {
+      "tier": "P0",
+      "title": "The Agent Factory",
+      "videos": 30,
+      "skip": false,
+      "playlist_id": "PLIivdWyY5sqLXR1eSkiM5bE6pFlXC-OSs"
+    },
+    {
+      "tier": "P0",
+      "title": "AI",
+      "videos": 25,
+      "skip": false,
+      "playlist_id": "PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ"
+    },
+    {
+      "tier": "P1",
+      "title": "⚡️ Framework Thinking & Mental Models ⚡️",
+      "videos": 140,
+      "skip": false,
+      "playlist_id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU"
+    },
+    {
+      "tier": "P1",
+      "title": "The Startup Ideas Podcast Episodes",
+      "videos": 412,
+      "skip": false,
+      "playlist_id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9"
+    },
+    {
+      "tier": "P2",
+      "title": "下班經濟學",
+      "videos": 775,
+      "skip": false,
+      "playlist_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-"
+    },
+    {
+      "tier": "P2",
+      "title": "尼可拉斯楊Live精發財系列大全集",
+      "videos": 67,
+      "skip": false,
+      "playlist_id": "PLEMWyuM4E6qQvLqMJ-YdC0rBztBYpZaGv"
+    },
+    {
+      "tier": "P3",
+      "title": "Productivity Hacks",
+      "videos": 21,
+      "skip": false,
+      "playlist_id": "PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX"
+    },
+    {
+      "tier": "P3",
+      "title": "職場事業心理學",
+      "videos": 46,
+      "skip": false,
+      "playlist_id": "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
+    },
+    {
+      "tier": "P3",
+      "title": "個人成長心理學",
+      "videos": 198,
+      "skip": false,
+      "playlist_id": "PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr"
+    },
+    {
+      "tier": "P4",
+      "title": "Podcast《不增不減兩分滿》",
+      "videos": 60,
+      "skip": false,
+      "playlist_id": "PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO"
+    },
+    {
+      "tier": "P4",
+      "title": "十分鐘心理學",
+      "videos": 144,
+      "skip": false,
+      "playlist_id": "PL928yt6thY41xuYb7YbADDz1cs5bzb3qS"
+    },
+    {
+      "tier": "P4",
+      "title": "斷捨離 簡單匠 Podcast",
+      "videos": 483,
+      "skip": false,
+      "playlist_id": "PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n"
+    },
+    {
+      "tier": "P4",
+      "title": "Full Podcast Episodes",
+      "videos": 260,
+      "skip": false,
+      "playlist_id": "PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe"
+    },
+    {
+      "tier": "P0",
+      "title": "Build your own LLM Workshop",
+      "videos": 26,
+      "skip": false,
+      "playlist_id": "PLweJS2YZCfkeXXdfCKGaxAhm2w8p0u1z6"
+    },
+    {
+      "tier": "P0",
+      "title": "郭宇AI實踐分享 · 十講",
+      "videos": 9,
+      "skip": false,
+      "playlist_id": "PL-36nHv8kR09YeG27lncUxZBpcDla9dOj"
+    },
+    {
+      "tier": "P0",
+      "title": "Stanford CS221 AI",
+      "videos": 60,
+      "skip": false,
+      "playlist_id": "PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2"
+    },
+    {
+      "tier": "P0",
+      "title": "AI Fundamentals",
+      "videos": 13,
+      "skip": false,
+      "playlist_id": "PLVD3APpfd1ts0x9qpHagm5Nyd2GKxwrly"
+    },
+    {
+      "tier": "P1",
+      "title": "【機器學習2021】(中文版)",
+      "videos": 40,
+      "skip": false,
+      "playlist_id": "PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J"
+    },
+    {
+      "tier": "P1",
+      "title": "Automate the Boring Stuff with Python",
+      "videos": 15,
+      "skip": false,
+      "playlist_id": "PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW"
+    },
+    {
+      "tier": "P1",
+      "title": "MIT RES.6-012 Intro to Probability",
+      "videos": 266,
+      "skip": false,
+      "playlist_id": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6"
+    },
+    {
+      "tier": "P1",
+      "title": "MIT 18.650 Statistics",
+      "videos": 22,
+      "skip": false,
+      "playlist_id": "PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0"
+    },
+    {
+      "tier": "P1",
+      "title": "6.041 Probabilistic Systems",
+      "videos": 25,
+      "skip": false,
+      "playlist_id": "PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8"
+    },
+    {
+      "tier": "P2",
+      "title": "Python Programming for Finance",
+      "videos": 28,
+      "skip": false,
+      "playlist_id": "PLQVvvaa0QuDcOdF96TBtRtuQksErCEBYZ"
+    },
+    {
+      "tier": "P2",
+      "title": "MIT 15.S12 Blockchain and Money",
+      "videos": 23,
+      "skip": false,
+      "playlist_id": "PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn"
+    },
+    {
+      "tier": "P2",
+      "title": "MIT 18.642 Math for Finance",
+      "videos": 22,
+      "skip": false,
+      "playlist_id": "PLUl4u3cNGP601Q2jo-J_3raNCMMs6Jves"
+    },
+    {
+      "tier": "P2",
+      "title": "Econ 2450A Public Economics | Raj Chetty",
+      "videos": 28,
+      "skip": false,
+      "playlist_id": "PL2SOU6wwxB0v3c46v2ptuDKIHmXHRAmeU"
+    },
+    {
+      "tier": "P2",
+      "title": "数据科学读书会",
+      "videos": 18,
+      "skip": false,
+      "playlist_id": "PL39P3XK_jveHWsxFO2JZnMBfeT3wZtKHs"
+    },
+    {
+      "tier": "P3",
+      "title": "Algorithms for Big Data (COMPSCI 229r)",
+      "videos": 25,
+      "skip": false,
+      "playlist_id": "PL2SOU6wwxB0v1kQTpqpuuDKIHmXHRAmeU"
+    },
+    {
+      "tier": "P3",
+      "title": "Advanced Algorithms (COMPSCI 224)",
+      "videos": 25,
+      "skip": false,
+      "playlist_id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf"
+    },
+    {
+      "tier": "P3",
+      "title": "MIT 14.12 Game Theory, Fall 2025",
+      "videos": 25,
+      "skip": false,
+      "playlist_id": "PLUl4u3cNGP63quuKvMHCt3cmTmt0O2qpv"
+    },
+    {
+      "tier": "P4",
+      "title": "Business Soft Skills",
+      "videos": 18,
+      "skip": false,
+      "playlist_id": "PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
+    },
+    {
+      "tier": "P4",
+      "title": "Computational Journalism (JMSC 6041)",
+      "videos": 8,
+      "skip": false,
+      "playlist_id": "PL2AoD3uiT4PftdqMHCt3cmTmt0O2qpv"
+    },
+    {
+      "tier": "P4",
+      "title": "常用英语口语训练",
+      "videos": 30,
+      "skip": false,
+      "playlist_id": "PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
+    },
+    {
+      "tier": "P5",
+      "title": "【入門級命理課】八字命盤看——天干五合",
+      "videos": 5,
+      "skip": false,
+      "playlist_id": "PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
+    },
+    {
+      "tier": "P5",
+      "title": "【入門級命理課】命盤中的十二地支",
+      "videos": 13,
+      "skip": false,
+      "playlist_id": "PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+    },
+    {
+      "tier": "P5",
+      "title": "【入門級命理課】命盤中的十神",
+      "videos": 13,
+      "skip": false,
+      "playlist_id": "PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P"
+    },
+    {
+      "tier": "P1",
+      "title": "CS329A Self-Improving AI Agents",
+      "videos": 9,
+      "skip": false,
+      "playlist_id": "PLangBM27OtEA"
+    },
+    {
+      "tier": "P1",
+      "title": "LLM / AI",
+      "videos": 92,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO"
+    },
+    {
+      "tier": "P1",
+      "title": "AI Product Management",
+      "videos": 5,
+      "skip": false,
+      "playlist_id": "PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5"
+    },
+    {
+      "tier": "P1",
+      "title": "Machine Learning & Data Science",
+      "videos": 12,
+      "skip": false,
+      "playlist_id": "PLbdTl8vSSyUDAvDPc1r3j9itciu_kb5vG"
+    },
+    {
+      "tier": "P1",
+      "title": "Kaggle CareerCon 2019 | Full Sessions",
+      "videos": 15,
+      "skip": false,
+      "playlist_id": "PLqFaTIg4myu-npFrYu6cO7h7AI6bkcOlL"
+    },
+    {
+      "tier": "P1",
+      "title": "Geospatial Analysis using Real Python",
+      "videos": 11,
+      "skip": false,
+      "playlist_id": "PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK"
+    },
+    {
+      "tier": "P1",
+      "title": "Large Language Models (LLMs)",
+      "videos": 26,
+      "skip": false,
+      "playlist_id": "PLoROMvodv4rObv1FMizXqumgVVdzX4_05"
+    },
+    {
+      "tier": "P1",
+      "title": "LLM",
+      "videos": 14,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLK6ZZxE_Gjjfch0M6z-LFwU"
+    },
+    {
+      "tier": "P1",
+      "title": "LLM",
+      "videos": 2,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLJPkE01mgnsv04XlWocs3w8"
+    },
+    {
+      "tier": "P1",
+      "title": "MCP",
+      "videos": 19,
+      "skip": false,
+      "playlist_id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap"
+    },
+    {
+      "tier": "P1",
+      "title": "Claude ChatGPT",
+      "videos": 424,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLLJnBo3DlKc5gvY0KscUIM8"
+    },
+    {
+      "tier": "P1",
+      "title": "Stanford CS230: Deep Learning I Autumn 2025",
+      "videos": 9,
+      "skip": false,
+      "playlist_id": "PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X"
+    },
+    {
+      "tier": "P1",
+      "title": "The Age of A.I.",
+      "videos": 9,
+      "skip": false,
+      "playlist_id": "PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc"
+    },
+    {
+      "tier": "P1",
+      "title": "Algorithms",
+      "videos": 64,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O"
+    },
+    {
+      "tier": "P1",
+      "title": "Automation",
+      "videos": 33,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLJVJ-P_QXfbSqYdM3yvbHJf"
+    },
+    {
+      "tier": "P1",
+      "title": "Blockchain",
+      "videos": 154,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLKh4dlVL_ED5qhKAoInzPcl"
+    },
+    {
+      "tier": "P1",
+      "title": "Bots & Exchanges",
+      "videos": 43,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLLofk4EYC4CWQ2hN1o0BUHN"
+    },
+    {
+      "tier": "P1",
+      "title": "Crypto",
+      "videos": 411,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm"
+    },
+    {
+      "tier": "P1",
+      "title": "Engineering",
+      "videos": 7,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO"
+    },
+    {
+      "tier": "P1",
+      "title": "MIT 14.129 Blockchain and the Design of Financial Systems, Spring 2025",
+      "videos": 11,
+      "skip": false,
+      "playlist_id": "PLUl4u3cNGP60gb6cVqrZQXQ217r0PwZJg"
+    },
+    {
+      "tier": "P1",
+      "title": "Personal Finance",
+      "videos": 13,
+      "skip": false,
+      "playlist_id": "PLEAWiihj06OL-zBeazBSgFk-eJYj8xTkF"
+    },
+    {
+      "tier": "P1",
+      "title": "Stock Trading Principles",
+      "videos": 22,
+      "skip": false,
+      "playlist_id": "PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm"
+    },
+    {
+      "tier": "P1",
+      "title": "〈宏觀散打〉謎米香港財經專欄",
+      "videos": 404,
+      "skip": false,
+      "playlist_id": "PLPY0_ooDN1dvplLeprgnu0x2ap-Bvd02f"
+    },
+    {
+      "tier": "P1",
+      "title": "指數化投資",
+      "videos": 39,
+      "skip": false,
+      "playlist_id": "PLPpynb6Pt22vOGp1Qnavnw8XEWIy7WD-O"
+    },
+    {
+      "tier": "P1",
+      "title": "章濤投資日記",
+      "videos": 9,
+      "skip": false,
+      "playlist_id": "PLydduVo-Eiq-qhq-NrQbBejkT05SQtEyM"
+    },
+    {
+      "tier": "P1",
+      "title": "AA203 Optimal and Learning-Based Control | Spring 2026",
+      "videos": 19,
+      "skip": false,
+      "playlist_id": "PLa9dmHsLK9dg"
+    },
+    {
+      "tier": "P1",
+      "title": "Product Management",
+      "videos": 918,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
+    },
+    {
+      "tier": "P1",
+      "title": "Statistics",
+      "videos": 116,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLI-VJHIosfjDSggCEhfZqgx"
+    },
+    {
+      "tier": "P1",
+      "title": "Statistics",
+      "videos": 67,
+      "skip": false,
+      "playlist_id": "PL1328115D3D8A2566"
+    },
+    {
+      "tier": "P1",
+      "title": "Biz ideas",
+      "videos": 433,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLKeRu6HPYPQJd_XX5g3ukcj"
+    },
+    {
+      "tier": "P1",
+      "title": "Data Science",
+      "videos": 1429,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
+    },
+    {
+      "tier": "P1",
+      "title": "Economics",
+      "videos": 36,
+      "skip": false,
+      "playlist_id": "PL8dPuuaLjXtPNZwz5_o_5uirJ8gQXnhEO"
+    },
+    {
+      "tier": "P1",
+      "title": "Economics Amplified",
+      "videos": 16,
+      "skip": false,
+      "playlist_id": "PLuGHfVNSITJdM03XJbTbzmojF6_3w1VNC"
+    },
+    {
+      "tier": "P1",
+      "title": "How to Delegate Like a Millionaire Entrepreneur",
+      "videos": 20,
+      "skip": false,
+      "playlist_id": "PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp"
+    },
+    {
+      "tier": "P1",
+      "title": "How to Start a Startup",
+      "videos": 21,
+      "skip": false,
+      "playlist_id": "PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1"
+    },
+    {
+      "tier": "P1",
+      "title": "Millionaire Productivity Habits",
+      "videos": 29,
+      "skip": false,
+      "playlist_id": "PLEmTTOfet46OmSXIUKmbHe1acy6u-fIVX"
+    },
+    {
+      "tier": "P1",
+      "title": "Smart Note Taking (Obsidian & Zettelkasten)",
+      "videos": 28,
+      "skip": false,
+      "playlist_id": "PLwLhCsXo_YKMfYMd8EVmL2g353cwAjSxl"
+    },
+    {
+      "tier": "P1",
+      "title": "Business idea",
+      "videos": 1,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLJs9r0P3yma2VPAg7neSqh_"
+    },
+    {
+      "tier": "P2",
+      "title": "Careers",
+      "videos": 285,
+      "skip": false,
+      "playlist_id": "PL30C54D951E8E1688"
+    },
+    {
+      "tier": "P2",
+      "title": "Debate, Argument, Reasoning",
+      "videos": 248,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLJiBph9cZ8hcw9NWP-VuJmB"
+    },
+    {
+      "tier": "P2",
+      "title": "Emerging Leaders Initiative: Leadership Lab",
+      "videos": 34,
+      "skip": false,
+      "playlist_id": "PLuGHfVNSITJf8-v_CISdmnH46QrygUcdK"
+    },
+    {
+      "tier": "P2",
+      "title": "Entrepreneur",
+      "videos": 3464,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
+    },
+    {
+      "tier": "P2",
+      "title": "Productivity",
+      "videos": 1498,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3"
+    },
+    {
+      "tier": "P2",
+      "title": "English for Work",
+      "videos": 74,
+      "skip": false,
+      "playlist_id": "PLFpsDakL_p53mcCG5SbNo30HQJo2PKd39"
+    },
+    {
+      "tier": "P3",
+      "title": "Career growth",
+      "videos": 898,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql"
+    },
+    {
+      "tier": "P3",
+      "title": "Charisma",
+      "videos": 1024,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLJpG7ELhNF2L7PC_BM32eL_"
+    },
+    {
+      "tier": "P3",
+      "title": "Emotional Intelligence",
+      "videos": 2314,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV"
+    },
+    {
+      "tier": "P3",
+      "title": "Interpersonal",
+      "videos": 1248,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e"
+    },
+    {
+      "tier": "P3",
+      "title": "Presentation, Public Speaking, Story Telling",
+      "videos": 1218,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE"
+    },
+    {
+      "tier": "P3",
+      "title": "English",
+      "videos": 1323,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2"
+    },
+    {
+      "tier": "P3",
+      "title": "八字教学从基础入门到精通",
+      "videos": 57,
+      "skip": false,
+      "playlist_id": "PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd"
+    }
+  ]
+}
