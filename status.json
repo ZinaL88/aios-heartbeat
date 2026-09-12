@@ -1,16 +1,20 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T13:00:47Z",
-  "written_at_hkt": "2026-09-12 21:00 HKT",
+  "written_at_utc": "2026-09-12T13:05:51Z",
+  "written_at_hkt": "2026-09-12 21:05 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 1,
+    "whisper_n": 2,
     "backfill_n": 1,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "UCPpdGTNbIKdiWgxCrbka4Zw",
     "sample": [
+      {
+        "pid": 187874,
+        "cmd": "_tpvhmZvR0A"
+      },
       {
         "pid": 146844,
         "cmd": "backfill"
@@ -27,7 +31,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.16,
+        "rss_gi": 3.12,
         "n": 33
       },
       {
@@ -72,8 +76,8 @@
       },
       {
         "comm": "python3",
-        "rss_gi": 0.05,
-        "n": 3
+        "rss_gi": 0.06,
+        "n": 4
       }
     ],
     "meminfo": {
@@ -84,9 +88,9 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 5.6
     },
-    "load1": 0.96,
+    "load1": 0.33,
     "disk_avail": "110G",
-    "tmp_du": "3.8M"
+    "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
@@ -97,8 +101,8 @@
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": null,
-    "last_id": "mbboVQ8NoWc",
+    "inflight": "_tpvhmZvR0A",
+    "last_id": "oOJQ0b62oEk",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -121,10 +125,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-        "done": 72,
-        "left": 156,
+        "done": 190,
+        "left": 38,
         "total": 228,
-        "eta_min": 13
+        "eta_min": 3
       }
     }
   },
@@ -133,8 +137,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T13:05:00Z",
-    "next_cron_hkt": "2026-09-12 21:05 HKT",
+    "next_cron_utc": "2026-09-12T13:10:00Z",
+    "next_cron_hkt": "2026-09-12 21:10 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -155,53 +159,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:00:47Z captions already running"
+      "summary": "2026-09-12T13:05:51Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:00:47Z captions already running"
+      "summary": "2026-09-12T13:05:51Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:00:47Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:05:51Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:00:47Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:05:51Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:00:47Z captions already running"
+      "summary": "2026-09-12T13:05:51Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:00:47Z captions already running"
+      "summary": "2026-09-12T13:05:51Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:00:47Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:05:51Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:00:47Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:05:51Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T13:00:47Z captions already running",
-    "2026-09-12T13:00:47Z STT already running — no second Whisper",
-    "2026-09-12T13:00:47Z STT already running — no second Whisper",
-    "backfill-captions.log: Refusing large unattended scrape without --inventory and modest --limit. Pass an inventory JSON and keep --limit small per night.",
-    "sleep 4.8s",
-    "[1299<path> K5itlOKMiYc 【ChatGPT】昨晚ChatGPT全球范围大崩溃 | 宕机超12小时 | OpenAI修复时间长达5个小时 | 连DALL-E也一起遭殃 | 打工人已经不能没有ChatGPT",
-    "sleep 3.9sNo --inventory; listing via yt-dlp (public videos tab; members need inventory).",
-    "Refusing large unattended scrape without --inventory and modest --limit. Pass an inventory JSON and keep --limit small per night."
+    "2026-09-12T13:05:51Z STT already running — no second Whisper",
+    "2026-09-12T13:05:51Z STT already running — no second Whisper",
+    "2026-09-12T13:05:51Z STT already running — no second Whisper",
+    "GzJAM: This video is available to this channel's members on level: newtype (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "captions miss (no cookies): s may be missing. See  https:<path>  for details on installing one",
+    "0E-Gk: This video is available to this channel's members on level: newtype (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "captions miss (no cookies): s may be missing. See  https:<path>  for details on installing one",
+    "GzJAM: This video is available to this channel's members on level: newtype (or any higher level). Join this channel to get access to members-only content and other exclusive perks."
   ],
   "pm": {
     "token_free": true,
