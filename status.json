@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T01:15:02Z",
-  "written_at_hkt": "2026-09-12 09:15 HKT",
+  "written_at_utc": "2026-09-12T01:20:01Z",
+  "written_at_hkt": "2026-09-12 09:20 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
