@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-13 00:37 HKT",
+  "written_at_hkt": "2026-09-13 00:42 HKT",
   "queue": [
     {
       "name": "#11 课代表立正",
@@ -11,19 +11,19 @@
       "name": "一个狠人",
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "skip": false,
-      "reason": "public captions exhausted · STT leftover only — do not start captions here"
+      "reason": "captions done · STT still running"
     },
     {
       "name": "bestpartners",
       "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
-      "skip": false,
-      "reason": "NEXT captions (jobs=2) while 狠人 STT runs"
+      "skip": true,
+      "reason": "captions done — Complete tab, not queued"
     },
     {
       "name": "huanyihe777",
       "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "skip": false,
-      "reason": ""
+      "reason": "NEXT captions"
     },
     {
       "name": "mike1111",
