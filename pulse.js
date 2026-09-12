@@ -45,15 +45,19 @@ function timed(url, headers){
   var t=setTimeout(function(){c.abort();},4000);
   return fetch(url,{cache:"no-store",headers:headers||{},signal:c.signal}).finally(function(){clearTimeout(t);});
 }
+function slot(backMin){
+  var t=Date.now()+8*3600*1000-(backMin||0)*60000;
+  var d=new Date(t);
+  var m=d.getUTCMinutes(); m=m-m%5;
+  function p(n){return (n<10?"0":"")+n;}
+  return "live/"+d.getUTCFullYear()+p(d.getUTCMonth()+1)+p(d.getUTCDate())+p(d.getUTCHours())+p(m)+".json";
+}
 function pull(){
-  timed("status.json?t="+Date.now()).then(function(r){
-    if(!r.ok) throw r.status;
-    return r.json();
-  }).then(paint).catch(function(){
-    gh("/repos/ZinaL88/aios-heartbeat/contents/status.json",{raw:true}).then(function(r){
-      if(!r.ok) throw r.status;
-      return r.json();
-    }).then(paint).catch(function(){});
+  function ok(r){ if(!r.ok) throw r.status; return r.json(); }
+  timed(slot(0)).then(ok).then(paint).catch(function(){
+    timed(slot(5)).then(ok).then(paint).catch(function(){
+      timed("status.json?t="+Date.now()).then(ok).then(paint).catch(function(){});
+    });
   });
 }
 function move(li, dir){
@@ -107,20 +111,6 @@ function save(){
   });
 }
 function bootEdit(){
-  document.querySelectorAll("#channels>li").forEach(function(li){
-    if(li.querySelector(".mv")) return;
-    var wrap=document.createElement("span");
-    wrap.className="mv";
-    wrap.innerHTML='<button type="button" class="up" aria-label="up">▲</button><button type="button" class="dn" aria-label="down">▼</button>';
-    wrap.querySelector(".up").onclick=function(){move(li,-1);};
-    wrap.querySelector(".dn").onclick=function(){move(li,1);};
-    li.insertBefore(wrap, li.firstChild);
-  });
-  var tog=$("editBtn");
-  if(tog) tog.onclick=function(){
-    document.body.classList.toggle("editing");
-    tog.textContent=document.body.classList.contains("editing")?"Done":"Edit queue";
-  };
   var sv=$("saveBtn"); if(sv) sv.onclick=save;
   var inp=$("patIn");
   if(inp){
