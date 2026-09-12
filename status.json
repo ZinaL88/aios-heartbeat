@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T12:51:27Z",
-  "written_at_hkt": "2026-09-12 20:51 HKT",
+  "written_at_utc": "2026-09-12T12:55:51Z",
+  "written_at_hkt": "2026-09-12 20:55 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -22,12 +22,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.4,
+    "mem_available_gi": 6.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.04,
+        "rss_gi": 3.05,
         "n": 33
       },
       {
@@ -71,26 +71,26 @@
         "n": 2
       },
       {
-        "comm": "python3",
-        "rss_gi": 0.05,
-        "n": 3
+        "comm": "yt-dlp",
+        "rss_gi": 0.06,
+        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
       "cached_gi": 3.0,
-      "anon_gi": 2.4,
+      "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 5.6
     },
-    "load1": 0.6,
+    "load1": 1.4,
     "disk_avail": "110G",
     "tmp_du": "3.8M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 1.0,
+    "age_hours": 1.1,
     "stale": false
   },
   "collector": {
@@ -98,7 +98,7 @@
     "done": 49,
     "total": 737,
     "inflight": null,
-    "last_id": "LN_DuU3OsTY",
+    "last_id": "w5qLnYic0_k",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -121,10 +121,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
-        "done": 1188,
-        "left": 127,
+        "done": 1279,
+        "left": 36,
         "total": 1315,
-        "eta_min": 11
+        "eta_min": 3
       }
     }
   },
@@ -133,8 +133,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T12:55:00Z",
-    "next_cron_hkt": "2026-09-12 20:55 HKT",
+    "next_cron_utc": "2026-09-12T13:00:00Z",
+    "next_cron_hkt": "2026-09-12 21:00 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -155,53 +155,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:51:27Z captions already running"
+      "summary": "2026-09-12T12:55:51Z queue pick captions=UCGWYKICLOE8Wxy7q3eYXmPA stt=UCJAPsTtcJJWGk8e-_CJL8TQ"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:51:27Z captions already running"
+      "summary": "2026-09-12T12:55:51Z queue pick captions=UCGWYKICLOE8Wxy7q3eYXmPA stt=UCJAPsTtcJJWGk8e-_CJL8TQ"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:51:27Z captions already running"
+      "summary": "2026-09-12T12:55:51Z captions already running on UCGWYKICLOE8Wxy7q3eYXmPA"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:51:27Z captions already running"
+      "summary": "2026-09-12T12:55:51Z captions already running on UCGWYKICLOE8Wxy7q3eYXmPA"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:51:27Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:55:51Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:51:27Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:55:51Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:51:27Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:55:51Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:51:27Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:55:51Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T12:51:27Z STT already running — no second Whisper",
-    "2026-09-12T12:51:27Z STT already running — no second Whisper",
-    "2026-09-12T12:51:27Z STT already running — no second Whisper",
-    "backfill-captions.log: [1164<path> dIyQl99oxlg [AI] A Comprehensive Guide to How LLMs Work in Plain English | LLM | Word Embeddings | Transforme...",
-    "sleep 4.0s",
-    "[1163<path> uumQeZYo6Z0 【AIGC】Stability.AI发布代码生成模型StableCode | 30亿参数 | 16000上下文长度 | 三种模型 | StarCoder | HuggingFace开源",
-    "sleep 2.1s",
-    "[1164<path> dIyQl99oxlg [AI] A Comprehensive Guide to How LLMs Work in Plain English | LLM | Word Embeddings | Transforme..."
+    "2026-09-12T12:55:51Z captions already running",
+    "2026-09-12T12:55:51Z STT already running — no second Whisper",
+    "2026-09-12T12:55:51Z STT already running — no second Whisper",
+    "backfill-captions.log: [1257<path> H48R3xq7IRI 【独家】5月7日 | 陆奇 | 《新范式 新时代 新机会》完整精修字幕版 | 奇绩创坛北京分享会 | 最新前沿技术趋势 | 深入分析OpenAI爆发成因 | 全面讲解大模型时代诞生的新场景和新机遇",
+    "sleep 4.3s",
+    "[1256<path> Q_j1dOzxKdY 【微软】Microsoft 365 Copilot新增8大功能 | 语义索引 | 白板Copilot | PPT DALL-E | OneNote Loop Viva Copilot",
+    "sleep 4.3s",
+    "[1257<path> H48R3xq7IRI 【独家】5月7日 | 陆奇 | 《新范式 新时代 新机会》完整精修字幕版 | 奇绩创坛北京分享会 | 最新前沿技术趋势 | 深入分析OpenAI爆发成因 | 全面讲解大模型时代诞生的新场景和新机遇"
   ],
   "pm": {
     "token_free": true,
