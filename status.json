@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T14:11:52Z",
-  "written_at_hkt": "2026-09-12 22:11 HKT",
+  "written_at_utc": "2026-09-12T14:16:57Z",
+  "written_at_hkt": "2026-09-12 22:16 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -12,8 +12,8 @@
     "captions_channel": "UCaIIFXfdQUYf3OHPIFNDdrQ",
     "sample": [
       {
-        "pid": 230645,
-        "cmd": "lRzszEoN9g8"
+        "pid": 234028,
+        "cmd": "mOIYwMq0PZg"
       },
       {
         "pid": 210746,
@@ -40,6 +40,11 @@
         "n": 4
       },
       {
+        "comm": "yt-dlp",
+        "rss_gi": 0.15,
+        "n": 3
+      },
+      {
         "comm": "xfwm4",
         "rss_gi": 0.13,
         "n": 3
@@ -48,11 +53,6 @@
         "comm": "plank",
         "rss_gi": 0.12,
         "n": 3
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.12,
-        "n": 2
       },
       {
         "comm": "uv",
@@ -82,27 +82,27 @@
     ],
     "meminfo": {
       "buffers_gi": 0.3,
-      "cached_gi": 2.9,
+      "cached_gi": 2.8,
       "anon_gi": 2.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
-      "committed_gi": 5.8
+      "committed_gi": 5.7
     },
-    "load1": 0.7,
+    "load1": 0.41,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.2,
+    "age_hours": 0.3,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "lRzszEoN9g8",
-    "last_id": "ewBgVfsVhF4",
+    "inflight": "mOIYwMq0PZg",
+    "last_id": "WUaXamDfWCA",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -125,10 +125,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-        "done": 263,
-        "left": 327,
+        "done": 382,
+        "left": 208,
         "total": 590,
-        "eta_min": 27
+        "eta_min": 17
       }
     }
   },
@@ -137,8 +137,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T14:15:00Z",
-    "next_cron_hkt": "2026-09-12 22:15 HKT",
+    "next_cron_utc": "2026-09-12T14:20:00Z",
+    "next_cron_hkt": "2026-09-12 22:20 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -159,53 +159,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:11:52Z captions already running"
+      "summary": "2026-09-12T14:16:56Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:11:52Z captions already running"
+      "summary": "2026-09-12T14:16:56Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:11:52Z captions already running"
+      "summary": "2026-09-12T14:16:56Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:11:52Z captions already running"
+      "summary": "2026-09-12T14:16:56Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:11:52Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:16:56Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:11:52Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:16:56Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:11:52Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:16:56Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:11:52Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:16:56Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T14:11:52Z STT already running — no second Whisper",
-    "2026-09-12T14:11:52Z STT already running — no second Whisper",
-    "2026-09-12T14:11:52Z STT already running — no second Whisper",
-    "backfill-captions.log: [199<path> zXeaL8Gpzas 开特斯拉全程自动驾驶芝加哥到洛杉矶--再次挑战--拍摄于二次失业之前",
-    "sleep 2.9s",
-    "[198<path> DaQqh1jdSGc 美联储最后一次加息，债务上限，区域银行持续暴雷，可怕的要来了",
-    "sleep 4.6s",
-    "[199<path> zXeaL8Gpzas 开特斯拉全程自动驾驶芝加哥到洛杉矶--再次挑战--拍摄于二次失业之前"
+    "2026-09-12T14:16:56Z STT already running — no second Whisper",
+    "2026-09-12T14:16:56Z STT already running — no second Whisper",
+    "2026-09-12T14:16:56Z STT already running — no second Whisper",
+    "backfill-captions.log: [331<path> v74k2j2McKQ （Eps.246)马斯克买推特，特斯拉暴涨，上海工厂疫情最新更新",
+    "sleep 3.5s",
+    "sleep 2.4s",
+    "[330<path> 7ULZtBEljuw （Eps.247)可以媲美Model X的宝马电动SUV iX |特斯拉车主试驾 电动BMW i X SUV",
+    "[331<path> v74k2j2McKQ （Eps.246)马斯克买推特，特斯拉暴涨，上海工厂疫情最新更新"
   ],
   "pm": {
     "token_free": true,
