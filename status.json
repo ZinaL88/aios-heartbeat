@@ -1,16 +1,20 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T12:29:54Z",
-  "written_at_hkt": "2026-09-12 20:29 HKT",
+  "written_at_utc": "2026-09-12T12:34:58Z",
+  "written_at_hkt": "2026-09-12 20:34 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 1,
+    "whisper_n": 2,
     "backfill_n": 1,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "UCGWYKICLOE8Wxy7q3eYXmPA",
     "sample": [
+      {
+        "pid": 167367,
+        "cmd": "GJX9yCSws8U"
+      },
       {
         "pid": 146844,
         "cmd": "backfill"
@@ -22,12 +26,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.6,
+    "mem_available_gi": 6.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.04,
+        "rss_gi": 3.2,
         "n": 33
       },
       {
@@ -51,14 +55,19 @@
         "n": 4
       },
       {
+        "comm": "yt-dlp",
+        "rss_gi": 0.11,
+        "n": 2
+      },
+      {
         "comm": "Xvfb",
         "rss_gi": 0.11,
         "n": 3
       },
       {
         "comm": "bash",
-        "rss_gi": 0.07,
-        "n": 34
+        "rss_gi": 0.08,
+        "n": 35
       },
       {
         "comm": "websockify",
@@ -69,22 +78,17 @@
         "comm": "csnaps",
         "rss_gi": 0.07,
         "n": 1
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.06,
-        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
       "cached_gi": 2.7,
-      "anon_gi": 2.4,
+      "anon_gi": 2.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 5.6
+      "committed_gi": 5.8
     },
-    "load1": 0.58,
+    "load1": 0.81,
     "disk_avail": "110G",
     "tmp_du": "3.8M"
   },
@@ -97,8 +101,8 @@
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": null,
-    "last_id": "V7OJZtHeBDI",
+    "inflight": "GJX9yCSws8U",
+    "last_id": "oy7yGnqCLno",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -121,10 +125,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
-        "done": 769,
-        "left": 546,
+        "done": 870,
+        "left": 445,
         "total": 1315,
-        "eta_min": 46
+        "eta_min": 37
       }
     }
   },
@@ -133,8 +137,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T12:30:00Z",
-    "next_cron_hkt": "2026-09-12 20:30 HKT",
+    "next_cron_utc": "2026-09-12T12:35:00Z",
+    "next_cron_hkt": "2026-09-12 20:35 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -155,53 +159,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:29:54Z captions already running"
+      "summary": "2026-09-12T12:34:58Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:29:54Z captions already running"
+      "summary": "2026-09-12T12:34:58Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:29:54Z captions already running"
+      "summary": "2026-09-12T12:34:58Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:29:54Z captions already running"
+      "summary": "2026-09-12T12:34:58Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:29:54Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:34:58Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:29:54Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:34:58Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:29:54Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:34:58Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:29:54Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:34:58Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T12:29:54Z STT already running — no second Whisper",
-    "2026-09-12T12:29:54Z STT already running — no second Whisper",
-    "2026-09-12T12:29:54Z STT already running — no second Whisper",
-    "backfill-captions.log: [734<path> 3qxO0csZGKU 【人工智能】谷歌最新开源模型Gemma 3发布 | 四种参数规模 | 多模态能力 | SigLIP | 128K长上下文 | 支持140多种语言 | 1338ELO高分 | 排名第二 | 蒸馏技术",
-    "[733<path> D-pR7qWuheE 【人工智能】DyT干掉Transformer归一化层 | 动态Tanh | 9行代码 | 性能不降反升 | 何恺明杨立昆携手 | 多项任务验证 | 计算效率提升一倍 | 打破固有观念",
-    "sleep 3.7s",
-    "sleep 3.8s",
-    "[734<path> 3qxO0csZGKU 【人工智能】谷歌最新开源模型Gemma 3发布 | 四种参数规模 | 多模态能力 | SigLIP | 128K长上下文 | 支持140多种语言 | 1338ELO高分 | 排名第二 | 蒸馏技术"
+    "2026-09-12T12:34:58Z STT already running — no second Whisper",
+    "2026-09-12T12:34:58Z STT already running — no second Whisper",
+    "2026-09-12T12:34:58Z STT already running — no second Whisper",
+    "backfill-captions.log: [846<path> 9hTOxxkBcjk 【Google】纽约时报记者揭示谷歌的隐瞒文化 | 禁止内部员工保留对公司不利信息 | 内部通讯工具 | 反垄断审判 | 律师-客户特权 | 拉斯维加斯",
+    "sleep 2.3s",
+    "sleep 3.2s",
+    "[845<path> Et75ex1eUBw 【人工智能】为什么说 AI有意识 | 杰弗里·辛顿Vector Institute演讲 | 数字与模拟计算 | 凡人计算 | 反向传播 | 知识蒸馏 | 自动补全 | AI的风险 | 意识与主观体验",
+    "[846<path> 9hTOxxkBcjk 【Google】纽约时报记者揭示谷歌的隐瞒文化 | 禁止内部员工保留对公司不利信息 | 内部通讯工具 | 反垄断审判 | 律师-客户特权 | 拉斯维加斯"
   ],
   "pm": {
     "token_free": true,
