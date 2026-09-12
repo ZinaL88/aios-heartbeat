@@ -1,20 +1,16 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T15:46:19Z",
+  "written_at_utc": "2026-09-12T15:46:47Z",
   "written_at_hkt": "2026-09-12 23:46 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": false,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 0,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": null,
     "sample": [
-      {
-        "pid": 274886,
-        "cmd": "FVeSXMNOkYQ"
-      },
       {
         "pid": 274866,
         "cmd": "backfill"
@@ -22,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.6,
+    "mem_available_gi": 6.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.13,
+        "rss_gi": 3.24,
         "n": 33
       },
       {
@@ -56,9 +52,14 @@
         "n": 3
       },
       {
+        "comm": "websockify",
+        "rss_gi": 0.1,
+        "n": 3
+      },
+      {
         "comm": "bash",
         "rss_gi": 0.08,
-        "n": 36
+        "n": 37
       },
       {
         "comm": "csnaps",
@@ -66,25 +67,20 @@
         "n": 1
       },
       {
-        "comm": "websockify",
-        "rss_gi": 0.07,
-        "n": 2
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.05,
-        "n": 1
+        "comm": "x11vnc",
+        "rss_gi": 0.04,
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
       "cached_gi": 2.8,
-      "anon_gi": 2.5,
+      "anon_gi": 2.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
-      "committed_gi": 5.6
+      "committed_gi": 5.7
     },
-    "load1": 0.0,
+    "load1": 0.08,
     "disk_avail": "110G",
     "tmp_du": "4.0M"
   },
@@ -97,8 +93,8 @@
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "FVeSXMNOkYQ",
-    "last_id": "AY_-kvoqClo",
+    "inflight": null,
+    "last_id": "FVeSXMNOkYQ",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -117,7 +113,7 @@
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
         "pending": 754,
         "eta_min": 3016,
-        "jobs": 2
+        "jobs": 1
       },
       "captions": {
         "running": false,
@@ -153,48 +149,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "tt --model medium --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UCJAPsTtcJJWGk8e-_CJL8TQ/inventory_public.json --cookies /workspace/uploads/youtube-cookies.txt"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T15:46:18Z reboost stt pid 274866 channel UCJAPsTtcJJWGk8e-_CJL8TQ"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T15:46:18Z queue pick captions=none stt=UCJAPsTtcJJWGk8e-_CJL8TQ"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T15:46:18Z queue pick captions=none stt=UCJAPsTtcJJWGk8e-_CJL8TQ"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T15:46:18Z skip captions — no channel"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T15:46:18Z skip captions — no channel"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-12T15:46:18Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-12T15:46:18Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:46:47Z queue pick captions=none stt=UCJAPsTtcJJWGk8e-_CJL8TQ"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:46:47Z queue pick captions=none stt=UCJAPsTtcJJWGk8e-_CJL8TQ"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:46:47Z skip captions — no channel"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:46:47Z skip captions — no channel"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:46:47Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:46:47Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T15:46:18Z skip captions — no channel",
-    "2026-09-12T15:46:18Z STT already running — no second Whisper",
-    "2026-09-12T15:46:18Z STT already running — no second Whisper",
+    "2026-09-12T15:46:47Z skip captions — no channel",
+    "2026-09-12T15:46:47Z STT already running — no second Whisper",
+    "2026-09-12T15:46:47Z STT already running — no second Whisper",
     "backfill-captions.log: }",
     "{",
     "\"wrote_progress\": \"<path>",
