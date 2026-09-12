@@ -28,17 +28,17 @@ summary { min-height:44px; display:flex; align-items:center; font-family:ui-mono
 details ol li { display:block; font-size:13px; padding:6px 0; }
 .n { width:18px; color:var(--muted); font-family:ui-monospace,Menlo,monospace; font-size:12px; }
 .mv { display:none; flex-direction:column; gap:4px; }
-body.editing .mv { display:flex; }
-.mv button { min-width:44px; min-height:28px; background:#222; color:var(--fg); border:0; border-radius:6px; }
-#editBar { display:none; margin-top:12px; }
-body.editing #editBar { display:block; }
-input, button.act { min-height:44px; width:100%; margin:8px 0; background:#1a1a1a; color:var(--fg); border:1px solid #333; border-radius:8px; padding:8px 12px; }
+body:has(#editWrap[open]) .mv { display:flex; }
+.mv button { min-width:44px; min-height:36px; background:#222; color:var(--fg); border:0; border-radius:6px; }
+#editWrap { margin-top:12px; }
+#editWrap summary.act { list-style:none; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+#editWrap summary.act::-webkit-details-marker { display:none; }
+input, button.act, summary.act { min-height:44px; width:100%; margin:8px 0; background:#1a1a1a; color:var(--fg); border:1px solid #333; border-radius:8px; padding:8px 12px; }
 </style>
-<script>document.querySelectorAll('meta[http-equiv="refresh"]').forEach(function(m){m.remove();});</script>
 </head><body>
-<noscript><p class="mono">Safari is blocking JavaScript. GitHub then freezes this page up to 10 minutes (the URL loading bar is that freeze). Settings → Safari → Advanced → JavaScript On. Turn Lockdown Mode off for this site.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-12 23:07 HKT</span></div>
-<p class="mono" id="ping">2026-09-12 23:07 HKT</p>
+<noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-12 23:02 HKT</span></div>
+<p class="mono" id="ping">2026-09-12 23:02 HKT</p>
 
 <div class="card">
   <div class="row"><h2>ALL LEFT</h2><span class="mono" id="allEta">~50h 16m</span></div>
@@ -64,26 +64,26 @@ input, button.act { min-height:44px; width:100%; margin:8px 0; background:#1a1a1
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 6.5G / 15.6G · load 0.75</p>
-  <p class="mono" id="box2">disk 110G · tmp 3.9M · cookies yes · 1.1h</p>
-  <p class="mono" id="sched">next ping 2026-09-12 23:10 HKT · Whisper on · captions idle (reboost captions if RAM≥1.2)</p>
+  <p class="ch" id="ram">RAM 6.5G / 15.6G · load 0.39</p>
+  <p class="mono" id="box2">disk 110G · tmp 3.9M · cookies yes · 1.0h</p>
+  <p class="mono" id="sched">next ping 2026-09-12 23:05 HKT · Whisper on · captions idle (reboost captions if RAM≥1.2)</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li><b>STT</b> · 一个狠人 · 754 pending</li><li class="mono">pid 210746 · backfill</li></ol>
+  <ol id="running"><li><b>STT</b> · 一个狠人 · 754 pending</li><li class="mono">pid 260158 · ZmF_GSWDFPI</li><li class="mono">pid 210746 · backfill</li></ol>
 </div>
 
 <div class="card">
-  <div class="row"><h2>CHANNEL QUEUE · 9</h2>
-    <button type="button" class="act" id="editBtn" style="width:auto;min-width:120px;margin:0">Edit queue</button></div>
-  <ol id="channels"><li data-cid="UC_5lJHgnMP_lb_VpIiXV0hQ"><span class="n">1</span><div><b>#11 课代表立正</b><div class="mono">skip · public captions exhausted (834 done). STT leftover only if RAM&gt;=6G later.</div></div></li><li data-cid="UCJAPsTtcJJWGk8e-_CJL8TQ"><span class="n">2</span><div><b>一个狠人</b><div class="mono">running · members done · public pending — NOW</div></div></li><li data-cid="UCGWYKICLOE8Wxy7q3eYXmPA"><span class="n">3</span><div><b>bestpartners</b><div class="mono">queued</div></div></li><li data-cid="UCPpdGTNbIKdiWgxCrbka4Zw"><span class="n">4</span><div><b>huanyihe777</b><div class="mono">queued</div></div></li><li data-cid="UCAxQ8sjHgjXh26la7jEBw3w"><span class="n">5</span><div><b>mike1111</b><div class="mono">queued</div></div></li><li data-cid="UCeTLfPD7thTMabtL7w87Aug"><span class="n">6</span><div><b>清流君</b><div class="mono">queued</div></div></li><li data-cid="UCP76ZVB1x9udP2UFcQkSvMA"><span class="n">7</span><div><b>大卢和小田</b><div class="mono">queued</div></div></li><li data-cid="UCROR3SZDrohSela1sjD1STg"><span class="n">8</span><div><b>王理元</b><div class="mono">queued</div></div></li><li data-cid="UCaIIFXfdQUYf3OHPIFNDdrQ"><span class="n">9</span><div><b>Alan</b><div class="mono">queued</div></div></li></ol>
-  <div id="editBar">
+  <h2>CHANNEL QUEUE · 9</h2>
+  <ol id="channels"><li data-cid="UC_5lJHgnMP_lb_VpIiXV0hQ"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">1</span><div><b>#11 课代表立正</b><div class="mono">skip · public captions exhausted (834 done). STT leftover only if RAM&gt;=6G later.</div></div></li><li data-cid="UCJAPsTtcJJWGk8e-_CJL8TQ"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">2</span><div><b>一个狠人</b><div class="mono">running · members done · public pending — NOW</div></div></li><li data-cid="UCGWYKICLOE8Wxy7q3eYXmPA"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">3</span><div><b>bestpartners</b><div class="mono">queued</div></div></li><li data-cid="UCPpdGTNbIKdiWgxCrbka4Zw"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">4</span><div><b>huanyihe777</b><div class="mono">queued</div></div></li><li data-cid="UCAxQ8sjHgjXh26la7jEBw3w"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">5</span><div><b>mike1111</b><div class="mono">queued</div></div></li><li data-cid="UCeTLfPD7thTMabtL7w87Aug"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">6</span><div><b>清流君</b><div class="mono">queued</div></div></li><li data-cid="UCP76ZVB1x9udP2UFcQkSvMA"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">7</span><div><b>大卢和小田</b><div class="mono">queued</div></div></li><li data-cid="UCROR3SZDrohSela1sjD1STg"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">8</span><div><b>王理元</b><div class="mono">queued</div></div></li><li data-cid="UCaIIFXfdQUYf3OHPIFNDdrQ"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">9</span><div><b>Alan</b><div class="mono">queued</div></div></li></ol>
+  <details id="editWrap">
+    <summary class="act">Edit queue</summary>
     <input id="patIn" type="password" autocomplete="off" placeholder="GitHub PAT · Contents write on ZinaL88/ai-os · stays on this phone"/>
     <button type="button" class="act" id="saveBtn">Save order to git</button>
-    <p class="mono" id="saveState">▲▼ then Save. Box pulls within 5 min. No Jarvis.</p>
-  </div>
+    <p class="mono" id="saveState">▲▼ appear when this is open. Save writes git. Box pulls within 5 min. No Jarvis.</p>
+  </details>
 </div>
 
 <div class="card">
@@ -93,7 +93,7 @@ input, button.act { min-height:44px; width:100%; margin:8px 0; background:#1a1a1
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-12T15:07:38Z skip captions — no channel</li><li><span class="mono">reboost.log</span> 2026-09-12T15:07:38Z STT already running — no second Whisper</li><li class="mono">&quot;wrote_progress&quot;: &quot;&lt;path&gt;</li><li class="mono">&quot;done_count&quot;: 80</li><li class="mono">}</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-12T15:02:33Z captions already running</li><li><span class="mono">reboost.log</span> 2026-09-12T15:02:33Z STT already running — no second Whisper</li><li><span class="mono">reboost.log</span> 2026-09-12T15:02:33Z skip captions — no channel</li><li><span class="mono">reboost.log</span> 2026-09-12T15:02:34Z STT already running — no second Whisper</li><li class="mono">&quot;wrote_progress&quot;: &quot;&lt;path&gt;</li><li class="mono">&quot;done_count&quot;: 80</li><li class="mono">}</li></ol>
 </div>
 
 <div class="card">
@@ -155,15 +155,19 @@ function timed(url, headers){
   var t=setTimeout(function(){c.abort();},4000);
   return fetch(url,{cache:"no-store",headers:headers||{},signal:c.signal}).finally(function(){clearTimeout(t);});
 }
+function slot(backMin){
+  var t=Date.now()+8*3600*1000-(backMin||0)*60000;
+  var d=new Date(t);
+  var m=d.getUTCMinutes(); m=m-m%5;
+  function p(n){return (n<10?"0":"")+n;}
+  return "live/"+d.getUTCFullYear()+p(d.getUTCMonth()+1)+p(d.getUTCDate())+p(d.getUTCHours())+p(m)+".json";
+}
 function pull(){
-  timed("status.json?t="+Date.now()).then(function(r){
-    if(!r.ok) throw r.status;
-    return r.json();
-  }).then(paint).catch(function(){
-    gh("/repos/ZinaL88/aios-heartbeat/contents/status.json",{raw:true}).then(function(r){
-      if(!r.ok) throw r.status;
-      return r.json();
-    }).then(paint).catch(function(){});
+  function ok(r){ if(!r.ok) throw r.status; return r.json(); }
+  timed(slot(0)).then(ok).then(paint).catch(function(){
+    timed(slot(5)).then(ok).then(paint).catch(function(){
+      timed("status.json?t="+Date.now()).then(ok).then(paint).catch(function(){});
+    });
   });
 }
 function move(li, dir){
@@ -217,20 +221,6 @@ function save(){
   });
 }
 function bootEdit(){
-  document.querySelectorAll("#channels>li").forEach(function(li){
-    if(li.querySelector(".mv")) return;
-    var wrap=document.createElement("span");
-    wrap.className="mv";
-    wrap.innerHTML='<button type="button" class="up" aria-label="up">▲</button><button type="button" class="dn" aria-label="down">▼</button>';
-    wrap.querySelector(".up").onclick=function(){move(li,-1);};
-    wrap.querySelector(".dn").onclick=function(){move(li,1);};
-    li.insertBefore(wrap, li.firstChild);
-  });
-  var tog=$("editBtn");
-  if(tog) tog.onclick=function(){
-    document.body.classList.toggle("editing");
-    tog.textContent=document.body.classList.contains("editing")?"Done":"Edit queue";
-  };
   var sv=$("saveBtn"); if(sv) sv.onclick=save;
   var inp=$("patIn");
   if(inp){
