@@ -1,6 +1,12 @@
 {
-  "written_at_hkt": "2026-09-13 01:02 HKT",
+  "written_at_hkt": "2026-09-13 01:08 HKT",
   "queue": [
+    {
+      "name": "麥克老李",
+      "channel_id": "UCaA2cfCpytaARHcNcApboSw",
+      "skip": false,
+      "reason": "cut-in"
+    },
     {
       "name": "#11 课代表立正",
       "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
