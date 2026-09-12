@@ -1,0 +1,210 @@
+{
+  "schema": "aios-status/v1",
+  "written_at_utc": "2026-09-12T15:02:34Z",
+  "written_at_hkt": "2026-09-12 23:02 HKT",
+  "token_free": true,
+  "processes": {
+    "whisper": true,
+    "backfill": false,
+    "whisper_n": 2,
+    "backfill_n": 0,
+    "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+    "captions_channel": null,
+    "sample": [
+      {
+        "pid": 260158,
+        "cmd": "ZmF_GSWDFPI"
+      },
+      {
+        "pid": 210746,
+        "cmd": "backfill"
+      }
+    ]
+  },
+  "resources": {
+    "mem_available_gi": 6.5,
+    "mem_total_gi": 15.6,
+    "mem_top": [
+      {
+        "comm": "node",
+        "rss_gi": 3.16,
+        "n": 33
+      },
+      {
+        "comm": "python",
+        "rss_gi": 0.43,
+        "n": 4
+      },
+      {
+        "comm": "xfwm4",
+        "rss_gi": 0.13,
+        "n": 3
+      },
+      {
+        "comm": "plank",
+        "rss_gi": 0.12,
+        "n": 3
+      },
+      {
+        "comm": "uv",
+        "rss_gi": 0.12,
+        "n": 4
+      },
+      {
+        "comm": "Xvfb",
+        "rss_gi": 0.11,
+        "n": 3
+      },
+      {
+        "comm": "csnaps",
+        "rss_gi": 0.08,
+        "n": 1
+      },
+      {
+        "comm": "bash",
+        "rss_gi": 0.08,
+        "n": 35
+      },
+      {
+        "comm": "websockify",
+        "rss_gi": 0.07,
+        "n": 2
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.06,
+        "n": 1
+      }
+    ],
+    "meminfo": {
+      "buffers_gi": 0.3,
+      "cached_gi": 2.8,
+      "anon_gi": 2.6,
+      "shmem_gi": 0.0,
+      "sreclaimable_gi": 0.5,
+      "committed_gi": 5.6
+    },
+    "load1": 0.39,
+    "disk_avail": "110G",
+    "tmp_du": "3.9M"
+  },
+  "cookies": {
+    "present": true,
+    "age_hours": 1.0,
+    "stale": false
+  },
+  "collector": {
+    "found": true,
+    "done": 49,
+    "total": 737,
+    "inflight": "ZmF_GSWDFPI",
+    "last_id": "dqrrAfAURR8",
+    "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+    "inventory": {
+      "public_total": 737,
+      "public_done": 14,
+      "members_total": 0,
+      "members_done": 0,
+      "pending_stt_n": 754,
+      "captions_done": 737,
+      "captions_left": 0,
+      "source": "inventory",
+      "public_left": 723
+    },
+    "tracks": {
+      "stt": {
+        "running": true,
+        "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+        "pending": 754,
+        "eta_min": 3016
+      },
+      "captions": {
+        "running": false,
+        "channel_id": null
+      }
+    }
+  },
+  "note": "Public ping. No cookie bytes, no transcripts, no paths.",
+  "git_sync": {
+    "pull": "ok"
+  },
+  "schedule": {
+    "next_cron_utc": "2026-09-12T15:05:00Z",
+    "next_cron_hkt": "2026-09-12 23:05 HKT",
+    "cron": "*/5",
+    "job_restart": "Whisper on · captions idle (reboost captions if RAM≥1.2)",
+    "job_restart_at_hkt": "2026-09-12 23:05 HKT",
+    "box_reboot": "not scheduled — we do not reboot the host",
+    "ram_gate_gi": 6.0
+  },
+  "changelog": [
+    {
+      "at_hkt": "2026-09-12 12:32 HKT",
+      "kind": "ops",
+      "summary": "Token-free reboost: if Whisper+backfill dead and RAM ≥ 6G, restart public #11"
+    },
+    {
+      "at_hkt": "2026-09-12 13:05 HKT",
+      "kind": "plan",
+      "summary": "Plan B: captions worker (1.2G) parallel to one Whisper (6G). Plan C stays backlog."
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:02:33Z captions already running"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:02:33Z captions already running"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:02:33Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:02:33Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:02:33Z skip captions — no channel"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:02:33Z skip captions — no channel"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:02:34Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T15:02:34Z STT already running — no second Whisper"
+    }
+  ],
+  "reboost_log": [
+    "2026-09-12T15:02:33Z skip captions — no channel",
+    "2026-09-12T15:02:34Z STT already running — no second Whisper",
+    "2026-09-12T15:02:34Z STT already running — no second Whisper",
+    "backfill-captions.log: }",
+    "{",
+    "\"wrote_progress\": \"<path>",
+    "\"done_count\": 80",
+    "}"
+  ],
+  "pm": {
+    "token_free": true,
+    "engine": "cron-rules",
+    "now": "plan-b: captions worker (cpu_light, RAM>=1.2G) parallel to one Whisper (ram_heavy, RAM>=6G)",
+    "backlog": [
+      "plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)"
+    ]
+  }
+}
