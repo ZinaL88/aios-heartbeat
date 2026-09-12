@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T11:59:30Z",
-  "written_at_hkt": "2026-09-12 19:59 HKT",
+  "written_at_utc": "2026-09-12T12:04:34Z",
+  "written_at_hkt": "2026-09-12 20:04 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -10,7 +10,7 @@
     "backfill_n": 1,
     "sample": [
       {
-        "pid": 90411,
+        "pid": 146844,
         "cmd": "backfill"
       },
       {
@@ -25,7 +25,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.05,
+        "rss_gi": 3.01,
         "n": 33
       },
       {
@@ -69,9 +69,9 @@
         "n": 1
       },
       {
-        "comm": "python3",
+        "comm": "yt-dlp",
         "rss_gi": 0.06,
-        "n": 3
+        "n": 1
       }
     ],
     "meminfo": {
@@ -80,9 +80,9 @@
       "anon_gi": 2.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 5.5
+      "committed_gi": 5.6
     },
-    "load1": 0.75,
+    "load1": 0.64,
     "disk_avail": "110G",
     "tmp_du": "3.8M"
   },
@@ -96,7 +96,7 @@
     "done": 49,
     "total": 737,
     "inflight": null,
-    "last_id": "7Ve4M_tgiws",
+    "last_id": "FVeSXMNOkYQ",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ"
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
@@ -104,8 +104,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T12:00:00Z",
-    "next_cron_hkt": "2026-09-12 20:00 HKT",
+    "next_cron_utc": "2026-09-12T12:05:00Z",
+    "next_cron_hkt": "2026-09-12 20:05 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -126,53 +126,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:59:30Z captions already running"
+      "summary": "2026-09-12T12:04:34Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:59:30Z captions already running"
+      "summary": "2026-09-12T12:04:34Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:59:30Z captions already running"
+      "summary": "2026-09-12T12:04:34Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:59:30Z captions already running"
+      "summary": "2026-09-12T12:04:34Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:59:30Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:04:34Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:59:30Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:04:34Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:59:30Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:04:34Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T11:59:30Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:04:34Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T11:59:30Z STT already running — no second Whisper",
-    "2026-09-12T11:59:30Z STT already running — no second Whisper",
-    "2026-09-12T11:59:30Z STT already running — no second Whisper",
-    "backfill-captions.log: ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
-    "ERROR: [youtube] aBQlsErbKAI: Join this channel to get access to members-only content like this video, and other exclusive perks.",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests"
+    "2026-09-12T12:04:34Z STT already running — no second Whisper",
+    "2026-09-12T12:04:34Z STT already running — no second Whisper",
+    "2026-09-12T12:04:34Z STT already running — no second Whisper",
+    "backfill-captions.log: [274<path> lwaFjcFuhZA Why Blizzard Entertainment went from greatness to mediocrity | Jeff Kaplan | Career Start | EverQ...",
+    "sleep 2.6s",
+    "sleep 2.4s",
+    "[273<path> 48lLiHkBfNg 数学正在经历分工变革 | 陶哲轩 & Mark Chen | AI的进步 | 局限性 | 埃尔德什问题 | 形式化验证 | 全新的理论框架 | AI不是神谕机",
+    "[274<path> lwaFjcFuhZA Why Blizzard Entertainment went from greatness to mediocrity | Jeff Kaplan | Career Start | EverQ..."
   ],
   "pm": {
     "token_free": true,
