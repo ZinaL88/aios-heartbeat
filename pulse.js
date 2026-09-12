@@ -67,12 +67,18 @@ function pull(){
     }catch(e){}
     if($("ping")) $("ping").textContent="live fetch failed";
   }
-  var url="https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t="+Date.now();
+  var url="status.json?t="+Date.now();
   timed(url).then(ok).then(function(d){
     try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
     paint(d);
     window.__hbIn=0;
-  }).catch(fail);
+  }).catch(function(){
+    timed("https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json?t="+Date.now()).then(ok).then(function(d){
+      try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
+      paint(d);
+      window.__hbIn=0;
+    }).catch(fail);
+  });
 }
 function move(li, dir){
   var ol=li.parentNode;
