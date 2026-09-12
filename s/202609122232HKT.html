@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta http-equiv="refresh" content="45;url=v4.html?n=1789223575"/>
+<meta http-equiv="Cache-Control" content="no-store"/>
+<title>HEARTBEAT</title>
+<style>
+:root { --bg:#0f1210; --fg:#e8ebe6; --muted:#9aa39a; --live:#3dd68c; --bar:#2a2f2a; --accent:#c4f542; --card:#161a16; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.45 -apple-system,system-ui,sans-serif;
+  padding:20px; padding-bottom:48px; padding-top:max(20px,env(safe-area-inset-top)); }
+h1 { font-size:13px; letter-spacing:.12em; margin:0; font-weight:700; }
+h2 { font-size:12px; letter-spacing:.1em; color:var(--muted); font-weight:700; margin:0; }
+.mono { font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--muted); }
+.row { display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
+.bar { height:10px; background:var(--bar); border-radius:99px; overflow:hidden; margin-top:12px; }
+.bar>i { display:block; height:100%; background:var(--accent); }
+.card { margin-top:26px; padding-top:18px; border-top:1px solid #222; }
+.dot { width:8px; height:8px; border-radius:99px; display:inline-block; background:#555; margin-right:8px; }
+.dot.on { background:var(--live); }
+.big { font-size:34px; font-variant-numeric:tabular-nums; font-weight:700; letter-spacing:-.03em; margin:8px 0 0; }
+.ch { font-size:17px; font-weight:500; margin:8px 0 0; }
+ol { margin:8px 0 0; padding-left:0; list-style:none; }
+li { display:flex; gap:10px; padding:8px 0; border-bottom:1px solid #1c1c1c; }
+details { margin-top:8px; background:var(--card); border-radius:8px; padding:4px 10px; }
+summary { min-height:44px; display:flex; align-items:center; font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--muted); }
+details ol li { display:block; font-size:13px; padding:6px 0; }
+.n { width:18px; color:var(--muted); font-family:ui-monospace,Menlo,monospace; font-size:12px; }
+.mv { display:none; flex-direction:column; gap:4px; }
+body.editing .mv { display:flex; }
+.mv button { min-width:44px; min-height:28px; background:#222; color:var(--fg); border:0; border-radius:6px; }
+#editBar { display:none; margin-top:12px; }
+body.editing #editBar { display:block; }
+input, button.act { min-height:44px; width:100%; margin:8px 0; background:#1a1a1a; color:var(--fg); border:1px solid #333; border-radius:8px; padding:8px 12px; }
+</style>
+<script>document.querySelectorAll('meta[http-equiv="refresh"]').forEach(function(m){m.remove();});</script>
+</head><body>
+<noscript><p class="mono">Safari is blocking JavaScript. GitHub then freezes this page up to 10 minutes (the URL loading bar is that freeze). Settings → Safari → Advanced → JavaScript On. Turn Lockdown Mode off for this site.</p></noscript>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-12 22:32 HKT</span></div>
+<p class="mono" id="ping">2026-09-12 22:32 HKT</p>
+
+<div class="card">
+  <div class="row"><h2>ALL LEFT</h2><span class="mono" id="allEta">~50h 16m</span></div>
+  <p class="big" id="allNum">754 left</p>
+  <div class="bar"><i id="allBar" style="width:99%"></i></div>
+</div>
+<div class="card">
+  <div class="row"><h2><span class="dot " id="capDot"></span>CAPTIONS</h2>
+    <span class="mono" id="capState">idle</span></div>
+  <p class="ch" id="capCh">—</p>
+  <div class="row"><span class="big" id="capNum">0 / 0</span>
+    <span class="mono" id="capEta">0 left · —</span></div>
+  <div class="bar"><i id="capBar" style="width:0%"></i></div>
+</div>
+<div class="card">
+  <div class="row"><h2><span class="dot on" id="sttDot"></span>STT</h2>
+    <span class="mono" id="sttState">running</span></div>
+  <p class="ch" id="sttCh">一个狠人</p>
+  <div class="row"><span class="big" id="sttNum">754 pending</span>
+    <span class="mono" id="sttEta">~50h 16m</span></div>
+  <div class="bar"><i id="sttBar" style="width:12%"></i></div>
+</div>
+
+<div class="card">
+  <h2>BOX</h2>
+  <p class="ch" id="ram">RAM 6.5G / 15.6G · load 0.44</p>
+  <p class="mono" id="box2">disk 110G · tmp 3.9M · cookies yes · 0.5h</p>
+  <p class="mono" id="sched">next ping 2026-09-12 22:35 HKT · Whisper on · captions idle (reboost captions if RAM≥1.2)</p>
+  <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
+</div>
+
+<div class="card">
+  <h2>RUNNING</h2>
+  <ol id="running"><li><b>STT</b> · 一个狠人 · 754 pending</li><li class="mono">pid 243220 · oDhHLtfg8KM</li><li class="mono">pid 210746 · backfill</li></ol>
+</div>
+
+<div class="card">
+  <div class="row"><h2>CHANNEL QUEUE · 9</h2>
+    <button type="button" class="act" id="editBtn" style="width:auto;min-width:120px;margin:0">Edit queue</button></div>
+  <ol id="channels"><li data-cid="UC_5lJHgnMP_lb_VpIiXV0hQ"><span class="n">1</span><div><b>#11 课代表立正</b><div class="mono">skip · public captions exhausted (834 done). STT leftover only if RAM&gt;=6G later.</div></div></li><li data-cid="UCJAPsTtcJJWGk8e-_CJL8TQ"><span class="n">2</span><div><b>一个狠人</b><div class="mono">running · members done · public pending — NOW</div></div></li><li data-cid="UCGWYKICLOE8Wxy7q3eYXmPA"><span class="n">3</span><div><b>bestpartners</b><div class="mono">queued</div></div></li><li data-cid="UCPpdGTNbIKdiWgxCrbka4Zw"><span class="n">4</span><div><b>huanyihe777</b><div class="mono">queued</div></div></li><li data-cid="UCAxQ8sjHgjXh26la7jEBw3w"><span class="n">5</span><div><b>mike1111</b><div class="mono">queued</div></div></li><li data-cid="UCeTLfPD7thTMabtL7w87Aug"><span class="n">6</span><div><b>清流君</b><div class="mono">queued</div></div></li><li data-cid="UCP76ZVB1x9udP2UFcQkSvMA"><span class="n">7</span><div><b>大卢和小田</b><div class="mono">queued</div></div></li><li data-cid="UCROR3SZDrohSela1sjD1STg"><span class="n">8</span><div><b>王理元</b><div class="mono">queued</div></div></li><li data-cid="UCaIIFXfdQUYf3OHPIFNDdrQ"><span class="n">9</span><div><b>Alan</b><div class="mono">queued</div></div></li></ol>
+  <div id="editBar">
+    <input id="patIn" type="password" autocomplete="off" placeholder="GitHub PAT · Contents write on ZinaL88/ai-os · stays on this phone"/>
+    <button type="button" class="act" id="saveBtn">Save order to git</button>
+    <p class="mono" id="saveState">▲▼ then Save. Box pulls within 5 min. No Jarvis.</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>PLAYLISTS · 96 (not collecting yet)</h2>
+  <div id="playlists"><details open><summary>P0 · 15</summary><ol><li>Thinking · 2603</li><li>Job hunting · 283</li><li>Learning how to learn · 863</li><li>理財 · 2997</li><li>Latest Routine · 98</li><li>理財 Strategy · 632</li><li>How To Systemize Your Business So It Runs Without You · 14</li><li>Trend · 644</li><li>Innovation · 178</li><li>The Agent Factory · 30</li><li>AI · 25</li><li>Build your own LLM Workshop · 26</li><li>郭宇AI實踐分享 · 十講 · 9</li><li>Stanford CS221 AI · 60</li><li>AI Fundamentals · 13</li></ol></details><details><summary>P1 · 45</summary><ol><li>⚡️ Framework Thinking &amp; Mental Models ⚡️ · 140</li><li>The Startup Ideas Podcast Episodes · 412</li><li>【機器學習2021】(中文版) · 40</li><li>Automate the Boring Stuff with Python · 15</li><li>MIT RES.6-012 Intro to Probability · 266</li><li>MIT 18.650 Statistics · 22</li><li>6.041 Probabilistic Systems · 25</li><li>CS329A Self-Improving AI Agents · 9</li><li>LLM / AI · 92</li><li>AI Product Management · 5</li><li>Machine Learning &amp; Data Science · 12</li><li>Kaggle CareerCon 2019 | Full Sessions · 15</li><li>Geospatial Analysis using Real Python · 11</li><li>Large Language Models (LLMs) · 26</li><li>LLM · 14</li><li>LLM · 2</li><li>MCP · 19</li><li>Claude ChatGPT · 424</li><li>Stanford CS230: Deep Learning I Autumn 2025 · 9</li><li>The Age of A.I. · 9</li><li>Algorithms · 64</li><li>Automation · 33</li><li>Blockchain · 154</li><li>Bots &amp; Exchanges · 43</li><li>Crypto · 411</li><li>Engineering · 7</li><li>MIT 14.129 Blockchain and the Design of Financial Systems, Spring 2025 · 11</li><li>Personal Finance · 13</li><li>Stock Trading Principles · 22</li><li>〈宏觀散打〉謎米香港財經專欄 · 404</li><li>指數化投資 · 39</li><li>章濤投資日記 · 9</li><li>AA203 Optimal and Learning-Based Control | Spring 2026 · 19</li><li>Product Management · 918</li><li>Statistics · 116</li><li>Statistics · 67</li><li>Biz ideas · 433</li><li>Data Science · 1429</li><li>Economics · 36</li><li>Economics Amplified · 16</li><li>How to Delegate Like a Millionaire Entrepreneur · 20</li><li>How to Start a Startup · 21</li><li>Millionaire Productivity Habits · 29</li><li>Smart Note Taking (Obsidian &amp; Zettelkasten) · 28</li><li>Business idea · 1</li></ol></details><details><summary>P2 · 13</summary><ol><li>下班經濟學 · 775</li><li>尼可拉斯楊Live精發財系列大全集 · 67</li><li>Python Programming for Finance · 28</li><li>MIT 15.S12 Blockchain and Money · 23</li><li>MIT 18.642 Math for Finance · 22</li><li>Econ 2450A Public Economics | Raj Chetty · 28</li><li>数据科学读书会 · 18</li><li>Careers · 285</li><li>Debate, Argument, Reasoning · 248</li><li>Emerging Leaders Initiative: Leadership Lab · 34</li><li>Entrepreneur · 3464</li><li>Productivity · 1498</li><li>English for Work · 74</li></ol></details><details><summary>P3 · 13</summary><ol><li>Productivity Hacks · 21</li><li>職場事業心理學 · 46</li><li>個人成長心理學 · 198</li><li>Algorithms for Big Data (COMPSCI 229r) · 25</li><li>Advanced Algorithms (COMPSCI 224) · 25</li><li>MIT 14.12 Game Theory, Fall 2025 · 25</li><li>Career growth · 898</li><li>Charisma · 1024</li><li>Emotional Intelligence · 2314</li><li>Interpersonal · 1248</li><li>Presentation, Public Speaking, Story Telling · 1218</li><li>English · 1323</li><li>八字教学从基础入门到精通 · 57</li></ol></details><details><summary>P4 · 7</summary><ol><li>Podcast《不增不減兩分滿》 · 60</li><li>十分鐘心理學 · 144</li><li>斷捨離 簡單匠 Podcast · 483</li><li>Full Podcast Episodes · 260</li><li>Business Soft Skills · 18</li><li>Computational Journalism (JMSC 6041) · 8</li><li>常用英语口语训练 · 30</li></ol></details><details><summary>P5 · 3</summary><ol><li>【入門級命理課】八字命盤看——天干五合 · 5</li><li>【入門級命理課】命盤中的十二地支 · 13</li><li>【入門級命理課】命盤中的十神 · 13</li></ol></details></div>
+</div>
+
+<div class="card">
+  <h2>LOG</h2>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-12T14:32:09Z captions already running</li><li><span class="mono">reboost.log</span> 2026-09-12T14:32:09Z STT already running — no second Whisper</li><li><span class="mono">reboost.log</span> 2026-09-12T14:32:09Z skip captions — no channel</li><li class="mono">&quot;wrote_progress&quot;: &quot;&lt;path&gt;</li><li class="mono">&quot;done_count&quot;: 80</li><li class="mono">}</li></ol>
+</div>
+
+<div class="card">
+  <h2>NEXT / BACKLOG</h2>
+  <ol><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ol>
+</div>
+
+<div class="card">
+  <h2>DO NOT</h2>
+  <ol><li>Second Whisper</li><li>Parallel Chrome OCR</li><li>Store full video libraries</li><li>Clear-all YouTube History</li><li>Enable Cursor on-demand to keep Jarvis up</li></ol>
+</div>
+
+<p class="mono" id="src" style="margin-top:28px">Live clock uses GitHub API (not the cached github.io file). If the time is frozen, JavaScript is off.</p>
+<script>
+(function(){
+function $(id){return document.getElementById(id);}
+var NAMES={UC_5lJHgnMP_lb_VpIiXV0hQ:"#11 课代表立正",UCJAPsTtcJJWGk8e-_CJL8TQ:"一个狠人",UCGWYKICLOE8Wxy7q3eYXmPA:"bestpartners",UCPpdGTNbIKdiWgxCrbka4Zw:"huanyihe777",UCAxQ8sjHgjXh26la7jEBw3w:"mike1111",UCeTLfPD7thTMabtL7w87Aug:"清流君",UCP76ZVB1x9udP2UFcQkSvMA:"大卢和小田",UCROR3SZDrohSela1sjD1STg:"王理元",UCaIIFXfdQUYf3OHPIFNDdrQ:"Alan"};
+function title(id){return NAMES[id]||id||"—";}
+function eta(min){if(min==null)return "—";if(min<=0)return "done";if(min<60)return "~"+min+"m";return "~"+Math.floor(min/60)+"h "+(min%60)+"m";}
+function killRefresh(){
+  document.querySelectorAll('meta[http-equiv="refresh"]').forEach(function(m){m.remove();});
+}
+killRefresh();
+function pat(){return (localStorage.getItem("aios.pat")||"").trim();}
+function gh(path, opt){
+  opt=opt||{};
+  var h={Accept: opt.raw ? "application/vnd.github.raw+json" : "application/vnd.github+json"};
+  if(pat()) h.Authorization="Bearer "+pat();
+  if(opt.headers) Object.assign(h, opt.headers);
+  return fetch("https://api.github.com"+path,{method:opt.method||"GET",headers:h,cache:"no-store",body:opt.body||null});
+}
+function paint(d){
+  var tr=(d.collector&&d.collector.tracks)||{};
+  var cap=tr.captions||{}, stt=tr.stt||{};
+  var capDone=cap.done||0, capLeft=cap.left||0, capTot=cap.total||(capDone+capLeft);
+  var sttPend=stt.pending||0;
+  if($("ping")) $("ping").textContent=(d.written_at_hkt||"—")+" · live API";
+  if($("age")) $("age").textContent=d.written_at_hkt||"—";
+  if($("allNum")) $("allNum").textContent=((capLeft||0)+sttPend)+" left";
+  if($("allEta")) $("allEta").textContent=eta((cap.eta_min||0)+(stt.eta_min||0));
+  if($("capDot")) $("capDot").className="dot"+(cap.running?" on":"");
+  if($("capState")) $("capState").textContent=cap.running?"running":"idle";
+  if($("capCh")) $("capCh").textContent=title(cap.channel_id);
+  if($("capNum")) $("capNum").textContent=capTot?(capDone+" / "+capTot):"—";
+  if($("capEta")) $("capEta").textContent=capLeft+" left · "+eta(cap.eta_min);
+  if($("capBar")) $("capBar").style.width=(capTot?Math.min(99,capDone/capTot*100):0)+"%";
+  if($("sttDot")) $("sttDot").className="dot"+(stt.running?" on":"");
+  if($("sttState")) $("sttState").textContent=stt.running?"running":"idle";
+  if($("sttCh")) $("sttCh").textContent=title(stt.channel_id);
+  if($("sttNum")) $("sttNum").textContent=sttPend+" pending";
+  if($("sttEta")) $("sttEta").textContent=eta(stt.eta_min);
+  var res=d.resources||{};
+  if($("ram")) $("ram").textContent="RAM "+(res.mem_available_gi!=null?res.mem_available_gi:"—")+"G / "+(res.mem_total_gi!=null?res.mem_total_gi:"—")+"G · load "+(res.load1!=null?res.load1:"—");
+  if($("src")) $("src").textContent="live GitHub API · no page reload · cache bypassed";
+  killRefresh();
+}
+function pull(){
+  gh("/repos/ZinaL88/aios-heartbeat/contents/status.json",{raw:true}).then(function(r){
+    if(!r.ok) throw r.status;
+    return r.json();
+  }).then(paint).catch(function(){
+    fetch("status.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.json();}).then(paint).catch(function(){});
+  });
+}
+function move(li, dir){
+  var ol=li.parentNode;
+  if(dir<0 && li.previousElementSibling) ol.insertBefore(li, li.previousElementSibling);
+  if(dir>0 && li.nextElementSibling) ol.insertBefore(li.nextElementSibling, li);
+  number();
+}
+function number(){
+  var n=1;
+  document.querySelectorAll("#channels>li").forEach(function(li){
+    var s=li.querySelector(".n"); if(s) s.textContent=n++;
+  });
+}
+function b64(s){
+  return btoa(unescape(encodeURIComponent(s)));
+}
+function save(){
+  var st=$("saveState");
+  if(!pat()){ if(st) st.textContent="paste a GitHub PAT first (Contents write on ai-os). Token stays on this phone."; return; }
+  if(st) st.textContent="saving…";
+  var ids=[].map.call(document.querySelectorAll("#channels>li"), function(li){return li.getAttribute("data-cid");});
+  gh("/repos/ZinaL88/ai-os/contents/jobs/channel_queue.json").then(function(r){
+    if(!r.ok) throw new Error("read "+r.status);
+    return r.json();
+  }).then(function(meta){
+    var doc=JSON.parse(decodeURIComponent(escape(atob(meta.content.replace(/\n/g,"")))));
+    var map={};
+    (doc.queue||[]).forEach(function(c){map[c.channel_id]=c;});
+    doc.queue=ids.map(function(id){return map[id];}).filter(Boolean);
+    var left=(doc.queue||[]).map(function(c){return c.channel_id;});
+    Object.keys(map).forEach(function(id){ if(left.indexOf(id)<0) doc.queue.push(map[id]); });
+    var now=new Date();
+    var hkt=new Date(now.getTime()+8*3600*1000);
+    doc.updated_at_hkt=hkt.toISOString().slice(0,16).replace("T"," ")+" HKT";
+    return gh("/repos/ZinaL88/ai-os/contents/jobs/channel_queue.json",{
+      method:"PUT",
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify({
+        message:"queue: safari editor "+doc.updated_at_hkt,
+        content: b64(JSON.stringify(doc,null,2)+"\n"),
+        sha: meta.sha,
+        branch:"main"
+      })
+    });
+  }).then(function(r){
+    if(!r.ok) throw new Error("write "+r.status);
+    if(st) st.textContent="saved. box pulls within 5 min.";
+  }).catch(function(e){
+    if(st) st.textContent=String(e.message||e);
+  });
+}
+function bootEdit(){
+  document.querySelectorAll("#channels>li").forEach(function(li){
+    if(li.querySelector(".mv")) return;
+    var wrap=document.createElement("span");
+    wrap.className="mv";
+    wrap.innerHTML='<button type="button" class="up" aria-label="up">▲</button><button type="button" class="dn" aria-label="down">▼</button>';
+    wrap.querySelector(".up").onclick=function(){move(li,-1);};
+    wrap.querySelector(".dn").onclick=function(){move(li,1);};
+    li.insertBefore(wrap, li.firstChild);
+  });
+  var tog=$("editBtn");
+  if(tog) tog.onclick=function(){
+    document.body.classList.toggle("editing");
+    tog.textContent=document.body.classList.contains("editing")?"Done":"Edit queue";
+  };
+  var sv=$("saveBtn"); if(sv) sv.onclick=save;
+  var inp=$("patIn");
+  if(inp){
+    inp.value=pat()?"••••saved••••":"";
+    inp.onchange=function(){ if(inp.value && inp.value.indexOf("•")<0) localStorage.setItem("aios.pat", inp.value.trim()); };
+  }
+}
+pull();
+setInterval(pull, pat()?20000:55000);
+if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", bootEdit);
+else bootEdit();
+})();
+
+</script>
+</body></html>
