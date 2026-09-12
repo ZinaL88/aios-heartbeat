@@ -1,20 +1,16 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T14:42:18Z",
-  "written_at_hkt": "2026-09-12 22:42 HKT",
+  "written_at_utc": "2026-09-12T14:47:22Z",
+  "written_at_hkt": "2026-09-12 22:47 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": false,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 0,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": null,
     "sample": [
-      {
-        "pid": 248624,
-        "cmd": "-AaMLAG3ddo"
-      },
       {
         "pid": 210746,
         "cmd": "backfill"
@@ -22,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.5,
+    "mem_available_gi": 6.6,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.1,
+        "rss_gi": 3.11,
         "n": 33
       },
       {
@@ -71,9 +67,9 @@
         "n": 2
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.05,
-        "n": 1
+        "comm": "x11vnc",
+        "rss_gi": 0.04,
+        "n": 3
       }
     ],
     "meminfo": {
@@ -84,21 +80,21 @@
       "sreclaimable_gi": 0.5,
       "committed_gi": 5.6
     },
-    "load1": 0.44,
+    "load1": 0.94,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.7,
+    "age_hours": 0.8,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "-AaMLAG3ddo",
-    "last_id": "MCMNFixJD38",
+    "inflight": null,
+    "last_id": "Est3gogeYag",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -129,11 +125,11 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T14:45:00Z",
-    "next_cron_hkt": "2026-09-12 22:45 HKT",
+    "next_cron_utc": "2026-09-12T14:50:00Z",
+    "next_cron_hkt": "2026-09-12 22:50 HKT",
     "cron": "*/5",
     "job_restart": "Whisper on · captions idle (reboost captions if RAM≥1.2)",
-    "job_restart_at_hkt": "2026-09-12 22:45 HKT",
+    "job_restart_at_hkt": "2026-09-12 22:50 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -151,48 +147,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:42:18Z skip captions — no channel"
+      "summary": "2026-09-12T14:47:22Z skip captions — no channel"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:42:18Z skip captions — no channel"
+      "summary": "2026-09-12T14:47:22Z skip captions — no channel"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:42:18Z skip captions — no channel"
+      "summary": "2026-09-12T14:47:22Z skip captions — no channel"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:42:18Z skip captions — no channel"
+      "summary": "2026-09-12T14:47:22Z skip captions — no channel"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:42:18Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:47:22Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:42:18Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:47:22Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:42:18Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:47:22Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:42:18Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:47:22Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T14:42:18Z STT already running — no second Whisper",
-    "2026-09-12T14:42:18Z STT already running — no second Whisper",
-    "2026-09-12T14:42:18Z STT already running — no second Whisper",
+    "2026-09-12T14:47:22Z STT already running — no second Whisper",
+    "2026-09-12T14:47:22Z STT already running — no second Whisper",
+    "2026-09-12T14:47:22Z STT already running — no second Whisper",
     "backfill-captions.log: }",
     "{",
     "\"wrote_progress\": \"<path>",
