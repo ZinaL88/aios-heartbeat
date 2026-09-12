@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T05:20:01Z",
-  "written_at_hkt": "2026-09-12 13:20 HKT",
+  "written_at_utc": "2026-09-12T05:25:02Z",
+  "written_at_hkt": "2026-09-12 13:25 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -11,14 +11,14 @@
     "sample": []
   },
   "resources": {
-    "mem_available_gi": 2.6,
-    "load1": 0.01,
+    "mem_available_gi": 2.7,
+    "load1": 0.09,
     "disk_avail": "108G",
     "tmp_du": "8.1M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 20.3,
+    "age_hours": 20.4,
     "stale": false
   },
   "collector": {
@@ -34,11 +34,11 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T05:25:00Z",
-    "next_cron_hkt": "2026-09-12 13:25 HKT",
+    "next_cron_utc": "2026-09-12T05:30:00Z",
+    "next_cron_hkt": "2026-09-12 13:30 HKT",
     "cron": "*/5",
-    "job_restart": "blocked — RAM 2.6G < 6.0G; recheck every 5 min",
-    "job_restart_at_hkt": "2026-09-12 13:25 HKT",
+    "job_restart": "captions eligible now (2.7G≥1.2); Whisper blocked until 6.0G",
+    "job_restart_at_hkt": "2026-09-12 13:30 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -51,17 +51,7 @@
     {
       "at_hkt": "2026-09-12 13:05 HKT",
       "kind": "plan",
-      "summary": "Plan B current (captions ∥ one STT). Plan C adapter spine is backlog-only"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T05:00:04Z skip reboost — MemAvailable 2.7G < 6G (clean tmp, wait next cron)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T05:00:04Z skip reboost — MemAvailable 2.7G < 6G (clean tmp, wait next cron)"
+      "summary": "Plan B: captions worker (1.2G) parallel to one Whisper (6G). Plan C stays backlog."
     },
     {
       "at_hkt": "reboost.log",
@@ -92,12 +82,22 @@
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-12T05:15:05Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T05:20:04Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T05:20:04Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
     }
   ],
   "pm": {
     "token_free": true,
     "engine": "cron-rules",
-    "now": "plan-b: caption worker parallel to one Whisper (cpu_light captions never wait on ram_heavy STT)",
+    "now": "plan-b: captions worker (cpu_light, RAM>=1.2G) parallel to one Whisper (ram_heavy, RAM>=6G)",
     "backlog": [
       "plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)"
     ]
