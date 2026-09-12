@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T12:36:25Z",
-  "written_at_hkt": "2026-09-12 20:36 HKT",
+  "written_at_utc": "2026-09-12T12:41:19Z",
+  "written_at_hkt": "2026-09-12 20:41 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -12,8 +12,8 @@
     "captions_channel": "UCGWYKICLOE8Wxy7q3eYXmPA",
     "sample": [
       {
-        "pid": 168762,
-        "cmd": "Of0NhknDsQg"
+        "pid": 172126,
+        "cmd": "mOIYwMq0PZg"
       },
       {
         "pid": 146844,
@@ -26,12 +26,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.5,
+    "mem_available_gi": 6.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.11,
+        "rss_gi": 3.12,
         "n": 33
       },
       {
@@ -67,7 +67,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.08,
-        "n": 36
+        "n": 35
       },
       {
         "comm": "websockify",
@@ -82,27 +82,27 @@
     ],
     "meminfo": {
       "buffers_gi": 0.3,
-      "cached_gi": 2.7,
+      "cached_gi": 2.8,
       "anon_gi": 2.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 5.7
     },
-    "load1": 0.57,
+    "load1": 0.8,
     "disk_avail": "110G",
-    "tmp_du": "3.8M"
+    "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.8,
+    "age_hours": 0.9,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "Of0NhknDsQg",
-    "last_id": "wBqOgxTvVKU",
+    "inflight": "mOIYwMq0PZg",
+    "last_id": "WUaXamDfWCA",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -125,10 +125,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
-        "done": 897,
-        "left": 418,
+        "done": 995,
+        "left": 320,
         "total": 1315,
-        "eta_min": 35
+        "eta_min": 27
       }
     }
   },
@@ -137,8 +137,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T12:40:00Z",
-    "next_cron_hkt": "2026-09-12 20:40 HKT",
+    "next_cron_utc": "2026-09-12T12:45:00Z",
+    "next_cron_hkt": "2026-09-12 20:45 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -159,53 +159,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:36:25Z queue pick captions=UCGWYKICLOE8Wxy7q3eYXmPA stt=UCJAPsTtcJJWGk8e-_CJL8TQ"
+      "summary": "2026-09-12T12:41:19Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:36:25Z queue pick captions=UCGWYKICLOE8Wxy7q3eYXmPA stt=UCJAPsTtcJJWGk8e-_CJL8TQ"
+      "summary": "2026-09-12T12:41:19Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:36:25Z captions already running on UCGWYKICLOE8Wxy7q3eYXmPA"
+      "summary": "2026-09-12T12:41:19Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:36:25Z captions already running on UCGWYKICLOE8Wxy7q3eYXmPA"
+      "summary": "2026-09-12T12:41:19Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:36:25Z captions already running"
+      "summary": "2026-09-12T12:41:19Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:36:25Z captions already running"
+      "summary": "2026-09-12T12:41:19Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:36:25Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:41:19Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:36:25Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:41:19Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T12:36:25Z captions already running",
-    "2026-09-12T12:36:25Z STT already running — no second Whisper",
-    "2026-09-12T12:36:25Z STT already running — no second Whisper",
-    "backfill-captions.log: [882<path> MeorZXJJWKA 【人工智能】OpenAI和微软的合作开始出现裂痕？| 盟友变为对手 | 高层和员工互相不满 | 穆斯塔法·苏莱曼 | 削减资金投入 | 排他协议 | 非盈利组织 | AGI",
-    "sleep 2.9s",
-    "sleep 4.6s",
-    "[881<path> J9zTewPvEQQ 【人工智能】SambaNova RDU | 可重构数据流架构芯片 | 超越GPU推理能力 |  SN40L | SRAM+HBM+DDR DRAM | 并行处理 | 芯片初创公司独角兽",
-    "[882<path> MeorZXJJWKA 【人工智能】OpenAI和微软的合作开始出现裂痕？| 盟友变为对手 | 高层和员工互相不满 | 穆斯塔法·苏莱曼 | 削减资金投入 | 排他协议 | 非盈利组织 | AGI"
+    "2026-09-12T12:41:19Z STT already running — no second Whisper",
+    "2026-09-12T12:41:19Z STT already running — no second Whisper",
+    "2026-09-12T12:41:19Z STT already running — no second Whisper",
+    "backfill-captions.log: [956<path> GTN3B_JA8e0 【Google】谷歌被判垄断或面临拆分 | 美科技史上最大反垄断案 | 286页裁决报告 | 200亿买断苹果默认搜索引擎 | 定价旋钮 | 缺少竞争对手 | AI搜索引擎",
+    "sleep 3.5s",
+    "sleep 2.2s",
+    "[955<path> eHVKrsoQSWI 【人工智能】全球火爆游戏《黑神话·悟空》背后都有哪些AI技术支持 | 英伟达全景光线追踪技术 | DLSS 3.5 | 帧生成 | 光流加速 | 可自由对话和行动的AI NPC",
+    "[956<path> GTN3B_JA8e0 【Google】谷歌被判垄断或面临拆分 | 美科技史上最大反垄断案 | 286页裁决报告 | 200亿买断苹果默认搜索引擎 | 定价旋钮 | 缺少竞争对手 | AI搜索引擎"
   ],
   "pm": {
     "token_free": true,
