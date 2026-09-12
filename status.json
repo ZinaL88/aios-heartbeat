@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T06:36:04Z",
-  "written_at_hkt": "2026-09-12 14:36 HKT",
+  "written_at_utc": "2026-09-12T06:45:44Z",
+  "written_at_hkt": "2026-09-12 14:45 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -11,12 +11,12 @@
     "sample": []
   },
   "resources": {
-    "mem_available_gi": 5.4,
+    "mem_available_gi": 5.5,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.58,
+        "rss_gi": 3.56,
         "n": 38
       },
       {
@@ -71,15 +71,15 @@
       "anon_gi": 3.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 7.5
+      "committed_gi": 7.4
     },
-    "load1": 0.27,
+    "load1": 0.35,
     "disk_avail": "110G",
     "tmp_du": "3.5M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.7,
+    "age_hours": 0.9,
     "stale": false
   },
   "collector": {
@@ -95,11 +95,11 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T06:40:00Z",
-    "next_cron_hkt": "2026-09-12 14:40 HKT",
+    "next_cron_utc": "2026-09-12T06:50:00Z",
+    "next_cron_hkt": "2026-09-12 14:50 HKT",
     "cron": "*/5",
-    "job_restart": "captions eligible now (5.4G≥1.2); Whisper blocked until 6.0G",
-    "job_restart_at_hkt": "2026-09-12 14:40 HKT",
+    "job_restart": "captions eligible now (5.5G≥1.2); Whisper blocked until 6.0G",
+    "job_restart_at_hkt": "2026-09-12 14:50 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -117,12 +117,12 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T06:32:07Z skip STT — MemAvailable 5.5G < 6G (captions may still run)"
+      "summary": "2026-09-12T06:36:03Z skip STT — MemAvailable 5.4G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T06:32:07Z skip STT — MemAvailable 5.5G < 6G (captions may still run)"
+      "summary": "2026-09-12T06:36:03Z skip STT — MemAvailable 5.4G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
@@ -137,28 +137,28 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T06:36:03Z reboost captions pid 17555"
+      "summary": "2026-09-12T06:45:43Z reboost captions pid 20066"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T06:36:03Z reboost captions pid 17555"
+      "summary": "2026-09-12T06:45:43Z reboost captions pid 20066"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T06:36:03Z skip STT — MemAvailable 5.4G < 6G (captions may still run)"
+      "summary": "2026-09-12T06:45:43Z skip STT — MemAvailable 5.5G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T06:36:03Z skip STT — MemAvailable 5.4G < 6G (captions may still run)"
+      "summary": "2026-09-12T06:45:43Z skip STT — MemAvailable 5.5G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-12T06:36:03Z reboost captions pid 17555",
-    "2026-09-12T06:36:03Z skip STT — MemAvailable 5.4G < 6G (captions may still run)",
-    "2026-09-12T06:36:03Z skip STT — MemAvailable 5.4G < 6G (captions may still run)",
+    "2026-09-12T06:45:43Z reboost captions pid 20066",
+    "2026-09-12T06:45:43Z skip STT — MemAvailable 5.5G < 6G (captions may still run)",
+    "2026-09-12T06:45:43Z skip STT — MemAvailable 5.5G < 6G (captions may still run)",
     "backfill-captions.log: Nothing to do.",
     "\"already_done\": 834,",
     "\"dry_run\": false",
