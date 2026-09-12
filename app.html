@@ -1,71 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta http-equiv="Cache-Control" content="no-store" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>HEARTBEAT 3</title>
-  <style>
-    :root { --bg:#0f1210; --fg:#e8ebe6; --muted:#9aa39a; --live:#3dd68c; --bar:#2a2f2a; --accent:#c4f542; --warn:#e8b84a; }
-    * { box-sizing: border-box; }
-    body { margin:0; background:var(--bg); color:var(--fg); font: 15px/1.4 -apple-system, system-ui, sans-serif; padding: 16px; padding-top: max(16px, env(safe-area-inset-top)); }
-    h1 { font-size: 14px; letter-spacing: .08em; margin: 0; }
-    .mono { font-family: ui-monospace, Menlo, monospace; font-size: 12px; color: var(--muted); }
-    .row { display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-top: 8px; }
-    .bar { height: 8px; background: var(--bar); border-radius: 99px; overflow: hidden; margin-top: 8px; }
-    .bar > i { display:block; height:100%; background: var(--accent); }
-    .live { color: var(--live); }
-    .card { margin-top: 20px; padding-top: 16px; border-top: 1px solid #222; }
-    .dot { width:8px; height:8px; border-radius:99px; display:inline-block; background:#555; margin-right:6px; }
-    .dot.on { background: var(--live); box-shadow: 0 0 8px var(--live); }
-    .big { font-size: 28px; font-variant-numeric: tabular-nums; font-weight: 600; }
-    .warn { color: var(--warn); }
-  </style>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<meta http-equiv="Cache-Control" content="no-store"/>
+<title>HEARTBEAT 4</title>
+<style>
+:root { --bg:#0f1210; --fg:#e8ebe6; --muted:#9aa39a; --live:#3dd68c; --bar:#2a2f2a; --accent:#c4f542; --warn:#e8b84a; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.4 -apple-system,system-ui,sans-serif; padding:16px; padding-top:max(16px,env(safe-area-inset-top)); }
+h1 { font-size:14px; letter-spacing:.08em; margin:0; }
+.mono { font-family:ui-monospace,Menlo,monospace; font-size:12px; color:var(--muted); }
+.row { display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-top:8px; }
+.bar { height:8px; background:var(--bar); border-radius:99px; overflow:hidden; margin-top:8px; }
+.bar>i { display:block; height:100%; background:var(--accent); }
+.live { color:var(--live); }
+.card { margin-top:20px; padding-top:16px; border-top:1px solid #222; }
+.dot { width:8px; height:8px; border-radius:99px; display:inline-block; background:#555; margin-right:6px; }
+.dot.on { background:var(--live); }
+.big { font-size:28px; font-variant-numeric:tabular-nums; font-weight:600; }
+.warn { color:var(--warn); }
+</style>
 </head>
 <body>
-  <div class="row">
-    <h1>HEARTBEAT 3</h1>
-    <span id="age" class="mono">…</span>
-  </div>
-  <p id="ping" class="mono">seed</p>
-  <div class="card">
-    <div class="row"><span class="mono">ALL LEFT</span><span id="allEta" class="mono"></span></div>
-    <p class="big" id="allNum">—</p>
-    <div class="bar"><i id="allBar" style="width:0%"></i></div>
-  </div>
-  <div class="card">
-    <div class="row"><span class="mono"><span class="dot" id="capDot"></span>CAPTIONS</span><span id="capState" class="mono">—</span></div>
-    <p id="capCh"></p>
-    <div class="row"><span class="big" id="capNum">—</span><span id="capEta" class="mono"></span></div>
-    <div class="bar"><i id="capBar" style="width:0%"></i></div>
-  </div>
-  <div class="card">
-    <div class="row"><span class="mono"><span class="dot" id="sttDot"></span>STT</span><span id="sttState" class="mono">—</span></div>
-    <p id="sttCh"></p>
-    <div class="row"><span class="big" id="sttNum">—</span><span id="sttEta" class="mono"></span></div>
-    <div class="bar"><i id="sttBar" style="width:0%"></i></div>
-  </div>
-  <p id="ram" class="mono" style="margin-top:24px"></p>
-  <p class="mono" id="src">v3 · if this title is not HEARTBEAT 3 you are on a cached tab</p>
-<script>
-const SEED = {
+<div class="row"><h1>HEARTBEAT 4</h1><span class="mono" id="age">2026-09-12 21:31 HKT</span></div>
+<p class="mono" id="ping">2026-09-12 21:31 HKT · baked (JS off still shows this)</p>
+<div class="card">
+  <div class="row"><span class="mono">ALL LEFT</span><span class="mono" id="allEta">~50h 36m</span></div>
+  <p class="big" id="allNum">1000 left</p>
+  <div class="bar"><i id="allBar" style="width:32%"></i></div>
+</div>
+<div class="card">
+  <div class="row"><span class="mono"><span class="dot on" id="capDot"></span>CAPTIONS</span><span class="mono" id="capState">running</span></div>
+  <p id="capCh">mike1111</p>
+  <div class="row"><span class="big" id="capNum">532 / 778</span><span class="mono" id="capEta">246 left · ~20m</span></div>
+  <div class="bar"><i id="capBar" style="width:68%"></i></div>
+</div>
+<div class="card">
+  <div class="row"><span class="mono"><span class="dot on" id="sttDot"></span>STT</span><span class="mono" id="sttState">running</span></div>
+  <p id="sttCh">一个狠人</p>
+  <div class="row"><span class="big" id="sttNum">754 pending</span><span class="mono" id="sttEta">~50h 16m</span></div>
+  <div class="bar"><i id="sttBar" style="width:12%"></i></div>
+</div>
+<p class="mono" id="ram" style="margin-top:24px">RAM avail 6.5G / 15.6G · load 0.58</p>
+<p class="mono" id="src">v4 · numbers are in the HTML. If you see HEARTBEAT 4 and still dashes, this is the wrong file.</p>
+<script type="application/json" id="seed">{
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T13:26:09Z",
-  "written_at_hkt": "2026-09-12 21:26 HKT",
+  "written_at_utc": "2026-09-12T13:31:14Z",
+  "written_at_hkt": "2026-09-12 21:31 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 1,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
     "sample": [
-      {
-        "pid": 201304,
-        "cmd": "S_PyLcrK3jE"
-      },
       {
         "pid": 146844,
         "cmd": "backfill"
@@ -82,7 +73,7 @@ const SEED = {
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.08,
+        "rss_gi": 3.11,
         "n": 33
       },
       {
@@ -127,8 +118,8 @@ const SEED = {
       },
       {
         "comm": "python3",
-        "rss_gi": 0.06,
-        "n": 4
+        "rss_gi": 0.05,
+        "n": 3
       }
     ],
     "meminfo": {
@@ -139,21 +130,21 @@ const SEED = {
       "sreclaimable_gi": 0.5,
       "committed_gi": 5.6
     },
-    "load1": 0.68,
+    "load1": 0.58,
     "disk_avail": "110G",
-    "tmp_du": "4.1M"
+    "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.3,
+    "age_hours": 0.4,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "S_PyLcrK3jE",
-    "last_id": "EafvBcfXMes",
+    "inflight": null,
+    "last_id": "inwh2fnEerM",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -176,10 +167,10 @@ const SEED = {
       "captions": {
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-        "done": 415,
-        "left": 363,
+        "done": 532,
+        "left": 246,
         "total": 778,
-        "eta_min": 30
+        "eta_min": 20
       }
     }
   },
@@ -188,8 +179,8 @@ const SEED = {
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T13:30:00Z",
-    "next_cron_hkt": "2026-09-12 21:30 HKT",
+    "next_cron_utc": "2026-09-12T13:35:00Z",
+    "next_cron_hkt": "2026-09-12 21:35 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -210,53 +201,53 @@ const SEED = {
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z captions already running"
+      "summary": "2026-09-12T13:31:13Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z captions already running"
+      "summary": "2026-09-12T13:31:13Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z captions already running"
+      "summary": "2026-09-12T13:31:13Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z captions already running"
+      "summary": "2026-09-12T13:31:13Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T13:26:09Z STT already running — no second Whisper",
-    "2026-09-12T13:26:09Z STT already running — no second Whisper",
-    "2026-09-12T13:26:09Z STT already running — no second Whisper",
-    "This video is available to this channel's members on level: 人生自由不走弯路《财富会员》 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
-    "captions miss (no cookies): e missing. See  https:<path>  for details on installing one",
-    "This video is available to this channel's members on level: 人生自由不走弯路《财富会员》 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
-    "captions miss (no cookies): e missing. See  https:<path>  for details on installing one",
-    "This video is available to this channel's members on level: 人生自由不走弯路《财富会员》 (or any higher level). Join this channel to get access to members-only content and other exclusive perks."
+    "2026-09-12T13:31:13Z STT already running — no second Whisper",
+    "2026-09-12T13:31:13Z STT already running — no second Whisper",
+    "2026-09-12T13:31:13Z STT already running — no second Whisper",
+    "backfill-captions.log: ERROR: [youtube] P9gmmPKV39A: Join this channel to get access to members-only content like this video, and other exclusive perks.",
+    "sleep 2.8s",
+    "[485\u003cpath> sz9OZ0dzzOw 粉絲十萬收入公開｜10萬訂閱 收入｜十萬訂閱收入｜怎麼做YouTube頻道",
+    "美國股票｜俄羅斯滅門  captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:\u003cpath>  for details on installing one",
+    "ERROR: [youtube] P9gmmPKV39A: Join this channel to get access to members-only content like this video, and other exclusive perks."
   ],
   "pm": {
     "token_free": true,
@@ -267,87 +258,72 @@ const SEED = {
     ]
   }
 }
-;
-const NAMES = {
-  UC_5lJHgnMP_lb_VpIiXV0hQ: "#11 课代表立正",
-  UCJAPsTtcJJWGk8e-_CJL8TQ: "一个狠人",
-  UCGWYKICLOE8Wxy7q3eYXmPA: "bestpartners",
-  UCPpdGTNbIKdiWgxCrbka4Zw: "huanyihe777",
-  UCAxQ8sjHgjXh26la7jEBw3w: "mike1111",
-  UCeTLfPD7thTMabtL7w87Aug: "清流君",
-  UCP76ZVB1x9udP2UFcQkSvMA: "大卢和小田",
-  UCROR3SZDrohSela1sjD1STg: "王理元",
-  UCaIIFXfdQUYf3OHPIFNDdrQ: "Alan",
-};
-function title(id){ return NAMES[id] || id || "—"; }
-function eta(min){
-  if (min == null) return "—";
-  if (min <= 0) return "done";
-  if (min < 60) return "~" + min + "m";
-  return "~" + Math.floor(min/60) + "h " + (min%60) + "m";
+</script>
+<script>
+window.onerror=function(m){document.getElementById('src').textContent='js error: '+m;};
+function title(id){return {
+  UC_5lJHgnMP_lb_VpIiXV0hQ:"#11 课代表立正",
+  UCJAPsTtcJJWGk8e-_CJL8TQ:"一个狠人",
+  UCGWYKICLOE8Wxy7q3eYXmPA:"bestpartners",
+  UCPpdGTNbIKdiWgxCrbka4Zw:"huanyihe777",
+  UCAxQ8sjHgjXh26la7jEBw3w:"mike1111",
+  UCeTLfPD7thTMabtL7w87Aug:"清流君",
+  UCP76ZVB1x9udP2UFcQkSvMA:"大卢和小田",
+  UCROR3SZDrohSela1sjD1STg:"王理元",
+  UCaIIFXfdQUYf3OHPIFNDdrQ:"Alan"
+}[id]||id||"—";}
+function eta(min){if(min==null)return "—";if(min<=0)return "done";if(min<60)return "~"+min+"m";return "~"+Math.floor(min/60)+"h "+(min%60)+"m";}
+function paint(d,src){
+  var tr=(d.collector&&d.collector.tracks)||{};
+  var cap=tr.captions||{}, stt=tr.stt||{};
+  var capDone=cap.done||0, capLeft=cap.left||0, capTot=cap.total||(capDone+capLeft);
+  var sttPend=stt.pending||0;
+  document.getElementById("ping").textContent=(d.written_at_hkt||"—")+" · "+src;
+  document.getElementById("age").textContent=d.written_at_hkt||"—";
+  document.getElementById("allNum").textContent=((capLeft||0)+sttPend)+" left";
+  document.getElementById("allEta").textContent=eta((cap.eta_min||0)+(stt.eta_min||0));
+  document.getElementById("capDot").className="dot"+(cap.running?" on":"");
+  document.getElementById("capState").textContent=cap.running?"running":"idle";
+  document.getElementById("capCh").textContent=title(cap.channel_id);
+  document.getElementById("capNum").textContent=capTot?(capDone+" / "+capTot):"—";
+  document.getElementById("capEta").textContent=capLeft+" left · "+eta(cap.eta_min);
+  document.getElementById("capBar").style.width=(capTot?Math.min(99,capDone/capTot*100):0)+"%";
+  document.getElementById("sttDot").className="dot"+(stt.running?" on":"");
+  document.getElementById("sttState").textContent=stt.running?"running":"idle";
+  document.getElementById("sttCh").textContent=title(stt.channel_id);
+  document.getElementById("sttNum").textContent=sttPend+" pending";
+  document.getElementById("sttEta").textContent=eta(stt.eta_min);
+  var res=d.resources||{};
+  document.getElementById("ram").textContent="RAM avail "+(res.mem_available_gi??"—")+"G / "+(res.mem_total_gi??"—")+"G · load "+(res.load1??"—");
+  document.getElementById("src").textContent="v4 · "+src;
 }
-function ageLabel(utc){
-  if (!utc) return "no ping";
-  const s = (Date.now() - Date.parse(utc)) / 1000;
-  if (s < 90) return "LIVE " + Math.round(s) + "s";
-  if (s < 720) return Math.round(s/60) + "m old";
-  return "STALE " + Math.round(s/60) + "m";
+function get(url,ms){
+  var ctl=new AbortController();
+  var t=setTimeout(function(){ctl.abort();},ms);
+  return fetch(url,{cache:"no-store",mode:"cors",signal:ctl.signal}).then(function(r){
+    if(!r.ok) throw new Error(r.status);
+    return r.json();
+  }).finally(function(){clearTimeout(t);});
 }
-function paint(d, src){
-  const tr = (d.collector && d.collector.tracks) || {};
-  const cap = tr.captions || {};
-  const stt = tr.stt || {};
-  const capDone = cap.done ?? 0, capLeft = cap.left ?? 0, capTot = cap.total || (capDone+capLeft);
-  const sttPend = stt.pending ?? 0;
-  document.getElementById("ping").textContent = (d.written_at_hkt || "—") + " · " + src;
-  document.getElementById("age").textContent = ageLabel(d.written_at_utc);
-  document.getElementById("age").className = "mono " + ((Date.now()-Date.parse(d.written_at_utc))/1000 < 720 ? "live" : "warn");
-  document.getElementById("allNum").textContent = ((capLeft||0)+sttPend) + " left";
-  document.getElementById("allEta").textContent = eta((cap.eta_min||0)+(stt.eta_min||0));
-  document.getElementById("capDot").className = "dot" + (cap.running ? " on" : "");
-  document.getElementById("capState").textContent = cap.running ? "running" : "idle";
-  document.getElementById("capCh").textContent = title(cap.channel_id);
-  document.getElementById("capNum").textContent = capTot ? (capDone + " / " + capTot) : "—";
-  document.getElementById("capEta").textContent = (capLeft != null ? capLeft + " left · " : "") + eta(cap.eta_min);
-  document.getElementById("capBar").style.width = (capTot ? Math.min(99, capDone/capTot*100) : 0) + "%";
-  document.getElementById("sttDot").className = "dot" + (stt.running ? " on" : "");
-  document.getElementById("sttState").textContent = stt.running ? "running" : "idle";
-  document.getElementById("sttCh").textContent = title(stt.channel_id);
-  document.getElementById("sttNum").textContent = sttPend + " pending";
-  document.getElementById("sttEta").textContent = eta(stt.eta_min);
-  document.getElementById("sttBar").style.width = stt.running ? "12%" : (sttPend ? "4%" : "100%");
-  const res = d.resources || {};
-  document.getElementById("ram").textContent = "RAM avail " + (res.mem_available_gi ?? "—") + "G / " + (res.mem_total_gi ?? "—") + "G · load " + (res.load1 ?? "—");
-}
-async function get(url, ms){
-  const ctl = new AbortController();
-  const t = setTimeout(() => ctl.abort(), ms);
-  try {
-    const r = await fetch(url, { cache: "no-store", mode: "cors", signal: ctl.signal });
-    if (!r.ok) throw new Error(String(r.status));
-    return await r.json();
-  } finally { clearTimeout(t); }
-}
-async function refresh(){
-  const t = Date.now();
-  const list = [
-    "https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json?t=" + t,
-    "https://zinal88.github.io/aios-heartbeat/status.json?t=" + t,
-    "status.json?t=" + t
+function refresh(){
+  var t=Date.now();
+  var list=[
+    "https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json?t="+t,
+    "https://zinal88.github.io/aios-heartbeat/status.json?t="+t
   ];
-  for (const u of list){
-    try {
-      const d = await get(u, 4000);
-      paint(d, "live");
-      return;
-    } catch (e) {}
+  var i=0;
+  function next(){
+    if(i>=list.length) { document.getElementById("src").textContent="v4 · live blocked, baked numbers stay"; return; }
+    get(list[i++],4000).then(function(d){paint(d,"live");}).catch(next);
   }
-  document.getElementById("src").textContent = "v3 · live fetch blocked; showing last seed";
+  next();
 }
-paint(SEED, "seed");
+try {
+  var el=document.getElementById("seed");
+  if(el&&el.textContent) paint(JSON.parse(el.textContent),"baked");
+} catch(e) { document.getElementById("src").textContent="seed parse "+e; }
 refresh();
-setInterval(refresh, 20000);
-document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
+setInterval(refresh,20000);
 </script>
 </body>
 </html>
