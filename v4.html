@@ -32,13 +32,15 @@ body:has(#editWrap[open]) .mv { display:flex; }
 .mv button { min-width:44px; min-height:36px; background:#222; color:var(--fg); border:0; border-radius:6px; }
 #editWrap { margin-top:12px; }
 #editWrap summary.act { list-style:none; cursor:pointer; display:flex; align-items:center; justify-content:center; }
-#editWrap summary.act::-webkit-details-marker { display:none; }
+.ed input.nm, .ed input.uc { display:block; width:100%; margin:4px 0; background:#1a1a1a; color:var(--fg); border:1px solid #333; border-radius:6px; padding:8px; min-height:40px; }
+.ed .rm { margin-left:8px; background:transparent; color:#c47a72; border:0; min-height:40px; }
+#addCh { margin-top:8px; }
 input, button.act, summary.act { min-height:44px; width:100%; margin:8px 0; background:#1a1a1a; color:var(--fg); border:1px solid #333; border-radius:8px; padding:8px 12px; }
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-12 23:02 HKT</span></div>
-<p class="mono" id="ping">2026-09-12 23:02 HKT</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-12 23:07 HKT</span></div>
+<p class="mono" id="ping">2026-09-12 23:07 HKT</p>
 
 <div class="card">
   <div class="row"><h2>ALL LEFT</h2><span class="mono" id="allEta">~50h 16m</span></div>
@@ -64,25 +66,26 @@ input, button.act, summary.act { min-height:44px; width:100%; margin:8px 0; back
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 6.5G / 15.6G · load 0.39</p>
-  <p class="mono" id="box2">disk 110G · tmp 3.9M · cookies yes · 1.0h</p>
-  <p class="mono" id="sched">next ping 2026-09-12 23:05 HKT · Whisper on · captions idle (reboost captions if RAM≥1.2)</p>
+  <p class="ch" id="ram">RAM 6.5G / 15.6G · load 0.75</p>
+  <p class="mono" id="box2">disk 110G · tmp 3.9M · cookies yes · 1.1h</p>
+  <p class="mono" id="sched">next ping 2026-09-12 23:10 HKT · Whisper on · captions idle (reboost captions if RAM≥1.2)</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li><b>STT</b> · 一个狠人 · 754 pending</li><li class="mono">pid 260158 · ZmF_GSWDFPI</li><li class="mono">pid 210746 · backfill</li></ol>
+  <ol id="running"><li><b>STT</b> · 一个狠人 · 754 pending</li><li class="mono">pid 210746 · backfill</li></ol>
 </div>
 
 <div class="card">
   <h2>CHANNEL QUEUE · 9</h2>
-  <ol id="channels"><li data-cid="UC_5lJHgnMP_lb_VpIiXV0hQ"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">1</span><div><b>#11 课代表立正</b><div class="mono">skip · public captions exhausted (834 done). STT leftover only if RAM&gt;=6G later.</div></div></li><li data-cid="UCJAPsTtcJJWGk8e-_CJL8TQ"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">2</span><div><b>一个狠人</b><div class="mono">running · members done · public pending — NOW</div></div></li><li data-cid="UCGWYKICLOE8Wxy7q3eYXmPA"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">3</span><div><b>bestpartners</b><div class="mono">queued</div></div></li><li data-cid="UCPpdGTNbIKdiWgxCrbka4Zw"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">4</span><div><b>huanyihe777</b><div class="mono">queued</div></div></li><li data-cid="UCAxQ8sjHgjXh26la7jEBw3w"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">5</span><div><b>mike1111</b><div class="mono">queued</div></div></li><li data-cid="UCeTLfPD7thTMabtL7w87Aug"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">6</span><div><b>清流君</b><div class="mono">queued</div></div></li><li data-cid="UCP76ZVB1x9udP2UFcQkSvMA"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">7</span><div><b>大卢和小田</b><div class="mono">queued</div></div></li><li data-cid="UCROR3SZDrohSela1sjD1STg"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">8</span><div><b>王理元</b><div class="mono">queued</div></div></li><li data-cid="UCaIIFXfdQUYf3OHPIFNDdrQ"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">9</span><div><b>Alan</b><div class="mono">queued</div></div></li></ol>
+  <ol id="channels"><li data-cid="UC_5lJHgnMP_lb_VpIiXV0hQ"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">1</span><div class="ed"><input class="nm" value="#11 课代表立正" placeholder="name"/><input class="uc" value="UC_5lJHgnMP_lb_VpIiXV0hQ" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk" checked/> skip</label><button type="button" class="rm" onclick="this.closest('li').remove()">remove</button><div class="mono">skip · public captions exhausted (834 done). STT leftover only if RAM&gt;=6G later.</div></div></li><li data-cid="UCJAPsTtcJJWGk8e-_CJL8TQ"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">2</span><div class="ed"><input class="nm" value="一个狠人" placeholder="name"/><input class="uc" value="UCJAPsTtcJJWGk8e-_CJL8TQ" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk" /> skip</label><button type="button" class="rm" onclick="this.closest('li').remove()">remove</button><div class="mono">running · public captions exhausted · STT leftover only — do not start captions here</div></div></li><li data-cid="UCGWYKICLOE8Wxy7q3eYXmPA"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">3</span><div class="ed"><input class="nm" value="bestpartners" placeholder="name"/><input class="uc" value="UCGWYKICLOE8Wxy7q3eYXmPA" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk" /> skip</label><button type="button" class="rm" onclick="this.closest('li').remove()">remove</button><div class="mono">queued · NEXT captions (jobs=2) while 狠人 STT runs</div></div></li><li data-cid="UCPpdGTNbIKdiWgxCrbka4Zw"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">4</span><div class="ed"><input class="nm" value="huanyihe777" placeholder="name"/><input class="uc" value="UCPpdGTNbIKdiWgxCrbka4Zw" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk" /> skip</label><button type="button" class="rm" onclick="this.closest('li').remove()">remove</button><div class="mono">queued</div></div></li><li data-cid="UCAxQ8sjHgjXh26la7jEBw3w"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">5</span><div class="ed"><input class="nm" value="mike1111" placeholder="name"/><input class="uc" value="UCAxQ8sjHgjXh26la7jEBw3w" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk" /> skip</label><button type="button" class="rm" onclick="this.closest('li').remove()">remove</button><div class="mono">queued</div></div></li><li data-cid="UCeTLfPD7thTMabtL7w87Aug"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">6</span><div class="ed"><input class="nm" value="清流君" placeholder="name"/><input class="uc" value="UCeTLfPD7thTMabtL7w87Aug" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk" /> skip</label><button type="button" class="rm" onclick="this.closest('li').remove()">remove</button><div class="mono">queued</div></div></li><li data-cid="UCP76ZVB1x9udP2UFcQkSvMA"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">7</span><div class="ed"><input class="nm" value="大卢和小田" placeholder="name"/><input class="uc" value="UCP76ZVB1x9udP2UFcQkSvMA" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk" /> skip</label><button type="button" class="rm" onclick="this.closest('li').remove()">remove</button><div class="mono">queued</div></div></li><li data-cid="UCROR3SZDrohSela1sjD1STg"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">8</span><div class="ed"><input class="nm" value="王理元" placeholder="name"/><input class="uc" value="UCROR3SZDrohSela1sjD1STg" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk" /> skip</label><button type="button" class="rm" onclick="this.closest('li').remove()">remove</button><div class="mono">queued</div></div></li><li data-cid="UCaIIFXfdQUYf3OHPIFNDdrQ"><span class="mv"><button type="button" onclick="var li=this.closest('li');var p=li.previousElementSibling;if(p)li.parentNode.insertBefore(li,p);">▲</button><button type="button" onclick="var li=this.closest('li');var n=li.nextElementSibling;if(n)li.parentNode.insertBefore(n,li);">▼</button></span><span class="n">9</span><div class="ed"><input class="nm" value="Alan" placeholder="name"/><input class="uc" value="UCaIIFXfdQUYf3OHPIFNDdrQ" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk" /> skip</label><button type="button" class="rm" onclick="this.closest('li').remove()">remove</button><div class="mono">queued</div></div></li></ol>
   <details id="editWrap">
     <summary class="act">Edit queue</summary>
     <input id="patIn" type="password" autocomplete="off" placeholder="GitHub PAT · Contents write on ZinaL88/ai-os · stays on this phone"/>
     <button type="button" class="act" id="saveBtn">Save order to git</button>
-    <p class="mono" id="saveState">▲▼ appear when this is open. Save writes git. Box pulls within 5 min. No Jarvis.</p>
+    <p class="mono" id="saveState">Open this to add / remove / skip / rename / reorder. Save writes git. Box pulls within 5 min. No Jarvis.</p>
+    <button type="button" class="act" id="addCh">Add channel</button>
   </details>
 </div>
 
@@ -93,7 +96,7 @@ input, button.act, summary.act { min-height:44px; width:100%; margin:8px 0; back
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-12T15:02:33Z captions already running</li><li><span class="mono">reboost.log</span> 2026-09-12T15:02:33Z STT already running — no second Whisper</li><li><span class="mono">reboost.log</span> 2026-09-12T15:02:33Z skip captions — no channel</li><li><span class="mono">reboost.log</span> 2026-09-12T15:02:34Z STT already running — no second Whisper</li><li class="mono">&quot;wrote_progress&quot;: &quot;&lt;path&gt;</li><li class="mono">&quot;done_count&quot;: 80</li><li class="mono">}</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-12T15:07:38Z skip captions — no channel</li><li><span class="mono">reboost.log</span> 2026-09-12T15:07:38Z STT already running — no second Whisper</li><li class="mono">&quot;wrote_progress&quot;: &quot;&lt;path&gt;</li><li class="mono">&quot;done_count&quot;: 80</li><li class="mono">}</li></ol>
 </div>
 
 <div class="card">
@@ -135,7 +138,7 @@ function paint(d){
   if($("allNum")) $("allNum").textContent=((capLeft||0)+sttPend)+" left";
   if($("allEta")) $("allEta").textContent=eta((cap.eta_min||0)+(stt.eta_min||0));
   if($("capDot")) $("capDot").className="dot"+(cap.running?" on":"");
-  if($("capState")) $("capState").textContent=cap.running?"running":"idle";
+  if($("capState")) $("capState").textContent=(cap.running?((d.processes&&d.processes.backfill_n)||cap.jobs||1)+" jobs":"idle");
   if($("capCh")) $("capCh").textContent=title(cap.channel_id);
   if($("capNum")) $("capNum").textContent=capTot?(capDone+" / "+capTot):"—";
   if($("capEta")) $("capEta").textContent=capLeft+" left · "+eta(cap.eta_min);
@@ -189,7 +192,6 @@ function save(){
   var st=$("saveState");
   if(!pat()){ if(st) st.textContent="paste a GitHub PAT first (Contents write on ai-os). Token stays on this phone."; return; }
   if(st) st.textContent="saving…";
-  var ids=[].map.call(document.querySelectorAll("#channels>li"), function(li){return li.getAttribute("data-cid");});
   gh("/repos/ZinaL88/ai-os/contents/jobs/channel_queue.json").then(function(r){
     if(!r.ok) throw new Error("read "+r.status);
     return r.json();
@@ -197,9 +199,16 @@ function save(){
     var doc=JSON.parse(decodeURIComponent(escape(atob(meta.content.replace(/\n/g,"")))));
     var map={};
     (doc.queue||[]).forEach(function(c){map[c.channel_id]=c;});
-    doc.queue=ids.map(function(id){return map[id];}).filter(Boolean);
-    var left=(doc.queue||[]).map(function(c){return c.channel_id;});
-    Object.keys(map).forEach(function(id){ if(left.indexOf(id)<0) doc.queue.push(map[id]); });
+    doc.queue=[].map.call(document.querySelectorAll("#channels>li"), function(li){
+      var id=(li.querySelector(".uc")?li.querySelector(".uc").value:li.getAttribute("data-cid")||"").trim();
+      var name=li.querySelector(".nm")?li.querySelector(".nm").value.trim():"";
+      var skip=li.querySelector(".sk")?li.querySelector(".sk").checked:false;
+      var prev=map[id]||{access:"public",mode:"captions"};
+      prev.channel_id=id; prev.name=name; prev.skip=skip;
+      if(!prev.access) prev.access="public";
+      if(!prev.mode) prev.mode="captions";
+      return prev;
+    }).filter(function(c){return c.channel_id;});
     var now=new Date();
     var hkt=new Date(now.getTime()+8*3600*1000);
     doc.updated_at_hkt=hkt.toISOString().slice(0,16).replace("T"," ")+" HKT";
@@ -220,8 +229,15 @@ function save(){
     if(st) st.textContent=String(e.message||e);
   });
 }
+function addCh(){
+  var ol=$("channels"); if(!ol) return;
+  var li=document.createElement("li");
+  li.innerHTML='<span class="mv"><button type="button">▲</button><button type="button">▼</button></span><span class="n">+</span><div class="ed"><input class="nm" placeholder="name"/><input class="uc" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk"/> skip</label><button type="button" class="rm" onclick="this.closest(\'li\').remove()">remove</button></div>';
+  ol.appendChild(li);
+}
 function bootEdit(){
   var sv=$("saveBtn"); if(sv) sv.onclick=save;
+  var ad=$("addCh"); if(ad) ad.onclick=addCh;
   var inp=$("patIn");
   if(inp){
     inp.value=pat()?"••••saved••••":"";
