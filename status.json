@@ -1,37 +1,33 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T13:41:22Z",
-  "written_at_hkt": "2026-09-12 21:41 HKT",
+  "written_at_utc": "2026-09-12T13:46:28Z",
+  "written_at_hkt": "2026-09-12 21:46 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 1,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-    "captions_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
+    "captions_channel": "UCeTLfPD7thTMabtL7w87Aug",
     "sample": [
-      {
-        "pid": 211297,
-        "cmd": "YMNM2bV4CE0"
-      },
       {
         "pid": 210746,
         "cmd": "backfill"
       },
       {
-        "pid": 189912,
+        "pid": 212016,
         "cmd": "backfill"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 6.6,
+    "mem_available_gi": 6.5,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.04,
+        "rss_gi": 3.1,
         "n": 33
       },
       {
@@ -60,11 +56,6 @@
         "n": 3
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.1,
-        "n": 2
-      },
-      {
         "comm": "csnaps",
         "rss_gi": 0.08,
         "n": 1
@@ -78,6 +69,11 @@
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
+      },
+      {
+        "comm": "python3",
+        "rss_gi": 0.05,
+        "n": 3
       }
     ],
     "meminfo": {
@@ -86,23 +82,23 @@
       "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
-      "committed_gi": 5.7
+      "committed_gi": 5.6
     },
-    "load1": 0.31,
+    "load1": 0.74,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.6,
+    "age_hours": 0.1,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "YMNM2bV4CE0",
-    "last_id": "PL3Vpo96Las",
+    "inflight": null,
+    "last_id": "vZ6VuIsRtcc",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -124,11 +120,11 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-        "done": 775,
-        "left": 3,
-        "total": 778,
-        "eta_min": 1
+        "channel_id": "UCeTLfPD7thTMabtL7w87Aug",
+        "done": 108,
+        "left": 33,
+        "total": 141,
+        "eta_min": 3
       }
     }
   },
@@ -137,8 +133,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T13:45:00Z",
-    "next_cron_hkt": "2026-09-12 21:45 HKT",
+    "next_cron_utc": "2026-09-12T13:50:00Z",
+    "next_cron_hkt": "2026-09-12 21:50 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -159,53 +155,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:41:22Z captions already running"
+      "summary": "2026-09-12T13:46:27Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:41:22Z captions already running"
+      "summary": "2026-09-12T13:46:27Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:41:22Z captions already running"
+      "summary": "2026-09-12T13:46:27Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:41:22Z captions already running"
+      "summary": "2026-09-12T13:46:27Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:41:22Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:46:27Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:41:22Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:46:27Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:41:22Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:46:27Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:41:22Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:46:27Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T13:41:22Z STT already running — no second Whisper",
-    "2026-09-12T13:41:22Z STT already running — no second Whisper",
-    "2026-09-12T13:41:22Z STT already running — no second Whisper",
-    "backfill-captions.log: ERROR: [youtube] bxqmJseTNZc: Join this channel to get access to members-only content like this video, and other exclusive perks.",
+    "2026-09-12T13:46:27Z STT already running — no second Whisper",
+    "2026-09-12T13:46:27Z STT already running — no second Whisper",
+    "2026-09-12T13:46:27Z STT already running — no second Whisper",
+    "backfill-captions.log: ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
     "captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
-    "ERROR: [youtube] 6A2BlMi_CGQ: Join this channel to get access to members-only content like this video, and other exclusive perks.",
-    "captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
-    "ERROR: [youtube] bxqmJseTNZc: Join this channel to get access to members-only content like this video, and other exclusive perks."
+    "ERROR: [youtube] u19vjps-kaI: Join this channel to get access to members-only content like this video, and other exclusive perks.",
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests"
   ],
   "pm": {
     "token_free": true,
