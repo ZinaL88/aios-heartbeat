@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T05:40:01Z",
-  "written_at_hkt": "2026-09-12 13:40 HKT",
+  "written_at_utc": "2026-09-12T05:45:02Z",
+  "written_at_hkt": "2026-09-12 13:45 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -11,11 +11,11 @@
     "sample": []
   },
   "resources": {
-    "mem_available_gi": 2.6,
+    "mem_available_gi": 2.7,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
-        "rss_gi": 0.74,
+        "rss_gi": 0.7,
         "comm": "node"
       },
       {
@@ -47,13 +47,13 @@
         "comm": "node"
       }
     ],
-    "load1": 0.2,
+    "load1": 0.23,
     "disk_avail": "108G",
     "tmp_du": "8.1M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 20.7,
+    "age_hours": 20.8,
     "stale": false
   },
   "collector": {
@@ -69,11 +69,11 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T05:45:00Z",
-    "next_cron_hkt": "2026-09-12 13:45 HKT",
+    "next_cron_utc": "2026-09-12T05:50:00Z",
+    "next_cron_hkt": "2026-09-12 13:50 HKT",
     "cron": "*/5",
-    "job_restart": "captions eligible now (2.6G≥1.2); Whisper blocked until 6.0G",
-    "job_restart_at_hkt": "2026-09-12 13:45 HKT",
+    "job_restart": "captions eligible now (2.7G≥1.2); Whisper blocked until 6.0G",
+    "job_restart_at_hkt": "2026-09-12 13:50 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -91,12 +91,12 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:30:05Z skip STT — MemAvailable 2.7G < 6G (captions may still run)"
+      "summary": "2026-09-12T05:35:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:30:05Z skip STT — MemAvailable 2.7G < 6G (captions may still run)"
+      "summary": "2026-09-12T05:35:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
@@ -111,31 +111,31 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:35:04Z reboost captions pid 1413061"
+      "summary": "2026-09-12T05:40:04Z reboost captions pid 1414507"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:35:04Z reboost captions pid 1413061"
+      "summary": "2026-09-12T05:40:04Z reboost captions pid 1414507"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:35:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)"
+      "summary": "2026-09-12T05:40:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:35:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)"
+      "summary": "2026-09-12T05:40:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
     "9 --mode captions --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC_5lJHgnMP_lb_VpIiXV0hQ/inventory_public.json --cookies /workspace/uploads/youtube-cookies.txt",
     "9 --mode captions --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC_5lJHgnMP_lb_VpIiXV0hQ/inventory_public.json --cookies /workspace/uploads/youtube-cookies.txt",
-    "2026-09-12T05:35:04Z reboost captions pid 1413061",
-    "2026-09-12T05:35:04Z reboost captions pid 1413061",
-    "2026-09-12T05:35:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)",
-    "2026-09-12T05:35:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)"
+    "2026-09-12T05:40:04Z reboost captions pid 1414507",
+    "2026-09-12T05:40:04Z reboost captions pid 1414507",
+    "2026-09-12T05:40:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)",
+    "2026-09-12T05:40:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)"
   ],
   "pm": {
     "token_free": true,
