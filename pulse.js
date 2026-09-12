@@ -142,14 +142,25 @@ function addCh(){
   li.innerHTML='<span class="mv"><button type="button">▲</button><button type="button">▼</button></span><span class="n">+</span><div class="txt"><b>new</b></div><div class="edit-only"><input class="nm" placeholder="name"/><input class="uc" placeholder="UC…"/><label class="skl"><input type="checkbox" class="sk"/> skip — box will not start this</label><button type="button" class="rm" onclick="this.closest(\'li\').remove()">remove</button></div>';
   ol.appendChild(li);
 }
+function qtab(id){
+  document.querySelectorAll("#qTabs button").forEach(function(b){ b.classList.remove("on"); });
+  var btn=document.getElementById("tab-"+id);
+  if(btn) btn.classList.add("on");
+  if($("channels")) $("channels").hidden = (id!=="ch");
+  if($("playlists")) $("playlists").hidden = (id==="ch");
+  document.querySelectorAll("#playlists details").forEach(function(d){
+    var sum=(d.querySelector("summary")||{}).textContent||"";
+    var show = id==="tk" || id==="all" || (id==="p0"&&sum.indexOf("P0")===0) || (id==="p1"&&sum.indexOf("P1")===0) || (id==="p2"&&sum.indexOf("P2")===0);
+    d.hidden = (id==="ch") ? true : !show && id!=="tk";
+    if(id==="tk") d.hidden=false;
+  });
+}
+window.qtab=qtab;
 function bootTabs(){
   document.querySelectorAll("#qTabs button").forEach(function(b){
     b.addEventListener("click", function(){
-      document.querySelectorAll("#qTabs button").forEach(function(x){ x.classList.remove("on"); });
-      b.classList.add("on");
-      var ch = b.getAttribute("data-qtab")==="ch";
-      if($("channels")) $("channels").hidden = !ch;
-      if($("playlists")) $("playlists").hidden = ch;
+      var id=(b.id||"").replace("tab-","");
+      qtab(id||"ch");
     });
   });
 }
