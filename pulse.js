@@ -37,7 +37,7 @@ function paint(d){
   if($("sttState")) $("sttState").textContent=stt.running?"running":"idle";
   if($("sttCh")) $("sttCh").textContent=title(stt.channel_id);
   if($("sttNum")) $("sttNum").textContent=sttPend+" pending";
-  if($("sttEta")) $("sttEta").textContent=eta(stt.eta_min);
+  if($("sttEta")) $("sttEta").textContent=stt.eta_hkt||eta(stt.eta_min);
   var res=d.resources||{};
   if($("ram")) $("ram").textContent="RAM "+(res.mem_available_gi!=null?res.mem_available_gi:"—")+"G / "+(res.mem_total_gi!=null?res.mem_total_gi:"—")+"G · load "+(res.load1!=null?res.load1:"—");
   if($("src")) $("src").textContent="live GitHub API · no page reload · cache bypassed";
@@ -142,11 +142,22 @@ function addCh(){
   li.innerHTML='<span class="mv"><button type="button">▲</button><button type="button">▼</button></span><span class="n">+</span><div class="txt"><b>new</b></div><div class="edit-only"><input class="nm" placeholder="name"/><input class="uc" placeholder="UC…"/><label class="skl"><input type="checkbox" class="sk"/> skip — box will not start this</label><button type="button" class="rm" onclick="this.closest(\'li\').remove()">remove</button></div>';
   ol.appendChild(li);
 }
+function bootTabs(){
+  document.querySelectorAll("#qTabs button").forEach(function(b){
+    b.addEventListener("click", function(){
+      document.querySelectorAll("#qTabs button").forEach(function(x){ x.classList.remove("on"); });
+      b.classList.add("on");
+      var ch = b.getAttribute("data-qtab")==="ch";
+      if($("channels")) $("channels").hidden = !ch;
+      if($("playlists")) $("playlists").hidden = ch;
+    });
+  });
+}
 function bootEdit(){
   var ed=$("editBtn");
   if(ed) ed.onclick=function(){
     document.body.classList.toggle("editing");
-    ed.textContent=document.body.classList.contains("editing")?"Done editing":"Edit names / skip / add / remove";
+    ed.textContent=document.body.classList.contains("editing")?"Done":"Edit";
   };
   var sv=$("saveBtn"); if(sv) sv.onclick=save;
   var ad=$("addCh"); if(ad) ad.onclick=addCh;
@@ -159,6 +170,6 @@ function bootEdit(){
 try{ var __c=localStorage.getItem("aios-hb-v1"); if(__c) paint(JSON.parse(__c)); }catch(e){}
 pull();
 setInterval(pull, 15000);
-if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", bootEdit);
-else bootEdit();
+if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", function(){ bootTabs(); bootEdit(); });
+else { bootTabs(); bootEdit(); }
 })();
