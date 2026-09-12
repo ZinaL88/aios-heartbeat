@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T12:14:52Z",
-  "written_at_hkt": "2026-09-12 20:14 HKT",
+  "written_at_utc": "2026-09-12T12:19:46Z",
+  "written_at_hkt": "2026-09-12 20:19 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -10,8 +10,8 @@
     "backfill_n": 1,
     "sample": [
       {
-        "pid": 153321,
-        "cmd": "lxTdF1ASpjY"
+        "pid": 156345,
+        "cmd": "0RoilMFL6S4"
       },
       {
         "pid": 146844,
@@ -29,7 +29,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.06,
+        "rss_gi": 3.05,
         "n": 33
       },
       {
@@ -39,7 +39,7 @@
       },
       {
         "comm": "yt-dlp",
-        "rss_gi": 0.17,
+        "rss_gi": 0.15,
         "n": 3
       },
       {
@@ -73,41 +73,43 @@
         "n": 2
       },
       {
-        "comm": "csnaps",
-        "rss_gi": 0.06,
-        "n": 1
+        "comm": "python3",
+        "rss_gi": 0.07,
+        "n": 4
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
       "cached_gi": 2.9,
-      "anon_gi": 2.6,
+      "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 5.8
     },
-    "load1": 0.83,
+    "load1": 0.97,
     "disk_avail": "110G",
-    "tmp_du": null
+    "tmp_du": "3.8M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.4,
+    "age_hours": 0.5,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "lxTdF1ASpjY",
-    "last_id": "dx5h2HjzzMY",
+    "inflight": "0RoilMFL6S4",
+    "last_id": "DwwM4_B02dk",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ"
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {},
+  "git_sync": {
+    "pull": "ok"
+  },
   "schedule": {
-    "next_cron_utc": "2026-09-12T12:15:00Z",
-    "next_cron_hkt": "2026-09-12 20:15 HKT",
+    "next_cron_utc": "2026-09-12T12:20:00Z",
+    "next_cron_hkt": "2026-09-12 20:20 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -128,53 +130,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:14:42Z captions already running"
+      "summary": "2026-09-12T12:19:46Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:14:42Z captions already running"
+      "summary": "2026-09-12T12:19:46Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:14:42Z captions already running"
+      "summary": "2026-09-12T12:19:46Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:14:42Z captions already running"
+      "summary": "2026-09-12T12:19:46Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:14:42Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:19:46Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:14:42Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:19:46Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:14:42Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:19:46Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:14:42Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:19:46Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T12:14:42Z STT already running — no second Whisper",
-    "2026-09-12T12:14:42Z STT already running — no second Whisper",
-    "2026-09-12T12:14:42Z STT already running — no second Whisper",
-    "backfill-captions.log: [471<path> hFGWSFgABIM 【分享】揭示你不敢行动的真实原因 | 解锁沉睡潜能 | 告别拖延内耗 | 拥抱不适 | 寻找内在动机 | 打破认知盲区 | 重塑行动大脑 | 接受不完美 | 告别旧自己",
-    "sleep 2.6s",
-    "sleep 2.3s",
-    "[470<path> KcC1JCiHMk8 【人工智能】LangChain年度报告 | Agent现状 | 大厂如何落地 | 输出质量 | 延迟痛点 | 多模型 | 可观测性 | 2025趋势",
-    "[471<path> hFGWSFgABIM 【分享】揭示你不敢行动的真实原因 | 解锁沉睡潜能 | 告别拖延内耗 | 拥抱不适 | 寻找内在动机 | 打破认知盲区 | 重塑行动大脑 | 接受不完美 | 告别旧自己"
+    "2026-09-12T12:19:46Z STT already running — no second Whisper",
+    "2026-09-12T12:19:46Z STT already running — no second Whisper",
+    "2026-09-12T12:19:46Z STT already running — no second Whisper",
+    "backfill-captions.log: [547<path> roAgE4glhqM 【人工智能】早期经验范式 | AI Agent正在迈向经验时代 | 让AI从自身试错中学习 | Rich Sutton | 隐式世界建模 | 自我反思 | 有效性 | 泛化性 | RL兼容性",
+    "sleep 4.3s",
+    "[546<path> rADZ8xw3SA0 【AI动态】每日科技新闻 | 20251016 | 谷歌正式推出Veo 3.1 | 基于Gemma的单细胞分析模型 | Coral NPU | AI音乐疗法 | Claude Haiku 4.5",
+    "sleep 3.5s",
+    "[547<path> roAgE4glhqM 【人工智能】早期经验范式 | AI Agent正在迈向经验时代 | 让AI从自身试错中学习 | Rich Sutton | 隐式世界建模 | 自我反思 | 有效性 | 泛化性 | RL兼容性"
   ],
   "pm": {
     "token_free": true,
