@@ -1,20 +1,16 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T13:26:09Z",
-  "written_at_hkt": "2026-09-12 21:26 HKT",
+  "written_at_utc": "2026-09-12T13:31:14Z",
+  "written_at_hkt": "2026-09-12 21:31 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 1,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
     "sample": [
-      {
-        "pid": 201304,
-        "cmd": "S_PyLcrK3jE"
-      },
       {
         "pid": 146844,
         "cmd": "backfill"
@@ -31,7 +27,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.08,
+        "rss_gi": 3.11,
         "n": 33
       },
       {
@@ -76,8 +72,8 @@
       },
       {
         "comm": "python3",
-        "rss_gi": 0.06,
-        "n": 4
+        "rss_gi": 0.05,
+        "n": 3
       }
     ],
     "meminfo": {
@@ -88,21 +84,21 @@
       "sreclaimable_gi": 0.5,
       "committed_gi": 5.6
     },
-    "load1": 0.68,
+    "load1": 0.58,
     "disk_avail": "110G",
-    "tmp_du": "4.1M"
+    "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.3,
+    "age_hours": 0.4,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "S_PyLcrK3jE",
-    "last_id": "EafvBcfXMes",
+    "inflight": null,
+    "last_id": "inwh2fnEerM",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -125,10 +121,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-        "done": 415,
-        "left": 363,
+        "done": 532,
+        "left": 246,
         "total": 778,
-        "eta_min": 30
+        "eta_min": 20
       }
     }
   },
@@ -137,8 +133,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T13:30:00Z",
-    "next_cron_hkt": "2026-09-12 21:30 HKT",
+    "next_cron_utc": "2026-09-12T13:35:00Z",
+    "next_cron_hkt": "2026-09-12 21:35 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -159,53 +155,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z captions already running"
+      "summary": "2026-09-12T13:31:13Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z captions already running"
+      "summary": "2026-09-12T13:31:13Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z captions already running"
+      "summary": "2026-09-12T13:31:13Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z captions already running"
+      "summary": "2026-09-12T13:31:13Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:26:09Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T13:26:09Z STT already running — no second Whisper",
-    "2026-09-12T13:26:09Z STT already running — no second Whisper",
-    "2026-09-12T13:26:09Z STT already running — no second Whisper",
-    "This video is available to this channel's members on level: 人生自由不走弯路《财富会员》 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
-    "captions miss (no cookies): e missing. See  https:<path>  for details on installing one",
-    "This video is available to this channel's members on level: 人生自由不走弯路《财富会员》 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
-    "captions miss (no cookies): e missing. See  https:<path>  for details on installing one",
-    "This video is available to this channel's members on level: 人生自由不走弯路《财富会员》 (or any higher level). Join this channel to get access to members-only content and other exclusive perks."
+    "2026-09-12T13:31:13Z STT already running — no second Whisper",
+    "2026-09-12T13:31:13Z STT already running — no second Whisper",
+    "2026-09-12T13:31:13Z STT already running — no second Whisper",
+    "backfill-captions.log: ERROR: [youtube] P9gmmPKV39A: Join this channel to get access to members-only content like this video, and other exclusive perks.",
+    "sleep 2.8s",
+    "[485<path> sz9OZ0dzzOw 粉絲十萬收入公開｜10萬訂閱 收入｜十萬訂閱收入｜怎麼做YouTube頻道",
+    "美國股票｜俄羅斯滅門  captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
+    "ERROR: [youtube] P9gmmPKV39A: Join this channel to get access to members-only content like this video, and other exclusive perks."
   ],
   "pm": {
     "token_free": true,
