@@ -48,45 +48,47 @@ body.editing #editTools { display:block; }
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-13 03:10 HKT</span></div>
-<p class="mono" id="ping">2026-09-13 03:10 HKT</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-13 02:49 HKT</span></div>
+<p class="mono" id="ping">2026-09-13 02:49 HKT</p>
 
 <div class="card">
-  <div class="row"><h2>STT LEFT</h2><span class="mono" id="allEta">KH3mi2h8vw8</span></div>
+  <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">no child</span></div>
   <p class="big" id="allNum">705</p>
+  <p class="ch" id="sttDeadline">ETA 2026-09-24 20:49 HKT</p>
+  <p class="mono" id="sttDisk">49 transcripts on disk</p>
 </div>
 <div class="card">
-  <div class="row"><h2><span class="dot on" id="capDot"></span><span id="capHead">CAPTIONS</span></h2>
+  <div class="row"><h2><span class="dot on" id="capDot"></span>CAPTIONS</h2>
     <span class="mono" id="capState">running</span></div>
   <p class="ch" id="capCh">麥克老李</p>
-  <div class="row"><span class="big" id="capNum">2</span>
-    <span class="mono" id="capEta">jobs</span></div>
+  <div class="row"><span class="big" id="capNum">49</span>
+    <span class="mono" id="capEta">2 workers · left</span></div>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot on" id="sttDot"></span>STT</h2>
     <span class="mono" id="sttState">running</span></div>
   <p class="ch" id="sttCh">一个狠人</p>
-  <div class="row"><span class="big" id="sttNum">705 pending</span>
-    <span class="mono" id="sttEta">KH3mi2h8vw8</span></div>
+  <div class="row"><span class="big" id="sttNum">705</span>
+    <span class="mono" id="sttEta">ETA 2026-09-24 20:49 HKT</span></div>
 </div>
 </div>
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 6.3G / 15.6G · load 0.6</p>
+  <p class="ch" id="ram">RAM 6.5G / 15.6G · load 0.67</p>
   <p class="mono" id="box2">disk 110G · tmp 4.2M · cookies yes · 0.0h</p>
-  <p class="mono" id="sched">next ping 2026-09-13 03:15 HKT · captions + Whisper running</p>
+  <p class="mono" id="sched">next ping 2026-09-13 02:50 HKT · captions + Whisper running</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li><b>STT</b> · 一个狠人 · 705 pending</li><li><b>CAPTIONS ×2</b> · 麥克老李 · 33/78</li><li class="mono">pid 400343 · proc</li><li class="mono">pid 401957 · proc</li><li class="mono">pid 401672 · proc</li></ol>
+  <ol id="running"><li><b>STT</b> · 一个狠人 · 705 pending</li><li><b>CAPTIONS ×2</b> · 麥克老李 · 29/78</li><li class="mono">pid 341347 · proc</li><li class="mono">pid 385728 · proc</li></ol>
 </div>
 
 <div class="card">
   <div class="row"><h2>QUEUE</h2>
-    <button type="button" id="editBtn">Edit</button></div>
+    <button type="button" id="editBtn" onclick="toggleEdit()">Edit</button></div>
   <p class="mono">Grip ▲▼ always reorders. Edit = skip / add / remove.</p>
   <div class="tabs" id="qTabs">
     <button type="button" id="tab-ch" class="on" onclick="qtab('ch')">Channels 10</button>
@@ -107,7 +109,7 @@ body.editing #editTools { display:block; }
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-12T19:10:15Z captions already running</li><li><span class="mono">reboost.log</span> 2026-09-12T19:10:15Z STT already running — no second Whisper</li><li class="mono">list miss https:&lt;path&gt; ERROR: [youtube:tab] UCaA2cfCpytaARHcNcApboSw: This channel does not have a membership tab</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-12T18:49:45Z captions already running</li><li><span class="mono">reboost.log</span> 2026-09-12T18:49:46Z STT already running — no second Whisper</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the r</li></ol>
 </div>
 
 <div class="card">
@@ -161,7 +163,7 @@ function paint(d){
   if($("sttState")) $("sttState").textContent=stt.running?"running":"idle";
   if($("sttCh")) $("sttCh").textContent=title(stt.channel_id);
   if($("sttNum")) $("sttNum").textContent=sttPend+" pending";
-  if($("sttEta")) $("sttEta").textContent=stt.eta_hkt||eta(stt.eta_min);
+  if($("sttEta")) $("sttEta").textContent="ETA "+(stt.eta_hkt||"unknown"); if($("sttDeadline")) $("sttDeadline").textContent="ETA "+(stt.eta_hkt||"unknown"); if($("sttDisk")) $("sttDisk").textContent=(stt.transcripts_on_disk!=null?stt.transcripts_on_disk:"—")+" transcripts on disk"; if($("capNum") && d.collector && d.collector.tracks && d.collector.tracks.captions) $("capNum").textContent=String(d.collector.tracks.captions.left!=null?d.collector.tracks.captions.left:0);
   var res=d.resources||{};
   if($("ram")) $("ram").textContent="RAM "+(res.mem_available_gi!=null?res.mem_available_gi:"—")+"G / "+(res.mem_total_gi!=null?res.mem_total_gi:"—")+"G · load "+(res.load1!=null?res.load1:"—");
   if($("src")) $("src").textContent="live GitHub API · no page reload · cache bypassed";
@@ -288,12 +290,15 @@ function bootTabs(){
     });
   });
 }
+function toggleEdit(){
+  document.body.classList.toggle("editing");
+  var ed=$("editBtn");
+  if(ed) ed.textContent=document.body.classList.contains("editing")?"Done":"Edit";
+}
+window.toggleEdit=toggleEdit;
 function bootEdit(){
   var ed=$("editBtn");
-  if(ed) ed.onclick=function(){
-    document.body.classList.toggle("editing");
-    ed.textContent=document.body.classList.contains("editing")?"Done":"Edit";
-  };
+  if(ed) ed.onclick=toggleEdit;
   var sv=$("saveBtn"); if(sv) sv.onclick=save;
   var ad=$("addCh"); if(ad) ad.onclick=addCh;
   var inp=$("patIn");
