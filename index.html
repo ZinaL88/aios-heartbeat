@@ -48,25 +48,23 @@ body.editing #editTools { display:block; }
 <p class="mono" id="ping">2026-09-13 00:52 HKT</p>
 
 <div class="card">
-  <div class="row"><h2>ALL LEFT</h2><span class="mono" id="allEta">~50h 16m</span></div>
-  <p class="big" id="allNum">754 left</p>
-  <div class="bar"><i id="allBar" style="width:99%"></i></div>
+  <div class="row"><h2>STT LEFT</h2><span class="mono" id="allEta"></span></div>
+  <p class="big" id="allNum">754</p>
 </div>
 <div class="card">
-  <div class="row"><h2><span class="dot " id="capDot"></span><span id="capHead">CAPTIONS ×0</span></h2>
-    <span class="mono" id="capState">idle · next huanyihe777</span></div>
-  <p class="ch" id="capCh">huanyihe777</p>
-  <div class="row"><span class="big" id="capNum">idle</span>
-    <span class="mono" id="capEta">0 left · —</span></div>
-  <div class="bar"><i id="capBar" style="width:0%"></i></div>
+  <div class="row"><h2><span class="dot " id="capDot"></span><span id="capHead">CAPTIONS</span></h2>
+    <span class="mono" id="capState">idle</span></div>
+  <p class="ch" id="capCh">off</p>
+  <div class="row"><span class="big" id="capNum">0</span>
+    <span class="mono" id="capEta">not started</span></div>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot on" id="sttDot"></span>STT</h2>
     <span class="mono" id="sttState">running</span></div>
   <p class="ch" id="sttCh">一个狠人</p>
   <div class="row"><span class="big" id="sttNum">754 pending</span>
-    <span class="mono" id="sttEta">~50h 16m</span></div>
-  <div class="bar"><i id="sttBar" style="width:12%"></i></div>
+    <span class="mono" id="sttEta">this video —</span></div>
+</div>
 </div>
 
 <div class="card">
@@ -145,11 +143,12 @@ function paint(d){
   if($("allEta")) $("allEta").textContent=eta((cap.eta_min||0)+(stt.eta_min||0));
   if($("capDot")) $("capDot").className="dot"+(cap.running?" on":"");
   var jobs=(d.processes&&d.processes.backfill_n)||cap.jobs||0;
-  if($("capHead")) $("capHead").textContent="CAPTIONS ×"+jobs;
-  if($("capState")) $("capState").textContent=(cap.running?("×"+jobs+" jobs"):("idle · next "+(cap.next_name||"huanyihe777")));
-  if($("capCh")) $("capCh").textContent=cap.running?title(cap.channel_id):(cap.next_name||"huanyihe777");
-  if($("capNum")) $("capNum").textContent=cap.running?(jobs+" jobs"):"idle";
-  if($("capEta")) $("capEta").textContent=capLeft+" left · "+eta(cap.eta_min);
+  if($("capHead")) $("capHead").textContent="CAPTIONS";
+  if($("capState")) $("capState").textContent=cap.running?"running":"idle";
+  if($("capCh")) $("capCh").textContent=cap.running?title(cap.channel_id):"off";
+  if($("capNum")) $("capNum").textContent=String(cap.running?(jobs||1):0);
+  if($("capEta")) $("capEta").textContent=cap.running?"jobs":"not started";
+  if($("sttEta")) $("sttEta").textContent=stt.inflight||"—";
   if($("capBar")) $("capBar").style.width=(capTot?Math.min(99,capDone/capTot*100):0)+"%";
   if($("sttDot")) $("sttDot").className="dot"+(stt.running?" on":"");
   if($("sttState")) $("sttState").textContent=stt.running?"running":"idle";
