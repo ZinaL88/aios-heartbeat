@@ -45,7 +45,7 @@ function paint(d){
 }
 function timed(url, headers){
   var c=new AbortController();
-  var t=setTimeout(function(){c.abort();},4000);
+  var t=setTimeout(function(){c.abort();},2500);
   return fetch(url,{cache:"no-store",headers:headers||{},signal:c.signal}).finally(function(){clearTimeout(t);});
 }
 function slot(backMin){
@@ -56,17 +56,23 @@ function slot(backMin){
   return "live/"+d.getUTCFullYear()+p(d.getUTCMonth()+1)+p(d.getUTCDate())+p(d.getUTCHours())+p(m)+".json";
 }
 function pull(){
+  if(window.__hbIn) return;
+  window.__hbIn=1;
   function ok(r){ if(!r.ok) throw r.status; return r.json(); }
   function fail(){
-    if($("ping")) $("ping").textContent="live fetch failed — not a 23:00 bake";
-    if($("age")) $("age").textContent="fetch fail";
+    window.__hbIn=0;
+    try{
+      var c=localStorage.getItem("aios-hb-v1");
+      if(c){ paint(JSON.parse(c)); return; }
+    }catch(e){}
+    if($("ping")) $("ping").textContent="live fetch failed";
   }
-  timed("https://api.github.com/repos/ZinaL88/aios-heartbeat/contents/status.json",
-    {Accept:"application/vnd.github.raw+json"}).then(ok).then(paint).catch(function(){
-      timed("https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json?t="+Date.now()).then(ok).then(paint).catch(function(){
-        timed("status.json?t="+Date.now()).then(ok).then(paint).catch(fail);
-      });
-    });
+  var url="https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t="+Date.now();
+  timed(url).then(ok).then(function(d){
+    try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
+    paint(d);
+    window.__hbIn=0;
+  }).catch(fail);
 }
 function move(li, dir){
   var ol=li.parentNode;
@@ -144,8 +150,9 @@ function bootEdit(){
     inp.onchange=function(){ if(inp.value && inp.value.indexOf("•")<0) localStorage.setItem("aios.pat", inp.value.trim()); };
   }
 }
+try{ var __c=localStorage.getItem("aios-hb-v1"); if(__c) paint(JSON.parse(__c)); }catch(e){}
 pull();
-setInterval(pull, pat()?20000:55000);
+setInterval(pull, 15000);
 if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", bootEdit);
 else bootEdit();
 })();
