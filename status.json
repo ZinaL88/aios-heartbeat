@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T12:41:19Z",
-  "written_at_hkt": "2026-09-12 20:41 HKT",
+  "written_at_utc": "2026-09-12T12:46:23Z",
+  "written_at_hkt": "2026-09-12 20:46 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -12,8 +12,8 @@
     "captions_channel": "UCGWYKICLOE8Wxy7q3eYXmPA",
     "sample": [
       {
-        "pid": 172126,
-        "cmd": "mOIYwMq0PZg"
+        "pid": 175455,
+        "cmd": "oZAgYgQIRF4"
       },
       {
         "pid": 146844,
@@ -26,12 +26,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.3,
+    "mem_available_gi": 6.5,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.12,
+        "rss_gi": 3.06,
         "n": 33
       },
       {
@@ -41,7 +41,7 @@
       },
       {
         "comm": "yt-dlp",
-        "rss_gi": 0.15,
+        "rss_gi": 0.17,
         "n": 3
       },
       {
@@ -70,27 +70,27 @@
         "n": 35
       },
       {
+        "comm": "csnaps",
+        "rss_gi": 0.08,
+        "n": 1
+      },
+      {
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
-      },
-      {
-        "comm": "csnaps",
-        "rss_gi": 0.07,
-        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
-      "cached_gi": 2.8,
+      "cached_gi": 2.9,
       "anon_gi": 2.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 5.7
+      "committed_gi": 5.8
     },
-    "load1": 0.8,
+    "load1": 0.84,
     "disk_avail": "110G",
-    "tmp_du": "3.9M"
+    "tmp_du": "3.8M"
   },
   "cookies": {
     "present": true,
@@ -101,8 +101,8 @@
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "mOIYwMq0PZg",
-    "last_id": "WUaXamDfWCA",
+    "inflight": "oZAgYgQIRF4",
+    "last_id": "7Ce7w1y7Zuo",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -125,10 +125,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
-        "done": 995,
-        "left": 320,
+        "done": 1089,
+        "left": 226,
         "total": 1315,
-        "eta_min": 27
+        "eta_min": 19
       }
     }
   },
@@ -137,8 +137,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T12:45:00Z",
-    "next_cron_hkt": "2026-09-12 20:45 HKT",
+    "next_cron_utc": "2026-09-12T12:50:00Z",
+    "next_cron_hkt": "2026-09-12 20:50 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -159,53 +159,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:41:19Z captions already running"
+      "summary": "2026-09-12T12:46:23Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:41:19Z captions already running"
+      "summary": "2026-09-12T12:46:23Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:41:19Z captions already running"
+      "summary": "2026-09-12T12:46:23Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:41:19Z captions already running"
+      "summary": "2026-09-12T12:46:23Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:41:19Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:46:23Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:41:19Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:46:23Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:41:19Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:46:23Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:41:19Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:46:23Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T12:41:19Z STT already running — no second Whisper",
-    "2026-09-12T12:41:19Z STT already running — no second Whisper",
-    "2026-09-12T12:41:19Z STT already running — no second Whisper",
-    "backfill-captions.log: [956<path> GTN3B_JA8e0 【Google】谷歌被判垄断或面临拆分 | 美科技史上最大反垄断案 | 286页裁决报告 | 200亿买断苹果默认搜索引擎 | 定价旋钮 | 缺少竞争对手 | AI搜索引擎",
-    "sleep 3.5s",
-    "sleep 2.2s",
-    "[955<path> eHVKrsoQSWI 【人工智能】全球火爆游戏《黑神话·悟空》背后都有哪些AI技术支持 | 英伟达全景光线追踪技术 | DLSS 3.5 | 帧生成 | 光流加速 | 可自由对话和行动的AI NPC",
-    "[956<path> GTN3B_JA8e0 【Google】谷歌被判垄断或面临拆分 | 美科技史上最大反垄断案 | 286页裁决报告 | 200亿买断苹果默认搜索引擎 | 定价旋钮 | 缺少竞争对手 | AI搜索引擎"
+    "2026-09-12T12:46:23Z STT already running — no second Whisper",
+    "2026-09-12T12:46:23Z STT already running — no second Whisper",
+    "2026-09-12T12:46:23Z STT already running — no second Whisper",
+    "backfill-captions.log: [1074<path> yNpIrBDcSdw 【人工智能】红杉AI Ascent 2024 | 人工智能的机遇 | 投资合伙人观点分享 | 软件取代服务 | 2024年关于AI的4大预测 | AI的长期影响",
+    "sleep 3.9s",
+    "sleep 4.0s",
+    "[1073<path> Up-jvRsrIGk 【人工智能】AI智能体工作流 | Agentic Reasoning | 吴恩达Andrew Ng | 红杉AI Ascent 2024分享 | Agent 4大设计模式",
+    "[1074<path> yNpIrBDcSdw 【人工智能】红杉AI Ascent 2024 | 人工智能的机遇 | 投资合伙人观点分享 | 软件取代服务 | 2024年关于AI的4大预测 | AI的长期影响"
   ],
   "pm": {
     "token_free": true,
