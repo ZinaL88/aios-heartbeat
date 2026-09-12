@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T13:31:14Z",
-  "written_at_hkt": "2026-09-12 21:31 HKT",
+  "written_at_utc": "2026-09-12T13:36:18Z",
+  "written_at_hkt": "2026-09-12 21:36 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -22,12 +22,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.5,
+    "mem_available_gi": 6.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.11,
+        "rss_gi": 3.09,
         "n": 33
       },
       {
@@ -84,13 +84,13 @@
       "sreclaimable_gi": 0.5,
       "committed_gi": 5.6
     },
-    "load1": 0.58,
+    "load1": 1.21,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.4,
+    "age_hours": 0.5,
     "stale": false
   },
   "collector": {
@@ -98,7 +98,7 @@
     "done": 49,
     "total": 737,
     "inflight": null,
-    "last_id": "inwh2fnEerM",
+    "last_id": "uWBiUw6eJpg",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -121,10 +121,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-        "done": 532,
-        "left": 246,
+        "done": 654,
+        "left": 124,
         "total": 778,
-        "eta_min": 20
+        "eta_min": 10
       }
     }
   },
@@ -133,8 +133,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T13:35:00Z",
-    "next_cron_hkt": "2026-09-12 21:35 HKT",
+    "next_cron_utc": "2026-09-12T13:40:00Z",
+    "next_cron_hkt": "2026-09-12 21:40 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -155,53 +155,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z captions already running"
+      "summary": "2026-09-12T13:36:17Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z captions already running"
+      "summary": "2026-09-12T13:36:17Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z captions already running"
+      "summary": "2026-09-12T13:36:17Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z captions already running"
+      "summary": "2026-09-12T13:36:17Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:36:17Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:36:17Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:36:17Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:31:13Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:36:17Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T13:31:13Z STT already running — no second Whisper",
-    "2026-09-12T13:31:13Z STT already running — no second Whisper",
-    "2026-09-12T13:31:13Z STT already running — no second Whisper",
-    "backfill-captions.log: ERROR: [youtube] P9gmmPKV39A: Join this channel to get access to members-only content like this video, and other exclusive perks.",
-    "sleep 2.8s",
-    "[485<path> sz9OZ0dzzOw 粉絲十萬收入公開｜10萬訂閱 收入｜十萬訂閱收入｜怎麼做YouTube頻道",
-    "美國股票｜俄羅斯滅門  captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
-    "ERROR: [youtube] P9gmmPKV39A: Join this channel to get access to members-only content like this video, and other exclusive perks."
+    "2026-09-12T13:36:17Z STT already running — no second Whisper",
+    "2026-09-12T13:36:17Z STT already running — no second Whisper",
+    "2026-09-12T13:36:17Z STT already running — no second Whisper",
+    "backfill-captions.log: ERROR: [youtube] r4hyBuaADoE: Join this channel to get access to members-only content like this video, and other exclusive perks.",
+    "captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
+    "ERROR: [youtube] YpaKGzw6xDo: Join this channel to get access to members-only content like this video, and other exclusive perks.",
+    "captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
+    "ERROR: [youtube] r4hyBuaADoE: Join this channel to get access to members-only content like this video, and other exclusive perks."
   ],
   "pm": {
     "token_free": true,
