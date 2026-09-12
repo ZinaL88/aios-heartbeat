@@ -1,24 +1,20 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T10:30:42Z",
-  "written_at_hkt": "2026-09-12 18:30 HKT",
+  "written_at_utc": "2026-09-12T10:31:30Z",
+  "written_at_hkt": "2026-09-12 18:31 HKT",
   "token_free": true,
   "processes": {
-    "whisper": true,
+    "whisper": false,
     "backfill": true,
-    "whisper_n": 1,
+    "whisper_n": 0,
     "backfill_n": 2,
     "sample": [
-      {
-        "pid": 94531,
-        "cmd": "iuM2xG-uhGE"
-      },
       {
         "pid": 90411,
         "cmd": "backfill"
       },
       {
-        "pid": 94666,
+        "pid": 95221,
         "cmd": "backfill"
       }
     ]
@@ -29,7 +25,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.08,
+        "rss_gi": 3.14,
         "n": 33
       },
       {
@@ -53,19 +49,14 @@
         "n": 4
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.11,
-        "n": 2
-      },
-      {
         "comm": "Xvfb",
         "rss_gi": 0.11,
         "n": 3
       },
       {
         "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
+        "rss_gi": 0.07,
+        "n": 34
       },
       {
         "comm": "websockify",
@@ -76,31 +67,36 @@
         "comm": "csnaps",
         "rss_gi": 0.06,
         "n": 1
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.05,
+        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.2,
-      "cached_gi": 2.7,
+      "cached_gi": 2.6,
       "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 5.8
+      "committed_gi": 5.6
     },
-    "load1": 0.66,
+    "load1": 0.67,
     "disk_avail": "110G",
     "tmp_du": "3.7M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.2,
+    "age_hours": 0.0,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": null,
-    "inflight": "iuM2xG-uhGE",
-    "last_id": "QQsxjZk4erg",
+    "inflight": null,
+    "last_id": "-ygfl-fSZxQ",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ"
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
@@ -130,17 +126,12 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:30:41Z queue pick UCJAPsTtcJJWGk8e-_CJL8TQ"
+      "summary": "2026-09-12T10:31:30Z queue pick UCJAPsTtcJJWGk8e-_CJL8TQ"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:30:41Z queue pick UCJAPsTtcJJWGk8e-_CJL8TQ"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "or/scripts/backfill_members.py --channel-id UCJAPsTtcJJWGk8e-_CJL8TQ --access public --limit 9999 --mode captions --captions-jobs 2 --cookies /workspace/uploads/youtube-cookies.txt"
+      "summary": "2026-09-12T10:31:30Z queue pick UCJAPsTtcJJWGk8e-_CJL8TQ"
     },
     {
       "at_hkt": "reboost.log",
@@ -150,28 +141,33 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:30:41Z reboost captions pid 94666"
+      "summary": "or/scripts/backfill_members.py --channel-id UCJAPsTtcJJWGk8e-_CJL8TQ --access public --limit 9999 --mode captions --captions-jobs 2 --cookies /workspace/uploads/youtube-cookies.txt"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:30:41Z reboost captions pid 94666"
+      "summary": "2026-09-12T10:31:30Z reboost captions pid 95221"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:30:41Z STT already running — no second Whisper"
+      "summary": "2026-09-12T10:31:30Z reboost captions pid 95221"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:30:41Z STT already running — no second Whisper"
+      "summary": "2026-09-12T10:31:30Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T10:31:30Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T10:30:41Z reboost captions pid 94666",
-    "2026-09-12T10:30:41Z STT already running — no second Whisper",
-    "2026-09-12T10:30:41Z STT already running — no second Whisper",
+    "2026-09-12T10:31:30Z reboost captions pid 95221",
+    "2026-09-12T10:31:30Z STT already running — no second Whisper",
+    "2026-09-12T10:31:30Z STT already running — no second Whisper",
     "backfill-captions.log: No --inventory; listing via yt-dlp (public videos tab; members need inventory).",
     "\"dry_run\": false",
     "}",
