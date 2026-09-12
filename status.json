@@ -1,33 +1,33 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T14:27:05Z",
-  "written_at_hkt": "2026-09-12 22:27 HKT",
+  "written_at_utc": "2026-09-12T14:32:10Z",
+  "written_at_hkt": "2026-09-12 22:32 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
-    "backfill": true,
-    "whisper_n": 1,
-    "backfill_n": 1,
+    "backfill": false,
+    "whisper_n": 2,
+    "backfill_n": 0,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-    "captions_channel": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+    "captions_channel": null,
     "sample": [
       {
-        "pid": 210746,
-        "cmd": "backfill"
+        "pid": 243220,
+        "cmd": "oDhHLtfg8KM"
       },
       {
-        "pid": 223513,
+        "pid": 210746,
         "cmd": "backfill"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 6.4,
+    "mem_available_gi": 6.5,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.14,
+        "rss_gi": 3.06,
         "n": 33
       },
       {
@@ -71,34 +71,34 @@
         "n": 2
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.06,
-        "n": 1
+        "comm": "x11vnc",
+        "rss_gi": 0.04,
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
       "cached_gi": 2.8,
-      "anon_gi": 2.5,
+      "anon_gi": 2.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
       "committed_gi": 5.6
     },
-    "load1": 0.59,
+    "load1": 0.44,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.4,
+    "age_hours": 0.5,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": null,
-    "last_id": "RUgYeEf2ZMA",
+    "inflight": "oDhHLtfg8KM",
+    "last_id": "w5qLnYic0_k",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -119,12 +119,8 @@
         "eta_min": 3016
       },
       "captions": {
-        "running": true,
-        "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-        "done": 586,
-        "left": 4,
-        "total": 590,
-        "eta_min": 1
+        "running": false,
+        "channel_id": null
       }
     }
   },
@@ -133,11 +129,11 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T14:30:00Z",
-    "next_cron_hkt": "2026-09-12 22:30 HKT",
+    "next_cron_utc": "2026-09-12T14:35:00Z",
+    "next_cron_hkt": "2026-09-12 22:35 HKT",
     "cron": "*/5",
-    "job_restart": "captions + Whisper running",
-    "job_restart_at_hkt": null,
+    "job_restart": "Whisper on · captions idle (reboost captions if RAM≥1.2)",
+    "job_restart_at_hkt": "2026-09-12 22:35 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -155,53 +151,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:27:05Z captions already running"
+      "summary": "2026-09-12T14:32:09Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:27:05Z captions already running"
+      "summary": "2026-09-12T14:32:09Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:27:05Z captions already running"
+      "summary": "2026-09-12T14:32:09Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:27:05Z captions already running"
+      "summary": "2026-09-12T14:32:09Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:27:05Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:32:09Z skip captions — no channel"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:27:05Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:32:09Z skip captions — no channel"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:27:05Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:32:09Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:27:05Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:32:09Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T14:27:05Z STT already running — no second Whisper",
-    "2026-09-12T14:27:05Z STT already running — no second Whisper",
-    "2026-09-12T14:27:05Z STT already running — no second Whisper",
-    "backfill-captions.log: [536<path> BcIEym81uow (Eps.46)特斯拉历史新高 525， 还能买吗？现在买还是回调买？",
-    "[535<path> 6-Rha2BWwX0 (Eps.47)几乎满仓特斯拉是一种什么样的体验？ 我是赌徒吗？聊仓位管理",
-    "sleep 2.1s",
-    "sleep 4.5s",
-    "[536<path> BcIEym81uow (Eps.46)特斯拉历史新高 525， 还能买吗？现在买还是回调买？"
+    "2026-09-12T14:32:09Z skip captions — no channel",
+    "2026-09-12T14:32:09Z STT already running — no second Whisper",
+    "2026-09-12T14:32:09Z STT already running — no second Whisper",
+    "backfill-captions.log: }",
+    "{",
+    "\"wrote_progress\": \"<path>",
+    "\"done_count\": 80",
+    "}"
   ],
   "pm": {
     "token_free": true,
