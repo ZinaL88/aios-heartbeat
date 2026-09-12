@@ -1,28 +1,32 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T10:16:23Z",
-  "written_at_hkt": "2026-09-12 18:16 HKT",
+  "written_at_utc": "2026-09-12T10:21:26Z",
+  "written_at_hkt": "2026-09-12 18:21 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
     "backfill": true,
     "whisper_n": 0,
-    "backfill_n": 1,
+    "backfill_n": 2,
     "sample": [
       {
-        "pid": 88655,
+        "pid": 90402,
+        "cmd": "backfill"
+      },
+      {
+        "pid": 90411,
         "cmd": "backfill"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 5.4,
+    "mem_available_gi": 6.7,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.48,
-        "n": 38
+        "rss_gi": 3.04,
+        "n": 33
       },
       {
         "comm": "python",
@@ -30,55 +34,55 @@
         "n": 4
       },
       {
-        "comm": "npm exec mongod",
-        "rss_gi": 0.28,
-        "n": 1
-      },
-      {
-        "comm": "npm exec fireba",
-        "rss_gi": 0.26,
-        "n": 1
-      },
-      {
-        "comm": "npm exec @brows",
-        "rss_gi": 0.22,
-        "n": 1
-      },
-      {
-        "comm": "npm exec @azure",
-        "rss_gi": 0.16,
-        "n": 1
-      },
-      {
-        "comm": "azmcp",
-        "rss_gi": 0.15,
-        "n": 1
-      },
-      {
         "comm": "xfwm4",
         "rss_gi": 0.13,
         "n": 3
       },
       {
-        "comm": "npm exec snyk@l",
-        "rss_gi": 0.13,
-        "n": 1
+        "comm": "plank",
+        "rss_gi": 0.12,
+        "n": 3
       },
       {
-        "comm": "npm exec @pinec",
+        "comm": "uv",
         "rss_gi": 0.12,
+        "n": 4
+      },
+      {
+        "comm": "Xvfb",
+        "rss_gi": 0.11,
+        "n": 3
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.1,
+        "n": 2
+      },
+      {
+        "comm": "bash",
+        "rss_gi": 0.07,
+        "n": 34
+      },
+      {
+        "comm": "websockify",
+        "rss_gi": 0.07,
+        "n": 2
+      },
+      {
+        "comm": "csnaps",
+        "rss_gi": 0.06,
         "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 2.6,
-      "anon_gi": 3.6,
+      "anon_gi": 2.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 7.5
+      "committed_gi": 5.5
     },
-    "load1": 0.06,
+    "load1": 0.11,
     "disk_avail": "110G",
     "tmp_du": "3.7M"
   },
@@ -100,8 +104,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T10:20:00Z",
-    "next_cron_hkt": "2026-09-12 18:20 HKT",
+    "next_cron_utc": "2026-09-12T10:25:00Z",
+    "next_cron_hkt": "2026-09-12 18:25 HKT",
     "cron": "*/5",
     "job_restart": "jobs running — no reboost",
     "job_restart_at_hkt": null,
@@ -122,16 +126,6 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:16:23Z queue pick UCJAPsTtcJJWGk8e-_CJL8TQ"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T10:16:23Z queue pick UCJAPsTtcJJWGk8e-_CJL8TQ"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "ls/youtube-collector/scripts/backfill_members.py --channel-id UCJAPsTtcJJWGk8e-_CJL8TQ --access public --limit 9999 --mode captions --cookies /workspace/uploads/youtube-cookies.txt"
     },
     {
@@ -142,28 +136,38 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:16:23Z reboost captions pid 88655"
+      "summary": "2026-09-12T10:21:25Z reboost captions pid 90402"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:16:23Z reboost captions pid 88655"
+      "summary": "2026-09-12T10:21:25Z reboost captions pid 90402"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:16:23Z skip STT — MemAvailable 5.5G < 6G (captions may still run)"
+      "summary": "-collector/scripts/backfill_members.py --channel-id UCJAPsTtcJJWGk8e-_CJL8TQ --access public --limit 9999 --mode stt --model medium --cookies /workspace/uploads/youtube-cookies.txt"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T10:16:23Z skip STT — MemAvailable 5.5G < 6G (captions may still run)"
+      "summary": "-collector/scripts/backfill_members.py --channel-id UCJAPsTtcJJWGk8e-_CJL8TQ --access public --limit 9999 --mode stt --model medium --cookies /workspace/uploads/youtube-cookies.txt"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T10:21:25Z reboost stt pid 90411"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T10:21:25Z reboost stt pid 90411"
     }
   ],
   "reboost_log": [
-    "2026-09-12T10:16:23Z reboost captions pid 88655",
-    "2026-09-12T10:16:23Z skip STT — MemAvailable 5.5G < 6G (captions may still run)",
-    "2026-09-12T10:16:23Z skip STT — MemAvailable 5.5G < 6G (captions may still run)",
+    "2026-09-12T10:21:25Z starting <path> <path> --channel-id UCJAPsTtcJJWGk8e-_CJL8TQ --access public --limit 9999 --mode stt --model medium --cookies (redacted)",
+    "2026-09-12T10:21:25Z reboost stt pid 90411",
+    "2026-09-12T10:21:25Z reboost stt pid 90411",
     "backfill-captions.log: No --inventory; listing via yt-dlp (public videos tab; members need inventory).",
     "\"dry_run\": false",
     "}",
