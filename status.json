@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T05:50:01Z",
-  "written_at_hkt": "2026-09-12 13:50 HKT",
+  "written_at_utc": "2026-09-12T06:36:04Z",
+  "written_at_hkt": "2026-09-12 14:36 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -11,49 +11,75 @@
     "sample": []
   },
   "resources": {
-    "mem_available_gi": 2.7,
+    "mem_available_gi": 5.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
-        "rss_gi": 0.7,
-        "comm": "node"
+        "comm": "node",
+        "rss_gi": 3.58,
+        "n": 38
       },
       {
+        "comm": "python",
+        "rss_gi": 0.43,
+        "n": 4
+      },
+      {
+        "comm": "npm exec mongod",
         "rss_gi": 0.28,
-        "comm": "npm exec mongod"
+        "n": 1
       },
       {
+        "comm": "npm exec fireba",
         "rss_gi": 0.26,
-        "comm": "npm exec fireba"
+        "n": 1
       },
       {
-        "rss_gi": 0.23,
-        "comm": "azmcp"
-      },
-      {
+        "comm": "npm exec @brows",
         "rss_gi": 0.22,
-        "comm": "npm exec @brows"
+        "n": 1
       },
       {
-        "rss_gi": 0.19,
-        "comm": "node"
-      },
-      {
-        "rss_gi": 0.18,
-        "comm": "node"
-      },
-      {
+        "comm": "npm exec @azure",
         "rss_gi": 0.16,
-        "comm": "node"
+        "n": 1
+      },
+      {
+        "comm": "xfwm4",
+        "rss_gi": 0.13,
+        "n": 3
+      },
+      {
+        "comm": "npm exec snyk@l",
+        "rss_gi": 0.13,
+        "n": 1
+      },
+      {
+        "comm": "azmcp",
+        "rss_gi": 0.13,
+        "n": 1
+      },
+      {
+        "comm": "npm exec @pinec",
+        "rss_gi": 0.12,
+        "n": 1
       }
     ],
-    "load1": 0.04,
-    "disk_avail": "108G",
-    "tmp_du": "8.1M"
+    "meminfo": {
+      "buffers_gi": 0.2,
+      "cached_gi": 1.5,
+      "anon_gi": 3.6,
+      "shmem_gi": 0.0,
+      "sreclaimable_gi": 0.3,
+      "committed_gi": 7.5
+    },
+    "load1": 0.27,
+    "disk_avail": "110G",
+    "tmp_du": "3.5M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 20.8,
+    "age_hours": 0.7,
     "stale": false
   },
   "collector": {
@@ -69,11 +95,11 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T05:55:00Z",
-    "next_cron_hkt": "2026-09-12 13:55 HKT",
+    "next_cron_utc": "2026-09-12T06:40:00Z",
+    "next_cron_hkt": "2026-09-12 14:40 HKT",
     "cron": "*/5",
-    "job_restart": "captions eligible now (2.7G≥1.2); Whisper blocked until 6.0G",
-    "job_restart_at_hkt": "2026-09-12 13:55 HKT",
+    "job_restart": "captions eligible now (5.4G≥1.2); Whisper blocked until 6.0G",
+    "job_restart_at_hkt": "2026-09-12 14:40 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -91,17 +117,12 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:40:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)"
+      "summary": "2026-09-12T06:32:07Z skip STT — MemAvailable 5.5G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:40:04Z skip STT — MemAvailable 2.6G < 6G (captions may still run)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "9 --mode captions --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC_5lJHgnMP_lb_VpIiXV0hQ/inventory_public.json --cookies /workspace/uploads/youtube-cookies.txt"
+      "summary": "2026-09-12T06:32:07Z skip STT — MemAvailable 5.5G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
@@ -111,31 +132,38 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:45:05Z reboost captions pid 1415994"
+      "summary": "9 --mode captions --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC_5lJHgnMP_lb_VpIiXV0hQ/inventory_public.json --cookies /workspace/uploads/youtube-cookies.txt"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:45:05Z reboost captions pid 1415994"
+      "summary": "2026-09-12T06:36:03Z reboost captions pid 17555"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:45:05Z skip STT — MemAvailable 2.7G < 6G (captions may still run)"
+      "summary": "2026-09-12T06:36:03Z reboost captions pid 17555"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:45:05Z skip STT — MemAvailable 2.7G < 6G (captions may still run)"
+      "summary": "2026-09-12T06:36:03Z skip STT — MemAvailable 5.4G < 6G (captions may still run)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T06:36:03Z skip STT — MemAvailable 5.4G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "9 --mode captions --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC_5lJHgnMP_lb_VpIiXV0hQ/inventory_public.json --cookies /workspace/uploads/youtube-cookies.txt",
-    "9 --mode captions --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC_5lJHgnMP_lb_VpIiXV0hQ/inventory_public.json --cookies /workspace/uploads/youtube-cookies.txt",
-    "2026-09-12T05:45:05Z reboost captions pid 1415994",
-    "2026-09-12T05:45:05Z reboost captions pid 1415994",
-    "2026-09-12T05:45:05Z skip STT — MemAvailable 2.7G < 6G (captions may still run)",
-    "2026-09-12T05:45:05Z skip STT — MemAvailable 2.7G < 6G (captions may still run)"
+    "2026-09-12T06:36:03Z reboost captions pid 17555",
+    "2026-09-12T06:36:03Z skip STT — MemAvailable 5.4G < 6G (captions may still run)",
+    "2026-09-12T06:36:03Z skip STT — MemAvailable 5.4G < 6G (captions may still run)",
+    "backfill-captions.log: Nothing to do.",
+    "\"already_done\": 834,",
+    "\"dry_run\": false",
+    "}",
+    "Nothing to do."
   ],
   "pm": {
     "token_free": true,
