@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T05:25:02Z",
-  "written_at_hkt": "2026-09-12 13:25 HKT",
+  "written_at_utc": "2026-09-12T05:30:02Z",
+  "written_at_hkt": "2026-09-12 13:30 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -11,14 +11,14 @@
     "sample": []
   },
   "resources": {
-    "mem_available_gi": 2.7,
-    "load1": 0.09,
+    "mem_available_gi": 2.6,
+    "load1": 0.1,
     "disk_avail": "108G",
     "tmp_du": "8.1M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 20.4,
+    "age_hours": 20.5,
     "stale": false
   },
   "collector": {
@@ -34,11 +34,11 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T05:30:00Z",
-    "next_cron_hkt": "2026-09-12 13:30 HKT",
+    "next_cron_utc": "2026-09-12T05:35:00Z",
+    "next_cron_hkt": "2026-09-12 13:35 HKT",
     "cron": "*/5",
-    "job_restart": "captions eligible now (2.7G≥1.2); Whisper blocked until 6.0G",
-    "job_restart_at_hkt": "2026-09-12 13:30 HKT",
+    "job_restart": "captions eligible now (2.6G≥1.2); Whisper blocked until 6.0G",
+    "job_restart_at_hkt": "2026-09-12 13:35 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -56,42 +56,42 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T05:05:04Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T05:05:04Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T05:10:04Z skip reboost — MemAvailable 2.7G < 6G (clean tmp, wait next cron)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T05:10:04Z skip reboost — MemAvailable 2.7G < 6G (clean tmp, wait next cron)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T05:15:05Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T05:15:05Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-12T05:20:04Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-12T05:20:04Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "9 --mode captions --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC_5lJHgnMP_lb_VpIiXV0hQ/inventory_public.json --cookies /workspace/uploads/youtube-cookies.txt"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "9 --mode captions --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC_5lJHgnMP_lb_VpIiXV0hQ/inventory_public.json --cookies /workspace/uploads/youtube-cookies.txt"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T05:25:04Z reboost captions pid 1410224"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T05:25:04Z reboost captions pid 1410224"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T05:25:04Z skip STT — MemAvailable 2.7G < 6G (captions may still run)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T05:25:04Z skip STT — MemAvailable 2.7G < 6G (captions may still run)"
     }
   ],
   "pm": {
