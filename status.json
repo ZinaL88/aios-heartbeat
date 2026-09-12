@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T12:55:51Z",
-  "written_at_hkt": "2026-09-12 20:55 HKT",
+  "written_at_utc": "2026-09-12T13:00:47Z",
+  "written_at_hkt": "2026-09-12 21:00 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -9,25 +9,25 @@
     "whisper_n": 1,
     "backfill_n": 1,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-    "captions_channel": "UCGWYKICLOE8Wxy7q3eYXmPA",
+    "captions_channel": "UCPpdGTNbIKdiWgxCrbka4Zw",
     "sample": [
       {
         "pid": 146844,
         "cmd": "backfill"
       },
       {
-        "pid": 138125,
+        "pid": 183477,
         "cmd": "backfill"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 6.2,
+    "mem_available_gi": 6.5,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.05,
+        "rss_gi": 3.16,
         "n": 33
       },
       {
@@ -56,14 +56,14 @@
         "n": 3
       },
       {
-        "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 35
-      },
-      {
         "comm": "csnaps",
         "rss_gi": 0.08,
         "n": 1
+      },
+      {
+        "comm": "bash",
+        "rss_gi": 0.08,
+        "n": 35
       },
       {
         "comm": "websockify",
@@ -71,26 +71,26 @@
         "n": 2
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.06,
-        "n": 1
+        "comm": "python3",
+        "rss_gi": 0.05,
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
-      "cached_gi": 3.0,
+      "cached_gi": 2.8,
       "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 5.6
     },
-    "load1": 1.4,
+    "load1": 0.96,
     "disk_avail": "110G",
     "tmp_du": "3.8M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 1.1,
+    "age_hours": 0.1,
     "stale": false
   },
   "collector": {
@@ -98,7 +98,7 @@
     "done": 49,
     "total": 737,
     "inflight": null,
-    "last_id": "w5qLnYic0_k",
+    "last_id": "mbboVQ8NoWc",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -120,11 +120,11 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
-        "done": 1279,
-        "left": 36,
-        "total": 1315,
-        "eta_min": 3
+        "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+        "done": 72,
+        "left": 156,
+        "total": 228,
+        "eta_min": 13
       }
     }
   },
@@ -133,8 +133,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T13:00:00Z",
-    "next_cron_hkt": "2026-09-12 21:00 HKT",
+    "next_cron_utc": "2026-09-12T13:05:00Z",
+    "next_cron_hkt": "2026-09-12 21:05 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -155,53 +155,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:55:51Z queue pick captions=UCGWYKICLOE8Wxy7q3eYXmPA stt=UCJAPsTtcJJWGk8e-_CJL8TQ"
+      "summary": "2026-09-12T13:00:47Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:55:51Z queue pick captions=UCGWYKICLOE8Wxy7q3eYXmPA stt=UCJAPsTtcJJWGk8e-_CJL8TQ"
+      "summary": "2026-09-12T13:00:47Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:55:51Z captions already running on UCGWYKICLOE8Wxy7q3eYXmPA"
+      "summary": "2026-09-12T13:00:47Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:55:51Z captions already running on UCGWYKICLOE8Wxy7q3eYXmPA"
+      "summary": "2026-09-12T13:00:47Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:55:51Z captions already running"
+      "summary": "2026-09-12T13:00:47Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:55:51Z captions already running"
+      "summary": "2026-09-12T13:00:47Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:55:51Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:00:47Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:55:51Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:00:47Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T12:55:51Z captions already running",
-    "2026-09-12T12:55:51Z STT already running — no second Whisper",
-    "2026-09-12T12:55:51Z STT already running — no second Whisper",
-    "backfill-captions.log: [1257<path> H48R3xq7IRI 【独家】5月7日 | 陆奇 | 《新范式 新时代 新机会》完整精修字幕版 | 奇绩创坛北京分享会 | 最新前沿技术趋势 | 深入分析OpenAI爆发成因 | 全面讲解大模型时代诞生的新场景和新机遇",
-    "sleep 4.3s",
-    "[1256<path> Q_j1dOzxKdY 【微软】Microsoft 365 Copilot新增8大功能 | 语义索引 | 白板Copilot | PPT DALL-E | OneNote Loop Viva Copilot",
-    "sleep 4.3s",
-    "[1257<path> H48R3xq7IRI 【独家】5月7日 | 陆奇 | 《新范式 新时代 新机会》完整精修字幕版 | 奇绩创坛北京分享会 | 最新前沿技术趋势 | 深入分析OpenAI爆发成因 | 全面讲解大模型时代诞生的新场景和新机遇"
+    "2026-09-12T13:00:47Z captions already running",
+    "2026-09-12T13:00:47Z STT already running — no second Whisper",
+    "2026-09-12T13:00:47Z STT already running — no second Whisper",
+    "backfill-captions.log: Refusing large unattended scrape without --inventory and modest --limit. Pass an inventory JSON and keep --limit small per night.",
+    "sleep 4.8s",
+    "[1299<path> K5itlOKMiYc 【ChatGPT】昨晚ChatGPT全球范围大崩溃 | 宕机超12小时 | OpenAI修复时间长达5个小时 | 连DALL-E也一起遭殃 | 打工人已经不能没有ChatGPT",
+    "sleep 3.9sNo --inventory; listing via yt-dlp (public videos tab; members need inventory).",
+    "Refusing large unattended scrape without --inventory and modest --limit. Pass an inventory JSON and keep --limit small per night."
   ],
   "pm": {
     "token_free": true,
