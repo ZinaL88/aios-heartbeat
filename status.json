@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T14:47:22Z",
-  "written_at_hkt": "2026-09-12 22:47 HKT",
+  "written_at_utc": "2026-09-12T14:52:27Z",
+  "written_at_hkt": "2026-09-12 22:52 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -23,7 +23,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.11,
+        "rss_gi": 3.09,
         "n": 33
       },
       {
@@ -75,18 +75,18 @@
     "meminfo": {
       "buffers_gi": 0.3,
       "cached_gi": 2.8,
-      "anon_gi": 2.5,
+      "anon_gi": 2.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
       "committed_gi": 5.6
     },
-    "load1": 0.94,
+    "load1": 0.17,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.8,
+    "age_hours": 0.9,
     "stale": false
   },
   "collector": {
@@ -94,7 +94,7 @@
     "done": 49,
     "total": 737,
     "inflight": null,
-    "last_id": "Est3gogeYag",
+    "last_id": "KtxHW9aqzMk",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -125,11 +125,11 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T14:50:00Z",
-    "next_cron_hkt": "2026-09-12 22:50 HKT",
+    "next_cron_utc": "2026-09-12T14:55:00Z",
+    "next_cron_hkt": "2026-09-12 22:55 HKT",
     "cron": "*/5",
     "job_restart": "Whisper on · captions idle (reboost captions if RAM≥1.2)",
-    "job_restart_at_hkt": "2026-09-12 22:50 HKT",
+    "job_restart_at_hkt": "2026-09-12 22:55 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -147,48 +147,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:47:22Z skip captions — no channel"
+      "summary": "2026-09-12T14:52:26Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:47:22Z skip captions — no channel"
+      "summary": "2026-09-12T14:52:26Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:47:22Z skip captions — no channel"
+      "summary": "2026-09-12T14:52:26Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:47:22Z skip captions — no channel"
+      "summary": "2026-09-12T14:52:26Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:47:22Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:52:26Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:47:22Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:52:26Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:47:22Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:52:26Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T14:47:22Z STT already running — no second Whisper"
+      "summary": "2026-09-12T14:52:26Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T14:47:22Z STT already running — no second Whisper",
-    "2026-09-12T14:47:22Z STT already running — no second Whisper",
-    "2026-09-12T14:47:22Z STT already running — no second Whisper",
+    "2026-09-12T14:52:26Z STT already running — no second Whisper",
+    "2026-09-12T14:52:26Z STT already running — no second Whisper",
+    "2026-09-12T14:52:26Z STT already running — no second Whisper",
     "backfill-captions.log: }",
     "{",
     "\"wrote_progress\": \"<path>",
