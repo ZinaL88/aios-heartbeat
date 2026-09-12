@@ -26,11 +26,12 @@ function paint(d){
   if($("allEta")) $("allEta").textContent=eta((cap.eta_min||0)+(stt.eta_min||0));
   if($("capDot")) $("capDot").className="dot"+(cap.running?" on":"");
   var jobs=(d.processes&&d.processes.backfill_n)||cap.jobs||0;
-  if($("capHead")) $("capHead").textContent="CAPTIONS ×"+jobs;
-  if($("capState")) $("capState").textContent=(cap.running?("×"+jobs+" jobs"):("idle · next "+(cap.next_name||"huanyihe777")));
-  if($("capCh")) $("capCh").textContent=cap.running?title(cap.channel_id):(cap.next_name||"huanyihe777");
-  if($("capNum")) $("capNum").textContent=cap.running?(jobs+" jobs"):"idle";
-  if($("capEta")) $("capEta").textContent=capLeft+" left · "+eta(cap.eta_min);
+  if($("capHead")) $("capHead").textContent="CAPTIONS";
+  if($("capState")) $("capState").textContent=cap.running?"running":"idle";
+  if($("capCh")) $("capCh").textContent=cap.running?title(cap.channel_id):"off";
+  if($("capNum")) $("capNum").textContent=String(cap.running?(jobs||1):0);
+  if($("capEta")) $("capEta").textContent=cap.running?"jobs":"not started";
+  if($("sttEta")) $("sttEta").textContent=stt.inflight||"—";
   if($("capBar")) $("capBar").style.width=(capTot?Math.min(99,capDone/capTot*100):0)+"%";
   if($("sttDot")) $("sttDot").className="dot"+(stt.running?" on":"");
   if($("sttState")) $("sttState").textContent=stt.running?"running":"idle";
