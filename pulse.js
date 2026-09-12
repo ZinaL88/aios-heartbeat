@@ -25,7 +25,7 @@ function paint(d){
   if($("allNum")) $("allNum").textContent=((capLeft||0)+sttPend)+" left";
   if($("allEta")) $("allEta").textContent=eta((cap.eta_min||0)+(stt.eta_min||0));
   if($("capDot")) $("capDot").className="dot"+(cap.running?" on":"");
-  if($("capState")) $("capState").textContent=cap.running?"running":"idle";
+  if($("capState")) $("capState").textContent=(cap.running?((d.processes&&d.processes.backfill_n)||cap.jobs||1)+" jobs":"idle");
   if($("capCh")) $("capCh").textContent=title(cap.channel_id);
   if($("capNum")) $("capNum").textContent=capTot?(capDone+" / "+capTot):"—";
   if($("capEta")) $("capEta").textContent=capLeft+" left · "+eta(cap.eta_min);
@@ -79,7 +79,6 @@ function save(){
   var st=$("saveState");
   if(!pat()){ if(st) st.textContent="paste a GitHub PAT first (Contents write on ai-os). Token stays on this phone."; return; }
   if(st) st.textContent="saving…";
-  var ids=[].map.call(document.querySelectorAll("#channels>li"), function(li){return li.getAttribute("data-cid");});
   gh("/repos/ZinaL88/ai-os/contents/jobs/channel_queue.json").then(function(r){
     if(!r.ok) throw new Error("read "+r.status);
     return r.json();
@@ -87,9 +86,16 @@ function save(){
     var doc=JSON.parse(decodeURIComponent(escape(atob(meta.content.replace(/\n/g,"")))));
     var map={};
     (doc.queue||[]).forEach(function(c){map[c.channel_id]=c;});
-    doc.queue=ids.map(function(id){return map[id];}).filter(Boolean);
-    var left=(doc.queue||[]).map(function(c){return c.channel_id;});
-    Object.keys(map).forEach(function(id){ if(left.indexOf(id)<0) doc.queue.push(map[id]); });
+    doc.queue=[].map.call(document.querySelectorAll("#channels>li"), function(li){
+      var id=(li.querySelector(".uc")?li.querySelector(".uc").value:li.getAttribute("data-cid")||"").trim();
+      var name=li.querySelector(".nm")?li.querySelector(".nm").value.trim():"";
+      var skip=li.querySelector(".sk")?li.querySelector(".sk").checked:false;
+      var prev=map[id]||{access:"public",mode:"captions"};
+      prev.channel_id=id; prev.name=name; prev.skip=skip;
+      if(!prev.access) prev.access="public";
+      if(!prev.mode) prev.mode="captions";
+      return prev;
+    }).filter(function(c){return c.channel_id;});
     var now=new Date();
     var hkt=new Date(now.getTime()+8*3600*1000);
     doc.updated_at_hkt=hkt.toISOString().slice(0,16).replace("T"," ")+" HKT";
@@ -110,8 +116,15 @@ function save(){
     if(st) st.textContent=String(e.message||e);
   });
 }
+function addCh(){
+  var ol=$("channels"); if(!ol) return;
+  var li=document.createElement("li");
+  li.innerHTML='<span class="mv"><button type="button">▲</button><button type="button">▼</button></span><span class="n">+</span><div class="ed"><input class="nm" placeholder="name"/><input class="uc" placeholder="UCxxxxxxxx"/><label class="mono"><input type="checkbox" class="sk"/> skip</label><button type="button" class="rm" onclick="this.closest(\'li\').remove()">remove</button></div>';
+  ol.appendChild(li);
+}
 function bootEdit(){
   var sv=$("saveBtn"); if(sv) sv.onclick=save;
+  var ad=$("addCh"); if(ad) ad.onclick=addCh;
   var inp=$("patIn");
   if(inp){
     inp.value=pat()?"••••saved••••":"";
