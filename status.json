@@ -2,6 +2,8 @@
   "schema": "aios-status/v1",
   "written_at_utc": "2026-09-12T18:14:02Z",
   "written_at_hkt": "2026-09-13 02:14 HKT",
+  "host": "cursor",
+  "repo_head": "1f8dec0",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -13,15 +15,15 @@
     "sample": [
       {
         "pid": 341347,
-        "cmd": "proc"
+        "cmd": "stt"
       },
       {
         "pid": 361884,
-        "cmd": "proc"
+        "cmd": "stt:xf-Qjm3jSFU"
       },
       {
         "pid": 361995,
-        "cmd": "proc"
+        "cmd": "captions×2"
       }
     ]
   },
@@ -94,16 +96,21 @@
   },
   "cookies": {
     "present": true,
+    "path": "youtube-cookies.txt",
     "age_hours": 0.0,
+    "mtime_utc": "2026-09-12T18:13:34Z",
     "stale": false
   },
   "collector": {
     "found": true,
+    "channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+    "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "done": 49,
     "total": 737,
     "inflight": null,
     "last_id": "1oTqyM7hPN4",
-    "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+    "access": null,
+    "mtime_utc": "2026-09-12T18:13:55Z",
     "inventory": {
       "public_total": 737,
       "public_done": 14,
@@ -138,10 +145,6 @@
         "next_name": "麥克老李"
       }
     }
-  },
-  "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
   },
   "schedule": {
     "next_cron_utc": "2026-09-12T18:15:00Z",
@@ -221,5 +224,9 @@
     "backlog": [
       "plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)"
     ]
+  },
+  "note": "Heartbeat from cron. Not a Jarvis tick. No cookie bytes, no transcripts.",
+  "git_sync": {
+    "pull": "ok"
   }
 }
