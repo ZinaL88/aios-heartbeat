@@ -27,9 +27,9 @@ function paint(d){
   if($("capDot")) $("capDot").className="dot"+(cap.running?" on":"");
   var jobs=(d.processes&&d.processes.backfill_n)||cap.jobs||0;
   if($("capHead")) $("capHead").textContent="CAPTIONS ×"+jobs;
-  if($("capState")) $("capState").textContent=(cap.running?("×"+jobs+" jobs"):"idle");
-  if($("capCh")) $("capCh").textContent=title(cap.channel_id);
-  if($("capNum")) $("capNum").textContent=capTot?(capDone+" / "+capTot):"—";
+  if($("capState")) $("capState").textContent=(cap.running?("×"+jobs+" jobs"):("idle · next "+(cap.next_name||"huanyihe777")));
+  if($("capCh")) $("capCh").textContent=cap.running?title(cap.channel_id):(cap.next_name||"huanyihe777");
+  if($("capNum")) $("capNum").textContent=cap.running?(jobs+" jobs"):"idle";
   if($("capEta")) $("capEta").textContent=capLeft+" left · "+eta(cap.eta_min);
   if($("capBar")) $("capBar").style.width=(capTot?Math.min(99,capDone/capTot*100):0)+"%";
   if($("sttDot")) $("sttDot").className="dot"+(stt.running?" on":"");
