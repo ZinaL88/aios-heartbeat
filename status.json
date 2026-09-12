@@ -1,20 +1,16 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T12:46:23Z",
-  "written_at_hkt": "2026-09-12 20:46 HKT",
+  "written_at_utc": "2026-09-12T12:51:27Z",
+  "written_at_hkt": "2026-09-12 20:51 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 1,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "UCGWYKICLOE8Wxy7q3eYXmPA",
     "sample": [
-      {
-        "pid": 175455,
-        "cmd": "oZAgYgQIRF4"
-      },
       {
         "pid": 146844,
         "cmd": "backfill"
@@ -26,23 +22,18 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.5,
+    "mem_available_gi": 6.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.06,
+        "rss_gi": 3.04,
         "n": 33
       },
       {
         "comm": "python",
         "rss_gi": 0.43,
         "n": 4
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.17,
-        "n": 3
       },
       {
         "comm": "xfwm4",
@@ -78,31 +69,36 @@
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
+      },
+      {
+        "comm": "python3",
+        "rss_gi": 0.05,
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
-      "cached_gi": 2.9,
-      "anon_gi": 2.6,
+      "cached_gi": 3.0,
+      "anon_gi": 2.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 5.8
+      "committed_gi": 5.6
     },
-    "load1": 0.84,
+    "load1": 0.6,
     "disk_avail": "110G",
     "tmp_du": "3.8M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.9,
+    "age_hours": 1.0,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "oZAgYgQIRF4",
-    "last_id": "7Ce7w1y7Zuo",
+    "inflight": null,
+    "last_id": "LN_DuU3OsTY",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -125,10 +121,10 @@
       "captions": {
         "running": true,
         "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
-        "done": 1089,
-        "left": 226,
+        "done": 1188,
+        "left": 127,
         "total": 1315,
-        "eta_min": 19
+        "eta_min": 11
       }
     }
   },
@@ -137,8 +133,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T12:50:00Z",
-    "next_cron_hkt": "2026-09-12 20:50 HKT",
+    "next_cron_utc": "2026-09-12T12:55:00Z",
+    "next_cron_hkt": "2026-09-12 20:55 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -159,53 +155,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:46:23Z captions already running"
+      "summary": "2026-09-12T12:51:27Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:46:23Z captions already running"
+      "summary": "2026-09-12T12:51:27Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:46:23Z captions already running"
+      "summary": "2026-09-12T12:51:27Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:46:23Z captions already running"
+      "summary": "2026-09-12T12:51:27Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:46:23Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:51:27Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:46:23Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:51:27Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:46:23Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:51:27Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T12:46:23Z STT already running — no second Whisper"
+      "summary": "2026-09-12T12:51:27Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T12:46:23Z STT already running — no second Whisper",
-    "2026-09-12T12:46:23Z STT already running — no second Whisper",
-    "2026-09-12T12:46:23Z STT already running — no second Whisper",
-    "backfill-captions.log: [1074<path> yNpIrBDcSdw 【人工智能】红杉AI Ascent 2024 | 人工智能的机遇 | 投资合伙人观点分享 | 软件取代服务 | 2024年关于AI的4大预测 | AI的长期影响",
-    "sleep 3.9s",
+    "2026-09-12T12:51:27Z STT already running — no second Whisper",
+    "2026-09-12T12:51:27Z STT already running — no second Whisper",
+    "2026-09-12T12:51:27Z STT already running — no second Whisper",
+    "backfill-captions.log: [1164<path> dIyQl99oxlg [AI] A Comprehensive Guide to How LLMs Work in Plain English | LLM | Word Embeddings | Transforme...",
     "sleep 4.0s",
-    "[1073<path> Up-jvRsrIGk 【人工智能】AI智能体工作流 | Agentic Reasoning | 吴恩达Andrew Ng | 红杉AI Ascent 2024分享 | Agent 4大设计模式",
-    "[1074<path> yNpIrBDcSdw 【人工智能】红杉AI Ascent 2024 | 人工智能的机遇 | 投资合伙人观点分享 | 软件取代服务 | 2024年关于AI的4大预测 | AI的长期影响"
+    "[1163<path> uumQeZYo6Z0 【AIGC】Stability.AI发布代码生成模型StableCode | 30亿参数 | 16000上下文长度 | 三种模型 | StarCoder | HuggingFace开源",
+    "sleep 2.1s",
+    "[1164<path> dIyQl99oxlg [AI] A Comprehensive Guide to How LLMs Work in Plain English | LLM | Word Embeddings | Transforme..."
   ],
   "pm": {
     "token_free": true,
