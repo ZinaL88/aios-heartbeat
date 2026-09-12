@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-13 03:20 HKT",
+  "written_at_hkt": "2026-09-13 03:25 HKT",
   "queue": [
     {
       "name": "麥克老李",
@@ -44,12 +44,6 @@
       "reason": ""
     },
     {
-      "name": "大卢和小田",
-      "channel_id": "UCP76ZVB1x9udP2UFcQkSvMA",
-      "skip": false,
-      "reason": ""
-    },
-    {
       "name": "王理元",
       "channel_id": "UCROR3SZDrohSela1sjD1STg",
       "skip": false,
@@ -58,6 +52,12 @@
     {
       "name": "Alan",
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "skip": false,
+      "reason": ""
+    },
+    {
+      "name": "大卢和小田",
+      "channel_id": "UCP76ZVB1x9udP2UFcQkSvMA",
       "skip": false,
       "reason": ""
     }
@@ -631,6 +631,13 @@
       "playlist_id": "PLEmTTOfet46OmSXIUKmbHe1acy6u-fIVX"
     },
     {
+      "tier": "P2",
+      "title": "English for Work",
+      "videos": 74,
+      "skip": false,
+      "playlist_id": "PLFpsDakL_p53mcCG5SbNo30HQJo2PKd39"
+    },
+    {
       "tier": "P1",
       "title": "Smart Note Taking (Obsidian & Zettelkasten)",
       "videos": 28,
@@ -643,6 +650,13 @@
       "videos": 1,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLJs9r0P3yma2VPAg7neSqh_"
+    },
+    {
+      "tier": "P2",
+      "title": "Entrepreneur",
+      "videos": 3464,
+      "skip": false,
+      "playlist_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
     },
     {
       "tier": "P2",
@@ -667,24 +681,17 @@
     },
     {
       "tier": "P2",
-      "title": "Entrepreneur",
-      "videos": 3464,
-      "skip": false,
-      "playlist_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
-    },
-    {
-      "tier": "P2",
       "title": "Productivity",
       "videos": 1498,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3"
     },
     {
-      "tier": "P2",
-      "title": "English for Work",
-      "videos": 74,
+      "tier": "P3",
+      "title": "Presentation, Public Speaking, Story Telling",
+      "videos": 1218,
       "skip": false,
-      "playlist_id": "PLFpsDakL_p53mcCG5SbNo30HQJo2PKd39"
+      "playlist_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE"
     },
     {
       "tier": "P3",
@@ -713,13 +720,6 @@
       "videos": 1248,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e"
-    },
-    {
-      "tier": "P3",
-      "title": "Presentation, Public Speaking, Story Telling",
-      "videos": 1218,
-      "skip": false,
-      "playlist_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE"
     },
     {
       "tier": "P3",
