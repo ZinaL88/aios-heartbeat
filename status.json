@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T05:15:02Z",
-  "written_at_hkt": "2026-09-12 13:15 HKT",
+  "written_at_utc": "2026-09-12T05:20:01Z",
+  "written_at_hkt": "2026-09-12 13:20 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -12,7 +12,7 @@
   },
   "resources": {
     "mem_available_gi": 2.6,
-    "load1": 0.06,
+    "load1": 0.01,
     "disk_avail": "108G",
     "tmp_du": "8.1M"
   },
@@ -34,11 +34,11 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T05:20:00Z",
-    "next_cron_hkt": "2026-09-12 13:20 HKT",
+    "next_cron_utc": "2026-09-12T05:25:00Z",
+    "next_cron_hkt": "2026-09-12 13:25 HKT",
     "cron": "*/5",
     "job_restart": "blocked — RAM 2.6G < 6.0G; recheck every 5 min",
-    "job_restart_at_hkt": "2026-09-12 13:20 HKT",
+    "job_restart_at_hkt": "2026-09-12 13:25 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -56,16 +56,6 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T04:55:04Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-12T04:55:04Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-12T05:00:04Z skip reboost — MemAvailable 2.7G < 6G (clean tmp, wait next cron)"
     },
     {
@@ -92,6 +82,16 @@
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-12T05:10:04Z skip reboost — MemAvailable 2.7G < 6G (clean tmp, wait next cron)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T05:15:05Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-12T05:15:05Z skip reboost — MemAvailable 2.6G < 6G (clean tmp, wait next cron)"
     }
   ],
   "pm": {
