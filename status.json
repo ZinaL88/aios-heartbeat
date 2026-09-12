@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-12T13:05:51Z",
-  "written_at_hkt": "2026-09-12 21:05 HKT",
+  "written_at_utc": "2026-09-12T13:10:57Z",
+  "written_at_hkt": "2026-09-12 21:10 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -9,18 +9,18 @@
     "whisper_n": 2,
     "backfill_n": 1,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-    "captions_channel": "UCPpdGTNbIKdiWgxCrbka4Zw",
+    "captions_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
     "sample": [
       {
-        "pid": 187874,
-        "cmd": "_tpvhmZvR0A"
+        "pid": 191434,
+        "cmd": "8Mxc55zBCeo"
       },
       {
         "pid": 146844,
         "cmd": "backfill"
       },
       {
-        "pid": 183477,
+        "pid": 189912,
         "cmd": "backfill"
       }
     ]
@@ -31,7 +31,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.12,
+        "rss_gi": 3.1,
         "n": 33
       },
       {
@@ -60,6 +60,16 @@
         "n": 3
       },
       {
+        "comm": "yt-dlp",
+        "rss_gi": 0.11,
+        "n": 2
+      },
+      {
+        "comm": "websockify",
+        "rss_gi": 0.1,
+        "n": 3
+      },
+      {
         "comm": "csnaps",
         "rss_gi": 0.08,
         "n": 1
@@ -68,16 +78,6 @@
         "comm": "bash",
         "rss_gi": 0.08,
         "n": 35
-      },
-      {
-        "comm": "websockify",
-        "rss_gi": 0.07,
-        "n": 2
-      },
-      {
-        "comm": "python3",
-        "rss_gi": 0.06,
-        "n": 4
       }
     ],
     "meminfo": {
@@ -86,23 +86,23 @@
       "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 5.6
+      "committed_gi": 5.7
     },
-    "load1": 0.33,
+    "load1": 0.42,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
   "cookies": {
     "present": true,
-    "age_hours": 0.1,
+    "age_hours": 0.0,
     "stale": false
   },
   "collector": {
     "found": true,
     "done": 49,
     "total": 737,
-    "inflight": "_tpvhmZvR0A",
-    "last_id": "oOJQ0b62oEk",
+    "inflight": "8Mxc55zBCeo",
+    "last_id": "ZNra5ejeshE",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -124,11 +124,11 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-        "done": 190,
-        "left": 38,
-        "total": 228,
-        "eta_min": 3
+        "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
+        "done": 68,
+        "left": 710,
+        "total": 778,
+        "eta_min": 59
       }
     }
   },
@@ -137,8 +137,8 @@
     "pull": "ok"
   },
   "schedule": {
-    "next_cron_utc": "2026-09-12T13:10:00Z",
-    "next_cron_hkt": "2026-09-12 21:10 HKT",
+    "next_cron_utc": "2026-09-12T13:15:00Z",
+    "next_cron_hkt": "2026-09-12 21:15 HKT",
     "cron": "*/5",
     "job_restart": "captions + Whisper running",
     "job_restart_at_hkt": null,
@@ -159,53 +159,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:05:51Z captions already running"
+      "summary": "2026-09-12T13:10:56Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:05:51Z captions already running"
+      "summary": "2026-09-12T13:10:56Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:05:51Z captions already running"
+      "summary": "2026-09-12T13:10:56Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:05:51Z captions already running"
+      "summary": "2026-09-12T13:10:56Z captions already running"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:05:51Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:10:56Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:05:51Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:10:56Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:05:51Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:10:56Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-12T13:05:51Z STT already running — no second Whisper"
+      "summary": "2026-09-12T13:10:56Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-12T13:05:51Z STT already running — no second Whisper",
-    "2026-09-12T13:05:51Z STT already running — no second Whisper",
-    "2026-09-12T13:05:51Z STT already running — no second Whisper",
-    "GzJAM: This video is available to this channel's members on level: newtype (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
-    "captions miss (no cookies): s may be missing. See  https:<path>  for details on installing one",
-    "0E-Gk: This video is available to this channel's members on level: newtype (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
-    "captions miss (no cookies): s may be missing. See  https:<path>  for details on installing one",
-    "GzJAM: This video is available to this channel's members on level: newtype (or any higher level). Join this channel to get access to members-only content and other exclusive perks."
+    "2026-09-12T13:10:56Z STT already running — no second Whisper",
+    "2026-09-12T13:10:56Z STT already running — no second Whisper",
+    "2026-09-12T13:10:56Z STT already running — no second Whisper",
+    "backfill-captions.log: ERROR: [youtube] GSxR5tcNE7c: Join this channel to get access to members-only content like this video, and other exclusive perks.",
+    "captions miss (no cookies): e missing. See  https:<path>  for details on installing one",
+    "This video is available to this channel's members on level: 人生自由不走弯路《财富会员》 (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
+    "captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
+    "ERROR: [youtube] GSxR5tcNE7c: Join this channel to get access to members-only content like this video, and other exclusive perks."
   ],
   "pm": {
     "token_free": true,
