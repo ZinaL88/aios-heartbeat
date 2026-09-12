@@ -57,9 +57,15 @@ function slot(backMin){
 }
 function pull(){
   function ok(r){ if(!r.ok) throw r.status; return r.json(); }
+  function fail(){
+    if($("ping")) $("ping").textContent="live fetch failed — not a 23:00 bake";
+    if($("age")) $("age").textContent="fetch fail";
+  }
   timed("https://api.github.com/repos/ZinaL88/aios-heartbeat/contents/status.json",
     {Accept:"application/vnd.github.raw+json"}).then(ok).then(paint).catch(function(){
-      timed("status.json?t="+Date.now()).then(ok).then(paint).catch(function(){});
+      timed("https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json?t="+Date.now()).then(ok).then(paint).catch(function(){
+        timed("status.json?t="+Date.now()).then(ok).then(paint).catch(fail);
+      });
     });
 }
 function move(li, dir){
