@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-13T19:48:11Z",
-  "written_at_hkt": "2026-09-14 03:48 HKT",
+  "written_at_utc": "2026-09-13T19:49:08Z",
+  "written_at_hkt": "2026-09-14 03:49 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -16,7 +16,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 1383233,
+        "pid": 1393153,
         "cmd": "proc"
       },
       {
@@ -30,22 +30,22 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.3,
+    "mem_available_gi": 4.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.42,
+        "rss_gi": 3.36,
         "n": 34
       },
       {
         "comm": "python",
-        "rss_gi": 2.93,
+        "rss_gi": 2.07,
         "n": 9
       },
       {
         "comm": "chrome",
-        "rss_gi": 1.42,
+        "rss_gi": 1.39,
         "n": 10
       },
       {
@@ -76,7 +76,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.08,
-        "n": 36
+        "n": 35
       },
       {
         "comm": "websockify",
@@ -86,15 +86,15 @@
     ],
     "meminfo": {
       "buffers_gi": 0.3,
-      "cached_gi": 2.8,
-      "anon_gi": 5.6,
+      "cached_gi": 3.0,
+      "anon_gi": 4.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 16.2
+      "committed_gi": 15.2
     },
-    "load1": 4.6,
+    "load1": 4.1,
     "disk_avail": "107G",
-    "tmp_du": "86M"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -103,39 +103,39 @@
   },
   "collector": {
     "found": true,
-    "done": 80,
+    "done": 81,
     "total": 737,
     "inflight": null,
-    "last_id": "Mtbfh5XA6D0",
+    "last_id": "U86LpIFod18",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
-      "public_done": 45,
+      "public_done": 46,
       "members_total": 0,
       "members_done": 0,
-      "pending_stt_n": 643,
-      "pending_stt_listed": 723,
-      "transcripts_on_disk": 80,
-      "captions_done": 45,
+      "pending_stt_n": 641,
+      "pending_stt_listed": 722,
+      "transcripts_on_disk": 81,
+      "captions_done": 46,
       "captions_left": 0,
-      "captions_no_sub": 692,
+      "captions_no_sub": 691,
       "source": "inventory+disk",
-      "public_left": 692
+      "public_left": 691
     },
     "tracks": {
       "stt": {
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-        "pending": 643,
-        "transcripts_on_disk": 80,
-        "inflight": "U86LpIFod18",
+        "pending": 641,
+        "transcripts_on_disk": 81,
+        "inflight": "1s5Vw_ArVrU",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
-        "eta_min": 15432,
-        "eta_hkt": "2026-09-24 20:55 HKT",
+        "eta_min": 15384,
+        "eta_hkt": "2026-09-24 20:13 HKT",
         "jobs": 2,
-        "eta_deadline_utc": "2026-09-24T12:55:03Z",
+        "eta_deadline_utc": "2026-09-24T12:13:03Z",
         "eta_frozen": true,
         "overdue": false
       },
@@ -152,24 +152,22 @@
           "Build your own LLM Workshop",
           "AI"
         ],
-        "done": 33,
-        "left": 48,
+        "done": 34,
+        "left": 47,
         "total": 81,
         "no_sub": 0,
         "eta_min": 4,
-        "eta_hkt": "2026-09-14 03:52 HKT",
+        "eta_hkt": "2026-09-14 03:53 HKT",
         "inflight": null,
         "jobs": 3,
-        "eta_deadline_utc": "2026-09-13T19:52:11Z",
+        "eta_deadline_utc": "2026-09-13T19:53:08Z",
         "eta_frozen": false,
         "overdue": false
       }
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-13T19:50:00Z",
     "next_cron_hkt": "2026-09-14 03:50 HKT",
@@ -193,53 +191,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T19:47:40Z STT already running — no second Whisper"
+      "summary": "2026-09-13T19:48:12Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T19:48:11Z skip — another reboost holds lock"
+      "summary": "2026-09-13T19:48:12Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T19:48:11Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=3.3G"
+      "summary": "2026-09-13T19:48:43Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=3.4G"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T19:48:11Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=3.3G"
+      "summary": "2026-09-13T19:48:43Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=3.4G"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ/inventory_public.json"
+      "summary": "2026-09-13T19:48:43Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ/inventory_public.json"
+      "summary": "2026-09-13T19:48:43Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T19:48:11Z reboost captions pid 1390621 channel PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ"
+      "summary": "2026-09-13T19:48:43Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T19:48:11Z reboost captions pid 1390621 channel PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ"
+      "summary": "2026-09-13T19:48:43Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-13T19:48:11Z reboost captions pid 1390621 channel PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ",
-    "2026-09-13T19:48:11Z reboost captions pid 1390621 channel PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ",
-    "backfill-captions.log: warning: no cookies file at <path> public captions still run cookieless",
+    "2026-09-13T19:48:43Z captions after fill running=3",
+    "2026-09-13T19:48:43Z STT already running — no second Whisper",
+    "2026-09-13T19:48:43Z STT already running — no second Whisper",
+    "backfill-captions.log: rate-limited — backoff 45s",
+    "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
     "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "rate-limited — backoff 45s",
-    "warning: no cookies file at <path> public captions still run cookieless"
+    "rate-limited — backoff 45s"
   ],
   "pm": {
     "token_free": true,
@@ -247,6 +245,183 @@
     "now": "plan-b: captions worker (cpu_light, RAM>=1.2G) parallel to one Whisper (ram_heavy, RAM>=6G)",
     "backlog": [
       "plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)"
+    ]
+  },
+  "other_jobs": {
+    "updated_at": "2026-09-06T19:42:19.671805+08:00",
+    "running_n": 1,
+    "total_n": 17,
+    "jobs": [
+      {
+        "id": "yt-ch11",
+        "title": "#11 课代表立正 full backfill",
+        "status": "running",
+        "raw_status": "running",
+        "class": "ram_heavy",
+        "priority": 10,
+        "owner": "collector-script",
+        "notes": "healthy 2026-09-06 19:42 HKT; 140/214; inflight QQMX67G9PFs; last_done=q-q6cHC67DE"
+      },
+      {
+        "id": "yt-ch-rest",
+        "title": "Channels #2–#9 backfill",
+        "status": "blocked",
+        "raw_status": "blocked",
+        "class": "ram_heavy",
+        "priority": 20,
+        "owner": "collector-script",
+        "notes": "After #11: … Alan → 清流君(MrWaterDrop) → 大卢和小田(DZXS) → 王理元. Z L swapped 8>7 on 2026-09-06."
+      },
+      {
+        "id": "yt-hardsub-ocr",
+        "title": "Hardsub OCR hot path",
+        "status": "blocked",
+        "raw_status": "blocked",
+        "class": "chrome_heavy",
+        "priority": 40,
+        "owner": "jarvis",
+        "notes": ""
+      },
+      {
+        "id": "eval-golden-3-10",
+        "title": "Eval golden cases 3–10",
+        "status": "todo",
+        "raw_status": "ready",
+        "class": "token_doc",
+        "priority": 28,
+        "owner": "jarvis",
+        "notes": "Case1 live 3; Case2 live 3 (2026-09-06 19:37 HKT); Case6 sprawl bullets filled; #8 frame pending chrome_heavy-idle; #..."
+      },
+      {
+        "id": "yt-ocr-schema-adr",
+        "title": "OCR image_extract ADR / SCHEMA",
+        "status": "todo",
+        "raw_status": "ready",
+        "class": "token_doc",
+        "priority": 42,
+        "owner": "jarvis",
+        "notes": "comics Pass; hardsub fixtures deferred — STT busy on QQMX67G9PFs (2026-09-06 19:42 HKT); still draft"
+      },
+      {
+        "id": "yt-history-cleanup",
+        "title": "History safer-gate cleanup",
+        "status": "todo",
+        "raw_status": "in_progress",
+        "class": "chrome_heavy",
+        "priority": 50,
+        "owner": "jarvis",
+        "notes": "REQUIRED. Progress {'not_found': 27, 'removed': 8}; remaining~147. High not_found rate — many collector IDs never hit..."
+      },
+      {
+        "id": "gh-cli-login",
+        "title": "Terminal gh auth",
+        "status": "todo",
+        "raw_status": "cancelled",
+        "class": "wait_human",
+        "priority": 99,
+        "owner": "",
+        "notes": "wrong door; use GitHub app"
+      },
+      {
+        "id": "dashboard-refresh",
+        "title": "Ops dashboard PNG refresh",
+        "status": "done",
+        "raw_status": "done",
+        "class": "cpu_light",
+        "priority": 5,
+        "owner": "cos_tick",
+        "notes": "HTML+PNG regenerated 2026-09-06 19:42 HKT (140/214, inflight QQMX67G9PFs, STT on)"
+      },
+      {
+        "id": "spine-git-push",
+        "title": "Docs spine → ai-os",
+        "status": "done",
+        "raw_status": "done",
+        "class": "token_doc",
+        "priority": 15,
+        "owner": "jarvis",
+        "notes": "pushed CoS tick 2026-09-06 19:38-19:45 HKT to ZinaL88/ai-os main: HANDOFF 7292f063, OCR+docs-spine HANDOFF 9c988c45; ..."
+      },
+      {
+        "id": "notion-index-not-corpus",
+        "title": "Notion = index not corpus",
+        "status": "done",
+        "raw_status": "done",
+        "class": "token_doc",
+        "priority": 21,
+        "owner": "jarvis",
+        "notes": "LOCKED intent already on disk"
+      },
+      {
+        "id": "handoff-queue-docs",
+        "title": "HANDOFF + queue docs refresh",
+        "status": "done",
+        "raw_status": "done",
+        "class": "token_doc",
+        "priority": 22,
+        "owner": "jarvis",
+        "notes": "refreshed 2026-09-06 19:38 HKT: 140/214 + Case2 live 3 + STT on q-q6cHC67DE"
+      },
+      {
+        "id": "content-collection-sequence",
+        "title": "content-collection-sequence polish",
+        "status": "done",
+        "raw_status": "done",
+        "class": "token_doc",
+        "priority": 23,
+        "owner": "jarvis",
+        "notes": "LOCKED 2026-09-06; no change needed this tick"
+      },
+      {
+        "id": "eval-golden-1-2",
+        "title": "Eval golden cases 1–2",
+        "status": "done",
+        "raw_status": "done",
+        "class": "token_doc",
+        "priority": 25,
+        "owner": "jarvis",
+        "notes": ""
+      },
+      {
+        "id": "hermes-curriculum",
+        "title": "Hermes curriculum",
+        "status": "done",
+        "raw_status": "done",
+        "class": "token_doc",
+        "priority": 25,
+        "owner": "jarvis",
+        "notes": ""
+      },
+      {
+        "id": "eval-framework-adr",
+        "title": "Eval framework ADR/skill",
+        "status": "done",
+        "raw_status": "done",
+        "class": "token_doc",
+        "priority": 30,
+        "owner": "jarvis",
+        "notes": "ADR + kb mirror written 2026-09-06; live golden pass still open"
+      },
+      {
+        "id": "yt-delta",
+        "title": "Delta job + brief routine",
+        "status": "done",
+        "raw_status": "done",
+        "class": "token_doc",
+        "priority": 35,
+        "owner": "jarvis",
+        "notes": "runbook + run_delta_safe.sh + delta.py --dry-run ready 2026-09-06; implement captions/STT-queue + enable routine AFTE..."
+      },
+      {
+        "id": "yt-history-adr-lock",
+        "title": "History ADR lock",
+        "status": "done",
+        "raw_status": "done",
+        "class": "token_doc",
+        "priority": 45,
+        "owner": "jarvis",
+        "notes": "ready-for-Z-L-lock + lock-stamp block added 2026-09-06 ~11:40 HKT; awaiting Z L `LOCK History ADR` reply; cleanup rem..."
+      }
     ]
   }
 }

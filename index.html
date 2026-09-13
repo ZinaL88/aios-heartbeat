@@ -85,6 +85,25 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
 #safeNext li { padding:4px 0; font-size:12px; color:var(--muted); border-bottom:1px solid #1e1e1e; }
 .overdue { color:var(--danger); }
 .foot { margin-top:22px; }
+.other-card { margin-top:14px; }
+.other-summary {
+  width:100%; display:flex; align-items:center; justify-content:space-between; gap:12px;
+  background:transparent; border:0; color:var(--fg); font:inherit; cursor:pointer;
+  padding:0; text-align:left; min-height:44px;
+}
+.other-summary .chev {
+  font-family:ui-monospace,Menlo,monospace; font-size:14px; color:var(--muted);
+  transition:transform .15s ease; display:inline-block;
+}
+.other-card.open .other-summary .chev { transform:rotate(90deg); }
+.other-summary .sum-left { display:flex; align-items:baseline; gap:10px; flex-wrap:wrap; }
+.other-summary .sum-left .hlabel { margin:0; }
+#otherBody { display:none; margin-top:10px; }
+.other-card.open #otherBody { display:block; }
+#oList { list-style:none; margin:8px 0 0; padding:0; }
+.orow { display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid #222; }
+.orow .txt { flex:1; min-width:0; }
+.orow .txt b { display:block; font-size:14px; }
 @media (max-width:820px) {
   .lanes { grid-template-columns:1fr; }
   .metrics { grid-template-columns:1fr 1fr; }
@@ -95,8 +114,8 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-09-14 03:48 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-09-14 03:48 HKT</p>
+    <p class="mono" id="pingLine">ping 2026-09-14 03:49 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-09-14 03:49 HKT</p>
   </div>
   <div class="pills" id="livePills">
     <span class="pill on" id="pillPing"><span class="dot"></span>PING —</span>
@@ -116,14 +135,14 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
 
 <section class="now">
   <div><span class="label">now</span> <span class="body" id="nowBody">STT 一个狠人 · captions The Agent Factory · Build your own LLM Workshop · AI</span></div>
-  <span class="mono" id="nowTs">2026-09-14 03:48 HKT</span>
+  <span class="mono" id="nowTs">2026-09-14 03:49 HKT</span>
 </section>
 
 <section class="metrics" id="metrics">
-  <div class="metric"><div class="k">STT left</div><div class="v" id="mStt">643</div><div class="s" id="mSttSub">Whisper queue</div></div>
-  <div class="metric"><div class="k">Captions left</div><div class="v" id="mCap">48</div><div class="s" id="mCapSub">2026-09-14 03:52 HKT</div></div>
-  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">3.3G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-14 03:48 HKT</div></div>
+  <div class="metric"><div class="k">STT left</div><div class="v" id="mStt">641</div><div class="s" id="mSttSub">Whisper queue</div></div>
+  <div class="metric"><div class="k">Captions left</div><div class="v" id="mCap">47</div><div class="s" id="mCapSub">2026-09-14 03:53 HKT</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">4.1G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-14 03:49 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -132,25 +151,25 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
     <div class="work-block">
       <div class="row"><span class="mono"><span class="pill on" id="capStatePill"><span class="dot"></span><span id="capState">running · 3 workers</span></span> CAPTIONS</span></div>
       <p class="ch" id="capCh">The Agent Factory · Build your own LLM Workshop · AI</p>
-      <div class="row"><span class="big" id="capNum">48</span><span class="mono" id="capWorkers">3 workers · 33/81 left</span></div>
-      <p class="mono" id="capEta">ETA 2026-09-14 03:52 HKT</p>
+      <div class="row"><span class="big" id="capNum">47</span><span class="mono" id="capWorkers">3 workers · 34/81 left</span></div>
+      <p class="mono" id="capEta">ETA 2026-09-14 03:53 HKT</p>
     </div>
     <div class="work-block">
       <div class="row"><span class="mono"><span class="pill on" id="sttStatePill"><span class="dot"></span><span id="sttState">running</span></span> STT</span></div>
       <p class="ch" id="sttCh">一个狠人</p>
-      <div class="row"><span class="big" id="sttNum">643</span><span class="mono" id="sttFile">file U86LpIFod18</span></div>
-      <p class="mono" id="sttEta">ETA 2026-09-24 20:55 HKT</p>
-      <p class="mono" id="sttDisk">80 transcripts on disk · RAM 3.3 of 15.6G · load 4.6</p>
+      <div class="row"><span class="big" id="sttNum">641</span><span class="mono" id="sttFile">file 1s5Vw_ArVrU</span></div>
+      <p class="mono" id="sttEta">ETA 2026-09-24 20:13 HKT</p>
+      <p class="mono" id="sttDisk">81 transcripts on disk · RAM 4.1 of 15.6G · load 4.1</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">3.3 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">4.6</span></li>
+      <li><span>RAM free</span><span id="boxRam">4.1 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">4.1</span></li>
       <li><span>Disk</span><span id="boxDisk">107G</span></li>
-      <li><span>Tmp</span><span id="boxTmp">86M</span></li>
+      <li><span>Tmp</span><span id="boxTmp">—</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
       <li><span>Next ping</span><span id="boxCron">2026-09-14 03:50 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">captions + Whisper running</span></li>
@@ -162,11 +181,33 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">3.42G</span> · node ×34</li><li><span class="mono">2.93G</span> · python ×9</li><li><span class="mono">1.42G</span> · chrome ×10</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.12G</span> · uv ×4</li><li><span class="mono">0.11G</span> · xfwm4 ×3</li><li><span class="mono">0.1G</span> · plank ×3</li><li><span class="mono">0.1G</span> · csnaps ×1</li></ul>
+    <ul id="ramTop"><li><span class="mono">3.36G</span> · node ×34</li><li><span class="mono">2.07G</span> · python ×9</li><li><span class="mono">1.39G</span> · chrome ×10</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.12G</span> · uv ×4</li><li><span class="mono">0.11G</span> · xfwm4 ×3</li><li><span class="mono">0.1G</span> · plank ×3</li><li><span class="mono">0.1G</span> · csnaps ×1</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">starting &lt;path&gt; &lt;path&gt; --channel-id PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory &lt;path&gt;</li><li class="mono">2026-09-13T19:48:11Z reboost captions pid 1390621 channel PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ</li><li class="mono">backfill-captions.log: warning: no cookies file at &lt;path&gt; public captions still run cookieless</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">warning: no cookies file at &lt;path&gt; public captions still run cookieless</li><li><span class="mono">reboost.log</span> e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLmkdAgtxf3ajUIHzLeV7bR_WvoxaL3FLJ/i</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-13T19:48:43Z captions after fill running=3</li><li class="mono">2026-09-13T19:48:43Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
+  </div>
+</section>
+
+<section class="card other-card" id="otherCard">
+  <button type="button" class="other-summary" id="otherSummary" onclick="toggleOther()" aria-expanded="false" aria-controls="otherBody">
+    <span class="sum-left">
+      <span class="chev" id="otherChev">▸</span>
+      <span class="hlabel">OTHER</span>
+      <span class="mono" id="otherMeta">Not the YouTube queue · 1 running · 17 total</span>
+    </span>
+    <span class="mono" id="otherToggleLabel">show</span>
+  </button>
+  <div id="otherBody" hidden>
+    <div class="tabs" id="oTabs">
+      <button type="button" class="on" data-of="running" onclick="oFilter(this)">Running 1</button>
+      <button type="button" data-of="todo" onclick="oFilter(this)">Todo 4</button>
+      <button type="button" data-of="blocked" onclick="oFilter(this)">Blocked 2</button>
+      <button type="button" data-of="done" onclick="oFilter(this)">Done 10</button>
+      <button type="button" data-of="all" onclick="oFilter(this)">All 17</button>
+    </div>
+    <ul id="oList"><li class="orow" data-ostatus="running"><div class="txt"><b>#11 课代表立正 full backfill</b><div class="mono">ram_heavy · collector-script · healthy 2026-09-06 19:42 HKT; 140/214; inflight QQMX67G9PFs; last_done=q-q6cHC67DE</div></div><span class="pill on">running</span></li><li class="orow" data-ostatus="blocked"><div class="txt"><b>Channels #2–#9 backfill</b><div class="mono">ram_heavy · collector-script · After #11: … Alan → 清流君(MrWaterDrop) → 大卢和小田(DZXS) → 王理元. Z L swapped 8&gt;7 on 2026-09-06.</div></div><span class="pill warn">blocked</span></li><li class="orow" data-ostatus="blocked"><div class="txt"><b>Hardsub OCR hot path</b><div class="mono">chrome_heavy · jarvis</div></div><span class="pill warn">blocked</span></li><li class="orow" data-ostatus="todo"><div class="txt"><b>Eval golden cases 3–10</b><div class="mono">token_doc · jarvis · Case1 live 3; Case2 live 3 (2026-09-06 19:37 HKT); Case6 sprawl bullets filled; #8 frame pending chrome_heavy-idle; #...</div></div><span class="pill ">todo</span></li><li class="orow" data-ostatus="todo"><div class="txt"><b>OCR image_extract ADR / SCHEMA</b><div class="mono">token_doc · jarvis · comics Pass; hardsub fixtures deferred — STT busy on QQMX67G9PFs (2026-09-06 19:42 HKT); still draft</div></div><span class="pill ">todo</span></li><li class="orow" data-ostatus="todo"><div class="txt"><b>History safer-gate cleanup</b><div class="mono">chrome_heavy · jarvis · REQUIRED. Progress {&#x27;not_found&#x27;: 27, &#x27;removed&#x27;: 8}; remaining~147. High not_found rate — many collector IDs never hit...</div></div><span class="pill ">todo</span></li><li class="orow" data-ostatus="todo"><div class="txt"><b>Terminal gh auth</b><div class="mono">wait_human · — · wrong door; use GitHub app</div></div><span class="pill ">todo</span></li><li class="orow" data-ostatus="done"><div class="txt"><b>Ops dashboard PNG refresh</b><div class="mono">cpu_light · cos_tick · HTML+PNG regenerated 2026-09-06 19:42 HKT (140/214, inflight QQMX67G9PFs, STT on)</div></div><span class="pill ">done</span></li><li class="orow" data-ostatus="done"><div class="txt"><b>Docs spine → ai-os</b><div class="mono">token_doc · jarvis · pushed CoS tick 2026-09-06 19:38-19:45 HKT to ZinaL88/ai-os main: HANDOFF 7292f063, OCR+docs-spine HANDOFF 9c988c45; ...</div></div><span class="pill ">done</span></li><li class="orow" data-ostatus="done"><div class="txt"><b>Notion = index not corpus</b><div class="mono">token_doc · jarvis · LOCKED intent already on disk</div></div><span class="pill ">done</span></li><li class="orow" data-ostatus="done"><div class="txt"><b>HANDOFF + queue docs refresh</b><div class="mono">token_doc · jarvis · refreshed 2026-09-06 19:38 HKT: 140/214 + Case2 live 3 + STT on q-q6cHC67DE</div></div><span class="pill ">done</span></li><li class="orow" data-ostatus="done"><div class="txt"><b>content-collection-sequence polish</b><div class="mono">token_doc · jarvis · LOCKED 2026-09-06; no change needed this tick</div></div><span class="pill ">done</span></li><li class="orow" data-ostatus="done"><div class="txt"><b>Eval golden cases 1–2</b><div class="mono">token_doc · jarvis</div></div><span class="pill ">done</span></li><li class="orow" data-ostatus="done"><div class="txt"><b>Hermes curriculum</b><div class="mono">token_doc · jarvis</div></div><span class="pill ">done</span></li><li class="orow" data-ostatus="done"><div class="txt"><b>Eval framework ADR/skill</b><div class="mono">token_doc · jarvis · ADR + kb mirror written 2026-09-06; live golden pass still open</div></div><span class="pill ">done</span></li><li class="orow" data-ostatus="done"><div class="txt"><b>Delta job + brief routine</b><div class="mono">token_doc · jarvis · runbook + run_delta_safe.sh + delta.py --dry-run ready 2026-09-06; implement captions/STT-queue + enable routine AFTE...</div></div><span class="pill ">done</span></li><li class="orow" data-ostatus="done"><div class="txt"><b>History ADR lock</b><div class="mono">token_doc · jarvis · ready-for-Z-L-lock + lock-stamp block added 2026-09-06 ~11:40 HKT; awaiting Z L `LOCK History ADR` reply; cleanup rem...</div></div><span class="pill ">done</span></li></ul>
+    <p class="mono" id="otherUpdated" style="margin-top:8px">job_board · 2026-09-06T19:42:19.671805+08:00</p>
   </div>
 </section>
 
@@ -327,6 +368,7 @@ function paint(d){
 
     set("src","index live · "+ping+" · THREE LANES · WORK · quoted NAMES");
     set("foot","Live · age "+age+" · relative → Pages → raw · never jsDelivr");
+    if(d.other_jobs) paintOther(d.other_jobs);
   }catch(e){ set("pingLine","paint fail: "+e); }
 }
 function timedFetch(url){
@@ -419,7 +461,68 @@ document.addEventListener("click", function(ev){
   if(ev.shiftKey && li.nextElementSibling) li.parentNode.insertBefore(li.nextElementSibling, li);
   else if(li.previousElementSibling) li.parentNode.insertBefore(li, li.previousElementSibling);
 });
+
+window.toggleOther=function(){
+  var card=$("otherCard"); if(!card) return;
+  var open=card.classList.toggle("open");
+  try{ localStorage.setItem("aios-hb-other-open", open?"1":"0"); }catch(e){}
+  var body=$("otherBody");
+  if(body){ body.hidden=!open; }
+  var sum=$("otherSummary"); if(sum) sum.setAttribute("aria-expanded", open?"true":"false");
+  var lab=$("otherToggleLabel"); if(lab) lab.textContent=open?"hide":"show";
+  var chev=$("otherChev"); if(chev) chev.textContent=open?"▾":"▸";
+};
+window.oFilter=function(btn){
+  document.querySelectorAll("#oTabs button").forEach(function(b){b.classList.remove("on");});
+  if(btn) btn.classList.add("on");
+  var f=btn?btn.getAttribute("data-of"):"all";
+  document.querySelectorAll("#oList .orow").forEach(function(li){
+    var st=li.getAttribute("data-ostatus")||"";
+    var show=(f==="all")||(st===f);
+    li.hidden=!show;
+  });
+};
+function escHtml(s){
+  return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+function paintOther(oj){
+  if(!oj) return;
+  var jobs=oj.jobs||[];
+  var running=oj.running_n!=null?oj.running_n:jobs.filter(function(j){return j.status==="running";}).length;
+  var total=oj.total_n!=null?oj.total_n:jobs.length;
+  var todo=jobs.filter(function(j){return j.status==="todo";}).length;
+  var blocked=jobs.filter(function(j){return j.status==="blocked";}).length;
+  var done=jobs.filter(function(j){return j.status==="done";}).length;
+  set("otherMeta","Not the YouTube queue · "+running+" running · "+total+" total");
+  var tabs=$("oTabs");
+  if(tabs){
+    var counts={running:running,todo:todo,blocked:blocked,done:done,all:total};
+    tabs.querySelectorAll("button").forEach(function(b){
+      var f=b.getAttribute("data-of");
+      var label={running:"Running",todo:"Todo",blocked:"Blocked",done:"Done",all:"All"}[f]||f;
+      b.textContent=label+" "+(counts[f]!=null?counts[f]:"");
+    });
+  }
+  var html=jobs.map(function(j){
+    var st=j.status||"todo";
+    var pillCls=st==="running"?"on":(st==="blocked"?"warn":"");
+    var notes=j.notes?(" · "+escHtml(j.notes)):"";
+    return '<li class="orow" data-ostatus="'+escHtml(st)+'">'
+      +'<div class="txt"><b>'+escHtml(j.title||"—")+'</b>'
+      +'<div class="mono">'+escHtml(j["class"]||"—")+" · "+escHtml(j.owner||"—")+notes+"</div></div>"
+      +'<span class="pill '+pillCls+'">'+escHtml(st)+"</span></li>";
+  }).join("");
+  setHTML("oList", html||'<li class="mono">no other jobs</li>');
+  set("otherUpdated","job_board · "+(oj.updated_at||"—"));
+  var active=document.querySelector("#oTabs button.on");
+  if(active) oFilter(active);
+}
+try{
+  var __o=localStorage.getItem("aios-hb-other-open");
+  if(__o==="1"){ toggleOther(); }
+}catch(e){}
 set("pingLine","js ok · pulling…");
+
 pull();
 setInterval(pull,15000);
 })();
