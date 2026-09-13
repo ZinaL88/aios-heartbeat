@@ -73,11 +73,11 @@ body.editing #addCh, body.editing #editTools { display:block; }
     <p class="mono" id="saveState">Grip works without Edit. Edit = add/remove/skip.</p>
   </div>
 </div>
-<p class="mono" id="src" style="margin-top:28px">v5 · Pages/raw waterfall · no jsDelivr · built 2026-09-14 00:14 HKT</p>
+<p class="mono" id="src" style="margin-top:28px">v5 · Pages/raw waterfall · no jsDelivr · built 2026-09-14 03:20 HKT · quoted NAMES</p>
 <script>
 (function(){
 function $(id){return document.getElementById(id);}
-var NAMES={UC_5lJHgnMP_lb_VpIiXV0hQ:"#11 课代表立正",UCJAPsTtcJJWGk8e-_CJL8TQ:"一个狠人",UCGWYKICLOE8Wxy7q3eYXmPA:"bestpartners",UCPpdGTNbIKdiWgxCrbka4Zw:"huanyihe777",UCAxQ8sjHgjXh26la7jEBw3w:"mike1111",UCeTLfPD7thTMabtL7w87Aug:"清流君",UCP76ZVB1x9udP2UFcQkSvMA:"大卢和小田",UCROR3SZDrohSela1sjD1STg:"王理元",UCaIIFXfdQUYf3OHPIFNDdrQ:"Alan",UCaA2cfCpytaARHcNcApboSw:"麥克老李",UC1CXs5dtO8_Zrsm-48saJfg:"Vicky Zhao",UCPtFFY5sw8WEi--Ki9SebkA:"Web3 101"};
+var NAMES={"UC_5lJHgnMP_lb_VpIiXV0hQ": "#11 课代表立正", "UCJAPsTtcJJWGk8e-_CJL8TQ": "一个狠人", "UCGWYKICLOE8Wxy7q3eYXmPA": "bestpartners", "UCPpdGTNbIKdiWgxCrbka4Zw": "huanyihe777", "UCAxQ8sjHgjXh26la7jEBw3w": "mike1111", "UCeTLfPD7thTMabtL7w87Aug": "清流君", "UCP76ZVB1x9udP2UFcQkSvMA": "大卢和小田", "UCROR3SZDrohSela1sjD1STg": "王理元", "UCaIIFXfdQUYf3OHPIFNDdrQ": "Alan", "UCaA2cfCpytaARHcNcApboSw": "麥克老李", "UC1CXs5dtO8_Zrsm-48saJfg": "Vicky Zhao", "UCPtFFY5sw8WEi--Ki9SebkA": "Web3 101"};
 function title(id){return NAMES[id]||id||"—";}
 function paint(d){
   try{
@@ -87,8 +87,11 @@ function paint(d){
     $("capDot").className="dot"+(cap.running?" on":"");
     $("capState").textContent=cap.running?"running":"idle";
     $("capCh").textContent=cap.running?title(cap.channel_id):(cap.next_name||"idle");
-    $("capNum").textContent=String(cap.left!=null?cap.left:0);
-    $("capHint").textContent=cap.no_sub? (cap.no_sub+" no-sub"): ((cap.jobs||2)+" workers");
+    var inv=(d.collector&&d.collector.inventory)||{};
+    var capLeft=(cap.left!=null?cap.left:(inv.captions_left!=null?inv.captions_left:0));
+    var capNoSub=(cap.no_sub!=null?cap.no_sub:inv.captions_no_sub);
+    $("capNum").textContent=String(capLeft);
+    $("capHint").textContent=capNoSub? (capNoSub+" no-sub"): ((cap.jobs||0)+" workers");
     var capEta=cap.eta_hkt?("ETA "+cap.eta_hkt):(cap.running?"ETA calculating":"ETA —");
     $("capEta").textContent=capEta;
     $("capEta").className="ch"+(cap.overdue?" overdue":"");
