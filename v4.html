@@ -48,8 +48,8 @@ body.editing #editTools { display:block; }
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-14 03:07 HKT</span></div>
-<p class="mono" id="ping">2026-09-14 03:07 HKT</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-14 03:12 HKT</span></div>
+<p class="mono" id="ping">2026-09-14 03:12 HKT</p>
 
 <div class="card">
   <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">iwz5uHMFnhU</span></div>
@@ -58,11 +58,11 @@ body.editing #editTools { display:block; }
   <p class="mono" id="sttDisk">76 transcripts on disk</p>
 </div>
 <div class="card">
-  <div class="row"><h2><span class="dot " id="capDot"></span>CAPTIONS</h2>
-    <span class="mono" id="capState">idle</span></div>
-  <p class="ch" id="capCh">idle</p>
+  <div class="row"><h2><span class="dot on" id="capDot"></span>CAPTIONS</h2>
+    <span class="mono" id="capState">running</span></div>
+  <p class="ch" id="capCh">—</p>
   <div class="row"><span class="big" id="capNum">0</span>
-    <span class="mono" id="capEta">0 workers · left</span></div>
+    <span class="mono" id="capEta">4 workers · left</span></div>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot on" id="sttDot"></span>STT</h2>
@@ -75,15 +75,15 @@ body.editing #editTools { display:block; }
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 4.2G / 15.6G · load 4.09</p>
+  <p class="ch" id="ram">RAM 4.1G / 15.6G · load 4.35</p>
   <p class="mono" id="box2">disk 107G · tmp 29M · cookies no</p>
-  <p class="mono" id="sched">next ping 2026-09-14 03:10 HKT · Whisper on · captions idle (reboost captions if RAM≥1.2)</p>
+  <p class="mono" id="sched">next ping 2026-09-14 03:15 HKT · captions + Whisper running</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li><b>STT</b> · 一个狠人 · 651 pending</li><li class="mono">pid 1252824 · proc</li><li class="mono">pid 1353278 · proc</li></ol>
+  <ol id="running"><li><b>STT</b> · 一个狠人 · 651 pending</li><li><b>CAPTIONS ×4</b> · — · 0/0</li><li class="mono">pid 1252824 · proc</li><li class="mono">pid 1353278 · proc</li><li class="mono">pid 1356871 · proc</li><li class="mono">pid 1357413 · proc</li></ol>
 </div>
 
 <div class="card">
@@ -109,7 +109,7 @@ body.editing #editTools { display:block; }
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-13T19:07:06Z STT already running — no second Whisper</li><li><span class="mono">reboost.log</span> 9999 --mode captions --captions-jobs 1 --sleep-min 3 --sleep-max 6 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC1CXs5dtO8_Zrsm-48saJfg/inventory_public.json</li><li><span class="mono">reboost.log</span> 2026-09-13T19:07:07Z reboost captions pid 1354380 channel UC1CXs5dtO8_Zrsm-48saJfg</li><li><span class="mono">reboost.log</span> 2026-09-13T19:07:07Z STT already running — no second Whisper</li><li class="mono">&quot;dry_run&quot;: false</li><li class="mono">}</li><li class="mono">Nothing to do.</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-13T19:12:22Z captions after fill running=4</li><li><span class="mono">reboost.log</span> 2026-09-13T19:12:22Z STT already running — no second Whisper</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">warning: no cookies file at &lt;path&gt; public captions still run cookieless</li></ol>
 </div>
 
 <div class="card">
