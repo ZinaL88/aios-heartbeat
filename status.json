@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-13T22:20:46Z",
-  "written_at_hkt": "2026-09-14 06:20 HKT",
+  "written_at_utc": "2026-09-13T22:24:32Z",
+  "written_at_hkt": "2026-09-14 06:24 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,23 +30,23 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 4.6,
+    "mem_available_gi": 4.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.11,
+        "rss_gi": 3.14,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.35,
-        "n": 5
+        "rss_gi": 2.5,
+        "n": 6
       },
       {
         "comm": "chrome",
-        "rss_gi": 1.06,
-        "n": 9
+        "rss_gi": 1.38,
+        "n": 11
       },
       {
         "comm": "plank",
@@ -59,14 +59,14 @@
         "n": 3
       },
       {
-        "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 38
-      },
-      {
         "comm": "csnaps",
         "rss_gi": 0.08,
         "n": 1
+      },
+      {
+        "comm": "bash",
+        "rss_gi": 0.08,
+        "n": 36
       },
       {
         "comm": "xfwm4",
@@ -79,22 +79,22 @@
         "n": 2
       },
       {
-        "comm": "x11vnc",
-        "rss_gi": 0.05,
-        "n": 3
+        "comm": "uv",
+        "rss_gi": 0.06,
+        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.2,
-      "cached_gi": 3.7,
-      "anon_gi": 4.4,
+      "cached_gi": 3.6,
+      "anon_gi": 4.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 13.9
+      "committed_gi": 15.1
     },
-    "load1": 4.59,
+    "load1": 5.13,
     "disk_avail": "107G",
-    "tmp_du": null
+    "tmp_du": "18M"
   },
   "cookies": {
     "present": false,
@@ -152,22 +152,24 @@
           "Learning how to learn",
           "Stanford CS221: Artificial Intelligence: Principles and Techniques | Autumn 2021"
         ],
-        "done": 135,
-        "left": 1024,
+        "done": 141,
+        "left": 1018,
         "total": 1207,
         "no_sub": 34,
         "eta_min": 85,
-        "eta_hkt": "2026-09-14 07:45 HKT",
+        "eta_hkt": "2026-09-14 07:49 HKT",
         "inflight": null,
         "jobs": 3,
-        "eta_deadline_utc": "2026-09-13T23:45:46Z",
+        "eta_deadline_utc": "2026-09-13T23:49:32Z",
         "eta_frozen": false,
         "overdue": false
       }
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {},
+  "git_sync": {
+    "pull": "ok"
+  },
   "schedule": {
     "next_cron_utc": "2026-09-13T22:25:00Z",
     "next_cron_hkt": "2026-09-14 06:25 HKT",
@@ -191,48 +193,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T22:19:56Z STT already running — no second Whisper"
+      "summary": "2026-09-13T22:24:01Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T22:19:56Z STT already running — no second Whisper"
+      "summary": "2026-09-13T22:24:31Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T22:20:26Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.4G"
+      "summary": "2026-09-13T22:24:31Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.2G"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T22:20:26Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.4G"
+      "summary": "2026-09-13T22:24:31Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.2G"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T22:20:26Z captions after fill running=3"
+      "summary": "2026-09-13T22:24:31Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T22:20:26Z captions after fill running=3"
+      "summary": "2026-09-13T22:24:31Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T22:20:26Z STT already running — no second Whisper"
+      "summary": "2026-09-13T22:24:31Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T22:20:26Z STT already running — no second Whisper"
+      "summary": "2026-09-13T22:24:31Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-13T22:20:26Z captions after fill running=3",
-    "2026-09-13T22:20:26Z STT already running — no second Whisper",
-    "2026-09-13T22:20:26Z STT already running — no second Whisper",
+    "2026-09-13T22:24:31Z captions after fill running=3",
+    "2026-09-13T22:24:31Z STT already running — no second Whisper",
+    "2026-09-13T22:24:31Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
