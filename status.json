@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-13T19:58:28Z",
+  "written_at_utc": "2026-09-13T19:58:41Z",
   "written_at_hkt": "2026-09-14 03:58 HKT",
   "token_free": true,
   "processes": {
@@ -35,7 +35,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.39,
+        "rss_gi": 3.37,
         "n": 34
       },
       {
@@ -45,7 +45,7 @@
       },
       {
         "comm": "chrome",
-        "rss_gi": 1.69,
+        "rss_gi": 1.68,
         "n": 12
       },
       {
@@ -92,7 +92,7 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 17.5
     },
-    "load1": 4.18,
+    "load1": 4.22,
     "disk_avail": "107G",
     "tmp_du": "93M"
   },
@@ -136,7 +136,7 @@
         "eta_hkt": "2026-09-24 19:34 HKT",
         "jobs": 2,
         "eta_deadline_utc": "2026-09-24T11:34:28Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false
       },
       "captions": {
@@ -161,15 +161,13 @@
         "inflight": null,
         "jobs": 3,
         "eta_deadline_utc": "2026-09-13T20:00:28Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false
       }
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-13T20:00:00Z",
     "next_cron_hkt": "2026-09-14 04:00 HKT",

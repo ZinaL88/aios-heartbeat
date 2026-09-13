@@ -104,6 +104,7 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
 .orow { display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid #222; }
 .orow .txt { flex:1; min-width:0; }
 .orow .txt b { display:block; font-size:14px; }
+.qrow[hidden], .orow[hidden], #qList li[hidden], #oList li[hidden] { display:none !important; }
 @media (max-width:820px) {
   .lanes { grid-template-columns:1fr; }
   .metrics { grid-template-columns:1fr 1fr; }
@@ -159,7 +160,7 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
       <p class="ch" id="sttCh">一个狠人</p>
       <div class="row"><span class="big" id="sttNum">639</span><span class="mono" id="sttFile">file vZ6VuIsRtcc</span></div>
       <p class="mono" id="sttEta">ETA 2026-09-24 19:34 HKT</p>
-      <p class="mono" id="sttDisk">82 transcripts on disk · RAM 3.5 of 15.6G · load 4.18</p>
+      <p class="mono" id="sttDisk">82 transcripts on disk · RAM 3.5 of 15.6G · load 4.22</p>
     </div>
   </div>
 
@@ -167,7 +168,7 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
       <li><span>RAM free</span><span id="boxRam">3.5 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">4.18</span></li>
+      <li><span>Load</span><span id="boxLoad">4.22</span></li>
       <li><span>Disk</span><span id="boxDisk">107G</span></li>
       <li><span>Tmp</span><span id="boxTmp">93M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
@@ -181,7 +182,7 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">3.39G</span> · node ×34</li><li><span class="mono">2.75G</span> · python ×9</li><li><span class="mono">1.69G</span> · chrome ×12</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.12G</span> · uv ×4</li><li><span class="mono">0.1G</span> · csnaps ×1</li><li><span class="mono">0.08G</span> · xfwm4 ×3</li><li><span class="mono">0.08G</span> · bash ×35</li></ul>
+    <ul id="ramTop"><li><span class="mono">3.37G</span> · node ×34</li><li><span class="mono">2.75G</span> · python ×9</li><li><span class="mono">1.68G</span> · chrome ×12</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.12G</span> · uv ×4</li><li><span class="mono">0.1G</span> · csnaps ×1</li><li><span class="mono">0.08G</span> · xfwm4 ×3</li><li><span class="mono">0.08G</span> · bash ×35</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
     <ul id="reboostLog"><li class="mono">2026-09-13T19:58:28Z captions after fill running=3</li><li class="mono">2026-09-13T19:58:28Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
@@ -420,7 +421,7 @@ window.qFilter=function(btn){
     else if(f==="running") show=(phase==="running");
     else if(f==="channel") show=(kind==="channel");
     else if(f==="playlist") show=(kind==="playlist");
-    li.hidden=!show;
+    li.hidden=!show; li.style.display=show?"":"none";
   });
   filterQueue();
 };
@@ -440,7 +441,7 @@ window.filterQueue=function(){
       var t=(li.textContent||"").toLowerCase();
       show=t.indexOf(q)>=0;
     }
-    li.hidden=!show;
+    li.hidden=!show; li.style.display=show?"":"none";
   });
 };
 window.toggleEdit=function(){
@@ -477,9 +478,10 @@ window.oFilter=function(btn){
   if(btn) btn.classList.add("on");
   var f=btn?btn.getAttribute("data-of"):"all";
   document.querySelectorAll("#oList .orow").forEach(function(li){
-    var st=li.getAttribute("data-ostatus")||"";
-    var show=(f==="all")||(st===f);
-    li.hidden=!show;
+    var st=li.getAttribute("data-ostatus")||"todo";
+    var bucket=(st==="running"||st==="blocked"||st==="done")?st:"todo";
+    var show=(f==="all")||(f==="todo"?bucket==="todo":st===f);
+    li.hidden=!show; li.style.display=show?"":"none";
   });
 };
 function escHtml(s){
