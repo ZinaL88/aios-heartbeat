@@ -73,7 +73,7 @@ body.editing #addCh, body.editing #editTools { display:block; }
     <p class="mono" id="saveState">Grip works without Edit. Edit = add/remove/skip.</p>
   </div>
 </div>
-<p class="mono" id="src" style="margin-top:28px">v5 · same-origin status.json · no overlay</p>
+<p class="mono" id="src" style="margin-top:28px">v5 · Pages/raw waterfall · no jsDelivr</p>
 <script>
 (function(){
 function $(id){return document.getElementById(id);}
@@ -108,7 +108,7 @@ function getJson(url){
   return new Promise(function(resolve,reject){
     var x=new XMLHttpRequest();
     x.open("GET", url, true);
-    x.timeout=2500;
+    x.timeout=8000;
     x.onload=function(){
       if(x.status>=200 && x.status<300){
         try{ resolve(JSON.parse(x.responseText)); }catch(e){ reject(e); }
@@ -121,17 +121,23 @@ function getJson(url){
 }
 function pull(){
   var t="?t="+Date.now();
-  getJson("status.json"+t).then(function(d){
-    try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
-    paint(d);
-  }).catch(function(){
-    getJson("https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json"+t).then(function(d){
+  // Same waterfall as index/v4/pulse: Pages → raw GitHub → same-origin. Never jsDelivr.
+  var urls=[
+    "https://zinal88.github.io/aios-heartbeat/status.json"+t,
+    "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json"+t,
+    "status.json"+t
+  ];
+  function tryAt(i){
+    if(i>=urls.length){
+      $("ping").textContent=($("ping").textContent||"")+" · fetch miss, UI still live";
+      return;
+    }
+    getJson(urls[i]).then(function(d){
       try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
       paint(d);
-    }).catch(function(){
-      $("ping").textContent=($("ping").textContent||"")+" · fetch miss, UI still live";
-    });
-  });
+    }).catch(function(){ tryAt(i+1); });
+  }
+  tryAt(0);
 }
 function toggleEdit(){
   document.body.classList.toggle("editing");
@@ -157,7 +163,15 @@ $("channels").addEventListener("click", function(e){
   if(b.textContent==="▲" && li.previousElementSibling) li.parentNode.insertBefore(li, li.previousElementSibling);
   if(b.textContent==="▼" && li.nextElementSibling) li.parentNode.insertBefore(li.nextElementSibling, li);
 });
-try{ var c=localStorage.getItem("aios-hb-v1"); if(c) paint(JSON.parse(c)); }catch(e){}
+try{
+  var c=localStorage.getItem("aios-hb-v1");
+  if(c){
+    var d=JSON.parse(c);
+    var utc=d.written_at_utc||"";
+    var age=utc?(Date.now()-Date.parse(utc)):1e99;
+    if(age<15*60*1000) paint(d);
+  }
+}catch(e){}
 pull();
 setInterval(pull, 15000);
 })();

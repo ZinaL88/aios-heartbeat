@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-13T16:13:23Z",
+  "written_at_utc": "2026-09-13T16:13:31Z",
   "written_at_hkt": "2026-09-14 00:13 HKT",
   "token_free": true,
   "processes": {
@@ -22,7 +22,7 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 4.3,
+    "mem_available_gi": 4.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -84,7 +84,7 @@
       "sreclaimable_gi": 0.5,
       "committed_gi": 11.5
     },
-    "load1": 4.29,
+    "load1": 4.02,
     "disk_avail": "107G",
     "tmp_du": "20M"
   },
@@ -136,7 +136,7 @@
         "channel_id": null,
         "jobs": 0,
         "note": null,
-        "eta_deadline_utc": "2026-09-13T16:13:23Z",
+        "eta_deadline_utc": "2026-09-13T16:13:31Z",
         "eta_hkt": null,
         "eta_frozen": false,
         "overdue": false
@@ -170,17 +170,12 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T16:13:23Z captions on exhausted/other UC — stop those, start UC1CXs5dtO8_Zrsm-48saJfg"
+      "summary": "2026-09-13T16:13:30Z queue pick captions=UC1CXs5dtO8_Zrsm-48saJfg stt=UCJAPsTtcJJWGk8e-_CJL8TQ stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.2G"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T16:13:23Z captions on exhausted/other UC — stop those, start UC1CXs5dtO8_Zrsm-48saJfg"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "Jfg --access public --limit 9999 --mode captions --captions-jobs 2 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC1CXs5dtO8_Zrsm-48saJfg/inventory_public.json"
+      "summary": "2026-09-13T16:13:30Z queue pick captions=UC1CXs5dtO8_Zrsm-48saJfg stt=UCJAPsTtcJJWGk8e-_CJL8TQ stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.2G"
     },
     {
       "at_hkt": "reboost.log",
@@ -190,28 +185,33 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T16:13:23Z reboost captions pid 1268237 channel UC1CXs5dtO8_Zrsm-48saJfg"
+      "summary": "Jfg --access public --limit 9999 --mode captions --captions-jobs 2 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UC1CXs5dtO8_Zrsm-48saJfg/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T16:13:23Z reboost captions pid 1268237 channel UC1CXs5dtO8_Zrsm-48saJfg"
+      "summary": "2026-09-13T16:13:30Z reboost captions pid 1268495 channel UC1CXs5dtO8_Zrsm-48saJfg"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T16:13:23Z STT already running — no second Whisper"
+      "summary": "2026-09-13T16:13:30Z reboost captions pid 1268495 channel UC1CXs5dtO8_Zrsm-48saJfg"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T16:13:23Z STT already running — no second Whisper"
+      "summary": "2026-09-13T16:13:30Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T16:13:30Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-13T16:13:23Z reboost captions pid 1268237 channel UC1CXs5dtO8_Zrsm-48saJfg",
-    "2026-09-13T16:13:23Z STT already running — no second Whisper",
-    "2026-09-13T16:13:23Z STT already running — no second Whisper",
+    "2026-09-13T16:13:30Z reboost captions pid 1268495 channel UC1CXs5dtO8_Zrsm-48saJfg",
+    "2026-09-13T16:13:30Z STT already running — no second Whisper",
+    "2026-09-13T16:13:30Z STT already running — no second Whisper",
     "backfill-captions.log: Nothing to do.",
     "\"already_done\": 24,",
     "\"dry_run\": false",
