@@ -45,7 +45,7 @@ function paint(d){
 }
 function timed(url, headers){
   var c=new AbortController();
-  var t=setTimeout(function(){c.abort();},2500);
+  var t=setTimeout(function(){c.abort();},8000);
   return fetch(url,{cache:"no-store",headers:headers||{},signal:c.signal}).finally(function(){clearTimeout(t);});
 }
 function slot(backMin){
@@ -63,22 +63,30 @@ function pull(){
     window.__hbIn=0;
     try{
       var c=localStorage.getItem("aios-hb-v1");
-      if(c){ paint(JSON.parse(c)); return; }
+      if(c){
+        var d=JSON.parse(c);
+        var utc=d.written_at_utc||"";
+        var age=utc? (Date.now()-Date.parse(utc)) : 1e99;
+        if(age < 15*60*1000){ paint(d); if($("ping")) $("ping").textContent=(d.written_at_hkt||"—")+" · cached"; return; }
+      }
     }catch(e){}
     if($("ping")) $("ping").textContent="live fetch failed";
   }
-  var url="status.json?t="+Date.now();
-  timed(url).then(ok).then(function(d){
-    try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
-    paint(d);
-    window.__hbIn=0;
-  }).catch(function(){
-    timed("https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/status.json?t="+Date.now()).then(ok).then(function(d){
+  // Prefer Pages, then raw GitHub. Never jsDelivr (ignores ?t= and serves stale).
+  var urls=[
+    "https://zinal88.github.io/aios-heartbeat/status.json?t="+Date.now(),
+    "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t="+Date.now(),
+    "status.json?t="+Date.now()
+  ];
+  function tryAt(i){
+    if(i>=urls.length){ fail(); return; }
+    timed(urls[i]).then(ok).then(function(d){
       try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
       paint(d);
       window.__hbIn=0;
-    }).catch(fail);
-  });
+    }).catch(function(){ tryAt(i+1); });
+  }
+  tryAt(0);
 }
 function move(li, dir){
   var ol=li.parentNode;
