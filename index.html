@@ -104,7 +104,9 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
 .orow { display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid #222; }
 .orow .txt { flex:1; min-width:0; }
 .orow .txt b { display:block; font-size:14px; }
-.qrow[hidden], .orow[hidden], #qList li[hidden], #oList li[hidden] { display:none !important; }
+#qList .qrow[hidden], #oList .orow[hidden],
+#qList li[hidden], #oList li[hidden] { display:none !important; }
+#qList .qrow.is-hide, #oList .orow.is-hide { display:none !important; }
 @media (max-width:820px) {
   .lanes { grid-template-columns:1fr; }
   .metrics { grid-template-columns:1fr 1fr; }
@@ -115,8 +117,8 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-09-14 03:58 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-09-14 03:58 HKT</p>
+    <p class="mono" id="pingLine">ping 2026-09-14 04:02 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-09-14 04:02 HKT</p>
   </div>
   <div class="pills" id="livePills">
     <span class="pill on" id="pillPing"><span class="dot"></span>PING —</span>
@@ -136,14 +138,14 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
 
 <section class="now">
   <div><span class="label">now</span> <span class="body" id="nowBody">STT 一个狠人 · captions AI · The Agent Factory · Build your own LLM Workshop</span></div>
-  <span class="mono" id="nowTs">2026-09-14 03:58 HKT</span>
+  <span class="mono" id="nowTs">2026-09-14 04:02 HKT</span>
 </section>
 
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT left</div><div class="v" id="mStt">639</div><div class="s" id="mSttSub">Whisper queue</div></div>
-  <div class="metric"><div class="k">Captions left</div><div class="v" id="mCap">28</div><div class="s" id="mCapSub">2026-09-14 04:00 HKT</div></div>
-  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">3.5G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-14 03:58 HKT</div></div>
+  <div class="metric"><div class="k">Captions left</div><div class="v" id="mCap">22</div><div class="s" id="mCapSub">2026-09-14 04:03 HKT</div></div>
+  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">3.4G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-14 04:02 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -152,27 +154,27 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
     <div class="work-block">
       <div class="row"><span class="mono"><span class="pill on" id="capStatePill"><span class="dot"></span><span id="capState">running · 3 workers</span></span> CAPTIONS</span></div>
       <p class="ch" id="capCh">AI · The Agent Factory · Build your own LLM Workshop</p>
-      <div class="row"><span class="big" id="capNum">28</span><span class="mono" id="capWorkers">3 workers · 53/81 left</span></div>
-      <p class="mono" id="capEta">ETA 2026-09-14 04:00 HKT</p>
+      <div class="row"><span class="big" id="capNum">22</span><span class="mono" id="capWorkers">3 workers · 59/81 left</span></div>
+      <p class="mono" id="capEta">ETA 2026-09-14 04:03 HKT</p>
     </div>
     <div class="work-block">
       <div class="row"><span class="mono"><span class="pill on" id="sttStatePill"><span class="dot"></span><span id="sttState">running</span></span> STT</span></div>
       <p class="ch" id="sttCh">一个狠人</p>
       <div class="row"><span class="big" id="sttNum">639</span><span class="mono" id="sttFile">file vZ6VuIsRtcc</span></div>
       <p class="mono" id="sttEta">ETA 2026-09-24 19:34 HKT</p>
-      <p class="mono" id="sttDisk">82 transcripts on disk · RAM 3.5 of 15.6G · load 4.22</p>
+      <p class="mono" id="sttDisk">82 transcripts on disk · RAM 3.4 of 15.6G · load 5.02</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">3.5 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">4.22</span></li>
+      <li><span>RAM free</span><span id="boxRam">3.4 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">5.02</span></li>
       <li><span>Disk</span><span id="boxDisk">107G</span></li>
-      <li><span>Tmp</span><span id="boxTmp">93M</span></li>
+      <li><span>Tmp</span><span id="boxTmp">98M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
-      <li><span>Next ping</span><span id="boxCron">2026-09-14 04:00 HKT</span></li>
+      <li><span>Next ping</span><span id="boxCron">2026-09-14 04:05 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">captions + Whisper running</span></li>
       <li><span>RAM gate</span><span id="boxGate">6.0G</span></li>
     </ul>
@@ -182,9 +184,9 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">3.37G</span> · node ×34</li><li><span class="mono">2.75G</span> · python ×9</li><li><span class="mono">1.68G</span> · chrome ×12</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.12G</span> · uv ×4</li><li><span class="mono">0.1G</span> · csnaps ×1</li><li><span class="mono">0.08G</span> · xfwm4 ×3</li><li><span class="mono">0.08G</span> · bash ×35</li></ul>
+    <ul id="ramTop"><li><span class="mono">3.36G</span> · node ×34</li><li><span class="mono">2.94G</span> · python ×9</li><li><span class="mono">1.82G</span> · chrome ×13</li><li><span class="mono">0.13G</span> · Xvfb ×3</li><li><span class="mono">0.12G</span> · uv ×4</li><li><span class="mono">0.1G</span> · csnaps ×1</li><li><span class="mono">0.08G</span> · bash ×35</li><li><span class="mono">0.07G</span> · xfwm4 ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-13T19:58:28Z captions after fill running=3</li><li class="mono">2026-09-13T19:58:28Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-13T20:02:37Z captions after fill running=3</li><li class="mono">2026-09-13T20:02:37Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
@@ -369,7 +371,8 @@ function paint(d){
 
     set("src","index live · "+ping+" · THREE LANES · WORK · quoted NAMES");
     set("foot","Live · age "+age+" · relative → Pages → raw · never jsDelivr");
-    if(d.other_jobs) paintOther(d.other_jobs);
+    var _qb=document.querySelector("#qTabs button.on"); if(_qb) qFilter(_qb); else filterQueue();
+    if(d.other_jobs){ paintOther(d.other_jobs); var _ob=document.querySelector("#oTabs button.on"); if(_ob) oFilter(_ob); }
   }catch(e){ set("pingLine","paint fail: "+e); }
 }
 function timedFetch(url){
@@ -421,7 +424,9 @@ window.qFilter=function(btn){
     else if(f==="running") show=(phase==="running");
     else if(f==="channel") show=(kind==="channel");
     else if(f==="playlist") show=(kind==="playlist");
-    li.hidden=!show; li.style.display=show?"":"none";
+    li.hidden=!show;
+    if(show){ li.classList.remove("is-hide"); li.style.setProperty("display",""); }
+    else { li.classList.add("is-hide"); li.style.setProperty("display","none","important"); }
   });
   filterQueue();
 };
@@ -441,7 +446,9 @@ window.filterQueue=function(){
       var t=(li.textContent||"").toLowerCase();
       show=t.indexOf(q)>=0;
     }
-    li.hidden=!show; li.style.display=show?"":"none";
+    li.hidden=!show;
+    if(show){ li.classList.remove("is-hide"); li.style.setProperty("display",""); }
+    else { li.classList.add("is-hide"); li.style.setProperty("display","none","important"); }
   });
 };
 window.toggleEdit=function(){
@@ -481,7 +488,9 @@ window.oFilter=function(btn){
     var st=li.getAttribute("data-ostatus")||"todo";
     var bucket=(st==="running"||st==="blocked"||st==="done")?st:"todo";
     var show=(f==="all")||(f==="todo"?bucket==="todo":st===f);
-    li.hidden=!show; li.style.display=show?"":"none";
+    li.hidden=!show;
+    if(show){ li.classList.remove("is-hide"); li.style.setProperty("display",""); }
+    else { li.classList.add("is-hide"); li.style.setProperty("display","none","important"); }
   });
 };
 function escHtml(s){
