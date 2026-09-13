@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-14 00:23 HKT",
+  "written_at_hkt": "2026-09-14 00:28 HKT",
   "queue": [
     {
       "name": "Vicky Zhao",
@@ -34,7 +34,7 @@
     {
       "name": "bestpartners",
       "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
-      "skip": true,
+      "skip": false,
       "reason": "captions done — Complete tab, not queued"
     },
     {
@@ -52,25 +52,25 @@
     {
       "name": "清流君",
       "channel_id": "UCeTLfPD7thTMabtL7w87Aug",
-      "skip": true,
+      "skip": false,
       "reason": ""
     },
     {
       "name": "王理元",
       "channel_id": "UCROR3SZDrohSela1sjD1STg",
-      "skip": true,
+      "skip": false,
       "reason": ""
     },
     {
       "name": "Alan",
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "skip": true,
+      "skip": false,
       "reason": ""
     },
     {
       "name": "大卢和小田",
       "channel_id": "UCP76ZVB1x9udP2UFcQkSvMA",
-      "skip": true,
+      "skip": false,
       "reason": ""
     }
   ],
