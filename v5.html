@@ -41,7 +41,7 @@ body.editing #addCh, body.editing #editTools { display:block; }
 </style>
 </head><body>
 <h1>HEARTBEAT</h1>
-<p class="mono" id="ping">opening… numbers from last ping, buttons work now</p>
+<p class="mono" id="ping">js boot…</p>
 <div class="card">
   <div class="row"><h2><span class="dot" id="capDot"></span>CAPTIONS</h2><span class="mono" id="capState">—</span></div>
   <p class="ch" id="capCh">—</p>
@@ -73,105 +73,122 @@ body.editing #addCh, body.editing #editTools { display:block; }
     <p class="mono" id="saveState">Grip works without Edit. Edit = add/remove/skip.</p>
   </div>
 </div>
-<p class="mono" id="src" style="margin-top:28px">v5 · Pages/raw waterfall · no jsDelivr · built 2026-09-14 00:14 HKT</p>
+<p class="mono" id="src" style="margin-top:28px">v5 · fetch+relative-first · built 2026-09-14 03:19 HKT</p>
 <script>
 (function(){
-function $(id){return document.getElementById(id);}
-var NAMES={UC_5lJHgnMP_lb_VpIiXV0hQ:"#11 课代表立正",UCJAPsTtcJJWGk8e-_CJL8TQ:"一个狠人",UCGWYKICLOE8Wxy7q3eYXmPA:"bestpartners",UCPpdGTNbIKdiWgxCrbka4Zw:"huanyihe777",UCAxQ8sjHgjXh26la7jEBw3w:"mike1111",UCeTLfPD7thTMabtL7w87Aug:"清流君",UCP76ZVB1x9udP2UFcQkSvMA:"大卢和小田",UCROR3SZDrohSela1sjD1STg:"王理元",UCaIIFXfdQUYf3OHPIFNDdrQ:"Alan",UCaA2cfCpytaARHcNcApboSw:"麥克老李",UC1CXs5dtO8_Zrsm-48saJfg:"Vicky Zhao",UCPtFFY5sw8WEi--Ki9SebkA:"Web3 101"};
-function title(id){return NAMES[id]||id||"—";}
+function $(id){ return document.getElementById(id); }
+function set(id, text){ var el=$(id); if(el) el.textContent=text; }
+function setClass(id, cls){ var el=$(id); if(el) el.className=cls; }
+var NAMES={
+  UC_5lJHgnMP_lb_VpIiXV0hQ:"#11",
+  UCJAPsTtcJJWGk8e-_CJL8TQ:"henren",
+  UCGWYKICLOE8Wxy7q3eYXmPA:"bestpartners",
+  UCPpdGTNbIKdiWgxCrbka4Zw:"huanyihe777",
+  UCAxQ8sjHgjXh26la7jEBw3w:"mike1111",
+  UCeTLfPD7thTMabtL7w87Aug:"qingliujun",
+  UCP76ZVB1x9udP2UFcQkSvMA:"daluxiaotian",
+  UCROR3SZDrohSela1sjD1STg:"wangliyuan",
+  UCaIIFXfdQUYf3OHPIFNDdrQ:"Alan",
+  UCaA2cfCpytaARHcNcApboSw:"mike-laoli",
+  UC1CXs5dtO8_Zrsm-48saJfg:"VickyZhao",
+  UCPtFFY5sw8WEi--Ki9SebkA:"Web3-101"
+};
+function title(id){ return (id && NAMES[id]) || id || "—"; }
 function paint(d){
   try{
-    var tr=(d.collector&&d.collector.tracks)||{};
-    var cap=tr.captions||{}, stt=tr.stt||{};
-    $("ping").textContent=(d.written_at_hkt||"—");
-    $("capDot").className="dot"+(cap.running?" on":"");
-    $("capState").textContent=cap.running?"running":"idle";
-    $("capCh").textContent=cap.running?title(cap.channel_id):(cap.next_name||"idle");
-    $("capNum").textContent=String(cap.left!=null?cap.left:0);
-    $("capHint").textContent=cap.no_sub? (cap.no_sub+" no-sub"): ((cap.jobs||2)+" workers");
-    var capEta=cap.eta_hkt?("ETA "+cap.eta_hkt):(cap.running?"ETA calculating":"ETA —");
-    $("capEta").textContent=capEta;
-    $("capEta").className="ch"+(cap.overdue?" overdue":"");
-    $("sttDot").className="dot"+(stt.running?" on":"");
-    $("sttState").textContent=stt.running?"running":"idle";
-    $("sttCh").textContent=title(stt.channel_id);
-    $("sttNum").textContent=String(stt.pending||0);
-    $("sttHint").textContent=stt.inflight?("file "+stt.inflight):"";
-    $("sttEta").textContent=stt.eta_hkt?("ETA "+stt.eta_hkt):"ETA —";
-    $("sttEta").className="ch"+(stt.overdue?" overdue":"");
-    var res=d.resources||{};
-    $("ram").textContent="RAM free "+(res.mem_available_gi!=null?res.mem_available_gi:"—")+" of "+(res.mem_total_gi!=null?res.mem_total_gi:"—")+"G · load "+(res.load1!=null?res.load1:"—");
-    $("src").textContent="live · no page reload";
-  }catch(e){ $("ping").textContent="paint ok-fail "+e; }
+    var tr=(d && d.collector && d.collector.tracks) || {};
+    var cap=tr.captions || {};
+    var stt=tr.stt || {};
+    set("ping", (d.written_at_hkt || "—") + " · live");
+    setClass("capDot", "dot" + (cap.running ? " on" : ""));
+    set("capState", cap.running ? "running" : "idle");
+    set("capCh", cap.running ? title(cap.channel_id) : (cap.next_name || "idle"));
+    set("capNum", String(cap.left != null ? cap.left : 0));
+    set("capHint", cap.no_sub ? (cap.no_sub + " no-sub") : ((cap.jobs || 0) + " workers"));
+    set("capEta", cap.eta_hkt ? ("ETA " + cap.eta_hkt) : (cap.running ? "ETA calculating" : "ETA —"));
+    setClass("capEta", "ch" + (cap.overdue ? " overdue" : ""));
+    setClass("sttDot", "dot" + (stt.running ? " on" : ""));
+    set("sttState", stt.running ? "running" : "idle");
+    set("sttCh", title(stt.channel_id));
+    set("sttNum", String(stt.pending || 0));
+    set("sttHint", stt.inflight ? ("file " + stt.inflight) : "");
+    set("sttEta", stt.eta_hkt ? ("ETA " + stt.eta_hkt) : "ETA —");
+    setClass("sttEta", "ch" + (stt.overdue ? " overdue" : ""));
+    var res=d.resources || {};
+    set("ram", "RAM free " + (res.mem_available_gi != null ? res.mem_available_gi : "—") +
+      " of " + (res.mem_total_gi != null ? res.mem_total_gi : "—") + "G · load " +
+      (res.load1 != null ? res.load1 : "—"));
+    set("src", "v5 live · no jsDelivr · " + (d.written_at_hkt || ""));
+  }catch(e){
+    set("ping", "paint fail: " + e);
+  }
 }
-function getJson(url){
-  return new Promise(function(resolve,reject){
-    var x=new XMLHttpRequest();
-    x.open("GET", url, true);
-    x.timeout=8000;
-    x.onload=function(){
-      if(x.status>=200 && x.status<300){
-        try{ resolve(JSON.parse(x.responseText)); }catch(e){ reject(e); }
-      } else reject(x.status);
-    };
-    x.ontimeout=function(){ reject("timeout"); };
-    x.onerror=function(){ reject("net"); };
-    x.send();
-  });
+function timedFetch(url){
+  var c=new AbortController();
+  var t=setTimeout(function(){ c.abort(); }, 10000);
+  return fetch(url, { cache:"no-store", credentials:"omit", signal:c.signal })
+    .then(function(r){ if(!r.ok) throw r.status; return r.json(); })
+    .finally(function(){ clearTimeout(t); });
 }
 function pull(){
+  if(window.__hbIn) return;
+  window.__hbIn=1;
+  set("ping", "fetching status…");
   var t="?t="+Date.now();
-  // Same waterfall as index/v4/pulse: Pages → raw GitHub → same-origin. Never jsDelivr.
-  var urls=[
-    "https://zinal88.github.io/aios-heartbeat/status.json"+t,
-    "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json"+t,
-    "status.json"+t
-  ];
+  // Relative first (same-origin), then absolute Pages, then raw. Never jsDelivr.
+  var urls=["status.json"+t, "https://zinal88.github.io/aios-heartbeat/status.json"+t,
+    "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json"+t];
+  function fail(){
+    window.__hbIn=0;
+    try{
+      var c=localStorage.getItem("aios-hb-v1");
+      if(c){
+        var d=JSON.parse(c);
+        var utc=d.written_at_utc||"";
+        var age=utc ? (Date.now()-Date.parse(utc)) : 1e99;
+        if(age < 15*60*1000){ paint(d); set("ping", (d.written_at_hkt||"—")+" · cached"); return; }
+      }
+    }catch(e){}
+    set("ping", "fetch failed — open /status.json or hard-refresh");
+  }
   function tryAt(i){
-    if(i>=urls.length){
-      $("ping").textContent=($("ping").textContent||"")+" · fetch miss, UI still live";
-      return;
-    }
-    getJson(urls[i]).then(function(d){
+    if(i>=urls.length){ fail(); return; }
+    timedFetch(urls[i]).then(function(d){
       try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
       paint(d);
-    }).catch(function(){ tryAt(i+1); });
+      window.__hbIn=0;
+    }).catch(function(err){
+      set("ping", "try "+(i+1)+"/"+urls.length+" miss ("+err+")");
+      tryAt(i+1);
+    });
   }
   tryAt(0);
 }
 function toggleEdit(){
   document.body.classList.toggle("editing");
-  $("editBtn").textContent=document.body.classList.contains("editing")?"Done":"Edit";
+  set("editBtn", document.body.classList.contains("editing") ? "Done" : "Edit");
 }
 function qtab(id){
   document.querySelectorAll("#qTabs button").forEach(function(b){ b.classList.remove("on"); });
   var btn=$("tab-"+id); if(btn) btn.classList.add("on");
-  $("channels").hidden = (id!=="ch");
-  $("playlists").hidden = (id==="ch");
+  if($("channels")) $("channels").hidden = (id!=="ch");
+  if($("playlists")) $("playlists").hidden = (id==="ch");
 }
-$("editBtn").onclick=toggleEdit;
-$("tab-ch").onclick=function(){ qtab("ch"); };
-$("tab-tk").onclick=function(){ qtab("tk"); };
-$("addCh").onclick=function(){
+if($("editBtn")) $("editBtn").onclick=toggleEdit;
+if($("tab-ch")) $("tab-ch").onclick=function(){ qtab("ch"); };
+if($("tab-tk")) $("tab-tk").onclick=function(){ qtab("tk"); };
+if($("addCh")) $("addCh").onclick=function(){
   var li=document.createElement("li");
   li.innerHTML='<span class="mv"><button type="button">▲</button><button type="button">▼</button></span><span class="n">+</span><div class="txt"><b>new</b></div><div class="edit-only"><input class="nm" placeholder="name"/><input class="uc" placeholder="UC…"/><label class="skl"><input type="checkbox" class="sk"/> skip</label></div>';
-  $("channels").appendChild(li);
+  if($("channels")) $("channels").appendChild(li);
 };
-$("channels").addEventListener("click", function(e){
+if($("channels")) $("channels").addEventListener("click", function(e){
   var b=e.target.closest("button"); if(!b) return;
   var li=b.closest("li"); if(!li) return;
   if(b.textContent==="▲" && li.previousElementSibling) li.parentNode.insertBefore(li, li.previousElementSibling);
   if(b.textContent==="▼" && li.nextElementSibling) li.parentNode.insertBefore(li.nextElementSibling, li);
 });
-try{
-  var c=localStorage.getItem("aios-hb-v1");
-  if(c){
-    var d=JSON.parse(c);
-    var utc=d.written_at_utc||"";
-    var age=utc?(Date.now()-Date.parse(utc)):1e99;
-    if(age<15*60*1000) paint(d);
-  }
-}catch(e){}
+set("ping", "js ok · pulling…");
 pull();
 setInterval(pull, 15000);
 })();

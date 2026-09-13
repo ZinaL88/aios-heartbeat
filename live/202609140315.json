@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-13T19:17:28Z",
-  "written_at_hkt": "2026-09-14 03:17 HKT",
+  "written_at_utc": "2026-09-13T19:19:01Z",
+  "written_at_hkt": "2026-09-14 03:19 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 4.0,
+    "mem_available_gi": 4.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.08,
+        "rss_gi": 3.09,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.98,
+        "rss_gi": 2.89,
         "n": 9
       },
       {
@@ -86,15 +86,15 @@
     ],
     "meminfo": {
       "buffers_gi": 0.2,
-      "cached_gi": 2.8,
-      "anon_gi": 4.9,
+      "cached_gi": 3.6,
+      "anon_gi": 4.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 11.7
     },
-    "load1": 4.46,
+    "load1": 4.7,
     "disk_avail": "107G",
-    "tmp_du": "29M"
+    "tmp_du": "76M"
   },
   "cookies": {
     "present": false,
@@ -136,14 +136,14 @@
         "eta_hkt": "2026-09-24 22:53 HKT",
         "jobs": 2,
         "eta_deadline_utc": "2026-09-24T14:53:28Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false
       },
       "captions": {
         "running": true,
         "channel_id": null,
         "jobs": 3,
-        "eta_deadline_utc": "2026-09-13T19:17:28Z",
+        "eta_deadline_utc": "2026-09-13T19:19:01Z",
         "eta_hkt": null,
         "eta_frozen": false,
         "overdue": false
@@ -151,9 +151,7 @@
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-13T19:20:00Z",
     "next_cron_hkt": "2026-09-14 03:20 HKT",
@@ -173,21 +171,6 @@
       "at_hkt": "2026-09-12 13:05 HKT",
       "kind": "plan",
       "summary": "Plan B: captions worker (1.2G) parallel to one Whisper (6G). Plan C stays backlog."
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T19:14:25Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T19:14:55Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T19:15:26Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
@@ -213,16 +196,31 @@
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-13T19:17:28Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T19:17:58Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T19:18:28Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T19:18:59Z skip — another reboost holds lock"
     }
   ],
   "reboost_log": [
-    "2026-09-13T19:16:57Z skip — another reboost holds lock",
-    "2026-09-13T19:17:28Z skip — another reboost holds lock",
-    "2026-09-13T19:17:28Z skip — another reboost holds lock",
+    "2026-09-13T19:17:58Z skip — another reboost holds lock",
+    "2026-09-13T19:18:28Z skip — another reboost holds lock",
+    "2026-09-13T19:18:59Z skip — another reboost holds lock",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
+    "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans-en': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
   ],
   "pm": {
