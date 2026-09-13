@@ -1,6 +1,18 @@
 {
-  "written_at_hkt": "2026-09-13 16:29 HKT",
+  "written_at_hkt": "2026-09-13 16:34 HKT",
   "queue": [
+    {
+      "name": "Vicky Zhao",
+      "channel_id": "UC1CXs5dtO8_Zrsm-48saJfg",
+      "skip": false,
+      "reason": "cut-in from chat audit"
+    },
+    {
+      "name": "Web3 101",
+      "channel_id": "UCPtFFY5sw8WEi--Ki9SebkA",
+      "skip": false,
+      "reason": "cut-in from chat audit"
+    },
     {
       "name": "麥克老李",
       "channel_id": "UCaA2cfCpytaARHcNcApboSw",
