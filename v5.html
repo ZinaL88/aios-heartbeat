@@ -40,14 +40,13 @@ button { min-height:44px; background:#1a1a1a; color:var(--fg); border:1px solid 
   <h2>BOX</h2>
   <p class="ch" id="ram">RAM —</p>
 </div>
-<p class="mono" id="src" style="margin-top:28px">v5 · relative-first fetch · 2026-09-14 03:21 HKT</p>
+<p class="mono" id="src" style="margin-top:28px">v5 · quoted NAMES · built 2026-09-14 03:28 HKT</p>
 <script>
 (function(){
 function $(id){return document.getElementById(id);}
 function set(id,t){var el=$(id); if(el) el.textContent=t;}
 function setClass(id,c){var el=$(id); if(el) el.className=c;}
-var NAMES={UC_5lJHgnMP_lb_VpIiXV0hQ:"#11",UCJAPsTtcJJWGk8e-_CJL8TQ:"henren",UCGWYKICLOE8Wxy7q3eYXmPA:"bestpartners",UCPpdGTNbIKdiWgxCrbka4Zw:"huanyihe",UCAxQ8sjHgjXh26la7jEBw3w:"mike1111",UCeTLfPD7thTMabtL7w87Aug:"qingliu",UCP76ZVB1x9udP2UFcQkSvMA:"dalu",UCROR3SZDrohSela1sjD1STg:"wangliyuan",UCaIIFXfdQUYf3OHPIFNDdrQ:"Alan",UCaA2cfCpytaARHcApboSw:"laoli",UC1CXs5dtO8_Zrsm-48saJfg:"Vicky",UCPtFFY5sw8WEi--Ki9SebkA:"Web3"};
-NAMES.UCaA2cfCpytaARHcNcApboSw="laoli";
+var NAMES={"UC_5lJHgnMP_lb_VpIiXV0hQ":"#11","UCJAPsTtcJJWGk8e-_CJL8TQ":"henren","UCGWYKICLOE8Wxy7q3eYXmPA":"bestpartners","UCPpdGTNbIKdiWgxCrbka4Zw":"huanyihe","UCAxQ8sjHgjXh26la7jEBw3w":"mike1111","UCeTLfPD7thTMabtL7w87Aug":"qingliu","UCP76ZVB1x9udP2UFcQkSvMA":"dalu","UCROR3SZDrohSela1sjD1STg":"wangliyuan","UCaIIFXfdQUYf3OHPIFNDdrQ":"Alan","UCaA2cfCpytaARHcNcApboSw":"laoli","UC1CXs5dtO8_Zrsm-48saJfg":"Vicky","UCPtFFY5sw8WEi--Ki9SebkA":"Web3"};
 function title(id){return (id&&NAMES[id])||id||"—";}
 function paint(d){
   try{
