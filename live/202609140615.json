@@ -1,12 +1,12 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-13T22:17:33Z",
+  "written_at_utc": "2026-09-13T22:17:52Z",
   "written_at_hkt": "2026-09-14 06:17 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 3,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
@@ -16,36 +16,31 @@
         "cmd": "proc"
       },
       {
-        "pid": 45647,
-        "cmd": "proc"
-      },
-      {
         "pid": 47472,
         "cmd": "proc"
       },
       {
         "pid": 47529,
         "cmd": "proc"
+      },
+      {
+        "pid": 52100,
+        "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 4.5,
+    "mem_available_gi": 6.7,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.03,
+        "rss_gi": 3.13,
         "n": 33
       },
       {
-        "comm": "python",
-        "rss_gi": 2.41,
-        "n": 5
-      },
-      {
         "comm": "chrome",
-        "rss_gi": 1.19,
+        "rss_gi": 1.2,
         "n": 10
       },
       {
@@ -61,7 +56,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.08,
-        "n": 36
+        "n": 37
       },
       {
         "comm": "csnaps",
@@ -79,6 +74,11 @@
         "n": 2
       },
       {
+        "comm": "python",
+        "rss_gi": 0.07,
+        "n": 4
+      },
+      {
         "comm": "x11vnc",
         "rss_gi": 0.05,
         "n": 3
@@ -86,15 +86,15 @@
     ],
     "meminfo": {
       "buffers_gi": 0.2,
-      "cached_gi": 3.6,
-      "anon_gi": 4.4,
+      "cached_gi": 3.7,
+      "anon_gi": 2.3,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 14.1
+      "committed_gi": 8.2
     },
-    "load1": 5.61,
+    "load1": 4.83,
     "disk_avail": "107G",
-    "tmp_du": "7.0M"
+    "tmp_du": "7.3M"
   },
   "cookies": {
     "present": false,
@@ -103,40 +103,40 @@
   },
   "collector": {
     "found": true,
-    "done": 86,
+    "done": 87,
     "total": 737,
     "inflight": null,
-    "last_id": "m5X7odWArSg",
+    "last_id": "vZ6VuIsRtcc",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
-      "public_done": 51,
+      "public_done": 52,
       "members_total": 0,
       "members_done": 0,
-      "pending_stt_n": 631,
-      "pending_stt_listed": 717,
-      "transcripts_on_disk": 86,
-      "captions_done": 51,
+      "pending_stt_n": 629,
+      "pending_stt_listed": 716,
+      "transcripts_on_disk": 87,
+      "captions_done": 52,
       "captions_left": 0,
-      "captions_no_sub": 686,
+      "captions_no_sub": 685,
       "source": "inventory+disk",
-      "public_left": 686
+      "public_left": 685
     },
     "tracks": {
       "stt": {
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-        "pending": 631,
-        "transcripts_on_disk": 86,
-        "inflight": "vZ6VuIsRtcc",
+        "pending": 629,
+        "transcripts_on_disk": 87,
+        "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
-        "eta_min": 15144,
-        "eta_hkt": "2026-09-24 18:36 HKT",
-        "jobs": 2,
-        "eta_deadline_utc": "2026-09-24T10:36:38Z",
-        "eta_frozen": true,
+        "eta_min": 15096,
+        "eta_hkt": "2026-09-24 17:53 HKT",
+        "jobs": 1,
+        "eta_deadline_utc": "2026-09-24T09:53:52Z",
+        "eta_frozen": false,
         "overdue": false
       },
       "captions": {
@@ -152,17 +152,17 @@
           "Learning how to learn",
           "Stanford CS221: Artificial Intelligence: Principles and Techniques | Autumn 2021"
         ],
-        "done": 125,
-        "left": 1034,
+        "done": 127,
+        "left": 1032,
         "total": 1207,
         "no_sub": 34,
         "eta_min": 86,
-        "eta_hkt": "2026-09-14 06:14 HKT",
+        "eta_hkt": "2026-09-14 07:43 HKT",
         "inflight": null,
         "jobs": 3,
-        "eta_deadline_utc": "2026-09-13T22:14:38Z",
-        "eta_frozen": true,
-        "overdue": true
+        "eta_deadline_utc": "2026-09-13T23:43:52Z",
+        "eta_frozen": false,
+        "overdue": false
       }
     }
   },
@@ -193,48 +193,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T22:17:03Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T22:17:32Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T22:17:33Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.5G"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T22:17:33Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.5G"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T22:17:33Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T22:17:33Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-13T22:17:33Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-13T22:17:33Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:17:52Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.7G"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:17:52Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.7G"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:17:52Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:17:52Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:17:52Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:17:52Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-13T22:17:33Z captions after fill running=3",
-    "2026-09-13T22:17:33Z STT already running — no second Whisper",
-    "2026-09-13T22:17:33Z STT already running — no second Whisper",
+    "2026-09-13T22:17:52Z captions after fill running=3",
+    "2026-09-13T22:17:52Z STT already running — no second Whisper",
+    "2026-09-13T22:17:52Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "warning: no cookies file at <path> public captions still run cookieless",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
