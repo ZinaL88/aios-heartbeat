@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-13T22:18:02Z",
-  "written_at_hkt": "2026-09-14 06:18 HKT",
+  "written_at_utc": "2026-09-13T22:19:07Z",
+  "written_at_hkt": "2026-09-14 06:19 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,7 +30,7 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.2,
+    "mem_available_gi": 4.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -40,13 +40,13 @@
       },
       {
         "comm": "python",
-        "rss_gi": 1.68,
+        "rss_gi": 2.56,
         "n": 5
       },
       {
         "comm": "chrome",
-        "rss_gi": 1.14,
-        "n": 10
+        "rss_gi": 1.08,
+        "n": 9
       },
       {
         "comm": "plank",
@@ -59,14 +59,14 @@
         "n": 3
       },
       {
-        "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
-      },
-      {
         "comm": "csnaps",
         "rss_gi": 0.08,
         "n": 1
+      },
+      {
+        "comm": "bash",
+        "rss_gi": 0.08,
+        "n": 35
       },
       {
         "comm": "xfwm4",
@@ -86,15 +86,15 @@
     ],
     "meminfo": {
       "buffers_gi": 0.2,
-      "cached_gi": 3.8,
-      "anon_gi": 3.8,
+      "cached_gi": 3.7,
+      "anon_gi": 4.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 13.4
+      "committed_gi": 14.2
     },
-    "load1": 4.48,
+    "load1": 4.83,
     "disk_avail": "107G",
-    "tmp_du": "206M"
+    "tmp_du": "12M"
   },
   "cookies": {
     "present": false,
@@ -152,16 +152,16 @@
           "Learning how to learn",
           "Stanford CS221: Artificial Intelligence: Principles and Techniques | Autumn 2021"
         ],
-        "done": 128,
-        "left": 1031,
+        "done": 130,
+        "left": 1029,
         "total": 1207,
         "no_sub": 34,
         "eta_min": 86,
-        "eta_hkt": "2026-09-14 07:44 HKT",
+        "eta_hkt": "2026-09-14 07:45 HKT",
         "inflight": null,
         "jobs": 3,
-        "eta_deadline_utc": "2026-09-13T23:44:02Z",
-        "eta_frozen": true,
+        "eta_deadline_utc": "2026-09-13T23:45:07Z",
+        "eta_frozen": false,
         "overdue": false
       }
     }
@@ -191,52 +191,52 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-13T22:17:33Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T22:17:33Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T22:17:52Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.7G"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T22:17:52Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.7G"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T22:17:52Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-13T22:17:52Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-13T22:17:52Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-13T22:17:52Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:18:12Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.7G"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:18:12Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.7G"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:18:12Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:18:12Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:18:12Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-13T22:18:12Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-13T22:17:52Z captions after fill running=3",
-    "2026-09-13T22:17:52Z STT already running — no second Whisper",
-    "2026-09-13T22:17:52Z STT already running — no second Whisper",
+    "2026-09-13T22:18:12Z captions after fill running=3",
+    "2026-09-13T22:18:12Z STT already running — no second Whisper",
+    "2026-09-13T22:18:12Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
-    "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans-en': HTTP Error 429: Too Many Requests",
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
   ],
   "pm": {
