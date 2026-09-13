@@ -151,6 +151,8 @@ function addCh(){
   ol.appendChild(li);
 }
 function qtab(id){
+  // No-op on sandbox board (#qList + qFilter); legacy #channels/#playlists only
+  if($("qList") && !$("channels")) return;
   document.querySelectorAll("#qTabs button").forEach(function(b){ b.classList.remove("on"); });
   var btn=document.getElementById("tab-"+id);
   if(btn) btn.classList.add("on");
@@ -165,6 +167,9 @@ function qtab(id){
 }
 window.qtab=qtab;
 function bootTabs(){
+  // Do not attach legacy qtab listeners when sandbox QUEUE (#qList) is present —
+  // those strip .on and conflict with onclick="qFilter(this)".
+  if($("qList") && !$("channels")) return;
   document.querySelectorAll("#qTabs button").forEach(function(b){
     b.addEventListener("click", function(){
       var id=(b.id||"").replace("tab-","");
