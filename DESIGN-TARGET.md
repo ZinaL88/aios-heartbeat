@@ -1,4 +1,4 @@
-# Heartbeat UI design target (LOCKED 2026-09-14 · v19)
+# Heartbeat UI design target (LOCKED 2026-09-14 · v20)
 
 Source: Grok sandbox Build preview (React/TanStack hydrated app).
 Canonical public host stays: https://zinal88.github.io/aios-heartbeat/
@@ -33,7 +33,13 @@ sans body + mono telemetry, mobile stacks / 2×2 metrics.
 ## Port strategy
 Static HTML+JS on Pages fed by status.json (shell heartbeat). Recreate
 layout fidelity; not a full React sandbox deploy (sandbox URLs die).
-Cache-bust board fetches with `?v=19`.
+Cache-bust board fetches with `?v=20`.
+
+
+## Plain-language board copy (v20 — never regress)
+- **YouTube collect order** (was QUEUE): channels & playlists waiting for captions/transcripts. Top = first. Filters: Waiting / Collecting / Done / All / Channels / Playlists. Keep `data-phase` values `queued|running|done`; change visible labels only. Row subtitles: `Channel · waiting` · `Playlist · waiting · ~N videos` · `… collecting now` · `… first pass done`. No raw P0–P5 on the default line (optional `priority N` in edit mode only).
+- **Everything else** (was OTHER): docs, OCR, cleanup, eval, CoS — not the YouTube list. Meta: `Docs, cleanup, OCR & CoS tasks · N in progress · M total`. Hide live-cap/live-stt/`collector-live` duplicates (those belong on collect order). Map resource classes for display only (`ram_heavy`→needs lots of memory, etc.). Pills: In progress / To do / Stuck / Done — keep `data-ostatus` values.
+- Soften lanes header + Source lane one-liner; soften Save/skip hint (no PUT/path jargon).
 
 ## LOCKED ops rules (P0 — never regress)
 - **Live proc detection (v19):** `write_status.classify_procs` must detect captions via cmdline match `backfill_members.py` + `--mode captions` (any python path, not only `.venv`). Same for STT `--mode stt` / whisper. Never publish `running=False` / `jobs=0` when those procs are alive. `/proc` cmdline > watcher heuristics.
@@ -50,4 +56,4 @@ Cache-bust board fetches with `?v=19`.
   - disk STT done >100 but `tracks.stt.done` / `transcripts_on_disk` ==0
   - pending/left >0 and not running but `worker_state` ≠ `paused` (bare idle banned)
 - Also prove Pages: `curl` public `status.json` and assert `tracks.captions.running` matches box live count.
-- UI click/DOM QA on `?v=19`: captions pill = Running when workers live, else Paused · backlog N / Caught up. No `file -`. ETA overdue explained when paused.
+- UI click/DOM QA on `?v=20`: captions pill = Running when workers live, else Paused · backlog N / Caught up. No `file -`. ETA overdue explained when paused.
