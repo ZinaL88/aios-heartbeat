@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T20:35:21Z",
+  "written_at_utc": "2026-09-14T20:35:41Z",
   "written_at_hkt": "2026-09-15 04:35 HKT",
   "token_free": true,
   "processes": {
@@ -16,7 +16,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 1274862,
+        "pid": 1275298,
         "cmd": "proc"
       },
       {
@@ -30,7 +30,7 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 7.0,
+    "mem_available_gi": 7.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -54,14 +54,14 @@
         "n": 5
       },
       {
+        "comm": "bash",
+        "rss_gi": 0.09,
+        "n": 37
+      },
+      {
         "comm": "xfwm4",
         "rss_gi": 0.08,
         "n": 3
-      },
-      {
-        "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
       },
       {
         "comm": "websockify",
@@ -74,27 +74,27 @@
         "n": 1
       },
       {
-        "comm": "ffmpeg",
+        "comm": "csnaps",
         "rss_gi": 0.05,
         "n": 1
       },
       {
-        "comm": "csnaps",
-        "rss_gi": 0.05,
-        "n": 1
+        "comm": "x11vnc",
+        "rss_gi": 0.04,
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
-      "cached_gi": 5.3,
+      "cached_gi": 5.0,
       "anon_gi": 1.9,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.7,
-      "committed_gi": 4.9
+      "committed_gi": 4.7
     },
-    "load1": 0.6,
+    "load1": 0.71,
     "disk_avail": "108G",
-    "tmp_du": "23M"
+    "tmp_du": "24M"
   },
   "cookies": {
     "present": false,
@@ -106,7 +106,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "sHTiUE43aZM",
+    "last_id": "etFvDvtrXzg",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -129,14 +129,14 @@
         "pending": 656,
         "done": 5546,
         "transcripts_on_disk": 5546,
-        "inflight": "ve9bC-HUC28",
+        "inflight": "bfjCgbkjlRQ",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 15744,
         "eta_hkt": "2026-09-25 13:09 HKT",
         "jobs": 2,
-        "pending_global": 2529,
+        "pending_global": 2530,
         "eta_deadline_utc": "2026-09-25T05:09:44Z",
         "eta_frozen": true,
         "overdue": false,
@@ -154,15 +154,15 @@
           "Learning how to learn"
         ],
         "done": 5309,
-        "left": 1426,
+        "left": 1425,
         "total": 15597,
-        "no_sub": 1095,
+        "no_sub": 1096,
         "eta_min": 178,
         "eta_hkt": "2026-09-15 07:33 HKT",
         "inflight": null,
         "jobs": 2,
-        "left_global": 6186,
-        "eta_deadline_utc": "2026-09-14T23:33:21Z",
+        "left_global": 6185,
+        "eta_deadline_utc": "2026-09-14T23:33:42Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
@@ -170,9 +170,9 @@
     },
     "progress": {
       "stt_done": 5546,
-      "stt_pending": 2529,
+      "stt_pending": 2530,
       "captions_done": 5309,
-      "captions_left": 6186,
+      "captions_left": 6185,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -352,48 +352,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T20:34:48Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T20:35:20Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T20:35:20Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.0G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T20:35:20Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.0G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T20:35:20Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T20:35:20Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-14T20:35:20Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-14T20:35:20Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T20:35:41Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.2G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T20:35:41Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.2G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T20:35:41Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T20:35:41Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T20:35:41Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T20:35:41Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-14T20:35:20Z captions after fill running=2",
-    "2026-09-14T20:35:20Z STT already running — no second Whisper",
-    "2026-09-14T20:35:20Z STT already running — no second Whisper",
+    "2026-09-14T20:35:41Z captions after fill running=2",
+    "2026-09-14T20:35:41Z STT already running — no second Whisper",
+    "2026-09-14T20:35:41Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
