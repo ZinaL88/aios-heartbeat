@@ -48,42 +48,42 @@ body.editing #editTools { display:block; }
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-14 12:08 HKT</span></div>
-<p class="mono" id="ping">2026-09-14 12:08 HKT</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-14 12:14 HKT</span></div>
+<p class="mono" id="ping">2026-09-14 12:14 HKT</p>
 
 <div class="card">
   <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">no child</span></div>
-  <p class="big" id="allNum">0</p>
-  <p class="ch" id="sttDeadline">ETA unknown</p>
-  <p class="mono" id="sttDisk">0 transcripts on disk</p>
+  <p class="big" id="allNum">2275</p>
+  <p class="ch" id="sttDeadline">ETA 2026-09-14 12:14 HKT</p>
+  <p class="mono" id="sttDisk">3643 transcripts on disk</p>
 </div>
 <div class="card">
-  <div class="row"><h2><span class="dot on" id="capDot"></span>CAPTIONS</h2>
-    <span class="mono" id="capState">running</span></div>
-  <p class="ch" id="capCh">PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt,PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN,PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ,PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW,PLa9dmHsLK9dg,PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp</p>
-  <div class="row"><span class="big" id="capNum">3100</span>
-    <span class="mono" id="capEta">6 workers · left</span></div>
+  <div class="row"><h2><span class="dot " id="capDot"></span>CAPTIONS</h2>
+    <span class="mono" id="capState">idle</span></div>
+  <p class="ch" id="capCh">idle</p>
+  <div class="row"><span class="big" id="capNum">4748</span>
+    <span class="mono" id="capEta">0 workers · left</span></div>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot " id="sttDot"></span>STT</h2>
     <span class="mono" id="sttState">idle</span></div>
   <p class="ch" id="sttCh">—</p>
-  <div class="row"><span class="big" id="sttNum">0</span>
-    <span class="mono" id="sttEta">ETA unknown</span></div>
+  <div class="row"><span class="big" id="sttNum">2275</span>
+    <span class="mono" id="sttEta">ETA 2026-09-14 12:14 HKT</span></div>
 </div>
 </div>
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 6.5G / 15.6G · load 0.8</p>
+  <p class="ch" id="ram">RAM 7.1G / 15.6G · load 0.9</p>
   <p class="mono" id="box2">disk 109G · tmp 5.3M · cookies no</p>
-  <p class="mono" id="sched">next ping 2026-09-14 12:10 HKT · captions on · Whisper OFF but RAM 6.5G≥6.0 — reboost STT this tick</p>
+  <p class="mono" id="sched">next ping 2026-09-14 12:15 HKT · eligible — captions + Whisper this tick if still dead</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li><b>CAPTIONS ×6</b> · PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt,PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN,PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ,PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW,PLa9dmHsLK9dg,PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp · 668/4203</li><li class="mono">pid 157129 · proc</li><li class="mono">pid 157224 · proc</li><li class="mono">pid 157312 · proc</li><li class="mono">pid 157369 · proc</li></ol>
+  <ol id="running"><li>idle</li></ol>
 </div>
 
 <div class="card">
@@ -109,7 +109,7 @@ body.editing #editTools { display:block; }
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> ic --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLa9dmHsLK9dg/inventory_public.json</li><li><span class="mono">reboost.log</span> 2026-09-14T04:08:37Z reboost captions pid 157431 channel PLa9dmHsLK9dg</li><li><span class="mono">reboost.log</span> e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp/inventory_public.json</li><li><span class="mono">reboost.log</span> 2026-09-14T04:08:39Z reboost captions pid 157502 channel PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp</li><li><span class="mono">reboost.log</span> 2026-09-14T04:08:39Z skip — another reboost holds lock</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">warning: no cookies file at &lt;path&gt; public captions still run cookieless</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-14T04:14:03Z reboost captions pid 173737 channel PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm</li><li><span class="mono">reboost.log</span> 2026-09-14T04:14:04Z inventory missing — building playlist PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9</li><li><span class="mono">reboost.log</span> e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9/inventory_public.json</li><li><span class="mono">reboost.log</span> 2026-09-14T04:14:08Z reboost captions pid 173824 channel PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">warning: no cookies file at &lt;path&gt; public captions still run cookieless</li></ol>
 </div>
 
 <div class="card">
