@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T06:52:01Z",
+  "written_at_utc": "2026-09-14T06:52:42Z",
   "written_at_hkt": "2026-09-14 14:52 HKT",
   "token_free": true,
   "processes": {
@@ -30,12 +30,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.9,
+    "mem_available_gi": 6.7,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.97,
+        "rss_gi": 3.24,
         "n": 32
       },
       {
@@ -45,8 +45,8 @@
       },
       {
         "comm": "python3",
-        "rss_gi": 0.09,
-        "n": 5
+        "rss_gi": 0.11,
+        "n": 6
       },
       {
         "comm": "csnaps",
@@ -59,14 +59,14 @@
         "n": 3
       },
       {
-        "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 37
-      },
-      {
         "comm": "xfwm4",
         "rss_gi": 0.08,
         "n": 3
+      },
+      {
+        "comm": "bash",
+        "rss_gi": 0.08,
+        "n": 36
       },
       {
         "comm": "websockify",
@@ -74,25 +74,25 @@
         "n": 2
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.06,
-        "n": 1
-      },
-      {
         "comm": "x11vnc",
         "rss_gi": 0.04,
         "n": 3
+      },
+      {
+        "comm": "flock",
+        "rss_gi": 0.04,
+        "n": 22
       }
     ],
     "meminfo": {
       "buffers_gi": 0.3,
       "cached_gi": 3.1,
-      "anon_gi": 2.0,
+      "anon_gi": 2.2,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
-      "committed_gi": 4.6
+      "committed_gi": 4.8
     },
-    "load1": 0.84,
+    "load1": 0.69,
     "disk_avail": "109G",
     "tmp_du": "22M"
   },
@@ -106,7 +106,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "qrGsU5VdSx4",
+    "last_id": "bsikiA-rqwA",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -156,15 +156,15 @@
           "LLM / AI"
         ],
         "done": 4628,
-        "left": 2929,
+        "left": 2928,
         "total": 15597,
-        "no_sub": 304,
+        "no_sub": 305,
         "eta_min": 244,
         "eta_hkt": "2026-09-14 18:56 HKT",
         "inflight": null,
         "jobs": 3,
-        "left_global": 7673,
-        "eta_deadline_utc": "2026-09-14T10:56:02Z",
+        "left_global": 7672,
+        "eta_deadline_utc": "2026-09-14T10:56:42Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
@@ -174,7 +174,7 @@
       "stt_done": 4865,
       "stt_pending": 2307,
       "captions_done": 4628,
-      "captions_left": 7673,
+      "captions_left": 7672,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -354,53 +354,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T06:51:38Z STT already running — no second Whisper"
+      "summary": "2026-09-14T06:52:10Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T06:51:38Z STT already running — no second Whisper"
+      "summary": "2026-09-14T06:52:41Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T06:52:01Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.9G cap_signal=1"
+      "summary": "2026-09-14T06:52:41Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.7G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T06:52:01Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.9G cap_signal=1"
+      "summary": "2026-09-14T06:52:41Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.7G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T06:52:01Z captions after fill running=3"
+      "summary": "2026-09-14T06:52:41Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T06:52:01Z captions after fill running=3"
+      "summary": "2026-09-14T06:52:41Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T06:52:01Z STT already running — no second Whisper"
+      "summary": "2026-09-14T06:52:41Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T06:52:01Z STT already running — no second Whisper"
+      "summary": "2026-09-14T06:52:41Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-14T06:52:01Z captions after fill running=3",
-    "2026-09-14T06:52:01Z STT already running — no second Whisper",
-    "2026-09-14T06:52:01Z STT already running — no second Whisper",
-    "backfill-captions.log: rate-limited — backoff 45s",
-    "rate-limited — backoff 45s",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "2026-09-14T06:52:41Z captions after fill running=3",
+    "2026-09-14T06:52:41Z STT already running — no second Whisper",
+    "2026-09-14T06:52:41Z STT already running — no second Whisper",
+    "backfill-captions.log: ERROR: [youtube] AAYijwUoe5k: Join this channel to get access to members-only content like this video, and other exclusive perks.",
     "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "rate-limited — backoff 45s"
+    "rate-limited — backoff 45s",
+    "captions miss (no cookies): uTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
+    "ERROR: [youtube] AAYijwUoe5k: Join this channel to get access to members-only content like this video, and other exclusive perks."
   ],
   "pm": {
     "token_free": true,
