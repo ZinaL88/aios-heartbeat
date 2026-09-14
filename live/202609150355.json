@@ -1,22 +1,18 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T19:58:08Z",
+  "written_at_utc": "2026-09-14T19:58:21Z",
   "written_at_hkt": "2026-09-15 03:58 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 2,
     "stt_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
     "captions_channel": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
     "sample": [
       {
         "pid": 1220232,
-        "cmd": "proc"
-      },
-      {
-        "pid": 1243937,
         "cmd": "proc"
       },
       {
@@ -30,7 +26,7 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 7.1,
+    "mem_available_gi": 7.0,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -50,18 +46,18 @@
       },
       {
         "comm": "python3",
-        "rss_gi": 0.1,
-        "n": 5
-      },
-      {
-        "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 37
+        "rss_gi": 0.08,
+        "n": 4
       },
       {
         "comm": "xfwm4",
         "rss_gi": 0.08,
         "n": 3
+      },
+      {
+        "comm": "bash",
+        "rss_gi": 0.08,
+        "n": 36
       },
       {
         "comm": "websockify",
@@ -92,7 +88,7 @@
       "sreclaimable_gi": 0.7,
       "committed_gi": 4.7
     },
-    "load1": 0.58,
+    "load1": 0.9,
     "disk_avail": "108G",
     "tmp_du": "23M"
   },
@@ -106,7 +102,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "PlmWBX9-Ti0",
+    "last_id": "FRjjRrJLvd0",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -129,14 +125,14 @@
         "pending": 656,
         "done": 5511,
         "transcripts_on_disk": 5511,
-        "inflight": "DBk7Vy4ivEI",
+        "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 15744,
         "eta_hkt": "2026-09-25 13:09 HKT",
-        "jobs": 2,
-        "pending_global": 2509,
+        "jobs": 1,
+        "pending_global": 2510,
         "eta_deadline_utc": "2026-09-25T05:09:44Z",
         "eta_frozen": true,
         "overdue": false,
@@ -154,15 +150,15 @@
           "Learning how to learn"
         ],
         "done": 5274,
-        "left": 1505,
+        "left": 1504,
         "total": 15597,
-        "no_sub": 1051,
+        "no_sub": 1052,
         "eta_min": 188,
         "eta_hkt": "2026-09-15 07:06 HKT",
         "inflight": null,
         "jobs": 2,
-        "left_global": 6265,
-        "eta_deadline_utc": "2026-09-14T23:06:08Z",
+        "left_global": 6264,
+        "eta_deadline_utc": "2026-09-14T23:06:21Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
@@ -170,9 +166,9 @@
     },
     "progress": {
       "stt_done": 5511,
-      "stt_pending": 2509,
+      "stt_pending": 2510,
       "captions_done": 5274,
-      "captions_left": 6265,
+      "captions_left": 6264,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -352,53 +348,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T19:57:49Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T19:57:49Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T19:58:07Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.1G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T19:58:07Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.1G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T19:58:07Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T19:58:07Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-14T19:58:07Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T19:58:07Z STT already running — no second Whisper"
+      "summary": "2026-09-14T19:58:20Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T19:58:21Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.0G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T19:58:21Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.0G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T19:58:21Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T19:58:21Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T19:58:21Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T19:58:21Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-14T19:58:07Z captions after fill running=2",
-    "2026-09-14T19:58:07Z STT already running — no second Whisper",
-    "2026-09-14T19:58:07Z STT already running — no second Whisper",
-    "backfill-captions.log: rate-limited — backoff 45s",
-    "rate-limited — backoff 45s",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "2026-09-14T19:58:21Z captions after fill running=2",
+    "2026-09-14T19:58:21Z STT already running — no second Whisper",
+    "2026-09-14T19:58:21Z STT already running — no second Whisper",
+    "This video is available to this channel's members on level: Premium Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks.",
     "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "rate-limited — backoff 45s"
+    "rate-limited — backoff 45s",
+    "captions miss (no cookies): e missing. See  https:<path>  for details on installing one",
+    "This video is available to this channel's members on level: Premium Member (or any higher level). Join this channel to get access to members-only content and other exclusive perks."
   ],
   "pm": {
     "token_free": true,
