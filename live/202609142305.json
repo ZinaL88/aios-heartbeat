@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T15:07:49Z",
-  "written_at_hkt": "2026-09-14 23:07 HKT",
+  "written_at_utc": "2026-09-14T15:08:44Z",
+  "written_at_hkt": "2026-09-14 23:08 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -16,7 +16,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 996253,
+        "pid": 997055,
         "cmd": "proc"
       },
       {
@@ -30,12 +30,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.9,
+    "mem_available_gi": 6.8,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.09,
+        "rss_gi": 3.11,
         "n": 32
       },
       {
@@ -49,24 +49,19 @@
         "n": 3
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.11,
-        "n": 2
-      },
-      {
         "comm": "python3",
         "rss_gi": 0.09,
         "n": 5
       },
       {
+        "comm": "bash",
+        "rss_gi": 0.09,
+        "n": 37
+      },
+      {
         "comm": "xfwm4",
         "rss_gi": 0.08,
         "n": 3
-      },
-      {
-        "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
       },
       {
         "comm": "csnaps",
@@ -77,6 +72,11 @@
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.06,
+        "n": 1
       },
       {
         "comm": "x11vnc",
@@ -90,9 +90,9 @@
       "anon_gi": 2.1,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.7,
-      "committed_gi": 4.9
+      "committed_gi": 4.8
     },
-    "load1": 0.62,
+    "load1": 0.77,
     "disk_avail": "109G",
     "tmp_du": "23M"
   },
@@ -106,7 +106,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "_PIVJQrD7qc",
+    "last_id": "KkQU-z1K3xs",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -129,14 +129,14 @@
         "pending": 656,
         "done": 5249,
         "transcripts_on_disk": 5249,
-        "inflight": "Ez1RdQtsg6Y",
+        "inflight": "_cbrSC4ukLo",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 15744,
         "eta_hkt": "2026-09-25 13:09 HKT",
         "jobs": 2,
-        "pending_global": 2370,
+        "pending_global": 2373,
         "eta_deadline_utc": "2026-09-25T05:09:44Z",
         "eta_frozen": true,
         "overdue": false,
@@ -154,15 +154,15 @@
           "Learning how to learn"
         ],
         "done": 5012,
-        "left": 2068,
+        "left": 2065,
         "total": 15597,
-        "no_sub": 748,
+        "no_sub": 751,
         "eta_min": 258,
-        "eta_hkt": "2026-09-15 03:25 HKT",
+        "eta_hkt": "2026-09-15 03:26 HKT",
         "inflight": null,
         "jobs": 2,
-        "left_global": 6830,
-        "eta_deadline_utc": "2026-09-14T19:25:49Z",
+        "left_global": 6827,
+        "eta_deadline_utc": "2026-09-14T19:26:44Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
@@ -170,9 +170,9 @@
     },
     "progress": {
       "stt_done": 5249,
-      "stt_pending": 2370,
+      "stt_pending": 2373,
       "captions_done": 5012,
-      "captions_left": 6830,
+      "captions_left": 6827,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -352,48 +352,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T15:07:38Z STT already running — no second Whisper"
+      "summary": "2026-09-14T15:08:20Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T15:07:49Z skip — another reboost holds lock"
+      "summary": "2026-09-14T15:08:20Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T15:07:49Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.9G cap_signal=1"
+      "summary": "2026-09-14T15:08:43Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.8G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T15:07:49Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.9G cap_signal=1"
+      "summary": "2026-09-14T15:08:43Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.8G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T15:07:49Z captions after fill running=2"
+      "summary": "2026-09-14T15:08:43Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T15:07:49Z captions after fill running=2"
+      "summary": "2026-09-14T15:08:43Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T15:07:49Z STT already running — no second Whisper"
+      "summary": "2026-09-14T15:08:43Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T15:07:49Z STT already running — no second Whisper"
+      "summary": "2026-09-14T15:08:43Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-14T15:07:49Z captions after fill running=2",
-    "2026-09-14T15:07:49Z STT already running — no second Whisper",
-    "2026-09-14T15:07:49Z STT already running — no second Whisper",
+    "2026-09-14T15:08:43Z captions after fill running=2",
+    "2026-09-14T15:08:43Z STT already running — no second Whisper",
+    "2026-09-14T15:08:43Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
