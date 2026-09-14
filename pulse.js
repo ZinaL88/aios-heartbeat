@@ -197,6 +197,6 @@ function bootEdit(){
 try{ var __c=localStorage.getItem("aios-hb-v1"); if(__c) paint(JSON.parse(__c)); }catch(e){}
 pull();
 setInterval(pull, 15000);
-if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", function(){ bootTabs(); bootEdit(); });
-else { bootTabs(); bootEdit(); }
+if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", function(){ bootTabs(); bootEdit(); filterQueue(); var _ob=document.querySelector("#oTabs button.on"); if(_ob) oFilter(_ob); });
+else { bootTabs(); bootEdit(); filterQueue(); var _ob=document.querySelector("#oTabs button.on"); if(_ob) oFilter(_ob); }
 })();
