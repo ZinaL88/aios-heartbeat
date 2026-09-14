@@ -1,18 +1,30 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T04:50:37Z",
+  "written_at_utc": "2026-09-14T04:50:40Z",
   "written_at_hkt": "2026-09-14 12:50 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
     "backfill": true,
     "whisper_n": 0,
-    "backfill_n": 1,
+    "backfill_n": 4,
     "stt_channel": null,
     "captions_channel": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
     "sample": [
       {
         "pid": 267352,
+        "cmd": "proc"
+      },
+      {
+        "pid": 267452,
+        "cmd": "proc"
+      },
+      {
+        "pid": 267542,
+        "cmd": "proc"
+      },
+      {
+        "pid": 267701,
         "cmd": "proc"
       }
     ]
@@ -32,14 +44,24 @@
         "n": 3
       },
       {
-        "comm": "Xvfb",
+        "comm": "yt-dlp",
+        "rss_gi": 0.11,
+        "n": 2
+      },
+      {
+        "comm": "python3",
         "rss_gi": 0.09,
-        "n": 3
+        "n": 5
       },
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 37
+        "n": 38
+      },
+      {
+        "comm": "Xvfb",
+        "rss_gi": 0.09,
+        "n": 3
       },
       {
         "comm": "csnaps",
@@ -57,30 +79,20 @@
         "n": 2
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.05,
-        "n": 1
-      },
-      {
         "comm": "x11vnc",
         "rss_gi": 0.04,
         "n": 3
-      },
-      {
-        "comm": "flock",
-        "rss_gi": 0.04,
-        "n": 22
       }
     ],
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 2.0,
-      "anon_gi": 1.8,
+      "anon_gi": 1.9,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
-      "committed_gi": 4.6
+      "committed_gi": 4.7
     },
-    "load1": 0.78,
+    "load1": 0.96,
     "disk_avail": "109G",
     "tmp_du": "20M"
   },
@@ -130,24 +142,30 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+        "channel_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt,PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN,PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ,PLwLhCsXo_YKMfYMd8EVmL2g353cwAjSxl",
         "targets": [
-          "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
+          "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+          "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+          "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+          "PLwLhCsXo_YKMfYMd8EVmL2g353cwAjSxl"
         ],
         "target_names": [
-          "Job hunting"
+          "Job hunting",
+          "Learning how to learn",
+          "理財",
+          "Smart Note Taking (Obsidian & Zettelkasten)"
         ],
         "done": 3710,
-        "left": 36,
+        "left": 3041,
         "total": 13623,
-        "no_sub": 61,
-        "eta_min": 9,
+        "no_sub": 353,
+        "eta_min": 190,
         "eta_hkt": "2026-09-14 12:59 HKT",
         "inflight": null,
-        "jobs": 1,
+        "jobs": 4,
         "left_global": 6733,
         "eta_deadline_utc": "2026-09-14T04:59:37Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false
       }
     },
@@ -335,53 +353,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:50:36Z STT past ETA deadline — restart parent"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:50:36Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-14T04:50:39Z reboost captions pid 267542 channel PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:50:36Z captions running=0 target=3 stt_live=none mem=7.2G cap_signal=none"
+      "summary": "2026-09-14T04:50:39Z reboost captions pid 267542 channel PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:50:36Z captions running=0 target=3 stt_live=none mem=7.2G cap_signal=none"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLwLhCsXo_YKMfYMd8EVmL2g353cwAjSxl/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLwLhCsXo_YKMfYMd8EVmL2g353cwAjSxl/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt/inventory_public.json"
+      "summary": "2026-09-14T04:50:40Z reboost captions pid 267701 channel PLwLhCsXo_YKMfYMd8EVmL2g353cwAjSxl"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:50:36Z reboost captions pid 267352 channel PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
+      "summary": "2026-09-14T04:50:40Z reboost captions pid 267701 channel PLwLhCsXo_YKMfYMd8EVmL2g353cwAjSxl"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:50:36Z reboost captions pid 267352 channel PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
+      "summary": "2026-09-14T04:50:40Z skip — another reboost holds lock"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-14T04:50:36Z reboost captions pid 267352 channel PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-    "2026-09-14T04:50:36Z reboost captions pid 267352 channel PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-    "backfill-captions.log: warning: no cookies file at <path> public captions still run cookieless",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "rate-limited — backoff 45s",
+    "starting <path> <path> --channel-id PLEmTTOfet46OmSXIUKmbHe1acy6u-fIVX --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-14T04:50:41Z reboost captions pid 267835 channel PLEmTTOfet46OmSXIUKmbHe1acy6u-fIVX",
+    "2026-09-14T04:50:41Z reboost captions pid 267835 channel PLEmTTOfet46OmSXIUKmbHe1acy6u-fIVX",
+    "backfill-captions.log: rate-limited — backoff 45s",
     "warning: no cookies file at <path> public captions still run cookieless",
-    "warning: no cookies file at <path> public captions still run cookieless"
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
+    "rate-limited — backoff 45s"
   ],
   "pm": {
     "token_free": true,
@@ -393,9 +411,31 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 1,
-    "total_n": 18,
+    "running_n": 4,
+    "total_n": 21,
     "jobs": [
+      {
+        "id": "live-cap-PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+        "title": "Learning how to learn",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN"
+      },
+      {
+        "id": "live-cap-PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+        "title": "理財",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
+      },
       {
         "id": "live-cap-PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
         "title": "Job hunting",
@@ -406,6 +446,17 @@
         "owner": "collector-live",
         "notes": "live captions target",
         "target_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
+      },
+      {
+        "id": "live-cap-PLwLhCsXo_YKMfYMd8EVmL2g353cwAjSxl",
+        "title": "Smart Note Taking (Obsidian & Zettelkasten)",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLwLhCsXo_YKMfYMd8EVmL2g353cwAjSxl"
       },
       {
         "id": "yt-ch-rest",
