@@ -1,41 +1,24 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T03:35:20Z",
+  "written_at_utc": "2026-09-14T03:35:47Z",
   "written_at_hkt": "2026-09-14 11:35 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
-    "backfill": true,
+    "backfill": false,
     "whisper_n": 0,
-    "backfill_n": 22,
+    "backfill_n": 0,
     "stt_channel": null,
-    "captions_channel": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-    "sample": [
-      {
-        "pid": 56392,
-        "cmd": "proc"
-      },
-      {
-        "pid": 56495,
-        "cmd": "proc"
-      },
-      {
-        "pid": 56548,
-        "cmd": "proc"
-      },
-      {
-        "pid": 56608,
-        "cmd": "proc"
-      }
-    ]
+    "captions_channel": null,
+    "sample": []
   },
   "resources": {
-    "mem_available_gi": 5.1,
+    "mem_available_gi": 5.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.49,
+        "rss_gi": 3.53,
         "n": 38
       },
       {
@@ -87,14 +70,14 @@
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 1.6,
-      "anon_gi": 3.5,
+      "anon_gi": 3.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
-      "committed_gi": 7.3
+      "committed_gi": 7.4
     },
-    "load1": 0.87,
+    "load1": 0.71,
     "disk_avail": "109G",
-    "tmp_du": "4.9M"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -103,24 +86,24 @@
   },
   "collector": {
     "found": true,
-    "done": 148,
-    "total": 284,
+    "done": 1,
+    "total": 22,
     "inflight": null,
-    "last_id": "6aO6cGTcnUg",
+    "last_id": "lObuM2O7wjY",
     "channel_id": null,
     "inventory": {
-      "public_total": 284,
-      "public_done": 148,
+      "public_total": 22,
+      "public_done": 1,
       "members_total": null,
       "members_done": null,
       "pending_stt_n": 0,
-      "pending_stt_listed": 61,
-      "transcripts_on_disk": 148,
-      "captions_done": 148,
-      "captions_left": 72,
-      "captions_no_sub": 61,
+      "pending_stt_listed": 0,
+      "transcripts_on_disk": 1,
+      "captions_done": 1,
+      "captions_left": 21,
+      "captions_no_sub": 0,
       "source": "inventory+disk",
-      "public_left": 136
+      "public_left": 21
     },
     "tracks": {
       "stt": {
@@ -135,84 +118,37 @@
         "eta_min": 0,
         "eta_hkt": null,
         "jobs": 0,
-        "eta_deadline_utc": "2026-09-14T03:35:21Z",
+        "eta_deadline_utc": "2026-09-14T03:35:47Z",
         "eta_frozen": false,
         "overdue": false
       },
       "captions": {
-        "running": true,
-        "channel_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt,PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN,PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ,PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5,PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO,PLangBM27OtEA,PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X,PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc,PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK,PLUl4u3cNGP60gb6cVqrZQXQ217r0PwZJg,PLbdTl8vSSyUDAvDPc1r3j9itciu_kb5vG,PLEAWiihj06OL-zBeazBSgFk-eJYj8xTkF,PLqFaTIg4myu-npFrYu6cO7h7AI6bkcOlL,PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW,PLuGHfVNSITJdM03XJbTbzmojF6_3w1VNC,PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap,PLa9dmHsLK9dg,PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp,PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1,PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0,PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm,PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8",
-        "targets": [
-          "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-          "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-          "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
-          "PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5",
-          "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO",
-          "PLangBM27OtEA",
-          "PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X",
-          "PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc",
-          "PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK",
-          "PLUl4u3cNGP60gb6cVqrZQXQ217r0PwZJg",
-          "PLbdTl8vSSyUDAvDPc1r3j9itciu_kb5vG",
-          "PLEAWiihj06OL-zBeazBSgFk-eJYj8xTkF",
-          "PLqFaTIg4myu-npFrYu6cO7h7AI6bkcOlL",
-          "PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW",
-          "PLuGHfVNSITJdM03XJbTbzmojF6_3w1VNC",
-          "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
-          "PLa9dmHsLK9dg",
-          "PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp",
-          "PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1",
-          "PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0",
-          "PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm",
-          "PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8"
-        ],
-        "target_names": [
-          "Job hunting",
-          "Learning how to learn",
-          "理財",
-          "AI Product Management",
-          "Engineering",
-          "CS329A Self-Improving AI Agents",
-          "Stanford CS230: Deep Learning I Autumn 2025",
-          "The Age of A.I.",
-          "Geospatial Analysis using Real Python",
-          "MIT 14.129 Blockchain and the Design of Financial Systems, Spring 2025",
-          "Machine Learning & Data Science",
-          "Personal Finance",
-          "Kaggle CareerCon 2019 | Full Sessions",
-          "Automate the Boring Stuff with Python",
-          "Economics Amplified",
-          "MCP",
-          "AA203 Optimal and Learning-Based Control | Spring 2026",
-          "How to Delegate Like a Millionaire Entrepreneur",
-          "How to Start a Startup",
-          "MIT 18.650 Statistics for Applications, Fall 2016",
-          "Stock Trading Principles",
-          "6.041 Probabilistic Systems Analysis and Applied Probability"
-        ],
-        "done": 634,
-        "left": 3319,
-        "total": 4404,
-        "no_sub": 369,
-        "eta_min": 38,
-        "eta_hkt": "2026-09-14 11:51 HKT",
+        "running": false,
+        "channel_id": null,
+        "done": 0,
+        "left": 0,
+        "total": 0,
+        "no_sub": 0,
+        "eta_min": 0,
+        "eta_hkt": null,
         "inflight": null,
-        "jobs": 22,
-        "eta_deadline_utc": "2026-09-14T03:51:21Z",
-        "eta_frozen": true,
+        "jobs": 0,
+        "targets": [],
+        "target_names": [],
+        "note": null,
+        "eta_deadline_utc": "2026-09-14T03:35:47Z",
+        "eta_frozen": false,
         "overdue": false
       }
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-14T03:40:00Z",
     "next_cron_hkt": "2026-09-14 11:40 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 5.1G)",
+    "job_restart": "captions eligible now (5.3G≥1.2); Whisper blocked until 6.0G",
     "job_restart_at_hkt": "2026-09-14 11:40 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -231,7 +167,12 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T03:35:18Z reboost captions pid 57786 channel PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm"
+      "summary": "2026-09-14T03:35:44Z reboost captions pid 59401 channel PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T03:35:44Z reboost captions pid 59401 channel PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm"
     },
     {
       "at_hkt": "reboost.log",
@@ -246,33 +187,28 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T03:35:19Z reboost captions pid 57851 channel PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8"
+      "summary": "2026-09-14T03:35:45Z reboost captions pid 59459 channel PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T03:35:19Z reboost captions pid 57851 channel PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8"
+      "summary": "2026-09-14T03:35:45Z reboost captions pid 59459 channel PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T03:35:20Z skip — another reboost holds lock"
+      "summary": "2026-09-14T03:35:46Z inventory missing — building playlist PLoROMvodv4rObv1FMizXqumgVVdzX4_05"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T03:35:20Z inventory missing — building playlist PLoROMvodv4rObv1FMizXqumgVVdzX4_05"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T03:35:20Z inventory missing — building playlist PLoROMvodv4rObv1FMizXqumgVVdzX4_05"
+      "summary": "2026-09-14T03:35:46Z inventory missing — building playlist PLoROMvodv4rObv1FMizXqumgVVdzX4_05"
     }
   ],
   "reboost_log": [
-    "2026-09-14T03:35:20Z skip — another reboost holds lock",
-    "2026-09-14T03:35:20Z inventory missing — building playlist PLoROMvodv4rObv1FMizXqumgVVdzX4_05",
-    "2026-09-14T03:35:20Z inventory missing — building playlist PLoROMvodv4rObv1FMizXqumgVVdzX4_05",
+    "2026-09-14T03:35:45Z reboost captions pid 59459 channel PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8",
+    "2026-09-14T03:35:46Z inventory missing — building playlist PLoROMvodv4rObv1FMizXqumgVVdzX4_05",
+    "2026-09-14T03:35:46Z inventory missing — building playlist PLoROMvodv4rObv1FMizXqumgVVdzX4_05",
     "backfill-captions.log: rate-limited — backoff 45s",
     "warning: no cookies file at <path> public captions still run cookieless",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
@@ -289,251 +225,9 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 22,
-    "total_n": 39,
+    "running_n": 0,
+    "total_n": 17,
     "jobs": [
-      {
-        "id": "live-cap-PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW",
-        "title": "Automate the Boring Stuff with Python",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW"
-      },
-      {
-        "id": "live-cap-PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK",
-        "title": "Geospatial Analysis using Real Python",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK"
-      },
-      {
-        "id": "live-cap-PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1",
-        "title": "How to Start a Startup",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1"
-      },
-      {
-        "id": "live-cap-PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
-        "title": "MCP",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap"
-      },
-      {
-        "id": "live-cap-PLEAWiihj06OL-zBeazBSgFk-eJYj8xTkF",
-        "title": "Personal Finance",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLEAWiihj06OL-zBeazBSgFk-eJYj8xTkF"
-      },
-      {
-        "id": "live-cap-PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp",
-        "title": "How to Delegate Like a Millionaire Entrepreneur",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp"
-      },
-      {
-        "id": "live-cap-PLUl4u3cNGP60gb6cVqrZQXQ217r0PwZJg",
-        "title": "MIT 14.129 Blockchain and the Design of Financial Systems, Spring 2025",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLUl4u3cNGP60gb6cVqrZQXQ217r0PwZJg"
-      },
-      {
-        "id": "live-cap-PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0",
-        "title": "MIT 18.650 Statistics for Applications, Fall 2016",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0"
-      },
-      {
-        "id": "live-cap-PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8",
-        "title": "6.041 Probabilistic Systems Analysis and Applied Probability",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8"
-      },
-      {
-        "id": "live-cap-PLa9dmHsLK9dg",
-        "title": "AA203 Optimal and Learning-Based Control | Spring 2026",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLa9dmHsLK9dg"
-      },
-      {
-        "id": "live-cap-PLangBM27OtEA",
-        "title": "CS329A Self-Improving AI Agents",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLangBM27OtEA"
-      },
-      {
-        "id": "live-cap-PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-        "title": "Learning how to learn",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN"
-      },
-      {
-        "id": "live-cap-PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
-        "title": "理財",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
-      },
-      {
-        "id": "live-cap-PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-        "title": "Job hunting",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
-      },
-      {
-        "id": "live-cap-PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO",
-        "title": "Engineering",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO"
-      },
-      {
-        "id": "live-cap-PLbdTl8vSSyUDAvDPc1r3j9itciu_kb5vG",
-        "title": "Machine Learning & Data Science",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLbdTl8vSSyUDAvDPc1r3j9itciu_kb5vG"
-      },
-      {
-        "id": "live-cap-PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc",
-        "title": "The Age of A.I.",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc"
-      },
-      {
-        "id": "live-cap-PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X",
-        "title": "Stanford CS230: Deep Learning I Autumn 2025",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X"
-      },
-      {
-        "id": "live-cap-PLqFaTIg4myu-npFrYu6cO7h7AI6bkcOlL",
-        "title": "Kaggle CareerCon 2019 | Full Sessions",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLqFaTIg4myu-npFrYu6cO7h7AI6bkcOlL"
-      },
-      {
-        "id": "live-cap-PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5",
-        "title": "AI Product Management",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5"
-      },
-      {
-        "id": "live-cap-PLuGHfVNSITJdM03XJbTbzmojF6_3w1VNC",
-        "title": "Economics Amplified",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLuGHfVNSITJdM03XJbTbzmojF6_3w1VNC"
-      },
-      {
-        "id": "live-cap-PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm",
-        "title": "Stock Trading Principles",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm"
-      },
       {
         "id": "yt-ch-rest",
         "title": "Channels #2–#9 backfill",
