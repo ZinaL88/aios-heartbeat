@@ -1,24 +1,29 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T04:55:46Z",
+  "written_at_utc": "2026-09-14T04:55:54Z",
   "written_at_hkt": "2026-09-14 12:55 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
-    "backfill": false,
+    "backfill": true,
     "whisper_n": 0,
-    "backfill_n": 0,
+    "backfill_n": 1,
     "stt_channel": null,
-    "captions_channel": null,
-    "sample": []
+    "captions_channel": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+    "sample": [
+      {
+        "pid": 282922,
+        "cmd": "proc"
+      }
+    ]
   },
   "resources": {
-    "mem_available_gi": 7.1,
+    "mem_available_gi": 7.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.78,
+        "rss_gi": 2.79,
         "n": 32
       },
       {
@@ -32,14 +37,14 @@
         "n": 3
       },
       {
-        "comm": "csnaps",
-        "rss_gi": 0.09,
-        "n": 1
-      },
-      {
         "comm": "bash",
         "rss_gi": 0.09,
         "n": 37
+      },
+      {
+        "comm": "csnaps",
+        "rss_gi": 0.09,
+        "n": 1
       },
       {
         "comm": "xfwm4",
@@ -52,6 +57,11 @@
         "n": 2
       },
       {
+        "comm": "yt-dlp",
+        "rss_gi": 0.05,
+        "n": 1
+      },
+      {
         "comm": "x11vnc",
         "rss_gi": 0.04,
         "n": 3
@@ -60,22 +70,17 @@
         "comm": "flock",
         "rss_gi": 0.04,
         "n": 22
-      },
-      {
-        "comm": "bamfdaemon",
-        "rss_gi": 0.03,
-        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 2.0,
-      "anon_gi": 1.7,
+      "anon_gi": 1.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
-      "committed_gi": 4.5
+      "committed_gi": 4.6
     },
-    "load1": 1.14,
+    "load1": 1.04,
     "disk_avail": "109G",
     "tmp_du": "21M"
   },
@@ -86,24 +91,24 @@
   },
   "collector": {
     "found": true,
-    "done": 0,
-    "total": 34,
+    "done": 184,
+    "total": 284,
     "inflight": null,
-    "last_id": "l5Hvte6gzho",
+    "last_id": "iJLL-KPqBpM",
     "channel_id": null,
     "inventory": {
-      "public_total": 34,
-      "public_done": 0,
+      "public_total": 284,
+      "public_done": 184,
       "members_total": null,
       "members_done": null,
       "pending_stt_n": 0,
-      "pending_stt_listed": 0,
-      "transcripts_on_disk": 0,
-      "captions_done": 0,
-      "captions_left": 33,
-      "captions_no_sub": 0,
+      "pending_stt_listed": 61,
+      "transcripts_on_disk": 184,
+      "captions_done": 184,
+      "captions_left": 36,
+      "captions_no_sub": 61,
       "source": "inventory+disk",
-      "public_left": 34
+      "public_left": 100
     },
     "tracks": {
       "stt": {
@@ -124,21 +129,25 @@
         "overdue": true
       },
       "captions": {
-        "running": false,
-        "channel_id": null,
+        "running": true,
+        "channel_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+        "targets": [
+          "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
+        ],
+        "target_names": [
+          "Job hunting"
+        ],
         "done": 3750,
-        "left": 6967,
+        "left": 36,
         "total": 13919,
-        "no_sub": 0,
-        "eta_min": 0,
-        "eta_hkt": "2026-09-14 12:59 HKT",
+        "no_sub": 61,
+        "eta_min": 9,
+        "eta_hkt": "2026-09-14 13:04 HKT",
         "inflight": null,
-        "jobs": 0,
-        "targets": [],
-        "target_names": [],
-        "note": null,
-        "eta_deadline_utc": "2026-09-14T04:59:37Z",
-        "eta_frozen": true,
+        "jobs": 1,
+        "left_global": 6967,
+        "eta_deadline_utc": "2026-09-14T05:04:54Z",
+        "eta_frozen": false,
         "overdue": false
       }
     },
@@ -307,7 +316,7 @@
     "next_cron_utc": "2026-09-14T05:00:00Z",
     "next_cron_hkt": "2026-09-14 13:00 HKT",
     "cron": "*/5",
-    "job_restart": "eligible — captions + Whisper this tick if still dead",
+    "job_restart": "captions on · Whisper OFF but RAM 7.2G≥6.0 — reboost STT this tick",
     "job_restart_at_hkt": "now",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -326,52 +335,52 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:55:44Z reboost captions pid 282421 channel PLEMWyuM4E6qQvLqMJ-YdC0rBztBYpZaGv"
+      "summary": "2026-09-14T04:55:53Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLFpsDakL_p53mcCG5SbNo30HQJo2PKd39/inventory_public.json"
+      "summary": "2026-09-14T04:55:53Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLFpsDakL_p53mcCG5SbNo30HQJo2PKd39/inventory_public.json"
+      "summary": "2026-09-14T04:55:53Z captions running=0 target=3 stt_live=none mem=7.2G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:55:45Z reboost captions pid 282472 channel PLFpsDakL_p53mcCG5SbNo30HQJo2PKd39"
+      "summary": "2026-09-14T04:55:53Z captions running=0 target=3 stt_live=none mem=7.2G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:55:45Z reboost captions pid 282472 channel PLFpsDakL_p53mcCG5SbNo30HQJo2PKd39"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:55:46Z inventory missing — building playlist PLbVaWSxd4rLJiBph9cZ8hcw9NWP-VuJmB"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:55:46Z inventory missing — building playlist PLbVaWSxd4rLJiBph9cZ8hcw9NWP-VuJmB"
+      "summary": "2026-09-14T04:55:53Z reboost captions pid 282922 channel PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:55:46Z skip — another reboost holds lock"
+      "summary": "2026-09-14T04:55:53Z reboost captions pid 282922 channel PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
     }
   ],
   "reboost_log": [
-    "2026-09-14T04:55:46Z inventory missing — building playlist PLbVaWSxd4rLJiBph9cZ8hcw9NWP-VuJmB",
-    "2026-09-14T04:55:46Z inventory missing — building playlist PLbVaWSxd4rLJiBph9cZ8hcw9NWP-VuJmB",
-    "2026-09-14T04:55:46Z skip — another reboost holds lock",
+    "starting <path> <path> --channel-id PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-14T04:55:53Z reboost captions pid 282922 channel PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+    "2026-09-14T04:55:53Z reboost captions pid 282922 channel PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
     "backfill-captions.log: warning: no cookies file at <path> public captions still run cookieless",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
     "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s",
+    "warning: no cookies file at <path> public captions still run cookieless",
     "warning: no cookies file at <path> public captions still run cookieless"
   ],
   "pm": {
@@ -384,9 +393,20 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 0,
-    "total_n": 17,
+    "running_n": 1,
+    "total_n": 18,
     "jobs": [
+      {
+        "id": "live-cap-PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+        "title": "Job hunting",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
+      },
       {
         "id": "yt-ch-rest",
         "title": "Channels #2–#9 backfill",
