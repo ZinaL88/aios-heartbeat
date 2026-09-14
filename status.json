@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T13:54:04Z",
+  "written_at_utc": "2026-09-14T13:54:23Z",
   "written_at_hkt": "2026-09-14 21:54 HKT",
   "token_free": true,
   "processes": {
@@ -26,12 +26,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.9,
+    "mem_available_gi": 7.0,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.08,
+        "rss_gi": 2.97,
         "n": 32
       },
       {
@@ -45,14 +45,14 @@
         "n": 3
       },
       {
+        "comm": "bash",
+        "rss_gi": 0.09,
+        "n": 37
+      },
+      {
         "comm": "xfwm4",
         "rss_gi": 0.08,
         "n": 3
-      },
-      {
-        "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
       },
       {
         "comm": "python3",
@@ -83,12 +83,12 @@
     "meminfo": {
       "buffers_gi": 0.3,
       "cached_gi": 4.9,
-      "anon_gi": 2.1,
+      "anon_gi": 1.9,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.6,
       "committed_gi": 4.7
     },
-    "load1": 0.69,
+    "load1": 0.62,
     "disk_avail": "109G",
     "tmp_du": "23M"
   },
@@ -102,7 +102,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "zx71_43RQiM",
+    "last_id": "ZmL0OUDEZ3I",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -150,15 +150,15 @@
           "Learning how to learn"
         ],
         "done": 4951,
-        "left": 2255,
+        "left": 2254,
         "total": 15597,
-        "no_sub": 622,
+        "no_sub": 623,
         "eta_min": 282,
         "eta_hkt": "2026-09-15 02:36 HKT",
         "inflight": null,
         "jobs": 2,
-        "left_global": 7017,
-        "eta_deadline_utc": "2026-09-14T18:36:05Z",
+        "left_global": 7016,
+        "eta_deadline_utc": "2026-09-14T18:36:23Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
@@ -168,7 +168,7 @@
       "stt_done": 5188,
       "stt_pending": 2307,
       "captions_done": 4951,
-      "captions_left": 7017,
+      "captions_left": 7016,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -348,53 +348,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T13:53:32Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T13:54:04Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T13:54:04Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.9G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T13:54:04Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.9G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T13:54:04Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T13:54:04Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-14T13:54:04Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-14T13:54:04Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T13:54:22Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.9G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T13:54:22Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.9G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T13:54:22Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T13:54:22Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T13:54:22Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T13:54:22Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-14T13:54:04Z captions after fill running=2",
-    "2026-09-14T13:54:04Z STT already running — no second Whisper",
-    "2026-09-14T13:54:04Z STT already running — no second Whisper",
-    "backfill-captions.log: ERROR: [youtube] bwL_xPMvA30: Private video",
+    "2026-09-14T13:54:22Z captions after fill running=2",
+    "2026-09-14T13:54:22Z STT already running — no second Whisper",
+    "2026-09-14T13:54:22Z STT already running — no second Whisper",
+    "backfill-captions.log: rate-limited — backoff 45s",
+    "ERROR: [youtube] CO66pm5Swo4: Private video",
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
     "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "rate-limited — backoff 45s",
-    "RUNTIME[:PATH]  to your command<path> YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https:<path>  for details on installing one",
-    "ERROR: [youtube] bwL_xPMvA30: Private video"
+    "rate-limited — backoff 45s"
   ],
   "pm": {
     "token_free": true,
