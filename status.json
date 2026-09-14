@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T04:17:23Z",
+  "written_at_utc": "2026-09-14T04:17:57Z",
   "written_at_hkt": "2026-09-14 12:17 HKT",
   "token_free": true,
   "processes": {
@@ -13,12 +13,12 @@
     "sample": []
   },
   "resources": {
-    "mem_available_gi": 7.1,
+    "mem_available_gi": 7.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.94,
+        "rss_gi": 2.82,
         "n": 32
       },
       {
@@ -52,6 +52,11 @@
         "n": 2
       },
       {
+        "comm": "python3",
+        "rss_gi": 0.06,
+        "n": 2
+      },
+      {
         "comm": "x11vnc",
         "rss_gi": 0.04,
         "n": 3
@@ -60,22 +65,17 @@
         "comm": "flock",
         "rss_gi": 0.04,
         "n": 22
-      },
-      {
-        "comm": "bamfdaemon",
-        "rss_gi": 0.03,
-        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.2,
-      "cached_gi": 1.8,
-      "anon_gi": 1.9,
+      "cached_gi": 1.9,
+      "anon_gi": 1.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.5,
       "committed_gi": 4.5
     },
-    "load1": 0.95,
+    "load1": 1.38,
     "disk_avail": "109G",
     "tmp_du": null
   },
@@ -110,8 +110,8 @@
         "running": false,
         "channel_id": null,
         "pending": 2275,
-        "done": 3671,
-        "transcripts_on_disk": 3671,
+        "done": 3676,
+        "transcripts_on_disk": 3676,
         "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
@@ -126,27 +126,27 @@
       "captions": {
         "running": false,
         "channel_id": null,
-        "done": 3434,
-        "left": 4718,
+        "done": 3439,
+        "left": 4713,
         "total": 11276,
         "no_sub": 0,
         "eta_min": 0,
-        "eta_hkt": "2026-09-14 14:51 HKT",
+        "eta_hkt": "2026-09-14 13:44 HKT",
         "inflight": null,
         "jobs": 0,
         "targets": [],
         "target_names": [],
         "note": null,
-        "eta_deadline_utc": "2026-09-14T06:51:00Z",
+        "eta_deadline_utc": "2026-09-14T05:44:36Z",
         "eta_frozen": true,
         "overdue": false
       }
     },
     "progress": {
-      "stt_done": 3671,
+      "stt_done": 3676,
       "stt_pending": 2275,
-      "captions_done": 3434,
-      "captions_left": 4718,
+      "captions_done": 3439,
+      "captions_left": 4713,
       "captions_total": 11276,
       "channels_touched": 50,
       "by_channel": [
@@ -259,6 +259,12 @@
           "captions_done": 16
         },
         {
+          "id": "PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1",
+          "name": "How to Start a Startup",
+          "stt_done": 16,
+          "captions_done": 16
+        },
+        {
           "id": "PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0",
           "name": "MIT 18.650 Statistics for Applications, Fall 2016",
           "stt_done": 16,
@@ -283,19 +289,13 @@
           "captions_done": 15
         },
         {
-          "id": "PL5q_lef6zVkaTY_cT1k7qFNF2TidHCe-1",
-          "name": "How to Start a Startup",
-          "stt_done": 15,
-          "captions_done": 15
-        },
-        {
           "id": "PLEmTTOfet46PtZClnUPi51RJWhJ4CPo4J",
           "name": "How To Systemize Your Business So It Runs Without You",
           "stt_done": 14,
           "captions_done": 14
         }
       ],
-      "captions_files_on_disk": 5724,
+      "captions_files_on_disk": 5730,
       "source": "inventory+disk"
     }
   },
@@ -324,17 +324,12 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:17:14Z reboost captions pid 183584 channel PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm"
+      "summary": "2026-09-14T04:17:46Z reboost captions pid 185201 channel PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:17:14Z reboost captions pid 183584 channel PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9/inventory_public.json"
+      "summary": "2026-09-14T04:17:46Z reboost captions pid 185201 channel PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm"
     },
     {
       "at_hkt": "reboost.log",
@@ -344,28 +339,33 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:17:16Z reboost captions pid 183652 channel PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:17:16Z reboost captions pid 183652 channel PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9"
+      "summary": "2026-09-14T04:17:47Z reboost captions pid 185267 channel PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:17:17Z inventory missing — building playlist PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
+      "summary": "2026-09-14T04:17:47Z reboost captions pid 185267 channel PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T04:17:17Z inventory missing — building playlist PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
+      "summary": "2026-09-14T04:17:48Z inventory missing — building playlist PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T04:17:48Z inventory missing — building playlist PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
     }
   ],
   "reboost_log": [
-    "2026-09-14T04:17:16Z reboost captions pid 183652 channel PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
-    "2026-09-14T04:17:17Z inventory missing — building playlist PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-    "2026-09-14T04:17:17Z inventory missing — building playlist PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+    "2026-09-14T04:17:47Z reboost captions pid 185267 channel PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
+    "2026-09-14T04:17:48Z inventory missing — building playlist PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+    "2026-09-14T04:17:48Z inventory missing — building playlist PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
