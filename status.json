@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T09:30:48Z",
+  "written_at_utc": "2026-09-14T09:30:53Z",
   "written_at_hkt": "2026-09-14 17:30 HKT",
   "token_free": true,
   "processes": {
@@ -54,14 +54,14 @@
         "n": 5
       },
       {
+        "comm": "bash",
+        "rss_gi": 0.09,
+        "n": 37
+      },
+      {
         "comm": "xfwm4",
         "rss_gi": 0.08,
         "n": 3
-      },
-      {
-        "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
       },
       {
         "comm": "websockify",
@@ -86,13 +86,13 @@
     ],
     "meminfo": {
       "buffers_gi": 0.3,
-      "cached_gi": 5.1,
+      "cached_gi": 5.5,
       "anon_gi": 2.0,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.6,
       "committed_gi": 4.9
     },
-    "load1": 0.61,
+    "load1": 0.64,
     "disk_avail": "108G",
     "tmp_du": "23M"
   },
@@ -163,7 +163,7 @@
         "jobs": 2,
         "left_global": 7490,
         "eta_deadline_utc": "2026-09-14T15:11:49Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -352,48 +352,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T09:30:16Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T09:30:48Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T09:30:48Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.9G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T09:30:48Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.9G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T09:30:48Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-14T09:30:48Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-14T09:30:48Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-14T09:30:48Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T09:30:52Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.0G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T09:30:52Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.0G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T09:30:52Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T09:30:52Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T09:30:52Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-14T09:30:52Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-14T09:30:48Z captions after fill running=2",
-    "2026-09-14T09:30:48Z STT already running — no second Whisper",
-    "2026-09-14T09:30:48Z STT already running — no second Whisper",
+    "2026-09-14T09:30:52Z captions after fill running=2",
+    "2026-09-14T09:30:52Z STT already running — no second Whisper",
+    "2026-09-14T09:30:52Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
