@@ -1,181 +1,211 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-14T02:29:50Z",
-  "written_at_hkt": "2026-09-14 10:29 HKT",
+  "written_at_utc": "2026-09-14T03:29:25Z",
+  "written_at_hkt": "2026-09-14 11:29 HKT",
+  "host": "cursor",
+  "repo_head": "d3fc637",
   "token_free": true,
   "processes": {
-    "whisper": true,
+    "whisper": false,
     "backfill": true,
-    "whisper_n": 2,
-    "backfill_n": 3,
-    "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-    "captions_channel": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+    "whisper_n": 0,
+    "backfill_n": 9,
+    "stt_channel": null,
+    "captions_channel": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
     "sample": [
       {
-        "pid": 22488,
-        "cmd": "proc"
+        "pid": 36937,
+        "cmd": "cap×1:PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
       },
       {
-        "pid": 220996,
-        "cmd": "proc"
+        "pid": 37113,
+        "cmd": "cap×1:PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN"
       },
       {
-        "pid": 47529,
-        "cmd": "proc"
+        "pid": 37253,
+        "cmd": "cap×1:PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
       },
       {
-        "pid": 87748,
-        "cmd": "proc"
+        "pid": 37331,
+        "cmd": "cap×1:PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5"
+      },
+      {
+        "pid": 37446,
+        "cmd": "cap×1:PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO"
+      },
+      {
+        "pid": 37504,
+        "cmd": "cap×1:PLangBM27OtEA"
+      },
+      {
+        "pid": 37557,
+        "cmd": "cap×1:PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X"
+      },
+      {
+        "pid": 37701,
+        "cmd": "cap×1:PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 4.3,
+    "mem_available_gi": 5.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.19,
-        "n": 33
+        "rss_gi": 3.54,
+        "n": 38
       },
       {
         "comm": "python",
-        "rss_gi": 2.43,
-        "n": 5
+        "rss_gi": 0.43,
+        "n": 4
       },
       {
-        "comm": "chrome",
-        "rss_gi": 1.26,
-        "n": 10
-      },
-      {
-        "comm": "plank",
-        "rss_gi": 0.12,
-        "n": 3
-      },
-      {
-        "comm": "Xvfb",
-        "rss_gi": 0.12,
-        "n": 3
-      },
-      {
-        "comm": "csnaps",
-        "rss_gi": 0.08,
+        "comm": "npm exec mongod",
+        "rss_gi": 0.27,
         "n": 1
       },
       {
-        "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
+        "comm": "npm exec fireba",
+        "rss_gi": 0.26,
+        "n": 1
       },
       {
-        "comm": "websockify",
-        "rss_gi": 0.07,
-        "n": 2
+        "comm": "npm exec @brows",
+        "rss_gi": 0.21,
+        "n": 1
       },
       {
-        "comm": "xfwm4",
-        "rss_gi": 0.07,
-        "n": 3
+        "comm": "python3",
+        "rss_gi": 0.18,
+        "n": 11
       },
       {
-        "comm": "x11vnc",
-        "rss_gi": 0.05,
-        "n": 3
+        "comm": "yt-dlp",
+        "rss_gi": 0.17,
+        "n": 4
+      },
+      {
+        "comm": "npm exec @azure",
+        "rss_gi": 0.16,
+        "n": 1
+      },
+      {
+        "comm": "azmcp",
+        "rss_gi": 0.14,
+        "n": 1
+      },
+      {
+        "comm": "npm exec snyk@l",
+        "rss_gi": 0.13,
+        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.2,
-      "cached_gi": 2.8,
-      "anon_gi": 4.7,
+      "cached_gi": 1.5,
+      "anon_gi": 3.8,
       "shmem_gi": 0.0,
-      "sreclaimable_gi": 0.4,
-      "committed_gi": 14.9
+      "sreclaimable_gi": 0.5,
+      "committed_gi": 7.7
     },
-    "load1": 4.65,
-    "disk_avail": "107G",
-    "tmp_du": "20M"
+    "load1": 1.11,
+    "disk_avail": "109G",
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
+    "path": null,
     "age_hours": null,
-    "stale": false
+    "mtime_utc": null
   },
   "collector": {
     "found": true,
-    "done": 118,
-    "total": 737,
+    "channel": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+    "channel_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+    "done": 143,
+    "total": 284,
     "inflight": null,
-    "last_id": "fBlzcDtgwzA",
-    "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+    "last_id": "BQvbtS4o-DI",
+    "access": null,
+    "mtime_utc": "2026-09-14T03:29:22Z",
     "inventory": {
-      "public_total": 737,
-      "public_done": 83,
-      "members_total": 0,
-      "members_done": 0,
-      "pending_stt_n": 567,
-      "pending_stt_listed": 685,
-      "transcripts_on_disk": 118,
-      "captions_done": 83,
-      "captions_left": 0,
-      "captions_no_sub": 654,
+      "public_total": 284,
+      "public_done": 143,
+      "members_total": null,
+      "members_done": null,
+      "pending_stt_n": 0,
+      "pending_stt_listed": 61,
+      "transcripts_on_disk": 143,
+      "captions_done": 143,
+      "captions_left": 77,
+      "captions_no_sub": 61,
       "source": "inventory+disk",
-      "public_left": 654
+      "public_left": 141
     },
     "tracks": {
       "stt": {
-        "running": true,
-        "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-        "pending": 567,
-        "transcripts_on_disk": 118,
-        "inflight": "otHqXpu2F1M",
+        "running": false,
+        "channel_id": null,
+        "pending": 0,
+        "transcripts_on_disk": 0,
+        "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
-        "eta_this_min": 24,
-        "eta_min": 13608,
-        "eta_hkt": "2026-09-23 21:12 HKT",
-        "jobs": 2,
-        "eta_deadline_utc": "2026-09-23T13:12:43Z",
-        "eta_frozen": true,
+        "eta_this_min": 0,
+        "eta_min": 0,
+        "eta_hkt": null,
+        "jobs": 0,
+        "eta_deadline_utc": "2026-09-14T03:29:25Z",
+        "eta_frozen": false,
         "overdue": false
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN,PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ,PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+        "channel_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt,PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN,PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ,PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5,PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO,PLangBM27OtEA,PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X,PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc,PLydduVo-Eiq-qhq-NrQbBejkT05SQtEyM",
         "targets": [
+          "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
           "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
           "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
-          "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
+          "PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5",
+          "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO",
+          "PLangBM27OtEA",
+          "PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X",
+          "PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc",
+          "PLydduVo-Eiq-qhq-NrQbBejkT05SQtEyM"
         ],
         "target_names": [
+          "Job hunting",
           "Learning how to learn",
           "理財",
-          "Job hunting"
+          "AI Product Management",
+          "Engineering",
+          "CS329A Self-Improving AI Agents",
+          "Stanford CS230: Deep Learning I Autumn 2025",
+          "The Age of A.I.",
+          "章濤投資日記"
         ],
-        "done": 578,
-        "left": 3136,
-        "total": 4149,
+        "done": 590,
+        "left": 3172,
+        "total": 4197,
         "no_sub": 353,
-        "eta_min": 261,
-        "eta_hkt": "2026-09-14 14:50 HKT",
+        "eta_min": 88,
+        "eta_hkt": "2026-09-14 11:49 HKT",
         "inflight": null,
-        "jobs": 3,
-        "eta_deadline_utc": "2026-09-14T06:50:50Z",
-        "eta_frozen": false,
+        "jobs": 9,
+        "eta_deadline_utc": "2026-09-14T03:49:15Z",
+        "eta_frozen": true,
         "overdue": false
       }
     }
   },
-  "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
   "schedule": {
-    "next_cron_utc": "2026-09-14T02:30:00Z",
-    "next_cron_hkt": "2026-09-14 10:30 HKT",
+    "next_cron_utc": "2026-09-14T03:30:00Z",
+    "next_cron_hkt": "2026-09-14 11:30 HKT",
     "cron": "*/5",
-    "job_restart": "captions + Whisper running",
-    "job_restart_at_hkt": null,
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 5.2G)",
+    "job_restart_at_hkt": "2026-09-14 11:30 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -193,53 +223,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T02:29:19Z STT already running — no second Whisper"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLydduVo-Eiq-qhq-NrQbBejkT05SQtEyM/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T02:29:50Z skip — another reboost holds lock"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLydduVo-Eiq-qhq-NrQbBejkT05SQtEyM/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T02:29:50Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.4G"
+      "summary": "2026-09-14T03:29:24Z reboost captions pid 37759 channel PLydduVo-Eiq-qhq-NrQbBejkT05SQtEyM"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T02:29:50Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.4G"
+      "summary": "2026-09-14T03:29:24Z reboost captions pid 37759 channel PLydduVo-Eiq-qhq-NrQbBejkT05SQtEyM"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T02:29:50Z captions after fill running=3"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T02:29:50Z captions after fill running=3"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T02:29:50Z STT already running — no second Whisper"
+      "summary": "2026-09-14T03:29:25Z reboost captions pid 37815 channel PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-14T02:29:50Z STT already running — no second Whisper"
+      "summary": "2026-09-14T03:29:25Z reboost captions pid 37815 channel PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK"
     }
   ],
   "reboost_log": [
-    "2026-09-14T02:29:50Z captions after fill running=3",
-    "2026-09-14T02:29:50Z STT already running — no second Whisper",
-    "2026-09-14T02:29:50Z STT already running — no second Whisper",
-    "backfill-captions.log: rate-limited — backoff 45s",
-    "rate-limited — backoff 45s",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "starting <path> <path> --channel-id PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-14T03:29:25Z reboost captions pid 37815 channel PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK",
+    "2026-09-14T03:29:25Z reboost captions pid 37815 channel PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK",
+    "backfill-captions.log: warning: no cookies file at <path> public captions still run cookieless",
     "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "rate-limited — backoff 45s"
+    "rate-limited — backoff 45s",
+    "warning: no cookies file at <path> public captions still run cookieless",
+    "warning: no cookies file at <path> public captions still run cookieless"
   ],
   "pm": {
     "token_free": true,
@@ -251,9 +281,20 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 4,
-    "total_n": 21,
+    "running_n": 9,
+    "total_n": 26,
     "jobs": [
+      {
+        "id": "live-cap-PLangBM27OtEA",
+        "title": "CS329A Self-Improving AI Agents",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLangBM27OtEA"
+      },
       {
         "id": "live-cap-PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
         "title": "Learning how to learn",
@@ -288,15 +329,59 @@
         "target_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt"
       },
       {
-        "id": "live-stt-UCJAPsTtcJJWGk8e-_CJL8TQ",
-        "title": "一个狠人",
+        "id": "live-cap-PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO",
+        "title": "Engineering",
         "status": "running",
         "raw_status": "running",
-        "class": "ram_heavy",
-        "priority": 2,
+        "class": "cpu_light",
+        "priority": 1,
         "owner": "collector-live",
-        "notes": "live STT channel",
-        "target_id": "UCJAPsTtcJJWGk8e-_CJL8TQ"
+        "notes": "live captions target",
+        "target_id": "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO"
+      },
+      {
+        "id": "live-cap-PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc",
+        "title": "The Age of A.I.",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc"
+      },
+      {
+        "id": "live-cap-PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X",
+        "title": "Stanford CS230: Deep Learning I Autumn 2025",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X"
+      },
+      {
+        "id": "live-cap-PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5",
+        "title": "AI Product Management",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5"
+      },
+      {
+        "id": "live-cap-PLydduVo-Eiq-qhq-NrQbBejkT05SQtEyM",
+        "title": "章濤投資日記",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLydduVo-Eiq-qhq-NrQbBejkT05SQtEyM"
       },
       {
         "id": "yt-ch-rest",
@@ -521,5 +606,6 @@
       }
     ],
     "live_overlay": true
-  }
+  },
+  "note": "Heartbeat from cron. Not a Jarvis tick. No cookie bytes, no transcripts."
 }
