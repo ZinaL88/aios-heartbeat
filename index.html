@@ -177,7 +177,7 @@ body.editing #editTools { display:block; }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">5925</div><div class="s" id="mSttSub">5925 done · 2492 pending · Paused</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">5688</div><div class="s" id="mCapSub">5688 done · 5606 left · Running</div></div>
-  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">3.2G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">3.3G</div><div class="s" id="mRamSub">of 15.6G</div></div>
   <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-15 17:02 HKT</div></div>
 </section>
 
@@ -195,20 +195,20 @@ body.editing #editTools { display:block; }
       <p class="ch" id="sttCh">Paused · backlog 2492</p>
       <div class="row"><span class="big" id="sttNum">5925</span><span class="mono" id="sttFile">5925 done · 2492 pending</span></div>
       <p class="mono overdue" id="sttEta">ETA overdue · worker stopped</p>
-      <p class="mono" id="sttDisk">5925 transcripts on disk · RAM 3.2 of 15.6G · load 0.18</p>
+      <p class="mono" id="sttDisk">5925 transcripts on disk · RAM 3.3 of 15.6G · load 0.21</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">3.2 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">0.18</span></li>
+      <li><span>RAM free</span><span id="boxRam">3.3 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">0.21</span></li>
       <li><span>Disk</span><span id="boxDisk">108G</span></li>
       <li><span>Tmp</span><span id="boxTmp">24M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
       <li><span>Next ping</span><span id="boxCron">2026-09-15 17:05 HKT</span></li>
-      <li><span>Jobs</span><span id="boxJobs">captions on · Whisper blocked until 6.0G (now 3.2G)</span></li>
+      <li><span>Jobs</span><span id="boxJobs">captions on · Whisper blocked until 6.0G (now 3.3G)</span></li>
       <li><span>RAM gate</span><span id="boxGate">6.0G</span></li>
     </ul>
     <div class="pills" style="margin-top:10px" id="boxPills">
@@ -217,9 +217,9 @@ body.editing #editTools { display:block; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.83G</span> · node ×32</li><li><span class="mono">0.12G</span> · plank ×3</li><li><span class="mono">0.11G</span> · Xvfb ×3</li><li><span class="mono">0.08G</span> · bash ×36</li><li><span class="mono">0.07G</span> · xfwm4 ×3</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.05G</span> · python3 ×2</li><li><span class="mono">0.04G</span> · x11vnc ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.83G</span> · node ×32</li><li><span class="mono">0.12G</span> · plank ×3</li><li><span class="mono">0.11G</span> · python3 ×3</li><li><span class="mono">0.11G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · websockify ×3</li><li><span class="mono">0.09G</span> · bash ×37</li><li><span class="mono">0.07G</span> · xfwm4 ×3</li><li><span class="mono">0.04G</span> · x11vnc ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-15T09:02:35Z captions after fill running=1</li><li class="mono">2026-09-15T09:02:35Z skip STT — MemAvailable 3.2G &lt; 6G (captions may still run)</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-15T09:02:55Z captions after fill running=1</li><li class="mono">2026-09-15T09:02:55Z skip STT — MemAvailable 3.3G &lt; 6G (captions may still run)</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
