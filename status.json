@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T15:25:10Z",
-  "written_at_hkt": "2026-09-15 23:25 HKT",
+  "written_at_utc": "2026-09-15T15:29:58Z",
+  "written_at_hkt": "2026-09-15 23:29 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -31,7 +31,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.57,
+        "rss_gi": 2.6,
         "n": 32
       },
       {
@@ -52,7 +52,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.08,
-        "n": 37
+        "n": 36
       },
       {
         "comm": "python3",
@@ -88,7 +88,7 @@
       "sreclaimable_gi": 0.3,
       "committed_gi": 4.3
     },
-    "load1": 0.24,
+    "load1": 0.49,
     "disk_avail": "111G",
     "tmp_du": "3.7M"
   },
@@ -102,7 +102,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "CITqtY2u8lk",
+    "last_id": "ysfJpHCpzls",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -123,8 +123,8 @@
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
         "pending": 656,
-        "done": 6017,
-        "transcripts_on_disk": 6017,
+        "done": 6021,
+        "transcripts_on_disk": 6021,
         "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
@@ -132,7 +132,7 @@
         "eta_min": 15744,
         "eta_hkt": "2026-09-26 21:01 HKT",
         "jobs": 1,
-        "pending_global": 2470,
+        "pending_global": 2469,
         "eta_deadline_utc": "2026-09-26T13:01:21Z",
         "eta_frozen": true,
         "overdue": false,
@@ -149,26 +149,26 @@
           "理財",
           "Statistics"
         ],
-        "done": 5780,
-        "left": 804,
+        "done": 5784,
+        "left": 796,
         "total": 15597,
-        "no_sub": 1175,
+        "no_sub": 1179,
         "eta_min": 100,
-        "eta_hkt": "2026-09-16 01:05 HKT",
+        "eta_hkt": "2026-09-16 01:09 HKT",
         "inflight": null,
         "jobs": 2,
-        "left_global": 5511,
-        "eta_deadline_utc": "2026-09-15T17:05:10Z",
+        "left_global": 5503,
+        "eta_deadline_utc": "2026-09-15T17:09:58Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 6017,
-      "stt_pending": 2470,
-      "captions_done": 5780,
-      "captions_left": 5511,
+      "stt_done": 6021,
+      "stt_pending": 2469,
+      "captions_done": 5784,
+      "captions_left": 5503,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -181,8 +181,8 @@
         {
           "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
           "name": "理財",
-          "stt_done": 997,
-          "captions_done": 997
+          "stt_done": 998,
+          "captions_done": 998
         },
         {
           "id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
@@ -235,8 +235,8 @@
         {
           "id": "PLbVaWSxd4rLI-VJHIosfjDSggCEhfZqgx",
           "name": "Statistics",
-          "stt_done": 72,
-          "captions_done": 72
+          "stt_done": 75,
+          "captions_done": 75
         },
         {
           "id": "PL1328115D3D8A2566",
@@ -317,7 +317,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 9336,
+      "captions_files_on_disk": 9340,
       "source": "inventory+disk"
     }
   },
@@ -348,48 +348,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T15:24:42Z STT already running — no second Whisper"
+      "summary": "2026-09-15T15:29:26Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T15:24:42Z STT already running — no second Whisper"
+      "summary": "2026-09-15T15:29:57Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T15:25:09Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.7G cap_signal=1"
+      "summary": "2026-09-15T15:29:57Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.7G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T15:25:09Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.7G cap_signal=1"
+      "summary": "2026-09-15T15:29:57Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.7G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T15:25:09Z captions after fill running=2"
+      "summary": "2026-09-15T15:29:57Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T15:25:09Z captions after fill running=2"
+      "summary": "2026-09-15T15:29:57Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T15:25:09Z STT already running — no second Whisper"
+      "summary": "2026-09-15T15:29:57Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T15:25:09Z STT already running — no second Whisper"
+      "summary": "2026-09-15T15:29:57Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-15T15:25:09Z captions after fill running=2",
-    "2026-09-15T15:25:09Z STT already running — no second Whisper",
-    "2026-09-15T15:25:09Z STT already running — no second Whisper",
+    "2026-09-15T15:29:57Z captions after fill running=2",
+    "2026-09-15T15:29:57Z STT already running — no second Whisper",
+    "2026-09-15T15:29:57Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
