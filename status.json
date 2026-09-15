@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T03:17:57Z",
-  "written_at_hkt": "2026-09-15 11:17 HKT",
+  "written_at_utc": "2026-09-15T03:18:53Z",
+  "written_at_hkt": "2026-09-15 11:18 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -31,7 +31,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.82,
+        "rss_gi": 2.76,
         "n": 32
       },
       {
@@ -46,8 +46,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 37
+        "rss_gi": 0.08,
+        "n": 36
       },
       {
         "comm": "python3",
@@ -83,12 +83,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.6,
-      "anon_gi": 1.8,
+      "anon_gi": 1.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 4.6
+      "committed_gi": 4.5
     },
-    "load1": 1.23,
+    "load1": 0.72,
     "disk_avail": "108G",
     "tmp_du": "24M"
   },
@@ -102,7 +102,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "iQuTvmOZWSQ",
+    "last_id": "R3Nudelh-Ho",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -159,7 +159,7 @@
         "jobs": 2,
         "left_global": 5706,
         "eta_deadline_utc": "2026-09-15T05:17:58Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -348,48 +348,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T03:17:49Z STT already running — no second Whisper"
+      "summary": "2026-09-15T03:18:21Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T03:17:49Z STT already running — no second Whisper"
+      "summary": "2026-09-15T03:18:53Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T03:17:57Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=3.3G cap_signal=1"
+      "summary": "2026-09-15T03:18:53Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=3.3G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T03:17:57Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=3.3G cap_signal=1"
+      "summary": "2026-09-15T03:18:53Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=3.3G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T03:17:57Z captions after fill running=2"
+      "summary": "2026-09-15T03:18:53Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T03:17:57Z captions after fill running=2"
+      "summary": "2026-09-15T03:18:53Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T03:17:57Z STT already running — no second Whisper"
+      "summary": "2026-09-15T03:18:53Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T03:17:57Z STT already running — no second Whisper"
+      "summary": "2026-09-15T03:18:53Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-15T03:17:57Z captions after fill running=2",
-    "2026-09-15T03:17:57Z STT already running — no second Whisper",
-    "2026-09-15T03:17:57Z STT already running — no second Whisper",
+    "2026-09-15T03:18:53Z captions after fill running=2",
+    "2026-09-15T03:18:53Z STT already running — no second Whisper",
+    "2026-09-15T03:18:53Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
