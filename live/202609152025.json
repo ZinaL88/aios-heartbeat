@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T12:28:46Z",
-  "written_at_hkt": "2026-09-15 20:28 HKT",
+  "written_at_utc": "2026-09-15T12:29:24Z",
+  "written_at_hkt": "2026-09-15 20:29 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -18,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.2,
+    "mem_available_gi": 3.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.84,
+        "rss_gi": 2.82,
         "n": 32
       },
       {
@@ -38,8 +38,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
+        "rss_gi": 0.09,
+        "n": 37
       },
       {
         "comm": "xfwm4",
@@ -75,12 +75,12 @@
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 2.1,
-      "anon_gi": 1.8,
+      "anon_gi": 1.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 4.6
     },
-    "load1": 0.25,
+    "load1": 0.19,
     "disk_avail": "108G",
     "tmp_du": "24M"
   },
@@ -91,32 +91,32 @@
   },
   "collector": {
     "found": true,
-    "done": 685,
+    "done": 686,
     "total": 863,
     "inflight": null,
-    "last_id": "Bue05mPPoFw",
+    "last_id": "ubXJRtEnPEk",
     "channel_id": null,
     "inventory": {
       "public_total": 863,
-      "public_done": 685,
+      "public_done": 686,
       "members_total": null,
       "members_done": null,
       "pending_stt_n": 0,
       "pending_stt_listed": 136,
-      "transcripts_on_disk": 685,
-      "captions_done": 685,
-      "captions_left": 31,
+      "transcripts_on_disk": 686,
+      "captions_done": 686,
+      "captions_left": 30,
       "captions_no_sub": 136,
       "source": "inventory+disk",
-      "public_left": 178
+      "public_left": 177
     },
     "tracks": {
       "stt": {
         "running": false,
         "channel_id": null,
         "pending": 2480,
-        "done": 5964,
-        "transcripts_on_disk": 5964,
+        "done": 5965,
+        "transcripts_on_disk": 5965,
         "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
@@ -138,26 +138,26 @@
         "target_names": [
           "Learning how to learn"
         ],
-        "done": 5727,
-        "left": 31,
+        "done": 5728,
+        "left": 30,
         "total": 15597,
         "no_sub": 136,
         "eta_min": 8,
-        "eta_hkt": "2026-09-15 20:26 HKT",
+        "eta_hkt": "2026-09-15 20:37 HKT",
         "inflight": null,
         "jobs": 1,
-        "left_global": 5567,
-        "eta_deadline_utc": "2026-09-15T12:26:11Z",
-        "eta_frozen": true,
-        "overdue": true,
+        "left_global": 5566,
+        "eta_deadline_utc": "2026-09-15T12:37:24Z",
+        "eta_frozen": false,
+        "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 5964,
+      "stt_done": 5965,
       "stt_pending": 2480,
-      "captions_done": 5727,
-      "captions_left": 5567,
+      "captions_done": 5728,
+      "captions_left": 5566,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -182,8 +182,8 @@
         {
           "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
           "name": "Learning how to learn",
-          "stt_done": 685,
-          "captions_done": 685
+          "stt_done": 686,
+          "captions_done": 686
         },
         {
           "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
@@ -306,7 +306,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 9256,
+      "captions_files_on_disk": 9257,
       "source": "inventory+disk"
     }
   },
@@ -318,7 +318,7 @@
     "next_cron_utc": "2026-09-15T12:30:00Z",
     "next_cron_hkt": "2026-09-15 20:30 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.2G)",
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.3G)",
     "job_restart_at_hkt": "2026-09-15 20:30 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -337,48 +337,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T12:28:45Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T12:29:23Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T12:28:45Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T12:29:23Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T12:28:45Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-15T12:29:23Z captions running=1 target=1 stt_live=none mem=3.3G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T12:28:45Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-15T12:29:23Z captions running=1 target=1 stt_live=none mem=3.3G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T12:28:45Z captions after fill running=1"
+      "summary": "2026-09-15T12:29:23Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T12:28:45Z captions after fill running=1"
+      "summary": "2026-09-15T12:29:23Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T12:28:45Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-15T12:29:23Z skip STT — MemAvailable 3.3G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T12:28:45Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-15T12:29:23Z skip STT — MemAvailable 3.3G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-15T12:28:45Z captions after fill running=1",
-    "2026-09-15T12:28:45Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
-    "2026-09-15T12:28:45Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
+    "2026-09-15T12:29:23Z captions after fill running=1",
+    "2026-09-15T12:29:23Z skip STT — MemAvailable 3.3G < 6G (captions may still run)",
+    "2026-09-15T12:29:23Z skip STT — MemAvailable 3.3G < 6G (captions may still run)",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
