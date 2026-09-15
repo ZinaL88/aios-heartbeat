@@ -1,12 +1,12 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T23:29:18Z",
+  "written_at_utc": "2026-09-15T23:29:23Z",
   "written_at_hkt": "2026-09-16 07:29 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 3,
     "stt_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
     "captions_channel": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
@@ -16,21 +16,21 @@
         "cmd": "proc"
       },
       {
-        "pid": 493848,
-        "cmd": "proc"
-      },
-      {
         "pid": 412055,
         "cmd": "proc"
       },
       {
         "pid": 493792,
         "cmd": "proc"
+      },
+      {
+        "pid": 493842,
+        "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 3.3,
+    "mem_available_gi": 3.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -49,29 +49,29 @@
         "n": 3
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.11,
-        "n": 2
-      },
-      {
         "comm": "Xvfb",
         "rss_gi": 0.11,
         "n": 3
       },
       {
         "comm": "python3",
-        "rss_gi": 0.1,
-        "n": 6
+        "rss_gi": 0.09,
+        "n": 5
       },
       {
         "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 37
+        "rss_gi": 0.08,
+        "n": 36
       },
       {
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.05,
+        "n": 1
       },
       {
         "comm": "x11vnc",
@@ -87,12 +87,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.1,
-      "anon_gi": 1.8,
+      "anon_gi": 1.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 4.6
+      "committed_gi": 4.5
     },
-    "load1": 0.65,
+    "load1": 0.68,
     "disk_avail": "110G",
     "tmp_du": "4.0M"
   },
@@ -106,7 +106,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "bsikiA-rqwA",
+    "last_id": "myzMuyJmt5w",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -129,13 +129,13 @@
         "pending": 656,
         "done": 6279,
         "transcripts_on_disk": 6279,
-        "inflight": "myzMuyJmt5w",
+        "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 15744,
         "eta_hkt": "2026-09-26 21:01 HKT",
-        "jobs": 2,
+        "jobs": 1,
         "pending_global": 2351,
         "eta_deadline_utc": "2026-09-26T13:01:21Z",
         "eta_frozen": true,
@@ -354,52 +354,52 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T23:29:17Z reboost captions pid 493842 channel PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T23:29:17Z reboost captions pid 493842 channel PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T23:29:18Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T23:29:18Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-15T23:29:18Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T23:29:18Z STT already running — no second Whisper"
+      "summary": "2026-09-15T23:29:22Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:29:23Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.1G cap_signal=none"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:29:23Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.1G cap_signal=none"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:29:23Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:29:23Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:29:23Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:29:23Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-15T23:29:18Z captions after fill running=3",
-    "2026-09-15T23:29:18Z STT already running — no second Whisper",
-    "2026-09-15T23:29:18Z STT already running — no second Whisper",
+    "2026-09-15T23:29:23Z captions after fill running=3",
+    "2026-09-15T23:29:23Z STT already running — no second Whisper",
+    "2026-09-15T23:29:23Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
-    "warning: no cookies file at <path> public captions still run cookieless",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
+    "rate-limited — backoff 45s",
+    "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans-en': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
   ],
   "pm": {
