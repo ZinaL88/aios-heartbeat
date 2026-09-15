@@ -1,12 +1,12 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T23:34:24Z",
+  "written_at_utc": "2026-09-15T23:34:40Z",
   "written_at_hkt": "2026-09-16 07:34 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 1,
+    "whisper_n": 2,
     "backfill_n": 3,
     "stt_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
     "captions_channel": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
@@ -16,31 +16,36 @@
         "cmd": "proc"
       },
       {
+        "pid": 498584,
+        "cmd": "proc"
+      },
+      {
         "pid": 412055,
         "cmd": "proc"
       },
       {
         "pid": 493792,
         "cmd": "proc"
-      },
-      {
-        "pid": 493842,
-        "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 3.3,
+    "mem_available_gi": 3.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.77,
+        "rss_gi": 2.78,
         "n": 32
       },
       {
         "comm": "plank",
         "rss_gi": 0.2,
+        "n": 3
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.16,
         "n": 3
       },
       {
@@ -55,13 +60,13 @@
       },
       {
         "comm": "python3",
-        "rss_gi": 0.09,
-        "n": 5
+        "rss_gi": 0.11,
+        "n": 6
       },
       {
         "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 37
+        "rss_gi": 0.08,
+        "n": 36
       },
       {
         "comm": "websockify",
@@ -69,30 +74,25 @@
         "n": 2
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.06,
+        "comm": "ffmpeg",
+        "rss_gi": 0.05,
         "n": 1
       },
       {
         "comm": "x11vnc",
         "rss_gi": 0.05,
         "n": 3
-      },
-      {
-        "comm": "bamfdaemon",
-        "rss_gi": 0.04,
-        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 2.1,
-      "anon_gi": 1.7,
+      "cached_gi": 2.8,
+      "anon_gi": 1.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 4.5
+      "committed_gi": 4.8
     },
-    "load1": 0.61,
+    "load1": 0.73,
     "disk_avail": "110G",
     "tmp_du": "4.0M"
   },
@@ -127,16 +127,16 @@
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
         "pending": 656,
-        "done": 6291,
-        "transcripts_on_disk": 6291,
-        "inflight": null,
+        "done": 6293,
+        "transcripts_on_disk": 6293,
+        "inflight": "qDqh2_VhoEY",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 15744,
         "eta_hkt": "2026-09-26 21:01 HKT",
-        "jobs": 1,
-        "pending_global": 2346,
+        "jobs": 2,
+        "pending_global": 2344,
         "eta_deadline_utc": "2026-09-26T13:01:21Z",
         "eta_frozen": true,
         "overdue": false,
@@ -155,26 +155,26 @@
           "理財",
           "⚡️ Framework Thinking & Mental Models ⚡️"
         ],
-        "done": 6054,
-        "left": 818,
+        "done": 6056,
+        "left": 816,
         "total": 15597,
         "no_sub": 1167,
         "eta_min": 68,
         "eta_hkt": "2026-09-16 08:42 HKT",
         "inflight": null,
         "jobs": 3,
-        "left_global": 5230,
-        "eta_deadline_utc": "2026-09-16T00:42:25Z",
+        "left_global": 5228,
+        "eta_deadline_utc": "2026-09-16T00:42:41Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 6291,
-      "stt_pending": 2346,
-      "captions_done": 6054,
-      "captions_left": 5230,
+      "stt_done": 6293,
+      "stt_pending": 2344,
+      "captions_done": 6056,
+      "captions_left": 5228,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -187,8 +187,8 @@
         {
           "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
           "name": "理財",
-          "stt_done": 1121,
-          "captions_done": 1121
+          "stt_done": 1123,
+          "captions_done": 1123
         },
         {
           "id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
@@ -323,7 +323,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 9759,
+      "captions_files_on_disk": 9763,
       "source": "inventory+disk"
     }
   },
@@ -354,48 +354,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T23:34:08Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T23:34:08Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T23:34:24Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.4G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T23:34:24Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.4G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T23:34:24Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T23:34:24Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-15T23:34:24Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T23:34:24Z STT already running — no second Whisper"
+      "summary": "2026-09-15T23:34:40Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:34:40Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=11.6G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:34:40Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=11.6G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:34:40Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:34:40Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:34:40Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T23:34:40Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-15T23:34:24Z captions after fill running=3",
-    "2026-09-15T23:34:24Z STT already running — no second Whisper",
-    "2026-09-15T23:34:24Z STT already running — no second Whisper",
+    "2026-09-15T23:34:40Z captions after fill running=3",
+    "2026-09-15T23:34:40Z STT already running — no second Whisper",
+    "2026-09-15T23:34:40Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
