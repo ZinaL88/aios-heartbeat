@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T03:50:29Z",
+  "written_at_utc": "2026-09-15T03:50:42Z",
   "written_at_hkt": "2026-09-15 11:50 HKT",
   "token_free": true,
   "processes": {
@@ -22,12 +22,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.3,
+    "mem_available_gi": 3.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.84,
+        "rss_gi": 2.83,
         "n": 32
       },
       {
@@ -41,14 +41,9 @@
         "n": 3
       },
       {
-        "comm": "websockify",
-        "rss_gi": 0.1,
-        "n": 3
-      },
-      {
         "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 37
+        "rss_gi": 0.08,
+        "n": 36
       },
       {
         "comm": "xfwm4",
@@ -56,9 +51,19 @@
         "n": 3
       },
       {
+        "comm": "websockify",
+        "rss_gi": 0.07,
+        "n": 2
+      },
+      {
         "comm": "python3",
         "rss_gi": 0.06,
         "n": 3
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.06,
+        "n": 1
       },
       {
         "comm": "x11vnc",
@@ -69,11 +74,6 @@
         "comm": "csnaps",
         "rss_gi": 0.04,
         "n": 1
-      },
-      {
-        "comm": "flock",
-        "rss_gi": 0.04,
-        "n": 22
       }
     ],
     "meminfo": {
@@ -84,7 +84,7 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 4.6
     },
-    "load1": 0.15,
+    "load1": 0.19,
     "disk_avail": "108G",
     "tmp_du": "24M"
   },
@@ -95,42 +95,42 @@
   },
   "collector": {
     "found": true,
-    "done": 902,
+    "done": 903,
     "total": 3002,
     "inflight": null,
-    "last_id": "JYRyYlgzCbI",
+    "last_id": "udGaD3XcDXY",
     "channel_id": null,
     "inventory": {
       "public_total": 3002,
-      "public_done": 902,
+      "public_done": 903,
       "members_total": null,
       "members_done": null,
-      "pending_stt_n": 258,
+      "pending_stt_n": 257,
       "pending_stt_listed": 1160,
-      "transcripts_on_disk": 902,
-      "captions_done": 902,
-      "captions_left": 872,
+      "transcripts_on_disk": 903,
+      "captions_done": 903,
+      "captions_left": 871,
       "captions_no_sub": 1160,
       "source": "inventory+disk",
-      "public_left": 2100
+      "public_left": 2099
     },
     "tracks": {
       "stt": {
         "running": false,
         "channel_id": null,
-        "pending": 2565,
-        "done": 5848,
-        "transcripts_on_disk": 5848,
+        "pending": 2564,
+        "done": 5849,
+        "transcripts_on_disk": 5849,
         "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 0,
         "eta_min": 0,
-        "eta_hkt": "2026-09-25 13:09 HKT",
+        "eta_hkt": "2026-09-15 11:50 HKT",
         "jobs": 0,
-        "eta_deadline_utc": "2026-09-25T05:09:44Z",
-        "eta_frozen": true,
-        "overdue": false,
+        "eta_deadline_utc": "2026-09-15T03:50:43Z",
+        "eta_frozen": false,
+        "overdue": true,
         "worker_state": "paused"
       },
       "captions": {
@@ -144,26 +144,26 @@
           "理財",
           "Learning how to learn"
         ],
-        "done": 5611,
-        "left": 934,
+        "done": 5612,
+        "left": 933,
         "total": 15597,
         "no_sub": 1296,
         "eta_min": 117,
         "eta_hkt": "2026-09-15 13:47 HKT",
         "inflight": null,
         "jobs": 2,
-        "left_global": 5683,
-        "eta_deadline_utc": "2026-09-15T05:47:29Z",
+        "left_global": 5682,
+        "eta_deadline_utc": "2026-09-15T05:47:43Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 5848,
-      "stt_pending": 2565,
-      "captions_done": 5611,
-      "captions_left": 5683,
+      "stt_done": 5849,
+      "stt_pending": 2564,
+      "captions_done": 5612,
+      "captions_left": 5682,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -176,8 +176,8 @@
         {
           "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
           "name": "理財",
-          "stt_done": 902,
-          "captions_done": 902
+          "stt_done": 903,
+          "captions_done": 903
         },
         {
           "id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
@@ -312,7 +312,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 9088,
+      "captions_files_on_disk": 9089,
       "source": "inventory+disk"
     }
   },
@@ -324,7 +324,7 @@
     "next_cron_utc": "2026-09-15T03:55:00Z",
     "next_cron_hkt": "2026-09-15 11:55 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.3G)",
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.2G)",
     "job_restart_at_hkt": "2026-09-15 11:55 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -343,48 +343,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T03:50:10Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T03:50:10Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T03:50:29Z captions running=2 target=1 stt_live=none mem=3.3G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T03:50:29Z captions running=2 target=1 stt_live=none mem=3.3G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T03:50:29Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-15T03:50:29Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-15T03:50:29Z skip STT — MemAvailable 3.3G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T03:50:29Z skip STT — MemAvailable 3.3G < 6G (captions may still run)"
+      "summary": "2026-09-15T03:50:42Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T03:50:42Z captions running=2 target=1 stt_live=none mem=3.1G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T03:50:42Z captions running=2 target=1 stt_live=none mem=3.1G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T03:50:42Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T03:50:42Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T03:50:42Z skip STT — MemAvailable 3.1G < 6G (captions may still run)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-15T03:50:42Z skip STT — MemAvailable 3.1G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-15T03:50:29Z captions after fill running=2",
-    "2026-09-15T03:50:29Z skip STT — MemAvailable 3.3G < 6G (captions may still run)",
-    "2026-09-15T03:50:29Z skip STT — MemAvailable 3.3G < 6G (captions may still run)",
+    "2026-09-15T03:50:42Z captions after fill running=2",
+    "2026-09-15T03:50:42Z skip STT — MemAvailable 3.1G < 6G (captions may still run)",
+    "2026-09-15T03:50:42Z skip STT — MemAvailable 3.1G < 6G (captions may still run)",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
