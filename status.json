@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T08:31:04Z",
-  "written_at_hkt": "2026-09-15 16:31 HKT",
+  "written_at_utc": "2026-09-15T08:32:09Z",
+  "written_at_hkt": "2026-09-15 16:32 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -23,7 +23,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.84,
+        "rss_gi": 2.82,
         "n": 32
       },
       {
@@ -80,7 +80,7 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 4.6
     },
-    "load1": 0.43,
+    "load1": 0.25,
     "disk_avail": "108G",
     "tmp_du": "24M"
   },
@@ -94,7 +94,7 @@
     "done": 968,
     "total": 3002,
     "inflight": null,
-    "last_id": "fkvIwq7oxzM",
+    "last_id": "wvXDB9dMdEo",
     "channel_id": null,
     "inventory": {
       "public_total": 3002,
@@ -337,48 +337,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T08:31:04Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T08:32:08Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T08:31:04Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T08:32:08Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T08:31:04Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-15T08:32:08Z captions running=1 target=1 stt_live=none mem=3.3G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T08:31:04Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-15T08:32:08Z captions running=1 target=1 stt_live=none mem=3.3G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T08:31:04Z captions after fill running=1"
+      "summary": "2026-09-15T08:32:08Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T08:31:04Z captions after fill running=1"
+      "summary": "2026-09-15T08:32:08Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T08:31:04Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-15T08:32:08Z skip STT — MemAvailable 3.3G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T08:31:04Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-15T08:32:08Z skip STT — MemAvailable 3.3G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-15T08:31:04Z captions after fill running=1",
-    "2026-09-15T08:31:04Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
-    "2026-09-15T08:31:04Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
+    "2026-09-15T08:32:08Z captions after fill running=1",
+    "2026-09-15T08:32:08Z skip STT — MemAvailable 3.3G < 6G (captions may still run)",
+    "2026-09-15T08:32:08Z skip STT — MemAvailable 3.3G < 6G (captions may still run)",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
