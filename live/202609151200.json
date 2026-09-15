@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T04:01:18Z",
+  "written_at_utc": "2026-09-15T04:01:38Z",
   "written_at_hkt": "2026-09-15 12:01 HKT",
   "token_free": true,
   "processes": {
@@ -27,7 +27,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.84,
+        "rss_gi": 2.85,
         "n": 32
       },
       {
@@ -36,14 +36,19 @@
         "n": 3
       },
       {
+        "comm": "python3",
+        "rss_gi": 0.11,
+        "n": 4
+      },
+      {
         "comm": "Xvfb",
         "rss_gi": 0.11,
         "n": 3
       },
       {
         "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
+        "rss_gi": 0.09,
+        "n": 37
       },
       {
         "comm": "xfwm4",
@@ -54,11 +59,6 @@
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
-      },
-      {
-        "comm": "python3",
-        "rss_gi": 0.06,
-        "n": 3
       },
       {
         "comm": "x11vnc",
@@ -84,9 +84,9 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 4.6
     },
-    "load1": 0.17,
+    "load1": 0.12,
     "disk_avail": "108G",
-    "tmp_du": "24M"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -98,7 +98,7 @@
     "done": 905,
     "total": 3002,
     "inflight": null,
-    "last_id": "OyEBoCSdDW4",
+    "last_id": "QIGDA2JRz8w",
     "channel_id": null,
     "inventory": {
       "public_total": 3002,
@@ -119,8 +119,8 @@
         "running": false,
         "channel_id": null,
         "pending": 2562,
-        "done": 5854,
-        "transcripts_on_disk": 5854,
+        "done": 5855,
+        "transcripts_on_disk": 5855,
         "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
@@ -144,26 +144,26 @@
           "理財",
           "Learning how to learn"
         ],
-        "done": 5617,
-        "left": 928,
+        "done": 5618,
+        "left": 927,
         "total": 15597,
         "no_sub": 1296,
         "eta_min": 116,
         "eta_hkt": "2026-09-15 13:57 HKT",
         "inflight": null,
         "jobs": 2,
-        "left_global": 5677,
-        "eta_deadline_utc": "2026-09-15T05:57:19Z",
+        "left_global": 5676,
+        "eta_deadline_utc": "2026-09-15T05:57:39Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 5854,
+      "stt_done": 5855,
       "stt_pending": 2562,
-      "captions_done": 5617,
-      "captions_left": 5677,
+      "captions_done": 5618,
+      "captions_left": 5676,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -188,8 +188,8 @@
         {
           "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
           "name": "Learning how to learn",
-          "stt_done": 657,
-          "captions_done": 657
+          "stt_done": 658,
+          "captions_done": 658
         },
         {
           "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
@@ -312,7 +312,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 9097,
+      "captions_files_on_disk": 9098,
       "source": "inventory+disk"
     }
   },
@@ -343,52 +343,52 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T04:01:18Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T04:01:38Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T04:01:18Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T04:01:38Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T04:01:18Z captions running=2 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-15T04:01:38Z captions running=2 target=1 stt_live=none mem=3.2G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T04:01:18Z captions running=2 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-15T04:01:38Z captions running=2 target=1 stt_live=none mem=3.2G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T04:01:18Z captions after fill running=2"
+      "summary": "2026-09-15T04:01:38Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T04:01:18Z captions after fill running=2"
+      "summary": "2026-09-15T04:01:38Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T04:01:18Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-15T04:01:38Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T04:01:18Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-15T04:01:38Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-15T04:01:18Z captions after fill running=2",
-    "2026-09-15T04:01:18Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
-    "2026-09-15T04:01:18Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
+    "2026-09-15T04:01:38Z captions after fill running=2",
+    "2026-09-15T04:01:38Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
+    "2026-09-15T04:01:38Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
+    "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans-my': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
   ],
   "pm": {
