@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T18:16:35Z",
-  "written_at_hkt": "2026-09-16 02:16 HKT",
+  "written_at_utc": "2026-09-15T18:17:41Z",
+  "written_at_hkt": "2026-09-16 02:17 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -31,7 +31,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.76,
+        "rss_gi": 2.68,
         "n": 32
       },
       {
@@ -45,19 +45,19 @@
         "n": 3
       },
       {
+        "comm": "python3",
+        "rss_gi": 0.13,
+        "n": 5
+      },
+      {
         "comm": "Xvfb",
         "rss_gi": 0.11,
         "n": 3
       },
       {
         "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 37
-      },
-      {
-        "comm": "python3",
         "rss_gi": 0.08,
-        "n": 4
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -83,12 +83,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.2,
-      "anon_gi": 1.7,
+      "anon_gi": 1.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 4.4
     },
-    "load1": 0.72,
+    "load1": 0.74,
     "disk_avail": "110G",
     "tmp_du": "3.8M"
   },
@@ -102,7 +102,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "R3Nudelh-Ho",
+    "last_id": "qrGsU5VdSx4",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -348,52 +348,52 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T18:16:17Z STT already running — no second Whisper"
+      "summary": "2026-09-15T18:17:20Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T18:16:17Z STT already running — no second Whisper"
+      "summary": "2026-09-15T18:17:20Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T18:16:35Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.4G cap_signal=1"
+      "summary": "2026-09-15T18:17:40Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.5G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T18:16:35Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.4G cap_signal=1"
+      "summary": "2026-09-15T18:17:40Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.5G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T18:16:35Z captions after fill running=2"
+      "summary": "2026-09-15T18:17:40Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T18:16:35Z captions after fill running=2"
+      "summary": "2026-09-15T18:17:40Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T18:16:35Z STT already running — no second Whisper"
+      "summary": "2026-09-15T18:17:40Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T18:16:35Z STT already running — no second Whisper"
+      "summary": "2026-09-15T18:17:40Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-15T18:16:35Z captions after fill running=2",
-    "2026-09-15T18:16:35Z STT already running — no second Whisper",
-    "2026-09-15T18:16:35Z STT already running — no second Whisper",
+    "2026-09-15T18:17:40Z captions after fill running=2",
+    "2026-09-15T18:17:40Z STT already running — no second Whisper",
+    "2026-09-15T18:17:40Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
-    "rate-limited — backoff 45s",
-    "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans-en': HTTP Error 429: Too Many Requests",
+    "sleep 45.0s",
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
   ],
   "pm": {
