@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T14:25:46Z",
-  "written_at_hkt": "2026-09-15 22:25 HKT",
+  "written_at_utc": "2026-09-15T14:26:33Z",
+  "written_at_hkt": "2026-09-15 22:26 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -22,12 +22,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.5,
+    "mem_available_gi": 3.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.55,
+        "rss_gi": 2.73,
         "n": 32
       },
       {
@@ -47,7 +47,7 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.09,
+        "rss_gi": 0.08,
         "n": 37
       },
       {
@@ -79,14 +79,14 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 3.0,
-      "anon_gi": 1.5,
+      "anon_gi": 1.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 4.2
+      "committed_gi": 4.3
     },
-    "load1": 0.26,
+    "load1": 0.17,
     "disk_avail": "111G",
-    "tmp_du": "3.5M"
+    "tmp_du": "3.6M"
   },
   "cookies": {
     "present": false,
@@ -98,7 +98,7 @@
     "done": 707,
     "total": 863,
     "inflight": null,
-    "last_id": "vTVkbMNy2as",
+    "last_id": "J6a-anGLyBE",
     "channel_id": null,
     "inventory": {
       "public_total": 863,
@@ -154,7 +154,7 @@
         "jobs": 2,
         "left_global": 5544,
         "eta_deadline_utc": "2026-09-15T16:04:46Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -324,7 +324,7 @@
     "next_cron_utc": "2026-09-15T14:30:00Z",
     "next_cron_hkt": "2026-09-15 22:30 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.5G)",
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.4G)",
     "job_restart_at_hkt": "2026-09-15 22:30 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -343,53 +343,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:45Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T14:26:33Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:45Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T14:26:33Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:45Z captions running=2 target=1 stt_live=none mem=3.5G cap_signal=1"
+      "summary": "2026-09-15T14:26:33Z captions running=2 target=1 stt_live=none mem=3.4G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:45Z captions running=2 target=1 stt_live=none mem=3.5G cap_signal=1"
+      "summary": "2026-09-15T14:26:33Z captions running=2 target=1 stt_live=none mem=3.4G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:45Z captions after fill running=2"
+      "summary": "2026-09-15T14:26:33Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:45Z captions after fill running=2"
+      "summary": "2026-09-15T14:26:33Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:45Z skip STT — MemAvailable 3.5G < 6G (captions may still run)"
+      "summary": "2026-09-15T14:26:33Z skip STT — MemAvailable 3.4G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:45Z skip STT — MemAvailable 3.5G < 6G (captions may still run)"
+      "summary": "2026-09-15T14:26:33Z skip STT — MemAvailable 3.4G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-15T14:25:45Z captions after fill running=2",
-    "2026-09-15T14:25:45Z skip STT — MemAvailable 3.5G < 6G (captions may still run)",
-    "2026-09-15T14:25:45Z skip STT — MemAvailable 3.5G < 6G (captions may still run)",
-    "backfill-captions.log: }",
-    "{",
-    "\"wrote_progress\": \"<path>",
-    "\"done_count\": 74",
-    "}"
+    "2026-09-15T14:26:33Z captions after fill running=2",
+    "2026-09-15T14:26:33Z skip STT — MemAvailable 3.4G < 6G (captions may still run)",
+    "2026-09-15T14:26:33Z skip STT — MemAvailable 3.4G < 6G (captions may still run)",
+    "backfill-captions.log: rate-limited — backoff 45s",
+    "rate-limited — backoff 45s",
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
+    "rate-limited — backoff 45s"
   ],
   "pm": {
     "token_free": true,
