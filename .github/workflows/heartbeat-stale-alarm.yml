@@ -1,0 +1,125 @@
+name: Heartbeat stale alarm
+
+# Token-free outside smoke alarm (Z L lock 2026-09-14):
+# Watches Pages freshness. Does NOT restart the box. Does NOT wake Jarvis.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Pages written_at age
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STALE_MINUTES: "12"
+        run: |
+          set -euo pipefail
+          STATUS_URL="https://zinal88.github.io/aios-heartbeat/status.json"
+          RAW_URL="https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json"
+          json=""
+          for url in "$STATUS_URL" "$RAW_URL"; do
+            if json=$(curl -fsSL --max-time 20 "${url}?t=$(date +%s)" 2>/dev/null); then
+              echo "fetched $url"
+              break
+            fi
+            json=""
+          done
+
+          gh label create heartbeat-stale -R ZinaL88/aios-heartbeat --color B60205 --description "Pages written_at too old or unreachable" 2>/dev/null || true
+
+          open_issue() {
+            local title="$1"
+            local body="$2"
+            local existing
+            existing=$(gh issue list -R ZinaL88/aios-heartbeat --label heartbeat-stale --state open --json number -q '.[0].number' || true)
+            if [[ -n "${existing:-}" ]]; then
+              gh issue comment -R ZinaL88/aios-heartbeat "$existing" --body "$body"
+            else
+              gh issue create -R ZinaL88/aios-heartbeat --title "$title" --label heartbeat-stale --body "$body"
+            fi
+          }
+
+          if [[ -z "$json" ]]; then
+            body="$(printf '%s\n' \
+              '## Outside smoke alarm' \
+              "Could not fetch status.json at $(date -u +%Y-%m-%dT%H:%MZ) UTC." \
+              '' \
+              'This Action **cannot** restart Grok Bot'"'"'s computer.' \
+              'On next Jarvis wake: shell recover from ai-os `ops/WHEN-BOT-RESUMES.md`.' \
+              '' \
+              'Board: https://zinal88.github.io/aios-heartbeat/?v=20')"
+            open_issue "Heartbeat STALE — status.json unreachable" "$body"
+            exit 0
+          fi
+
+          printf '%s' "$json" > /tmp/status.json
+          python3 <<'PY2'
+          import json, re, os
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          d = json.loads(Path("/tmp/status.json").read_text())
+          hkt = (d.get("written_at_hkt") or "").strip()
+          utc = (d.get("written_at_utc") or d.get("written_at") or "").strip()
+          now = datetime.now(timezone.utc)
+          parsed = None
+          if utc:
+              try:
+                  parsed = datetime.fromisoformat(utc.replace("Z", "+00:00"))
+              except Exception:
+                  parsed = None
+          if parsed is None and hkt:
+              m = re.match(r"(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})", hkt)
+              if m:
+                  local = datetime(*map(int, m.groups()), tzinfo=timezone(timedelta(hours=8)))
+                  parsed = local.astimezone(timezone.utc)
+          stale_after = float(os.environ.get("STALE_MINUTES") or "12")
+          if parsed is None:
+              Path("/tmp/age.env").write_text(f"STALE=1\nAGE_MIN=999\nHKT={hkt or 'unknown'}\nSTALE_AFTER={stale_after}\n")
+          else:
+              age_min = (now - parsed).total_seconds() / 60.0
+              Path("/tmp/age.env").write_text(
+                  f"STALE={1 if age_min > stale_after else 0}\nAGE_MIN={age_min:.1f}\nHKT={hkt}\nSTALE_AFTER={stale_after}\n"
+              )
+              print(f"written_at_hkt={hkt} age_min={age_min:.1f}")
+          PY2
+
+          set -a
+          # shellcheck disable=SC1091
+          source /tmp/age.env
+          set +a
+
+          if [[ "${STALE}" == "0" ]]; then
+            echo "OK: fresh (age ${AGE_MIN} min)"
+            for n in $(gh issue list -R ZinaL88/aios-heartbeat --label heartbeat-stale --state open --json number -q '.[].number' || true); do
+              gh issue close -R ZinaL88/aios-heartbeat "$n" --comment "Pages fresh again · written_at_hkt=${HKT} · age ${AGE_MIN} min (auto-closed by Actions)."
+            done
+            exit 0
+          fi
+
+          body="$(printf '%s\n' \
+            '## Outside smoke alarm (no Cursor tokens)' \
+            "Pages \`written_at_hkt\`: **${HKT}**" \
+            "Age: **~${AGE_MIN} minutes** (alarm if > ${STALE_AFTER} min)" \
+            "Checked at: $(date -u +%Y-%m-%dT%H:%MZ) UTC" \
+            '' \
+            '### What this means' \
+            'The public board stopped updating. Usually the box heartbeat died (VM reset) or git push failed.' \
+            '' \
+            '### What this Action cannot do' \
+            'It **cannot** restart processes on Grok Bot'"'"'s computer.' \
+            '' \
+            '### What to do' \
+            '1. Open Jarvis (any wake).' \
+            '2. Shell recover: `ops/WHEN-BOT-RESUMES.md` (ensure heartbeat + watchdog).' \
+            '3. Confirm board `written_at` moves.' \
+            '' \
+            'Board: https://zinal88.github.io/aios-heartbeat/?v=20')"
+          open_issue "Heartbeat STALE — board ping ~${AGE_MIN} min old" "$body"
