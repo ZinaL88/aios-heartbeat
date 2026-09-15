@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T09:39:40Z",
+  "written_at_utc": "2026-09-15T09:39:53Z",
   "written_at_hkt": "2026-09-15 17:39 HKT",
   "token_free": true,
   "processes": {
@@ -38,8 +38,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
+        "rss_gi": 0.09,
+        "n": 37
       },
       {
         "comm": "xfwm4",
@@ -80,7 +80,7 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 4.6
     },
-    "load1": 0.28,
+    "load1": 0.22,
     "disk_avail": "108G",
     "tmp_du": "24M"
   },
@@ -125,7 +125,7 @@
         "eta_hkt": "2026-09-15 17:39 HKT",
         "jobs": 0,
         "eta_deadline_utc": "2026-09-15T09:39:41Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": true,
         "worker_state": "paused"
       },
@@ -148,7 +148,7 @@
         "jobs": 1,
         "left_global": 5598,
         "eta_deadline_utc": "2026-09-15T12:57:41Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -337,48 +337,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T09:39:40Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T09:39:53Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T09:39:40Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T09:39:53Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T09:39:40Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-15T09:39:53Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T09:39:40Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-15T09:39:53Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T09:39:40Z captions after fill running=1"
+      "summary": "2026-09-15T09:39:53Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T09:39:40Z captions after fill running=1"
+      "summary": "2026-09-15T09:39:53Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T09:39:40Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-15T09:39:53Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T09:39:40Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-15T09:39:53Z skip STT — MemAvailable 3.2G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-15T09:39:40Z captions after fill running=1",
-    "2026-09-15T09:39:40Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
-    "2026-09-15T09:39:40Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
+    "2026-09-15T09:39:53Z captions after fill running=1",
+    "2026-09-15T09:39:53Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
+    "2026-09-15T09:39:53Z skip STT — MemAvailable 3.2G < 6G (captions may still run)",
     "backfill-captions.log: sleep 45.0s",
     "[934<path> W26QZzaJjuI 六個數字！決定你做幾多年先可以退休 (字幕)【施傅教學 | By 施傅】",
     "sleep 4.1s",
