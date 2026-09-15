@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T14:21:50Z",
+  "written_at_utc": "2026-09-15T14:21:54Z",
   "written_at_hkt": "2026-09-15 22:21 HKT",
   "token_free": true,
   "processes": {
@@ -26,7 +26,7 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.6,
+    "mem_available_gi": 3.5,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -45,14 +45,14 @@
         "n": 3
       },
       {
-        "comm": "bash",
-        "rss_gi": 0.1,
-        "n": 40
-      },
-      {
         "comm": "Xvfb",
         "rss_gi": 0.09,
         "n": 3
+      },
+      {
+        "comm": "bash",
+        "rss_gi": 0.09,
+        "n": 37
       },
       {
         "comm": "python3",
@@ -88,7 +88,7 @@
       "sreclaimable_gi": 0.3,
       "committed_gi": 4.3
     },
-    "load1": 0.34,
+    "load1": 0.47,
     "disk_avail": "111G",
     "tmp_du": "3.5M"
   },
@@ -133,7 +133,7 @@
         "eta_hkt": "2026-09-15 22:21 HKT",
         "jobs": 0,
         "eta_deadline_utc": "2026-09-15T14:21:50Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": true,
         "worker_state": "paused"
       },
@@ -160,7 +160,7 @@
         "jobs": 3,
         "left_global": 5545,
         "eta_deadline_utc": "2026-09-15T15:28:50Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -330,7 +330,7 @@
     "next_cron_utc": "2026-09-15T14:25:00Z",
     "next_cron_hkt": "2026-09-15 22:25 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.6G)",
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.5G)",
     "job_restart_at_hkt": "2026-09-15 22:25 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -349,48 +349,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:21:50Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T14:21:53Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:21:50Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T14:21:53Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:21:50Z captions running=3 target=3 stt_live=none mem=3.6G cap_signal=none"
+      "summary": "2026-09-15T14:21:53Z captions running=3 target=3 stt_live=none mem=3.5G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:21:50Z captions running=3 target=3 stt_live=none mem=3.6G cap_signal=none"
+      "summary": "2026-09-15T14:21:53Z captions running=3 target=3 stt_live=none mem=3.5G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:21:50Z captions after fill running=3"
+      "summary": "2026-09-15T14:21:53Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:21:50Z captions after fill running=3"
+      "summary": "2026-09-15T14:21:53Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:21:50Z skip STT — MemAvailable 3.6G < 6G (captions may still run)"
+      "summary": "2026-09-15T14:21:53Z skip STT — MemAvailable 3.5G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:21:50Z skip STT — MemAvailable 3.6G < 6G (captions may still run)"
+      "summary": "2026-09-15T14:21:53Z skip STT — MemAvailable 3.5G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-15T14:21:50Z captions after fill running=3",
-    "2026-09-15T14:21:50Z skip STT — MemAvailable 3.6G < 6G (captions may still run)",
-    "2026-09-15T14:21:50Z skip STT — MemAvailable 3.6G < 6G (captions may still run)",
+    "2026-09-15T14:21:53Z captions after fill running=3",
+    "2026-09-15T14:21:53Z skip STT — MemAvailable 3.5G < 6G (captions may still run)",
+    "2026-09-15T14:21:53Z skip STT — MemAvailable 3.5G < 6G (captions may still run)",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
