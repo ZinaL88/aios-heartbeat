@@ -1,13 +1,13 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-15T14:25:06Z",
+  "written_at_utc": "2026-09-15T14:25:46Z",
   "written_at_hkt": "2026-09-15 22:25 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
     "backfill": true,
     "whisper_n": 0,
-    "backfill_n": 3,
+    "backfill_n": 2,
     "stt_channel": null,
     "captions_channel": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
     "sample": [
@@ -18,10 +18,6 @@
       {
         "pid": 15713,
         "cmd": "proc"
-      },
-      {
-        "pid": 15784,
-        "cmd": "proc"
       }
     ]
   },
@@ -31,7 +27,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.56,
+        "rss_gi": 2.55,
         "n": 32
       },
       {
@@ -55,14 +51,14 @@
         "n": 37
       },
       {
-        "comm": "python3",
-        "rss_gi": 0.07,
-        "n": 4
-      },
-      {
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
+      },
+      {
+        "comm": "python3",
+        "rss_gi": 0.06,
+        "n": 3
       },
       {
         "comm": "x11vnc",
@@ -86,9 +82,9 @@
       "anon_gi": 1.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 4.3
+      "committed_gi": 4.2
     },
-    "load1": 0.37,
+    "load1": 0.26,
     "disk_avail": "111G",
     "tmp_du": "3.5M"
   },
@@ -102,7 +98,7 @@
     "done": 707,
     "total": 863,
     "inflight": null,
-    "last_id": "txsScSC53-8",
+    "last_id": "vTVkbMNy2as",
     "channel_id": null,
     "inventory": {
       "public_total": 863,
@@ -139,27 +135,25 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN,PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ,PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
+        "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN,PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
         "targets": [
           "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-          "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
-          "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO"
+          "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
         ],
         "target_names": [
           "Learning how to learn",
-          "理財",
-          "LLM / AI"
+          "理財"
         ],
         "done": 5750,
-        "left": 800,
+        "left": 795,
         "total": 15597,
-        "no_sub": 1311,
-        "eta_min": 67,
-        "eta_hkt": "2026-09-15 23:32 HKT",
+        "no_sub": 1296,
+        "eta_min": 99,
+        "eta_hkt": "2026-09-16 00:04 HKT",
         "inflight": null,
-        "jobs": 3,
+        "jobs": 2,
         "left_global": 5544,
-        "eta_deadline_utc": "2026-09-15T15:32:06Z",
+        "eta_deadline_utc": "2026-09-15T16:04:46Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
@@ -349,53 +343,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:05Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T14:25:45Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:05Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-15T14:25:45Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:05Z captions running=3 target=1 stt_live=none mem=3.4G cap_signal=1"
+      "summary": "2026-09-15T14:25:45Z captions running=2 target=1 stt_live=none mem=3.5G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:05Z captions running=3 target=1 stt_live=none mem=3.4G cap_signal=1"
+      "summary": "2026-09-15T14:25:45Z captions running=2 target=1 stt_live=none mem=3.5G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:05Z captions after fill running=3"
+      "summary": "2026-09-15T14:25:45Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:05Z captions after fill running=3"
+      "summary": "2026-09-15T14:25:45Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:05Z skip STT — MemAvailable 3.4G < 6G (captions may still run)"
+      "summary": "2026-09-15T14:25:45Z skip STT — MemAvailable 3.5G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-15T14:25:05Z skip STT — MemAvailable 3.4G < 6G (captions may still run)"
+      "summary": "2026-09-15T14:25:45Z skip STT — MemAvailable 3.5G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-15T14:25:05Z captions after fill running=3",
-    "2026-09-15T14:25:05Z skip STT — MemAvailable 3.4G < 6G (captions may still run)",
-    "2026-09-15T14:25:05Z skip STT — MemAvailable 3.4G < 6G (captions may still run)",
-    "backfill-captions.log: rate-limited — backoff 45s",
-    "rate-limited — backoff 45s",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "rate-limited — backoff 45s"
+    "2026-09-15T14:25:45Z captions after fill running=2",
+    "2026-09-15T14:25:45Z skip STT — MemAvailable 3.5G < 6G (captions may still run)",
+    "2026-09-15T14:25:45Z skip STT — MemAvailable 3.5G < 6G (captions may still run)",
+    "backfill-captions.log: }",
+    "{",
+    "\"wrote_progress\": \"<path>",
+    "\"done_count\": 74",
+    "}"
   ],
   "pm": {
     "token_free": true,
@@ -407,20 +401,9 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 3,
-    "total_n": 20,
+    "running_n": 2,
+    "total_n": 19,
     "jobs": [
-      {
-        "id": "live-cap-PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
-        "title": "LLM / AI",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO"
-      },
       {
         "id": "live-cap-PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
         "title": "Learning how to learn",
