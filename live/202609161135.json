@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-16T03:37:25Z",
+  "written_at_utc": "2026-09-16T03:37:48Z",
   "written_at_hkt": "2026-09-16 11:37 HKT",
   "token_free": true,
   "processes": {
@@ -16,7 +16,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 711656,
+        "pid": 712041,
         "cmd": "proc"
       },
       {
@@ -30,12 +30,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.3,
+    "mem_available_gi": 3.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.77,
+        "rss_gi": 2.78,
         "n": 32
       },
       {
@@ -60,8 +60,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
+        "rss_gi": 0.09,
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -70,7 +70,7 @@
       },
       {
         "comm": "yt-dlp",
-        "rss_gi": 0.05,
+        "rss_gi": 0.06,
         "n": 1
       },
       {
@@ -87,12 +87,12 @@
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 1.9,
-      "anon_gi": 1.7,
+      "anon_gi": 1.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 4.5
     },
-    "load1": 0.34,
+    "load1": 0.98,
     "disk_avail": "110G",
     "tmp_du": "4.2M"
   },
@@ -106,7 +106,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "tRfwvnfVhNQ",
+    "last_id": "p6q-893UZ1o",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -127,9 +127,9 @@
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
         "pending": 656,
-        "done": 6532,
-        "transcripts_on_disk": 6532,
-        "inflight": "BCU2azFFosQ",
+        "done": 6533,
+        "transcripts_on_disk": 6533,
+        "inflight": "iyszeGLPZWA",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
@@ -153,26 +153,26 @@
           "理財",
           "MIT RES.6-012 Introduction to Probability, Spring 2018"
         ],
-        "done": 6295,
-        "left": 574,
+        "done": 6296,
+        "left": 573,
         "total": 15597,
         "no_sub": 1160,
         "eta_min": 72,
         "eta_hkt": "2026-09-16 12:49 HKT",
         "inflight": null,
         "jobs": 2,
-        "left_global": 4989,
-        "eta_deadline_utc": "2026-09-16T04:49:25Z",
+        "left_global": 4988,
+        "eta_deadline_utc": "2026-09-16T04:49:48Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 6532,
+      "stt_done": 6533,
       "stt_pending": 2307,
-      "captions_done": 6295,
-      "captions_left": 4989,
+      "captions_done": 6296,
+      "captions_left": 4988,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -203,8 +203,8 @@
         {
           "id": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
           "name": "MIT RES.6-012 Introduction to Probability, Spring 2018",
-          "stt_done": 235,
-          "captions_done": 235
+          "stt_done": 236,
+          "captions_done": 236
         },
         {
           "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
@@ -321,7 +321,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 10211,
+      "captions_files_on_disk": 10212,
       "source": "inventory+disk"
     }
   },
@@ -352,48 +352,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T03:36:53Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-16T03:37:24Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-16T03:37:24Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.5G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-16T03:37:24Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.5G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-16T03:37:24Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-16T03:37:24Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-16T03:37:24Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-16T03:37:24Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T03:37:47Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.3G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T03:37:47Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.3G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T03:37:47Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T03:37:47Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T03:37:47Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T03:37:47Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-16T03:37:24Z captions after fill running=2",
-    "2026-09-16T03:37:24Z STT already running — no second Whisper",
-    "2026-09-16T03:37:24Z STT already running — no second Whisper",
+    "2026-09-16T03:37:47Z captions after fill running=2",
+    "2026-09-16T03:37:47Z STT already running — no second Whisper",
+    "2026-09-16T03:37:47Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
