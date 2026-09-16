@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-16T06:43:35Z",
+  "written_at_utc": "2026-09-16T06:43:42Z",
   "written_at_hkt": "2026-09-16 14:43 HKT",
   "token_free": true,
   "processes": {
@@ -30,12 +30,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.4,
+    "mem_available_gi": 3.8,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.36,
+        "rss_gi": 2.03,
         "n": 25
       },
       {
@@ -49,29 +49,24 @@
         "n": 2
       },
       {
-        "comm": "websockify",
-        "rss_gi": 0.1,
-        "n": 3
+        "comm": "python3",
+        "rss_gi": 0.08,
+        "n": 4
       },
       {
-        "comm": "python3",
-        "rss_gi": 0.09,
-        "n": 5
+        "comm": "websockify",
+        "rss_gi": 0.07,
+        "n": 2
       },
       {
         "comm": "bash",
         "rss_gi": 0.07,
-        "n": 30
+        "n": 29
       },
       {
         "comm": "Xvfb",
         "rss_gi": 0.06,
         "n": 2
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.05,
-        "n": 1
       },
       {
         "comm": "csnaps",
@@ -82,17 +77,22 @@
         "comm": "x11vnc",
         "rss_gi": 0.03,
         "n": 2
+      },
+      {
+        "comm": "bamfdaemon",
+        "rss_gi": 0.03,
+        "n": 2
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.7,
-      "anon_gi": 1.6,
+      "anon_gi": 1.2,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 3.8
+      "committed_gi": 3.5
     },
-    "load1": 0.68,
+    "load1": 0.66,
     "disk_avail": "110G",
     "tmp_du": "512K"
   },
@@ -153,7 +153,7 @@
           "理財",
           "Crypto"
         ],
-        "done": 6399,
+        "done": 6400,
         "left": 739,
         "total": 15597,
         "no_sub": 1228,
@@ -163,7 +163,7 @@
         "jobs": 2,
         "left_global": 4835,
         "eta_deadline_utc": "2026-09-16T08:15:36Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -171,7 +171,7 @@
     "progress": {
       "stt_done": 6636,
       "stt_pending": 2307,
-      "captions_done": 6399,
+      "captions_done": 6400,
       "captions_left": 4835,
       "captions_total": 15597,
       "channels_touched": 62,
@@ -252,7 +252,7 @@
           "id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
           "name": "Crypto",
           "stt_done": 89,
-          "captions_done": 89
+          "captions_done": 90
         },
         {
           "id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
@@ -321,7 +321,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 10365,
+      "captions_files_on_disk": 10366,
       "source": "inventory+disk"
     }
   },
@@ -352,48 +352,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T06:43:34Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.2G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-16T06:43:34Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.2G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-16T06:43:34Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-16T06:43:34Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "26la7jEBw3w --access public --limit 9999 --mode stt --model medium --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UCAxQ8sjHgjXh26la7jEBw3w/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "26la7jEBw3w --access public --limit 9999 --mode stt --model medium --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UCAxQ8sjHgjXh26la7jEBw3w/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-16T06:43:34Z reboost stt pid 31839 channel UCAxQ8sjHgjXh26la7jEBw3w"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-16T06:43:34Z reboost stt pid 31839 channel UCAxQ8sjHgjXh26la7jEBw3w"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T06:43:41Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.2G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T06:43:41Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.2G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T06:43:41Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T06:43:41Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T06:43:41Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-16T06:43:41Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-16T06:43:34Z starting <path> <path> --channel-id UCAxQ8sjHgjXh26la7jEBw3w --access public --limit 9999 --mode stt --model medium --inventory <path>",
-    "2026-09-16T06:43:34Z reboost stt pid 31839 channel UCAxQ8sjHgjXh26la7jEBw3w",
-    "2026-09-16T06:43:34Z reboost stt pid 31839 channel UCAxQ8sjHgjXh26la7jEBw3w",
+    "2026-09-16T06:43:41Z captions after fill running=2",
+    "2026-09-16T06:43:41Z STT already running — no second Whisper",
+    "2026-09-16T06:43:41Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
