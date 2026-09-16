@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-16T14:22:06Z",
+  "written_at_utc": "2026-09-16T14:22:47Z",
   "written_at_hkt": "2026-09-16 22:22 HKT",
   "token_free": true,
   "processes": {
@@ -16,7 +16,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 397219,
+        "pid": 397896,
         "cmd": "proc"
       },
       {
@@ -30,13 +30,18 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.3,
+    "mem_available_gi": 3.7,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.51,
+        "rss_gi": 2.17,
         "n": 25
+      },
+      {
+        "comm": "python3",
+        "rss_gi": 0.2,
+        "n": 6
       },
       {
         "comm": "plank",
@@ -47,11 +52,6 @@
         "comm": "xfwm4",
         "rss_gi": 0.11,
         "n": 2
-      },
-      {
-        "comm": "python3",
-        "rss_gi": 0.09,
-        "n": 5
       },
       {
         "comm": "Xvfb",
@@ -66,7 +66,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.07,
-        "n": 28
+        "n": 29
       },
       {
         "comm": "yt-dlp",
@@ -87,14 +87,14 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.1,
-      "anon_gi": 1.7,
+      "anon_gi": 1.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 3.8
     },
-    "load1": 1.26,
+    "load1": 0.97,
     "disk_avail": "110G",
-    "tmp_du": "856K"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -106,7 +106,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "QHf7PfVuxU0",
+    "last_id": "OZ_Q7xUt-Yc",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -129,7 +129,7 @@
         "pending": 656,
         "done": 6811,
         "transcripts_on_disk": 6811,
-        "inflight": "IpsJtWt8Gls",
+        "inflight": "QlwA-fR5bFs",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
@@ -163,7 +163,7 @@
         "jobs": 2,
         "left_global": 4621,
         "eta_deadline_utc": "2026-09-16T15:28:07Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -326,9 +326,7 @@
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-16T14:25:00Z",
     "next_cron_hkt": "2026-09-16 22:25 HKT",
@@ -352,52 +350,52 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T14:21:33Z STT already running — no second Whisper"
+      "summary": "2026-09-16T14:22:37Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T14:22:05Z skip — another reboost holds lock"
+      "summary": "2026-09-16T14:22:37Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T14:22:05Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.4G cap_signal=1"
+      "summary": "2026-09-16T14:22:46Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.8G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T14:22:05Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.4G cap_signal=1"
+      "summary": "2026-09-16T14:22:46Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.8G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T14:22:05Z captions after fill running=2"
+      "summary": "2026-09-16T14:22:46Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T14:22:05Z captions after fill running=2"
+      "summary": "2026-09-16T14:22:46Z captions after fill running=2"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T14:22:05Z STT already running — no second Whisper"
+      "summary": "2026-09-16T14:22:46Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T14:22:05Z STT already running — no second Whisper"
+      "summary": "2026-09-16T14:22:46Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-16T14:22:05Z captions after fill running=2",
-    "2026-09-16T14:22:05Z STT already running — no second Whisper",
-    "2026-09-16T14:22:05Z STT already running — no second Whisper",
+    "2026-09-16T14:22:46Z captions after fill running=2",
+    "2026-09-16T14:22:46Z STT already running — no second Whisper",
+    "2026-09-16T14:22:46Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
-    "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans-en': HTTP Error 429: Too Many Requests",
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
   ],
   "pm": {
