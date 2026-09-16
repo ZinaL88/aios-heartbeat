@@ -1,13 +1,13 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-16T04:09:06Z",
+  "written_at_utc": "2026-09-16T04:09:22Z",
   "written_at_hkt": "2026-09-16 12:09 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
     "whisper_n": 2,
-    "backfill_n": 1,
+    "backfill_n": 3,
     "stt_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
     "captions_channel": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
     "sample": [
@@ -16,11 +16,15 @@
         "cmd": "proc"
       },
       {
-        "pid": 740083,
+        "pid": 740849,
         "cmd": "proc"
       },
       {
         "pid": 493792,
+        "cmd": "proc"
+      },
+      {
+        "pid": 740711,
         "cmd": "proc"
       }
     ]
@@ -31,7 +35,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.76,
+        "rss_gi": 2.77,
         "n": 32
       },
       {
@@ -50,24 +54,24 @@
         "n": 3
       },
       {
-        "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
+        "comm": "yt-dlp",
+        "rss_gi": 0.11,
+        "n": 2
       },
       {
         "comm": "python3",
-        "rss_gi": 0.07,
-        "n": 4
+        "rss_gi": 0.11,
+        "n": 6
+      },
+      {
+        "comm": "bash",
+        "rss_gi": 0.09,
+        "n": 37
       },
       {
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.05,
-        "n": 1
       },
       {
         "comm": "x11vnc",
@@ -83,12 +87,12 @@
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 1.9,
-      "anon_gi": 1.7,
+      "anon_gi": 1.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 4.5
+      "committed_gi": 4.6
     },
-    "load1": 1.03,
+    "load1": 0.8,
     "disk_avail": "110G",
     "tmp_du": "4.2M"
   },
@@ -102,7 +106,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "jD-3anrHdVc",
+    "last_id": "G7nH4iWO17g",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -125,7 +129,7 @@
         "pending": 656,
         "done": 6550,
         "transcripts_on_disk": 6550,
-        "inflight": "5vA0BLLEljQ",
+        "inflight": "PXT6vMaYEkA",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
@@ -140,24 +144,28 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+        "channel_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ,PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU,PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
         "targets": [
-          "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
+          "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+          "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
+          "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6"
         ],
         "target_names": [
-          "理財"
+          "理財",
+          "⚡️ Framework Thinking & Mental Models ⚡️",
+          "MIT RES.6-012 Introduction to Probability, Spring 2018"
         ],
         "done": 6313,
-        "left": 532,
+        "left": 559,
         "total": 15597,
-        "no_sub": 1160,
-        "eta_min": 133,
+        "no_sub": 1167,
+        "eta_min": 47,
         "eta_hkt": "2026-09-16 14:22 HKT",
         "inflight": null,
-        "jobs": 1,
+        "jobs": 3,
         "left_global": 4971,
         "eta_deadline_utc": "2026-09-16T06:22:06Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -346,50 +354,50 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T04:08:34Z STT already running — no second Whisper"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T04:09:05Z skip — another reboost holds lock"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T04:09:05Z captions running=1 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.5G cap_signal=1"
+      "summary": "2026-09-16T04:09:20Z reboost captions pid 740764 channel PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T04:09:05Z captions running=1 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.5G cap_signal=1"
+      "summary": "2026-09-16T04:09:20Z reboost captions pid 740764 channel PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T04:09:05Z captions after fill running=1"
+      "summary": "2026-09-16T04:09:21Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T04:09:05Z captions after fill running=1"
+      "summary": "2026-09-16T04:09:21Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T04:09:05Z STT already running — no second Whisper"
+      "summary": "2026-09-16T04:09:21Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-16T04:09:05Z STT already running — no second Whisper"
+      "summary": "2026-09-16T04:09:21Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-16T04:09:05Z captions after fill running=1",
-    "2026-09-16T04:09:05Z STT already running — no second Whisper",
-    "2026-09-16T04:09:05Z STT already running — no second Whisper",
+    "2026-09-16T04:09:21Z captions after fill running=3",
+    "2026-09-16T04:09:21Z STT already running — no second Whisper",
+    "2026-09-16T04:09:21Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
-    "}",
+    "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
     "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
@@ -404,9 +412,20 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 2,
-    "total_n": 19,
+    "running_n": 4,
+    "total_n": 21,
     "jobs": [
+      {
+        "id": "live-cap-PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
+        "title": "MIT RES.6-012 Introduction to Probability, Spring 2018",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6"
+      },
       {
         "id": "live-cap-PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
         "title": "理財",
@@ -417,6 +436,17 @@
         "owner": "collector-live",
         "notes": "live captions target",
         "target_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
+      },
+      {
+        "id": "live-cap-PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
+        "title": "⚡️ Framework Thinking & Mental Models ⚡️",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU"
       },
       {
         "id": "live-stt-UCAxQ8sjHgjXh26la7jEBw3w",
