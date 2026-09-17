@@ -1,18 +1,22 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-17T07:37:55Z",
-  "written_at_hkt": "2026-09-17 15:37 HKT",
+  "written_at_utc": "2026-09-17T07:38:15Z",
+  "written_at_hkt": "2026-09-17 15:38 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 1,
+    "whisper_n": 2,
     "backfill_n": 3,
     "stt_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
     "captions_channel": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
     "sample": [
       {
-        "pid": 323922,
+        "pid": 348351,
+        "cmd": "proc"
+      },
+      {
+        "pid": 348372,
         "cmd": "proc"
       },
       {
@@ -21,10 +25,6 @@
       },
       {
         "pid": 345887,
-        "cmd": "proc"
-      },
-      {
-        "pid": 345947,
         "cmd": "proc"
       }
     ]
@@ -44,14 +44,14 @@
         "n": 2
       },
       {
+        "comm": "python3",
+        "rss_gi": 0.11,
+        "n": 6
+      },
+      {
         "comm": "xfwm4",
         "rss_gi": 0.11,
         "n": 2
-      },
-      {
-        "comm": "python3",
-        "rss_gi": 0.1,
-        "n": 5
       },
       {
         "comm": "websockify",
@@ -61,12 +61,17 @@
       {
         "comm": "bash",
         "rss_gi": 0.07,
-        "n": 28
+        "n": 29
       },
       {
         "comm": "Xvfb",
         "rss_gi": 0.06,
         "n": 2
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.06,
+        "n": 1
       },
       {
         "comm": "csnaps",
@@ -77,24 +82,19 @@
         "comm": "x11vnc",
         "rss_gi": 0.03,
         "n": 2
-      },
-      {
-        "comm": "bamfdaemon",
-        "rss_gi": 0.03,
-        "n": 2
       }
     ],
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 2.1,
-      "anon_gi": 1.3,
+      "anon_gi": 1.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 3.6
     },
-    "load1": 0.63,
+    "load1": 0.6,
     "disk_avail": "110G",
-    "tmp_du": "812K"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -106,7 +106,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "uwpCyRq6m1Q",
+    "last_id": "SRV1CxG0dm4",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -129,13 +129,13 @@
         "pending": 656,
         "done": 7160,
         "transcripts_on_disk": 7160,
-        "inflight": null,
+        "inflight": "jqiRISlLosk",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 15744,
         "eta_hkt": "2026-09-28 06:56 HKT",
-        "jobs": 1,
+        "jobs": 2,
         "pending_global": 2307,
         "eta_deadline_utc": "2026-09-27T22:56:10Z",
         "eta_frozen": true,
@@ -328,9 +328,7 @@
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-17T07:40:00Z",
     "next_cron_hkt": "2026-09-17 15:40 HKT",
@@ -354,48 +352,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T07:37:22Z STT already running — no second Whisper"
+      "summary": "2026-09-17T07:38:13Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.9G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T07:37:54Z skip — another reboost holds lock"
+      "summary": "2026-09-17T07:38:13Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.9G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T07:37:54Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.9G cap_signal=1"
+      "summary": "2026-09-17T07:38:13Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T07:37:54Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.9G cap_signal=1"
+      "summary": "2026-09-17T07:38:13Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T07:37:54Z captions after fill running=3"
+      "summary": "26la7jEBw3w --access public --limit 9999 --mode stt --model medium --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UCAxQ8sjHgjXh26la7jEBw3w/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T07:37:54Z captions after fill running=3"
+      "summary": "26la7jEBw3w --access public --limit 9999 --mode stt --model medium --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UCAxQ8sjHgjXh26la7jEBw3w/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T07:37:54Z STT already running — no second Whisper"
+      "summary": "2026-09-17T07:38:13Z reboost stt pid 348351 channel UCAxQ8sjHgjXh26la7jEBw3w"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T07:37:54Z STT already running — no second Whisper"
+      "summary": "2026-09-17T07:38:13Z reboost stt pid 348351 channel UCAxQ8sjHgjXh26la7jEBw3w"
     }
   ],
   "reboost_log": [
-    "2026-09-17T07:37:54Z captions after fill running=3",
-    "2026-09-17T07:37:54Z STT already running — no second Whisper",
-    "2026-09-17T07:37:54Z STT already running — no second Whisper",
+    "2026-09-17T07:38:13Z starting <path> <path> --channel-id UCAxQ8sjHgjXh26la7jEBw3w --access public --limit 9999 --mode stt --model medium --inventory <path>",
+    "2026-09-17T07:38:13Z reboost stt pid 348351 channel UCAxQ8sjHgjXh26la7jEBw3w",
+    "2026-09-17T07:38:13Z reboost stt pid 348351 channel UCAxQ8sjHgjXh26la7jEBw3w",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
