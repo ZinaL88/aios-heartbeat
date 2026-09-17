@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-17T00:58:37Z",
+  "written_at_utc": "2026-09-17T00:58:44Z",
   "written_at_hkt": "2026-09-17 08:58 HKT",
   "token_free": true,
   "processes": {
@@ -35,7 +35,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.12,
+        "rss_gi": 2.09,
         "n": 25
       },
       {
@@ -45,6 +45,11 @@
       },
       {
         "comm": "xfwm4",
+        "rss_gi": 0.11,
+        "n": 2
+      },
+      {
+        "comm": "yt-dlp",
         "rss_gi": 0.11,
         "n": 2
       },
@@ -61,17 +66,12 @@
       {
         "comm": "bash",
         "rss_gi": 0.07,
-        "n": 28
+        "n": 29
       },
       {
         "comm": "Xvfb",
         "rss_gi": 0.06,
         "n": 2
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.06,
-        "n": 1
       },
       {
         "comm": "csnaps",
@@ -90,11 +90,11 @@
       "anon_gi": 1.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 3.6
+      "committed_gi": 3.7
     },
-    "load1": 0.55,
+    "load1": 0.51,
     "disk_avail": "110G",
-    "tmp_du": "508K"
+    "tmp_du": "512K"
   },
   "cookies": {
     "present": false,
@@ -354,48 +354,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T00:58:36Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.6G cap_signal=none"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T00:58:36Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.6G cap_signal=none"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T00:58:36Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T00:58:36Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "26la7jEBw3w --access public --limit 9999 --mode stt --model medium --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UCAxQ8sjHgjXh26la7jEBw3w/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "26la7jEBw3w --access public --limit 9999 --mode stt --model medium --inventory /workspace/ai-os-tools/youtube-collector/data/channels/UCAxQ8sjHgjXh26la7jEBw3w/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-17T00:58:36Z reboost stt pid 28502 channel UCAxQ8sjHgjXh26la7jEBw3w"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-17T00:58:36Z reboost stt pid 28502 channel UCAxQ8sjHgjXh26la7jEBw3w"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T00:58:43Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.3G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T00:58:43Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.3G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T00:58:43Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T00:58:43Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T00:58:43Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T00:58:43Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-17T00:58:36Z starting <path> <path> --channel-id UCAxQ8sjHgjXh26la7jEBw3w --access public --limit 9999 --mode stt --model medium --inventory <path>",
-    "2026-09-17T00:58:36Z reboost stt pid 28502 channel UCAxQ8sjHgjXh26la7jEBw3w",
-    "2026-09-17T00:58:36Z reboost stt pid 28502 channel UCAxQ8sjHgjXh26la7jEBw3w",
+    "2026-09-17T00:58:43Z captions after fill running=3",
+    "2026-09-17T00:58:43Z STT already running — no second Whisper",
+    "2026-09-17T00:58:43Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
