@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-17T20:04:03Z",
+  "written_at_utc": "2026-09-17T20:04:12Z",
   "written_at_hkt": "2026-09-18 04:04 HKT",
   "token_free": true,
   "processes": {
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.5,
+    "mem_available_gi": 5.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.5,
+        "rss_gi": 2.51,
         "n": 32
       },
       {
         "comm": "python",
-        "rss_gi": 2.21,
+        "rss_gi": 2.34,
         "n": 4
       },
       {
@@ -49,14 +49,14 @@
         "n": 3
       },
       {
-        "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
+        "comm": "websockify",
+        "rss_gi": 0.1,
+        "n": 3
       },
       {
-        "comm": "websockify",
-        "rss_gi": 0.07,
-        "n": 2
+        "comm": "bash",
+        "rss_gi": 0.09,
+        "n": 37
       },
       {
         "comm": "plank",
@@ -87,14 +87,14 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.9,
-      "anon_gi": 3.6,
+      "anon_gi": 3.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 10.3
     },
-    "load1": 3.54,
+    "load1": 3.61,
     "disk_avail": "107G",
-    "tmp_du": "4.5M"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -138,7 +138,7 @@
         "jobs": 2,
         "pending_global": 2273,
         "eta_deadline_utc": "2026-09-28T04:52:04Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -326,9 +326,7 @@
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-17T20:05:00Z",
     "next_cron_hkt": "2026-09-18 04:05 HKT",
@@ -352,48 +350,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T20:03:30Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T20:04:02Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T20:04:02Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.5G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T20:04:02Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.5G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T20:04:02Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T20:04:02Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-17T20:04:02Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-17T20:04:02Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T20:04:10Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.4G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T20:04:10Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.4G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T20:04:10Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T20:04:10Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T20:04:10Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T20:04:10Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-17T20:04:02Z captions after fill running=2",
-    "2026-09-17T20:04:02Z STT already running — no second Whisper",
-    "2026-09-17T20:04:02Z STT already running — no second Whisper",
+    "2026-09-17T20:04:10Z captions after fill running=2",
+    "2026-09-17T20:04:10Z STT already running — no second Whisper",
+    "2026-09-17T20:04:10Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
