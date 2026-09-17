@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-17T03:43:10Z",
+  "written_at_utc": "2026-09-17T03:43:22Z",
   "written_at_hkt": "2026-09-17 11:43 HKT",
   "token_free": true,
   "processes": {
@@ -46,8 +46,8 @@
       },
       {
         "comm": "python3",
-        "rss_gi": 0.08,
-        "n": 4
+        "rss_gi": 0.09,
+        "n": 5
       },
       {
         "comm": "websockify",
@@ -57,7 +57,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.07,
-        "n": 29
+        "n": 28
       },
       {
         "comm": "Xvfb",
@@ -86,11 +86,11 @@
       "anon_gi": 1.3,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 3.5
+      "committed_gi": 3.6
     },
-    "load1": 0.89,
+    "load1": 0.91,
     "disk_avail": "110G",
-    "tmp_du": "636K"
+    "tmp_du": "648K"
   },
   "cookies": {
     "present": false,
@@ -102,7 +102,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "jD-3anrHdVc",
+    "last_id": "5vA0BLLEljQ",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -348,48 +348,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T03:42:49Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T03:42:49Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T03:43:09Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.8G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T03:43:09Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.8G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T03:43:09Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T03:43:09Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-17T03:43:09Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T03:43:09Z STT already running — no second Whisper"
+      "summary": "2026-09-17T03:43:21Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T03:43:21Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.9G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T03:43:21Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.9G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T03:43:21Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T03:43:21Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T03:43:21Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T03:43:21Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-17T03:43:09Z captions after fill running=2",
-    "2026-09-17T03:43:09Z STT already running — no second Whisper",
-    "2026-09-17T03:43:09Z STT already running — no second Whisper",
+    "2026-09-17T03:43:21Z captions after fill running=2",
+    "2026-09-17T03:43:21Z STT already running — no second Whisper",
+    "2026-09-17T03:43:21Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
