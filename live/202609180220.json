@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-17T18:21:35Z",
+  "written_at_utc": "2026-09-17T18:21:46Z",
   "written_at_hkt": "2026-09-18 02:21 HKT",
   "token_free": true,
   "processes": {
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.2,
+    "mem_available_gi": 5.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.52,
+        "rss_gi": 2.71,
         "n": 32
       },
       {
         "comm": "python",
-        "rss_gi": 2.42,
+        "rss_gi": 2.35,
         "n": 2
       },
       {
@@ -50,8 +50,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
+        "rss_gi": 0.09,
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -87,12 +87,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.9,
-      "anon_gi": 3.9,
+      "anon_gi": 4.1,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 10.5
     },
-    "load1": 4.14,
+    "load1": 4.59,
     "disk_avail": "107G",
     "tmp_du": "4.4M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
         "pending": 652,
-        "done": 7395,
-        "transcripts_on_disk": 7395,
+        "done": 7396,
+        "transcripts_on_disk": 7396,
         "inflight": "fqIqbqYu2x8",
         "inflight_duration_s": null,
         "model": "medium",
@@ -138,7 +138,7 @@
         "jobs": 2,
         "pending_global": 2303,
         "eta_deadline_utc": "2026-09-28T15:09:36Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -153,34 +153,34 @@
           "The Startup Ideas Podcast Episodes",
           "理財"
         ],
-        "done": 7158,
-        "left": 308,
+        "done": 7159,
+        "left": 307,
         "total": 15597,
         "no_sub": 1166,
         "eta_min": 38,
         "eta_hkt": "2026-09-18 02:59 HKT",
         "inflight": null,
         "jobs": 2,
-        "left_global": 4034,
-        "eta_deadline_utc": "2026-09-17T18:59:36Z",
+        "left_global": 4033,
+        "eta_deadline_utc": "2026-09-17T18:59:47Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 7395,
+      "stt_done": 7396,
       "stt_pending": 2303,
-      "captions_done": 7158,
-      "captions_left": 4034,
+      "captions_done": 7159,
+      "captions_left": 4033,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
         {
           "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
           "name": "理財",
-          "stt_done": 1639,
-          "captions_done": 1639
+          "stt_done": 1640,
+          "captions_done": 1640
         },
         {
           "id": "UCGWYKICLOE8Wxy7q3eYXmPA",
@@ -321,7 +321,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 11379,
+      "captions_files_on_disk": 11380,
       "source": "inventory+disk"
     }
   },
@@ -352,48 +352,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T18:21:02Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T18:21:34Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T18:21:34Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.2G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T18:21:34Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.2G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T18:21:34Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T18:21:34Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-17T18:21:34Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-17T18:21:34Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T18:21:45Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.1G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T18:21:45Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.1G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T18:21:45Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T18:21:45Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T18:21:45Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T18:21:45Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-17T18:21:34Z captions after fill running=2",
-    "2026-09-17T18:21:34Z STT already running — no second Whisper",
-    "2026-09-17T18:21:34Z STT already running — no second Whisper",
+    "2026-09-17T18:21:45Z captions after fill running=2",
+    "2026-09-17T18:21:45Z STT already running — no second Whisper",
+    "2026-09-17T18:21:45Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
