@@ -150,8 +150,8 @@ body.editing #editTools { display:block; }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-09-17 08:23 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-09-17 08:23 HKT · v20</p>
+    <p class="mono" id="pingLine">ping 2026-09-17 08:27 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-09-17 08:27 HKT · v20</p>
   </div>
   <div class="pills" id="livePills">
     <span class="pill on" id="pillPing"><span class="dot"></span>PING —</span>
@@ -170,45 +170,45 @@ body.editing #editTools { display:block; }
 </section>
 
 <section class="now">
-  <div><span class="label">now</span> <span class="body" id="nowBody">STT Paused · backlog 2411 · captions Paused · backlog 4444</span></div>
-  <span class="mono" id="nowTs">2026-09-17 08:23 HKT</span>
+  <div><span class="label">now</span> <span class="body" id="nowBody">STT Paused · backlog 2349 · captions Paused · backlog 4441</span></div>
+  <span class="mono" id="nowTs">2026-09-17 08:27 HKT</span>
 </section>
 
 <section class="metrics" id="metrics">
-  <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">6244</div><div class="s" id="mSttSub">6244 done · 2411 pending · Paused</div></div>
-  <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">6749</div><div class="s" id="mCapSub">6749 done · 4444 left · Paused</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">4.4G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-17 08:23 HKT</div></div>
+  <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">6415</div><div class="s" id="mSttSub">6415 done · 2349 pending · Paused</div></div>
+  <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">6752</div><div class="s" id="mCapSub">6752 done · 4441 left · Paused</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">4.3G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-17 08:27 HKT</div></div>
 </section>
 
 <section class="grid2">
   <div class="card">
     <p class="hlabel">WORK</p>
     <div class="work-block">
-      <div class="row"><span class="mono"><span class="pill warn" id="capStatePill"><span class="dot"></span><span id="capState">Paused · backlog 4444</span></span> CAPTIONS</span></div>
-      <p class="ch" id="capCh">Paused · backlog 4444</p>
-      <div class="row"><span class="big" id="capNum">6749</span><span class="mono" id="capWorkers">6749 done · 4444 left</span></div>
+      <div class="row"><span class="mono"><span class="pill warn" id="capStatePill"><span class="dot"></span><span id="capState">Paused · backlog 4441</span></span> CAPTIONS</span></div>
+      <p class="ch" id="capCh">Paused · backlog 4441</p>
+      <div class="row"><span class="big" id="capNum">6752</span><span class="mono" id="capWorkers">6752 done · 4441 left</span></div>
       <p class="mono overdue" id="capEta">ETA overdue · worker stopped</p>
     </div>
     <div class="work-block">
-      <div class="row"><span class="mono"><span class="pill warn" id="sttStatePill"><span class="dot"></span><span id="sttState">Paused · backlog 2411</span></span> STT</span></div>
-      <p class="ch" id="sttCh">Paused · backlog 2411</p>
-      <div class="row"><span class="big" id="sttNum">6244</span><span class="mono" id="sttFile">6244 done · 2411 pending</span></div>
+      <div class="row"><span class="mono"><span class="pill warn" id="sttStatePill"><span class="dot"></span><span id="sttState">Paused · backlog 2349</span></span> STT</span></div>
+      <p class="ch" id="sttCh">Paused · backlog 2349</p>
+      <div class="row"><span class="big" id="sttNum">6415</span><span class="mono" id="sttFile">6415 done · 2349 pending</span></div>
       <p class="mono overdue" id="sttEta">ETA overdue · worker stopped</p>
-      <p class="mono" id="sttDisk">6244 transcripts on disk · RAM 4.4 of 15.6G · load 1.19</p>
+      <p class="mono" id="sttDisk">6415 transcripts on disk · RAM 4.3 of 15.6G · load 0.92</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">4.4 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">1.19</span></li>
+      <li><span>RAM free</span><span id="boxRam">4.3 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">0.92</span></li>
       <li><span>Disk</span><span id="boxDisk">111G</span></li>
       <li><span>Tmp</span><span id="boxTmp">132K</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
-      <li><span>Next ping</span><span id="boxCron">2026-09-17 08:25 HKT</span></li>
-      <li><span>Jobs</span><span id="boxJobs">captions eligible now (4.4G≥1.2); Whisper blocked until 6.0G</span></li>
+      <li><span>Next ping</span><span id="boxCron">2026-09-17 08:30 HKT</span></li>
+      <li><span>Jobs</span><span id="boxJobs">captions eligible now (4.3G≥1.2); Whisper blocked until 6.0G</span></li>
       <li><span>RAM gate</span><span id="boxGate">6.0G</span></li>
     </ul>
     <div class="pills" style="margin-top:10px" id="boxPills">
@@ -217,9 +217,9 @@ body.editing #editTools { display:block; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">1.08G</span> · node ×10</li><li><span class="mono">0.04G</span> · websockify ×1</li><li><span class="mono">0.03G</span> · bash ×10</li><li><span class="mono">0.02G</span> · python3 ×1</li><li><span class="mono">0.01G</span> · sleep ×4</li><li><span class="mono">0.01G</span> · flock ×3</li><li><span class="mono">0.0G</span> · pod-daemon ×1</li><li><span class="mono">0.0G</span> · timeout ×2</li></ul>
+    <ul id="ramTop"><li><span class="mono">1.15G</span> · node ×10</li><li><span class="mono">0.04G</span> · websockify ×1</li><li><span class="mono">0.03G</span> · bash ×10</li><li><span class="mono">0.02G</span> · python3 ×1</li><li><span class="mono">0.01G</span> · sleep ×4</li><li><span class="mono">0.01G</span> · flock ×3</li><li><span class="mono">0.0G</span> · pod-daemon ×1</li><li><span class="mono">0.0G</span> · sand-egress-tun ×1</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-17T00:22:45Z captions running=0 target=3 stt_live=none mem=4.4G cap_signal=none</li><li class="mono">2026-09-17T00:22:45Z inventory missing — building playlist PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-17T00:27:02Z captions running=0 target=3 stt_live=none mem=4.3G cap_signal=none</li><li class="mono">2026-09-17T00:27:02Z inventory missing — building playlist PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
@@ -228,13 +228,13 @@ body.editing #editTools { display:block; }
 <section class="card" id="progressCard">
   <p class="hlabel">PROGRESS · CUMULATIVE</p>
   <div class="prog-grid">
-    <div class="prog-stat"><div class="k">STT</div><div class="v" id="pSttDone">6244</div><div class="s" id="pSttSub">2411 pending</div></div>
-    <div class="prog-stat"><div class="k">Captions</div><div class="v" id="pCapDone">6749</div><div class="s" id="pCapSub">4444 left · 15597 total</div></div>
+    <div class="prog-stat"><div class="k">STT</div><div class="v" id="pSttDone">6415</div><div class="s" id="pSttSub">2349 pending</div></div>
+    <div class="prog-stat"><div class="k">Captions</div><div class="v" id="pCapDone">6752</div><div class="s" id="pCapSub">4441 left · 15597 total</div></div>
     <div class="prog-stat"><div class="k">Channels touched</div><div class="v" id="pChN">62</div><div class="s" id="pChSub">with any done on disk</div></div>
-    <div class="prog-stat"><div class="k">Caption files</div><div class="v" id="pCapFiles">9648</div><div class="s">vtt/srt on disk</div></div>
+    <div class="prog-stat"><div class="k">Caption files</div><div class="v" id="pCapFiles">10012</div><div class="s">vtt/srt on disk</div></div>
   </div>
   <p class="hlabel" style="margin-top:14px">TOP CHANNELS BY DONE</p>
-  <ul id="progCh"><li><span class="nm">理財</span><span class="ct">STT 1099 · cap 1459</span></li><li><span class="nm">bestpartners</span><span class="ct">STT 1272 · cap 1272</span></li><li><span class="nm">#11 课代表立正</span><span class="ct">STT 834 · cap 632</span></li><li><span class="nm">Learning how to learn</span><span class="ct">STT 716 · cap 716</span></li><li><span class="nm">Job hunting</span><span class="ct">STT 220 · cap 220</span></li><li><span class="nm">MIT RES.6-012 Introduction to Probability, Spring 2018</span><span class="ct">STT 86 · cap 262</span></li><li><span class="nm">Crypto</span><span class="ct">STT 66 · cap 256</span></li><li><span class="nm">下班經濟學</span><span class="ct">STT 146 · cap 146</span></li></ul>
+  <ul id="progCh"><li><span class="nm">理財</span><span class="ct">STT 1171 · cap 1460</span></li><li><span class="nm">bestpartners</span><span class="ct">STT 1272 · cap 1272</span></li><li><span class="nm">#11 课代表立正</span><span class="ct">STT 834 · cap 632</span></li><li><span class="nm">Learning how to learn</span><span class="ct">STT 716 · cap 716</span></li><li><span class="nm">Job hunting</span><span class="ct">STT 220 · cap 220</span></li><li><span class="nm">MIT RES.6-012 Introduction to Probability, Spring 2018</span><span class="ct">STT 175 · cap 263</span></li><li><span class="nm">Crypto</span><span class="ct">STT 66 · cap 257</span></li><li><span class="nm">下班經濟學</span><span class="ct">STT 146 · cap 146</span></li></ul>
 </section>
 
 <section class="card other-card" id="otherCard">
