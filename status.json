@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-17T12:42:44Z",
-  "written_at_hkt": "2026-09-17 20:42 HKT",
+  "written_at_utc": "2026-09-17T12:43:02Z",
+  "written_at_hkt": "2026-09-17 20:43 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -26,12 +26,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.6,
+    "mem_available_gi": 3.7,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.14,
+        "rss_gi": 2.16,
         "n": 25
       },
       {
@@ -62,7 +62,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.07,
-        "n": 28
+        "n": 29
       },
       {
         "comm": "csnaps",
@@ -83,12 +83,12 @@
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 2.1,
-      "anon_gi": 1.3,
+      "anon_gi": 1.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 3.6
     },
-    "load1": 0.72,
+    "load1": 0.79,
     "disk_avail": "110G",
     "tmp_du": "3.9M"
   },
@@ -102,7 +102,7 @@
     "done": 61,
     "total": 778,
     "inflight": null,
-    "last_id": "NtGg2Zs_yyk",
+    "last_id": "fBpGsmQgZxQ",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
@@ -123,8 +123,8 @@
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
         "pending": 656,
-        "done": 7279,
-        "transcripts_on_disk": 7279,
+        "done": 7280,
+        "transcripts_on_disk": 7280,
         "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
@@ -149,26 +149,26 @@
           "The Startup Ideas Podcast Episodes",
           "理財"
         ],
-        "done": 7042,
-        "left": 416,
+        "done": 7043,
+        "left": 415,
         "total": 15597,
         "no_sub": 1166,
         "eta_min": 52,
-        "eta_hkt": "2026-09-17 21:34 HKT",
+        "eta_hkt": "2026-09-17 21:35 HKT",
         "inflight": null,
         "jobs": 2,
-        "left_global": 4148,
-        "eta_deadline_utc": "2026-09-17T13:34:45Z",
+        "left_global": 4147,
+        "eta_deadline_utc": "2026-09-17T13:35:02Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 7279,
+      "stt_done": 7280,
       "stt_pending": 2307,
-      "captions_done": 7042,
-      "captions_left": 4148,
+      "captions_done": 7043,
+      "captions_left": 4147,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -217,8 +217,8 @@
         {
           "id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
           "name": "The Startup Ideas Podcast Episodes",
-          "stt_done": 175,
-          "captions_done": 175
+          "stt_done": 176,
+          "captions_done": 176
         },
         {
           "id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
@@ -317,7 +317,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 11233,
+      "captions_files_on_disk": 11234,
       "source": "inventory+disk"
     }
   },
@@ -348,48 +348,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T12:42:11Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T12:42:43Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T12:42:43Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.9G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T12:42:43Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.9G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T12:42:43Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T12:42:43Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-17T12:42:43Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-17T12:42:43Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T12:43:01Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.9G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T12:43:01Z captions running=2 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=12.9G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T12:43:01Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T12:43:01Z captions after fill running=2"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T12:43:01Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T12:43:01Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-17T12:42:43Z captions after fill running=2",
-    "2026-09-17T12:42:43Z STT already running — no second Whisper",
-    "2026-09-17T12:42:43Z STT already running — no second Whisper",
+    "2026-09-17T12:43:01Z captions after fill running=2",
+    "2026-09-17T12:43:01Z STT already running — no second Whisper",
+    "2026-09-17T12:43:01Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
