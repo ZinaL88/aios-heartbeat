@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-17T23:28:47Z",
+  "written_at_utc": "2026-09-17T23:28:59Z",
   "written_at_hkt": "2026-09-18 07:28 HKT",
   "token_free": true,
   "processes": {
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.2,
+    "mem_available_gi": 5.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.5,
+        "rss_gi": 2.51,
         "n": 32
       },
       {
         "comm": "python",
-        "rss_gi": 2.35,
+        "rss_gi": 2.37,
         "n": 5
       },
       {
@@ -50,8 +50,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 36
+        "rss_gi": 0.09,
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -90,9 +90,9 @@
       "anon_gi": 3.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 10.3
+      "committed_gi": 10.5
     },
-    "load1": 4.06,
+    "load1": 4.19,
     "disk_avail": "107G",
     "tmp_du": "4.7M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
         "pending": 554,
-        "done": 7532,
-        "transcripts_on_disk": 7532,
+        "done": 7533,
+        "transcripts_on_disk": 7533,
         "inflight": "ZR_t0CqZRKw",
         "inflight_duration_s": null,
         "model": "medium",
@@ -138,7 +138,7 @@
         "jobs": 2,
         "pending_global": 2205,
         "eta_deadline_utc": "2026-09-27T05:04:47Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -155,26 +155,26 @@
           "理財",
           "Product Management"
         ],
-        "done": 7295,
-        "left": 1074,
+        "done": 7296,
+        "left": 1073,
         "total": 15597,
         "no_sub": 1188,
-        "eta_min": 90,
-        "eta_hkt": "2026-09-18 08:58 HKT",
+        "eta_min": 89,
+        "eta_hkt": "2026-09-18 08:57 HKT",
         "inflight": null,
         "jobs": 3,
-        "left_global": 3937,
-        "eta_deadline_utc": "2026-09-18T00:58:47Z",
+        "left_global": 3936,
+        "eta_deadline_utc": "2026-09-18T00:57:59Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 7532,
+      "stt_done": 7533,
       "stt_pending": 2205,
-      "captions_done": 7295,
-      "captions_left": 3937,
+      "captions_done": 7296,
+      "captions_left": 3936,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -301,8 +301,8 @@
         {
           "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
           "name": "Product Management",
-          "stt_done": 45,
-          "captions_done": 45
+          "stt_done": 46,
+          "captions_done": 46
         },
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
@@ -323,7 +323,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 11487,
+      "captions_files_on_disk": 11488,
       "source": "inventory+disk"
     }
   },
@@ -354,48 +354,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-17T23:28:14Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T23:28:46Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T23:28:46Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.2G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T23:28:46Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.2G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T23:28:46Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-17T23:28:46Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-17T23:28:46Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-17T23:28:46Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T23:28:58Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.0G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T23:28:58Z captions running=3 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.0G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T23:28:58Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T23:28:58Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T23:28:58Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-17T23:28:58Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-17T23:28:46Z captions after fill running=3",
-    "2026-09-17T23:28:46Z STT already running — no second Whisper",
-    "2026-09-17T23:28:46Z STT already running — no second Whisper",
+    "2026-09-17T23:28:58Z captions after fill running=3",
+    "2026-09-17T23:28:58Z STT already running — no second Whisper",
+    "2026-09-17T23:28:58Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
