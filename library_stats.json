@@ -1,0 +1,117 @@
+{
+  "built_at_hkt": "2026-09-18 08:37 HKT",
+  "built_at_utc": "2026-09-18T00:37:51Z",
+  "items": 13818,
+  "transcripts_indexed": 8490,
+  "schema_gaps": 12082,
+  "channels": 70,
+  "local_search_url": "http://127.0.0.1:8788/",
+  "how": "Full search runs on the Grok box Library page. This file is summary only.",
+  "top_gap_channels": [
+    {
+      "channel_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+      "channel_name": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+      "item_count": 2934,
+      "transcript_count": 1676,
+      "schema_gap_count": 2934
+    },
+    {
+      "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
+      "channel_name": "Best Partners TV",
+      "item_count": 1315,
+      "transcript_count": 1272,
+      "schema_gap_count": 1315
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+      "channel_name": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+      "item_count": 852,
+      "transcript_count": 703,
+      "schema_gap_count": 852
+    },
+    {
+      "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
+      "channel_name": "Mike是麦克",
+      "item_count": 778,
+      "transcript_count": 126,
+      "schema_gap_count": 778
+    },
+    {
+      "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+      "channel_name": "一个狠人",
+      "item_count": 803,
+      "transcript_count": 118,
+      "schema_gap_count": 754
+    },
+    {
+      "channel_id": "henren778",
+      "channel_name": "一个狠人",
+      "item_count": 803,
+      "transcript_count": 118,
+      "schema_gap_count": 754
+    },
+    {
+      "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "channel_name": "Alan Chen",
+      "item_count": 590,
+      "transcript_count": 90,
+      "schema_gap_count": 590
+    },
+    {
+      "channel_id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
+      "channel_name": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
+      "item_count": 413,
+      "transcript_count": 281,
+      "schema_gap_count": 413
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
+      "channel_name": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
+      "item_count": 407,
+      "transcript_count": 297,
+      "schema_gap_count": 407
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+      "channel_name": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+      "item_count": 281,
+      "transcript_count": 216,
+      "schema_gap_count": 281
+    },
+    {
+      "channel_id": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
+      "channel_name": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
+      "item_count": 266,
+      "transcript_count": 263,
+      "schema_gap_count": 266
+    },
+    {
+      "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "channel_name": "huangyihe",
+      "item_count": 228,
+      "transcript_count": 0,
+      "schema_gap_count": 228
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+      "channel_name": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+      "item_count": 190,
+      "transcript_count": 60,
+      "schema_gap_count": 190
+    },
+    {
+      "channel_id": "UC1CXs5dtO8_Zrsm-48saJfg",
+      "channel_name": "UC1CXs5dtO8_Zrsm-48saJfg",
+      "item_count": 185,
+      "transcript_count": 24,
+      "schema_gap_count": 185
+    },
+    {
+      "channel_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
+      "channel_name": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
+      "item_count": 153,
+      "transcript_count": 146,
+      "schema_gap_count": 153
+    }
+  ]
+}
