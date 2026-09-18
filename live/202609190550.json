@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-18T21:53:47Z",
-  "written_at_hkt": "2026-09-19 05:53 HKT",
+  "written_at_utc": "2026-09-18T21:54:38Z",
+  "written_at_hkt": "2026-09-19 05:54 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.2,
+    "mem_available_gi": 6.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.7,
+        "rss_gi": 2.71,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.5,
+        "rss_gi": 2.61,
         "n": 5
       },
       {
@@ -60,8 +60,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 37
+        "rss_gi": 0.09,
+        "n": 38
       },
       {
         "comm": "websockify",
@@ -79,20 +79,20 @@
         "n": 3
       },
       {
-        "comm": "python3",
+        "comm": "x11vnc",
         "rss_gi": 0.04,
-        "n": 2
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 4.7,
-      "anon_gi": 4.5,
+      "anon_gi": 4.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.3
+      "committed_gi": 16.4
     },
-    "load1": 4.82,
+    "load1": 5.01,
     "disk_avail": "105G",
     "tmp_du": "251M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
         "pending": 88,
-        "done": 8429,
-        "transcripts_on_disk": 8429,
+        "done": 8430,
+        "transcripts_on_disk": 8430,
         "inflight": "WZwdcLi0noM",
         "inflight_duration_s": null,
         "model": "medium",
@@ -136,7 +136,7 @@
         "eta_min": 2112,
         "eta_hkt": "2026-09-20 17:05 HKT",
         "jobs": 2,
-        "pending_global": 1832,
+        "pending_global": 1831,
         "eta_deadline_utc": "2026-09-20T09:05:26Z",
         "eta_frozen": true,
         "overdue": false,
@@ -155,26 +155,26 @@
           "Product Management",
           "Careers"
         ],
-        "done": 8192,
-        "left": 1614,
+        "done": 8193,
+        "left": 1613,
         "total": 15597,
         "no_sub": 467,
         "eta_min": 134,
-        "eta_hkt": "2026-09-19 08:07 HKT",
+        "eta_hkt": "2026-09-19 08:08 HKT",
         "inflight": null,
         "jobs": 3,
-        "left_global": 2835,
-        "eta_deadline_utc": "2026-09-19T00:07:26Z",
-        "eta_frozen": true,
+        "left_global": 2834,
+        "eta_deadline_utc": "2026-09-19T00:08:38Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 8429,
-      "stt_pending": 1832,
-      "captions_done": 8192,
-      "captions_left": 2835,
+      "stt_done": 8430,
+      "stt_pending": 1831,
+      "captions_done": 8193,
+      "captions_left": 2834,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -319,11 +319,11 @@
         {
           "id": "PL30C54D951E8E1688",
           "name": "Careers",
-          "stt_done": 43,
-          "captions_done": 43
+          "stt_done": 44,
+          "captions_done": 44
         }
       ],
-      "captions_files_on_disk": 12374,
+      "captions_files_on_disk": 12375,
       "source": "inventory+disk"
     }
   },
@@ -354,48 +354,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T21:53:47Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T21:54:36Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T21:53:47Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T21:54:36Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T21:53:47Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.6G cap_signal=none"
+      "summary": "2026-09-18T21:54:36Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.7G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T21:53:47Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.6G cap_signal=none"
+      "summary": "2026-09-18T21:54:36Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.7G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T21:53:47Z captions after fill running=3"
+      "summary": "2026-09-18T21:54:36Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T21:53:47Z captions after fill running=3"
+      "summary": "2026-09-18T21:54:36Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T21:53:47Z STT already running — no second Whisper"
+      "summary": "2026-09-18T21:54:37Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T21:53:47Z STT already running — no second Whisper"
+      "summary": "2026-09-18T21:54:37Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-18T21:53:47Z captions after fill running=3",
-    "2026-09-18T21:53:47Z STT already running — no second Whisper",
-    "2026-09-18T21:53:47Z STT already running — no second Whisper",
+    "2026-09-18T21:54:36Z captions after fill running=3",
+    "2026-09-18T21:54:37Z STT already running — no second Whisper",
+    "2026-09-18T21:54:37Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
