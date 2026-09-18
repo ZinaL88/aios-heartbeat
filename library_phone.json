@@ -8,5 +8,8 @@
     "library_phone_4.json"
   ],
   "items": 13818,
-  "note": "Phone catalog: metadata + schema fields only (no full transcript body)."
+  "with_transcript": 8535,
+  "note": "Phone catalog: metadata + schema + tx_shard pointer (transcript body in library_tx_*.json).",
+  "built_at_hkt": "2026-09-19 00:12 HKT",
+  "built_at_utc": "2026-09-18T16:12:15Z"
 }
