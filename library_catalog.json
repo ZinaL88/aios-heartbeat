@@ -1,0 +1,19 @@
+{
+  "schema": "aios-library-catalog/v1",
+  "gzip": true,
+  "file": "library_catalog.json.gz",
+  "sharded": true,
+  "shards": [
+    "library_catalog_1.json",
+    "library_catalog_2.json",
+    "library_catalog_3.json",
+    "library_catalog_4.json",
+    "library_catalog_5.json",
+    "library_catalog_6.json",
+    "library_catalog_7.json",
+    "library_catalog_8.json"
+  ],
+  "items": 13818,
+  "uncompressed_bytes": 18515857,
+  "exported_at_hkt": "2026-09-18 13:02 HKT"
+}

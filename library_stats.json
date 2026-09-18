@@ -6,7 +6,7 @@
   "schema_gaps": 12082,
   "channels": 70,
   "local_search_url": "http://127.0.0.1:8788/",
-  "how": "Full search runs on the Grok box Library page. This file is summary only.",
+  "how": "Phone-friendly search: open library-search.html (static catalog). Full box FTS stays on Grok desktop :8788.",
   "top_gap_channels": [
     {
       "channel_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
@@ -113,5 +113,21 @@
       "transcript_count": 146,
       "schema_gap_count": 153
     }
-  ]
+  ],
+  "catalog_items": 13818,
+  "catalog_bytes": 469,
+  "catalog_mode": "gzip+shards",
+  "catalog_shards": [
+    "library_catalog_1.json",
+    "library_catalog_2.json",
+    "library_catalog_3.json",
+    "library_catalog_4.json",
+    "library_catalog_5.json",
+    "library_catalog_6.json",
+    "library_catalog_7.json",
+    "library_catalog_8.json"
+  ],
+  "catalog_gz": true,
+  "catalog_exported_at_hkt": "2026-09-18 13:02 HKT",
+  "public_search_url": "./library-search.html"
 }
