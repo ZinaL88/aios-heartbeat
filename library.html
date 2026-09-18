@@ -40,7 +40,6 @@ ul.gaps li { display:flex; justify-content:space-between; gap:10px; padding:8px 
 .note { color:var(--muted); font-size:13px; margin-top:10px; line-height:1.5; }
 .ok { color:var(--lime); }
 .warn { color:var(--amber); }
-.desktop-only { font-size:12px; color:var(--muted); margin-top:12px; line-height:1.5; padding-top:10px; border-top:1px solid #222; }
 </style>
 </head>
 <body>
@@ -57,23 +56,18 @@ ul.gaps li { display:flex; justify-content:space-between; gap:10px; padding:8px 
 <section class="card">
   <p class="hlabel">What this is</p>
   <p style="margin:0;line-height:1.5">
-    Search <b>all</b> collected channels &amp; playlists — titles, descriptions, and transcript snippets —
-    and check schema fields (<span class="mono">channel_name</span>,
+    Search <b>all</b> collected channels &amp; playlists — titles, descriptions, and transcripts —
+    and check that each item has the right schema fields (<span class="mono">channel_name</span>,
     <span class="mono">url</span>, <span class="mono">access</span>, …).
-    Works on <b>iPhone Safari</b> from this GitHub Pages site (no Tailscale / no localhost).
+    Full text search runs on the <b>Grok box</b> (private data stays there).
   </p>
   <div style="margin-top:12px">
-    <a class="btn" id="openSearch" href="./library-search.html">Search Library</a>
+    <a class="btn" id="openLocal" href="http://127.0.0.1:8788/">Open full Library search</a>
     <a class="btn secondary" href="https://zinal88.github.io/aios-heartbeat/">Heartbeat home</a>
   </div>
-  <p class="note" id="searchHint">
-    Opens the public searchable catalog on this site — works from your phone.
-  </p>
-  <p class="desktop-only" id="localHint">
-    Full box FTS (Grok computer desktop only): run
-    <span class="mono">python3 ops/library/serve.py</span>
-    then open <span class="mono">http://127.0.0.1:8788/</span> on the box desktop — not a phone button.
-    <span id="localReach"></span>
+  <p class="note" id="localHint">
+    On the box: if the button fails, run <span class="mono">python3 ops/library/serve.py</span>
+    then refresh. From your laptop use the box Tailscale IP + port 8788 when available.
   </p>
 </section>
 
@@ -81,7 +75,7 @@ ul.gaps li { display:flex; justify-content:space-between; gap:10px; padding:8px 
   <p class="hlabel">Index summary</p>
   <div class="metrics" id="metrics">
     <div class="metric"><div class="k">Items</div><div class="v" id="mItems">—</div><div class="s" id="mItemsS">waiting for stats</div></div>
-    <div class="metric"><div class="k">Transcripts</div><div class="v" id="mTx">—</div><div class="s">in index</div></div>
+    <div class="metric"><div class="k">Transcripts</div><div class="v" id="mTx">—</div><div class="s">in FTS index</div></div>
     <div class="metric"><div class="k">Schema gaps</div><div class="v" id="mGaps">—</div><div class="s">required fields blank</div></div>
     <div class="metric"><div class="k">Folders</div><div class="v" id="mCh">—</div><div class="s">channels / playlists</div></div>
   </div>
@@ -91,6 +85,13 @@ ul.gaps li { display:flex; justify-content:space-between; gap:10px; padding:8px 
 <section class="card">
   <p class="hlabel">Top folders with schema notes</p>
   <ul class="gaps" id="gapList"><li class="mono">Loading…</li></ul>
+</section>
+
+<section class="card">
+  <p class="hlabel">On the box (token-free)</p>
+  <pre class="mono" style="white-space:pre-wrap;margin:0;line-height:1.55">./ops/library/build_index.sh
+/usr/bin/python3 ops/library/serve.py
+# open http://127.0.0.1:8788/</pre>
 </section>
 
 <script>
@@ -103,49 +104,41 @@ ul.gaps li { display:flex; justify-content:space-between; gap:10px; padding:8px 
       return await r.json();
     } catch(e){ return null; }
   }
-  async function probeLocalhost(){
-    // Optional detect only — never the primary CTA
-    try {
-      const ctrl = new AbortController();
-      const t = setTimeout(() => ctrl.abort(), 400);
-      const r = await fetch("http://127.0.0.1:8788/api/stats", {signal: ctrl.signal, cache:"no-store", mode:"cors"});
-      clearTimeout(t);
-      if(r.ok){
-        $("localReach").innerHTML = ' <span class="ok">Box API reachable from this browser.</span>';
-        return await r.json();
-      }
-    } catch(e){}
-    $("localReach").textContent = "";
-    return null;
-  }
   async function main(){
+    // Prefer live box API when reachable; else static library_stats.json from Pages
+    let s = await tryFetch("http://127.0.0.1:8788/api/stats");
+    let local = !!s;
     let pub = await tryFetch("./library_stats.json");
     if(!pub) pub = await tryFetch("library_stats.json");
-    const live = await probeLocalhost();
 
-    if(pub){
-      $("mItems").textContent = pub.items ?? pub.catalog_items ?? "—";
+    if(s && s.meta){
+      $("mItems").textContent = s.meta.items ?? "—";
+      $("mTx").textContent = s.meta.transcripts_indexed ?? "—";
+      $("mGaps").textContent = s.meta.schema_gaps ?? "—";
+      $("mCh").textContent = s.meta.channels ?? "—";
+      $("mItemsS").textContent = "live from box · " + (s.meta.built_at_hkt||"");
+      $("built").textContent = "Live box index · " + (s.meta.built_at_hkt||"");
+      $("localHint").innerHTML = '<span class="ok">Box Library API reachable</span> — use the green button for full search.';
+      const gaps = (s.channels||[]).slice().sort((a,b)=>(b.schema_gap_count||0)-(a.schema_gap_count||0)).filter(c=>c.schema_gap_count>0).slice(0,12);
+      $("gapList").innerHTML = gaps.length ? gaps.map(c =>
+        `<li><span>${c.channel_name||c.channel_id}</span><span class="mono">${c.schema_gap_count} notes · ${c.item_count} items</span></li>`
+      ).join("") : '<li class="ok">No schema-gap folders in live index.</li>';
+    } else if(pub){
+      $("mItems").textContent = pub.items ?? "—";
       $("mTx").textContent = pub.transcripts_indexed ?? "—";
       $("mGaps").textContent = pub.schema_gaps ?? "—";
       $("mCh").textContent = pub.channels ?? "—";
-      $("mItemsS").textContent = "mirrored · " + (pub.catalog_exported_at_hkt || pub.built_at_hkt || "");
-      $("built").textContent = "Public catalog · " + (pub.catalog_exported_at_hkt || pub.built_at_hkt || "");
-      $("how").textContent = pub.how || "Search via library-search.html (static catalog on Pages).";
+      $("mItemsS").textContent = "last mirrored · " + (pub.built_at_hkt||"");
+      $("built").textContent = "Summary only · " + (pub.built_at_hkt||"");
+      $("how").textContent = pub.how || "";
+      if(pub.local_search_url) $("openLocal").href = pub.local_search_url;
       const gaps = pub.top_gap_channels||[];
       $("gapList").innerHTML = gaps.length ? gaps.map(c =>
         `<li><span>${c.channel_name||c.channel_id}</span><span class="mono">${c.schema_gap_count} notes · ${c.item_count} items</span></li>`
-      ).join("") : '<li class="ok">No schema-gap folders in summary.</li>';
-      $("searchHint").innerHTML = '<span class="ok">Primary action:</span> Search Library on this site (works on iPhone).';
+      ).join("") : '<li>No gap summary yet — build index on the box.</li>';
+      $("localHint").innerHTML = '<span class="warn">Full search needs the box server</span> (this GitHub page only shows counts).';
     } else {
-      $("gapList").innerHTML = '<li>No library_stats.json yet.</li>';
-    }
-    if(live && live.meta){
-      // Enrich metrics if box reachable, but keep Search Library as primary
-      $("mItems").textContent = live.meta.items ?? $("mItems").textContent;
-      $("mTx").textContent = live.meta.transcripts_indexed ?? $("mTx").textContent;
-      $("mGaps").textContent = live.meta.schema_gaps ?? $("mGaps").textContent;
-      $("mCh").textContent = live.meta.channels ?? $("mCh").textContent;
-      $("mItemsS").textContent = "live box · " + (live.meta.built_at_hkt||"");
+      $("gapList").innerHTML = '<li>No library_stats.json yet. Build the index on the Grok box.</li>';
     }
   }
   main();
