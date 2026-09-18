@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-18T09:20:21Z",
-  "written_at_hkt": "2026-09-18 17:20 HKT",
+  "written_at_utc": "2026-09-18T09:21:31Z",
+  "written_at_hkt": "2026-09-18 17:21 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,7 +30,7 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.8,
+    "mem_available_gi": 5.9,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -40,7 +40,7 @@
       },
       {
         "comm": "python",
-        "rss_gi": 2.37,
+        "rss_gi": 2.4,
         "n": 5
       },
       {
@@ -59,14 +59,14 @@
         "n": 3
       },
       {
-        "comm": "websockify",
-        "rss_gi": 0.1,
-        "n": 3
-      },
-      {
         "comm": "bash",
         "rss_gi": 0.09,
         "n": 38
+      },
+      {
+        "comm": "websockify",
+        "rss_gi": 0.07,
+        "n": 2
       },
       {
         "comm": "plank",
@@ -79,9 +79,9 @@
         "n": 3
       },
       {
-        "comm": "python3",
-        "rss_gi": 0.04,
-        "n": 2
+        "comm": "yt-dlp",
+        "rss_gi": 0.05,
+        "n": 1
       }
     ],
     "meminfo": {
@@ -90,9 +90,9 @@
       "anon_gi": 4.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.2
+      "committed_gi": 16.3
     },
-    "load1": 4.36,
+    "load1": 4.22,
     "disk_avail": "107G",
     "tmp_du": "66M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
         "pending": 358,
-        "done": 7927,
-        "transcripts_on_disk": 7927,
+        "done": 7928,
+        "transcripts_on_disk": 7928,
         "inflight": "SRV1CxG0dm4",
         "inflight_duration_s": null,
         "model": "medium",
@@ -155,26 +155,26 @@
           "The Startup Ideas Podcast Episodes",
           "理財"
         ],
-        "done": 7690,
-        "left": 672,
+        "done": 7691,
+        "left": 671,
         "total": 15597,
         "no_sub": 1293,
         "eta_min": 56,
-        "eta_hkt": "2026-09-18 18:15 HKT",
+        "eta_hkt": "2026-09-18 18:17 HKT",
         "inflight": null,
         "jobs": 3,
-        "left_global": 3535,
-        "eta_deadline_utc": "2026-09-18T10:15:12Z",
-        "eta_frozen": true,
+        "left_global": 3534,
+        "eta_deadline_utc": "2026-09-18T10:17:31Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 7927,
+      "stt_done": 7928,
       "stt_pending": 2009,
-      "captions_done": 7690,
-      "captions_left": 3535,
+      "captions_done": 7691,
+      "captions_left": 3534,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -205,8 +205,8 @@
         {
           "id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
           "name": "The Startup Ideas Podcast Episodes",
-          "stt_done": 368,
-          "captions_done": 368
+          "stt_done": 369,
+          "captions_done": 369
         },
         {
           "id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
@@ -323,7 +323,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 11886,
+      "captions_files_on_disk": 11887,
       "source": "inventory+disk"
     }
   },
@@ -354,50 +354,50 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:20:19Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:20:19Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:20:20Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.4G cap_signal=none"
+      "summary": "2026-09-18T09:21:28Z reboost captions pid 1666149 channel PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:20:20Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.4G cap_signal=none"
+      "summary": "2026-09-18T09:21:28Z reboost captions pid 1666149 channel PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:20:20Z captions after fill running=3"
+      "summary": "2026-09-18T09:21:29Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:20:20Z captions after fill running=3"
+      "summary": "2026-09-18T09:21:29Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:20:20Z STT already running — no second Whisper"
+      "summary": "2026-09-18T09:21:29Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:20:20Z STT already running — no second Whisper"
+      "summary": "2026-09-18T09:21:29Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-18T09:20:20Z captions after fill running=3",
-    "2026-09-18T09:20:20Z STT already running — no second Whisper",
-    "2026-09-18T09:20:20Z STT already running — no second Whisper",
+    "2026-09-18T09:21:29Z captions after fill running=3",
+    "2026-09-18T09:21:29Z STT already running — no second Whisper",
+    "2026-09-18T09:21:29Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
-    "sleep 45.0s",
+    "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
     "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
