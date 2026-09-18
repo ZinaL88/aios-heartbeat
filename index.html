@@ -179,7 +179,7 @@ body.editing #editTools { display:block; }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">8178</div><div class="s" id="mSttSub">8178 done · 216 pending · Running</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">7941</div><div class="s" id="mCapSub">7941 done · 3251 left · Running</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">6.7G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">6.5G</div><div class="s" id="mRamSub">of 15.6G</div></div>
   <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-18 23:40 HKT</div></div>
 </section>
 
@@ -197,17 +197,17 @@ body.editing #editTools { display:block; }
       <p class="ch" id="sttCh">mike1111</p>
       <div class="row"><span class="big" id="sttNum">8178</span><span class="mono" id="sttFile">8178 done · 216 pending · now: rMVHfOIpo9M</span></div>
       <p class="mono" id="sttEta">ETA 2026-09-22 14:04 HKT</p>
-      <p class="mono" id="sttDisk">8178 transcripts on disk · RAM 6.7 of 15.6G · load 4.41</p>
+      <p class="mono" id="sttDisk">8178 transcripts on disk · RAM 6.5 of 15.6G · load 4.37</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">6.7 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">4.41</span></li>
+      <li><span>RAM free</span><span id="boxRam">6.5 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">4.37</span></li>
       <li><span>Disk</span><span id="boxDisk">107G</span></li>
-      <li><span>Tmp</span><span id="boxTmp">66M</span></li>
+      <li><span>Tmp</span><span id="boxTmp">—</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
       <li><span>Next ping</span><span id="boxCron">2026-09-18 23:45 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">captions + Whisper running</span></li>
@@ -219,9 +219,9 @@ body.editing #editTools { display:block; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.62G</span> · node ×33</li><li><span class="mono">2.36G</span> · python ×5</li><li><span class="mono">0.62G</span> · chrome ×12</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.08G</span> · bash ×37</li><li><span class="mono">0.07G</span> · csnaps ×1</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.06G</span> · plank ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.63G</span> · node ×33</li><li><span class="mono">2.59G</span> · python ×5</li><li><span class="mono">0.62G</span> · chrome ×12</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · python3 ×3</li><li><span class="mono">0.09G</span> · bash ×38</li><li><span class="mono">0.07G</span> · csnaps ×1</li><li><span class="mono">0.07G</span> · websockify ×2</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-18T15:40:31Z captions after fill running=3</li><li class="mono">2026-09-18T15:40:31Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans-en&#x27;: HTTP Error 429: Too Many Requests</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-18T15:40:39Z captions after fill running=3</li><li class="mono">2026-09-18T15:40:39Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans-en&#x27;: HTTP Error 429: Too Many Requests</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
