@@ -9,7 +9,7 @@
   ],
   "items": 13818,
   "with_transcript": 8535,
-  "note": "Phone catalog: metadata + schema + tx_shard pointer (transcript body in library_tx_*.json).",
-  "built_at_hkt": "2026-09-19 00:12 HKT",
-  "built_at_utc": "2026-09-18T16:12:15Z"
+  "note": "Phone catalog: metadata + schema + tx_shard pointer (full transcript body in library_tx_*.json).",
+  "built_at_hkt": "2026-09-19 02:43 HKT",
+  "built_at_utc": "2026-09-18T18:43:54Z"
 }
