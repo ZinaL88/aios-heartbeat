@@ -1,153 +1,106 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-store"/>
-<title>HEARTBEAT · Library Search</title>
+<title>HEARTBEAT · Library search</title>
 <style>
-:root {
-  --bg:#0e0e0e; --card:#1a1a1a; --card2:#141414; --fg:#f0f0f0; --muted:#8a8a8a;
-  --lime:#c8f542; --amber:#e8b84a; --border:#2a2a2a; --danger:#e07070; --accent:#8ab4f8;
-}
+:root { --bg:#0e0e0e; --card:#1a1a1a; --fg:#f0f0f0; --muted:#8a8a8a; --lime:#c8f542; --amber:#e8b84a; --red:#f07178; --border:#2a2a2a; }
 * { box-sizing:border-box; }
-body {
-  margin:0; background:var(--bg); color:var(--fg);
-  font:14px/1.45 -apple-system,BlinkMacSystemFont,system-ui,"Noto Sans TC","PingFang TC",sans-serif;
-  min-height:100vh; display:flex; flex-direction:column;
-}
-a { color:var(--accent); }
-header {
-  padding:14px 18px; border-bottom:1px solid var(--border); background:var(--card);
-  display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;
-}
-header h1 { font-size:1.05rem; margin:0; letter-spacing:.08em; }
-header .sub { color:var(--muted); font-size:0.82rem; margin-top:3px; }
-.nav a {
-  display:inline-flex; align-items:center; gap:6px; padding:6px 12px; border-radius:999px;
-  background:#222; color:var(--fg); text-decoration:none; font-size:12px; border:1px solid #333;
-}
-.nav a.home { border-color:#3a5a20; background:#1a2a12; color:var(--lime); }
-.filters {
-  display:flex; flex-wrap:wrap; gap:8px; padding:12px 18px; border-bottom:1px solid var(--border);
-  background:var(--card2); align-items:center;
-}
-.filters input[type=search], .filters select {
-  background:#222; border:1px solid #333; color:var(--fg); border-radius:8px;
-  padding:8px 10px; font:inherit; min-height:40px;
-}
-.filters input[type=search] { flex:1; min-width:160px; max-width:420px; }
-.filters label { display:inline-flex; align-items:center; gap:6px; color:var(--muted); font-size:12px; cursor:pointer; }
-.filters button {
-  min-height:40px; padding:0 16px; border:0; border-radius:999px; background:var(--lime);
-  color:#111; font:inherit; font-weight:600; cursor:pointer;
-}
-.stats { color:var(--muted); font-size:12px; font-family:ui-monospace,Menlo,monospace; padding:8px 18px; }
-.layout { flex:1; display:grid; grid-template-columns:minmax(280px,420px) 1fr; min-height:0; }
-@media (max-width:860px) {
-  .layout { grid-template-columns:1fr; }
-  .layout.showing-detail .list { display:none; }
-  .layout.showing-list .detail { display:none; }
-  .back-mobile { display:inline-flex !important; }
-}
-.back-mobile { display:none; margin-bottom:10px; }
-.list { overflow:auto; border-right:1px solid var(--border); background:var(--card); max-height:70vh; }
-@media (min-width:861px){ .list { max-height:none; height:calc(100vh - 180px); } .detail { height:calc(100vh - 180px); } }
-.item { padding:12px 14px; border-bottom:1px solid var(--border); cursor:pointer; -webkit-tap-highlight-color:transparent; }
-.item:hover, .item:active { background:var(--card2); }
-.item.active { background:#243044; border-left:3px solid var(--accent); }
-.item .title { font-size:0.92rem; line-height:1.35; margin-bottom:6px; }
-.item .meta { color:var(--muted); font-size:0.78rem; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
-.badge {
-  display:inline-block; padding:1px 7px; border-radius:999px; font-size:11px;
-  background:#222; border:1px solid #333; color:var(--muted);
-}
-.badge.tx { border-color:#3a5a20; color:var(--lime); background:#1a2a12; }
-.badge.gap { border-color:#5a3020; color:var(--danger); background:#2a1510; }
-.badge.mem { border-color:#5a4020; color:var(--amber); background:#2a1e0e; }
-.miss { color:var(--danger); font-size:11px; }
-.detail { overflow:auto; padding:18px 20px 40px; background:var(--bg); }
-.empty { color:var(--muted); padding:24px 8px; }
-.detail h2 { font-size:1.15rem; margin:0 0 8px; line-height:1.35; }
-.detail .topline { color:var(--muted); font-size:0.85rem; margin-bottom:14px; }
-.panel {
-  background:var(--card); border:1px solid var(--border); border-radius:12px;
-  padding:14px 16px; margin-top:14px;
-}
-.panel h3 { margin:0 0 10px; font-size:12px; letter-spacing:.1em; color:var(--muted); text-transform:uppercase; }
-.fields { display:grid; grid-template-columns:min(140px,32vw) 1fr; gap:6px 12px; font-size:13px; }
-.fields .k { color:var(--muted); font-family:ui-monospace,Menlo,monospace; font-size:11px; word-break:break-all; }
-.fields .v { word-break:break-word; }
-.fields .v.bad { color:var(--danger); background:#2a1510; border-radius:4px; padding:2px 6px; }
-.tx {
-  white-space:pre-wrap; font-size:13px; line-height:1.55; max-height:40vh; overflow:auto;
-  background:var(--card2); border-radius:8px; padding:12px; border:1px solid var(--border);
-}
-.err { color:var(--danger); padding:12px 18px; }
+body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.45 -apple-system,BlinkMacSystemFont,system-ui,sans-serif; padding:16px; padding-bottom:64px; }
+h1 { font-size:17px; letter-spacing:.1em; margin:0; }
+.mono { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; color:var(--muted); }
+.row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; justify-content:space-between; }
+.card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:12px 14px; margin-top:12px; }
+input, select { width:100%; padding:12px; border-radius:10px; border:1px solid #333; background:#111; color:var(--fg); font-size:16px; }
+label { display:block; font-size:11px; color:var(--muted); letter-spacing:.08em; text-transform:uppercase; margin:10px 0 6px; font-weight:700; }
+.filters { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+@media (max-width:600px){ .filters { grid-template-columns:1fr; } }
+a.btn, button.btn { display:inline-flex; padding:10px 14px; border-radius:999px; border:0; background:var(--lime); color:#111; font-weight:600; text-decoration:none; font-size:14px; cursor:pointer; }
+a.btn.secondary, button.btn.secondary { background:#222; color:var(--fg); border:1px solid #333; }
+.hit { padding:12px 0; border-bottom:1px solid #222; }
+.hit h3 { margin:0 0 4px; font-size:15px; font-weight:600; }
+.hit .meta { color:var(--muted); font-size:12px; }
+.bad { color:var(--red); font-size:12px; }
+.ok { color:var(--lime); }
+.warn { color:var(--amber); }
+#status { color:var(--muted); font-size:13px; margin-top:8px; }
+#detail { display:none; }
+#detail.open { display:block; }
+pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin:0; font-family:ui-monospace,Menlo,monospace; }
+.field-miss { color:var(--red); }
 </style>
 </head>
 <body>
-<header>
+<header class="row">
   <div>
-    <h1>HEARTBEAT · Library Search</h1>
-    <div class="sub">Works on iPhone · static catalog · no localhost</div>
+    <h1>HEARTBEAT · Search</h1>
+    <p class="mono" id="status">Loading catalog…</p>
   </div>
-  <div class="nav">
-    <a href="./library.html">← Library</a>
-    <a class="home" href="./">Heartbeat</a>
-  </div>
+  <a class="btn secondary" href="./library.html">← Library</a>
 </header>
-<div class="filters">
-  <input type="search" id="q" placeholder="Search title, channel, description, snippet…" autocomplete="off" enterkeyhint="search"/>
-  <select id="channel"><option value="">All channels</option></select>
-  <select id="access">
-    <option value="">Access: any</option>
-    <option value="public">public</option>
-    <option value="members">members</option>
-    <option value="unknown">unknown</option>
-  </select>
-  <select id="ctype">
-    <option value="">Type: any</option>
-    <option value="video">video</option>
-    <option value="short">short</option>
-    <option value="post">post</option>
-    <option value="live">live</option>
-    <option value="unknown">unknown</option>
-  </select>
-  <select id="tx">
-    <option value="">Transcript: any</option>
-    <option value="1">Has transcript</option>
-    <option value="0">No transcript</option>
-  </select>
-  <label><input type="checkbox" id="gaps"/> Schema gaps only</label>
-  <button type="button" id="go">Search</button>
-</div>
-<div class="stats" id="stats">Loading catalog…</div>
-<div class="err" id="err" hidden></div>
-<div class="layout showing-list" id="layout">
-  <aside class="list" id="list"><div class="empty">Loading…</div></aside>
-  <main class="detail" id="detail">
-    <button type="button" class="nav back-mobile" id="backList" style="border:1px solid #333;background:#222;color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer">← Results</button>
-    <div class="empty">Pick a result to inspect schema fields and transcript snippet.</div>
-  </main>
-</div>
+
+<section class="card">
+  <label for="q">Search</label>
+  <input id="q" type="search" placeholder="Title, channel, id…" autocomplete="off" enterkeyhint="search"/>
+  <div class="filters">
+    <div>
+      <label for="channel">Channel</label>
+      <select id="channel"><option value="">All</option></select>
+    </div>
+    <div>
+      <label for="access">Access</label>
+      <select id="access">
+        <option value="">All</option>
+        <option value="public">public</option>
+        <option value="members">members</option>
+      </select>
+    </div>
+    <div>
+      <label for="ctype">Type</label>
+      <select id="ctype">
+        <option value="">All</option>
+        <option value="video">video</option>
+        <option value="short">short</option>
+        <option value="post">post</option>
+        <option value="live">live</option>
+      </select>
+    </div>
+    <div>
+      <label for="tx">Transcript</label>
+      <select id="tx">
+        <option value="">All</option>
+        <option value="1">Has transcript</option>
+        <option value="0">No transcript</option>
+      </select>
+    </div>
+  </div>
+  <label style="display:flex;align-items:center;gap:8px;text-transform:none;letter-spacing:0;font-size:13px;margin-top:12px;">
+    <input id="gapsOnly" type="checkbox"/> Schema problems only
+  </label>
+  <div style="margin-top:12px">
+    <button class="btn" id="go" type="button">Search</button>
+  </div>
+</section>
+
+<section class="card">
+  <p class="mono" id="count">—</p>
+  <div id="results"></div>
+</section>
+
+<section class="card" id="detail">
+  <div class="row">
+    <p class="hlabel" style="margin:0;font-size:11px;letter-spacing:.12em;color:var(--muted);font-weight:700;text-transform:uppercase;">Item detail / schema</p>
+    <button class="btn secondary" type="button" id="closeDetail">Close</button>
+  </div>
+  <pre class="fields" id="detailBody"></pre>
+</section>
+
 <script>
 (function(){
-  const $ = (id) => document.getElementById(id);
-  const SCHEMA_KEYS = [
-    "id","channel_id","channel_name","title","url","source_url_raw","published_at","collected_at",
-    "access","content_type","has_transcript","transcript_source","transcript_note","description",
-    "duration","has_hardsubs","hardsubs_checked_at","hardsubs_confidence","hardsubs_method",
-    "hardsubs_region","hardsubs_ocr_used","image_extract_engine","image_extract_lang","image_extract_at",
-    "missing_flags","has_schema_gap"
-  ];
   let CATALOG = [];
-  let activeId = null;
-  const MAX_SHOW = 200;
-
-  function esc(s){
-    return String(s==null?"":s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  }
+  const $ = (id) => document.getElementById(id);
 
   async function fetchJson(url){
     const r = await fetch(url, {cache:"no-store"});
@@ -155,236 +108,113 @@ header .sub { color:var(--muted); font-size:0.82rem; margin-top:3px; }
     return r.json();
   }
 
-  async function fetchGunzipJson(url){
-    const r = await fetch(url, {cache:"no-store"});
-    if(!r.ok) throw new Error(url + " HTTP " + r.status);
-    if(typeof DecompressionStream === "undefined"){
-      throw new Error("DecompressionStream not supported");
-    }
-    const ds = new DecompressionStream("gzip");
-    const stream = r.body.pipeThrough(ds);
-    const text = await new Response(stream).text();
-    return JSON.parse(text);
-  }
-
   async function loadCatalog(){
-    // 1) library_catalog.json — array OR shard manifest
-    // 2) fallback library_catalog.json.gz via DecompressionStream
-    let data = null;
-    let note = "";
-    try {
-      data = await fetchJson("./library_catalog.json");
-      note = "catalog.json";
-    } catch(e1){
-      try {
-        data = await fetchGunzipJson("./library_catalog.json.gz");
-        note = "catalog.json.gz";
-      } catch(e2){
-        throw new Error("Could not load catalog: " + e1.message + " / " + e2.message);
-      }
+    // Phone path ONLY: small metadata shards. Never gzip / never 17MB blob.
+    const man = await fetchJson("./library_phone.json");
+    if(!man || !man.sharded || !Array.isArray(man.shards) || !man.shards.length){
+      throw new Error("library_phone.json missing shards");
     }
-    if(Array.isArray(data)){
-      return {items: data, note};
+    const parts = [];
+    for(const name of man.shards){
+      $("status").textContent = "Loading " + name + "…";
+      const part = await fetchJson("./" + name);
+      if(Array.isArray(part)) parts.push(...part);
     }
-    // Prefer gzip (smaller on cellular) when manifest says so
-    if(data && data.gzip){
-      try {
-        const items = await fetchGunzipJson("./" + (data.file || "library_catalog.json.gz"));
-        return {items: Array.isArray(items)?items:[], note: "gzip"};
-      } catch(gzErr){
-        console.warn("gzip load failed, trying shards", gzErr);
-      }
-    }
-    if(data && data.sharded && Array.isArray(data.shards)){
-      const parts = [];
-      for(const name of data.shards){
-        const part = await fetchJson("./" + name);
-        if(Array.isArray(part)) parts.push(...part);
-      }
-      return {items: parts, note: "shards×" + data.shards.length};
-    }
-    throw new Error("Unexpected catalog format");
+    return {items: parts, note: "phone shards×" + man.shards.length};
   }
 
   function fillChannels(){
     const names = new Map();
     CATALOG.forEach(it => {
       const id = it.channel_id || "";
-      const name = it.channel_name || id;
       if(!id) return;
-      if(!names.has(id)) names.set(id, name);
+      if(!names.has(id)) names.set(id, it.channel_name || id);
     });
     const sel = $("channel");
-    const cur = sel.value;
-    sel.innerHTML = '<option value="">All channels</option>';
+    sel.innerHTML = '<option value="">All</option>';
     [...names.entries()].sort((a,b)=>String(a[1]).localeCompare(String(b[1]),"zh")).forEach(([id,name])=>{
       const o = document.createElement("option");
-      o.value = id;
-      o.textContent = name + " (" + id.slice(0,8) + "…)";
+      o.value = id; o.textContent = name;
       sel.appendChild(o);
     });
-    sel.value = cur;
   }
 
-  function tokens(q){
-    return String(q||"").trim().toLowerCase().split(/\s+/).filter(Boolean);
+  function matches(it, q){
+    if(!q) return true;
+    const blob = [it.title, it.channel_name, it.id, it.channel_id, it.missing_flags].join(" ").toLowerCase();
+    return q.split(/\s+/).filter(Boolean).every(tok => blob.includes(tok));
   }
 
-  function hay(it){
-    return [
-      it.title, it.channel_name, it.channel_id, it.description, it.snippet, it.id, it.url
-    ].map(x => String(x||"").toLowerCase()).join("\n");
-  }
-
-  function match(it, toks, f){
-    if(f.channel && it.channel_id !== f.channel) return false;
-    if(f.access && (it.access||"") !== f.access) return false;
-    if(f.ctype && (it.content_type||"") !== f.ctype) return false;
-    if(f.tx === "1" && !it.has_transcript) return false;
-    if(f.tx === "0" && it.has_transcript) return false;
-    if(f.gaps && !it.has_schema_gap) return false;
-    if(!toks.length) return true;
-    const h = hay(it);
-    return toks.every(t => h.includes(t));
-  }
-
-  function badges(it){
-    let html = "";
-    html += `<span class="badge">${esc(it.access||"?")}</span>`;
-    html += `<span class="badge">${esc(it.content_type||"?")}</span>`;
-    if(it.has_transcript) html += `<span class="badge tx">transcript</span>`;
-    if(it.has_schema_gap) html += `<span class="badge gap">schema gap</span>`;
-    if((it.access||"")==="members") html += `<span class="badge mem">members</span>`;
-    return html;
-  }
-
-  function missLine(it){
-    const m = Array.isArray(it.missing_flags) ? it.missing_flags : [];
-    if(!m.length) return "";
-    return `<div class="miss">missing: ${esc(m.join(", "))}</div>`;
-  }
-
-  function renderList(rows){
-    const shown = rows.slice(0, MAX_SHOW);
-    if(!shown.length){
-      $("list").innerHTML = '<div class="empty">No matches.</div>';
-      return;
+  function run(){
+    const q = ($("q").value || "").trim().toLowerCase();
+    const ch = $("channel").value;
+    const access = $("access").value;
+    const ctype = $("ctype").value;
+    const tx = $("tx").value;
+    const gapsOnly = $("gapsOnly").checked;
+    const hits = [];
+    for(const it of CATALOG){
+      if(ch && it.channel_id !== ch) continue;
+      if(access && it.access !== access) continue;
+      if(ctype && it.content_type !== ctype) continue;
+      if(tx === "1" && !it.has_transcript) continue;
+      if(tx === "0" && it.has_transcript) continue;
+      if(gapsOnly && !it.has_schema_gap) continue;
+      if(!matches(it, q)) continue;
+      hits.push(it);
+      if(hits.length >= 80) break;
     }
-    $("list").innerHTML = shown.map(it => {
-      const active = it.id === activeId ? " active" : "";
-      return `<div class="item${active}" data-id="${esc(it.id)}">
-        <div class="title">${esc(it.title||it.id)}</div>
-        <div class="meta"><span>${esc(it.channel_name||it.channel_id||"")}</span>${badges(it)}</div>
-        ${missLine(it)}
-      </div>`;
-    }).join("");
+    $("count").textContent = hits.length + (hits.length>=80 ? "+ showing first 80" : "") + " · catalog " + CATALOG.length;
+    $("results").innerHTML = hits.length ? hits.map((it,i)=>`
+      <div class="hit" data-i="${i}">
+        <h3>${escapeHtml(it.title || "(no title)")}</h3>
+        <div class="meta">${escapeHtml(it.channel_name||it.channel_id||"")} · ${escapeHtml(it.access||"?")} · ${escapeHtml(it.content_type||"?")} · ${it.has_transcript?"transcript":"no transcript"}</div>
+        ${it.has_schema_gap ? `<div class="bad">schema: ${escapeHtml(it.missing_flags||"gap")}</div>` : ""}
+        <div style="margin-top:8px"><button class="btn secondary open" type="button" data-i="${i}">Schema fields</button>
+        ${it.url ? `<a class="btn secondary" href="${escapeAttr(it.url)}" target="_blank" rel="noopener">YouTube</a>` : ""}</div>
+      </div>`).join("") : '<p class="warn">No matches.</p>';
+    $("results")._hits = hits;
   }
 
-  function blank(v){
-    return v == null || v === "" || (Array.isArray(v) && !v.length);
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   }
+  function escapeAttr(s){ return escapeHtml(s).replace(/`/g,''); }
 
   function showDetail(it){
-    activeId = it.id;
-    $("layout").classList.remove("showing-list");
-    $("layout").classList.add("showing-detail");
-    const fields = SCHEMA_KEYS.map(k => {
-      let v = it[k];
-      if(k === "missing_flags" && Array.isArray(v)) v = JSON.stringify(v);
-      if(k === "has_transcript" || k === "has_schema_gap" || k === "hardsubs_ocr_used"){
-        if(v === true) v = "true";
-        else if(v === false) v = "false";
-      }
-      const bad = (k === "missing_flags" && it.has_schema_gap) ||
-        (["channel_name","title","url","access","content_type","id","channel_id"].includes(k) && blank(it[k]));
-      const display = blank(v) ? "—" : String(v);
-      return `<div class="k">${esc(k)}</div><div class="v${bad?" bad":""}">${esc(display)}</div>`;
-    }).join("");
-    const snip = it.snippet ? `<div class="panel"><h3>Transcript snippet</h3><div class="tx">${esc(it.snippet)}</div></div>` :
-      (it.has_transcript ? `<div class="panel"><h3>Transcript snippet</h3><div class="empty">Snippet not in catalog (file skipped or empty).</div></div>` : "");
-    $("detail").innerHTML = `
-      <button type="button" class="nav back-mobile" id="backList" style="border:1px solid #333;background:#222;color:var(--fg);border-radius:999px;padding:6px 12px;cursor:pointer;margin-bottom:10px">← Results</button>
-      <h2>${esc(it.title||it.id)}</h2>
-      <div class="topline">${esc(it.channel_name||"")} · ${badges(it)}
-        ${it.url ? ` · <a href="${esc(it.url)}" target="_blank" rel="noopener">YouTube</a>` : ""}
-      </div>
-      <div class="panel"><h3>Schema fields</h3><div class="fields">${fields}</div></div>
-      ${snip}
-    `;
-    $("backList").onclick = () => {
-      $("layout").classList.add("showing-list");
-      $("layout").classList.remove("showing-detail");
-    };
-    // refresh active highlight
-    document.querySelectorAll(".item").forEach(el => {
-      el.classList.toggle("active", el.getAttribute("data-id") === it.id);
-    });
-  }
-
-  function currentFilters(){
-    return {
-      channel: $("channel").value,
-      access: $("access").value,
-      ctype: $("ctype").value,
-      tx: $("tx").value,
-      gaps: $("gaps").checked
-    };
-  }
-
-  function runSearch(){
-    const toks = tokens($("q").value);
-    const f = currentFilters();
-    const rows = [];
-    for(const it of CATALOG){
-      if(match(it, toks, f)) rows.push(it);
-      if(rows.length >= MAX_SHOW + 1) break; // know if more
+    const required = ['id','channel_id','channel_name','title','url','access','content_type'];
+    const lines = [];
+    for(const k of Object.keys(it)){
+      const v = it[k];
+      const miss = required.includes(k) && (v===null||v===undefined||v==='');
+      lines.push((miss?'⚠ ':'  ') + k + ': ' + JSON.stringify(v));
     }
-    // If no query and no filters, still show first page
-    if(!toks.length && !f.channel && !f.access && !f.ctype && !f.tx && !f.gaps){
-      rows.length = 0;
-      for(let i=0;i<Math.min(MAX_SHOW, CATALOG.length);i++) rows.push(CATALOG[i]);
-      $("stats").textContent = `Catalog ${CATALOG.length} items · showing first ${rows.length} (type to search)`;
-    } else {
-      const more = rows.length > MAX_SHOW;
-      const shown = more ? rows.slice(0, MAX_SHOW) : rows;
-      // recount fully for accurate total when capped
-      let total = shown.length;
-      if(more){
-        total = 0;
-        for(const it of CATALOG){ if(match(it, toks, f)) total++; }
-      }
-      $("stats").textContent = `${total} match${total===1?"":"es"} · showing ${Math.min(total, MAX_SHOW)} · catalog ${CATALOG.length}`;
-      renderList(shown);
-      return;
-    }
-    renderList(rows);
+    const missing = required.filter(k => it[k]===null||it[k]===undefined||it[k]==='');
+    $("detailBody").innerHTML = (missing.length ? '<span class="field-miss">Missing required: '+escapeHtml(missing.join(', '))+'</span>\n\n' : '<span class="ok">Required fields present in phone catalog</span>\n\n') + escapeHtml(lines.join('\n'));
+    $("detail").classList.add('open');
+    $("detail").scrollIntoView({behavior:'smooth', block:'start'});
   }
 
-  $("list").addEventListener("click", (e) => {
-    const el = e.target.closest(".item");
-    if(!el) return;
-    const id = el.getAttribute("data-id");
-    const it = CATALOG.find(x => x.id === id);
-    if(it) showDetail(it);
+  $("go").addEventListener('click', run);
+  $("q").addEventListener('keydown', e => { if(e.key==='Enter') run(); });
+  ["channel","access","ctype","tx","gapsOnly"].forEach(id => $(id).addEventListener('change', run));
+  $("results").addEventListener('click', e => {
+    const btn = e.target.closest('button.open');
+    if(!btn) return;
+    const hits = $("results")._hits || [];
+    showDetail(hits[+btn.dataset.i]);
   });
-  $("go").onclick = runSearch;
-  $("q").addEventListener("keydown", (e) => { if(e.key === "Enter") runSearch(); });
-  ["channel","access","ctype","tx","gaps"].forEach(id => {
-    $(id).addEventListener("change", runSearch);
-  });
+  $("closeDetail").addEventListener('click', () => $("detail").classList.remove('open'));
 
-  (async function main(){
+  (async function(){
     try {
       const {items, note} = await loadCatalog();
       CATALOG = items;
       fillChannels();
-      $("stats").textContent = `Loaded ${CATALOG.length} items (${note}). Ready.`;
-      runSearch();
+      $("status").textContent = "Ready · " + items.length + " items · " + note;
+      run();
     } catch(err){
-      $("err").hidden = false;
-      $("err").textContent = String(err.message || err);
-      $("list").innerHTML = '<div class="empty">Catalog failed to load.</div>';
-      $("stats").textContent = "Load failed";
+      $("status").innerHTML = '<span class="warn">Load failed: '+escapeHtml(err.message)+'</span>';
     }
   })();
 })();

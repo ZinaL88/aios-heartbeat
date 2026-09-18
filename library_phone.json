@@ -1,0 +1,12 @@
+{
+  "schema": "aios-library-phone/v1",
+  "sharded": true,
+  "shards": [
+    "library_phone_1.json",
+    "library_phone_2.json",
+    "library_phone_3.json",
+    "library_phone_4.json"
+  ],
+  "items": 13818,
+  "note": "Phone catalog: metadata + schema fields only (no full transcript body)."
+}
