@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-18T01:00:34Z",
+  "written_at_utc": "2026-09-18T01:00:43Z",
   "written_at_hkt": "2026-09-18 09:00 HKT",
   "token_free": true,
   "processes": {
@@ -30,7 +30,7 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 4.9,
+    "mem_available_gi": 4.8,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -40,8 +40,8 @@
       },
       {
         "comm": "python",
-        "rss_gi": 2.61,
-        "n": 6
+        "rss_gi": 2.59,
+        "n": 5
       },
       {
         "comm": "Xvfb",
@@ -92,9 +92,9 @@
       "sreclaimable_gi": 0.3,
       "committed_gi": 10.7
     },
-    "load1": 4.57,
+    "load1": 4.52,
     "disk_avail": "107G",
-    "tmp_du": "59M"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -165,7 +165,7 @@
         "jobs": 3,
         "left_global": 3868,
         "eta_deadline_utc": "2026-09-18T02:24:34Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -328,9 +328,7 @@
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-18T01:05:00Z",
     "next_cron_hkt": "2026-09-18 09:05 HKT",
@@ -354,48 +352,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T01:00:33Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T01:00:40Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T01:00:33Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T01:00:40Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T01:00:34Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.8G cap_signal=none"
+      "summary": "2026-09-18T01:00:40Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.8G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T01:00:34Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.8G cap_signal=none"
+      "summary": "2026-09-18T01:00:40Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.8G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T01:00:34Z captions after fill running=3"
+      "summary": "2026-09-18T01:00:40Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T01:00:34Z captions after fill running=3"
+      "summary": "2026-09-18T01:00:40Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T01:00:34Z STT already running — no second Whisper"
+      "summary": "2026-09-18T01:00:40Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T01:00:34Z STT already running — no second Whisper"
+      "summary": "2026-09-18T01:00:40Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-18T01:00:34Z captions after fill running=3",
-    "2026-09-18T01:00:34Z STT already running — no second Whisper",
-    "2026-09-18T01:00:34Z STT already running — no second Whisper",
+    "2026-09-18T01:00:40Z captions after fill running=3",
+    "2026-09-18T01:00:40Z STT already running — no second Whisper",
+    "2026-09-18T01:00:40Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
