@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-18T13:25:27Z",
+  "written_at_utc": "2026-09-18T13:25:55Z",
   "written_at_hkt": "2026-09-18 21:25 HKT",
   "token_free": true,
   "processes": {
@@ -40,7 +40,7 @@
       },
       {
         "comm": "python",
-        "rss_gi": 2.35,
+        "rss_gi": 2.59,
         "n": 5
       },
       {
@@ -60,8 +60,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 37
+        "rss_gi": 0.09,
+        "n": 38
       },
       {
         "comm": "websockify",
@@ -87,14 +87,14 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 3.0,
-      "anon_gi": 4.4,
+      "anon_gi": 4.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.2
+      "committed_gi": 16.5
     },
-    "load1": 4.43,
+    "load1": 4.53,
     "disk_avail": "107G",
-    "tmp_du": "66M"
+    "tmp_du": "91M"
   },
   "cookies": {
     "present": false,
@@ -138,7 +138,7 @@
         "jobs": 2,
         "pending_global": 1929,
         "eta_deadline_utc": "2026-09-23T04:37:28Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -165,7 +165,7 @@
         "jobs": 3,
         "left_global": 3359,
         "eta_deadline_utc": "2026-09-18T15:58:28Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -354,48 +354,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T13:25:26Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T13:25:54Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T13:25:26Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T13:25:54Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T13:25:27Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.4G cap_signal=none"
+      "summary": "2026-09-18T13:25:54Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.4G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T13:25:27Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.4G cap_signal=none"
+      "summary": "2026-09-18T13:25:54Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.4G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T13:25:27Z captions after fill running=3"
+      "summary": "2026-09-18T13:25:54Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T13:25:27Z captions after fill running=3"
+      "summary": "2026-09-18T13:25:54Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T13:25:27Z STT already running — no second Whisper"
+      "summary": "2026-09-18T13:25:54Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T13:25:27Z STT already running — no second Whisper"
+      "summary": "2026-09-18T13:25:54Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-18T13:25:27Z captions after fill running=3",
-    "2026-09-18T13:25:27Z STT already running — no second Whisper",
-    "2026-09-18T13:25:27Z STT already running — no second Whisper",
+    "2026-09-18T13:25:54Z captions after fill running=3",
+    "2026-09-18T13:25:54Z STT already running — no second Whisper",
+    "2026-09-18T13:25:54Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
