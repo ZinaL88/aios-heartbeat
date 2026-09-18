@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-18T19:46:23Z",
-  "written_at_hkt": "2026-09-19 03:46 HKT",
+  "written_at_utc": "2026-09-18T19:49:14Z",
+  "written_at_hkt": "2026-09-19 03:49 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,22 +30,22 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.3,
+    "mem_available_gi": 6.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.74,
+        "rss_gi": 2.99,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.24,
+        "rss_gi": 2.5,
         "n": 5
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.53,
+        "rss_gi": 0.54,
         "n": 12
       },
       {
@@ -60,8 +60,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 38
+        "rss_gi": 0.08,
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -79,20 +79,20 @@
         "n": 3
       },
       {
-        "comm": "yt-dlp",
+        "comm": "python3",
         "rss_gi": 0.04,
-        "n": 1
+        "n": 2
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 4.7,
-      "anon_gi": 4.2,
+      "anon_gi": 4.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.2
+      "committed_gi": 16.5
     },
-    "load1": 3.54,
+    "load1": 4.77,
     "disk_avail": "105G",
     "tmp_du": "250M"
   },
@@ -354,48 +354,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T19:46:22Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T19:49:13Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T19:46:22Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T19:49:13Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T19:46:22Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.6G cap_signal=none"
+      "summary": "2026-09-18T19:49:13Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.4G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T19:46:22Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.6G cap_signal=none"
+      "summary": "2026-09-18T19:49:13Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.4G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T19:46:22Z captions after fill running=3"
+      "summary": "2026-09-18T19:49:13Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T19:46:22Z captions after fill running=3"
+      "summary": "2026-09-18T19:49:13Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T19:46:22Z STT already running — no second Whisper"
+      "summary": "2026-09-18T19:49:14Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T19:46:22Z STT already running — no second Whisper"
+      "summary": "2026-09-18T19:49:14Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-18T19:46:22Z captions after fill running=3",
-    "2026-09-18T19:46:22Z STT already running — no second Whisper",
-    "2026-09-18T19:46:22Z STT already running — no second Whisper",
+    "2026-09-18T19:49:13Z captions after fill running=3",
+    "2026-09-18T19:49:14Z STT already running — no second Whisper",
+    "2026-09-18T19:49:14Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "m-browser or --cookies (redacted) the authentication. See  https:<path>  for how to manually pass cookies. Also see  https:<path>  for tips on effectively exporting YouTube cookies",
     "rate-limited — backoff 45s",
