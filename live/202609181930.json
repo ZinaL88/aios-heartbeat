@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-18T11:30:59Z",
-  "written_at_hkt": "2026-09-18 19:30 HKT",
+  "written_at_utc": "2026-09-18T11:32:04Z",
+  "written_at_hkt": "2026-09-18 19:32 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.9,
+    "mem_available_gi": 6.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.91,
+        "rss_gi": 2.7,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.63,
+        "rss_gi": 2.41,
         "n": 5
       },
       {
@@ -60,8 +60,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 38
+        "rss_gi": 0.08,
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -79,20 +79,20 @@
         "n": 3
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.05,
-        "n": 1
+        "comm": "x11vnc",
+        "rss_gi": 0.04,
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.9,
-      "anon_gi": 4.9,
+      "anon_gi": 4.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.6
+      "committed_gi": 16.3
     },
-    "load1": 4.45,
+    "load1": 4.24,
     "disk_avail": "107G",
     "tmp_du": "66M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
         "pending": 316,
-        "done": 7991,
-        "transcripts_on_disk": 7991,
+        "done": 7993,
+        "transcripts_on_disk": 7993,
         "inflight": "ywQk_Lqi6Lo",
         "inflight_duration_s": null,
         "model": "medium",
@@ -155,26 +155,26 @@
           "Data Science",
           "The Startup Ideas Podcast Episodes"
         ],
-        "done": 7754,
-        "left": 1941,
+        "done": 7756,
+        "left": 1939,
         "total": 15597,
         "no_sub": 170,
         "eta_min": 162,
-        "eta_hkt": "2026-09-18 22:08 HKT",
+        "eta_hkt": "2026-09-18 22:14 HKT",
         "inflight": null,
         "jobs": 3,
-        "left_global": 3461,
-        "eta_deadline_utc": "2026-09-18T14:08:25Z",
-        "eta_frozen": true,
+        "left_global": 3459,
+        "eta_deadline_utc": "2026-09-18T14:14:04Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 7991,
+      "stt_done": 7993,
       "stt_pending": 1967,
-      "captions_done": 7754,
-      "captions_left": 3461,
+      "captions_done": 7756,
+      "captions_left": 3459,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -205,8 +205,8 @@
         {
           "id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
           "name": "The Startup Ideas Podcast Episodes",
-          "stt_done": 382,
-          "captions_done": 382
+          "stt_done": 384,
+          "captions_done": 384
         },
         {
           "id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
@@ -323,7 +323,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 11948,
+      "captions_files_on_disk": 11952,
       "source": "inventory+disk"
     }
   },
@@ -354,48 +354,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T11:30:58Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T11:32:03Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T11:30:58Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T11:32:03Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T11:30:59Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.2G cap_signal=none"
+      "summary": "2026-09-18T11:32:03Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.6G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T11:30:59Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.2G cap_signal=none"
+      "summary": "2026-09-18T11:32:03Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.6G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T11:30:59Z captions after fill running=3"
+      "summary": "2026-09-18T11:32:03Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T11:30:59Z captions after fill running=3"
+      "summary": "2026-09-18T11:32:03Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T11:30:59Z STT already running — no second Whisper"
+      "summary": "2026-09-18T11:32:03Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T11:30:59Z STT already running — no second Whisper"
+      "summary": "2026-09-18T11:32:03Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-18T11:30:59Z captions after fill running=3",
-    "2026-09-18T11:30:59Z STT already running — no second Whisper",
-    "2026-09-18T11:30:59Z STT already running — no second Whisper",
+    "2026-09-18T11:32:03Z captions after fill running=3",
+    "2026-09-18T11:32:03Z STT already running — no second Whisper",
+    "2026-09-18T11:32:03Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
