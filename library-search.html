@@ -8,35 +8,53 @@
 <style>
 :root { --bg:#0e0e0e; --card:#1a1a1a; --fg:#f0f0f0; --muted:#8a8a8a; --lime:#c8f542; --amber:#e8b84a; --red:#f07178; --border:#2a2a2a; }
 * { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.45 -apple-system,BlinkMacSystemFont,system-ui,sans-serif; padding:16px; padding-bottom:64px; }
-h1 { font-size:17px; letter-spacing:.1em; margin:0; }
+body { margin:0; background:var(--bg); color:var(--fg); font:14px/1.45 -apple-system,BlinkMacSystemFont,system-ui,sans-serif; padding:12px; padding-bottom:88px; }
+h1 { font-size:16px; letter-spacing:.08em; margin:0; }
 .mono { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:11px; color:var(--muted); }
 .row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; justify-content:space-between; }
-.card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:12px 14px; margin-top:12px; }
-input, select { width:100%; padding:12px; border-radius:10px; border:1px solid #333; background:#111; color:var(--fg); font-size:16px; }
+.card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:12px; margin-top:10px; }
+input, select, textarea { width:100%; padding:12px; border-radius:10px; border:1px solid #333; background:#111; color:var(--fg); font-size:16px; }
 label { display:block; font-size:11px; color:var(--muted); letter-spacing:.08em; text-transform:uppercase; margin:10px 0 6px; font-weight:700; }
 .filters { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
-@media (max-width:600px){ .filters { grid-template-columns:1fr; } }
-a.btn, button.btn { display:inline-flex; padding:10px 14px; border-radius:999px; border:0; background:var(--lime); color:#111; font-weight:600; text-decoration:none; font-size:14px; cursor:pointer; }
+@media (max-width:400px){ .filters { grid-template-columns:1fr; } }
+a.btn, button.btn { display:inline-flex; align-items:center; justify-content:center; padding:10px 12px; border-radius:999px; border:0; background:var(--lime); color:#111; font-weight:600; text-decoration:none; font-size:14px; cursor:pointer; min-height:40px; }
 a.btn.secondary, button.btn.secondary { background:#222; color:var(--fg); border:1px solid #333; }
+a.btn.ghost, button.btn.ghost { background:transparent; color:var(--muted); border:1px solid #333; }
 .hit { padding:12px 0; border-bottom:1px solid #222; }
 .hit h3 { margin:0 0 4px; font-size:15px; font-weight:600; }
 .hit .meta { color:var(--muted); font-size:12px; }
 .bad { color:var(--red); font-size:12px; }
 .ok { color:var(--lime); }
 .warn { color:var(--amber); }
-#status { color:var(--muted); font-size:13px; margin-top:8px; }
+.badge { display:inline-block; margin-left:6px; padding:2px 8px; border-radius:999px; background:#2a2410; color:var(--amber); font-size:11px; font-weight:600; vertical-align:middle; }
+#status { color:var(--muted); font-size:12px; margin-top:6px; }
 #detail, #txPanel { display:none; }
 #detail.open, #txPanel.open { display:block; }
 pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin:0; font-family:ui-monospace,Menlo,monospace; }
 .field-miss { color:var(--red); }
 #txBody {
-  margin-top:10px; max-height:min(60vh, 520px); overflow:auto;
-  white-space:pre-wrap; word-break:break-word; font-size:14px; line-height:1.55;
-  background:#111; border:1px solid #2a2a2a; border-radius:10px; padding:12px 14px;
+  margin-top:10px; max-height:min(55vh, 480px); overflow:auto;
+  white-space:pre-wrap; word-break:break-word; font-size:15px; line-height:1.55;
+  background:#111; border:1px solid #2a2a2a; border-radius:10px; padding:12px;
 }
-#txTitle { margin:8px 0 0; font-size:16px; font-weight:600; }
-.hit .actions { margin-top:8px; display:flex; flex-wrap:wrap; gap:8px; }
+#txEditor {
+  display:none; margin-top:10px; width:100%; min-height:min(55vh, 480px);
+  font-size:16px; line-height:1.55; resize:vertical;
+}
+#txEditor.on { display:block; }
+#txBody.hide { display:none; }
+#txTitle { margin:8px 0 0; font-size:15px; font-weight:600; }
+.hit .actions, #txActions, #txEditBar { margin-top:8px; display:flex; flex-wrap:wrap; gap:8px; }
+#txSticky {
+  display:none; position:sticky; bottom:0; z-index:5;
+  margin:10px -12px -12px; padding:10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
+  background:rgba(26,26,26,.96); border-top:1px solid #333;
+  backdrop-filter:blur(8px);
+}
+#txSticky.on { display:block; }
+#txSticky .actions { display:flex; flex-wrap:wrap; gap:8px; }
+#txSticky .actions .btn { flex:1 1 30%; min-width:96px; }
+.note { font-size:12px; color:var(--muted); margin-top:8px; line-height:1.4; }
 </style>
 </head>
 <body>
@@ -98,13 +116,22 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
 
 <section class="card" id="txPanel">
   <div class="row">
-    <p class="hlabel" style="margin:0;font-size:11px;letter-spacing:.12em;color:var(--muted);font-weight:700;text-transform:uppercase;">Transcript preview</p>
+    <p class="hlabel" style="margin:0;font-size:11px;letter-spacing:.12em;color:var(--muted);font-weight:700;text-transform:uppercase;">Transcript <span id="txEditedBadge" class="badge" style="display:none">Edited on this phone</span></p>
     <button class="btn secondary" type="button" id="closeTx">Close</button>
   </div>
   <h2 id="txTitle"></h2>
   <p class="mono" id="txMeta"></p>
   <div class="hit actions" id="txActions"></div>
   <div id="txBody">Loading…</div>
+  <textarea id="txEditor" spellcheck="true" autocomplete="off" autocapitalize="sentences"></textarea>
+  <div id="txSticky">
+    <div class="actions">
+      <button class="btn" type="button" id="txSaveDraft">Save draft</button>
+      <button class="btn secondary" type="button" id="txCancelEdit">Cancel</button>
+      <button class="btn secondary" type="button" id="txDoneEdit">Done</button>
+    </div>
+    <p class="note" id="txDraftNote">Drafts stay on this phone (localStorage). Download .txt to keep a copy. Box durable save needs Tailscale / local library API — no webhook secrets on Pages.</p>
+  </div>
 </section>
 
 <section class="card" id="detail">
@@ -121,7 +148,38 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
   let BY_ID = new Map();
   const TX_CACHE = Object.create(null);
   let TX_MANIFEST = null;
+  let BOX_API = null; // set if /api/stats reachable (box library server)
+  let CURRENT = null;
+  let ORIGINAL_TEXT = "";
+  let EDITING = false;
   const $ = (id) => document.getElementById(id);
+
+  function draftKey(it){
+    return "aios.txDraft.v1:" + String(it.channel_id || "") + ":" + String(it.id || "");
+  }
+  function loadDraft(it){
+    try {
+      const raw = localStorage.getItem(draftKey(it));
+      if(!raw) return null;
+      const o = JSON.parse(raw);
+      if(!o || typeof o.text !== "string") return null;
+      return o;
+    } catch(e){ return null; }
+  }
+  function saveDraft(it, text){
+    const payload = {
+      text: text,
+      saved_at: new Date().toISOString(),
+      id: it.id,
+      channel_id: it.channel_id || "",
+      title: it.title || ""
+    };
+    localStorage.setItem(draftKey(it), JSON.stringify(payload));
+    return payload;
+  }
+  function clearDraft(it){
+    try { localStorage.removeItem(draftKey(it)); } catch(e){}
+  }
 
   async function fetchJson(url){
     const r = await fetch(url, {cache:"no-store"});
@@ -193,11 +251,12 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
       const id = escapeAttr(it.id || "");
       const note = (!it.has_transcript && it.transcript_note)
         ? `<div class="warn">note: ${escapeHtml(it.transcript_note)}</div>` : "";
+      const edited = loadDraft(it) ? `<span class="badge">Edited on this phone</span>` : "";
       const txBtn = (it.has_transcript && it.tx_shard)
         ? `<button class="btn openTx" type="button" data-id="${id}">Read transcript</button>` : "";
       return `
       <div class="hit" data-id="${id}">
-        <h3>${escapeHtml(it.title || "(no title)")}</h3>
+        <h3>${escapeHtml(it.title || "(no title)")}${edited}</h3>
         <div class="meta">${escapeHtml(it.channel_name||it.channel_id||"")} · ${escapeHtml(it.access||"?")} · ${escapeHtml(it.content_type||"?")} · ${it.has_transcript?"transcript":"no transcript"}</div>
         ${it.has_schema_gap ? `<div class="bad">schema: ${escapeHtml(Array.isArray(it.missing_flags)?it.missing_flags.join(", "):(it.missing_flags||"gap"))}</div>` : ""}
         ${note}
@@ -247,15 +306,148 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
     return data;
   }
 
+  function parseEntry(entry, it){
+    let text = "";
+    let shown = 0;
+    let full = 0;
+    let truncated = false;
+    if(typeof entry === "string"){
+      text = entry;
+      shown = entry.length;
+      full = (it && it.tx_full_chars != null) ? Number(it.tx_full_chars) : entry.length;
+      truncated = !!(it && it.tx_truncated) || (full > shown);
+    } else if(entry && typeof entry === "object"){
+      text = entry.text || "";
+      shown = Number(entry.chars != null ? entry.chars : text.length);
+      full = Number(entry.full_chars != null ? entry.full_chars : shown);
+      truncated = !!entry.truncated || (full > shown);
+    } else {
+      return null;
+    }
+    return {text, shown, full, truncated};
+  }
+
+  function currentDisplayText(){
+    if(EDITING) return $("txEditor").value;
+    const d = loadDraft(CURRENT);
+    if(d) return d.text;
+    return ORIGINAL_TEXT;
+  }
+
+  function setEditMode(on){
+    EDITING = !!on;
+    $("txEditor").classList.toggle("on", EDITING);
+    $("txBody").classList.toggle("hide", EDITING);
+    $("txSticky").classList.toggle("on", EDITING);
+    if(EDITING){
+      $("txEditor").focus();
+      try { $("txEditor").setSelectionRange($("txEditor").value.length, $("txEditor").value.length); } catch(e){}
+    }
+  }
+
+  function refreshBadge(it){
+    const has = !!(it && loadDraft(it));
+    $("txEditedBadge").style.display = has ? "inline-block" : "none";
+  }
+
+  function downloadTxt(filename, text){
+    const blob = new Blob([text], {type:"text/plain;charset=utf-8"});
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = filename || "transcript.txt";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+
+  async function copyText(text){
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch(e){
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+        return true;
+      } catch(e2){ return false; }
+    }
+  }
+
+  function buildTxActions(it){
+    const parts = [];
+    if(it.url){
+      parts.push(`<a class="btn secondary" href="${escapeAttr(it.url)}" target="_blank" rel="noopener">YouTube</a>`);
+    }
+    parts.push(`<button class="btn" type="button" id="txEditBtn">Edit</button>`);
+    parts.push(`<button class="btn secondary" type="button" id="txCopyBtn">Copy all</button>`);
+    parts.push(`<button class="btn secondary" type="button" id="txDlBtn">Download .txt</button>`);
+    parts.push(`<button class="btn ghost openSchema" type="button" data-id="${escapeAttr(it.id)}" id="txSchemaBtn">Schema</button>`);
+    if(BOX_API){
+      parts.push(`<button class="btn secondary" type="button" id="txSaveBoxBtn">Save to box</button>`);
+    }
+    $("txActions").innerHTML = parts.join("");
+    $("txEditBtn").onclick = () => {
+      const draft = loadDraft(it);
+      $("txEditor").value = draft ? draft.text : ORIGINAL_TEXT;
+      setEditMode(true);
+    };
+    $("txCopyBtn").onclick = async () => {
+      const ok = await copyText(currentDisplayText());
+      $("txMeta").textContent = (ok ? "Copied · " : "Copy failed · ") + metaLine(it, ORIGINAL_TEXT.length);
+    };
+    $("txDlBtn").onclick = () => {
+      const text = currentDisplayText();
+      const corrected = !!(loadDraft(it) || (EDITING && $("txEditor").value !== ORIGINAL_TEXT));
+      const name = (it.id || "transcript") + (corrected ? "-corrected.txt" : ".txt");
+      downloadTxt(name, text);
+    };
+    $("txSchemaBtn").onclick = () => showDetail(it);
+    const boxBtn = $("txSaveBoxBtn");
+    if(boxBtn){
+      boxBtn.onclick = () => saveToBox(it, currentDisplayText());
+    }
+  }
+
+  function metaLine(it, shown, full, truncated){
+    let s = (it.channel_name || it.channel_id || "") + " · " + (it.id || "");
+    if(truncated && full > shown){
+      s += " · Showing first " + shown + " of " + full + " chars";
+    } else if(shown != null){
+      s += " · " + shown + " chars";
+    }
+    return s;
+  }
+
+  async function saveToBox(it, text){
+    if(!BOX_API) return;
+    $("txMeta").textContent = "Saving to box…";
+    try {
+      const r = await fetch(BOX_API + "/api/transcript-draft/" + encodeURIComponent(it.channel_id || "_") + "/" + encodeURIComponent(it.id), {
+        method: "PUT",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({text: text, title: it.title || "", source: "library-search"})
+      });
+      if(!r.ok) throw new Error("HTTP " + r.status);
+      $("txMeta").textContent = "Saved draft on box · " + metaLine(it, text.length);
+    } catch(err){
+      $("txMeta").textContent = "Box save failed (use Download .txt) · " + (err && err.message ? err.message : err);
+    }
+  }
+
   async function showTranscript(it){
     if(!it) return;
+    CURRENT = it;
+    EDITING = false;
+    setEditMode(false);
     $("txTitle").textContent = it.title || it.id || "(item)";
     $("txMeta").textContent = (it.channel_name || it.channel_id || "") + " · " + (it.id || "");
-    $("txActions").innerHTML = it.url
-      ? `<a class="btn" href="${escapeAttr(it.url)}" target="_blank" rel="noopener">Open on YouTube</a>
-         <button class="btn secondary openSchema" type="button" data-id="${escapeAttr(it.id)}">Schema fields</button>`
-      : `<button class="btn secondary openSchema" type="button" data-id="${escapeAttr(it.id)}">Schema fields</button>`;
     $("txBody").textContent = "Loading transcript…";
+    $("txActions").innerHTML = "";
+    refreshBadge(it);
     $("txPanel").classList.add('open');
     $("detail").classList.remove('open');
     $("txPanel").scrollIntoView({behavior:'smooth', block:'start'});
@@ -266,16 +458,52 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
         throw new Error("Missing tx_shard on item — re-export phone catalog");
       }
       const map = await loadTxShard(shard);
-      const text = map && map[it.id];
-      if(!text){
-        $("txBody").textContent = "Preview not found in shard " + shard + " for " + it.id;
+      const parsed = parseEntry(map && map[it.id], it);
+      if(!parsed){
+        $("txBody").textContent = "Transcript not found in shard " + shard + " for " + it.id;
         return;
       }
-      $("txBody").textContent = text;
+      ORIGINAL_TEXT = parsed.text;
+      const draft = loadDraft(it);
+      const display = draft ? draft.text : parsed.text;
+      $("txBody").textContent = display;
+      $("txMeta").textContent = metaLine(it, parsed.shown, parsed.full, parsed.truncated)
+        + (draft ? " · draft on this phone" : "");
+      refreshBadge(it);
+      buildTxActions(it);
     } catch(err){
       $("txBody").textContent = "Failed to load transcript: " + (err && err.message ? err.message : err);
     }
   }
+
+  $("txSaveDraft").addEventListener("click", () => {
+    if(!CURRENT) return;
+    saveDraft(CURRENT, $("txEditor").value);
+    $("txBody").textContent = $("txEditor").value;
+    refreshBadge(CURRENT);
+    $("txMeta").textContent = "Draft saved on this phone · " + metaLine(CURRENT, $("txEditor").value.length);
+    run();
+  });
+  $("txCancelEdit").addEventListener("click", () => {
+    setEditMode(false);
+    if(CURRENT){
+      const d = loadDraft(CURRENT);
+      $("txBody").textContent = d ? d.text : ORIGINAL_TEXT;
+    }
+  });
+  $("txDoneEdit").addEventListener("click", () => {
+    if(!CURRENT) return;
+    const text = $("txEditor").value;
+    if(text !== ORIGINAL_TEXT){
+      saveDraft(CURRENT, text);
+    } else {
+      clearDraft(CURRENT);
+    }
+    $("txBody").textContent = text;
+    setEditMode(false);
+    refreshBadge(CURRENT);
+    run();
+  });
 
   $("go").addEventListener('click', run);
   $("q").addEventListener('keydown', e => { if(e.key==='Enter') run(); });
@@ -291,22 +519,40 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
       showDetail(itemById(sch.dataset.id));
     }
   });
-  $("txActions").addEventListener('click', e => {
-    const sch = e.target.closest('button.openSchema');
-    if(sch) showDetail(itemById(sch.dataset.id));
-  });
   $("closeDetail").addEventListener('click', () => $("detail").classList.remove('open'));
-  $("closeTx").addEventListener('click', () => $("txPanel").classList.remove('open'));
+  $("closeTx").addEventListener('click', () => {
+    setEditMode(false);
+    $("txPanel").classList.remove('open');
+  });
+
+  async function probeBoxApi(){
+    // Only same-origin library API (box library app) — never hardcode loopback as a primary CTA.
+    try {
+      const r = await fetch("/api/stats", {cache:"no-store"});
+      if(r.ok){
+        BOX_API = ""; // same origin
+        return;
+      }
+    } catch(e){}
+    BOX_API = null;
+  }
 
   (async function(){
     try {
+      await probeBoxApi();
       const {items, note} = await loadCatalog();
       CATALOG = items;
       BY_ID = new Map(items.map(it => [String(it.id), it]));
       fillChannels();
-      $("status").textContent = "Ready · " + items.length + " items · " + note;
+      $("status").textContent = "Ready · " + items.length + " items · " + note + (BOX_API!=null ? " · box API" : "");
       ensureTxManifest().catch(()=>{});
       run();
+      // Deep-link ?id=
+      const params = new URLSearchParams(location.search);
+      const want = params.get("id");
+      if(want && BY_ID.has(want)){
+        showTranscript(BY_ID.get(want));
+      }
     } catch(err){
       $("status").innerHTML = '<span class="warn">Load failed: '+escapeHtml(err.message)+'</span>';
     }
