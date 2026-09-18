@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-18T09:46:33Z",
+  "written_at_utc": "2026-09-18T09:46:46Z",
   "written_at_hkt": "2026-09-18 17:46 HKT",
   "token_free": true,
   "processes": {
@@ -40,8 +40,8 @@
       },
       {
         "comm": "python",
-        "rss_gi": 2.54,
-        "n": 5
+        "rss_gi": 2.61,
+        "n": 4
       },
       {
         "comm": "chrome",
@@ -60,8 +60,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.08,
-        "n": 37
+        "rss_gi": 0.09,
+        "n": 38
       },
       {
         "comm": "websockify",
@@ -79,20 +79,20 @@
         "n": 3
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.05,
-        "n": 1
+        "comm": "python3",
+        "rss_gi": 0.04,
+        "n": 2
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 3.2,
-      "anon_gi": 4.5,
+      "anon_gi": 4.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.4
+      "committed_gi": 16.5
     },
-    "load1": 4.11,
+    "load1": 4.09,
     "disk_avail": "107G",
     "tmp_du": "66M"
   },
@@ -165,7 +165,7 @@
         "jobs": 3,
         "left_global": 3527,
         "eta_deadline_utc": "2026-09-18T10:41:34Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -354,53 +354,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9/inventory_public.json"
+      "summary": "2026-09-18T09:46:44Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9/inventory_public.json"
+      "summary": "2026-09-18T09:46:44Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:46:31Z reboost captions pid 1686245 channel PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9"
+      "summary": "2026-09-18T09:46:44Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.2G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:46:31Z reboost captions pid 1686245 channel PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9"
+      "summary": "2026-09-18T09:46:44Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.2G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:46:32Z captions after fill running=3"
+      "summary": "2026-09-18T09:46:44Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:46:32Z captions after fill running=3"
+      "summary": "2026-09-18T09:46:44Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:46:32Z STT already running — no second Whisper"
+      "summary": "2026-09-18T09:46:44Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T09:46:32Z STT already running — no second Whisper"
+      "summary": "2026-09-18T09:46:44Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-18T09:46:32Z captions after fill running=3",
-    "2026-09-18T09:46:32Z STT already running — no second Whisper",
-    "2026-09-18T09:46:32Z STT already running — no second Whisper",
-    "backfill-captions.log: warning: no cookies file at <path> public captions still run cookieless",
+    "2026-09-18T09:46:44Z captions after fill running=3",
+    "2026-09-18T09:46:44Z STT already running — no second Whisper",
+    "2026-09-18T09:46:44Z STT already running — no second Whisper",
+    "backfill-captions.log: }",
+    "{",
     "\"wrote_progress\": \"<path>",
-    "\"done_count\": 371",
-    "}",
-    "warning: no cookies file at <path> public captions still run cookieless"
+    "\"done_count\": 1772",
+    "}"
   ],
   "pm": {
     "token_free": true,
