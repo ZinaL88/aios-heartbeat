@@ -57,3 +57,12 @@ Cache-bust board fetches with `?v=20`.
   - pending/left >0 and not running but `worker_state` ≠ `paused` (bare idle banned)
 - Also prove Pages: `curl` public `status.json` and assert `tracks.captions.running` matches box live count.
 - UI click/DOM QA on `?v=20`: captions pill = Running when workers live, else Paused · backlog N / Caught up. No `file -`. ETA overdue explained when paused.
+
+
+## Responsive (v21 — never regress)
+- Usable at ~390 / ~768 / ≥1200 without horizontal scroll or tap targets <40px.
+- Safe-area insets on notched phones; form controls `font-size:16px` (no iOS zoom).
+- Board stacks (lanes/metrics/grid2/bottom) single-column under 820px; multi-column when width allows.
+- Queue/other lists scroll inside cards on narrow screens; sticky edit bar + confirm sheet stay phone-friendly.
+- Patch **ops/status/render_public_html.py** (not only mirrored index.html) so status sync keeps fixes.
+- Cache-bust library links / board fetch `?v=21`.
