@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-18T12:20:58Z",
-  "written_at_hkt": "2026-09-18 20:20 HKT",
+  "written_at_utc": "2026-09-18T12:22:07Z",
+  "written_at_hkt": "2026-09-18 20:22 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -16,7 +16,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 1795419,
+        "pid": 1798472,
         "cmd": "proc"
       },
       {
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.2,
+    "mem_available_gi": 6.5,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.71,
+        "rss_gi": 2.94,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.59,
+        "rss_gi": 2.32,
         "n": 5
       },
       {
@@ -79,9 +79,9 @@
         "n": 3
       },
       {
-        "comm": "x11vnc",
-        "rss_gi": 0.04,
-        "n": 3
+        "comm": "yt-dlp",
+        "rss_gi": 0.05,
+        "n": 1
       }
     ],
     "meminfo": {
@@ -90,9 +90,9 @@
       "anon_gi": 4.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.5
+      "committed_gi": 16.8
     },
-    "load1": 5.43,
+    "load1": 4.14,
     "disk_avail": "107G",
     "tmp_du": "66M"
   },
@@ -103,42 +103,42 @@
   },
   "collector": {
     "found": true,
-    "done": 240,
+    "done": 241,
     "total": 778,
     "inflight": null,
-    "last_id": "y89HU0jsA40",
+    "last_id": "xm6Yl1GCVBQ",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
-      "public_done": 240,
+      "public_done": 241,
       "members_total": 0,
       "members_done": 0,
-      "pending_stt_n": 298,
-      "pending_stt_listed": 538,
-      "transcripts_on_disk": 240,
-      "captions_done": 240,
+      "pending_stt_n": 296,
+      "pending_stt_listed": 537,
+      "transcripts_on_disk": 241,
+      "captions_done": 241,
       "captions_left": 0,
-      "captions_no_sub": 538,
+      "captions_no_sub": 537,
       "source": "inventory+disk",
-      "public_left": 538
+      "public_left": 537
     },
     "tracks": {
       "stt": {
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-        "pending": 298,
-        "done": 8031,
-        "transcripts_on_disk": 8031,
-        "inflight": "dSAsJXuwTK0",
+        "pending": 296,
+        "done": 8033,
+        "transcripts_on_disk": 8033,
+        "inflight": "Msu6DevllJw",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
-        "eta_min": 7152,
-        "eta_hkt": "2026-09-23 19:32 HKT",
+        "eta_min": 7104,
+        "eta_hkt": "2026-09-23 18:46 HKT",
         "jobs": 2,
-        "pending_global": 1949,
-        "eta_deadline_utc": "2026-09-23T11:32:41Z",
-        "eta_frozen": true,
+        "pending_global": 1947,
+        "eta_deadline_utc": "2026-09-23T10:46:08Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       },
@@ -155,26 +155,26 @@
           "Data Science",
           "The Startup Ideas Podcast Episodes"
         ],
-        "done": 7794,
-        "left": 1886,
+        "done": 7796,
+        "left": 1883,
         "total": 15597,
-        "no_sub": 194,
+        "no_sub": 196,
         "eta_min": 157,
-        "eta_hkt": "2026-09-18 22:57 HKT",
+        "eta_hkt": "2026-09-18 22:59 HKT",
         "inflight": null,
         "jobs": 3,
-        "left_global": 3406,
-        "eta_deadline_utc": "2026-09-18T14:57:41Z",
-        "eta_frozen": true,
+        "left_global": 3403,
+        "eta_deadline_utc": "2026-09-18T14:59:08Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 8031,
-      "stt_pending": 1949,
-      "captions_done": 7794,
-      "captions_left": 3406,
+      "stt_done": 8033,
+      "stt_pending": 1947,
+      "captions_done": 7796,
+      "captions_left": 3403,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -223,8 +223,8 @@
         {
           "id": "UCAxQ8sjHgjXh26la7jEBw3w",
           "name": "mike1111",
-          "stt_done": 240,
-          "captions_done": 240
+          "stt_done": 241,
+          "captions_done": 241
         },
         {
           "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
@@ -283,8 +283,8 @@
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "name": "Data Science",
-          "stt_done": 70,
-          "captions_done": 70
+          "stt_done": 71,
+          "captions_done": 71
         },
         {
           "id": "PL1328115D3D8A2566",
@@ -323,7 +323,7 @@
           "captions_done": 35
         }
       ],
-      "captions_files_on_disk": 11984,
+      "captions_files_on_disk": 11986,
       "source": "inventory+disk"
     }
   },
@@ -354,52 +354,52 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T12:20:57Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T12:22:06Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T12:20:57Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-18T12:22:06Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T12:20:57Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.4G cap_signal=none"
+      "summary": "2026-09-18T12:22:06Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.0G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T12:20:57Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.4G cap_signal=none"
+      "summary": "2026-09-18T12:22:06Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=9.0G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T12:20:57Z captions after fill running=3"
+      "summary": "2026-09-18T12:22:06Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T12:20:57Z captions after fill running=3"
+      "summary": "2026-09-18T12:22:06Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T12:20:57Z STT already running — no second Whisper"
+      "summary": "2026-09-18T12:22:06Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-18T12:20:57Z STT already running — no second Whisper"
+      "summary": "2026-09-18T12:22:06Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-18T12:20:57Z captions after fill running=3",
-    "2026-09-18T12:20:57Z STT already running — no second Whisper",
-    "2026-09-18T12:20:57Z STT already running — no second Whisper",
+    "2026-09-18T12:22:06Z captions after fill running=3",
+    "2026-09-18T12:22:06Z STT already running — no second Whisper",
+    "2026-09-18T12:22:06Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
-    "o cookies): tion for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans-en-US': HTTP Error 429: Too Many Requests",
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
   ],
   "pm": {
