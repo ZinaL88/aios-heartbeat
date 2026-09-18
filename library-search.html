@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-store"/>
 <title>HEARTBEAT · Library search</title>
+<meta name="aios-library-search-build" content="tx-confirm-1"/>
 <style>
 :root { --bg:#0e0e0e; --card:#1a1a1a; --fg:#f0f0f0; --muted:#8a8a8a; --lime:#c8f542; --amber:#e8b84a; --red:#f07178; --border:#2a2a2a; }
 * { box-sizing:border-box; }
@@ -55,6 +56,21 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
 #txSticky .actions { display:flex; flex-wrap:wrap; gap:8px; }
 #txSticky .actions .btn { flex:1 1 30%; min-width:96px; }
 .note { font-size:12px; color:var(--muted); margin-top:8px; line-height:1.4; }
+
+#confirmMask {
+  display:none; position:fixed; inset:0; z-index:50;
+  background:rgba(0,0,0,.55); padding:18px; align-items:flex-end; justify-content:center;
+}
+#confirmMask.on { display:flex; }
+#confirmSheet {
+  width:100%; max-width:420px; background:#1a1a1a; border:1px solid #333; border-radius:16px 16px 12px 12px;
+  padding:16px 16px calc(16px + env(safe-area-inset-bottom, 0px));
+}
+#confirmSheet h3 { margin:0 0 8px; font-size:16px; }
+#confirmSheet p { margin:0 0 14px; color:#aaa; font-size:14px; line-height:1.45; }
+#confirmActions { display:flex; gap:8px; flex-wrap:wrap; }
+#confirmActions .btn { flex:1; min-width:120px; }
+
 </style>
 </head>
 <body>
@@ -476,33 +492,85 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
     }
   }
 
+  
+  let CONFIRM_CB = null;
+  function askConfirm(title, msg, yesLabel, cb){
+    $("confirmTitle").textContent = title;
+    $("confirmMsg").textContent = msg;
+    $("confirmYes").textContent = yesLabel || "Confirm";
+    CONFIRM_CB = cb;
+    $("confirmMask").classList.add("on");
+  }
+  function closeConfirm(){
+    $("confirmMask").classList.remove("on");
+    CONFIRM_CB = null;
+  }
+  $("confirmNo").addEventListener("click", closeConfirm);
+  $("confirmMask").addEventListener("click", (e) => { if(e.target === $("confirmMask")) closeConfirm(); });
+  $("confirmYes").addEventListener("click", () => {
+    const fn = CONFIRM_CB;
+    closeConfirm();
+    if(typeof fn === "function") fn();
+  });
+
   $("txSaveDraft").addEventListener("click", () => {
     if(!CURRENT) return;
-    saveDraft(CURRENT, $("txEditor").value);
-    $("txBody").textContent = $("txEditor").value;
-    refreshBadge(CURRENT);
-    $("txMeta").textContent = "Draft saved on this phone · " + metaLine(CURRENT, $("txEditor").value.length);
-    run();
+    const text = $("txEditor").value;
+    askConfirm(
+      "Save draft on this phone?",
+      "Your edits will be stored in this browser only (not uploaded to the library yet). You can still Download .txt anytime.",
+      "Save draft",
+      () => {
+        saveDraft(CURRENT, text);
+        $("txBody").textContent = text;
+        refreshBadge(CURRENT);
+        $("txMeta").textContent = "Draft saved on this phone · " + metaLine(CURRENT, text.length);
+        run();
+      }
+    );
   });
   $("txCancelEdit").addEventListener("click", () => {
-    setEditMode(false);
-    if(CURRENT){
+    if(!CURRENT) { setEditMode(false); return; }
+    const text = $("txEditor").value;
+    const draft = loadDraft(CURRENT);
+    const baseline = draft ? draft.text : ORIGINAL_TEXT;
+    const dirty = text !== baseline;
+    const doCancel = () => {
+      setEditMode(false);
       const d = loadDraft(CURRENT);
       $("txBody").textContent = d ? d.text : ORIGINAL_TEXT;
+    };
+    if(dirty){
+      askConfirm(
+        "Discard unsaved edits?",
+        "You have changes that are not saved as a draft. Cancel will throw them away.",
+        "Discard",
+        doCancel
+      );
+    } else {
+      doCancel();
     }
   });
   $("txDoneEdit").addEventListener("click", () => {
     if(!CURRENT) return;
     const text = $("txEditor").value;
+    const finish = () => {
+      $("txBody").textContent = text;
+      setEditMode(false);
+      refreshBadge(CURRENT);
+      run();
+    };
     if(text !== ORIGINAL_TEXT){
-      saveDraft(CURRENT, text);
+      askConfirm(
+        "Save draft and finish?",
+        "Edits differ from the library copy. Saving keeps them on this phone only.",
+        "Save & done",
+        () => { saveDraft(CURRENT, text); finish(); }
+      );
     } else {
       clearDraft(CURRENT);
+      finish();
     }
-    $("txBody").textContent = text;
-    setEditMode(false);
-    refreshBadge(CURRENT);
-    run();
   });
 
   $("go").addEventListener('click', run);
@@ -559,5 +627,17 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
   })();
 })();
 </script>
+
+<div id="confirmMask" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+  <div id="confirmSheet">
+    <h3 id="confirmTitle">Save draft?</h3>
+    <p id="confirmMsg">This keeps your edits on this phone only. Download .txt if you need a backup.</p>
+    <div id="confirmActions">
+      <button class="btn secondary" type="button" id="confirmNo">Cancel</button>
+      <button class="btn" type="button" id="confirmYes">Save</button>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
