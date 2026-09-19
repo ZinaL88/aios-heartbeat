@@ -1,6 +1,6 @@
 {
-  "built_at_hkt": "2026-09-18 08:37 HKT",
-  "built_at_utc": "2026-09-18T00:37:51Z",
+  "built_at_hkt": "2026-09-19 09:40 HKT",
+  "built_at_utc": "2026-09-19T01:40:57Z",
   "items": 13818,
   "transcripts_indexed": 8490,
   "schema_gaps": 12082,
@@ -10,7 +10,7 @@
   "top_gap_channels": [
     {
       "channel_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
-      "channel_name": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+      "channel_name": "理財",
       "item_count": 2934,
       "transcript_count": 1676,
       "schema_gap_count": 2934
@@ -24,7 +24,7 @@
     },
     {
       "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-      "channel_name": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+      "channel_name": "Learning how to learn",
       "item_count": 852,
       "transcript_count": 703,
       "schema_gap_count": 852
@@ -59,28 +59,28 @@
     },
     {
       "channel_id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
-      "channel_name": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
+      "channel_name": "The Startup Ideas Podcast Episodes",
       "item_count": 413,
       "transcript_count": 281,
       "schema_gap_count": 413
     },
     {
       "channel_id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
-      "channel_name": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
+      "channel_name": "Crypto",
       "item_count": 407,
       "transcript_count": 297,
       "schema_gap_count": 407
     },
     {
       "channel_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-      "channel_name": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+      "channel_name": "Job hunting",
       "item_count": 281,
       "transcript_count": 216,
       "schema_gap_count": 281
     },
     {
       "channel_id": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
-      "channel_name": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
+      "channel_name": "MIT RES.6-012 Intro to Probability",
       "item_count": 266,
       "transcript_count": 263,
       "schema_gap_count": 266
@@ -94,21 +94,21 @@
     },
     {
       "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-      "channel_name": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+      "channel_name": "Product Management",
       "item_count": 190,
       "transcript_count": 60,
       "schema_gap_count": 190
     },
     {
       "channel_id": "UC1CXs5dtO8_Zrsm-48saJfg",
-      "channel_name": "UC1CXs5dtO8_Zrsm-48saJfg",
+      "channel_name": "Vicky Zhao",
       "item_count": 185,
       "transcript_count": 24,
       "schema_gap_count": 185
     },
     {
       "channel_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
-      "channel_name": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
+      "channel_name": "下班經濟學",
       "item_count": 153,
       "transcript_count": 146,
       "schema_gap_count": 153
