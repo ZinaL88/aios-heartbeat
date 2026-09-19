@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-19T00:25:51Z",
-  "written_at_hkt": "2026-09-19 08:25 HKT",
+  "written_at_utc": "2026-09-19T00:27:03Z",
+  "written_at_hkt": "2026-09-19 08:27 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -16,7 +16,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 2464221,
+        "pid": 2469026,
         "cmd": "proc"
       },
       {
@@ -30,18 +30,18 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.2,
+    "mem_available_gi": 6.6,
     "mem_total_gi": 15.6,
     "mem_top": [
-      {
-        "comm": "python",
-        "rss_gi": 2.73,
-        "n": 5
-      },
       {
         "comm": "node",
         "rss_gi": 2.7,
         "n": 33
+      },
+      {
+        "comm": "python",
+        "rss_gi": 2.04,
+        "n": 5
       },
       {
         "comm": "chrome",
@@ -87,12 +87,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 4.7,
-      "anon_gi": 4.7,
+      "anon_gi": 4.1,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.6
+      "committed_gi": 15.9
     },
-    "load1": 4.5,
+    "load1": 4.08,
     "disk_avail": "105G",
     "tmp_du": "251M"
   },
@@ -103,42 +103,42 @@
   },
   "collector": {
     "found": true,
-    "done": 372,
+    "done": 373,
     "total": 778,
     "inflight": null,
-    "last_id": "TWwSCM8X8i4",
+    "last_id": "0FTEvUyA2iE",
     "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
     "inventory": {
       "public_total": 778,
-      "public_done": 372,
+      "public_done": 373,
       "members_total": 0,
       "members_done": 0,
-      "pending_stt_n": 34,
-      "pending_stt_listed": 406,
-      "transcripts_on_disk": 372,
-      "captions_done": 372,
+      "pending_stt_n": 32,
+      "pending_stt_listed": 405,
+      "transcripts_on_disk": 373,
+      "captions_done": 373,
       "captions_left": 0,
-      "captions_no_sub": 406,
+      "captions_no_sub": 405,
       "source": "inventory+disk",
-      "public_left": 406
+      "public_left": 405
     },
     "tracks": {
       "stt": {
         "running": true,
         "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-        "pending": 34,
-        "done": 8572,
-        "transcripts_on_disk": 8572,
-        "inflight": "ndmH4qd7-so",
+        "pending": 32,
+        "done": 8573,
+        "transcripts_on_disk": 8573,
+        "inflight": "-aPYs102c9g",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
-        "eta_min": 816,
-        "eta_hkt": "2026-09-19 22:01 HKT",
+        "eta_min": 768,
+        "eta_hkt": "2026-09-19 21:15 HKT",
         "jobs": 2,
-        "pending_global": 1733,
-        "eta_deadline_utc": "2026-09-19T14:01:37Z",
-        "eta_frozen": true,
+        "pending_global": 1731,
+        "eta_deadline_utc": "2026-09-19T13:15:03Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       },
@@ -155,7 +155,7 @@
           "Product Management",
           "Careers"
         ],
-        "done": 8335,
+        "done": 8336,
         "left": 1475,
         "total": 15597,
         "no_sub": 490,
@@ -171,9 +171,9 @@
       }
     },
     "progress": {
-      "stt_done": 8572,
-      "stt_pending": 1733,
-      "captions_done": 8335,
+      "stt_done": 8573,
+      "stt_pending": 1731,
+      "captions_done": 8336,
       "captions_left": 2696,
       "captions_total": 15597,
       "channels_touched": 62,
@@ -211,8 +211,8 @@
         {
           "id": "UCAxQ8sjHgjXh26la7jEBw3w",
           "name": "mike1111",
-          "stt_done": 372,
-          "captions_done": 372
+          "stt_done": 373,
+          "captions_done": 373
         },
         {
           "id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
@@ -354,52 +354,52 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T00:25:50Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-19T00:27:01Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T00:25:50Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-19T00:27:01Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T00:25:50Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.5G cap_signal=none"
+      "summary": "2026-09-19T00:27:02Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.1G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T00:25:50Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.5G cap_signal=none"
+      "summary": "2026-09-19T00:27:02Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.1G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T00:25:50Z captions after fill running=3"
+      "summary": "2026-09-19T00:27:02Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T00:25:50Z captions after fill running=3"
+      "summary": "2026-09-19T00:27:02Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T00:25:50Z STT already running — no second Whisper"
+      "summary": "2026-09-19T00:27:02Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T00:25:50Z STT already running — no second Whisper"
+      "summary": "2026-09-19T00:27:02Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-19T00:25:50Z captions after fill running=3",
-    "2026-09-19T00:25:50Z STT already running — no second Whisper",
-    "2026-09-19T00:25:50Z STT already running — no second Whisper",
+    "2026-09-19T00:27:02Z captions after fill running=3",
+    "2026-09-19T00:27:02Z STT already running — no second Whisper",
+    "2026-09-19T00:27:02Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
+    "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans-en': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
   ],
   "pm": {
