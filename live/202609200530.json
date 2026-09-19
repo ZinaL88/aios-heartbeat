@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-19T21:34:30Z",
+  "written_at_utc": "2026-09-19T21:34:50Z",
   "written_at_hkt": "2026-09-20 05:34 HKT",
   "token_free": true,
   "processes": {
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 7.2,
+    "mem_available_gi": 7.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.83,
+        "rss_gi": 3.02,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.35,
+        "rss_gi": 2.46,
         "n": 5
       },
       {
@@ -61,7 +61,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 38
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -87,12 +87,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 4.1,
-      "anon_gi": 4.5,
+      "anon_gi": 4.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.3
+      "committed_gi": 16.6
     },
-    "load1": 4.34,
+    "load1": 4.71,
     "disk_avail": "105G",
     "tmp_du": "255M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
         "pending": 423,
-        "done": 9812,
-        "transcripts_on_disk": 9812,
+        "done": 9813,
+        "transcripts_on_disk": 9813,
         "inflight": "ZOd45b0j5xA",
         "inflight_duration_s": null,
         "model": "medium",
@@ -155,28 +155,28 @@
           "Data Science",
           "Productivity"
         ],
-        "done": 9575,
-        "left": 1324,
+        "done": 9576,
+        "left": 1323,
         "total": 15597,
         "no_sub": 475,
         "eta_min": 110,
-        "eta_hkt": "2026-09-20 07:08 HKT",
+        "eta_hkt": "2026-09-20 07:24 HKT",
         "inflight": null,
         "jobs": 3,
         "next_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
         "next_name": "Dr Angela C Meyers",
-        "left_global": 1324,
-        "eta_deadline_utc": "2026-09-19T23:08:38Z",
-        "eta_frozen": true,
+        "left_global": 1323,
+        "eta_deadline_utc": "2026-09-19T23:24:50Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 9812,
+      "stt_done": 9813,
       "stt_pending": 1507,
-      "captions_done": 9575,
-      "captions_left": 1324,
+      "captions_done": 9576,
+      "captions_left": 1323,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -219,8 +219,8 @@
         {
           "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
           "name": "Product Management",
-          "stt_done": 493,
-          "captions_done": 493
+          "stt_done": 494,
+          "captions_done": 494
         },
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
@@ -325,7 +325,7 @@
           "captions_done": 60
         }
       ],
-      "captions_files_on_disk": 13871,
+      "captions_files_on_disk": 13872,
       "source": "inventory+disk"
     }
   },
@@ -356,52 +356,52 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T21:34:29Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-19T21:34:49Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T21:34:29Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-19T21:34:49Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T21:34:29Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.2G cap_signal=none"
+      "summary": "2026-09-19T21:34:49Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.2G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T21:34:29Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.2G cap_signal=none"
+      "summary": "2026-09-19T21:34:49Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.2G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T21:34:29Z captions after fill running=3"
+      "summary": "2026-09-19T21:34:49Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T21:34:29Z captions after fill running=3"
+      "summary": "2026-09-19T21:34:49Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T21:34:29Z STT already running — no second Whisper"
+      "summary": "2026-09-19T21:34:49Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T21:34:29Z STT already running — no second Whisper"
+      "summary": "2026-09-19T21:34:49Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-19T21:34:29Z captions after fill running=3",
-    "2026-09-19T21:34:29Z STT already running — no second Whisper",
-    "2026-09-19T21:34:29Z STT already running — no second Whisper",
+    "2026-09-19T21:34:49Z captions after fill running=3",
+    "2026-09-19T21:34:49Z STT already running — no second Whisper",
+    "2026-09-19T21:34:49Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
-    "m-browser or --cookies (redacted) the authentication. See  https:<path>  for how to manually pass cookies. Also see  https:<path>  for tips on effectively exporting YouTube cookies",
     "rate-limited — backoff 45s",
-    "m-browser or --cookies (redacted) the authentication. See  https:<path>  for how to manually pass cookies. Also see  https:<path>  for tips on effectively exporting YouTube cookies",
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
   ],
   "pm": {
