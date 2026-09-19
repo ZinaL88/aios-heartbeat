@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-19T15:27:44Z",
-  "written_at_hkt": "2026-09-19 23:27 HKT",
+  "written_at_utc": "2026-09-19T15:28:56Z",
+  "written_at_hkt": "2026-09-19 23:28 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 4.5,
+    "mem_available_gi": 4.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.79,
+        "rss_gi": 2.81,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.18,
+        "rss_gi": 2.66,
         "n": 5
       },
       {
@@ -59,14 +59,14 @@
         "n": 3
       },
       {
+        "comm": "websockify",
+        "rss_gi": 0.1,
+        "n": 3
+      },
+      {
         "comm": "bash",
         "rss_gi": 0.09,
         "n": 38
-      },
-      {
-        "comm": "websockify",
-        "rss_gi": 0.07,
-        "n": 2
       },
       {
         "comm": "plank",
@@ -79,20 +79,20 @@
         "n": 3
       },
       {
-        "comm": "x11vnc",
+        "comm": "python3",
         "rss_gi": 0.04,
-        "n": 3
+        "n": 2
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 3.8,
-      "anon_gi": 4.2,
+      "anon_gi": 4.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.0
+      "committed_gi": 16.6
     },
-    "load1": 4.47,
+    "load1": 5.36,
     "disk_avail": "105G",
     "tmp_du": "255M"
   },
@@ -156,18 +156,18 @@
           "Product Management"
         ],
         "done": 9352,
-        "left": 1523,
+        "left": 1522,
         "total": 15597,
-        "no_sub": 448,
+        "no_sub": 449,
         "eta_min": 127,
-        "eta_hkt": "2026-09-20 01:32 HKT",
+        "eta_hkt": "2026-09-20 01:35 HKT",
         "inflight": null,
         "jobs": 3,
         "next_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
         "next_name": "Dr Angela C Meyers",
-        "left_global": 1523,
-        "eta_deadline_utc": "2026-09-19T17:32:52Z",
-        "eta_frozen": true,
+        "left_global": 1522,
+        "eta_deadline_utc": "2026-09-19T17:35:56Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
@@ -176,7 +176,7 @@
       "stt_done": 9589,
       "stt_pending": 1609,
       "captions_done": 9352,
-      "captions_left": 1523,
+      "captions_left": 1522,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -356,50 +356,50 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T15:27:43Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-19T15:28:55Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T15:27:43Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-19T15:28:55Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T15:27:43Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.4G cap_signal=none"
+      "summary": "2026-09-19T15:28:55Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.4G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T15:27:43Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.4G cap_signal=none"
+      "summary": "2026-09-19T15:28:55Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.4G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T15:27:43Z captions after fill running=3"
+      "summary": "2026-09-19T15:28:55Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T15:27:43Z captions after fill running=3"
+      "summary": "2026-09-19T15:28:55Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T15:27:43Z STT already running — no second Whisper"
+      "summary": "2026-09-19T15:28:55Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T15:27:43Z STT already running — no second Whisper"
+      "summary": "2026-09-19T15:28:55Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-19T15:27:43Z captions after fill running=3",
-    "2026-09-19T15:27:43Z STT already running — no second Whisper",
-    "2026-09-19T15:27:43Z STT already running — no second Whisper",
+    "2026-09-19T15:28:55Z captions after fill running=3",
+    "2026-09-19T15:28:55Z STT already running — no second Whisper",
+    "2026-09-19T15:28:55Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
-    "rate-limited — backoff 45s",
+    "sleep 45.0s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
     "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
