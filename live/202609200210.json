@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-19T18:10:33Z",
-  "written_at_hkt": "2026-09-20 02:10 HKT",
+  "written_at_utc": "2026-09-19T18:14:34Z",
+  "written_at_hkt": "2026-09-20 02:14 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -16,7 +16,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 3450843,
+        "pid": 3457366,
         "cmd": "proc"
       },
       {
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 7.4,
+    "mem_available_gi": 7.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.83,
+        "rss_gi": 2.82,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.48,
+        "rss_gi": 2.49,
         "n": 5
       },
       {
@@ -61,7 +61,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 38
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -92,9 +92,9 @@
       "sreclaimable_gi": 0.3,
       "committed_gi": 16.4
     },
-    "load1": 4.67,
+    "load1": 4.36,
     "disk_avail": "105G",
-    "tmp_du": null
+    "tmp_du": "255M"
   },
   "cookies": {
     "present": false,
@@ -103,42 +103,42 @@
   },
   "collector": {
     "found": true,
-    "done": 160,
+    "done": 161,
     "total": 737,
     "inflight": null,
-    "last_id": "dqPBzPlIU6o",
+    "last_id": "TWokF_gzpX0",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
-      "public_done": 125,
+      "public_done": 126,
       "members_total": 0,
       "members_done": 0,
-      "pending_stt_n": 483,
-      "pending_stt_listed": 643,
-      "transcripts_on_disk": 160,
-      "captions_done": 125,
+      "pending_stt_n": 481,
+      "pending_stt_listed": 642,
+      "transcripts_on_disk": 161,
+      "captions_done": 126,
       "captions_left": 0,
-      "captions_no_sub": 612,
+      "captions_no_sub": 611,
       "source": "inventory+disk",
-      "public_left": 612
+      "public_left": 611
     },
     "tracks": {
       "stt": {
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-        "pending": 483,
-        "done": 9701,
-        "transcripts_on_disk": 9701,
-        "inflight": "TWokF_gzpX0",
+        "pending": 481,
+        "done": 9706,
+        "transcripts_on_disk": 9706,
+        "inflight": "R51LGb4NLJc",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
-        "eta_min": 11592,
-        "eta_hkt": "2026-09-28 03:16 HKT",
+        "eta_min": 11544,
+        "eta_hkt": "2026-09-28 02:38 HKT",
         "jobs": 2,
-        "pending_global": 1567,
-        "eta_deadline_utc": "2026-09-27T19:16:07Z",
-        "eta_frozen": true,
+        "pending_global": 1565,
+        "eta_deadline_utc": "2026-09-27T18:38:34Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       },
@@ -155,28 +155,28 @@
           "Product Management",
           "Productivity"
         ],
-        "done": 9464,
-        "left": 1406,
+        "done": 9469,
+        "left": 1402,
         "total": 15597,
         "no_sub": 474,
         "eta_min": 117,
-        "eta_hkt": "2026-09-20 04:06 HKT",
+        "eta_hkt": "2026-09-20 04:11 HKT",
         "inflight": null,
         "jobs": 3,
         "next_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
         "next_name": "Dr Angela C Meyers",
-        "left_global": 1406,
-        "eta_deadline_utc": "2026-09-19T20:06:09Z",
-        "eta_frozen": true,
+        "left_global": 1402,
+        "eta_deadline_utc": "2026-09-19T20:11:34Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 9701,
-      "stt_pending": 1567,
-      "captions_done": 9464,
-      "captions_left": 1406,
+      "stt_done": 9706,
+      "stt_pending": 1565,
+      "captions_done": 9469,
+      "captions_left": 1402,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -219,14 +219,14 @@
         {
           "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
           "name": "Product Management",
-          "stt_done": 468,
-          "captions_done": 468
+          "stt_done": 470,
+          "captions_done": 470
         },
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "name": "Data Science",
-          "stt_done": 423,
-          "captions_done": 423
+          "stt_done": 425,
+          "captions_done": 425
         },
         {
           "id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
@@ -267,8 +267,8 @@
         {
           "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
           "name": "一个狠人",
-          "stt_done": 160,
-          "captions_done": 125
+          "stt_done": 161,
+          "captions_done": 126
         },
         {
           "id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
@@ -325,12 +325,14 @@
           "captions_done": 60
         }
       ],
-      "captions_files_on_disk": 13767,
+      "captions_files_on_disk": 13771,
       "source": "inventory+disk"
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {},
+  "git_sync": {
+    "pull": "ok"
+  },
   "schedule": {
     "next_cron_utc": "2026-09-19T18:15:00Z",
     "next_cron_hkt": "2026-09-20 02:15 HKT",
@@ -354,48 +356,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T18:10:31Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-19T18:14:33Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T18:10:31Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-19T18:14:33Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T18:10:32Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.2G cap_signal=none"
+      "summary": "2026-09-19T18:14:33Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.2G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T18:10:32Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.2G cap_signal=none"
+      "summary": "2026-09-19T18:14:33Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.2G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T18:10:32Z captions after fill running=3"
+      "summary": "2026-09-19T18:14:33Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T18:10:32Z captions after fill running=3"
+      "summary": "2026-09-19T18:14:33Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T18:10:32Z STT already running — no second Whisper"
+      "summary": "2026-09-19T18:14:33Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T18:10:32Z STT already running — no second Whisper"
+      "summary": "2026-09-19T18:14:33Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-19T18:10:32Z captions after fill running=3",
-    "2026-09-19T18:10:32Z STT already running — no second Whisper",
-    "2026-09-19T18:10:32Z STT already running — no second Whisper",
+    "2026-09-19T18:14:33Z captions after fill running=3",
+    "2026-09-19T18:14:33Z STT already running — no second Whisper",
+    "2026-09-19T18:14:33Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
