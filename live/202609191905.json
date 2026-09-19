@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-19T11:05:14Z",
+  "written_at_utc": "2026-09-19T11:05:55Z",
   "written_at_hkt": "2026-09-19 19:05 HKT",
   "token_free": true,
   "processes": {
@@ -30,22 +30,22 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 4.5,
+    "mem_available_gi": 4.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.79,
+        "rss_gi": 2.8,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.38,
+        "rss_gi": 2.44,
         "n": 5
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.51,
+        "rss_gi": 0.52,
         "n": 12
       },
       {
@@ -56,7 +56,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 37
+        "n": 38
       },
       {
         "comm": "websockify",
@@ -86,15 +86,15 @@
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 3.5,
-      "anon_gi": 4.3,
+      "cached_gi": 3.6,
+      "anon_gi": 4.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 16.2
     },
     "load1": 4.31,
     "disk_avail": "105G",
-    "tmp_du": "253M"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -137,7 +137,7 @@
         "eta_hkt": null,
         "jobs": 2,
         "pending_global": 1651,
-        "eta_deadline_utc": "2026-09-19T11:05:14Z",
+        "eta_deadline_utc": "2026-09-19T11:05:56Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
@@ -156,16 +156,16 @@
           "Data Science"
         ],
         "done": 9124,
-        "left": 1202,
+        "left": 1197,
         "total": 15597,
-        "no_sub": 613,
+        "no_sub": 618,
         "eta_min": 100,
         "eta_hkt": "2026-09-19 20:45 HKT",
         "inflight": null,
         "jobs": 3,
-        "left_global": 1798,
-        "eta_deadline_utc": "2026-09-19T12:45:14Z",
-        "eta_frozen": false,
+        "left_global": 1793,
+        "eta_deadline_utc": "2026-09-19T12:45:55Z",
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -174,7 +174,7 @@
       "stt_done": 9361,
       "stt_pending": 1651,
       "captions_done": 9124,
-      "captions_left": 1798,
+      "captions_left": 1793,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -328,9 +328,7 @@
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-19T11:10:00Z",
     "next_cron_hkt": "2026-09-19 19:10 HKT",
@@ -354,53 +352,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T11:05:13Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-19T11:05:53Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T11:05:13Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-19T11:05:53Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T11:05:13Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.0G cap_signal=none"
+      "summary": "2026-09-19T11:05:53Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.9G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T11:05:13Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=8.0G cap_signal=none"
+      "summary": "2026-09-19T11:05:53Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=7.9G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T11:05:13Z captions after fill running=3"
+      "summary": "2026-09-19T11:05:53Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T11:05:13Z captions after fill running=3"
+      "summary": "2026-09-19T11:05:53Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T11:05:13Z STT already running — no second Whisper"
+      "summary": "2026-09-19T11:05:53Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-19T11:05:13Z STT already running — no second Whisper"
+      "summary": "2026-09-19T11:05:53Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-19T11:05:13Z captions after fill running=3",
-    "2026-09-19T11:05:13Z STT already running — no second Whisper",
-    "2026-09-19T11:05:13Z STT already running — no second Whisper",
-    "backfill-captions.log: [607<path> vnXnuh9AT1Y 雙雄對決！地表最強AI手機Pixel 3，只有這項慘輸iPhone Xs Max？ft.電獺少女宇恩、3C YouTuber阿哲、手機維修達人阿倫｜下班經濟學#19",
-    "sleep 4.0s",
-    "[606<path> nwkHSgQ6DwY Sway：90%的租屋族不知道！每月竟可申請5000元租金補助！ft. Sway、陳沂｜下班經濟學#20",
-    "sleep 7.8s",
-    "[607<path> vnXnuh9AT1Y 雙雄對決！地表最強AI手機Pixel 3，只有這項慘輸iPhone Xs Max？ft.電獺少女宇恩、3C YouTuber阿哲、手機維修達人阿倫｜下班經濟學#19"
+    "2026-09-19T11:05:53Z captions after fill running=3",
+    "2026-09-19T11:05:53Z STT already running — no second Whisper",
+    "2026-09-19T11:05:53Z STT already running — no second Whisper",
+    "backfill-captions.log: rate-limited — backoff 45s",
+    "rate-limited — backoff 45s",
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
+    "rate-limited — backoff 45s"
   ],
   "pm": {
     "token_free": true,
