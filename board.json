@@ -1,6 +1,12 @@
 {
-  "written_at_hkt": "2026-09-19 20:05 HKT",
+  "written_at_hkt": "2026-09-19 20:10 HKT",
   "queue": [
+    {
+      "name": "Dr Angela C Meyers",
+      "channel_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
+      "skip": false,
+      "reason": "cut-in from chat 2026-09-19"
+    },
     {
       "name": "Vicky Zhao",
       "channel_id": "UC1CXs5dtO8_Zrsm-48saJfg",
