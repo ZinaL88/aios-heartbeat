@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-09-19 09:40 HKT",
-  "built_at_utc": "2026-09-19T01:40:57Z",
-  "items": 13818,
-  "transcripts_indexed": 8490,
-  "schema_gaps": 12082,
+  "built_at_hkt": "2026-09-19 20:56 HKT",
+  "built_at_utc": "2026-09-19T12:56:10Z",
+  "items": 16995,
+  "transcripts_indexed": 10358,
+  "schema_gaps": 588,
   "channels": 70,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -12,106 +12,106 @@
       "channel_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
       "channel_name": "理財",
       "item_count": 2934,
-      "transcript_count": 1676,
-      "schema_gap_count": 2934
+      "transcript_count": 1752,
+      "schema_gap_count": 260
     },
     {
-      "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
-      "channel_name": "Best Partners TV",
-      "item_count": 1315,
-      "transcript_count": 1272,
-      "schema_gap_count": 1315
+      "channel_id": "PL30C54D951E8E1688",
+      "channel_name": "Careers",
+      "item_count": 284,
+      "transcript_count": 159,
+      "schema_gap_count": 113
     },
     {
-      "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-      "channel_name": "Learning how to learn",
-      "item_count": 852,
-      "transcript_count": 703,
-      "schema_gap_count": 852
-    },
-    {
-      "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-      "channel_name": "Mike是麦克",
-      "item_count": 778,
-      "transcript_count": 126,
-      "schema_gap_count": 778
-    },
-    {
-      "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-      "channel_name": "一个狠人",
-      "item_count": 803,
-      "transcript_count": 118,
-      "schema_gap_count": 754
-    },
-    {
-      "channel_id": "henren778",
-      "channel_name": "一个狠人",
-      "item_count": 803,
-      "transcript_count": 118,
-      "schema_gap_count": 754
-    },
-    {
-      "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "channel_name": "Alan Chen",
-      "item_count": 590,
-      "transcript_count": 90,
-      "schema_gap_count": 590
-    },
-    {
-      "channel_id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
-      "channel_name": "The Startup Ideas Podcast Episodes",
-      "item_count": 413,
-      "transcript_count": 281,
-      "schema_gap_count": 413
+      "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+      "channel_name": "Data Science",
+      "item_count": 1391,
+      "transcript_count": 371,
+      "schema_gap_count": 61
     },
     {
       "channel_id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
       "channel_name": "Crypto",
       "item_count": 407,
       "transcript_count": 297,
-      "schema_gap_count": 407
+      "schema_gap_count": 38
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+      "channel_name": "Product Management",
+      "item_count": 916,
+      "transcript_count": 410,
+      "schema_gap_count": 33
     },
     {
       "channel_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
       "channel_name": "Job hunting",
       "item_count": 281,
       "transcript_count": 216,
-      "schema_gap_count": 281
+      "schema_gap_count": 21
     },
     {
-      "channel_id": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
-      "channel_name": "MIT RES.6-012 Intro to Probability",
-      "item_count": 266,
-      "transcript_count": 263,
-      "schema_gap_count": 266
+      "channel_id": "PLuGHfVNSITJf8-v_CISdmnH46QrygUcdK",
+      "channel_name": "Emerging Leaders Initiative: Leadership Lab",
+      "item_count": 33,
+      "transcript_count": 9,
+      "schema_gap_count": 21
     },
     {
-      "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-      "channel_name": "huangyihe",
-      "item_count": 228,
-      "transcript_count": 0,
-      "schema_gap_count": 228
+      "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+      "channel_name": "Learning how to learn",
+      "item_count": 852,
+      "transcript_count": 703,
+      "schema_gap_count": 18
     },
     {
-      "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-      "channel_name": "Product Management",
-      "item_count": 190,
-      "transcript_count": 60,
-      "schema_gap_count": 190
+      "channel_id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
+      "channel_name": "The Startup Ideas Podcast Episodes",
+      "item_count": 413,
+      "transcript_count": 406,
+      "schema_gap_count": 4
     },
     {
-      "channel_id": "UC1CXs5dtO8_Zrsm-48saJfg",
-      "channel_name": "Vicky Zhao",
-      "item_count": 185,
-      "transcript_count": 24,
-      "schema_gap_count": 185
+      "channel_id": "PLbVaWSxd4rLI-VJHIosfjDSggCEhfZqgx",
+      "channel_name": "Statistics",
+      "item_count": 114,
+      "transcript_count": 95,
+      "schema_gap_count": 4
+    },
+    {
+      "channel_id": "PLEMWyuM4E6qQvLqMJ-YdC0rBztBYpZaGv",
+      "channel_name": "尼可拉斯楊Live精發財系列大全集",
+      "item_count": 68,
+      "transcript_count": 65,
+      "schema_gap_count": 3
     },
     {
       "channel_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
       "channel_name": "下班經濟學",
-      "item_count": 153,
-      "transcript_count": 146,
-      "schema_gap_count": 153
+      "item_count": 778,
+      "transcript_count": 523,
+      "schema_gap_count": 3
+    },
+    {
+      "channel_id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
+      "channel_name": "⚡️ Framework Thinking & Mental Models ⚡️",
+      "item_count": 139,
+      "transcript_count": 132,
+      "schema_gap_count": 3
+    },
+    {
+      "channel_id": "PLEAWiihj06OL-zBeazBSgFk-eJYj8xTkF",
+      "channel_name": "Personal Finance",
+      "item_count": 13,
+      "transcript_count": 10,
+      "schema_gap_count": 2
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
+      "channel_name": "Algorithms",
+      "item_count": 64,
+      "transcript_count": 50,
+      "schema_gap_count": 2
     }
   ]
 }
