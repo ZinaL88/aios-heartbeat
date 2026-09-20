@@ -420,7 +420,7 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
       const note = (!it.has_transcript && it.transcript_note)
         ? `<div class="warn">note: ${escapeHtml(it.transcript_note)}</div>` : "";
       const edited = loadDraft(it) ? `<span class="badge">Edited on this phone</span>` : "";
-      const txBtn = (it.has_transcript && it.tx_shard)
+      const txBtn = it.has_transcript
         ? `<button class="btn openTx" type="button" data-id="${id}">Read transcript</button>` : "";
       return `
       <div class="hit" data-id="${id}">
@@ -614,6 +614,48 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
     }
   }
 
+  async function fetchTranscriptFromApi(it){
+    if(BOX_API == null) return null;
+    const base = BOX_API; // "" means same-origin
+    const id = encodeURIComponent(it.id);
+    const urls = [];
+    urls.push(base + "/api/transcript/" + id);
+    if(it.channel_id){
+      urls.push(base + "/api/item/" + encodeURIComponent(it.channel_id) + "/" + id + "?tx_chars=2000000");
+    }
+    let lastErr = null;
+    for(const url of urls){
+      try {
+        const r = await fetch(url, {cache:"no-store"});
+        if(!r.ok){ lastErr = new Error(url + " HTTP " + r.status); continue; }
+        const data = await r.json();
+        if(data && data.ok && typeof data.text === "string"){
+          return {
+            text: data.text,
+            shown: data.chars != null ? Number(data.chars) : data.text.length,
+            full: data.full_chars != null ? Number(data.full_chars) : data.text.length,
+            truncated: !!data.truncated,
+            via: "api/transcript"
+          };
+        }
+        // /api/item shape
+        if(data && data.ok && data.transcript && typeof data.transcript.text === "string"){
+          const t = data.transcript;
+          return {
+            text: t.text,
+            shown: t.chars_returned != null ? Number(t.chars_returned) : t.text.length,
+            full: (it.tx_full_chars != null) ? Number(it.tx_full_chars) : t.text.length,
+            truncated: !!t.truncated,
+            via: "api/item"
+          };
+        }
+        lastErr = new Error("API returned no text");
+      } catch(e){ lastErr = e; }
+    }
+    if(lastErr) throw lastErr;
+    return null;
+  }
+
   async function showTranscript(it){
     if(!it) return;
     CURRENT = it;
@@ -628,15 +670,22 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
     $("detail").classList.remove('open');
     $("txPanel").scrollIntoView({behavior:'smooth', block:'start'});
     try {
-      let shard = it.tx_shard;
-      if(shard == null){
-        await ensureTxManifest();
-        throw new Error("Missing tx_shard on item — re-export phone catalog");
+      let parsed = null;
+      // Prefer VM HTTP API (collector disk) — never require Pages library_tx shards.
+      if(BOX_API != null){
+        $("txBody").textContent = "Loading via library API…";
+        parsed = await fetchTranscriptFromApi(it);
       }
-      const map = await loadTxShard(shard);
-      const parsed = parseEntry(map && map[it.id], it);
+      if(!parsed && it.tx_shard != null){
+        // Legacy shard fallback (local/dev only; shards not on public Pages)
+        const map = await loadTxShard(it.tx_shard);
+        parsed = parseEntry(map && map[it.id], it);
+      }
       if(!parsed){
-        $("txBody").textContent = "Transcript not found in shard " + shard + " for " + it.id;
+        const hint = (BOX_API == null)
+          ? " No library API URL. Open with ?api=https://YOUR-TUNNEL.trycloudflare.com or set localStorage.aios_library_api."
+          : "";
+        $("txBody").textContent = "Transcript not available for " + it.id + "." + hint;
         return;
       }
       ORIGINAL_TEXT = parsed.text;
@@ -644,6 +693,7 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
       const display = draft ? draft.text : parsed.text;
       $("txBody").textContent = display;
       $("txMeta").textContent = metaLine(it, parsed.shown, parsed.full, parsed.truncated)
+        + (parsed.via ? (" · " + parsed.via) : "")
         + (draft ? " · draft on this phone" : "");
       refreshBadge(it);
       buildTxActions(it);
@@ -753,8 +803,46 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
     const p=$("txPanel"); if(p) p.classList.remove('open');
   });
 
+  function normalizeApiBase(raw){
+    if(raw == null) return null;
+    let s = String(raw).trim();
+    if(!s) return null;
+    s = s.replace(/\/+$/, "");
+    // reject localhost/loopback as primary phone CTA
+    try {
+      const u = new URL(s, location.href);
+      const host = (u.hostname || "").toLowerCase();
+      if(host === "localhost" || host === "127.0.0.1" || host === "::1") return null;
+    } catch(e){ return null; }
+    return s;
+  }
+
   async function probeBoxApi(){
-    // Only same-origin library API (box library app) — never hardcode loopback as a primary CTA.
+    // Priority: ?api= → localStorage.aios_library_api → same-origin /api/stats
+    // Never hardcode loopback as a primary CTA for phone hub.
+    const params = new URLSearchParams(location.search);
+    const fromQuery = normalizeApiBase(params.get("api"));
+    if(fromQuery){
+      try {
+        const r = await fetch(fromQuery + "/api/stats", {cache:"no-store"});
+        if(r.ok){
+          BOX_API = fromQuery;
+          try { localStorage.setItem("aios_library_api", fromQuery); } catch(e){}
+          return;
+        }
+      } catch(e){}
+    }
+    let stored = null;
+    try { stored = normalizeApiBase(localStorage.getItem("aios_library_api")); } catch(e){}
+    if(stored){
+      try {
+        const r = await fetch(stored + "/api/stats", {cache:"no-store"});
+        if(r.ok){
+          BOX_API = stored;
+          return;
+        }
+      } catch(e){}
+    }
     try {
       const r = await fetch("/api/stats", {cache:"no-store"});
       if(r.ok){
@@ -774,8 +862,9 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
       BY_ID = new Map(merged.map(it => [String(it.id), it]));
       fillChannels();
       const dupNote = items.length !== merged.length ? (" · merged " + items.length + "→" + merged.length) : "";
-      $("status").textContent = "Ready · " + merged.length + " items · " + note + dupNote + (BOX_API!=null ? " · box API" : "");
-      ensureTxManifest().catch(()=>{});
+      const apiNote = (BOX_API === "") ? " · box API (same-origin)"
+        : (BOX_API ? (" · API " + BOX_API) : " · no API (add ?api=)");
+      $("status").textContent = "Ready · " + merged.length + " items · " + note + dupNote + apiNote;
       run();
       // Deep-link ?id=
       const params = new URLSearchParams(location.search);
