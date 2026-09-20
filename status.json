@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-20T06:03:42Z",
-  "written_at_hkt": "2026-09-20 14:03 HKT",
+  "written_at_utc": "2026-09-20T06:04:53Z",
+  "written_at_hkt": "2026-09-20 14:04 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,13 +30,18 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 9.4,
+    "mem_available_gi": 7.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.95,
+        "rss_gi": 2.97,
         "n": 33
+      },
+      {
+        "comm": "python",
+        "rss_gi": 2.52,
+        "n": 5
       },
       {
         "comm": "chrome",
@@ -51,12 +56,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 39
-      },
-      {
-        "comm": "python",
-        "rss_gi": 0.09,
-        "n": 5
+        "n": 38
       },
       {
         "comm": "csnaps",
@@ -74,25 +74,25 @@
         "n": 3
       },
       {
+        "comm": "yt-dlp",
+        "rss_gi": 0.06,
+        "n": 1
+      },
+      {
         "comm": "xfwm4",
         "rss_gi": 0.06,
         "n": 3
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.05,
-        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 4.6,
-      "anon_gi": 2.3,
+      "anon_gi": 4.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 10.4
+      "committed_gi": 16.5
     },
-    "load1": 4.18,
+    "load1": 5.04,
     "disk_avail": "104G",
     "tmp_du": "258M"
   },
@@ -138,7 +138,7 @@
         "jobs": 2,
         "pending_global": 1343,
         "eta_deadline_utc": "2026-09-24T13:39:43Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -167,7 +167,7 @@
         "next_name": "Dr Angela C Meyers",
         "left_global": 1034,
         "eta_deadline_utc": "2026-09-20T07:29:43Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -356,48 +356,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:03:42Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T06:04:51Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:03:42Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T06:04:51Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:03:42Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.0G cap_signal=none"
+      "summary": "2026-09-20T06:04:51Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.6G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:03:42Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.0G cap_signal=none"
+      "summary": "2026-09-20T06:04:51Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.6G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:03:42Z captions after fill running=3"
+      "summary": "2026-09-20T06:04:51Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:03:42Z captions after fill running=3"
+      "summary": "2026-09-20T06:04:51Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:03:42Z STT already running — no second Whisper"
+      "summary": "2026-09-20T06:04:52Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:03:42Z STT already running — no second Whisper"
+      "summary": "2026-09-20T06:04:52Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-20T06:03:42Z captions after fill running=3",
-    "2026-09-20T06:03:42Z STT already running — no second Whisper",
-    "2026-09-20T06:03:42Z STT already running — no second Whisper",
+    "2026-09-20T06:04:51Z captions after fill running=3",
+    "2026-09-20T06:04:52Z STT already running — no second Whisper",
+    "2026-09-20T06:04:52Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
