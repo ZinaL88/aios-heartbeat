@@ -221,7 +221,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">10103</div><div class="s" id="mSttSub">10103 done · 291 pending · Running</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">9866</div><div class="s" id="mCapSub">9866 done · 1096 left · Running</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">6.2G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">6.1G</div><div class="s" id="mRamSub">of 15.6G</div></div>
   <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-20 12:31 HKT</div></div>
 </section>
 
@@ -239,15 +239,15 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <p class="ch" id="sttCh">一个狠人</p>
       <div class="row"><span class="big" id="sttNum">10103</span><span class="mono" id="sttFile">10103 done · 291 pending · now: DyPmBPf3z3E</span></div>
       <p class="mono" id="sttEta">ETA 2026-09-25 08:55 HKT</p>
-      <p class="mono" id="sttDisk">10103 transcripts on disk · RAM 6.2 of 15.6G · load 4.72</p>
+      <p class="mono" id="sttDisk">10103 transcripts on disk · RAM 6.1 of 15.6G · load 4.8</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">6.2 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">4.72</span></li>
+      <li><span>RAM free</span><span id="boxRam">6.1 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">4.8</span></li>
       <li><span>Disk</span><span id="boxDisk">105G</span></li>
       <li><span>Tmp</span><span id="boxTmp">256M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
@@ -261,9 +261,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.92G</span> · node ×33</li><li><span class="mono">2.43G</span> · python ×5</li><li><span class="mono">0.51G</span> · chrome ×12</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.09G</span> · bash ×37</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.06G</span> · plank ×3</li><li><span class="mono">0.06G</span> · xfwm4 ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.92G</span> · node ×33</li><li><span class="mono">2.43G</span> · python ×5</li><li><span class="mono">0.51G</span> · chrome ×12</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.09G</span> · bash ×38</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.06G</span> · plank ×3</li><li><span class="mono">0.06G</span> · csnaps ×1</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-20T04:31:13Z captions after fill running=3</li><li class="mono">2026-09-20T04:31:13Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-20T04:31:26Z captions after fill running=3</li><li class="mono">2026-09-20T04:31:26Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: [249&lt;path&gt; syTbFIb-BVU Why The First 5 Minutes Of Your Day Are The Most Important with Dr Rangan Chatterjee</li><li class="mono">sleep 45.0s</li><li class="mono">[248&lt;path&gt; 3gtvNYa3Nd8 How to Unlock Your Potential, Motivation &amp; Unique Abilities | Dr. Adam Grant</li><li class="mono">[249&lt;path&gt; syTbFIb-BVU Why The First 5 Minutes Of Your Day Are The Most Important with Dr Rangan Chatterjee</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
