@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-20T04:41:57Z",
-  "written_at_hkt": "2026-09-20 12:41 HKT",
+  "written_at_utc": "2026-09-20T04:43:09Z",
+  "written_at_hkt": "2026-09-20 12:43 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -35,12 +35,12 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.98,
+        "rss_gi": 2.99,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.49,
+        "rss_gi": 2.19,
         "n": 5
       },
       {
@@ -86,13 +86,13 @@
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 5.2,
-      "anon_gi": 4.6,
+      "cached_gi": 5.5,
+      "anon_gi": 4.3,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.4
+      "committed_gi": 16.1
     },
-    "load1": 4.89,
+    "load1": 5.83,
     "disk_avail": "104G",
     "tmp_du": "257M"
   },
@@ -138,7 +138,7 @@
         "jobs": 2,
         "pending_global": 1371,
         "eta_deadline_utc": "2026-09-24T23:29:57Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -167,7 +167,7 @@
         "next_name": "Dr Angela C Meyers",
         "left_global": 1087,
         "eta_deadline_utc": "2026-09-20T06:12:57Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -356,48 +356,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:41:55Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T04:43:08Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:41:55Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T04:43:08Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:41:55Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.1G cap_signal=none"
+      "summary": "2026-09-20T04:43:08Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=5.5G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:41:55Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.1G cap_signal=none"
+      "summary": "2026-09-20T04:43:08Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=5.5G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:41:55Z captions after fill running=3"
+      "summary": "2026-09-20T04:43:08Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:41:55Z captions after fill running=3"
+      "summary": "2026-09-20T04:43:08Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:41:55Z STT already running — no second Whisper"
+      "summary": "2026-09-20T04:43:08Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:41:55Z STT already running — no second Whisper"
+      "summary": "2026-09-20T04:43:08Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-20T04:41:55Z captions after fill running=3",
-    "2026-09-20T04:41:55Z STT already running — no second Whisper",
-    "2026-09-20T04:41:55Z STT already running — no second Whisper",
+    "2026-09-20T04:43:08Z captions after fill running=3",
+    "2026-09-20T04:43:08Z STT already running — no second Whisper",
+    "2026-09-20T04:43:08Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
