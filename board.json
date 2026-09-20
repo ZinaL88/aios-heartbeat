@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-21 07:50 HKT",
+  "written_at_hkt": "2026-09-21 07:56 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -177,8 +177,8 @@
       "reason": "",
       "captions_done": 90,
       "captions_left": 0,
-      "stt_done": 90,
-      "stt_left": 410,
+      "stt_done": 91,
+      "stt_left": 499,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -218,10 +218,10 @@
       "videos": 283,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-      "captions_done": 223,
+      "captions_done": 225,
       "captions_left": 0,
-      "stt_done": 223,
-      "stt_left": 61,
+      "stt_done": 225,
+      "stt_left": 59,
       "videos_total": 284,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2483,6 +2483,20 @@
       "skip": false
     },
     {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 90,
+      "captions_left": 0,
+      "stt_done": 91,
+      "stt_left": 499,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
       "id": "PLbVaWSxd4rLKeRu6HPYPQJd_XX5g3ukcj",
       "title": "Biz ideas",
       "kind": "playlist",
@@ -2506,20 +2520,6 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 424,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 90,
-      "captions_left": 0,
-      "stt_done": 90,
-      "stt_left": 410,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -2726,10 +2726,10 @@
       "kind": "playlist",
       "videos_total": 284,
       "videos_source": "inventory",
-      "captions_done": 223,
+      "captions_done": 225,
       "captions_left": 0,
-      "stt_done": 223,
-      "stt_left": 61,
+      "stt_done": 225,
+      "stt_left": 59,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
