@@ -1,13 +1,13 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-20T11:20:08Z",
-  "written_at_hkt": "2026-09-20 19:20 HKT",
+  "written_at_utc": "2026-09-20T11:24:09Z",
+  "written_at_hkt": "2026-09-20 19:24 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
     "whisper_n": 2,
-    "backfill_n": 4,
+    "backfill_n": 3,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
     "sample": [
@@ -30,17 +30,22 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 8.3,
+    "mem_available_gi": 6.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.06,
+        "rss_gi": 3.0,
         "n": 34
       },
       {
+        "comm": "python",
+        "rss_gi": 2.48,
+        "n": 5
+      },
+      {
         "comm": "chrome",
-        "rss_gi": 1.02,
+        "rss_gi": 0.83,
         "n": 13
       },
       {
@@ -49,19 +54,9 @@
         "n": 3
       },
       {
-        "comm": "python",
-        "rss_gi": 0.11,
-        "n": 6
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.1,
-        "n": 2
-      },
-      {
         "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 39
+        "rss_gi": 0.1,
+        "n": 40
       },
       {
         "comm": "websockify",
@@ -79,6 +74,11 @@
         "n": 3
       },
       {
+        "comm": "yt-dlp",
+        "rss_gi": 0.06,
+        "n": 1
+      },
+      {
         "comm": "xfwm4",
         "rss_gi": 0.06,
         "n": 3
@@ -87,14 +87,14 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 5.7,
-      "anon_gi": 2.6,
+      "anon_gi": 4.8,
       "shmem_gi": 0.0,
-      "sreclaimable_gi": 0.3,
-      "committed_gi": 11.2
+      "sreclaimable_gi": 0.4,
+      "committed_gi": 17.2
     },
-    "load1": 4.24,
+    "load1": 4.96,
     "disk_avail": "103G",
-    "tmp_du": "319M"
+    "tmp_du": "307M"
   },
   "cookies": {
     "present": false,
@@ -107,7 +107,7 @@
     "total": 737,
     "inflight": null,
     "last_id": "yOTP8utTOBU",
-    "channel_id": "UCm-T3PmUW-HYkBao1lIBu3g",
+    "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
       "public_done": 296,
@@ -136,7 +136,7 @@
         "eta_min": 3384,
         "eta_hkt": "2026-09-23 03:44 HKT",
         "jobs": 2,
-        "pending_global": 1224,
+        "pending_global": 1243,
         "eta_deadline_utc": "2026-09-22T19:44:07Z",
         "eta_frozen": true,
         "overdue": false,
@@ -144,41 +144,39 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD,PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3,UCm-T3PmUW-HYkBao1lIBu3g,PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+        "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD,PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3,PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
         "targets": [
           "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
           "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
-          "UCm-T3PmUW-HYkBao1lIBu3g",
           "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
         ],
         "target_names": [
           "Product Management",
           "Productivity",
-          "UCm-T3PmUW-HYkBao1lIBu3g",
           "Data Science"
         ],
         "done": 10100,
-        "left": 1002,
+        "left": 972,
         "total": 15691,
-        "no_sub": 508,
-        "eta_min": 63,
-        "eta_hkt": "2026-09-20 20:23 HKT",
+        "no_sub": 481,
+        "eta_min": 81,
+        "eta_hkt": "2026-09-20 20:45 HKT",
         "inflight": null,
-        "jobs": 4,
-        "next_id": "UCm-T3PmUW-HYkBao1lIBu3g",
-        "next_name": "Web3101",
-        "left_global": 1002,
-        "eta_deadline_utc": "2026-09-20T12:23:07Z",
-        "eta_frozen": true,
+        "jobs": 3,
+        "next_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
+        "next_name": "Dr Angela C Meyers",
+        "left_global": 972,
+        "eta_deadline_utc": "2026-09-20T12:45:09Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
       "stt_done": 10337,
-      "stt_pending": 1224,
+      "stt_pending": 1243,
       "captions_done": 10100,
-      "captions_left": 1002,
+      "captions_left": 972,
       "captions_total": 15691,
       "channels_touched": 63,
       "by_channel": [
@@ -358,48 +356,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T11:20:06Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T11:24:08Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T11:20:06Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T11:24:08Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T11:20:07Z captions running=4 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.6G cap_signal=none"
+      "summary": "2026-09-20T11:24:08Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=5.3G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T11:20:07Z captions running=4 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.6G cap_signal=none"
+      "summary": "2026-09-20T11:24:08Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=5.3G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T11:20:07Z captions after fill running=4"
+      "summary": "2026-09-20T11:24:08Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T11:20:07Z captions after fill running=4"
+      "summary": "2026-09-20T11:24:08Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T11:20:07Z STT already running — no second Whisper"
+      "summary": "2026-09-20T11:24:08Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T11:20:07Z STT already running — no second Whisper"
+      "summary": "2026-09-20T11:24:08Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-20T11:20:07Z captions after fill running=4",
-    "2026-09-20T11:20:07Z STT already running — no second Whisper",
-    "2026-09-20T11:20:07Z STT already running — no second Whisper",
+    "2026-09-20T11:24:08Z captions after fill running=3",
+    "2026-09-20T11:24:08Z STT already running — no second Whisper",
+    "2026-09-20T11:24:08Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
@@ -416,8 +414,8 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 5,
-    "total_n": 22,
+    "running_n": 4,
+    "total_n": 21,
     "jobs": [
       {
         "id": "live-cap-PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
@@ -451,17 +449,6 @@
         "owner": "collector-live",
         "notes": "live captions target",
         "target_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3"
-      },
-      {
-        "id": "live-cap-UCm-T3PmUW-HYkBao1lIBu3g",
-        "title": "UCm-T3PmUW-HYkBao1lIBu3g",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "UCm-T3PmUW-HYkBao1lIBu3g"
       },
       {
         "id": "live-stt-UCJAPsTtcJJWGk8e-_CJL8TQ",

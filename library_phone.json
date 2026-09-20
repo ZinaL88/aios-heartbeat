@@ -8,10 +8,9 @@
     "library_phone_4.json",
     "library_phone_5.json"
   ],
-  "items": 14943,
-  "with_transcript": 9809,
+  "items": 15020,
+  "with_transcript": 10019,
   "note": "Phone catalog: one row per video id (playlists merged); metadata + schema + tx_shard pointer (full transcript body in library_tx_*.json).",
-  "built_at_hkt": "2026-09-20 16:38 HKT",
-  "built_at_utc": "2026-09-20T08:38:19Z",
-  "deduped_from": 17403
+  "built_at_hkt": "2026-09-20 19:22 HKT",
+  "built_at_utc": "2026-09-20T11:22:42Z"
 }

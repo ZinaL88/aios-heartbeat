@@ -399,15 +399,26 @@
     "library_tx_395.json",
     "library_tx_396.json",
     "library_tx_397.json",
-    "library_tx_398.json"
+    "library_tx_398.json",
+    "library_tx_399.json",
+    "library_tx_400.json",
+    "library_tx_401.json",
+    "library_tx_402.json",
+    "library_tx_403.json",
+    "library_tx_404.json",
+    "library_tx_405.json",
+    "library_tx_406.json",
+    "library_tx_407.json",
+    "library_tx_408.json",
+    "library_tx_409.json"
   ],
-  "items": 9738,
-  "missing_files": 73,
+  "items": 9945,
+  "missing_files": 76,
   "max_chars": 200000,
-  "truncated_items": 999,
+  "truncated_items": 1026,
   "target_shard_bytes": 1750000,
-  "avg_chars": 46574,
+  "avg_chars": 46729,
   "note": "Map videoId → full transcript text (string), or {text,chars,full_chars,truncated:true} when over max_chars. Lazy-loaded by library-search.html.",
-  "built_at_hkt": "2026-09-20 12:38 HKT",
-  "built_at_utc": "2026-09-20T04:38:36Z"
+  "built_at_hkt": "2026-09-20 19:22 HKT",
+  "built_at_utc": "2026-09-20T11:22:42Z"
 }
