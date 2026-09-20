@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-store"/>
 <title>HEARTBEAT · Library search</title>
-<meta name="aios-library-search-build" content="merge-by-id-v23"/>
+<meta name="aios-library-search-build" content="merge-by-id-v24"/>
 <style>
 :root { --bg:#0e0e0e; --card:#1a1a1a; --fg:#f0f0f0; --muted:#8a8a8a; --lime:#c8f542; --amber:#e8b84a; --red:#f07178; --border:#2a2a2a; }
 * { box-sizing:border-box; }
@@ -268,6 +268,7 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
       if(!names.has(id)) names.set(id, it.channel_name || id);
     });
     const sel = $("channel");
+    if(!sel) return;
     sel.innerHTML = '<option value="">All</option>';
     [...names.entries()].sort((a,b)=>String(a[1]).localeCompare(String(b[1]),"zh")).forEach(([id,name])=>{
       const o = document.createElement("option");
