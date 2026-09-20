@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-20T04:09:19Z",
+  "written_at_utc": "2026-09-20T04:09:38Z",
   "written_at_hkt": "2026-09-20 12:09 HKT",
   "token_free": true,
   "processes": {
@@ -30,7 +30,7 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.6,
+    "mem_available_gi": 5.5,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -56,7 +56,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 38
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -74,14 +74,14 @@
         "n": 3
       },
       {
-        "comm": "yt-dlp",
+        "comm": "csnaps",
         "rss_gi": 0.05,
         "n": 1
       },
       {
-        "comm": "csnaps",
-        "rss_gi": 0.05,
-        "n": 1
+        "comm": "python3",
+        "rss_gi": 0.04,
+        "n": 2
       }
     ],
     "meminfo": {
@@ -92,7 +92,7 @@
       "sreclaimable_gi": 0.3,
       "committed_gi": 17.0
     },
-    "load1": 4.34,
+    "load1": 4.33,
     "disk_avail": "105G",
     "tmp_du": "256M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
         "pending": 299,
-        "done": 10083,
-        "transcripts_on_disk": 10083,
+        "done": 10084,
+        "transcripts_on_disk": 10084,
         "inflight": "xZ2VnTAwVL0",
         "inflight_duration_s": null,
         "model": "medium",
@@ -155,8 +155,8 @@
           "Productivity",
           "Product Management"
         ],
-        "done": 9846,
-        "left": 1112,
+        "done": 9847,
+        "left": 1111,
         "total": 15597,
         "no_sub": 478,
         "eta_min": 93,
@@ -165,18 +165,18 @@
         "jobs": 3,
         "next_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
         "next_name": "Dr Angela C Meyers",
-        "left_global": 1112,
-        "eta_deadline_utc": "2026-09-20T05:42:19Z",
+        "left_global": 1111,
+        "eta_deadline_utc": "2026-09-20T05:42:38Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 10083,
+      "stt_done": 10084,
       "stt_pending": 1383,
-      "captions_done": 9846,
-      "captions_left": 1112,
+      "captions_done": 9847,
+      "captions_left": 1111,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -219,8 +219,8 @@
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "name": "Data Science",
-          "stt_done": 519,
-          "captions_done": 519
+          "stt_done": 520,
+          "captions_done": 520
         },
         {
           "id": "UCAxQ8sjHgjXh26la7jEBw3w",
@@ -325,7 +325,7 @@
           "captions_done": 60
         }
       ],
-      "captions_files_on_disk": 14167,
+      "captions_files_on_disk": 14168,
       "source": "inventory+disk"
     }
   },
@@ -356,52 +356,52 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:09:17Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T04:09:37Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:09:17Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T04:09:37Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:09:17Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=5.9G cap_signal=none"
+      "summary": "2026-09-20T04:09:37Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.0G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:09:17Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=5.9G cap_signal=none"
+      "summary": "2026-09-20T04:09:37Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.0G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:09:17Z captions after fill running=3"
+      "summary": "2026-09-20T04:09:37Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:09:17Z captions after fill running=3"
+      "summary": "2026-09-20T04:09:37Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:09:17Z STT already running — no second Whisper"
+      "summary": "2026-09-20T04:09:37Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T04:09:17Z STT already running — no second Whisper"
+      "summary": "2026-09-20T04:09:37Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-20T04:09:17Z captions after fill running=3",
-    "2026-09-20T04:09:17Z STT already running — no second Whisper",
-    "2026-09-20T04:09:17Z STT already running — no second Whisper",
+    "2026-09-20T04:09:37Z captions after fill running=3",
+    "2026-09-20T04:09:37Z STT already running — no second Whisper",
+    "2026-09-20T04:09:37Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
+    "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans-en': HTTP Error 429: Too Many Requests",
     "rate-limited — backoff 45s"
   ],
   "pm": {
