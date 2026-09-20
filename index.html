@@ -192,8 +192,8 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-09-20 19:05 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-09-20 19:05 HKT · v21</p>
+    <p class="mono" id="pingLine">ping 2026-09-20 19:06 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-09-20 19:07 HKT · v21</p>
     <p class="mono" style="margin:6px 0 0"><a class="lib-link" href="library.html?v=21" style="color:var(--lime);text-decoration:none;font-weight:600">Library</a>
       <span style="color:var(--muted)"> · search transcripts &amp; check schema fields</span></p>
   </div>
@@ -214,15 +214,15 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 </section>
 
 <section class="now">
-  <div><span class="label">now</span> <span class="body" id="nowBody">STT 一个狠人 · captions Productivity · Product Management · Data Science</span></div>
-  <span class="mono" id="nowTs">2026-09-20 19:05 HKT</span>
+  <div><span class="label">now</span> <span class="body" id="nowBody">STT 一个狠人 · captions Product Management · Productivity · Data Science</span></div>
+  <span class="mono" id="nowTs">2026-09-20 19:06 HKT</span>
 </section>
 
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">10296</div><div class="s" id="mSttSub">10296 done · 147 pending · Running</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">10059</div><div class="s" id="mCapSub">10059 done · 972 left · Running</div></div>
   <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">5.9G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-20 19:05 HKT</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-20 19:06 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -230,7 +230,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
     <p class="hlabel">WORK</p>
     <div class="work-block">
       <div class="row"><span class="mono"><span class="pill on" id="capStatePill"><span class="dot"></span><span id="capState">Running · 3 workers</span></span> CAPTIONS</span></div>
-      <p class="ch" id="capCh">Productivity · Product Management · Data Science</p>
+      <p class="ch" id="capCh">Product Management · Productivity · Data Science</p>
       <div class="row"><span class="big" id="capNum">10059</span><span class="mono" id="capWorkers">10059 done · 972 left · 3 workers</span></div>
       <p class="mono" id="capEta">ETA 2026-09-20 20:01 HKT</p>
     </div>
@@ -239,7 +239,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <p class="ch" id="sttCh">一个狠人</p>
       <div class="row"><span class="big" id="sttNum">10296</span><span class="mono" id="sttFile">10296 done · 147 pending · now: c8ufulhFjK8</span></div>
       <p class="mono" id="sttEta">ETA 2026-09-23 05:51 HKT</p>
-      <p class="mono" id="sttDisk">10296 transcripts on disk · RAM 5.9 of 15.6G · load 5.19</p>
+      <p class="mono" id="sttDisk">10296 transcripts on disk · RAM 5.9 of 15.6G · load 5.5</p>
     </div>
   </div>
 
@@ -247,9 +247,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
       <li><span>RAM free</span><span id="boxRam">5.9 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">5.19</span></li>
+      <li><span>Load</span><span id="boxLoad">5.5</span></li>
       <li><span>Disk</span><span id="boxDisk">104G</span></li>
-      <li><span>Tmp</span><span id="boxTmp">—</span></li>
+      <li><span>Tmp</span><span id="boxTmp">307M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
       <li><span>Next ping</span><span id="boxCron">2026-09-20 19:10 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">captions + Whisper running</span></li>
@@ -261,9 +261,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">3.27G</span> · node ×34</li><li><span class="mono">2.42G</span> · python ×5</li><li><span class="mono">1.64G</span> · chrome ×14</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.09G</span> · bash ×38</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.06G</span> · plank ×3</li><li><span class="mono">0.06G</span> · xfwm4 ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">3.3G</span> · node ×34</li><li><span class="mono">2.57G</span> · python ×5</li><li><span class="mono">1.58G</span> · chrome ×14</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.09G</span> · bash ×38</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.06G</span> · plank ×3</li><li><span class="mono">0.06G</span> · xfwm4 ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-20T11:05:45Z captions after fill running=3</li><li class="mono">2026-09-20T11:05:45Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-20T11:06:58Z captions after fill running=3</li><li class="mono">2026-09-20T11:06:58Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">warning: no cookies file at &lt;path&gt; public captions still run cookieless</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li><li class="mono">rate-limited — backoff 45s</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
