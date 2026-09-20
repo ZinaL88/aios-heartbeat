@@ -260,7 +260,7 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
 
   function matches(it, q){
     if(!q) return true;
-    const blob = [it.title, it.channel_name, it.id, it.channel_id, it.missing_flags, it.transcript_note].join(" ").toLowerCase();
+    const blob = [it.title, it.channel_name, it.id, it.channel_id, it.missing_flags, it.transcript_note, (it.playlist_ids||[]).join(" "), (it.playlist_names||[]).join(" ")].join(" ").toLowerCase();
     return q.split(/\s+/).filter(Boolean).every(tok => blob.includes(tok));
   }
 
@@ -318,8 +318,16 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
   function showDetail(it){
     if(!it) return;
     const required = ['id','channel_id','channel_name','title','url','access','content_type'];
+    const preferred = [
+      'id','channel_id','channel_name','title','url','access','content_type',
+      'playlist_ids','playlist_names','published_at','has_transcript','transcript_note',
+      'has_schema_gap','missing_flags','tx_shard','tx_truncated','tx_chars','tx_full_chars'
+    ];
     const lines = [];
-    for(const k of Object.keys(it)){
+    const seen = new Set();
+    for(const k of preferred.concat(Object.keys(it))){
+      if(seen.has(k) || !(k in it)) continue;
+      seen.add(k);
       const v = it[k];
       const miss = required.includes(k) && (v===null||v===undefined||v==='');
       lines.push((miss?'⚠ ':'  ') + k + ': ' + JSON.stringify(v));

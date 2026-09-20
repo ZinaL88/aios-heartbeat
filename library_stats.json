@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-09-19 20:56 HKT",
-  "built_at_utc": "2026-09-19T12:56:10Z",
-  "items": 16995,
-  "transcripts_indexed": 10358,
-  "schema_gaps": 588,
+  "built_at_hkt": "2026-09-20 12:38 HKT",
+  "built_at_utc": "2026-09-20T04:38:37Z",
+  "items": 17403,
+  "transcripts_indexed": 11130,
+  "schema_gaps": 602,
   "channels": 70,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -26,7 +26,7 @@
       "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
       "channel_name": "Data Science",
       "item_count": 1391,
-      "transcript_count": 371,
+      "transcript_count": 522,
       "schema_gap_count": 61
     },
     {
@@ -40,7 +40,7 @@
       "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
       "channel_name": "Product Management",
       "item_count": 916,
-      "transcript_count": 410,
+      "transcript_count": 563,
       "schema_gap_count": 33
     },
     {
@@ -63,6 +63,13 @@
       "item_count": 852,
       "transcript_count": 703,
       "schema_gap_count": 18
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
+      "channel_name": "Productivity",
+      "item_count": 616,
+      "transcript_count": 251,
+      "schema_gap_count": 16
     },
     {
       "channel_id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
@@ -104,13 +111,6 @@
       "channel_name": "Personal Finance",
       "item_count": 13,
       "transcript_count": 10,
-      "schema_gap_count": 2
-    },
-    {
-      "channel_id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
-      "channel_name": "Algorithms",
-      "item_count": 64,
-      "transcript_count": 50,
       "schema_gap_count": 2
     }
   ]
