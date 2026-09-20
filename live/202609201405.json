@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-20T06:06:05Z",
-  "written_at_hkt": "2026-09-20 14:06 HKT",
+  "written_at_utc": "2026-09-20T06:09:07Z",
+  "written_at_hkt": "2026-09-20 14:09 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 7.2,
+    "mem_available_gi": 7.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.93,
+        "rss_gi": 2.94,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.48,
+        "rss_gi": 2.51,
         "n": 5
       },
       {
@@ -56,7 +56,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 38
+        "n": 37
       },
       {
         "comm": "csnaps",
@@ -92,7 +92,7 @@
       "sreclaimable_gi": 0.3,
       "committed_gi": 16.5
     },
-    "load1": 4.66,
+    "load1": 4.89,
     "disk_avail": "104G",
     "tmp_du": "258M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
         "pending": 259,
-        "done": 10182,
-        "transcripts_on_disk": 10182,
+        "done": 10184,
+        "transcripts_on_disk": 10184,
         "inflight": "29Vl1KqnvPo",
         "inflight_duration_s": null,
         "model": "medium",
@@ -155,28 +155,28 @@
           "Productivity",
           "Product Management"
         ],
-        "done": 9945,
-        "left": 1032,
+        "done": 9947,
+        "left": 1029,
         "total": 15597,
-        "no_sub": 479,
+        "no_sub": 480,
         "eta_min": 86,
-        "eta_hkt": "2026-09-20 15:32 HKT",
+        "eta_hkt": "2026-09-20 15:35 HKT",
         "inflight": null,
         "jobs": 3,
         "next_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
         "next_name": "Dr Angela C Meyers",
-        "left_global": 1032,
-        "eta_deadline_utc": "2026-09-20T07:32:05Z",
+        "left_global": 1029,
+        "eta_deadline_utc": "2026-09-20T07:35:07Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 10182,
+      "stt_done": 10184,
       "stt_pending": 1343,
-      "captions_done": 9945,
-      "captions_left": 1032,
+      "captions_done": 9947,
+      "captions_left": 1029,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -213,8 +213,8 @@
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "name": "Data Science",
-          "stt_done": 544,
-          "captions_done": 544
+          "stt_done": 545,
+          "captions_done": 545
         },
         {
           "id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
@@ -243,8 +243,8 @@
         {
           "id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
           "name": "Productivity",
-          "stt_done": 273,
-          "captions_done": 273
+          "stt_done": 274,
+          "captions_done": 274
         },
         {
           "id": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
@@ -325,7 +325,7 @@
           "captions_done": 60
         }
       ],
-      "captions_files_on_disk": 14292,
+      "captions_files_on_disk": 14298,
       "source": "inventory+disk"
     }
   },
@@ -356,48 +356,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:06:03Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T06:09:06Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:06:03Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T06:09:06Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:06:04Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.6G cap_signal=none"
+      "summary": "2026-09-20T06:09:06Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.7G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:06:04Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.6G cap_signal=none"
+      "summary": "2026-09-20T06:09:06Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.7G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:06:04Z captions after fill running=3"
+      "summary": "2026-09-20T06:09:06Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:06:04Z captions after fill running=3"
+      "summary": "2026-09-20T06:09:06Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:06:04Z STT already running — no second Whisper"
+      "summary": "2026-09-20T06:09:06Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T06:06:04Z STT already running — no second Whisper"
+      "summary": "2026-09-20T06:09:06Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-20T06:06:04Z captions after fill running=3",
-    "2026-09-20T06:06:04Z STT already running — no second Whisper",
-    "2026-09-20T06:06:04Z STT already running — no second Whisper",
+    "2026-09-20T06:09:06Z captions after fill running=3",
+    "2026-09-20T06:09:06Z STT already running — no second Whisper",
+    "2026-09-20T06:09:06Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
