@@ -1,1 +1,4 @@
 _qa_shots/
+
+# Never publish full transcript shards to Pages (size freeze 2026-09-20)
+library_tx_[0-9]*.json
