@@ -1,6 +1,12 @@
 {
-  "written_at_hkt": "2026-09-20 19:09 HKT",
+  "written_at_hkt": "2026-09-20 19:10 HKT",
   "queue": [
+    {
+      "name": "Web3101",
+      "channel_id": "UCm-T3PmUW-HYkBao1lIBu3g",
+      "skip": false,
+      "reason": "cut-in corrected 2026-09-20: @web3101cast (was wrong @web3101)"
+    },
     {
       "name": "Dr Angela C Meyers",
       "channel_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
@@ -12,12 +18,6 @@
       "channel_id": "UC1CXs5dtO8_Zrsm-48saJfg",
       "skip": false,
       "reason": "cut-in from chat audit"
-    },
-    {
-      "name": "Web3101",
-      "channel_id": "UCm-T3PmUW-HYkBao1lIBu3g",
-      "skip": false,
-      "reason": "corrected 2026-09-20: was @web3101 (UCPtFFY5…) → @web3101cast"
     },
     {
       "name": "麥克老李",
