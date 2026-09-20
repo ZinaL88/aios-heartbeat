@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-20T03:26:22Z",
-  "written_at_hkt": "2026-09-20 11:26 HKT",
+  "written_at_utc": "2026-09-20T03:27:15Z",
+  "written_at_hkt": "2026-09-20 11:27 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -16,7 +16,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 3958307,
+        "pid": 3964312,
         "cmd": "proc"
       },
       {
@@ -30,7 +30,7 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.3,
+    "mem_available_gi": 6.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -40,7 +40,7 @@
       },
       {
         "comm": "python",
-        "rss_gi": 2.43,
+        "rss_gi": 2.49,
         "n": 5
       },
       {
@@ -56,7 +56,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 37
+        "n": 38
       },
       {
         "comm": "websockify",
@@ -92,7 +92,7 @@
       "sreclaimable_gi": 0.3,
       "committed_gi": 16.4
     },
-    "load1": 5.12,
+    "load1": 4.42,
     "disk_avail": "105G",
     "tmp_du": "256M"
   },
@@ -103,42 +103,42 @@
   },
   "collector": {
     "found": true,
-    "done": 245,
+    "done": 246,
     "total": 737,
     "inflight": null,
-    "last_id": "j7rpcDIR7HQ",
+    "last_id": "CfSPe5eHCfU",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
-      "public_done": 210,
+      "public_done": 211,
       "members_total": 0,
       "members_done": 0,
-      "pending_stt_n": 313,
-      "pending_stt_listed": 558,
-      "transcripts_on_disk": 245,
-      "captions_done": 210,
+      "pending_stt_n": 311,
+      "pending_stt_listed": 557,
+      "transcripts_on_disk": 246,
+      "captions_done": 211,
       "captions_left": 0,
-      "captions_no_sub": 527,
+      "captions_no_sub": 526,
       "source": "inventory+disk",
-      "public_left": 527
+      "public_left": 526
     },
     "tracks": {
       "stt": {
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-        "pending": 313,
-        "done": 10053,
-        "transcripts_on_disk": 10053,
-        "inflight": "CfSPe5eHCfU",
+        "pending": 311,
+        "done": 10056,
+        "transcripts_on_disk": 10056,
+        "inflight": "kH6MiUm72J0",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
-        "eta_min": 7512,
-        "eta_hkt": "2026-09-25 16:32 HKT",
+        "eta_min": 7464,
+        "eta_hkt": "2026-09-25 15:51 HKT",
         "jobs": 2,
-        "pending_global": 1397,
-        "eta_deadline_utc": "2026-09-25T08:32:50Z",
-        "eta_frozen": true,
+        "pending_global": 1395,
+        "eta_deadline_utc": "2026-09-25T07:51:16Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       },
@@ -155,28 +155,28 @@
           "Productivity",
           "Product Management"
         ],
-        "done": 9816,
-        "left": 1135,
+        "done": 9819,
+        "left": 1133,
         "total": 15597,
         "no_sub": 478,
-        "eta_min": 95,
+        "eta_min": 94,
         "eta_hkt": "2026-09-20 13:01 HKT",
         "inflight": null,
         "jobs": 3,
         "next_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
         "next_name": "Dr Angela C Meyers",
-        "left_global": 1135,
-        "eta_deadline_utc": "2026-09-20T05:01:05Z",
-        "eta_frozen": true,
+        "left_global": 1133,
+        "eta_deadline_utc": "2026-09-20T05:01:16Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 10053,
-      "stt_pending": 1397,
-      "captions_done": 9816,
-      "captions_left": 1135,
+      "stt_done": 10056,
+      "stt_pending": 1395,
+      "captions_done": 9819,
+      "captions_left": 1133,
       "captions_total": 15597,
       "channels_touched": 62,
       "by_channel": [
@@ -225,8 +225,8 @@
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "name": "Data Science",
-          "stt_done": 508,
-          "captions_done": 508
+          "stt_done": 509,
+          "captions_done": 509
         },
         {
           "id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
@@ -249,14 +249,14 @@
         {
           "id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
           "name": "Productivity",
-          "stt_done": 244,
-          "captions_done": 244
+          "stt_done": 245,
+          "captions_done": 245
         },
         {
           "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
           "name": "一个狠人",
-          "stt_done": 245,
-          "captions_done": 210
+          "stt_done": 246,
+          "captions_done": 211
         },
         {
           "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
@@ -325,7 +325,7 @@
           "captions_done": 60
         }
       ],
-      "captions_files_on_disk": 14126,
+      "captions_files_on_disk": 14129,
       "source": "inventory+disk"
     }
   },
@@ -356,48 +356,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T03:26:21Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T03:27:14Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T03:26:21Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T03:27:14Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T03:26:21Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=5.6G cap_signal=none"
+      "summary": "2026-09-20T03:27:14Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=5.8G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T03:26:21Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=5.6G cap_signal=none"
+      "summary": "2026-09-20T03:27:14Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=5.8G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T03:26:21Z captions after fill running=3"
+      "summary": "2026-09-20T03:27:14Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T03:26:21Z captions after fill running=3"
+      "summary": "2026-09-20T03:27:14Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T03:26:21Z STT already running — no second Whisper"
+      "summary": "2026-09-20T03:27:14Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T03:26:21Z STT already running — no second Whisper"
+      "summary": "2026-09-20T03:27:14Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-20T03:26:21Z captions after fill running=3",
-    "2026-09-20T03:26:21Z STT already running — no second Whisper",
-    "2026-09-20T03:26:21Z STT already running — no second Whisper",
+    "2026-09-20T03:27:14Z captions after fill running=3",
+    "2026-09-20T03:27:14Z STT already running — no second Whisper",
+    "2026-09-20T03:27:14Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
