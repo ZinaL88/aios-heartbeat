@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-20T13:06:40Z",
-  "written_at_hkt": "2026-09-20 21:06 HKT",
+  "written_at_utc": "2026-09-20T13:07:23Z",
+  "written_at_hkt": "2026-09-20 21:07 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -9,7 +9,7 @@
     "whisper_n": 2,
     "backfill_n": 3,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-    "captions_channel": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+    "captions_channel": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
     "sample": [
       {
         "pid": 351486,
@@ -20,27 +20,27 @@
         "cmd": "proc"
       },
       {
-        "pid": 192229,
+        "pid": 220319,
         "cmd": "proc"
       },
       {
-        "pid": 220319,
+        "pid": 259436,
         "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 6.0,
+    "mem_available_gi": 5.9,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.05,
+        "rss_gi": 3.04,
         "n": 34
       },
       {
         "comm": "python",
-        "rss_gi": 2.54,
+        "rss_gi": 2.59,
         "n": 5
       },
       {
@@ -79,20 +79,20 @@
         "n": 3
       },
       {
-        "comm": "x11vnc",
+        "comm": "yt-dlp",
         "rss_gi": 0.04,
-        "n": 3
+        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 4.6,
-      "anon_gi": 4.9,
+      "anon_gi": 5.0,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 18.6
+      "committed_gi": 18.7
     },
-    "load1": 4.65,
+    "load1": 4.61,
     "disk_avail": "103G",
     "tmp_du": "307M"
   },
@@ -144,16 +144,16 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD,PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3,UCm-T3PmUW-HYkBao1lIBu3g",
+        "channel_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3,UCm-T3PmUW-HYkBao1lIBu3g,PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
         "targets": [
-          "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
           "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
-          "UCm-T3PmUW-HYkBao1lIBu3g"
+          "UCm-T3PmUW-HYkBao1lIBu3g",
+          "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
         ],
         "target_names": [
-          "Product Management",
           "Productivity",
-          "UCm-T3PmUW-HYkBao1lIBu3g"
+          "UCm-T3PmUW-HYkBao1lIBu3g",
+          "Product Management"
         ],
         "done": 10119,
         "left": 399,
@@ -356,53 +356,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T13:06:39Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T13:07:22Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T13:06:39Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-20T13:07:22Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T13:06:39Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.3G cap_signal=none"
+      "summary": "2026-09-20T13:07:22Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.4G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T13:06:39Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.3G cap_signal=none"
+      "summary": "2026-09-20T13:07:22Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.4G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T13:06:39Z captions after fill running=3"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T13:06:39Z captions after fill running=3"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T13:06:39Z STT already running — no second Whisper"
+      "summary": "2026-09-20T13:07:22Z reboost captions pid 355821 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-20T13:06:39Z STT already running — no second Whisper"
+      "summary": "2026-09-20T13:07:22Z reboost captions pid 355821 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
     }
   ],
   "reboost_log": [
-    "2026-09-20T13:06:39Z captions after fill running=3",
-    "2026-09-20T13:06:39Z STT already running — no second Whisper",
-    "2026-09-20T13:06:39Z STT already running — no second Whisper",
-    "backfill-captions.log: rate-limited — backoff 45s",
-    "rate-limited — backoff 45s",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "rate-limited — backoff 45s"
+    "starting <path> <path> --channel-id PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-20T13:07:22Z reboost captions pid 355821 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+    "2026-09-20T13:07:22Z reboost captions pid 355821 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+    "backfill-captions.log: warning: no cookies file at <path> public captions still run cookieless",
+    "\"wrote_progress\": \"<path>",
+    "\"done_count\": 609",
+    "}",
+    "warning: no cookies file at <path> public captions still run cookieless"
   ],
   "pm": {
     "token_free": true,
