@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-store"/>
 <title>HEARTBEAT · Library search</title>
-<meta name="aios-library-search-build" content="tx-confirm-2-responsive"/>
+<meta name="aios-library-search-build" content="merge-by-id-v22"/>
 <style>
 :root { --bg:#0e0e0e; --card:#1a1a1a; --fg:#f0f0f0; --muted:#8a8a8a; --lime:#c8f542; --amber:#e8b84a; --red:#f07178; --border:#2a2a2a; }
 * { box-sizing:border-box; }
@@ -268,6 +268,103 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
     return BY_ID.get(String(id)) || null;
   }
 
+  function isRawFolderId(s){
+    if(s == null || s === "") return true;
+    const t = String(s);
+    return /^(UC|PL|UU|OL)[\w-]{10,}$/.test(t);
+  }
+
+  function rowRichness(it){
+    let score = 0;
+    if(it && it.tx_shard != null && it.tx_shard !== "") score += 1000;
+    if(it && it.has_transcript) score += 100;
+    if(it && it.title && String(it.title).trim()) score += 10;
+    const cn = (it && it.channel_name) || "";
+    if(cn && !isRawFolderId(cn) && cn !== (it.channel_id || "")) score += 5;
+    if(String((it && it.channel_id) || "").startsWith("UC")) score += 2;
+    return score;
+  }
+
+  function mergePlaylistFields(rows){
+    const idToName = new Map();
+    const order = [];
+    const sorted = rows.slice().sort((a,b) => rowRichness(b) - rowRichness(a));
+    for(const it of sorted){
+      const ids = Array.isArray(it.playlist_ids) ? it.playlist_ids : [];
+      const names = Array.isArray(it.playlist_names) ? it.playlist_names : [];
+      for(let i = 0; i < ids.length; i++){
+        const pid = String(ids[i] || "");
+        if(!pid) continue;
+        const pname = names[i] != null ? String(names[i]) : "";
+        if(!idToName.has(pid)){
+          idToName.set(pid, pname);
+          order.push(pid);
+        } else if(!idToName.get(pid) && pname){
+          idToName.set(pid, pname);
+        }
+      }
+      const cid = String(it.channel_id || "");
+      if(cid.startsWith("PL") && !idToName.has(cid)){
+        const nm = (!isRawFolderId(it.channel_name) ? String(it.channel_name || "") : "");
+        idToName.set(cid, nm);
+        order.push(cid);
+      }
+    }
+    return {
+      playlist_ids: order,
+      playlist_names: order.map(pid => idToName.get(pid) || "")
+    };
+  }
+
+  function mergeCatalogById(items){
+    const groups = new Map();
+    for(const it of items){
+      const id = String(it && it.id || "");
+      if(!id) continue;
+      if(!groups.has(id)) groups.set(id, []);
+      groups.get(id).push(it);
+    }
+    const out = [];
+    for(const [, rows] of groups){
+      if(rows.length === 1){
+        out.push(rows[0]);
+        continue;
+      }
+      rows.sort((a,b) => rowRichness(b) - rowRichness(a));
+      const best = Object.assign({}, rows[0]);
+      const ucRow = rows.find(r => String(r.channel_id || "").startsWith("UC"));
+      if(ucRow){
+        best.channel_id = ucRow.channel_id;
+        best.channel_name = ucRow.channel_name;
+        if(isRawFolderId(best.channel_name) || !best.channel_name){
+          const named = rows.find(r => r.channel_id === ucRow.channel_id && !isRawFolderId(r.channel_name));
+          if(named) best.channel_name = named.channel_name;
+        }
+      } else {
+        best.channel_id = rows[0].channel_id;
+        best.channel_name = rows[0].channel_name;
+      }
+      for(const r of rows){
+        if(best.tx_shard == null && r.tx_shard != null) best.tx_shard = r.tx_shard;
+        if(!best.has_transcript && r.has_transcript) best.has_transcript = true;
+        if(!(best.title && String(best.title).trim()) && r.title) best.title = r.title;
+        if(!best.url && r.url) best.url = r.url;
+        if(!best.access && r.access) best.access = r.access;
+        if(!best.content_type && r.content_type) best.content_type = r.content_type;
+        if(r.tx_truncated) best.tx_truncated = true;
+        if(best.tx_chars == null && r.tx_chars != null) best.tx_chars = r.tx_chars;
+        if(best.tx_full_chars == null && r.tx_full_chars != null) best.tx_full_chars = r.tx_full_chars;
+        if(!best.transcript_note && r.transcript_note) best.transcript_note = r.transcript_note;
+        if(r.has_schema_gap) best.has_schema_gap = true;
+      }
+      const pl = mergePlaylistFields(rows);
+      best.playlist_ids = pl.playlist_ids;
+      best.playlist_names = pl.playlist_names;
+      out.push(best);
+    }
+    return out;
+  }
+
   function run(){
     const q = ($("q").value || "").trim().toLowerCase();
     const ch = $("channel").value;
@@ -298,7 +395,7 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
       return `
       <div class="hit" data-id="${id}">
         <h3>${escapeHtml(it.title || "(no title)")}${edited}</h3>
-        <div class="meta">${escapeHtml(it.channel_name||it.channel_id||"")} · ${escapeHtml(it.access||"?")} · ${escapeHtml(it.content_type||"?")} · ${it.has_transcript?"transcript":"no transcript"}</div>
+        <div class="meta">${escapeHtml(it.channel_name||it.channel_id||"")} · ${escapeHtml(it.access||"?")} · ${escapeHtml(it.content_type||"?")} · ${it.has_transcript?"transcript":"no transcript"}${((it.playlist_names||[]).filter(Boolean).length)?(" · in: "+escapeHtml((it.playlist_names||[]).filter(Boolean).join(" · "))):""}</div>
         ${it.has_schema_gap ? `<div class="bad">schema: ${escapeHtml(Array.isArray(it.missing_flags)?it.missing_flags.join(", "):(it.missing_flags||"gap"))}</div>` : ""}
         ${note}
         <div class="actions">
@@ -642,10 +739,12 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
     try {
       await probeBoxApi();
       const {items, note} = await loadCatalog();
-      CATALOG = items;
-      BY_ID = new Map(items.map(it => [String(it.id), it]));
+      const merged = mergeCatalogById(items);
+      CATALOG = merged;
+      BY_ID = new Map(merged.map(it => [String(it.id), it]));
       fillChannels();
-      $("status").textContent = "Ready · " + items.length + " items · " + note + (BOX_API!=null ? " · box API" : "");
+      const dupNote = items.length !== merged.length ? (" · merged " + items.length + "→" + merged.length) : "";
+      $("status").textContent = "Ready · " + merged.length + " items · " + note + dupNote + (BOX_API!=null ? " · box API" : "");
       ensureTxManifest().catch(()=>{});
       run();
       // Deep-link ?id=
