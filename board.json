@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-21 07:45 HKT",
+  "written_at_hkt": "2026-09-21 07:50 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -7,12 +7,12 @@
       "skip": false,
       "reason": "cut-in from chat 2026-09-21",
       "captions_done": 0,
-      "captions_left": 0,
+      "captions_left": 372,
       "stt_done": 0,
-      "stt_left": 0,
-      "videos_total": 0,
-      "status": "not_started",
-      "label": "Not started"
+      "stt_left": 372,
+      "videos_total": 372,
+      "status": "waiting_captions",
+      "label": "Waiting captions"
     },
     {
       "name": "AI 101",
@@ -99,8 +99,8 @@
       "reason": "captions done · STT still running",
       "captions_done": 437,
       "captions_left": 0,
-      "stt_done": 472,
-      "stt_left": 265,
+      "stt_done": 473,
+      "stt_left": 330,
       "videos_total": 737,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -218,10 +218,10 @@
       "videos": 283,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-      "captions_done": 220,
+      "captions_done": 223,
       "captions_left": 0,
-      "stt_done": 220,
-      "stt_left": 64,
+      "stt_done": 223,
+      "stt_left": 61,
       "videos_total": 284,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1535,9 +1535,9 @@
       "skip": false,
       "playlist_id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
       "captions_done": 0,
-      "captions_left": 132,
+      "captions_left": 131,
       "stt_done": 0,
-      "stt_left": 132,
+      "stt_left": 1,
       "videos_total": 132,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1895,6 +1895,20 @@
       "skip": false
     },
     {
+      "id": "UC6t1O76G0jYXOAoYCm153dA",
+      "title": "Lenny's Podcast",
+      "kind": "channel",
+      "videos_total": 372,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 372,
+      "stt_done": 0,
+      "stt_left": 372,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
       "id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
       "title": "Productivity",
       "kind": "playlist",
@@ -1965,20 +1979,6 @@
       "skip": false
     },
     {
-      "id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
-      "title": "Product Management Interview Prep",
-      "kind": "playlist",
-      "videos_total": 132,
-      "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 132,
-      "stt_done": 0,
-      "stt_left": 132,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "UC1q6LKlcco02dF0BxE0G1zg",
       "title": "AI 101",
       "kind": "channel",
@@ -1988,6 +1988,20 @@
       "captions_left": 131,
       "stt_done": 0,
       "stt_left": 131,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+      "title": "Product Management Interview Prep",
+      "kind": "playlist",
+      "videos_total": 132,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 131,
+      "stt_done": 0,
+      "stt_left": 1,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2518,8 +2532,8 @@
       "videos_source": "inventory",
       "captions_done": 437,
       "captions_left": 0,
-      "stt_done": 472,
-      "stt_left": 265,
+      "stt_done": 473,
+      "stt_left": 330,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -2712,10 +2726,10 @@
       "kind": "playlist",
       "videos_total": 284,
       "videos_source": "inventory",
-      "captions_done": 220,
+      "captions_done": 223,
       "captions_left": 0,
-      "stt_done": 220,
-      "stt_left": 64,
+      "stt_done": 223,
+      "stt_left": 61,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3068,20 +3082,6 @@
       "stt_left": 1,
       "status": "waiting_stt",
       "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "id": "UC6t1O76G0jYXOAoYCm153dA",
-      "title": "Lenny's Podcast",
-      "kind": "channel",
-      "videos_total": 0,
-      "videos_source": "none",
-      "captions_done": 0,
-      "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 0,
-      "status": "not_started",
-      "label": "Not started",
       "skip": false
     },
     {
