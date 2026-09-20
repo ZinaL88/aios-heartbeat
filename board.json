@@ -1,6 +1,12 @@
 {
-  "written_at_hkt": "2026-09-21 07:28 HKT",
+  "written_at_hkt": "2026-09-21 07:31 HKT",
   "queue": [
+    {
+      "name": "Lenny's Podcast",
+      "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
+      "skip": false,
+      "reason": "cut-in from chat 2026-09-21"
+    },
     {
       "name": "AI 101",
       "channel_id": "UC1q6LKlcco02dF0BxE0G1zg",
@@ -745,5 +751,6 @@
       "skip": false,
       "playlist_id": "PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd"
     }
-  ]
+  ],
+  "sources": []
 }
