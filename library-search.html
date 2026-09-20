@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <meta http-equiv="Cache-Control" content="no-store"/>
 <title>HEARTBEAT · Library search</title>
-<meta name="aios-library-search-build" content="merge-by-id-v22"/>
+<meta name="aios-library-search-build" content="merge-by-id-v23"/>
 <style>
 :root { --bg:#0e0e0e; --card:#1a1a1a; --fg:#f0f0f0; --muted:#8a8a8a; --lime:#c8f542; --amber:#e8b84a; --red:#f07178; --border:#2a2a2a; }
 * { box-sizing:border-box; }
@@ -183,6 +183,17 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
   <pre class="fields" id="detailBody"></pre>
 </section>
 
+<div id="confirmMask" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+  <div id="confirmSheet">
+    <h3 id="confirmTitle">Save draft?</h3>
+    <p id="confirmMsg">This keeps your edits on this phone only. Download .txt if you need a backup.</p>
+    <div id="confirmActions">
+      <button class="btn secondary" type="button" id="confirmNo">Cancel</button>
+      <button class="btn" type="button" id="confirmYes">Save</button>
+    </div>
+  </div>
+</div>
+
 <script>
 (function(){
   let CATALOG = [];
@@ -194,6 +205,13 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
   let ORIGINAL_TEXT = "";
   let EDITING = false;
   const $ = (id) => document.getElementById(id);
+  function on(id, ev, fn){
+    const el = $(id);
+    if(!el) return null;
+    el.addEventListener(ev, fn);
+    return el;
+  }
+
 
   function draftKey(it){
     return "aios.txDraft.v1:" + String(it.channel_id || "") + ":" + String(it.id || "");
@@ -635,15 +653,15 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
     $("confirmMask").classList.remove("on");
     CONFIRM_CB = null;
   }
-  $("confirmNo").addEventListener("click", closeConfirm);
-  $("confirmMask").addEventListener("click", (e) => { if(e.target === $("confirmMask")) closeConfirm(); });
-  $("confirmYes").addEventListener("click", () => {
+  on("confirmNo", "click", closeConfirm);
+  on("confirmMask", "click", (e) => { if(e.target === $("confirmMask")) closeConfirm(); });
+  on("confirmYes", "click", () => {
     const fn = CONFIRM_CB;
     closeConfirm();
     if(typeof fn === "function") fn();
   });
 
-  $("txSaveDraft").addEventListener("click", () => {
+  on("txSaveDraft", "click", () => {
     if(!CURRENT) return;
     const text = $("txEditor").value;
     askConfirm(
@@ -659,7 +677,7 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
       }
     );
   });
-  $("txCancelEdit").addEventListener("click", () => {
+  on("txCancelEdit", "click", () => {
     if(!CURRENT) { setEditMode(false); return; }
     const text = $("txEditor").value;
     const draft = loadDraft(CURRENT);
@@ -681,7 +699,7 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
       doCancel();
     }
   });
-  $("txDoneEdit").addEventListener("click", () => {
+  on("txDoneEdit", "click", () => {
     if(!CURRENT) return;
     const text = $("txEditor").value;
     const finish = () => {
@@ -703,10 +721,10 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
     }
   });
 
-  $("go").addEventListener('click', run);
-  $("q").addEventListener('keydown', e => { if(e.key==='Enter') run(); });
-  ["channel","access","ctype","tx","gapsOnly"].forEach(id => $(id).addEventListener('change', run));
-  $("results").addEventListener('click', e => {
+  on("go", "click", run);
+  on("q", "keydown", e => { if(e.key==='Enter') run(); });
+  ["channel","access","ctype","tx","gapsOnly"].forEach(id => on(id, "change", run));
+  on("results", "click", e => {
     const txBtn = e.target.closest('button.openTx');
     if(txBtn){
       showTranscript(itemById(txBtn.dataset.id));
@@ -717,10 +735,10 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
       showDetail(itemById(sch.dataset.id));
     }
   });
-  $("closeDetail").addEventListener('click', () => $("detail").classList.remove('open'));
-  $("closeTx").addEventListener('click', () => {
+  on("closeDetail", "click", () => { const d=$("detail"); if(d) d.classList.remove('open'); });
+  on("closeTx", "click", () => {
     setEditMode(false);
-    $("txPanel").classList.remove('open');
+    const p=$("txPanel"); if(p) p.classList.remove('open');
   });
 
   async function probeBoxApi(){
@@ -759,17 +777,6 @@ pre.fields { white-space:pre-wrap; word-break:break-word; font-size:12px; margin
   })();
 })();
 </script>
-
-<div id="confirmMask" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
-  <div id="confirmSheet">
-    <h3 id="confirmTitle">Save draft?</h3>
-    <p id="confirmMsg">This keeps your edits on this phone only. Download .txt if you need a backup.</p>
-    <div id="confirmActions">
-      <button class="btn secondary" type="button" id="confirmNo">Cancel</button>
-      <button class="btn" type="button" id="confirmYes">Save</button>
-    </div>
-  </div>
-</div>
 
 </body>
 </html>
