@@ -1,6 +1,12 @@
 {
-  "written_at_hkt": "2026-09-20 22:06 HKT",
+  "written_at_hkt": "2026-09-20 22:12 HKT",
   "queue": [
+    {
+      "name": "AI 101",
+      "channel_id": "UC1q6LKlcco02dF0BxE0G1zg",
+      "skip": false,
+      "reason": "cut-in from chat 2026-09-20"
+    },
     {
       "name": "Web3101",
       "channel_id": "UCm-T3PmUW-HYkBao1lIBu3g",
