@@ -245,7 +245,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">10614</div><div class="s" id="mSttSub">10614 done · 312 pending · Running</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">10377</div><div class="s" id="mCapSub">10377 done · 1596 left · Running</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">7.7G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">7.3G</div><div class="s" id="mRamSub">of 15.6G</div></div>
   <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-21 16:50 HKT</div></div>
 </section>
 
@@ -263,15 +263,15 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <p class="ch" id="sttCh">Alan</p>
       <div class="row"><span class="big" id="sttNum">10614</span><span class="mono" id="sttFile">10614 done · 312 pending · now: GP5eAt1-uL0</span></div>
       <p class="mono" id="sttEta">ETA 2026-09-26 21:38 HKT</p>
-      <p class="mono" id="sttDisk">10614 transcripts on disk · RAM 7.7 of 15.6G · load 3.18</p>
+      <p class="mono" id="sttDisk">10614 transcripts on disk · RAM 7.3 of 15.6G · load 3.47</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">7.7 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">3.18</span></li>
+      <li><span>RAM free</span><span id="boxRam">7.3 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">3.47</span></li>
       <li><span>Disk</span><span id="boxDisk">104G</span></li>
       <li><span>Tmp</span><span id="boxTmp">523M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
@@ -285,9 +285,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.86G</span> · node ×33</li><li><span class="mono">2.07G</span> · python ×5</li><li><span class="mono">0.82G</span> · chrome ×13</li><li><span class="mono">0.15G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.09G</span> · bash ×38</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.06G</span> · plank ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.85G</span> · node ×33</li><li><span class="mono">2.37G</span> · python ×5</li><li><span class="mono">0.82G</span> · chrome ×13</li><li><span class="mono">0.15G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.09G</span> · bash ×37</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.06G</span> · plank ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-21T08:50:13Z captions after fill running=3</li><li class="mono">2026-09-21T08:50:13Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-21T08:50:24Z captions after fill running=3</li><li class="mono">2026-09-21T08:50:24Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
