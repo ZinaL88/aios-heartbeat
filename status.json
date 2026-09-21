@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-21T20:23:24Z",
+  "written_at_utc": "2026-09-21T20:23:35Z",
   "written_at_hkt": "2026-09-22 04:23 HKT",
   "token_free": true,
   "processes": {
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.5,
+    "mem_available_gi": 5.7,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.29,
+        "rss_gi": 3.3,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.53,
+        "rss_gi": 2.6,
         "n": 5
       },
       {
@@ -57,11 +57,6 @@
         "comm": "Xvfb",
         "rss_gi": 0.12,
         "n": 3
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.09,
-        "n": 2
       },
       {
         "comm": "bash",
@@ -82,6 +77,11 @@
         "comm": "plank",
         "rss_gi": 0.06,
         "n": 3
+      },
+      {
+        "comm": "xfwm4",
+        "rss_gi": 0.06,
+        "n": 3
       }
     ],
     "meminfo": {
@@ -92,7 +92,7 @@
       "sreclaimable_gi": 0.3,
       "committed_gi": 19.2
     },
-    "load1": 4.65,
+    "load1": 4.72,
     "disk_avail": "103G",
     "tmp_du": "526M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
         "pending": 52,
-        "done": 5175,
-        "transcripts_on_disk": 5175,
+        "done": 5176,
+        "transcripts_on_disk": 5176,
         "inflight": "n9menw9qe_o",
         "inflight_duration_s": null,
         "model": "medium",
@@ -136,9 +136,9 @@
         "eta_min": 1248,
         "eta_hkt": "2026-09-23 01:11 HKT",
         "jobs": 2,
-        "pending_global": 6286,
+        "pending_global": 6285,
         "eta_deadline_utc": "2026-09-22T17:11:24Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -156,7 +156,7 @@
           "Product Management"
         ],
         "done": 10921,
-        "left": 454,
+        "left": 453,
         "total": 16394,
         "no_sub": 493,
         "eta_min": 38,
@@ -165,18 +165,18 @@
         "jobs": 3,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
-        "left_global": 1148,
-        "eta_deadline_utc": "2026-09-21T21:01:24Z",
+        "left_global": 1147,
+        "eta_deadline_utc": "2026-09-21T21:01:35Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 5175,
-      "stt_pending": 6286,
+      "stt_done": 5176,
+      "stt_pending": 6285,
       "captions_done": 10921,
-      "captions_left": 1148,
+      "captions_left": 1147,
       "captions_total": 16394,
       "channels_touched": 66,
       "by_channel": [
@@ -255,10 +255,10 @@
         {
           "id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
           "name": "Productivity",
-          "stt_done": 91,
+          "stt_done": 92,
           "captions_done": 463,
-          "captions_left": 46,
-          "stt_left": 17,
+          "captions_left": 45,
+          "stt_left": 16,
           "videos_total": 616
         },
         {
@@ -657,9 +657,9 @@
           "videos_total": 616,
           "videos_source": "inventory",
           "captions_done": 463,
-          "captions_left": 46,
-          "stt_done": 91,
-          "stt_left": 17,
+          "captions_left": 45,
+          "stt_done": 92,
+          "stt_left": 16,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -2205,7 +2205,7 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 15138,
+      "captions_files_on_disk": 15141,
       "source": "inventory+disk"
     }
   },
@@ -2236,53 +2236,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T20:23:23Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-21T20:23:33Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T20:23:23Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-21T20:23:33Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T20:23:24Z captions running=2 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=6.2G cap_signal=none"
+      "summary": "2026-09-21T20:23:33Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=6.0G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T20:23:24Z captions running=2 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=6.2G cap_signal=none"
+      "summary": "2026-09-21T20:23:33Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=6.0G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD/inventory_public.json"
+      "summary": "2026-09-21T20:23:33Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD/inventory_public.json"
+      "summary": "2026-09-21T20:23:33Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T20:23:24Z reboost captions pid 2212937 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
+      "summary": "2026-09-21T20:23:33Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T20:23:24Z reboost captions pid 2212937 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
+      "summary": "2026-09-21T20:23:33Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-21T20:23:24Z reboost captions pid 2212937 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-    "2026-09-21T20:23:24Z reboost captions pid 2212937 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-    "backfill-captions.log: warning: no cookies file at <path> public captions still run cookieless",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
+    "2026-09-21T20:23:33Z captions after fill running=3",
+    "2026-09-21T20:23:33Z STT already running — no second Whisper",
+    "2026-09-21T20:23:33Z STT already running — no second Whisper",
+    "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
-    "warning: no cookies file at <path> public captions still run cookieless"
+    "ookies): onation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans-en': HTTP Error 429: Too Many Requests",
+    "rate-limited — backoff 45s"
   ],
   "pm": {
     "token_free": true,
