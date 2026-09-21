@@ -71,6 +71,7 @@ h1 { font-size:18px; letter-spacing:.14em; margin:0; font-weight:700; }
 }
 #srcTabs button.on { background:var(--lime); color:#111; font-weight:600; }
 #srcList { list-style:none; margin:0; padding:0; max-height:420px; overflow:auto; -webkit-overflow-scrolling:touch; }
+#srcList .srcrow[hidden], #srcList li[hidden] { display:none !important; }
 .srcrow {
   display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-bottom:1px solid #222;
 }
@@ -776,6 +777,7 @@ window.srcFilter=function(btn, keep){
     else if(sf==="waiting") show=(st==="waiting_captions"||st==="waiting_stt"||st==="not_started"||st==="waiting_inventory");
     else show=(st===sf);
     li.hidden=!show;
+    li.style.display = show ? "flex" : "none";
     if(show) shown++;
   });
   var empty=$("srcEmpty");
