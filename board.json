@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-22 02:19 HKT",
+  "written_at_hkt": "2026-09-22 02:20 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 239,
+      "captions_done": 240,
       "captions_left": 0,
-      "stt_done": 239,
-      "stt_left": 112,
+      "stt_done": 240,
+      "stt_left": 110,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2705,20 +2705,6 @@
       "skip": false
     },
     {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 239,
-      "captions_left": 0,
-      "stt_done": 239,
-      "stt_left": 112,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "UCP76ZVB1x9udP2UFcQkSvMA",
       "title": "大卢和小田",
       "kind": "channel",
@@ -2742,6 +2728,20 @@
       "captions_left": 0,
       "stt_done": 299,
       "stt_left": 111,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 240,
+      "captions_left": 0,
+      "stt_done": 240,
+      "stt_left": 110,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
