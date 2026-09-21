@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-21T21:07:20Z",
+  "written_at_utc": "2026-09-21T21:07:35Z",
   "written_at_hkt": "2026-09-22 05:07 HKT",
   "token_free": true,
   "processes": {
@@ -16,7 +16,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 2253878,
+        "pid": 2254274,
         "cmd": "proc"
       },
       {
@@ -30,22 +30,22 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.5,
+    "mem_available_gi": 6.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.26,
+        "rss_gi": 3.27,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 1.25,
+        "rss_gi": 1.69,
         "n": 5
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.86,
+        "rss_gi": 0.85,
         "n": 13
       },
       {
@@ -60,8 +60,13 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 39
+        "rss_gi": 0.1,
+        "n": 40
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.08,
+        "n": 1
       },
       {
         "comm": "websockify",
@@ -77,24 +82,19 @@
         "comm": "plank",
         "rss_gi": 0.06,
         "n": 3
-      },
-      {
-        "comm": "xfwm4",
-        "rss_gi": 0.06,
-        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 4.2,
-      "anon_gi": 4.2,
+      "cached_gi": 4.4,
+      "anon_gi": 4.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 14.5
+      "committed_gi": 18.3
     },
-    "load1": 3.74,
+    "load1": 2.99,
     "disk_avail": "103G",
-    "tmp_du": "526M"
+    "tmp_du": "690M"
   },
   "cookies": {
     "present": false,
@@ -106,7 +106,7 @@
     "done": 279,
     "total": 590,
     "inflight": null,
-    "last_id": "amXsTRqWXQs",
+    "last_id": "yoMaVPRjRI0",
     "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
     "inventory": {
       "public_total": 590,
@@ -127,18 +127,18 @@
         "running": true,
         "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
         "pending": 32,
-        "done": 5220,
-        "transcripts_on_disk": 5220,
-        "inflight": "yoMaVPRjRI0",
+        "done": 5221,
+        "transcripts_on_disk": 5221,
+        "inflight": "unntjlkiJm4",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 768,
         "eta_hkt": "2026-09-22 17:55 HKT",
         "jobs": 2,
-        "pending_global": 6235,
+        "pending_global": 6234,
         "eta_deadline_utc": "2026-09-22T09:55:20Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -153,8 +153,8 @@
           "Data Science",
           "Productivity"
         ],
-        "done": 10965,
-        "left": 419,
+        "done": 10966,
+        "left": 418,
         "total": 16394,
         "no_sub": 360,
         "eta_min": 52,
@@ -163,18 +163,18 @@
         "jobs": 2,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
-        "left_global": 1113,
-        "eta_deadline_utc": "2026-09-21T21:59:20Z",
+        "left_global": 1112,
+        "eta_deadline_utc": "2026-09-21T21:59:36Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 5220,
-      "stt_pending": 6235,
-      "captions_done": 10965,
-      "captions_left": 1113,
+      "stt_done": 5221,
+      "stt_pending": 6234,
+      "captions_done": 10966,
+      "captions_left": 1112,
       "captions_total": 16394,
       "channels_touched": 66,
       "by_channel": [
@@ -253,10 +253,10 @@
         {
           "id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
           "name": "Productivity",
-          "stt_done": 106,
-          "captions_done": 477,
-          "captions_left": 31,
-          "stt_left": 2,
+          "stt_done": 107,
+          "captions_done": 478,
+          "captions_left": 30,
+          "stt_left": 1,
           "videos_total": 616
         },
         {
@@ -766,10 +766,10 @@
           "kind": "playlist",
           "videos_total": 616,
           "videos_source": "inventory",
-          "captions_done": 477,
-          "captions_left": 31,
-          "stt_done": 106,
-          "stt_left": 2,
+          "captions_done": 478,
+          "captions_left": 30,
+          "stt_done": 107,
+          "stt_left": 1,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -2203,7 +2203,7 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 15190,
+      "captions_files_on_disk": 15191,
       "source": "inventory+disk"
     }
   },
@@ -2239,11 +2239,6 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T21:07:19Z ensure_venv — ok"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-21T21:07:19Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
@@ -2270,12 +2265,17 @@
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-21T21:07:19Z inventory missing — building playlist PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-21T21:07:34Z skip — another reboost holds lock"
     }
   ],
   "reboost_log": [
-    "2026-09-21T21:07:19Z captions running=2 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=7.9G cap_signal=none",
     "2026-09-21T21:07:19Z inventory missing — building playlist PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
     "2026-09-21T21:07:19Z inventory missing — building playlist PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+    "2026-09-21T21:07:34Z skip — another reboost holds lock",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
