@@ -1521,9 +1521,9 @@
       "skip": false,
       "playlist_id": "PLrtCHHeadkHrIkSw0waA_S8p2G_lYxU_j",
       "captions_done": 0,
-      "captions_left": 38,
+      "captions_left": 37,
       "stt_done": 0,
-      "stt_left": 38,
+      "stt_left": 1,
       "videos_total": 38,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2049,20 +2049,6 @@
       "skip": false
     },
     {
-      "id": "PLrtCHHeadkHrIkSw0waA_S8p2G_lYxU_j",
-      "title": "Mock Product Management Interviews",
-      "kind": "playlist",
-      "videos_total": 38,
-      "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 38,
-      "stt_done": 0,
-      "stt_left": 38,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
       "title": "常用英语口语训练",
       "kind": "playlist",
@@ -2142,6 +2128,20 @@
       "captions_left": 21,
       "stt_done": 0,
       "stt_left": 21,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLrtCHHeadkHrIkSw0waA_S8p2G_lYxU_j",
+      "title": "Mock Product Management Interviews",
+      "kind": "playlist",
+      "videos_total": 38,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 37,
+      "stt_done": 0,
+      "stt_left": 1,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
