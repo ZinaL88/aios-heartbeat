@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-21 09:40 HKT",
+  "written_at_hkt": "2026-09-21 09:46 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -218,10 +218,10 @@
       "videos": 283,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-      "captions_done": 240,
+      "captions_done": 241,
       "captions_left": 0,
-      "stt_done": 240,
-      "stt_left": 44,
+      "stt_done": 241,
+      "stt_left": 43,
       "videos_total": 284,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2721,20 +2721,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-      "title": "Job hunting",
-      "kind": "playlist",
-      "videos_total": 284,
-      "videos_source": "inventory",
-      "captions_done": 240,
-      "captions_left": 0,
-      "stt_done": 240,
-      "stt_left": 44,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLLofk4EYC4CWQ2hN1o0BUHN",
       "title": "Bots & Exchanges",
       "kind": "playlist",
@@ -2743,6 +2729,20 @@
       "captions_done": 0,
       "captions_left": 0,
       "stt_done": 0,
+      "stt_left": 43,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+      "title": "Job hunting",
+      "kind": "playlist",
+      "videos_total": 284,
+      "videos_source": "inventory",
+      "captions_done": 241,
+      "captions_left": 0,
+      "stt_done": 241,
       "stt_left": 43,
       "status": "waiting_stt",
       "label": "Waiting STT",
