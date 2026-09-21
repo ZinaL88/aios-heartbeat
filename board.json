@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 210,
+      "captions_done": 211,
       "captions_left": 0,
-      "stt_done": 210,
-      "stt_left": 170,
+      "stt_done": 211,
+      "stt_left": 168,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -208,6 +208,19 @@
       "videos_total": 2,
       "status": "waiting_captions",
       "label": "Waiting captions"
+    },
+    {
+      "name": "Rise Above Reality",
+      "channel_id": "UCsguRUxh-0DiryIdPPWFeCQ",
+      "skip": false,
+      "reason": "ops_api intake",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 0,
+      "videos_total": 0,
+      "status": "not_started",
+      "label": "Not started"
     }
   ],
   "tasks": [
@@ -2627,10 +2640,10 @@
       "kind": "channel",
       "videos_total": 590,
       "videos_source": "inventory",
-      "captions_done": 210,
+      "captions_done": 211,
       "captions_left": 0,
-      "stt_done": 210,
-      "stt_left": 170,
+      "stt_done": 211,
+      "stt_left": 168,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3109,6 +3122,20 @@
       "stt_left": 1,
       "status": "waiting_stt",
       "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCsguRUxh-0DiryIdPPWFeCQ",
+      "title": "Rise Above Reality",
+      "kind": "channel",
+      "videos_total": 0,
+      "videos_source": "none",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 0,
+      "status": "not_started",
+      "label": "Not started",
       "skip": false
     },
     {
