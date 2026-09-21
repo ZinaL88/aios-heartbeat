@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-21T19:12:12Z",
+  "written_at_utc": "2026-09-21T19:12:37Z",
   "written_at_hkt": "2026-09-22 03:12 HKT",
   "token_free": true,
   "processes": {
@@ -40,7 +40,7 @@
       },
       {
         "comm": "python",
-        "rss_gi": 2.41,
+        "rss_gi": 2.39,
         "n": 4
       },
       {
@@ -92,7 +92,7 @@
       "sreclaimable_gi": 0.3,
       "committed_gi": 19.0
     },
-    "load1": 4.14,
+    "load1": 4.77,
     "disk_avail": "103G",
     "tmp_du": "526M"
   },
@@ -138,7 +138,7 @@
         "jobs": 2,
         "pending_global": 6368,
         "eta_deadline_utc": "2026-09-23T05:36:13Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -165,7 +165,7 @@
         "next_name": "Lenny's Podcast",
         "left_global": 1196,
         "eta_deadline_utc": "2026-09-21T20:12:13Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -2234,21 +2234,6 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T19:12:12Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-21T19:12:12Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-21T19:12:12Z captions running=2 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=6.4G cap_signal=none"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-21T19:12:12Z captions running=2 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=6.4G cap_signal=none"
     },
     {
@@ -2270,17 +2255,32 @@
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-21T19:12:12Z reboost captions pid 2146188 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-21T19:12:13Z inventory missing — building playlist PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-21T19:12:13Z inventory missing — building playlist PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-21T19:12:36Z skip — another reboost holds lock"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-21T19:12:12Z reboost captions pid 2146188 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-    "2026-09-21T19:12:12Z reboost captions pid 2146188 channel PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-    "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
-    "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
-    "[--sleep-max SLEEP_MAX] [--model MODEL]",
-    "[--language LANGUAGE] [--dry-run] [--force]",
-    "backfill_members.py: error: unrecognized arguments: --captions-jobs 1"
+    "2026-09-21T19:12:13Z inventory missing — building playlist PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+    "2026-09-21T19:12:13Z inventory missing — building playlist PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+    "2026-09-21T19:12:36Z skip — another reboost holds lock",
+    "backfill-captions.log: rate-limited — backoff 45s",
+    "backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
+    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
+    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
+    "rate-limited — backoff 45s"
   ],
   "pm": {
     "token_free": true,
