@@ -1183,10 +1183,10 @@
       "videos": 918,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-      "captions_done": 707,
-      "captions_left": 78,
-      "stt_done": 707,
-      "stt_left": 211,
+      "captions_done": 708,
+      "captions_left": 77,
+      "stt_done": 708,
+      "stt_left": 210,
       "videos_total": 918,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1964,20 +1964,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-      "title": "Product Management",
-      "kind": "playlist",
-      "videos_total": 918,
-      "videos_source": "inventory",
-      "captions_done": 707,
-      "captions_left": 78,
-      "stt_done": 707,
-      "stt_left": 211,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
       "title": "十分鐘心理學",
       "kind": "playlist",
@@ -1987,6 +1973,20 @@
       "captions_left": 144,
       "stt_done": 0,
       "stt_left": 144,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+      "title": "Product Management",
+      "kind": "playlist",
+      "videos_total": 918,
+      "videos_source": "inventory",
+      "captions_done": 708,
+      "captions_left": 77,
+      "stt_done": 708,
+      "stt_left": 210,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
