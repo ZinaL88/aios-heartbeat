@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-21T21:52:17Z",
-  "written_at_hkt": "2026-09-22 05:52 HKT",
+  "written_at_utc": "2026-09-21T21:53:26Z",
+  "written_at_hkt": "2026-09-22 05:53 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.0,
+    "mem_available_gi": 5.8,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.22,
+        "rss_gi": 3.27,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.14,
+        "rss_gi": 2.42,
         "n": 5
       },
       {
@@ -87,12 +87,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 4.3,
-      "anon_gi": 5.0,
+      "anon_gi": 5.3,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 18.9
+      "committed_gi": 19.1
     },
-    "load1": 4.07,
+    "load1": 5.07,
     "disk_avail": "103G",
     "tmp_du": "526M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
         "pending": 12,
-        "done": 5262,
-        "transcripts_on_disk": 5262,
+        "done": 5263,
+        "transcripts_on_disk": 5263,
         "inflight": "o-mn6GBd5Rs",
         "inflight_duration_s": null,
         "model": "medium",
@@ -138,7 +138,7 @@
         "jobs": 2,
         "pending_global": 6208,
         "eta_deadline_utc": "2026-09-22T02:40:17Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -155,28 +155,28 @@
           "Entrepreneur",
           "Productivity"
         ],
-        "done": 11007,
-        "left": 1089,
+        "done": 11008,
+        "left": 1088,
         "total": 17110,
         "no_sub": 372,
         "eta_min": 91,
-        "eta_hkt": "2026-09-22 07:23 HKT",
+        "eta_hkt": "2026-09-22 07:24 HKT",
         "inflight": null,
         "jobs": 3,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
-        "left_global": 1783,
-        "eta_deadline_utc": "2026-09-21T23:23:17Z",
+        "left_global": 1782,
+        "eta_deadline_utc": "2026-09-21T23:24:26Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 5262,
+      "stt_done": 5263,
       "stt_pending": 6208,
-      "captions_done": 11007,
-      "captions_left": 1783,
+      "captions_done": 11008,
+      "captions_left": 1782,
       "captions_total": 17110,
       "channels_touched": 67,
       "by_channel": [
@@ -488,10 +488,10 @@
           "kind": "playlist",
           "videos_total": 716,
           "videos_source": "inventory",
-          "captions_done": 14,
-          "captions_left": 688,
-          "stt_done": 14,
-          "stt_left": 702,
+          "captions_done": 15,
+          "captions_left": 687,
+          "stt_done": 15,
+          "stt_left": 701,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -2205,7 +2205,7 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 15229,
+      "captions_files_on_disk": 15230,
       "source": "inventory+disk"
     }
   },
@@ -2236,48 +2236,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T21:52:15Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-21T21:53:24Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T21:52:15Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-21T21:53:24Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T21:52:16Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=6.3G cap_signal=none"
+      "summary": "2026-09-21T21:53:24Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=6.3G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T21:52:16Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=6.3G cap_signal=none"
+      "summary": "2026-09-21T21:53:24Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=6.3G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T21:52:16Z captions after fill running=3"
+      "summary": "2026-09-21T21:53:24Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T21:52:16Z captions after fill running=3"
+      "summary": "2026-09-21T21:53:24Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T21:52:16Z STT already running — no second Whisper"
+      "summary": "2026-09-21T21:53:24Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T21:52:16Z STT already running — no second Whisper"
+      "summary": "2026-09-21T21:53:24Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-21T21:52:16Z captions after fill running=3",
-    "2026-09-21T21:52:16Z STT already running — no second Whisper",
-    "2026-09-21T21:52:16Z STT already running — no second Whisper",
+    "2026-09-21T21:53:24Z captions after fill running=3",
+    "2026-09-21T21:53:24Z STT already running — no second Whisper",
+    "2026-09-21T21:53:24Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
