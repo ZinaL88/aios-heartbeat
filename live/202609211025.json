@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-21T02:29:46Z",
+  "written_at_utc": "2026-09-21T02:29:59Z",
   "written_at_hkt": "2026-09-21 10:29 HKT",
   "token_free": true,
   "processes": {
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.9,
+    "mem_available_gi": 5.7,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.81,
+        "rss_gi": 2.97,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.65,
+        "rss_gi": 2.61,
         "n": 5
       },
       {
@@ -56,7 +56,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 38
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -87,14 +87,14 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 3.4,
-      "anon_gi": 4.8,
+      "anon_gi": 4.9,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 18.6
     },
-    "load1": 4.41,
+    "load1": 4.69,
     "disk_avail": "104G",
-    "tmp_du": null
+    "tmp_du": "521M"
   },
   "cookies": {
     "present": false,
@@ -2182,7 +2182,9 @@
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {},
+  "git_sync": {
+    "pull": "ok"
+  },
   "schedule": {
     "next_cron_utc": "2026-09-21T02:30:00Z",
     "next_cron_hkt": "2026-09-21 10:30 HKT",
@@ -2206,48 +2208,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T02:29:43Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-21T02:29:58Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T02:29:43Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-21T02:29:58Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T02:29:43Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=7.7G cap_signal=none"
+      "summary": "2026-09-21T02:29:58Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=7.4G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T02:29:43Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=7.7G cap_signal=none"
+      "summary": "2026-09-21T02:29:58Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=7.4G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T02:29:43Z captions after fill running=3"
+      "summary": "2026-09-21T02:29:58Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T02:29:43Z captions after fill running=3"
+      "summary": "2026-09-21T02:29:58Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T02:29:43Z STT already running — no second Whisper"
+      "summary": "2026-09-21T02:29:58Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-21T02:29:43Z STT already running — no second Whisper"
+      "summary": "2026-09-21T02:29:58Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-21T02:29:43Z captions after fill running=3",
-    "2026-09-21T02:29:43Z STT already running — no second Whisper",
-    "2026-09-21T02:29:43Z STT already running — no second Whisper",
+    "2026-09-21T02:29:58Z captions after fill running=3",
+    "2026-09-21T02:29:58Z STT already running — no second Whisper",
+    "2026-09-21T02:29:58Z STT already running — no second Whisper",
     "backfill-captions.log: rate-limited — backoff 45s",
     "rate-limited — backoff 45s",
     "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
