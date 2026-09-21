@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-22 05:29 HKT",
+  "written_at_hkt": "2026-09-22 05:34 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 283,
+      "captions_done": 284,
       "captions_left": 0,
-      "stt_done": 283,
-      "stt_left": 24,
+      "stt_done": 284,
+      "stt_left": 22,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1252,10 +1252,10 @@
       "videos": 1429,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-      "captions_done": 753,
-      "captions_left": 386,
-      "stt_done": 127,
-      "stt_left": 125,
+      "captions_done": 755,
+      "captions_left": 384,
+      "stt_done": 129,
+      "stt_left": 123,
       "videos_total": 1429,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1378,10 +1378,10 @@
       "videos": 3464,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-      "captions_done": 0,
-      "captions_left": 713,
-      "stt_done": 0,
-      "stt_left": 1,
+      "captions_done": 4,
+      "captions_left": 706,
+      "stt_done": 4,
+      "stt_left": 712,
       "videos_total": 716,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1879,6 +1879,20 @@
       "skip": false
     },
     {
+      "id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+      "title": "Entrepreneur",
+      "kind": "playlist",
+      "videos_total": 716,
+      "videos_source": "inventory",
+      "captions_done": 4,
+      "captions_left": 706,
+      "stt_done": 4,
+      "stt_left": 712,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
       "id": "PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n",
       "title": "斷捨離 簡單匠 Podcast",
       "kind": "playlist",
@@ -1902,20 +1916,6 @@
       "captions_left": 372,
       "stt_done": 0,
       "stt_left": 372,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-      "title": "Entrepreneur",
-      "kind": "playlist",
-      "videos_total": 716,
-      "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 713,
-      "stt_done": 0,
-      "stt_left": 1,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -1954,10 +1954,10 @@
       "kind": "playlist",
       "videos_total": 1429,
       "videos_source": "inventory",
-      "captions_done": 753,
-      "captions_left": 386,
-      "stt_done": 127,
-      "stt_left": 125,
+      "captions_done": 755,
+      "captions_left": 384,
+      "stt_done": 129,
+      "stt_left": 123,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -3013,20 +3013,6 @@
       "skip": false
     },
     {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 283,
-      "captions_left": 0,
-      "stt_done": 283,
-      "stt_left": 24,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PL2SOU6wwxB0v3c46v2ptuDKIHmXHRAmeU",
       "title": "Econ 2450A Public Economics | Raj Chetty",
       "kind": "playlist",
@@ -3064,6 +3050,20 @@
       "captions_left": 0,
       "stt_done": 3,
       "stt_left": 23,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 284,
+      "captions_left": 0,
+      "stt_done": 284,
+      "stt_left": 22,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
