@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-22 04:40 HKT",
+  "written_at_hkt": "2026-09-22 04:45 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 273,
+      "captions_done": 274,
       "captions_left": 0,
-      "stt_done": 273,
-      "stt_left": 44,
+      "stt_done": 274,
+      "stt_left": 42,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1252,10 +1252,10 @@
       "videos": 1429,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-      "captions_done": 747,
-      "captions_left": 392,
-      "stt_done": 121,
-      "stt_left": 131,
+      "captions_done": 750,
+      "captions_left": 389,
+      "stt_done": 124,
+      "stt_left": 128,
       "videos_total": 1429,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1921,20 +1921,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-      "title": "Data Science",
-      "kind": "playlist",
-      "videos_total": 1429,
-      "videos_source": "inventory",
-      "captions_done": 747,
-      "captions_left": 392,
-      "stt_done": 121,
-      "stt_left": 131,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe",
       "title": "Full Podcast Episodes",
       "kind": "playlist",
@@ -1944,6 +1930,20 @@
       "captions_left": 260,
       "stt_done": 0,
       "stt_left": 260,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+      "title": "Data Science",
+      "kind": "playlist",
+      "videos_total": 1429,
+      "videos_source": "inventory",
+      "captions_done": 750,
+      "captions_left": 389,
+      "stt_done": 124,
+      "stt_left": 128,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2887,20 +2887,6 @@
       "skip": false
     },
     {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 273,
-      "captions_left": 0,
-      "stt_done": 273,
-      "stt_left": 44,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2",
       "title": "Stanford CS221 AI",
       "kind": "playlist",
@@ -2938,6 +2924,20 @@
       "captions_left": 0,
       "stt_done": 1272,
       "stt_left": 43,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 274,
+      "captions_left": 0,
+      "stt_done": 274,
+      "stt_left": 42,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
