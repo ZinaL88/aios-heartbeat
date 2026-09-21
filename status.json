@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-21T16:13:43Z",
-  "written_at_hkt": "2026-09-22 00:13 HKT",
+  "written_at_utc": "2026-09-21T16:14:01Z",
+  "written_at_hkt": "2026-09-22 00:14 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,12 +30,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 7.0,
+    "mem_available_gi": 7.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.1,
+        "rss_gi": 3.13,
         "n": 33
       },
       {
@@ -61,7 +61,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 39
+        "n": 37
       },
       {
         "comm": "websockify",
@@ -92,9 +92,9 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 19.1
     },
-    "load1": 4.62,
+    "load1": 4.55,
     "disk_avail": "103G",
-    "tmp_du": "525M"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -167,7 +167,7 @@
         "next_name": "Lenny's Podcast",
         "left_global": 1320,
         "eta_deadline_utc": "2026-09-21T17:05:43Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -2196,9 +2196,7 @@
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-21T16:15:00Z",
     "next_cron_hkt": "2026-09-22 00:15 HKT",

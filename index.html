@@ -220,8 +220,8 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-09-22 00:13 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-09-22 00:13 HKT · v21</p>
+    <p class="mono" id="pingLine">ping 2026-09-22 00:14 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-09-22 00:14 HKT · v21</p>
     <p class="mono" style="margin:6px 0 0"><a class="lib-link" href="library.html?v=23" style="color:var(--lime);text-decoration:none;font-weight:600">Library</a>
       <span style="color:var(--muted)"> · search transcripts &amp; check schema fields</span></p>
   </div>
@@ -243,12 +243,12 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 
 <section class="now">
   <div><span class="label">now</span> <span class="body" id="nowBody">STT Alan · captions Data Science · Product Management · Productivity</span></div>
-  <span class="mono" id="nowTs">2026-09-22 00:13 HKT</span>
+  <span class="mono" id="nowTs">2026-09-22 00:14 HKT</span>
 </section>
 
 <section class="card" id="opsCard">
   <p class="hlabel">OPS · token-free intake</p>
-  <p class="mono" style="margin:0 0 8px">Uses Grok Bot VM via Cloudflare tunnel (same as Library Read). Paste key once. Ops base auto-fills from <code>vm_front_door.json</code> — not localhost.</p>
+  <p class="mono" style="margin:0 0 8px">Uses Grok Bot VM via Cloudflare tunnel (same as Library Read). <b>Ops key required</b> — paste into the key field before Add video/channel (empty key = blocked, no call). Ops base auto-fills from <code>vm_front_door.json</code> — not localhost.</p>
   <div class="row" style="margin-top:8px;flex-wrap:wrap;gap:8px">
     <input id="opsBase" type="url" placeholder="Ops base URL · https://…tunnel… (empty = set before use)" style="flex:1;min-width:180px;min-height:36px;background:#222;color:var(--fg);border:1px solid #333;border-radius:8px;padding:6px 12px;font:inherit"/>
     <input id="opsKey" type="password" autocomplete="off" placeholder="Ops key · X-AIOS-OPS-KEY" style="flex:1;min-width:140px;min-height:36px;background:#222;color:var(--fg);border:1px solid #333;border-radius:8px;padding:6px 12px;font:inherit"/>
@@ -260,15 +260,15 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
     <button type="button" id="opsAddPlaylist" onclick="opsCall('playlist')">Add playlist</button>
     <button type="button" id="opsFixHb" onclick="opsCall('heartbeat')">Fix stale heartbeat</button>
   </div>
-  <p class="mono" id="opsState" style="margin-top:8px;min-height:18px;word-break:break-word">Set tunnel base + key, then paste a URL.</p>
+  <p class="mono" id="opsState" style="margin-top:8px;min-height:28px;word-break:break-word;box-sizing:border-box">Paste Ops key above first, then URL. Empty key blocks Add video (no silent 401).</p>
 </section>
 
 
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">10959</div><div class="s" id="mSttSub">10959 done · 170 pending · Running</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">10723</div><div class="s" id="mCapSub">10723 done · 1320 left · Running</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">7.0G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-22 00:13 HKT</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">7.1G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-22 00:14 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -285,17 +285,17 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <p class="ch" id="sttCh">Alan</p>
       <div class="row"><span class="big" id="sttNum">10959</span><span class="mono" id="sttFile">10959 done · 170 pending · now: SJuzPP9lNiI</span></div>
       <p class="mono" id="sttEta">ETA 2026-09-24 20:10 HKT</p>
-      <p class="mono" id="sttDisk">10959 transcripts on disk · RAM 7.0 of 15.6G · load 4.62</p>
+      <p class="mono" id="sttDisk">10959 transcripts on disk · RAM 7.1 of 15.6G · load 4.55</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">7.0 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">4.62</span></li>
+      <li><span>RAM free</span><span id="boxRam">7.1 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">4.55</span></li>
       <li><span>Disk</span><span id="boxDisk">103G</span></li>
-      <li><span>Tmp</span><span id="boxTmp">525M</span></li>
+      <li><span>Tmp</span><span id="boxTmp">—</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
       <li><span>Next ping</span><span id="boxCron">2026-09-22 00:15 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">captions + Whisper running</span></li>
@@ -307,7 +307,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">3.1G</span> · node ×33</li><li><span class="mono">2.65G</span> · python ×5</li><li><span class="mono">0.86G</span> · chrome ×13</li><li><span class="mono">0.26G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.09G</span> · bash ×39</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.07G</span> · python3 ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">3.13G</span> · node ×33</li><li><span class="mono">2.65G</span> · python ×5</li><li><span class="mono">0.86G</span> · chrome ×13</li><li><span class="mono">0.26G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.09G</span> · bash ×37</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.07G</span> · python3 ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
     <ul id="reboostLog"><li class="mono">2026-09-21T16:13:41Z STT already running — no second Whisper</li><li class="mono">2026-09-21T16:13:41Z skip — another reboost holds lock</li><li class="mono">backfill-captions.log: rate-limited — backoff 45s</li><li class="mono">rate-limited — backoff 45s</li><li class="mono">ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:&lt;path&gt;  for information on installing the required dependencies</li><li class="mono">ERROR: Unable to download video subtitles for &#x27;zh-Hans&#x27;: HTTP Error 429: Too Many Requests</li><li><span class="mono">reboost.log</span> 2026-09-21T16:13:41Z captions after fill running=3</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
@@ -1196,63 +1196,141 @@ document.addEventListener("click", function(ev){
   moveRow(li, btn.classList.contains("dn")?1:-1);
 });
 
-function opsBase(){return (localStorage.getItem("aios.opsBase")||"").trim().replace(/\/$/,"");}
-function opsKey(){return (localStorage.getItem("aios.opsKey")||"").trim();}
+function opsLiveVal(el){
+  if(!el) return "";
+  var v=(el.value||"").trim();
+  if(!v || v.indexOf("•")>=0) return "";
+  return v;
+}
+function opsBase(){
+  var live=opsLiveVal($("opsBase"));
+  if(live) return live.replace(/\/$/,"");
+  return (localStorage.getItem("aios.opsBase")||"").trim().replace(/\/$/,"");
+}
+function opsKey(){
+  var live=opsLiveVal($("opsKey"));
+  if(live) return live;
+  return (localStorage.getItem("aios.opsKey")||"").trim();
+}
 function opsSaveCreds(){
   var b=$("opsBase"), k=$("opsKey");
-  if(b){ var v=(b.value||"").trim(); if(v && v.indexOf("•")<0) localStorage.setItem("aios.opsBase", v); }
-  if(k){ var v2=(k.value||"").trim(); if(v2 && v2.indexOf("•")<0) localStorage.setItem("aios.opsKey", v2); }
+  var bv=opsLiveVal(b); if(bv) try{ localStorage.setItem("aios.opsBase", bv.replace(/\/$/,"")); }catch(e){}
+  var kv=opsLiveVal(k); if(kv) try{ localStorage.setItem("aios.opsKey", kv); }catch(e){}
 }
-function opsSetState(msg){ var s=$("opsState"); if(s) s.textContent=msg; }
+function opsSetState(msg, kind){
+  var s=$("opsState"); if(!s) return;
+  s.textContent=msg||"";
+  if(kind==="err"){
+    s.style.color="#f88"; s.style.border="1px solid #833"; s.style.background="#2a1515";
+    s.style.padding="8px 10px"; s.style.borderRadius="8px"; s.style.fontWeight="600";
+  } else if(kind==="ok"){
+    s.style.color="#8f8"; s.style.border="1px solid #484"; s.style.background="#152a15";
+    s.style.padding="8px 10px"; s.style.borderRadius="8px"; s.style.fontWeight="600";
+  } else {
+    s.style.color="var(--fg)"; s.style.border="1px solid #444"; s.style.background="#1a1a1a";
+    s.style.padding="8px 10px"; s.style.borderRadius="8px"; s.style.fontWeight="500";
+  }
+  try{ s.scrollIntoView({behavior:"smooth", block:"nearest"}); }catch(e){}
+}
+function opsBusy(on){
+  ["opsAddVideo","opsAddChannel","opsAddPlaylist","opsFixHb"].forEach(function(id){
+    var el=$(id); if(el) el.disabled=!!on;
+  });
+}
+function opsHumanOk(kind, j){
+  j=j||{};
+  if(kind==="video"){
+    var ch=j.channel_name||j.channel||j.queued_channel||"";
+    var vid=j.video_id||j.id||"";
+    if(ch) return "OK · queued channel "+String(ch).slice(0,80)+(vid?" · "+vid:"");
+    if(vid) return "OK · video "+vid+" queued";
+    return "OK · video intake accepted";
+  }
+  if(kind==="channel"){
+    var n=j.channel_name||j.name||j.channel||j.id||"";
+    return n ? ("OK · channel "+String(n).slice(0,80)) : "OK · channel intake accepted";
+  }
+  if(kind==="playlist"){
+    var p=j.playlist_id||j.id||j.title||"";
+    return p ? ("OK · playlist "+String(p).slice(0,80)) : "OK · playlist intake accepted";
+  }
+  if(kind==="heartbeat") return "OK · heartbeat ensure";
+  return "OK";
+}
 function opsCall(kind){
   opsSaveCreds();
   var base=opsBase();
-  if(!base){ opsSetState("Set Ops base URL first (tunnel HTTPS for phone — not localhost as primary)."); return; }
+  if(!base){ opsSetState("Set Ops base URL first (tunnel HTTPS for phone — not localhost as primary).", "err"); return; }
   var key=opsKey();
+  if(!key){ opsSetState("Paste Ops key first (field above). Without it Add video cannot work.", "err"); return; }
   var url=(($("opsUrl")&&$("opsUrl").value)||"").trim();
   var path="", body={};
   if(kind==="video"){
-    if(!url){ opsSetState("paste a video URL"); return; }
+    if(!url){ opsSetState("paste a video URL", "err"); return; }
     path="/ops/intake/video"; body={url:url, also_queue_channel:true};
   } else if(kind==="channel"){
-    if(!url){ opsSetState("paste channel URL, @handle, UC…, or a video URL"); return; }
+    if(!url){ opsSetState("paste channel URL, @handle, UC…, or a video URL", "err"); return; }
     path="/ops/intake/channel"; body={url:url};
   } else if(kind==="playlist"){
-    if(!url){ opsSetState("paste playlist URL or PL… id"); return; }
+    if(!url){ opsSetState("paste playlist URL or PL… id", "err"); return; }
     path="/ops/intake/playlist"; body={url:url};
   } else if(kind==="heartbeat"){
     path="/ops/heartbeat/ensure"; body={sync:true};
-  } else { opsSetState("unknown"); return; }
-  opsSetState("calling "+path+"…");
-  var headers={"Content-Type":"application/json"};
-  if(key) headers["X-AIOS-OPS-KEY"]=key;
+  } else { opsSetState("unknown", "err"); return; }
+  opsSetState("Calling…", "info");
+  opsBusy(true);
+  var headers={"Content-Type":"application/json","X-AIOS-OPS-KEY":key};
   fetch(base+path,{method:"POST",headers:headers,body:JSON.stringify(body)})
-    .then(function(r){ return r.json().then(function(j){ return {status:r.status,j:j}; }); })
+    .then(function(r){ return r.json().then(function(j){ return {status:r.status,j:j}; }).catch(function(){ return {status:r.status,j:{}}; }); })
     .then(function(x){
-      var brief=JSON.stringify(x.j).slice(0,400);
-      opsSetState("HTTP "+x.status+" · "+brief);
+      opsBusy(false);
+      var j=x.j||{};
+      var err=String(j.error||j.detail||"").toLowerCase();
+      if(x.status===401 || err.indexOf("unauthorized")>=0 || err==="unauthorized"){
+        opsSetState("Wrong or missing Ops key — paste key and tap again.", "err");
+        return;
+      }
+      if(x.status>=200 && x.status<300 && j.ok!==false){
+        var brief=JSON.stringify(j).slice(0,220);
+        opsSetState(opsHumanOk(kind,j)+" · "+brief, "ok");
+        return;
+      }
+      var brief2=JSON.stringify(j).slice(0,300);
+      opsSetState("HTTP "+x.status+" · "+brief2, "err");
     })
-    .catch(function(e){ opsSetState(String(e.message||e)); });
+    .catch(function(e){ opsBusy(false); opsSetState(String(e.message||e), "err"); });
 }
 function bootOps(){
   var b=$("opsBase"), k=$("opsKey");
-  if(b){ try{ b.value=opsBase()||""; }catch(e){}
+  if(b){
+    try{ var storedB=(localStorage.getItem("aios.opsBase")||"").trim(); if(storedB) b.value=storedB; }catch(e){}
     b.onchange=opsSaveCreds; b.onblur=opsSaveCreds;
   }
-  if(k){ try{ k.value=opsKey()?"••••saved••••":""; }catch(e){}
-    k.onchange=function(){ if(k.value && k.value.indexOf("•")<0) localStorage.setItem("aios.opsKey", k.value.trim()); };
+  if(k){
+    try{ k.value=(localStorage.getItem("aios.opsKey")||"").trim()?"••••saved••••":""; }catch(e){}
+    k.onchange=function(){ var v=opsLiveVal(k); if(v) try{ localStorage.setItem("aios.opsKey", v); }catch(e){} };
     k.onblur=k.onchange;
   }
   function applyBase(url){
     if(!url) return false;
     url=String(url).trim().replace(/\/$/,"");
     if(!url || /^https?:\/\/(127\.|localhost\b)/i.test(url)) return false;
-    if(b && !(opsBase())){ try{ b.value=url; }catch(e){} }
+    var have=(localStorage.getItem("aios.opsBase")||"").trim();
+    if(b && !have && !opsLiveVal(b)){ try{ b.value=url; }catch(e){} }
     try{ localStorage.setItem("aios.opsBase", url); }catch(e){}
-    opsSetState("Ops base ready · paste key once if needed");
+    if(!(localStorage.getItem("aios.opsKey")||"").trim() && !opsLiveVal(k)){
+      opsSetState("Ops base ready · Paste Ops key first (field above). Without it Add video cannot work.", "err");
+    } else {
+      opsSetState("Ops base ready · key saved — paste a URL.", "ok");
+    }
     return true;
   }
-  if(opsBase()){ return; }
+  if((localStorage.getItem("aios.opsBase")||"").trim() || opsLiveVal(b)){
+    if(!(localStorage.getItem("aios.opsKey")||"").trim() && !opsLiveVal(k)){
+      opsSetState("Paste Ops key first (field above). Without it Add video cannot work.", "err");
+    }
+    return;
+  }
   // Prefer same-origin Pages front-door (token-free); never default localhost.
   fetch("./vm_front_door.json",{cache:"no-store"})
     .then(function(r){ return r.ok?r.json():null; })
@@ -1263,14 +1341,14 @@ function bootOps(){
         var lib=(localStorage.getItem("aios_library_api")||"").trim();
         if(applyBase(lib)) return;
       }catch(e){}
-      opsSetState("Set tunnel Ops base (or wait for vm_front_door.json), then paste key once.");
+      opsSetState("Set tunnel Ops base (or wait for vm_front_door.json), then Paste Ops key first (field above). Without it Add video cannot work.", "err");
     })
     .catch(function(){
       try{
         var lib=(localStorage.getItem("aios_library_api")||"").trim();
         if(applyBase(lib)) return;
       }catch(e){}
-      opsSetState("Set tunnel Ops base, then paste key once.");
+      opsSetState("Set tunnel Ops base, then Paste Ops key first (field above). Without it Add video cannot work.", "err");
     });
 }
 
