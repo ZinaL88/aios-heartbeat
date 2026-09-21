@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-22 06:13 HKT",
+  "written_at_hkt": "2026-09-22 06:18 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 294,
+      "captions_done": 295,
       "captions_left": 0,
-      "stt_done": 294,
-      "stt_left": 2,
+      "stt_done": 295,
+      "stt_left": 295,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1378,10 +1378,10 @@
       "videos": 3464,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-      "captions_done": 28,
-      "captions_left": 668,
-      "stt_done": 27,
-      "stt_left": 689,
+      "captions_done": 30,
+      "captions_left": 664,
+      "stt_done": 30,
+      "stt_left": 686,
       "videos_total": 716,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1884,10 +1884,10 @@
       "kind": "playlist",
       "videos_total": 716,
       "videos_source": "inventory",
-      "captions_done": 28,
-      "captions_left": 668,
-      "stt_done": 27,
-      "stt_left": 689,
+      "captions_done": 30,
+      "captions_left": 664,
+      "stt_done": 30,
+      "stt_left": 686,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2602,6 +2602,20 @@
       "captions_left": 0,
       "stt_done": 473,
       "stt_left": 330,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 295,
+      "captions_left": 0,
+      "stt_done": 295,
+      "stt_left": 295,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3498,20 +3512,6 @@
       "captions_left": 0,
       "stt_done": 2,
       "stt_left": 3,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 294,
-      "captions_left": 0,
-      "stt_done": 294,
-      "stt_left": 2,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
