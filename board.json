@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-21 15:33 HKT",
+  "written_at_hkt": "2026-09-21 15:38 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 130,
+      "captions_done": 131,
       "captions_left": 0,
-      "stt_done": 130,
-      "stt_left": 330,
+      "stt_done": 131,
+      "stt_left": 328,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2511,20 +2511,6 @@
       "skip": false
     },
     {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 130,
-      "captions_left": 0,
-      "stt_done": 130,
-      "stt_left": 330,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "title": "一个狠人",
       "kind": "channel",
@@ -2534,6 +2520,20 @@
       "captions_left": 0,
       "stt_done": 473,
       "stt_left": 330,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 131,
+      "captions_left": 0,
+      "stt_done": 131,
+      "stt_left": 328,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
