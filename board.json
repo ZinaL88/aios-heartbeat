@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 226,
+      "captions_done": 227,
       "captions_left": 0,
-      "stt_done": 226,
-      "stt_left": 138,
+      "stt_done": 227,
+      "stt_left": 136,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2663,20 +2663,6 @@
       "skip": false
     },
     {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 226,
-      "captions_left": 0,
-      "stt_done": 226,
-      "stt_left": 138,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "UC1CXs5dtO8_Zrsm-48saJfg",
       "title": "Vicky Zhao",
       "kind": "channel",
@@ -2686,6 +2672,20 @@
       "captions_left": 0,
       "stt_done": 24,
       "stt_left": 137,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 227,
+      "captions_left": 0,
+      "stt_done": 227,
+      "stt_left": 136,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
