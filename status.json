@@ -1,12 +1,12 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T21:21:11Z",
-  "written_at_hkt": "2026-09-23 05:21 HKT",
+  "written_at_utc": "2026-09-22T21:22:53Z",
+  "written_at_hkt": "2026-09-23 05:22 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 3,
+    "whisper_n": 2,
     "backfill_n": 3,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
@@ -16,37 +16,42 @@
         "cmd": "proc"
       },
       {
-        "pid": 1095966,
-        "cmd": "proc"
-      },
-      {
-        "pid": 1099007,
+        "pid": 1101100,
         "cmd": "proc"
       },
       {
         "pid": 1045591,
         "cmd": "proc"
+      },
+      {
+        "pid": 1095387,
+        "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 4.5,
+    "mem_available_gi": 6.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "python",
-        "rss_gi": 4.74,
-        "n": 7
+        "rss_gi": 3.31,
+        "n": 6
       },
       {
         "comm": "node",
-        "rss_gi": 2.95,
+        "rss_gi": 2.84,
         "n": 33
       },
       {
         "comm": "chrome",
         "rss_gi": 0.76,
         "n": 13
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.2,
+        "n": 4
       },
       {
         "comm": "csnaps",
@@ -61,7 +66,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.1,
-        "n": 42
+        "n": 41
       },
       {
         "comm": "websockify",
@@ -77,22 +82,17 @@
         "comm": "plank",
         "rss_gi": 0.06,
         "n": 3
-      },
-      {
-        "comm": "xfwm4",
-        "rss_gi": 0.06,
-        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 2.2,
-      "anon_gi": 7.1,
+      "cached_gi": 3.7,
+      "anon_gi": 5.7,
       "shmem_gi": 0.0,
-      "sreclaimable_gi": 0.3,
-      "committed_gi": 23.1
+      "sreclaimable_gi": 0.4,
+      "committed_gi": 19.5
     },
-    "load1": 8.6,
+    "load1": 7.33,
     "disk_avail": "102G",
     "tmp_du": "532M"
   },
@@ -103,90 +103,90 @@
   },
   "collector": {
     "found": true,
-    "done": 501,
+    "done": 502,
     "total": 737,
     "inflight": null,
-    "last_id": "EovIXpE-iJ8",
+    "last_id": "mq--IBBUKE8",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
-      "public_done": 466,
+      "public_done": 467,
       "members_total": 0,
       "members_done": 0,
-      "pending_stt_n": 302,
+      "pending_stt_n": 301,
       "pending_stt_listed": 331,
-      "transcripts_on_disk": 501,
-      "captions_done": 466,
+      "transcripts_on_disk": 502,
+      "captions_done": 467,
       "captions_left": 0,
       "captions_no_sub": 300,
       "source": "inventory+disk",
-      "public_left": 271
+      "public_left": 270
     },
     "tracks": {
       "stt": {
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-        "pending": 302,
-        "done": 6790,
-        "transcripts_on_disk": 6790,
-        "inflight": "MmbuyhyEna8",
+        "pending": 301,
+        "done": 6798,
+        "transcripts_on_disk": 6798,
+        "inflight": "ryykPd3i1Ak",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
-        "eta_min": 7248,
-        "eta_hkt": "2026-09-28 06:04 HKT",
-        "jobs": 3,
-        "pending_global": 7575,
-        "eta_deadline_utc": "2026-09-27T22:04:00Z",
-        "eta_frozen": true,
+        "eta_min": 7224,
+        "eta_hkt": "2026-09-28 05:46 HKT",
+        "jobs": 2,
+        "pending_global": 7572,
+        "eta_deadline_utc": "2026-09-27T21:46:54Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
+        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
         "targets": [
           "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-          "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
+          "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf"
         ],
         "target_names": [
           "Data Science",
           "Entrepreneur",
-          "職場事業心理學"
+          "Advanced Algorithms (COMPSCI 224)"
         ],
-        "done": 11835,
-        "left": 403,
+        "done": 11842,
+        "left": 390,
         "total": 25851,
         "no_sub": 311,
-        "eta_min": 34,
-        "eta_hkt": "2026-09-23 06:06 HKT",
+        "eta_min": 32,
+        "eta_hkt": "2026-09-23 05:54 HKT",
         "inflight": null,
         "jobs": 3,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
-        "left_global": 9602,
-        "eta_deadline_utc": "2026-09-22T22:06:00Z",
-        "eta_frozen": true,
+        "left_global": 9597,
+        "eta_deadline_utc": "2026-09-22T21:54:54Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 6790,
-      "stt_pending": 7575,
-      "captions_done": 11835,
-      "captions_left": 9602,
+      "stt_done": 6798,
+      "stt_pending": 7572,
+      "captions_done": 11842,
+      "captions_left": 9597,
       "captions_total": 25851,
       "channels_touched": 71,
       "by_channel": [
         {
           "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
           "name": "理財",
-          "stt_done": 1439,
+          "stt_done": 1441,
           "captions_done": 1767,
           "captions_left": 0,
-          "stt_left": 1495,
+          "stt_left": 1493,
           "videos_total": 3002
         },
         {
@@ -228,10 +228,10 @@
         {
           "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
           "name": "一个狠人",
-          "stt_done": 501,
-          "captions_done": 466,
+          "stt_done": 502,
+          "captions_done": 467,
           "captions_left": 0,
-          "stt_left": 302,
+          "stt_left": 301,
           "videos_total": 737
         },
         {
@@ -255,10 +255,10 @@
         {
           "id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
           "name": "Entrepreneur",
-          "stt_done": 378,
-          "captions_done": 378,
-          "captions_left": 278,
-          "stt_left": 338,
+          "stt_done": 383,
+          "captions_done": 384,
+          "captions_left": 273,
+          "stt_left": 333,
           "videos_total": 716
         },
         {
@@ -502,10 +502,10 @@
           "kind": "playlist",
           "videos_total": 716,
           "videos_source": "inventory",
-          "captions_done": 378,
-          "captions_left": 278,
-          "stt_done": 378,
-          "stt_left": 338,
+          "captions_done": 384,
+          "captions_left": 273,
+          "stt_done": 383,
+          "stt_left": 333,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -1036,8 +1036,8 @@
           "videos_source": "inventory",
           "captions_done": 1767,
           "captions_left": 0,
-          "stt_done": 1439,
-          "stt_left": 1495,
+          "stt_done": 1441,
+          "stt_left": 1493,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1188,10 +1188,10 @@
           "kind": "channel",
           "videos_total": 737,
           "videos_source": "inventory",
-          "captions_done": 466,
+          "captions_done": 467,
           "captions_left": 0,
-          "stt_done": 501,
-          "stt_left": 302,
+          "stt_done": 502,
+          "stt_left": 301,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -2219,7 +2219,7 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 18171,
+      "captions_files_on_disk": 18207,
       "source": "inventory+disk"
     }
   },
@@ -2250,53 +2250,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:21:10Z STT already running — no second Whisper"
+      "summary": "2026-09-22T21:22:22Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:21:10Z STT already running — no second Whisper"
+      "summary": "2026-09-22T21:22:22Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:21:11Z ensure_venv — start"
+      "summary": "2026-09-22T21:22:52Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:21:11Z ensure_venv — ok"
+      "summary": "2026-09-22T21:22:52Z ensure_venv — start"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:21:12Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-22T21:22:52Z ensure_venv — ok"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:21:12Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.3G cap_signal=none"
+      "summary": "2026-09-22T21:22:53Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:21:12Z captions after fill running=3"
+      "summary": "2026-09-22T21:22:53Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.5G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:21:12Z STT already running — no second Whisper"
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf/inventory_public.json"
     }
   ],
   "reboost_log": [
-    "2026-09-22T21:21:12Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.3G cap_signal=none",
-    "2026-09-22T21:21:12Z captions after fill running=3",
-    "2026-09-22T21:21:12Z STT already running — no second Whisper",
-    "backfill-captions.log: incomplete f7ZPh-wtoRM: pending_stt",
-    "incomplete VSiNhOZ6mIQ: pending_stt",
-    "incomplete BHwzDmr6d7s: pending_stt",
-    "incomplete sOj27iVEVhc: pending_stt",
-    "incomplete f7ZPh-wtoRM: pending_stt"
+    "2026-09-22T21:22:53Z STT_VENV_OK=1 PY=<path>",
+    "2026-09-22T21:22:53Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.5G cap_signal=none",
+    "<path> --channel-id PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf --access public --limit 9999 --mode captions --language auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "backfill-captions.log: Deferring 1 failed_ids (e.g. no transcript) until after 0 fresh IDs",
+    "incomplete 2yd18z6iSyk: pending_stt",
+    "incomplete qZ3ygC04Gg4: pending_stt",
+    "stt_language=en",
+    "Deferring 1 failed_ids (e.g. no transcript) until after 0 fresh IDs"
   ],
   "pm": {
     "token_free": true,
@@ -2312,15 +2312,15 @@
     "total_n": 21,
     "jobs": [
       {
-        "id": "live-cap-PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
-        "title": "職場事業心理學",
+        "id": "live-cap-PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
+        "title": "Advanced Algorithms (COMPSCI 224)",
         "status": "running",
         "raw_status": "running",
         "class": "cpu_light",
         "priority": 1,
         "owner": "collector-live",
         "notes": "live captions target",
-        "target_id": "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
+        "target_id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf"
       },
       {
         "id": "live-cap-PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
