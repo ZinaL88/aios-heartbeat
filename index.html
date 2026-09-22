@@ -322,7 +322,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">5758</div><div class="s" id="mSttSub">5758 done · 1899 pending · Running</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">11203</div><div class="s" id="mCapSub">11203 done · 10115 left · Paused</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">5.4G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">5.2G</div><div class="s" id="mRamSub">of 15.6G</div></div>
   <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-22 17:49 HKT</div></div>
 </section>
 
@@ -340,17 +340,17 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <p class="ch" id="sttCh">PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ</p>
       <div class="row"><span class="big" id="sttNum">5758</span><span class="mono" id="sttFile">5758 done · 1899 pending · now: f5rcCw3YJuE</span></div>
       <p class="mono" id="sttEta">ETA 2026-10-24 09:25 HKT</p>
-      <p class="mono" id="sttDisk">5758 transcripts on disk · RAM 5.4 of 15.6G · load 1.54</p>
+      <p class="mono" id="sttDisk">5758 transcripts on disk · RAM 5.2 of 15.6G · load 3.33</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">5.4 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">1.54</span></li>
+      <li><span>RAM free</span><span id="boxRam">5.2 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">3.33</span></li>
       <li><span>Disk</span><span id="boxDisk">103G</span></li>
-      <li><span>Tmp</span><span id="boxTmp">531M</span></li>
+      <li><span>Tmp</span><span id="boxTmp">—</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
       <li><span>Next ping</span><span id="boxCron">2026-09-22 17:50 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">Whisper on · captions idle (reboost captions if RAM≥1.2)</span></li>
@@ -362,9 +362,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">3.25G</span> · node ×33</li><li><span class="mono">1.02G</span> · python ×2</li><li><span class="mono">0.78G</span> · chrome ×13</li><li><span class="mono">0.16G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · bash ×40</li><li><span class="mono">0.1G</span> · websockify ×3</li><li><span class="mono">0.07G</span> · python3 ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">3.13G</span> · node ×33</li><li><span class="mono">1.35G</span> · python ×2</li><li><span class="mono">0.77G</span> · chrome ×13</li><li><span class="mono">0.16G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · bash ×40</li><li><span class="mono">0.07G</span> · python3 ×3</li><li><span class="mono">0.07G</span> · websockify ×2</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">starting &lt;path&gt; &lt;path&gt; --channel-id PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory &lt;path&gt;</li><li class="mono">2026-09-22T09:49:00Z reboost captions pid 3892477 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw</li><li class="mono">backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1</li><li class="mono">[--limit LIMIT] [--sleep-min SLEEP_MIN]</li><li class="mono">[--sleep-max SLEEP_MAX] [--model MODEL]</li><li class="mono">[--language LANGUAGE] [--dry-run] [--force]</li><li class="mono">backfill_members.py: error: unrecognized arguments: --captions-jobs 1</li><li><span class="mono">reboost.log</span> e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/i</li></ul>
+    <ul id="reboostLog"><li class="mono">starting &lt;path&gt; &lt;path&gt; --channel-id PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory &lt;path&gt;</li><li class="mono">2026-09-22T09:49:52Z reboost captions pid 3895756 channel PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P</li><li class="mono">backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1</li><li class="mono">[--limit LIMIT] [--sleep-min SLEEP_MIN]</li><li class="mono">[--sleep-max SLEEP_MAX] [--model MODEL]</li><li class="mono">[--language LANGUAGE] [--dry-run] [--force]</li><li class="mono">backfill_members.py: error: unrecognized arguments: --captions-jobs 1</li><li><span class="mono">reboost.log</span> e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P/i</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
