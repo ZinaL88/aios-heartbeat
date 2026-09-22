@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T08:47:17Z",
-  "written_at_hkt": "2026-09-22 16:47 HKT",
+  "written_at_utc": "2026-09-22T08:48:26Z",
+  "written_at_hkt": "2026-09-22 16:48 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -28,7 +28,7 @@
       },
       {
         "comm": "python",
-        "rss_gi": 1.16,
+        "rss_gi": 1.27,
         "n": 2
       },
       {
@@ -75,12 +75,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.8,
-      "anon_gi": 3.8,
+      "anon_gi": 3.9,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 16.1
+      "committed_gi": 16.2
     },
-    "load1": 4.45,
+    "load1": 4.98,
     "disk_avail": "103G",
     "tmp_du": "531M"
   },
@@ -2235,17 +2235,12 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T08:47:15Z reboost captions pid 3742698 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
+      "summary": "2026-09-22T08:48:23Z reboost captions pid 3745574 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T08:47:15Z reboost captions pid 3742698 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-22T08:47:15Z skip — another reboost holds lock"
+      "summary": "2026-09-22T08:48:23Z reboost captions pid 3745574 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
     },
     {
       "at_hkt": "reboost.log",
@@ -2260,18 +2255,23 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T08:47:16Z reboost captions pid 3742818 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+      "summary": "2026-09-22T08:48:24Z reboost captions pid 3745750 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T08:47:16Z reboost captions pid 3742818 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+      "summary": "2026-09-22T08:48:24Z reboost captions pid 3745750 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T08:48:25Z skip — another reboost holds lock"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T08:47:16Z reboost captions pid 3742818 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
-    "2026-09-22T08:47:16Z reboost captions pid 3742818 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
+    "2026-09-22T08:48:24Z reboost captions pid 3745750 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
+    "2026-09-22T08:48:24Z reboost captions pid 3745750 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
+    "2026-09-22T08:48:25Z skip — another reboost holds lock",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
