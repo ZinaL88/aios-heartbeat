@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-23 01:19 HKT",
+  "written_at_hkt": "2026-09-23 01:25 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1265,10 +1265,10 @@
       "videos": 1429,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-      "captions_done": 854,
-      "captions_left": 287,
-      "stt_done": 228,
-      "stt_left": 250,
+      "captions_done": 871,
+      "captions_left": 271,
+      "stt_done": 245,
+      "stt_left": 249,
       "videos_total": 1429,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1391,10 +1391,10 @@
       "videos": 3464,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-      "captions_done": 177,
-      "captions_left": 479,
-      "stt_done": 177,
-      "stt_left": 539,
+      "captions_done": 197,
+      "captions_left": 460,
+      "stt_done": 196,
+      "stt_left": 520,
       "videos_total": 716,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1883,10 +1883,10 @@
       "kind": "playlist",
       "videos_total": 716,
       "videos_source": "inventory",
-      "captions_done": 177,
-      "captions_left": 479,
-      "stt_done": 177,
-      "stt_left": 539,
+      "captions_done": 197,
+      "captions_left": 460,
+      "stt_done": 196,
+      "stt_left": 520,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -1920,20 +1920,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-      "title": "Data Science",
-      "kind": "playlist",
-      "videos_total": 1429,
-      "videos_source": "inventory",
-      "captions_done": 854,
-      "captions_left": 287,
-      "stt_done": 228,
-      "stt_left": 250,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe",
       "title": "Full Podcast Episodes",
       "kind": "playlist",
@@ -1943,6 +1929,20 @@
       "captions_left": 264,
       "stt_done": 0,
       "stt_left": 264,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+      "title": "Data Science",
+      "kind": "playlist",
+      "videos_total": 1429,
+      "videos_source": "inventory",
+      "captions_done": 871,
+      "captions_left": 271,
+      "stt_done": 245,
+      "stt_left": 249,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
