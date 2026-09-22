@@ -287,8 +287,8 @@
       "playlist_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
       "captions_done": 1766,
       "captions_left": 0,
-      "stt_done": 1020,
-      "stt_left": 1914,
+      "stt_done": 1021,
+      "stt_left": 1913,
       "videos_total": 3002,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2459,8 +2459,8 @@
       "videos_source": "inventory",
       "captions_done": 1766,
       "captions_left": 0,
-      "stt_done": 1020,
-      "stt_left": 1914,
+      "stt_done": 1021,
+      "stt_left": 1913,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
