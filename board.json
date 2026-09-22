@@ -1391,10 +1391,10 @@
       "videos": 3464,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-      "captions_done": 422,
-      "captions_left": 234,
-      "stt_done": 422,
-      "stt_left": 294,
+      "captions_done": 424,
+      "captions_left": 232,
+      "stt_done": 424,
+      "stt_left": 292,
       "videos_total": 716,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1906,20 +1906,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-      "title": "Entrepreneur",
-      "kind": "playlist",
-      "videos_total": 716,
-      "videos_source": "inventory",
-      "captions_done": 422,
-      "captions_left": 234,
-      "stt_done": 422,
-      "stt_left": 294,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe",
       "title": "Full Podcast Episodes",
       "kind": "playlist",
@@ -1929,6 +1915,20 @@
       "captions_left": 264,
       "stt_done": 0,
       "stt_left": 264,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+      "title": "Entrepreneur",
+      "kind": "playlist",
+      "videos_total": 716,
+      "videos_source": "inventory",
+      "captions_done": 424,
+      "captions_left": 232,
+      "stt_done": 424,
+      "stt_left": 292,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
