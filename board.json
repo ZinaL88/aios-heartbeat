@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-22 08:41 HKT",
+  "written_at_hkt": "2026-09-22 08:43 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -221,6 +221,19 @@
       "videos_total": 44,
       "status": "waiting_captions",
       "label": "Waiting captions"
+    },
+    {
+      "name": "Sonal Bahl - Career Strategist",
+      "channel_id": "UCuY0tWGuwCI8SI9FFk60zPg",
+      "skip": false,
+      "reason": "ops_api video→channel",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 0,
+      "videos_total": 0,
+      "status": "not_started",
+      "label": "Not started"
     }
   ],
   "tasks": [
@@ -3570,6 +3583,20 @@
       "stt_left": 1,
       "status": "waiting_stt",
       "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCuY0tWGuwCI8SI9FFk60zPg",
+      "title": "Sonal Bahl - Career Strategist",
+      "kind": "channel",
+      "videos_total": 0,
+      "videos_source": "none",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 0,
+      "status": "not_started",
+      "label": "Not started",
       "skip": false
     },
     {

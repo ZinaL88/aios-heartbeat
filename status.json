@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T00:41:24Z",
-  "written_at_hkt": "2026-09-22 08:41 HKT",
+  "written_at_utc": "2026-09-22T00:43:28Z",
+  "written_at_hkt": "2026-09-22 08:43 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -18,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.9,
+    "mem_available_gi": 6.0,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.89,
+        "rss_gi": 2.87,
         "n": 33
       },
       {
@@ -33,13 +33,8 @@
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.67,
+        "rss_gi": 0.68,
         "n": 13
-      },
-      {
-        "comm": "python3",
-        "rss_gi": 0.2,
-        "n": 4
       },
       {
         "comm": "Xvfb",
@@ -49,7 +44,12 @@
       {
         "comm": "bash",
         "rss_gi": 0.1,
-        "n": 42
+        "n": 39
+      },
+      {
+        "comm": "python3",
+        "rss_gi": 0.08,
+        "n": 4
       },
       {
         "comm": "websockify",
@@ -75,12 +75,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 3.3,
-      "anon_gi": 3.7,
+      "anon_gi": 3.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 16.1
+      "committed_gi": 15.9
     },
-    "load1": 4.47,
+    "load1": 5.17,
     "disk_avail": "103G",
     "tmp_du": null
   },
@@ -138,7 +138,7 @@
         "total": 25769,
         "no_sub": 0,
         "eta_min": 0,
-        "eta_hkt": "2026-09-22 09:38 HKT",
+        "eta_hkt": "2026-09-22 08:42 HKT",
         "inflight": null,
         "jobs": 0,
         "targets": [],
@@ -146,9 +146,9 @@
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
         "note": null,
-        "eta_deadline_utc": "2026-09-22T01:38:36Z",
+        "eta_deadline_utc": "2026-09-22T00:42:54Z",
         "eta_frozen": true,
-        "overdue": false,
+        "overdue": true,
         "worker_state": "paused"
       }
     },
@@ -2157,6 +2157,20 @@
           "skip": false
         },
         {
+          "id": "UCuY0tWGuwCI8SI9FFk60zPg",
+          "title": "Sonal Bahl - Career Strategist",
+          "kind": "channel",
+          "videos_total": 0,
+          "videos_source": "none",
+          "captions_done": 0,
+          "captions_left": 0,
+          "stt_done": 0,
+          "stt_left": 0,
+          "status": "not_started",
+          "label": "Not started",
+          "skip": false
+        },
+        {
           "id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
           "title": "#11 课代表立正",
           "kind": "channel",
@@ -2214,48 +2228,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:41:22Z reboost captions pid 2481708 channel PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd"
+      "summary": "2026-09-22T00:43:19Z reboost captions pid 2488148 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:41:22Z reboost captions pid 2481708 channel PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd"
+      "summary": "2026-09-22T00:43:19Z reboost captions pid 2488148 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:41:23Z reboost captions pid 2481782 channel PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr"
+      "summary": "2026-09-22T00:43:20Z reboost captions pid 2488195 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:41:23Z reboost captions pid 2481782 channel PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr"
+      "summary": "2026-09-22T00:43:20Z reboost captions pid 2488195 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T00:41:24Z reboost captions pid 2481934 channel PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
-    "2026-09-22T00:41:24Z reboost captions pid 2481934 channel PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
+    "starting <path> <path> --channel-id PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-22T00:43:20Z reboost captions pid 2488195 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
+    "2026-09-22T00:43:20Z reboost captions pid 2488195 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
@@ -2514,6 +2528,66 @@
     {
       "kind": "added",
       "label": "Added",
+      "summary": "Added video 4VBjjkbEthY (video+channel)",
+      "at_utc": "2026-09-22T00:43:28Z",
+      "at_hkt": "2026-09-22 08:43 HKT",
+      "op": "intake_share",
+      "id": "4VBjjkbEthY",
+      "ref": "https://youtu.be/4VBjjkbEthY"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added channel @RiseAboveReality-01",
+      "at_utc": "2026-09-22T00:43:26Z",
+      "at_hkt": "2026-09-22 08:43 HKT",
+      "op": "intake_share",
+      "id": "@RiseAboveReality-01",
+      "ref": "https://www.youtube.com/@RiseAboveReality-01"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video 4VBjjkbEthY (video-only)",
+      "at_utc": "2026-09-22T00:43:20Z",
+      "at_hkt": "2026-09-22 08:43 HKT",
+      "op": "intake_share",
+      "id": "4VBjjkbEthY",
+      "ref": "https://youtu.be/4VBjjkbEthY"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video 4VBjjkbEthY (video+channel)",
+      "at_utc": "2026-09-22T00:41:50Z",
+      "at_hkt": "2026-09-22 08:41 HKT",
+      "op": "intake_share",
+      "id": "4VBjjkbEthY",
+      "ref": "https://youtu.be/4VBjjkbEthY"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added channel @RiseAboveReality-01",
+      "at_utc": "2026-09-22T00:41:39Z",
+      "at_hkt": "2026-09-22 08:41 HKT",
+      "op": "intake_share",
+      "id": "@RiseAboveReality-01",
+      "ref": "https://www.youtube.com/@RiseAboveReality-01"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video 4VBjjkbEthY (video-only)",
+      "at_utc": "2026-09-22T00:41:33Z",
+      "at_hkt": "2026-09-22 08:41 HKT",
+      "op": "intake_share",
+      "id": "4VBjjkbEthY",
+      "ref": "https://youtu.be/4VBjjkbEthY"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
       "summary": "Added video 4VBjjkbEthY (video-only)",
       "at_utc": "2026-09-22T00:06:37Z",
       "at_hkt": "2026-09-22 08:06 HKT",
@@ -2644,16 +2718,6 @@
       "op": "intake_video",
       "id": "IS8doeSyVNo",
       "ref": "https://youtu.be/IS8doeSyVNo"
-    },
-    {
-      "kind": "added",
-      "label": "Added",
-      "summary": "Added channel kBIN2h16Rc4",
-      "at_utc": "2026-09-21T14:37:17Z",
-      "at_hkt": "2026-09-21 22:37 HKT",
-      "op": "intake_channel",
-      "id": "kBIN2h16Rc4",
-      "ref": "https://youtu.be/kBIN2h16Rc4"
     }
   ]
 }
