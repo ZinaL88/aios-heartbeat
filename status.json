@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T14:16:12Z",
+  "written_at_utc": "2026-09-22T14:16:28Z",
   "written_at_hkt": "2026-09-22 22:16 HKT",
   "token_free": true,
   "processes": {
@@ -12,24 +12,29 @@
     "captions_channel": null,
     "sample": [
       {
-        "pid": 399444,
+        "pid": 400548,
         "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 3.8,
+    "mem_available_gi": 3.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.13,
+        "rss_gi": 3.12,
         "n": 33
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.78,
+        "rss_gi": 0.76,
         "n": 13
+      },
+      {
+        "comm": "python",
+        "rss_gi": 0.68,
+        "n": 2
       },
       {
         "comm": "csnaps",
@@ -43,8 +48,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.1,
-        "n": 41
+        "rss_gi": 0.11,
+        "n": 42
       },
       {
         "comm": "websockify",
@@ -62,11 +67,6 @@
         "n": 3
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.06,
-        "n": 1
-      },
-      {
         "comm": "xfwm4",
         "rss_gi": 0.06,
         "n": 3
@@ -74,15 +74,15 @@
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 2.6,
-      "anon_gi": 2.9,
+      "cached_gi": 2.5,
+      "anon_gi": 3.4,
       "shmem_gi": 0.0,
-      "sreclaimable_gi": 0.4,
-      "committed_gi": 12.8
+      "sreclaimable_gi": 0.3,
+      "committed_gi": 15.7
     },
-    "load1": 2.3,
+    "load1": 1.86,
     "disk_avail": "102G",
-    "tmp_du": "531M"
+    "tmp_du": "540M"
   },
   "cookies": {
     "present": false,
@@ -94,7 +94,7 @@
     "done": 1254,
     "total": 3002,
     "inflight": null,
-    "last_id": "8lq5ti0wKw8",
+    "last_id": "OLBryd-39Zk",
     "channel_id": null,
     "inventory": {
       "public_total": 3002,
@@ -117,7 +117,7 @@
         "pending": 1679,
         "done": 5978,
         "transcripts_on_disk": 5978,
-        "inflight": "OLBryd-39Zk",
+        "inflight": "Tb8hJes5kNU",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
@@ -126,7 +126,7 @@
         "jobs": 1,
         "pending_global": 7626,
         "eta_deadline_utc": "2026-10-20T13:52:13Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -2230,48 +2230,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:16:11Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:16:11Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-22T14:16:26Z reboost captions pid 400981 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:16:12Z captions running=0 target=3 stt_live=none mem=10.4G cap_signal=none"
+      "summary": "2026-09-22T14:16:26Z reboost captions pid 400981 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:16:12Z captions running=0 target=3 stt_live=none mem=10.4G cap_signal=none"
+      "summary": "2026-09-22T14:16:27Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:16:12Z reboost captions pid 399935 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
+      "summary": "2026-09-22T14:16:28Z reboost captions pid 401092 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:16:12Z reboost captions pid 399935 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
+      "summary": "2026-09-22T14:16:28Z reboost captions pid 401092 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4 --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T14:16:13Z reboost captions pid 400008 channel PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-    "2026-09-22T14:16:13Z reboost captions pid 400008 channel PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+    "starting <path> <path> --channel-id PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-22T14:16:29Z reboost captions pid 401166 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
+    "2026-09-22T14:16:29Z reboost captions pid 401166 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
