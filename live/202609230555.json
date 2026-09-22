@@ -1,12 +1,12 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T21:56:30Z",
+  "written_at_utc": "2026-09-22T21:56:50Z",
   "written_at_hkt": "2026-09-23 05:56 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 2,
+    "whisper_n": 1,
     "backfill_n": 3,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
@@ -16,15 +16,15 @@
         "cmd": "proc"
       },
       {
-        "pid": 1141098,
-        "cmd": "proc"
-      },
-      {
         "pid": 1095387,
         "cmd": "proc"
       },
       {
         "pid": 1104303,
+        "cmd": "proc"
+      },
+      {
+        "pid": 1141990,
         "cmd": "proc"
       }
     ]
@@ -35,7 +35,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.83,
+        "rss_gi": 2.97,
         "n": 33
       },
       {
@@ -44,9 +44,19 @@
         "n": 13
       },
       {
+        "comm": "python3",
+        "rss_gi": 0.38,
+        "n": 4
+      },
+      {
         "comm": "csnaps",
         "rss_gi": 0.14,
         "n": 1
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.14,
+        "n": 3
       },
       {
         "comm": "Xvfb",
@@ -55,13 +65,13 @@
       },
       {
         "comm": "python",
-        "rss_gi": 0.1,
-        "n": 5
+        "rss_gi": 0.12,
+        "n": 6
       },
       {
         "comm": "bash",
         "rss_gi": 0.1,
-        "n": 40
+        "n": 41
       },
       {
         "comm": "websockify",
@@ -69,17 +79,7 @@
         "n": 2
       },
       {
-        "comm": "python3",
-        "rss_gi": 0.07,
-        "n": 3
-      },
-      {
         "comm": "plank",
-        "rss_gi": 0.06,
-        "n": 3
-      },
-      {
-        "comm": "xfwm4",
         "rss_gi": 0.06,
         "n": 3
       }
@@ -87,14 +87,14 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 4.0,
-      "anon_gi": 2.4,
+      "anon_gi": 3.0,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 12.5
+      "committed_gi": 13.0
     },
-    "load1": 0.94,
+    "load1": 0.95,
     "disk_avail": "102G",
-    "tmp_du": "532M"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -106,7 +106,7 @@
     "done": 506,
     "total": 737,
     "inflight": null,
-    "last_id": "ODc9GmLEeTs",
+    "last_id": "s0GzvqYRU5A",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -129,13 +129,13 @@
         "pending": 297,
         "done": 6856,
         "transcripts_on_disk": 6856,
-        "inflight": "fle-cB5TgmA",
+        "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 7128,
         "eta_hkt": "2026-09-28 04:27 HKT",
-        "jobs": 2,
+        "jobs": 1,
         "pending_global": 7556,
         "eta_deadline_utc": "2026-09-27T20:27:43Z",
         "eta_frozen": true,
@@ -2224,9 +2224,7 @@
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-22T22:00:00Z",
     "next_cron_hkt": "2026-09-23 06:00 HKT",
@@ -2250,53 +2248,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:55:57Z STT already running — no second Whisper"
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:56:29Z skip — another reboost holds lock"
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:56:29Z ensure_venv — start"
+      "summary": "2026-09-22T21:56:48Z reboost captions pid 1141990 channel PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp- alive"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:56:29Z ensure_venv — ok"
+      "summary": "2026-09-22T21:56:48Z reboost captions pid 1141990 channel PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp- alive"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:56:30Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-22T21:56:49Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:56:30Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.4G cap_signal=none"
+      "summary": "2026-09-22T21:56:49Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:56:30Z captions after fill running=3"
+      "summary": "2026-09-22T21:56:49Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T21:56:30Z STT already running — no second Whisper"
+      "summary": "2026-09-22T21:56:49Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-22T21:56:30Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.4G cap_signal=none",
-    "2026-09-22T21:56:30Z captions after fill running=3",
-    "2026-09-22T21:56:30Z STT already running — no second Whisper",
-    "backfill-captions.log: [257<path> RnpIlLAqAEo 哲学、产品、权力：Palantir到底在卖什么？｜「疯狂」哲学家｜没有竞争对手｜AI时代的决策操作系统  incomplete RnpIlLAqAEo: pending_stt",
-    "[256<path> nFn64tnSD2o Why Building Real Crypto Products Matters More Than Token Prices | Raoul Pal ft Changpeng \"CZ\" Zhao",
-    "YouTube captions: none (manual+auto) → STT allowed",
-    "sleep 7.3s",
-    "[257<path> RnpIlLAqAEo 哲学、产品、权力：Palantir到底在卖什么？｜「疯狂」哲学家｜没有竞争对手｜AI时代的决策操作系统  incomplete RnpIlLAqAEo: pending_stt"
+    "2026-09-22T21:56:49Z captions after fill running=3",
+    "2026-09-22T21:56:49Z STT already running — no second Whisper",
+    "2026-09-22T21:56:49Z STT already running — no second Whisper",
+    "backfill-captions.log: incomplete 7zZYwa7SJHY: pending_stt",
+    "stt_language=zh",
+    "Deferring 9 failed_ids (e.g. no transcript) until after 0 fresh IDs",
+    "incomplete 5i2_mANNtsE: pending_stt",
+    "incomplete 7zZYwa7SJHY: pending_stt"
   ],
   "pm": {
     "token_free": true,

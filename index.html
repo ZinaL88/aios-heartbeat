@@ -338,9 +338,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
     <div class="work-block">
       <div class="row"><span class="mono"><span class="pill on" id="sttStatePill"><span class="dot"></span><span id="sttState">Running</span></span> STT</span></div>
       <p class="ch" id="sttCh">一个狠人</p>
-      <div class="row"><span class="big" id="sttNum">6856</span><span class="mono" id="sttFile">6856 done · 297 pending · now: fle-cB5TgmA</span></div>
+      <div class="row"><span class="big" id="sttNum">6856</span><span class="mono" id="sttFile">6856 done · 297 pending</span></div>
       <p class="mono" id="sttEta">ETA 2026-09-28 04:27 HKT</p>
-      <p class="mono" id="sttDisk">6856 transcripts on disk · RAM 9.4 of 15.6G · load 0.94</p>
+      <p class="mono" id="sttDisk">6856 transcripts on disk · RAM 9.4 of 15.6G · load 0.95</p>
     </div>
   </div>
 
@@ -348,9 +348,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
       <li><span>RAM free</span><span id="boxRam">9.4 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">0.94</span></li>
+      <li><span>Load</span><span id="boxLoad">0.95</span></li>
       <li><span>Disk</span><span id="boxDisk">102G</span></li>
-      <li><span>Tmp</span><span id="boxTmp">532M</span></li>
+      <li><span>Tmp</span><span id="boxTmp">—</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
       <li><span>Next ping</span><span id="boxCron">2026-09-23 06:00 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">captions + Whisper running</span></li>
@@ -362,9 +362,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.83G</span> · node ×33</li><li><span class="mono">0.79G</span> · chrome ×13</li><li><span class="mono">0.14G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · python ×5</li><li><span class="mono">0.1G</span> · bash ×40</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.07G</span> · python3 ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.97G</span> · node ×33</li><li><span class="mono">0.79G</span> · chrome ×13</li><li><span class="mono">0.38G</span> · python3 ×4</li><li><span class="mono">0.14G</span> · csnaps ×1</li><li><span class="mono">0.14G</span> · yt-dlp ×3</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.12G</span> · python ×6</li><li><span class="mono">0.1G</span> · bash ×41</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-22T21:56:30Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.4G cap_signal=none</li><li class="mono">2026-09-22T21:56:30Z captions after fill running=3</li><li class="mono">2026-09-22T21:56:30Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: [257&lt;path&gt; RnpIlLAqAEo 哲学、产品、权力：Palantir到底在卖什么？｜「疯狂」哲学家｜没有竞争对手｜AI时代的决策操作系统  incomplete RnpIlLAqAEo: pending_stt</li><li class="mono">[256&lt;path&gt; nFn64tnSD2o Why Building Real Crypto Products Matters More Than Token Prices | Raoul Pal ft Changpeng &quot;CZ&quot; Zhao</li><li class="mono">YouTube captions: none (manual+auto) → STT allowed</li><li class="mono">sleep 7.3s</li><li class="mono">[257&lt;path&gt; RnpIlLAqAEo 哲学、产品、权力：Palantir到底在卖什么？｜「疯狂」哲学家｜没有竞争对手｜AI时代的决策操作系统  incomplete RnpIlLAqAEo: pending_stt</li><li><span class="mono">reboost.log</span> 2026-09-22T21:56:30Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-22T21:56:49Z captions after fill running=3</li><li class="mono">2026-09-22T21:56:49Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: incomplete 7zZYwa7SJHY: pending_stt</li><li class="mono">stt_language=zh</li><li class="mono">Deferring 9 failed_ids (e.g. no transcript) until after 0 fresh IDs</li><li class="mono">incomplete 5i2_mANNtsE: pending_stt</li><li class="mono">incomplete 7zZYwa7SJHY: pending_stt</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
