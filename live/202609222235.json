@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T14:36:49Z",
-  "written_at_hkt": "2026-09-22 22:36 HKT",
+  "written_at_utc": "2026-09-22T14:37:59Z",
+  "written_at_hkt": "2026-09-22 22:37 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -18,28 +18,23 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.2,
+    "mem_available_gi": 3.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.78,
+        "rss_gi": 2.95,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 1.35,
+        "rss_gi": 1.39,
         "n": 2
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.74,
+        "rss_gi": 0.75,
         "n": 13
-      },
-      {
-        "comm": "python3",
-        "rss_gi": 0.25,
-        "n": 4
       },
       {
         "comm": "Xvfb",
@@ -50,6 +45,11 @@
         "comm": "bash",
         "rss_gi": 0.11,
         "n": 42
+      },
+      {
+        "comm": "python3",
+        "rss_gi": 0.09,
+        "n": 4
       },
       {
         "comm": "websockify",
@@ -74,15 +74,15 @@
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 2.7,
+      "cached_gi": 2.4,
       "anon_gi": 3.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 16.0
     },
-    "load1": 4.99,
+    "load1": 4.84,
     "disk_avail": "102G",
-    "tmp_du": null
+    "tmp_du": "531M"
   },
   "cookies": {
     "present": false,
@@ -2204,7 +2204,9 @@
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {},
+  "git_sync": {
+    "pull": "ok"
+  },
   "schedule": {
     "next_cron_utc": "2026-09-22T14:40:00Z",
     "next_cron_hkt": "2026-09-22 22:40 HKT",
@@ -2238,17 +2240,12 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:36:48Z reboost captions pid 456420 channel PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe"
+      "summary": "2026-09-22T14:37:58Z reboost captions pid 459518 channel PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:36:48Z reboost captions pid 456420 channel PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n/inventory_public.json"
+      "summary": "2026-09-22T14:37:58Z reboost captions pid 459518 channel PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe"
     },
     {
       "at_hkt": "reboost.log",
@@ -2258,18 +2255,23 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:36:49Z reboost captions pid 456496 channel PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:36:49Z reboost captions pid 456496 channel PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n"
+      "summary": "2026-09-22T14:37:59Z reboost captions pid 459594 channel PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T14:37:59Z reboost captions pid 459594 channel PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n"
     }
   ],
   "reboost_log": [
     "starting <path> <path> --channel-id PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T14:36:49Z reboost captions pid 456496 channel PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n",
-    "2026-09-22T14:36:49Z reboost captions pid 456496 channel PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n",
+    "2026-09-22T14:37:59Z reboost captions pid 459594 channel PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n",
+    "2026-09-22T14:37:59Z reboost captions pid 459594 channel PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
