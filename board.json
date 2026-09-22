@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-23 07:49 HKT",
+  "written_at_hkt": "2026-09-23 07:55 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1211,8 +1211,8 @@
       "playlist_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
       "captions_done": 781,
       "captions_left": 0,
-      "stt_done": 137,
-      "stt_left": 642,
+      "stt_done": 138,
+      "stt_left": 778,
       "videos_total": 918,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2466,6 +2466,20 @@
       "skip": false
     },
     {
+      "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+      "title": "Product Management",
+      "kind": "playlist",
+      "videos_total": 918,
+      "videos_source": "inventory",
+      "captions_done": 781,
+      "captions_left": 0,
+      "stt_done": 138,
+      "stt_left": 778,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
       "id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
       "title": "下班經濟學",
       "kind": "playlist",
@@ -2489,20 +2503,6 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 644,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-      "title": "Product Management",
-      "kind": "playlist",
-      "videos_total": 918,
-      "videos_source": "inventory",
-      "captions_done": 781,
-      "captions_left": 0,
-      "stt_done": 137,
-      "stt_left": 642,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
