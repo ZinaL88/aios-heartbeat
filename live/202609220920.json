@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T01:21:09Z",
+  "written_at_utc": "2026-09-22T01:21:42Z",
   "written_at_hkt": "2026-09-22 09:21 HKT",
   "token_free": true,
   "processes": {
@@ -18,23 +18,23 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 6.3,
+    "mem_available_gi": 6.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.17,
+        "rss_gi": 3.16,
         "n": 33
       },
       {
-        "comm": "chrome",
-        "rss_gi": 0.76,
-        "n": 13
+        "comm": "python",
+        "rss_gi": 0.78,
+        "n": 2
       },
       {
-        "comm": "python",
-        "rss_gi": 0.74,
-        "n": 2
+        "comm": "chrome",
+        "rss_gi": 0.77,
+        "n": 13
       },
       {
         "comm": "Xvfb",
@@ -43,8 +43,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.09,
-        "n": 39
+        "rss_gi": 0.1,
+        "n": 40
       },
       {
         "comm": "python3",
@@ -80,7 +80,7 @@
       "sreclaimable_gi": 0.3,
       "committed_gi": 15.6
     },
-    "load1": 2.72,
+    "load1": 3.77,
     "disk_avail": "103G",
     "tmp_du": "530M"
   },
@@ -126,7 +126,7 @@
         "jobs": 1,
         "pending_global": 8120,
         "eta_deadline_utc": "2026-10-28T06:33:09Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -2240,17 +2240,12 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T01:21:06Z reboost captions pid 2585773 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
+      "summary": "2026-09-22T01:21:39Z reboost captions pid 2587376 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T01:21:06Z reboost captions pid 2585773 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t/inventory_public.json"
+      "summary": "2026-09-22T01:21:39Z reboost captions pid 2587376 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
     },
     {
       "at_hkt": "reboost.log",
@@ -2260,18 +2255,23 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T01:21:07Z reboost captions pid 2585823 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T01:21:07Z reboost captions pid 2585823 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+      "summary": "2026-09-22T01:21:40Z reboost captions pid 2587432 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T01:21:40Z reboost captions pid 2587432 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
     }
   ],
   "reboost_log": [
     "starting <path> <path> --channel-id PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T01:21:07Z reboost captions pid 2585823 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
-    "2026-09-22T01:21:07Z reboost captions pid 2585823 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
+    "2026-09-22T01:21:40Z reboost captions pid 2587432 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
+    "2026-09-22T01:21:40Z reboost captions pid 2587432 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
