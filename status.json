@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T14:10:28Z",
-  "written_at_hkt": "2026-09-22 22:10 HKT",
+  "written_at_utc": "2026-09-22T14:11:14Z",
+  "written_at_hkt": "2026-09-22 22:11 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -13,17 +13,17 @@
     "sample": []
   },
   "resources": {
-    "mem_available_gi": 4.1,
+    "mem_available_gi": 3.9,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.17,
+        "rss_gi": 3.14,
         "n": 33
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.77,
+        "rss_gi": 0.78,
         "n": 13
       },
       {
@@ -38,8 +38,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.1,
-        "n": 41
+        "rss_gi": 0.11,
+        "n": 42
       },
       {
         "comm": "websockify",
@@ -62,20 +62,20 @@
         "n": 3
       },
       {
-        "comm": "x11vnc",
-        "rss_gi": 0.04,
-        "n": 3
+        "comm": "yt-dlp",
+        "rss_gi": 0.05,
+        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.5,
-      "anon_gi": 2.8,
+      "anon_gi": 2.9,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 12.8
     },
-    "load1": 2.31,
+    "load1": 1.57,
     "disk_avail": "102G",
     "tmp_du": "531M"
   },
@@ -86,40 +86,40 @@
   },
   "collector": {
     "found": true,
-    "done": 1246,
+    "done": 1248,
     "total": 3002,
     "inflight": null,
-    "last_id": "prFT65Z2h54",
+    "last_id": "_hf5tCnJye0",
     "channel_id": null,
     "inventory": {
       "public_total": 3002,
-      "public_done": 1247,
+      "public_done": 1249,
       "members_total": null,
       "members_done": null,
-      "pending_stt_n": 1687,
+      "pending_stt_n": 1685,
       "pending_stt_listed": 2197,
-      "transcripts_on_disk": 1247,
-      "captions_done": 1246,
+      "transcripts_on_disk": 1249,
+      "captions_done": 1248,
       "captions_left": 0,
       "captions_no_sub": 2197,
       "source": "inventory+disk",
-      "public_left": 1755
+      "public_left": 1753
     },
     "tracks": {
       "stt": {
         "running": false,
         "channel_id": null,
-        "pending": 7634,
-        "done": 5970,
-        "transcripts_on_disk": 5970,
+        "pending": 7632,
+        "done": 5972,
+        "transcripts_on_disk": 5972,
         "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 0,
         "eta_min": 0,
-        "eta_hkt": "2026-09-22 22:10 HKT",
+        "eta_hkt": "2026-09-22 22:11 HKT",
         "jobs": 0,
-        "eta_deadline_utc": "2026-09-22T14:10:28Z",
+        "eta_deadline_utc": "2026-09-22T14:11:15Z",
         "eta_frozen": false,
         "overdue": true,
         "worker_state": "paused"
@@ -147,8 +147,8 @@
       }
     },
     "progress": {
-      "stt_done": 5970,
-      "stt_pending": 7634,
+      "stt_done": 5972,
+      "stt_pending": 7632,
       "captions_done": 11203,
       "captions_left": 10115,
       "captions_total": 25769,
@@ -157,10 +157,10 @@
         {
           "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
           "name": "理財",
-          "stt_done": 1247,
+          "stt_done": 1249,
           "captions_done": 1766,
           "captions_left": 0,
-          "stt_left": 1687,
+          "stt_left": 1685,
           "videos_total": 3002
         },
         {
@@ -1024,8 +1024,8 @@
           "videos_source": "inventory",
           "captions_done": 1766,
           "captions_left": 0,
-          "stt_done": 1247,
-          "stt_left": 1687,
+          "stt_done": 1249,
+          "stt_left": 1685,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -2193,7 +2193,7 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 16337,
+      "captions_files_on_disk": 16341,
       "source": "inventory+disk"
     }
   },
@@ -2205,7 +2205,7 @@
     "next_cron_utc": "2026-09-22T14:15:00Z",
     "next_cron_hkt": "2026-09-22 22:15 HKT",
     "cron": "*/5",
-    "job_restart": "captions eligible now (4.1G≥1.2); Whisper blocked until 6.0G",
+    "job_restart": "captions eligible now (3.9G≥1.2); Whisper blocked until 6.0G",
     "job_restart_at_hkt": "2026-09-22 22:15 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -2224,48 +2224,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:10:27Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:10:27Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:10:28Z captions running=0 target=3 stt_live=none mem=10.5G cap_signal=none"
+      "summary": "2026-09-22T14:11:13Z reboost captions pid 387031 channel PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:10:28Z captions running=0 target=3 stt_live=none mem=10.5G cap_signal=none"
+      "summary": "2026-09-22T14:11:13Z reboost captions pid 387031 channel PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:10:28Z reboost captions pid 384722 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
+      "summary": "2026-09-22T14:11:14Z reboost captions pid 387113 channel PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T14:10:28Z reboost captions pid 384722 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
+      "summary": "2026-09-22T14:11:14Z reboost captions pid 387113 channel PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T14:10:28Z reboost captions pid 384722 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-    "2026-09-22T14:10:28Z reboost captions pid 384722 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+    "starting <path> <path> --channel-id PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-22T14:11:14Z reboost captions pid 387113 channel PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
+    "2026-09-22T14:11:14Z reboost captions pid 387113 channel PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
