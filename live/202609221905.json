@@ -1,22 +1,18 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T11:09:18Z",
+  "written_at_utc": "2026-09-22T11:09:28Z",
   "written_at_hkt": "2026-09-22 19:09 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
-    "backfill": true,
+    "backfill": false,
     "whisper_n": 1,
-    "backfill_n": 1,
+    "backfill_n": 0,
     "stt_channel": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
-    "captions_channel": "PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P",
+    "captions_channel": null,
     "sample": [
       {
         "pid": 4106335,
-        "cmd": "proc"
-      },
-      {
-        "pid": 4109893,
         "cmd": "proc"
       }
     ]
@@ -27,12 +23,12 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.16,
+        "rss_gi": 3.18,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 1.06,
+        "rss_gi": 1.01,
         "n": 2
       },
       {
@@ -62,8 +58,8 @@
       },
       {
         "comm": "websockify",
-        "rss_gi": 0.1,
-        "n": 3
+        "rss_gi": 0.07,
+        "n": 2
       },
       {
         "comm": "cloudflared",
@@ -79,12 +75,12 @@
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 2.8,
-      "anon_gi": 3.8,
+      "anon_gi": 3.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 16.2
+      "committed_gi": 16.1
     },
-    "load1": 4.08,
+    "load1": 4.21,
     "disk_avail": "102G",
     "tmp_du": "531M"
   },
@@ -130,34 +126,30 @@
         "jobs": 1,
         "pending_global": 7781,
         "eta_deadline_utc": "2026-10-23T00:45:18Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
       "captions": {
-        "running": true,
-        "channel_id": "PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P",
-        "targets": [
-          "PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P"
-        ],
-        "target_names": [
-          "【入門級命理課】命盤中的十神都有什麼特徵？如何影響命運的努力方向？"
-        ],
+        "running": false,
+        "channel_id": null,
         "done": 11203,
-        "left": 0,
+        "left": 10115,
         "total": 25769,
         "no_sub": 0,
         "eta_min": 0,
-        "eta_hkt": null,
+        "eta_hkt": "2026-09-22 19:09 HKT",
         "inflight": null,
-        "jobs": 1,
+        "jobs": 0,
+        "targets": [],
+        "target_names": [],
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
-        "left_global": 10115,
-        "eta_deadline_utc": "2026-09-22T11:09:18Z",
+        "note": null,
+        "eta_deadline_utc": "2026-09-22T11:09:29Z",
         "eta_frozen": false,
-        "overdue": false,
-        "worker_state": "running"
+        "overdue": true,
+        "worker_state": "paused"
       }
     },
     "progress": {
@@ -2219,8 +2211,8 @@
     "next_cron_utc": "2026-09-22T11:10:00Z",
     "next_cron_hkt": "2026-09-22 19:10 HKT",
     "cron": "*/5",
-    "job_restart": "captions + Whisper running",
-    "job_restart_at_hkt": null,
+    "job_restart": "Whisper on · captions idle (reboost captions if RAM≥1.2)",
+    "job_restart_at_hkt": "2026-09-22 19:10 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -2238,48 +2230,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t/inventory_public.json"
+      "summary": "2026-09-22T11:09:27Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t/inventory_public.json"
+      "summary": "2026-09-22T11:09:27Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T11:09:16Z reboost captions pid 4109817 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+      "summary": "2026-09-22T11:09:28Z captions running=0 target=3 stt_live=none mem=9.3G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T11:09:16Z reboost captions pid 4109817 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+      "summary": "2026-09-22T11:09:28Z captions running=0 target=3 stt_live=none mem=9.3G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T11:09:18Z reboost captions pid 4109893 channel PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P"
+      "summary": "2026-09-22T11:09:28Z reboost captions pid 4110281 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T11:09:18Z reboost captions pid 4109893 channel PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P"
+      "summary": "2026-09-22T11:09:28Z reboost captions pid 4110281 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T11:09:18Z reboost captions pid 4109893 channel PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P",
-    "2026-09-22T11:09:18Z reboost captions pid 4109893 channel PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P",
+    "starting <path> <path> --channel-id PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4 --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-22T11:09:29Z reboost captions pid 4110356 channel PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+    "2026-09-22T11:09:29Z reboost captions pid 4110356 channel PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
@@ -2296,20 +2288,9 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 2,
-    "total_n": 19,
+    "running_n": 1,
+    "total_n": 18,
     "jobs": [
-      {
-        "id": "live-cap-PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P",
-        "title": "【入門級命理課】命盤中的十神都有什麼特徵？如何影響命運的努力方向？",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P"
-      },
       {
         "id": "live-stt-PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
         "title": "理財",
