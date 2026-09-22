@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T11:32:37Z",
-  "written_at_hkt": "2026-09-22 19:32 HKT",
+  "written_at_utc": "2026-09-22T11:33:46Z",
+  "written_at_hkt": "2026-09-22 19:33 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -18,7 +18,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.09,
+        "rss_gi": 3.14,
         "n": 33
       },
       {
@@ -70,12 +70,12 @@
     "meminfo": {
       "buffers_gi": 0.2,
       "cached_gi": 3.0,
-      "anon_gi": 2.7,
+      "anon_gi": 2.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 12.8
     },
-    "load1": 3.52,
+    "load1": 1.51,
     "disk_avail": "102G",
     "tmp_du": "531M"
   },
@@ -86,40 +86,40 @@
   },
   "collector": {
     "found": true,
-    "done": 1126,
+    "done": 1128,
     "total": 3002,
     "inflight": null,
-    "last_id": "EIoEkbk4zcM",
+    "last_id": "ZypFMjW1PD4",
     "channel_id": null,
     "inventory": {
       "public_total": 3002,
-      "public_done": 1127,
+      "public_done": 1129,
       "members_total": null,
       "members_done": null,
-      "pending_stt_n": 1807,
+      "pending_stt_n": 1805,
       "pending_stt_listed": 2197,
-      "transcripts_on_disk": 1127,
-      "captions_done": 1126,
+      "transcripts_on_disk": 1129,
+      "captions_done": 1128,
       "captions_left": 0,
       "captions_no_sub": 2197,
       "source": "inventory+disk",
-      "public_left": 1875
+      "public_left": 1873
     },
     "tracks": {
       "stt": {
         "running": false,
         "channel_id": null,
-        "pending": 7754,
-        "done": 5850,
-        "transcripts_on_disk": 5850,
+        "pending": 7752,
+        "done": 5852,
+        "transcripts_on_disk": 5852,
         "inflight": null,
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 0,
         "eta_min": 0,
-        "eta_hkt": "2026-09-22 19:32 HKT",
+        "eta_hkt": "2026-09-22 19:33 HKT",
         "jobs": 0,
-        "eta_deadline_utc": "2026-09-22T11:32:37Z",
+        "eta_deadline_utc": "2026-09-22T11:33:46Z",
         "eta_frozen": false,
         "overdue": true,
         "worker_state": "paused"
@@ -147,8 +147,8 @@
       }
     },
     "progress": {
-      "stt_done": 5850,
-      "stt_pending": 7754,
+      "stt_done": 5852,
+      "stt_pending": 7752,
       "captions_done": 11203,
       "captions_left": 10115,
       "captions_total": 25769,
@@ -157,10 +157,10 @@
         {
           "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
           "name": "理財",
-          "stt_done": 1127,
+          "stt_done": 1129,
           "captions_done": 1766,
           "captions_left": 0,
-          "stt_left": 1807,
+          "stt_left": 1805,
           "videos_total": 3002
         },
         {
@@ -1024,8 +1024,8 @@
           "videos_source": "inventory",
           "captions_done": 1766,
           "captions_left": 0,
-          "stt_done": 1127,
-          "stt_left": 1807,
+          "stt_done": 1129,
+          "stt_left": 1805,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -2229,22 +2229,17 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T11:32:35Z reboost captions pid 4171866 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
+      "summary": "2026-09-22T11:33:44Z reboost captions pid 4174896 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T11:32:35Z reboost captions pid 4171866 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
+      "summary": "2026-09-22T11:33:44Z reboost captions pid 4174896 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T11:32:36Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR/inventory_public.json"
+      "summary": "2026-09-22T11:33:45Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
@@ -2254,18 +2249,23 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T11:32:37Z reboost captions pid 4171967 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T11:32:37Z reboost captions pid 4171967 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
+      "summary": "2026-09-22T11:33:45Z reboost captions pid 4174997 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T11:33:45Z reboost captions pid 4174997 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T11:32:38Z reboost captions pid 4172046 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
-    "2026-09-22T11:32:38Z reboost captions pid 4172046 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
+    "starting <path> <path> --channel-id PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-22T11:33:45Z reboost captions pid 4174997 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
+    "2026-09-22T11:33:45Z reboost captions pid 4174997 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
