@@ -1,20 +1,16 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T00:27:25Z",
-  "written_at_hkt": "2026-09-22 08:27 HKT",
+  "written_at_utc": "2026-09-22T00:29:56Z",
+  "written_at_hkt": "2026-09-22 08:29 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
-    "backfill": true,
-    "whisper_n": 3,
-    "backfill_n": 3,
-    "stt_channel": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-    "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+    "backfill": false,
+    "whisper_n": 2,
+    "backfill_n": 0,
+    "stt_channel": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+    "captions_channel": null,
     "sample": [
-      {
-        "pid": 1111647,
-        "cmd": "proc"
-      },
       {
         "pid": 2443194,
         "cmd": "proc"
@@ -22,30 +18,26 @@
       {
         "pid": 2449218,
         "cmd": "proc"
-      },
-      {
-        "pid": 2204164,
-        "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 6.0,
+    "mem_available_gi": 4.8,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "python",
-        "rss_gi": 3.15,
-        "n": 8
+        "rss_gi": 4.68,
+        "n": 3
       },
       {
         "comm": "node",
-        "rss_gi": 2.86,
+        "rss_gi": 2.93,
         "n": 33
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.71,
+        "rss_gi": 0.7,
         "n": 13
       },
       {
@@ -54,24 +46,19 @@
         "n": 3
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.1,
-        "n": 2
-      },
-      {
         "comm": "bash",
         "rss_gi": 0.1,
         "n": 40
       },
       {
-        "comm": "websockify",
-        "rss_gi": 0.07,
-        "n": 2
-      },
-      {
         "comm": "python3",
         "rss_gi": 0.07,
         "n": 3
+      },
+      {
+        "comm": "websockify",
+        "rss_gi": 0.07,
+        "n": 2
       },
       {
         "comm": "plank",
@@ -82,19 +69,24 @@
         "comm": "xfwm4",
         "rss_gi": 0.06,
         "n": 3
+      },
+      {
+        "comm": "x11vnc",
+        "rss_gi": 0.04,
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 3.7,
-      "anon_gi": 5.3,
+      "cached_gi": 3.8,
+      "anon_gi": 6.9,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
-      "committed_gi": 21.4
+      "committed_gi": 22.9
     },
-    "load1": 10.39,
+    "load1": 8.96,
     "disk_avail": "103G",
-    "tmp_du": null
+    "tmp_du": "530M"
   },
   "cookies": {
     "present": false,
@@ -103,81 +95,73 @@
   },
   "collector": {
     "found": true,
-    "done": 325,
-    "total": 590,
+    "done": 742,
+    "total": 3002,
     "inflight": null,
-    "last_id": "oIdPI5r0uZI",
-    "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+    "last_id": "3KPdKjRmvro",
+    "channel_id": null,
     "inventory": {
-      "public_total": 590,
-      "public_done": 325,
-      "members_total": 0,
-      "members_done": 0,
-      "pending_stt_n": 0,
-      "pending_stt_listed": 265,
-      "transcripts_on_disk": 325,
-      "captions_done": 325,
+      "public_total": 3002,
+      "public_done": 742,
+      "members_total": null,
+      "members_done": null,
+      "pending_stt_n": 2192,
+      "pending_stt_listed": 2197,
+      "transcripts_on_disk": 742,
+      "captions_done": 742,
       "captions_left": 0,
-      "captions_no_sub": 265,
+      "captions_no_sub": 2197,
       "source": "inventory+disk",
-      "public_left": 265
+      "public_left": 2260
     },
     "tracks": {
       "stt": {
         "running": true,
-        "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-        "pending": 0,
-        "done": 5463,
-        "transcripts_on_disk": 5463,
+        "channel_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+        "pending": 2192,
+        "done": 5464,
+        "transcripts_on_disk": 5464,
         "inflight": "PXY3CcSYyHE",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
-        "eta_min": 0,
-        "eta_hkt": null,
-        "jobs": 3,
+        "eta_min": 52608,
+        "eta_hkt": "2026-10-28 21:17 HKT",
+        "jobs": 2,
         "pending_global": 7875,
-        "eta_deadline_utc": "2026-09-22T00:27:26Z",
+        "eta_deadline_utc": "2026-10-28T13:17:56Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       },
       "captions": {
-        "running": true,
-        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX",
-        "targets": [
-          "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-          "PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX"
-        ],
-        "target_names": [
-          "Data Science",
-          "Entrepreneur",
-          "Productivity Hacks"
-        ],
-        "done": 11202,
-        "left": 902,
-        "total": 17132,
-        "no_sub": 312,
-        "eta_min": 75,
-        "eta_hkt": "2026-09-22 09:41 HKT",
+        "running": false,
+        "channel_id": null,
+        "done": 11203,
+        "left": 4048,
+        "total": 19608,
+        "no_sub": 0,
+        "eta_min": 0,
+        "eta_hkt": "2026-09-22 09:38 HKT",
         "inflight": null,
-        "jobs": 3,
+        "jobs": 0,
+        "targets": [],
+        "target_names": [],
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
-        "left_global": 1596,
-        "eta_deadline_utc": "2026-09-22T01:41:03Z",
+        "note": null,
+        "eta_deadline_utc": "2026-09-22T01:38:36Z",
         "eta_frozen": true,
         "overdue": false,
-        "worker_state": "running"
+        "worker_state": "paused"
       }
     },
     "progress": {
-      "stt_done": 5463,
+      "stt_done": 5464,
       "stt_pending": 7875,
-      "captions_done": 11202,
-      "captions_left": 1596,
-      "captions_total": 17132,
+      "captions_done": 11203,
+      "captions_left": 4048,
+      "captions_total": 19608,
       "channels_touched": 68,
       "by_channel": [
         {
@@ -444,26 +428,12 @@
           "id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
           "title": "Presentation, Public Speaking, Story Telling",
           "kind": "playlist",
-          "videos_total": 1218,
-          "videos_source": "task",
+          "videos_total": 1225,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 1218,
+          "captions_left": 1207,
           "stt_done": 0,
-          "stt_left": 1218,
-          "status": "waiting_captions",
-          "label": "Waiting captions",
-          "skip": false
-        },
-        {
-          "id": "PLbVaWSxd4rLJpG7ELhNF2L7PC_BM32eL_",
-          "title": "Charisma",
-          "kind": "playlist",
-          "videos_total": 1024,
-          "videos_source": "task",
-          "captions_done": 0,
-          "captions_left": 1024,
-          "stt_done": 0,
-          "stt_left": 1024,
+          "stt_left": 1225,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -472,12 +442,12 @@
           "id": "PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
           "title": "Career growth",
           "kind": "playlist",
-          "videos_total": 898,
-          "videos_source": "task",
+          "videos_total": 899,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 898,
+          "captions_left": 894,
           "stt_done": 0,
-          "stt_left": 898,
+          "stt_left": 899,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -556,12 +526,12 @@
           "id": "PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr",
           "title": "個人成長心理學",
           "kind": "playlist",
-          "videos_total": 198,
-          "videos_source": "task",
+          "videos_total": 199,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 198,
+          "captions_left": 199,
           "stt_done": 0,
-          "stt_left": 198,
+          "stt_left": 199,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -627,7 +597,7 @@
           "title": "八字教学从基础入门到精通",
           "kind": "playlist",
           "videos_total": 57,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 57,
           "stt_done": 0,
@@ -641,7 +611,7 @@
           "title": "職場事業心理學",
           "kind": "playlist",
           "videos_total": 46,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 46,
           "stt_done": 0,
@@ -669,21 +639,7 @@
           "title": "Advanced Algorithms (COMPSCI 224)",
           "kind": "playlist",
           "videos_total": 25,
-          "videos_source": "task",
-          "captions_done": 0,
-          "captions_left": 25,
-          "stt_done": 0,
-          "stt_left": 25,
-          "status": "waiting_captions",
-          "label": "Waiting captions",
-          "skip": false
-        },
-        {
-          "id": "PL2SOU6wwxB0v1kQTpqpuuDKIHmXHRAmeU",
-          "title": "Algorithms for Big Data (COMPSCI 229r)",
-          "kind": "playlist",
-          "videos_total": 25,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 25,
           "stt_done": 0,
@@ -697,7 +653,7 @@
           "title": "MIT 14.12 Game Theory, Fall 2025",
           "kind": "playlist",
           "videos_total": 25,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 25,
           "stt_done": 0,
@@ -796,10 +752,10 @@
           "kind": "playlist",
           "videos_total": 21,
           "videos_source": "inventory",
-          "captions_done": 11,
-          "captions_left": 9,
-          "stt_done": 11,
-          "stt_left": 10,
+          "captions_done": 12,
+          "captions_left": 8,
+          "stt_done": 12,
+          "stt_left": 9,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -1066,6 +1022,20 @@
           "captions_left": 0,
           "stt_done": 742,
           "stt_left": 2192,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
+          "id": "PLbVaWSxd4rLJpG7ELhNF2L7PC_BM32eL_",
+          "title": "Charisma",
+          "kind": "playlist",
+          "videos_total": 1024,
+          "videos_source": "task",
+          "captions_done": 0,
+          "captions_left": 0,
+          "stt_done": 0,
+          "stt_left": 1024,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1609,6 +1579,20 @@
           "videos_total": 25,
           "videos_source": "inventory",
           "captions_done": 25,
+          "captions_left": 0,
+          "stt_done": 0,
+          "stt_left": 25,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
+          "id": "PL2SOU6wwxB0v1kQTpqpuuDKIHmXHRAmeU",
+          "title": "Algorithms for Big Data (COMPSCI 229r)",
+          "kind": "playlist",
+          "videos_total": 25,
+          "videos_source": "task",
+          "captions_done": 0,
           "captions_left": 0,
           "stt_done": 0,
           "stt_left": 25,
@@ -2205,18 +2189,20 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 15475,
+      "captions_files_on_disk": 15477,
       "source": "inventory+disk"
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {},
+  "git_sync": {
+    "pull": "ok"
+  },
   "schedule": {
     "next_cron_utc": "2026-09-22T00:30:00Z",
     "next_cron_hkt": "2026-09-22 08:30 HKT",
     "cron": "*/5",
-    "job_restart": "captions + Whisper running",
-    "job_restart_at_hkt": null,
+    "job_restart": "Whisper on · captions idle (reboost captions if RAM≥1.2)",
+    "job_restart_at_hkt": "2026-09-22 08:30 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -2234,53 +2220,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:27:03Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-22T00:29:39Z inventory missing — building playlist PLbVaWSxd4rLJpG7ELhNF2L7PC_BM32eL_"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:27:03Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJpG7ELhNF2L7PC_BM32eL_/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:27:03Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=8.4G cap_signal=none"
+      "summary": "2026-09-22T00:29:40Z reboost captions pid 2453520 channel PLbVaWSxd4rLJpG7ELhNF2L7PC_BM32eL_"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:27:03Z captions running=3 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=8.4G cap_signal=none"
+      "summary": "2026-09-22T00:29:42Z inventory missing — building playlist PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:27:03Z captions after fill running=3"
+      "summary": "2026-09-22T00:29:54Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:27:03Z captions after fill running=3"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:27:03Z STT already running — no second Whisper"
+      "summary": "2026-09-22T00:29:55Z reboost captions pid 2453918 channel PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:27:03Z STT already running — no second Whisper"
+      "summary": "2026-09-22T00:29:56Z inventory missing — building playlist PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e"
     }
   ],
   "reboost_log": [
-    "2026-09-22T00:27:03Z captions after fill running=3",
-    "2026-09-22T00:27:03Z STT already running — no second Whisper",
-    "2026-09-22T00:27:03Z STT already running — no second Whisper",
-    "backfill-captions.log: rate-limited — backoff 45s",
-    "rate-limited — backoff 45s",
-    "ies): ersonation for this download, but no impersonate target is available. If you encounter errors, then see  https:<path>  for information on installing the required dependencies",
-    "ERROR: Unable to download video subtitles for 'zh-Hans': HTTP Error 429: Too Many Requests",
-    "rate-limited — backoff 45s"
+    "starting <path> <path> --channel-id PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-22T00:29:55Z reboost captions pid 2453918 channel PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
+    "2026-09-22T00:29:56Z inventory missing — building playlist PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
+    "backfill-captions.log: Missing registry <path>",
+    "Missing registry <path>",
+    "Missing registry <path>",
+    "Missing registry <path>",
+    "Missing registry <path>"
   ],
   "pm": {
     "token_free": true,
@@ -2292,52 +2278,19 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 4,
-    "total_n": 21,
+    "running_n": 1,
+    "total_n": 18,
     "jobs": [
       {
-        "id": "live-cap-PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-        "title": "Data Science",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
-      },
-      {
-        "id": "live-cap-PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-        "title": "Entrepreneur",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
-      },
-      {
-        "id": "live-cap-PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX",
-        "title": "Productivity Hacks",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX"
-      },
-      {
-        "id": "live-stt-UCaIIFXfdQUYf3OHPIFNDdrQ",
-        "title": "Alan",
+        "id": "live-stt-PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+        "title": "理財",
         "status": "running",
         "raw_status": "running",
         "class": "ram_heavy",
         "priority": 2,
         "owner": "collector-live",
         "notes": "live STT channel",
-        "target_id": "UCaIIFXfdQUYf3OHPIFNDdrQ"
+        "target_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ"
       },
       {
         "id": "yt-ch-rest",
