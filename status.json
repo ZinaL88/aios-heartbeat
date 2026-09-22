@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T07:48:47Z",
-  "written_at_hkt": "2026-09-22 15:48 HKT",
+  "written_at_utc": "2026-09-22T07:49:56Z",
+  "written_at_hkt": "2026-09-22 15:49 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -18,17 +18,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.5,
+    "mem_available_gi": 5.6,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.15,
+        "rss_gi": 3.13,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 1.58,
+        "rss_gi": 1.48,
         "n": 2
       },
       {
@@ -75,12 +75,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.4,
-      "anon_gi": 4.2,
+      "anon_gi": 4.1,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 16.5
+      "committed_gi": 16.4
     },
-    "load1": 4.53,
+    "load1": 4.95,
     "disk_avail": "103G",
     "tmp_du": "531M"
   },
@@ -2235,22 +2235,17 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR/inventory_public.json"
+      "summary": "2026-09-22T07:49:55Z reboost captions pid 3592388 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T07:48:46Z reboost captions pid 3589266 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
+      "summary": "2026-09-22T07:49:55Z reboost captions pid 3592388 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T07:48:46Z reboost captions pid 3589266 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO/inventory_public.json"
+      "summary": "2026-09-22T07:49:55Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
@@ -2260,18 +2255,23 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T07:48:47Z reboost captions pid 3589342 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T07:48:47Z reboost captions pid 3589342 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO"
+      "summary": "2026-09-22T07:49:56Z reboost captions pid 3592482 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T07:49:56Z reboost captions pid 3592482 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T07:48:47Z reboost captions pid 3589342 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
-    "2026-09-22T07:48:47Z reboost captions pid 3589342 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
+    "starting <path> <path> --channel-id PL928yt6thY41xuYb7YbADDz1cs5bzb3qS --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-22T07:49:57Z reboost captions pid 3592561 channel PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
+    "2026-09-22T07:49:57Z reboost captions pid 3592561 channel PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
