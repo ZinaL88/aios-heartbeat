@@ -73,14 +73,14 @@ body { overflow-x:hidden; max-width:100vw;
   <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">hTcZBok6Wzg</span></div>
   <p class="big" id="allNum">306</p>
   <p class="ch" id="sttDeadline">ETA 2026-09-28 06:55 HKT</p>
-  <p class="mono" id="sttDisk">6772 transcripts on disk</p>
+  <p class="mono" id="sttDisk">6773 transcripts on disk</p>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot on" id="capDot"></span>CAPTIONS</h2>
     <span class="mono" id="capState">running</span></div>
-  <p class="ch" id="capCh">PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd</p>
-  <div class="row"><span class="big" id="capNum">175</span>
-    <span class="mono" id="capEta">2 workers · left</span></div>
+  <p class="ch" id="capCh">PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4</p>
+  <div class="row"><span class="big" id="capNum">455</span>
+    <span class="mono" id="capEta">3 workers · left</span></div>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot on" id="sttDot"></span>STT</h2>
@@ -93,7 +93,7 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 6.9G / 15.6G · load 9.2</p>
+  <p class="ch" id="ram">RAM 7.4G / 15.6G · load 8.4</p>
   <p class="mono" id="box2">disk 102G · tmp 532M · cookies no</p>
   <p class="mono" id="sched">next ping 2026-09-23 04:35 HKT · captions + Whisper running</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
@@ -101,7 +101,7 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li><b>STT</b> · 一个狠人 · 306 pending</li><li><b>CAPTIONS ×2</b> · PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd · 11827/25851</li><li class="mono">pid 1001717 · proc</li><li class="mono">pid 1039530 · proc</li><li class="mono">pid 1039537 · proc</li><li class="mono">pid 972868 · proc</li></ol>
+  <ol id="running"><li><b>STT</b> · 一个狠人 · 306 pending</li><li><b>CAPTIONS ×3</b> · PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4 · 11827/25851</li><li class="mono">pid 1001717 · proc</li><li class="mono">pid 1039530 · proc</li><li class="mono">pid 1044560 · proc</li><li class="mono">pid 972868 · proc</li></ol>
 </div>
 
 <div class="card">
@@ -127,7 +127,7 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-22T20:30:39Z captions after fill running=3</li><li><span class="mono">reboost.log</span> 2026-09-22T20:30:39Z STT already running — no second Whisper</li><li><span class="mono">reboost.log</span> 2026-09-22T20:31:11Z skip — another reboost holds lock</li><li><span class="mono">reboost.log</span> 2026-09-22T20:31:11Z ensure_venv — start</li><li><span class="mono">reboost.log</span> 2026-09-22T20:31:12Z ensure_venv — ok</li><li><span class="mono">reboost.log</span> 2026-09-22T20:31:12Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python</li><li><span class="mono">reboost.log</span> 2026-09-22T20:31:12Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.7G cap_signal=none</li><li><span class="mono">reboost.log</span> guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4/inventory_public.json</li><li class="mono">incomplete 3RG1TEpa7Iw: pending_stt</li><li class="mono">stt_language=en</li><li class="mono">Deferring 339 failed_ids (e.g. no transcript) until after 0 fresh IDs</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-22T20:31:57Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python</li><li><span class="mono">reboost.log</span> 2026-09-22T20:31:57Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.9G cap_signal=none</li><li><span class="mono">reboost.log</span> 2026-09-22T20:31:57Z captions after fill running=3</li><li><span class="mono">reboost.log</span> 2026-09-22T20:31:57Z STT already running — no second Whisper</li><li class="mono">incomplete y_HFlYewtOg: pending_stt</li><li class="mono">incomplete iqaiPyvDD4Y: pending_stt</li><li class="mono">incomplete tiG9HFRmN9I: pending_stt</li></ol>
 </div>
 
 <div class="card">
