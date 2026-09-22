@@ -692,7 +692,7 @@ function paint(d){
 
     paintOpsRecent(d.ops_recent||[]);
     var corpus=(d.collector||{}).corpus||{};
-    set("corpusCounts", corpus.since ? ("Unique transcripts ever observed: "+corpus.transcripts_ever+" · currently present: "+(corpus.transcripts_present==null?"unavailable":corpus.transcripts_present)+" · local STT ever observed: "+corpus.local_stt_ever+" · since "+corpus.since) : "Corpus ledger will initialize on the next source heartbeat.");
+    set("corpusCounts", corpus.since ? ("Unique transcripts ever observed: "+corpus.transcripts_ever+" · currently present: "+(corpus.transcripts_present==null?"unavailable":corpus.transcripts_present)+" · local STT ever observed: "+corpus.local_stt_ever+" · since "+corpus.since+(corpus.observed_at_utc?" · disk observed "+corpus.observed_at_utc:"")) : "Corpus ledger will initialize on the next source heartbeat.");
     set("systemEventList", (d.system_events||[]).slice(-12).reverse().map(function(e){return e.at_utc+" · "+e.summary;}).join("\n")||"No recorded changes yet.");
 
     var safe=[];
