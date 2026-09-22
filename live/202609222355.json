@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T15:56:36Z",
-  "written_at_hkt": "2026-09-22 23:56 HKT",
+  "written_at_utc": "2026-09-22T15:57:46Z",
+  "written_at_hkt": "2026-09-22 23:57 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -12,29 +12,29 @@
     "captions_channel": null,
     "sample": [
       {
-        "pid": 658589,
+        "pid": 664839,
         "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 6.7,
+    "mem_available_gi": 7.0,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.78,
+        "rss_gi": 2.8,
         "n": 33
-      },
-      {
-        "comm": "python",
-        "rss_gi": 0.97,
-        "n": 2
       },
       {
         "comm": "chrome",
         "rss_gi": 0.74,
         "n": 13
+      },
+      {
+        "comm": "python",
+        "rss_gi": 0.61,
+        "n": 2
       },
       {
         "comm": "Xvfb",
@@ -74,15 +74,15 @@
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 2.5,
-      "anon_gi": 3.1,
+      "cached_gi": 2.6,
+      "anon_gi": 2.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 15.5
+      "committed_gi": 15.0
     },
-    "load1": 3.04,
+    "load1": 2.93,
     "disk_avail": "102G",
-    "tmp_du": "532M"
+    "tmp_du": "638M"
   },
   "cookies": {
     "present": false,
@@ -91,42 +91,42 @@
   },
   "collector": {
     "found": true,
-    "done": 1342,
+    "done": 1344,
     "total": 3002,
     "inflight": null,
-    "last_id": "na7RfQ5NBC8",
+    "last_id": "MgI6iquuuzA",
     "channel_id": null,
     "inventory": {
       "public_total": 3002,
-      "public_done": 1343,
+      "public_done": 1345,
       "members_total": null,
       "members_done": null,
-      "pending_stt_n": 1591,
+      "pending_stt_n": 1589,
       "pending_stt_listed": 2197,
-      "transcripts_on_disk": 1343,
-      "captions_done": 1342,
+      "transcripts_on_disk": 1345,
+      "captions_done": 1344,
       "captions_left": 0,
       "captions_no_sub": 2197,
       "source": "inventory+disk",
-      "public_left": 1659
+      "public_left": 1657
     },
     "tracks": {
       "stt": {
         "running": true,
         "channel_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
-        "pending": 1591,
-        "done": 6066,
-        "transcripts_on_disk": 6066,
-        "inflight": "32_y5-VmOzA",
+        "pending": 1589,
+        "done": 6068,
+        "transcripts_on_disk": 6068,
+        "inflight": "MvWT1VfjpUU",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
-        "eta_min": 38184,
-        "eta_hkt": "2026-10-19 12:20 HKT",
+        "eta_min": 38136,
+        "eta_hkt": "2026-10-19 11:33 HKT",
         "jobs": 1,
-        "pending_global": 7538,
-        "eta_deadline_utc": "2026-10-19T04:20:21Z",
-        "eta_frozen": true,
+        "pending_global": 7536,
+        "eta_deadline_utc": "2026-10-19T03:33:47Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       },
@@ -153,8 +153,8 @@
       }
     },
     "progress": {
-      "stt_done": 6066,
-      "stt_pending": 7538,
+      "stt_done": 6068,
+      "stt_pending": 7536,
       "captions_done": 11204,
       "captions_left": 10115,
       "captions_total": 25769,
@@ -163,10 +163,10 @@
         {
           "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
           "name": "理財",
-          "stt_done": 1343,
+          "stt_done": 1345,
           "captions_done": 1767,
           "captions_left": 0,
-          "stt_left": 1591,
+          "stt_left": 1589,
           "videos_total": 3002
         },
         {
@@ -1030,8 +1030,8 @@
           "videos_source": "inventory",
           "captions_done": 1767,
           "captions_left": 0,
-          "stt_done": 1343,
-          "stt_left": 1591,
+          "stt_done": 1345,
+          "stt_left": 1589,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -2235,22 +2235,17 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM/inventory_public.json"
+      "summary": "2026-09-22T15:57:45Z reboost captions pid 665327 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T15:56:35Z reboost captions pid 662266 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
+      "summary": "2026-09-22T15:57:45Z reboost captions pid 665327 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T15:56:35Z reboost captions pid 662266 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR/inventory_public.json"
+      "summary": "2026-09-22T15:57:45Z skip — another reboost holds lock"
     },
     {
       "at_hkt": "reboost.log",
@@ -2260,18 +2255,23 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T15:56:36Z reboost captions pid 662329 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T15:56:36Z reboost captions pid 662329 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
+      "summary": "2026-09-22T15:57:46Z reboost captions pid 665436 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T15:57:46Z reboost captions pid 665436 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T15:56:36Z reboost captions pid 662329 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
-    "2026-09-22T15:56:36Z reboost captions pid 662329 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
+    "starting <path> <path> --channel-id PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-22T15:57:47Z reboost captions pid 665510 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
+    "2026-09-22T15:57:47Z reboost captions pid 665510 channel PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
