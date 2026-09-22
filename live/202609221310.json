@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T05:12:47Z",
-  "written_at_hkt": "2026-09-22 13:12 HKT",
+  "written_at_utc": "2026-09-22T05:13:23Z",
+  "written_at_hkt": "2026-09-22 13:13 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -18,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.8,
+    "mem_available_gi": 6.0,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.15,
+        "rss_gi": 3.11,
         "n": 33
       },
       {
@@ -43,8 +43,8 @@
       },
       {
         "comm": "bash",
-        "rss_gi": 0.1,
-        "n": 40
+        "rss_gi": 0.09,
+        "n": 39
       },
       {
         "comm": "csnaps",
@@ -80,7 +80,7 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 15.9
     },
-    "load1": 3.29,
+    "load1": 3.76,
     "disk_avail": "103G",
     "tmp_du": "531M"
   },
@@ -126,7 +126,7 @@
         "jobs": 1,
         "pending_global": 7980,
         "eta_deadline_utc": "2026-10-26T02:24:48Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -2235,22 +2235,17 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T05:12:46Z reboost captions pid 3185700 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T05:12:46Z reboost captions pid 3185700 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
+      "summary": "2026-09-22T05:13:20Z reboost captions pid 3187235 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T05:12:46Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t/inventory_public.json"
+      "summary": "2026-09-22T05:13:20Z reboost captions pid 3187235 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5"
     },
     {
       "at_hkt": "reboost.log",
@@ -2260,18 +2255,23 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T05:12:47Z reboost captions pid 3185791 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T05:12:47Z reboost captions pid 3185791 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+      "summary": "2026-09-22T05:13:21Z reboost captions pid 3187288 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T05:13:21Z reboost captions pid 3187288 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t"
     }
   ],
   "reboost_log": [
     "starting <path> <path> --channel-id PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T05:12:47Z reboost captions pid 3185791 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
-    "2026-09-22T05:12:47Z reboost captions pid 3185791 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
+    "2026-09-22T05:13:21Z reboost captions pid 3187288 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
+    "2026-09-22T05:13:21Z reboost captions pid 3187288 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
