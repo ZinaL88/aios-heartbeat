@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T00:35:04Z",
+  "written_at_utc": "2026-09-22T00:35:37Z",
   "written_at_hkt": "2026-09-22 08:35 HKT",
   "token_free": true,
   "processes": {
@@ -18,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 7.8,
+    "mem_available_gi": 7.9,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.9,
+        "rss_gi": 2.92,
         "n": 33
       },
       {
@@ -33,7 +33,7 @@
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.67,
+        "rss_gi": 0.68,
         "n": 13
       },
       {
@@ -44,7 +44,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.1,
-        "n": 40
+        "n": 39
       },
       {
         "comm": "python3",
@@ -74,13 +74,13 @@
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 3.2,
-      "anon_gi": 3.6,
+      "cached_gi": 3.3,
+      "anon_gi": 3.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 15.9
     },
-    "load1": 5.04,
+    "load1": 4.87,
     "disk_avail": "103G",
     "tmp_du": "530M"
   },
@@ -126,7 +126,7 @@
         "jobs": 1,
         "pending_global": 8137,
         "eta_deadline_utc": "2026-10-28T12:35:04Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -2216,7 +2216,22 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
+      "summary": "2026-09-22T00:35:37Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T00:35:37Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T00:35:37Z captions running=0 target=3 stt_live=none mem=8.9G cap_signal=none"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T00:35:37Z captions running=0 target=3 stt_live=none mem=8.9G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
@@ -2226,38 +2241,23 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:35:03Z reboost captions pid 2463771 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T00:35:03Z reboost captions pid 2463771 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
+      "summary": "2026-09-22T00:35:37Z reboost captions pid 2465350 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-22T00:35:04Z reboost captions pid 2463852 channel PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-22T00:35:04Z reboost captions pid 2463852 channel PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
+      "summary": "2026-09-22T00:35:37Z reboost captions pid 2465350 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T00:35:05Z reboost captions pid 2463908 channel PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX",
-    "2026-09-22T00:35:05Z reboost captions pid 2463908 channel PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX",
+    "starting <path> <path> --channel-id PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-22T00:35:37Z reboost captions pid 2465350 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+    "2026-09-22T00:35:37Z reboost captions pid 2465350 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
