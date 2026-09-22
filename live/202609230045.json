@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T16:45:29Z",
-  "written_at_hkt": "2026-09-23 00:45 HKT",
+  "written_at_utc": "2026-09-22T16:47:26Z",
+  "written_at_hkt": "2026-09-23 00:47 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -16,11 +16,11 @@
         "cmd": "proc"
       },
       {
-        "pid": 778672,
+        "pid": 781380,
         "cmd": "proc"
       },
       {
-        "pid": 780742,
+        "pid": 781435,
         "cmd": "proc"
       },
       {
@@ -30,33 +30,28 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 8.5,
+    "mem_available_gi": 6.8,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
-        "comm": "node",
-        "rss_gi": 2.83,
-        "n": 33
-      },
-      {
         "comm": "python",
-        "rss_gi": 2.69,
+        "rss_gi": 4.18,
         "n": 7
       },
       {
+        "comm": "node",
+        "rss_gi": 2.79,
+        "n": 33
+      },
+      {
         "comm": "chrome",
-        "rss_gi": 0.72,
+        "rss_gi": 0.73,
         "n": 13
       },
       {
         "comm": "Xvfb",
         "rss_gi": 0.12,
         "n": 3
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.1,
-        "n": 2
       },
       {
         "comm": "bash",
@@ -82,17 +77,22 @@
         "comm": "plank",
         "rss_gi": 0.06,
         "n": 3
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.06,
+        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 4.3,
-      "anon_gi": 4.9,
+      "cached_gi": 4.5,
+      "anon_gi": 6.3,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 17.6
+      "committed_gi": 22.4
     },
-    "load1": 8.59,
+    "load1": 8.66,
     "disk_avail": "102G",
     "tmp_du": "532M"
   },
@@ -106,7 +106,7 @@
     "done": 473,
     "total": 737,
     "inflight": null,
-    "last_id": "jzT_wLkoG8g",
+    "last_id": "au6-u7CKuM8",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -127,18 +127,18 @@
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
         "pending": 329,
-        "done": 6172,
-        "transcripts_on_disk": 6172,
-        "inflight": "8eSK07UauM0",
+        "done": 6191,
+        "transcripts_on_disk": 6191,
+        "inflight": "won8DwAkWQk",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 7896,
         "eta_hkt": "2026-09-28 12:21 HKT",
         "jobs": 3,
-        "pending_global": 7666,
+        "pending_global": 7665,
         "eta_deadline_utc": "2026-09-28T04:21:29Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -155,38 +155,38 @@
           "Entrepreneur",
           "Advanced Algorithms (COMPSCI 224)"
         ],
-        "done": 11276,
-        "left": 860,
+        "done": 11292,
+        "left": 842,
         "total": 25851,
         "no_sub": 311,
-        "eta_min": 72,
+        "eta_min": 70,
         "eta_hkt": "2026-09-23 01:57 HKT",
         "inflight": null,
         "jobs": 3,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
-        "left_global": 10129,
-        "eta_deadline_utc": "2026-09-22T17:57:29Z",
+        "left_global": 10111,
+        "eta_deadline_utc": "2026-09-22T17:57:26Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 6172,
-      "stt_pending": 7666,
-      "captions_done": 11276,
-      "captions_left": 10129,
+      "stt_done": 6191,
+      "stt_pending": 7665,
+      "captions_done": 11292,
+      "captions_left": 10111,
       "captions_total": 25851,
       "channels_touched": 69,
       "by_channel": [
         {
           "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
           "name": "理財",
-          "stt_done": 1381,
+          "stt_done": 1382,
           "captions_done": 1767,
           "captions_left": 0,
-          "stt_left": 1553,
+          "stt_left": 1552,
           "videos_total": 3002
         },
         {
@@ -219,9 +219,9 @@
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "name": "Data Science",
-          "stt_done": 190,
-          "captions_done": 816,
-          "captions_left": 323,
+          "stt_done": 194,
+          "captions_done": 820,
+          "captions_left": 319,
           "stt_left": 252,
           "videos_total": 1429
         },
@@ -318,10 +318,10 @@
         {
           "id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
           "name": "Entrepreneur",
-          "stt_done": 129,
-          "captions_done": 130,
-          "captions_left": 527,
-          "stt_left": 587,
+          "stt_done": 136,
+          "captions_done": 136,
+          "captions_left": 520,
+          "stt_left": 580,
           "videos_total": 716
         },
         {
@@ -474,10 +474,10 @@
           "kind": "playlist",
           "videos_total": 716,
           "videos_source": "inventory",
-          "captions_done": 130,
-          "captions_left": 527,
-          "stt_done": 129,
-          "stt_left": 587,
+          "captions_done": 136,
+          "captions_left": 520,
+          "stt_done": 136,
+          "stt_left": 580,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -516,9 +516,9 @@
           "kind": "playlist",
           "videos_total": 1429,
           "videos_source": "inventory",
-          "captions_done": 816,
-          "captions_left": 323,
-          "stt_done": 190,
+          "captions_done": 820,
+          "captions_left": 319,
+          "stt_done": 194,
           "stt_left": 252,
           "status": "waiting_captions",
           "label": "Waiting captions",
@@ -791,20 +791,6 @@
           "skip": false
         },
         {
-          "id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
-          "title": "Advanced Algorithms (COMPSCI 224)",
-          "kind": "playlist",
-          "videos_total": 25,
-          "videos_source": "inventory",
-          "captions_done": 16,
-          "captions_left": 10,
-          "stt_done": 15,
-          "stt_left": 10,
-          "status": "waiting_captions",
-          "label": "Waiting captions",
-          "skip": false
-        },
-        {
           "id": "PLrtCHHeadkHqFoyAJ8f-cYynn0MhYr7vO",
           "title": "SQL Interview Prep",
           "kind": "playlist",
@@ -912,6 +898,20 @@
           "captions_left": 5,
           "stt_done": 0,
           "stt_left": 5,
+          "status": "waiting_captions",
+          "label": "Waiting captions",
+          "skip": false
+        },
+        {
+          "id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
+          "title": "Advanced Algorithms (COMPSCI 224)",
+          "kind": "playlist",
+          "videos_total": 25,
+          "videos_source": "inventory",
+          "captions_done": 22,
+          "captions_left": 3,
+          "stt_done": 22,
+          "stt_left": 3,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -1050,8 +1050,8 @@
           "videos_source": "inventory",
           "captions_done": 1767,
           "captions_left": 0,
-          "stt_done": 1381,
-          "stt_left": 1553,
+          "stt_done": 1382,
+          "stt_left": 1552,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -2219,7 +2219,7 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 16706,
+      "captions_files_on_disk": 16737,
       "source": "inventory+disk"
     }
   },
@@ -2250,53 +2250,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T16:44:54Z STT already running — no second Whisper"
+      "summary": "2026-09-22T16:47:24Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T16:45:27Z skip — another reboost holds lock"
+      "summary": "2026-09-22T16:47:24Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T16:45:27Z ensure_venv — start"
+      "summary": "2026-09-22T16:47:24Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.9G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T16:45:28Z ensure_venv — ok"
+      "summary": "2026-09-22T16:47:24Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.9G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T16:45:28Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-22T16:47:25Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T16:45:28Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=8.8G cap_signal=none"
+      "summary": "2026-09-22T16:47:25Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T16:45:28Z captions after fill running=3"
+      "summary": "2026-09-22T16:47:25Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T16:45:28Z STT already running — no second Whisper"
+      "summary": "2026-09-22T16:47:25Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-22T16:45:28Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=8.8G cap_signal=none",
-    "2026-09-22T16:45:28Z captions after fill running=3",
-    "2026-09-22T16:45:28Z STT already running — no second Whisper",
-    "backfill-captions.log: YouTube captions: auto=['en-orig', 'en', 'Language', 'ab', 'aa', 'af', 'ak', 'sq'] prefer_lang=en → download, skip STT",
-    "YouTube captions: none (manual+auto) → STT allowed",
-    "sleep 7.9s",
-    "[39<path> ukzFI9rgwfU Machine Learning | What Is Machine Learning? | Introduction To Machine Learning | 2026 | Simplilearn",
-    "YouTube captions: auto=['en-orig', 'en', 'Language', 'ab', 'aa', 'af', 'ak', 'sq'] prefer_lang=en → download, skip STT"
+    "2026-09-22T16:47:25Z captions after fill running=3",
+    "2026-09-22T16:47:25Z STT already running — no second Whisper",
+    "2026-09-22T16:47:25Z STT already running — no second Whisper",
+    "backfill-captions.log: incomplete GAKpnKLnJtc: pending_stt",
+    "incomplete 29O3CCYOzic: pending_stt",
+    "incomplete mVEItYOsXjM: pending_stt",
+    "incomplete VCJdg7YBbAQ: pending_stt",
+    "incomplete GAKpnKLnJtc: pending_stt"
   ],
   "pm": {
     "token_free": true,
