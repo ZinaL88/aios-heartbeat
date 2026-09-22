@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T03:19:12Z",
+  "written_at_utc": "2026-09-22T03:19:30Z",
   "written_at_hkt": "2026-09-22 11:19 HKT",
   "token_free": true,
   "processes": {
@@ -18,17 +18,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 5.5,
+    "mem_available_gi": 5.6,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 3.22,
+        "rss_gi": 3.16,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 1.47,
+        "rss_gi": 1.42,
         "n": 2
       },
       {
@@ -44,7 +44,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.1,
-        "n": 41
+        "n": 40
       },
       {
         "comm": "csnaps",
@@ -75,12 +75,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 2.8,
-      "anon_gi": 4.1,
+      "anon_gi": 4.0,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.3,
       "committed_gi": 16.3
     },
-    "load1": 5.02,
+    "load1": 4.93,
     "disk_avail": "103G",
     "tmp_du": "531M"
   },
@@ -2230,48 +2230,48 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM/inventory_public.json"
+      "summary": "2026-09-22T03:19:29Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM/inventory_public.json"
+      "summary": "2026-09-22T03:19:29Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T03:19:11Z reboost captions pid 2889341 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
+      "summary": "2026-09-22T03:19:29Z captions running=0 target=3 stt_live=none mem=9.0G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T03:19:11Z reboost captions pid 2889341 channel PL8dPuuaLjXtMBsfP-lP28IFvfkISqJofM"
+      "summary": "2026-09-22T03:19:29Z captions running=0 target=3 stt_live=none mem=9.0G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR/inventory_public.json"
+      "summary": "e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T03:19:12Z reboost captions pid 2889413 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
+      "summary": "2026-09-22T03:19:29Z reboost captions pid 2890167 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T03:19:12Z reboost captions pid 2889413 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
+      "summary": "2026-09-22T03:19:29Z reboost captions pid 2890167 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
     }
   ],
   "reboost_log": [
-    "starting <path> <path> --channel-id PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "2026-09-22T03:19:12Z reboost captions pid 2889413 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
-    "2026-09-22T03:19:12Z reboost captions pid 2889413 channel PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
+    "starting <path> <path> --channel-id PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw --access public --limit 9999 --mode captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "2026-09-22T03:19:29Z reboost captions pid 2890167 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+    "2026-09-22T03:19:29Z reboost captions pid 2890167 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
     "backfill-captions.log: backfill_members.py: error: unrecognized arguments: --captions-jobs 1",
     "[--limit LIMIT] [--sleep-min SLEEP_MIN]",
     "[--sleep-max SLEEP_MAX] [--model MODEL]",
