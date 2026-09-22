@@ -322,7 +322,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">6967</div><div class="s" id="mSttSub">6967 done · 293 pending · Running</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">11982</div><div class="s" id="mCapSub">11982 done · 9464 left · Running</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">9.1G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">9.0G</div><div class="s" id="mRamSub">of 15.6G</div></div>
   <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-23 06:53 HKT</div></div>
 </section>
 
@@ -340,15 +340,15 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <p class="ch" id="sttCh">一个狠人</p>
       <div class="row"><span class="big" id="sttNum">6967</span><span class="mono" id="sttFile">6967 done · 293 pending</span></div>
       <p class="mono" id="sttEta">ETA 2026-09-28 03:54 HKT</p>
-      <p class="mono" id="sttDisk">6967 transcripts on disk · RAM 9.1 of 15.6G · load 0.81</p>
+      <p class="mono" id="sttDisk">6967 transcripts on disk · RAM 9.0 of 15.6G · load 0.94</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">9.1 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">0.81</span></li>
+      <li><span>RAM free</span><span id="boxRam">9.0 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">0.94</span></li>
       <li><span>Disk</span><span id="boxDisk">102G</span></li>
       <li><span>Tmp</span><span id="boxTmp">532M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
@@ -362,9 +362,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.81G</span> · node ×33</li><li><span class="mono">0.7G</span> · chrome ×13</li><li><span class="mono">0.15G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.11G</span> · python ×5</li><li><span class="mono">0.1G</span> · bash ×41</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.07G</span> · python3 ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.99G</span> · node ×33</li><li><span class="mono">0.7G</span> · chrome ×13</li><li><span class="mono">0.15G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.11G</span> · python ×5</li><li><span class="mono">0.1G</span> · bash ×40</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.07G</span> · python3 ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-22T22:53:16Z captions after fill running=3</li><li class="mono">2026-09-22T22:53:16Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: incomplete BLL5F421l94: pending_stt</li><li class="mono">stt_language=zh</li><li class="mono">Deferring 9 failed_ids (e.g. no transcript) until after 0 fresh IDs</li><li class="mono">incomplete 7zZYwa7SJHY: pending_stt</li><li class="mono">incomplete BLL5F421l94: pending_stt</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-22T22:53:41Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.6G cap_signal=none</li><li class="mono">2026-09-22T22:53:41Z captions after fill running=3</li><li class="mono">2026-09-22T22:53:41Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: [256&lt;path&gt; AWvsXxDtEkU Don&#x27;t Buy Alexa! Build Your Own. Create a Virtual Assistant with Python | Python Project | Jarvis AI</li><li class="mono">[255&lt;path&gt; mvXDQNNcDu4 Python Main Function, Door Game, and More - Python Basics with Sam</li><li class="mono">YouTube captions: none (manual+auto) → STT allowed</li><li class="mono">sleep 8.0s</li><li class="mono">[256&lt;path&gt; AWvsXxDtEkU Don&#x27;t Buy Alexa! Build Your Own. Create a Virtual Assistant with Python | Python Project | Jarvis AI</li><li><span class="mono">reboost.log</span> 2026-09-22T22:53:41Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
