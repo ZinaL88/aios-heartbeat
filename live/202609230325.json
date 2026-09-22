@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T19:28:59Z",
-  "written_at_hkt": "2026-09-23 03:28 HKT",
+  "written_at_utc": "2026-09-22T19:29:21Z",
+  "written_at_hkt": "2026-09-23 03:29 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
@@ -30,13 +30,13 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 7.5,
+    "mem_available_gi": 7.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "python",
-        "rss_gi": 3.26,
-        "n": 6
+        "rss_gi": 3.41,
+        "n": 7
       },
       {
         "comm": "node",
@@ -45,7 +45,7 @@
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.82,
+        "rss_gi": 0.81,
         "n": 13
       },
       {
@@ -60,7 +60,7 @@
       },
       {
         "comm": "yt-dlp",
-        "rss_gi": 0.11,
+        "rss_gi": 0.1,
         "n": 2
       },
       {
@@ -87,12 +87,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 5.1,
-      "anon_gi": 5.5,
+      "anon_gi": 5.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 21.7
     },
-    "load1": 7.76,
+    "load1": 8.65,
     "disk_avail": "102G",
     "tmp_du": "532M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
         "pending": 313,
-        "done": 6658,
-        "transcripts_on_disk": 6658,
+        "done": 6661,
+        "transcripts_on_disk": 6661,
         "inflight": "brHjsc9HnXs",
         "inflight_duration_s": null,
         "model": "medium",
@@ -138,7 +138,7 @@
         "jobs": 3,
         "pending_global": 7610,
         "eta_deadline_utc": "2026-09-28T00:40:59Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -153,28 +153,28 @@
           "Data Science",
           "Entrepreneur"
         ],
-        "done": 11725,
-        "left": 491,
+        "done": 11728,
+        "left": 488,
         "total": 25851,
         "no_sub": 311,
         "eta_min": 61,
-        "eta_hkt": "2026-09-23 04:29 HKT",
+        "eta_hkt": "2026-09-23 04:30 HKT",
         "inflight": null,
         "jobs": 2,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
-        "left_global": 9699,
-        "eta_deadline_utc": "2026-09-22T20:29:59Z",
+        "left_global": 9696,
+        "eta_deadline_utc": "2026-09-22T20:30:22Z",
         "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 6658,
+      "stt_done": 6661,
       "stt_pending": 7610,
-      "captions_done": 11725,
-      "captions_left": 9699,
+      "captions_done": 11728,
+      "captions_left": 9696,
       "captions_total": 25851,
       "channels_touched": 71,
       "by_channel": [
@@ -208,9 +208,9 @@
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "name": "Data Science",
-          "stt_done": 355,
-          "captions_done": 981,
-          "captions_left": 162,
+          "stt_done": 356,
+          "captions_done": 982,
+          "captions_left": 161,
           "stt_left": 248,
           "videos_total": 1429
         },
@@ -253,10 +253,10 @@
         {
           "id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
           "name": "Entrepreneur",
-          "stt_done": 327,
-          "captions_done": 327,
-          "captions_left": 329,
-          "stt_left": 389,
+          "stt_done": 329,
+          "captions_done": 329,
+          "captions_left": 327,
+          "stt_left": 387,
           "videos_total": 716
         },
         {
@@ -500,10 +500,10 @@
           "kind": "playlist",
           "videos_total": 716,
           "videos_source": "inventory",
-          "captions_done": 327,
-          "captions_left": 329,
-          "stt_done": 327,
-          "stt_left": 389,
+          "captions_done": 329,
+          "captions_left": 327,
+          "stt_done": 329,
+          "stt_left": 387,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -528,9 +528,9 @@
           "kind": "playlist",
           "videos_total": 1429,
           "videos_source": "inventory",
-          "captions_done": 981,
-          "captions_left": 162,
-          "stt_done": 355,
+          "captions_done": 982,
+          "captions_left": 161,
+          "stt_done": 356,
           "stt_left": 248,
           "status": "waiting_captions",
           "label": "Waiting captions",
@@ -2217,7 +2217,7 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 17831,
+      "captions_files_on_disk": 17836,
       "source": "inventory+disk"
     }
   },
@@ -2248,53 +2248,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-22T19:28:56Z reboost captions pid 969756 channel PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf alive"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-22T19:28:56Z reboost captions pid 969756 channel PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf alive"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-22T19:28:57Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-22T19:28:57Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-22T19:28:57Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-22T19:28:57Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T19:29:20Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T19:29:20Z ensure_venv — start"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T19:29:21Z ensure_venv — ok"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T19:29:21Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-22T19:29:21Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.9G cap_signal=none"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf/inventory_public.json"
     }
   ],
   "reboost_log": [
-    "2026-09-22T19:28:57Z captions after fill running=3",
-    "2026-09-22T19:28:57Z STT already running — no second Whisper",
-    "2026-09-22T19:28:57Z STT already running — no second Whisper",
-    "backfill-captions.log: }",
-    "{",
-    "\"wrote_progress\": \"<path>",
-    "\"done_count\": 24",
-    "}"
+    "2026-09-22T19:29:21Z STT_VENV_OK=1 PY=<path>",
+    "2026-09-22T19:29:21Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=4.9G cap_signal=none",
+    "<path> --channel-id PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf --access public --limit 9999 --mode captions --language auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "backfill-captions.log: Deferring 1 failed_ids (e.g. no transcript) until after 0 fresh IDs",
+    "}",
+    "incomplete 3RG1TEpa7Iw: pending_stt",
+    "stt_language=en",
+    "Deferring 1 failed_ids (e.g. no transcript) until after 0 fresh IDs"
   ],
   "pm": {
     "token_free": true,
