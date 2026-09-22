@@ -76,11 +76,11 @@ body { overflow-x:hidden; max-width:100vw;
   <p class="mono" id="sttDisk">5633 transcripts on disk</p>
 </div>
 <div class="card">
-  <div class="row"><h2><span class="dot " id="capDot"></span>CAPTIONS</h2>
-    <span class="mono" id="capState">idle</span></div>
-  <p class="ch" id="capCh">idle</p>
-  <div class="row"><span class="big" id="capNum">10115</span>
-    <span class="mono" id="capEta">0 workers · left</span></div>
+  <div class="row"><h2><span class="dot on" id="capDot"></span>CAPTIONS</h2>
+    <span class="mono" id="capState">running</span></div>
+  <p class="ch" id="capCh">PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw</p>
+  <div class="row"><span class="big" id="capNum">344</span>
+    <span class="mono" id="capEta">1 workers · left</span></div>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot " id="sttDot"></span>STT</h2>
@@ -93,15 +93,15 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 7.1G / 15.6G · load 1.9</p>
-  <p class="mono" id="box2">disk 103G · tmp — · cookies no</p>
-  <p class="mono" id="sched">next ping 2026-09-22 13:40 HKT · eligible — captions + Whisper this tick if still dead</p>
+  <p class="ch" id="ram">RAM 6.9G / 15.6G · load 1.8</p>
+  <p class="mono" id="box2">disk 103G · tmp 531M · cookies no</p>
+  <p class="mono" id="sched">next ping 2026-09-22 13:40 HKT · captions on · Whisper OFF but RAM 6.9G≥6.0 — reboost STT this tick</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li>idle</li></ol>
+  <ol id="running"><li><b>CAPTIONS ×1</b> · PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw · 11203/25769</li><li class="mono">pid 3245631 · proc</li></ol>
 </div>
 
 <div class="card">
@@ -127,7 +127,7 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5/inventory_public.json</li><li><span class="mono">reboost.log</span> 2026-09-22T05:35:31Z reboost captions pid 3245040 channel PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5</li><li><span class="mono">reboost.log</span> e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t/inventory_public.json</li><li><span class="mono">reboost.log</span> 2026-09-22T05:35:32Z reboost captions pid 3245093 channel PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t</li><li class="mono">[--sleep-max SLEEP_MAX] [--model MODEL]</li><li class="mono">[--language LANGUAGE] [--dry-run] [--force]</li><li class="mono">backfill_members.py: error: unrecognized arguments: --captions-jobs 1</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-22T05:35:48Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python</li><li><span class="mono">reboost.log</span> 2026-09-22T05:35:48Z captions running=0 target=3 stt_live=none mem=10.2G cap_signal=none</li><li><span class="mono">reboost.log</span> e captions --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json</li><li><span class="mono">reboost.log</span> 2026-09-22T05:35:48Z reboost captions pid 3245631 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw</li><li class="mono">[--sleep-max SLEEP_MAX] [--model MODEL]</li><li class="mono">[--language LANGUAGE] [--dry-run] [--force]</li><li class="mono">backfill_members.py: error: unrecognized arguments: --captions-jobs 1</li></ol>
 </div>
 
 <div class="card">
