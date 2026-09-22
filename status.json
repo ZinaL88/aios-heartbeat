@@ -1,12 +1,12 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-22T18:07:58Z",
-  "written_at_hkt": "2026-09-23 02:07 HKT",
+  "written_at_utc": "2026-09-22T18:09:12Z",
+  "written_at_hkt": "2026-09-23 02:09 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 1,
+    "whisper_n": 2,
     "backfill_n": 3,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
@@ -16,21 +16,21 @@
         "cmd": "proc"
       },
       {
+        "pid": 876586,
+        "cmd": "proc"
+      },
+      {
         "pid": 770105,
         "cmd": "proc"
       },
       {
         "pid": 770264,
         "cmd": "proc"
-      },
-      {
-        "pid": 867662,
-        "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 10.9,
+    "mem_available_gi": 10.7,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -42,6 +42,11 @@
         "comm": "chrome",
         "rss_gi": 0.81,
         "n": 13
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.18,
+        "n": 4
       },
       {
         "comm": "Xvfb",
@@ -59,13 +64,13 @@
         "n": 41
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.09,
-        "n": 3
-      },
-      {
         "comm": "csnaps",
         "rss_gi": 0.09,
+        "n": 1
+      },
+      {
+        "comm": "npm exec metavr",
+        "rss_gi": 0.08,
         "n": 1
       },
       {
@@ -77,22 +82,17 @@
         "comm": "python3",
         "rss_gi": 0.07,
         "n": 3
-      },
-      {
-        "comm": "plank",
-        "rss_gi": 0.06,
-        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 4.8,
-      "anon_gi": 2.4,
+      "anon_gi": 2.5,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 12.4
+      "committed_gi": 12.6
     },
-    "load1": 1.09,
+    "load1": 1.0,
     "disk_avail": "102G",
     "tmp_du": "532M"
   },
@@ -106,7 +106,7 @@
     "done": 480,
     "total": 737,
     "inflight": null,
-    "last_id": "7dGhDewzY0o",
+    "last_id": "07gjnHzSpXU",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -129,13 +129,13 @@
         "pending": 322,
         "done": 6393,
         "transcripts_on_disk": 6393,
-        "inflight": null,
+        "inflight": "BFVN7gyPqac",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 7728,
         "eta_hkt": "2026-09-28 10:30 HKT",
-        "jobs": 1,
+        "jobs": 2,
         "pending_global": 7640,
         "eta_deadline_utc": "2026-09-28T02:30:09Z",
         "eta_frozen": true,
@@ -2250,53 +2250,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T18:07:56Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T18:07:56Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T18:07:56Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=8.5G cap_signal=none"
+      "summary": "2026-09-22T18:09:10Z reboost captions pid 876477 channel PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp- alive"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T18:07:56Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=8.5G cap_signal=none"
+      "summary": "2026-09-22T18:09:10Z reboost captions pid 876477 channel PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp- alive"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T18:07:56Z captions after fill running=3"
+      "summary": "2026-09-22T18:09:10Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T18:07:56Z captions after fill running=3"
+      "summary": "2026-09-22T18:09:10Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T18:07:56Z STT already running — no second Whisper"
+      "summary": "2026-09-22T18:09:10Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-22T18:07:56Z STT already running — no second Whisper"
+      "summary": "2026-09-22T18:09:10Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-22T18:07:56Z captions after fill running=3",
-    "2026-09-22T18:07:56Z STT already running — no second Whisper",
-    "2026-09-22T18:07:56Z STT already running — no second Whisper",
-    "backfill-captions.log: incomplete yixIc1Ai6jM: pending_stt",
-    "sleep 5.5s",
-    "[43<path> D3fD5Tnp6GA #PSY｜如何做個有溫度且坦誠的管理層！職場心理學｜#五分鐘心理學  incomplete 23hhZbvFoBs: pending_stt",
-    "incomplete D3fD5Tnp6GA: pending_stt",
-    "incomplete yixIc1Ai6jM: pending_stt"
+    "2026-09-22T18:09:10Z captions after fill running=3",
+    "2026-09-22T18:09:10Z STT already running — no second Whisper",
+    "2026-09-22T18:09:10Z STT already running — no second Whisper",
+    "backfill-captions.log: incomplete l-dHkG7JDXo: pending_stt",
+    "}",
+    "stt_language=zh",
+    "Deferring 46 failed_ids (e.g. no transcript) until after 0 fresh IDs",
+    "incomplete l-dHkG7JDXo: pending_stt"
   ],
   "pm": {
     "token_free": true,
