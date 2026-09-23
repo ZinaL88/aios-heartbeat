@@ -1,13 +1,13 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T06:13:27Z",
-  "written_at_hkt": "2026-09-23 14:13 HKT",
+  "written_at_utc": "2026-09-23T06:14:43Z",
+  "written_at_hkt": "2026-09-23 14:14 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
     "whisper_n": 2,
-    "backfill_n": 2,
+    "backfill_n": 3,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
     "sample": [
@@ -30,22 +30,22 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 4.0,
+    "mem_available_gi": 3.8,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "python",
-        "rss_gi": 3.49,
-        "n": 5
+        "rss_gi": 3.51,
+        "n": 6
       },
       {
         "comm": "node",
-        "rss_gi": 2.84,
+        "rss_gi": 2.76,
         "n": 33
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.77,
+        "rss_gi": 0.75,
         "n": 13
       },
       {
@@ -59,14 +59,14 @@
         "n": 3
       },
       {
+        "comm": "yt-dlp",
+        "rss_gi": 0.11,
+        "n": 3
+      },
+      {
         "comm": "bash",
         "rss_gi": 0.1,
         "n": 41
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.09,
-        "n": 2
       },
       {
         "comm": "websockify",
@@ -86,15 +86,15 @@
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 3.5,
-      "anon_gi": 6.0,
+      "cached_gi": 3.3,
+      "anon_gi": 5.9,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 19.7
     },
-    "load1": 4.03,
+    "load1": 5.13,
     "disk_avail": "101G",
-    "tmp_du": "533M"
+    "tmp_du": null
   },
   "cookies": {
     "present": false,
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
         "pending": 254,
-        "done": 7382,
-        "transcripts_on_disk": 7382,
+        "done": 7383,
+        "transcripts_on_disk": 7383,
         "inflight": "Y5ZH0fhRRWI",
         "inflight_duration_s": null,
         "model": "medium",
@@ -144,34 +144,36 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
         "targets": [
           "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
+          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+          "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
         ],
         "target_names": [
           "Data Science",
-          "Entrepreneur"
+          "Entrepreneur",
+          "職場事業心理學"
         ],
         "done": 12185,
-        "left": 104,
+        "left": 113,
         "total": 25851,
         "no_sub": 311,
-        "eta_min": 13,
+        "eta_min": 9,
         "eta_hkt": "2026-09-23 14:26 HKT",
         "inflight": null,
-        "jobs": 2,
+        "jobs": 3,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
         "left_global": 9312,
         "eta_deadline_utc": "2026-09-23T06:26:27Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 7382,
+      "stt_done": 7383,
       "stt_pending": 7539,
       "captions_done": 12185,
       "captions_left": 9312,
@@ -199,7 +201,7 @@
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "name": "Data Science",
-          "stt_done": 593,
+          "stt_done": 594,
           "captions_done": 1148,
           "captions_left": 4,
           "stt_left": 239,
@@ -558,7 +560,7 @@
           "videos_source": "inventory",
           "captions_done": 1148,
           "captions_left": 4,
-          "stt_done": 593,
+          "stt_done": 594,
           "stt_left": 239,
           "status": "waiting_captions",
           "label": "Waiting captions",
@@ -2217,14 +2219,12 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 19698,
+      "captions_files_on_disk": 19706,
       "source": "inventory+disk"
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
-  "git_sync": {
-    "pull": "ok"
-  },
+  "git_sync": {},
   "schedule": {
     "next_cron_utc": "2026-09-23T06:15:00Z",
     "next_cron_hkt": "2026-09-23 14:15 HKT",
@@ -2248,53 +2248,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf/inventory_public.json"
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf/inventory_public.json"
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:13:25Z reboost captions pid 1740312 channel PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf alive"
+      "summary": "2026-09-23T06:14:40Z reboost captions pid 1742327 channel PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp- alive"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:13:25Z reboost captions pid 1740312 channel PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf alive"
+      "summary": "2026-09-23T06:14:40Z reboost captions pid 1742327 channel PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp- alive"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:13:25Z captions after fill running=3"
+      "summary": "2026-09-23T06:14:40Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:13:25Z captions after fill running=3"
+      "summary": "2026-09-23T06:14:40Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:13:25Z STT already running — no second Whisper"
+      "summary": "2026-09-23T06:14:40Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:13:25Z STT already running — no second Whisper"
+      "summary": "2026-09-23T06:14:40Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-23T06:13:25Z captions after fill running=3",
-    "2026-09-23T06:13:25Z STT already running — no second Whisper",
-    "2026-09-23T06:13:25Z STT already running — no second Whisper",
-    "backfill-captions.log: }",
-    "{",
-    "\"wrote_progress\": \"<path>",
-    "\"done_count\": 24",
-    "}"
+    "2026-09-23T06:14:40Z captions after fill running=3",
+    "2026-09-23T06:14:40Z STT already running — no second Whisper",
+    "2026-09-23T06:14:40Z STT already running — no second Whisper",
+    "backfill-captions.log: [171<path> 4CtIrFGBN9A 为什么说Facebook是数据科学家的天堂？| 课代表聊数据第六期",
+    "[170<path> gDPkMR8zNRE 什么是好的产品经理（PM）｜PM都在干什么｜人人都应该做PM",
+    "YouTube captions: none (manual+auto) → STT allowed",
+    "sleep 7.0s",
+    "[171<path> 4CtIrFGBN9A 为什么说Facebook是数据科学家的天堂？| 课代表聊数据第六期"
   ],
   "pm": {
     "token_free": true,
@@ -2306,9 +2306,20 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 3,
-    "total_n": 20,
+    "running_n": 4,
+    "total_n": 21,
     "jobs": [
+      {
+        "id": "live-cap-PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
+        "title": "職場事業心理學",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
+      },
       {
         "id": "live-cap-PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
         "title": "Data Science",
