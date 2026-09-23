@@ -263,8 +263,8 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-09-23 18:13 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-09-23 18:14 HKT · v21</p>
+    <p class="mono" id="pingLine">ping 2026-09-23 18:19 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-09-23 18:19 HKT · v21</p>
     <p class="mono" style="margin:6px 0 0"><a class="lib-link" href="library.html?v=23" style="color:var(--lime);text-decoration:none;font-weight:600">Library</a>
       <span style="color:var(--muted)"> · search transcripts &amp; check schema fields</span></p>
   </div>
@@ -286,7 +286,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 
 <section class="now">
   <div><span class="label">now</span> <span class="body" id="nowBody">STT Paused · backlog 7534 · captions Entrepreneur</span></div>
-  <span class="mono" id="nowTs">2026-09-23 18:13 HKT</span>
+  <span class="mono" id="nowTs">2026-09-23 18:19 HKT</span>
 </section>
 
 <section class="card" id="opsCard">
@@ -322,8 +322,8 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">7421</div><div class="s" id="mSttSub">7421 done · 7534 pending · Paused</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">12197</div><div class="s" id="mCapSub">12197 done · 9329 left · Running</div></div>
-  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">3.2G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-23 18:13 HKT</div></div>
+  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">3.3G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-23 18:19 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -333,27 +333,27 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <div class="row"><span class="mono"><span class="pill on" id="capStatePill"><span class="dot"></span><span id="capState">Running · 1 workers</span></span> CAPTIONS</span></div>
       <p class="ch" id="capCh">Entrepreneur</p>
       <div class="row"><span class="big" id="capNum">12197</span><span class="mono" id="capWorkers">12197 done · 9329 left · 1 workers</span></div>
-      <p class="mono" id="capEta">ETA 2026-09-23 18:15 HKT</p>
+      <p class="mono overdue" id="capEta">ETA 2026-09-23 18:15 HKT · overdue</p>
     </div>
     <div class="work-block">
       <div class="row"><span class="mono"><span class="pill warn" id="sttStatePill"><span class="dot"></span><span id="sttState">Paused · backlog 7534</span></span> STT</span></div>
       <p class="ch" id="sttCh">Paused · backlog 7534</p>
       <div class="row"><span class="big" id="sttNum">7421</span><span class="mono" id="sttFile">7421 done · 7534 pending</span></div>
       <p class="mono overdue" id="sttEta">ETA overdue · worker stopped</p>
-      <p class="mono" id="sttDisk">7421 transcripts on disk · RAM 3.2 of 15.6G · load 0.21</p>
+      <p class="mono" id="sttDisk">7421 transcripts on disk · RAM 3.3 of 15.6G · load 1.8</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">3.2 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">0.21</span></li>
+      <li><span>RAM free</span><span id="boxRam">3.3 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">1.8</span></li>
       <li><span>Disk</span><span id="boxDisk">103G</span></li>
       <li><span>Tmp</span><span id="boxTmp">3.7M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
-      <li><span>Next ping</span><span id="boxCron">2026-09-23 18:15 HKT</span></li>
-      <li><span>Jobs</span><span id="boxJobs">captions on · Whisper blocked until 6.0G (now 3.2G)</span></li>
+      <li><span>Next ping</span><span id="boxCron">2026-09-23 18:20 HKT</span></li>
+      <li><span>Jobs</span><span id="boxJobs">captions on · Whisper blocked until 6.0G (now 3.3G)</span></li>
       <li><span>RAM gate</span><span id="boxGate">6.0G</span></li>
     </ul>
     <div class="pills" style="margin-top:10px" id="boxPills">
@@ -362,9 +362,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.69G</span> · node ×32</li><li><span class="mono">0.21G</span> · plank ×3</li><li><span class="mono">0.12G</span> · xfwm4 ×3</li><li><span class="mono">0.1G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · csnaps ×1</li><li><span class="mono">0.09G</span> · bash ×38</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.07G</span> · python3 ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.68G</span> · node ×32</li><li><span class="mono">0.21G</span> · plank ×3</li><li><span class="mono">0.11G</span> · xfwm4 ×3</li><li><span class="mono">0.1G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · csnaps ×1</li><li><span class="mono">0.09G</span> · bash ×38</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.07G</span> · python3 ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-23T10:13:58Z captions after fill running=1</li><li class="mono">2026-09-23T10:13:58Z skip STT — headroom 3.2G &lt; 6G (captions may still run)</li><li class="mono">backfill-captions.log: incomplete cVustXBAewE: pending_stt</li><li class="mono">incomplete PsP0EBViBnw: pending_stt</li><li class="mono">incomplete mc4pflw3Ggc: pending_stt</li><li class="mono">incomplete UNsh0LOEpZ8: pending_stt</li><li class="mono">incomplete cVustXBAewE: pending_stt</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-23T10:19:08Z captions after fill running=1</li><li class="mono">2026-09-23T10:19:08Z skip STT — headroom 3.2G &lt; 6G (captions may still run)</li><li class="mono">backfill-captions.log: incomplete BdiW50qfEvA: pending_stt</li><li class="mono">incomplete wT7xMJ9QI0w: pending_stt</li><li class="mono">incomplete aXontmQ8tuw: pending_stt</li><li class="mono">incomplete E_Cqqxx3_i4: pending_stt</li><li class="mono">incomplete BdiW50qfEvA: pending_stt</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
