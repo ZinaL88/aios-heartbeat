@@ -1,83 +1,100 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T06:51:30Z",
-  "written_at_hkt": "2026-09-23 14:51 HKT",
+  "written_at_utc": "2026-09-23T06:52:07Z",
+  "written_at_hkt": "2026-09-23 14:52 HKT",
   "token_free": true,
   "processes": {
-    "whisper": false,
-    "backfill": false,
-    "whisper_n": 0,
-    "backfill_n": 0,
-    "stt_channel": null,
-    "captions_channel": null,
-    "sample": []
+    "whisper": true,
+    "backfill": true,
+    "whisper_n": 2,
+    "backfill_n": 3,
+    "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+    "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+    "sample": [
+      {
+        "pid": 1766677,
+        "cmd": "proc"
+      },
+      {
+        "pid": 1790691,
+        "cmd": "proc"
+      },
+      {
+        "pid": 1756958,
+        "cmd": "proc"
+      },
+      {
+        "pid": 1778450,
+        "cmd": "proc"
+      }
+    ]
   },
   "resources": {
-    "mem_available_gi": 4.3,
+    "mem_available_gi": 7.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 1.12,
-        "n": 10
+        "rss_gi": 2.82,
+        "n": 33
       },
       {
-        "comm": "websockify",
-        "rss_gi": 0.04,
+        "comm": "chrome",
+        "rss_gi": 0.77,
+        "n": 13
+      },
+      {
+        "comm": "csnaps",
+        "rss_gi": 0.27,
         "n": 1
       },
       {
-        "comm": "bash",
-        "rss_gi": 0.03,
-        "n": 10
-      },
-      {
-        "comm": "python3",
-        "rss_gi": 0.02,
-        "n": 1
-      },
-      {
-        "comm": "sleep",
-        "rss_gi": 0.01,
-        "n": 4
-      },
-      {
-        "comm": "flock",
-        "rss_gi": 0.01,
+        "comm": "Xvfb",
+        "rss_gi": 0.12,
         "n": 3
       },
       {
-        "comm": "pod-daemon",
-        "rss_gi": 0.0,
-        "n": 1
+        "comm": "python",
+        "rss_gi": 0.1,
+        "n": 6
       },
       {
-        "comm": "sand-egress-tun",
-        "rss_gi": 0.0,
-        "n": 1
+        "comm": "bash",
+        "rss_gi": 0.1,
+        "n": 41
       },
       {
-        "comm": "timeout",
-        "rss_gi": 0.0,
+        "comm": "yt-dlp",
+        "rss_gi": 0.1,
         "n": 2
       },
       {
-        "comm": "tini",
-        "rss_gi": 0.0,
-        "n": 1
+        "comm": "websockify",
+        "rss_gi": 0.07,
+        "n": 2
+      },
+      {
+        "comm": "python3",
+        "rss_gi": 0.07,
+        "n": 3
+      },
+      {
+        "comm": "plank",
+        "rss_gi": 0.06,
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 3.7,
-      "anon_gi": 0.8,
+      "cached_gi": 3.1,
+      "anon_gi": 2.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 1.6
+      "committed_gi": 12.6
     },
-    "load1": 1.38,
-    "disk_avail": "109G",
-    "tmp_du": "136K"
+    "load1": 0.48,
+    "disk_avail": "101G",
+    "tmp_du": "533M"
   },
   "cookies": {
     "present": false,
@@ -86,74 +103,92 @@
   },
   "collector": {
     "found": true,
-    "done": 137,
-    "total": 616,
+    "done": 552,
+    "total": 737,
     "inflight": null,
-    "last_id": "h0v4LDS4Z1k",
-    "channel_id": null,
+    "last_id": "bwlS4DgNs6Y",
+    "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
-      "public_total": 616,
-      "public_done": 137,
-      "members_total": null,
-      "members_done": null,
-      "pending_stt_n": 472,
-      "pending_stt_listed": 479,
-      "transcripts_on_disk": 7,
-      "captions_done": 137,
+      "public_total": 737,
+      "public_done": 517,
+      "members_total": 0,
+      "members_done": 0,
+      "pending_stt_n": 251,
+      "pending_stt_listed": 331,
+      "transcripts_on_disk": 552,
+      "captions_done": 517,
       "captions_left": 0,
-      "captions_no_sub": 479,
+      "captions_no_sub": 300,
       "source": "inventory+disk",
-      "public_left": 479
+      "public_left": 220
     },
     "tracks": {
       "stt": {
-        "running": false,
-        "channel_id": null,
-        "pending": 8900,
-        "done": 3070,
-        "transcripts_on_disk": 3070,
-        "inflight": null,
+        "running": true,
+        "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+        "pending": 251,
+        "done": 7415,
+        "transcripts_on_disk": 7415,
+        "inflight": "D8IGNFg4b5k",
         "inflight_duration_s": null,
         "model": "medium",
-        "eta_this_min": 0,
-        "eta_min": 0,
+        "eta_this_min": 24,
+        "eta_min": 6024,
         "eta_hkt": "2026-09-27 18:59 HKT",
-        "jobs": 0,
+        "jobs": 2,
+        "pending_global": 7534,
         "eta_deadline_utc": "2026-09-27T10:59:28Z",
         "eta_frozen": true,
         "overdue": false,
-        "worker_state": "paused"
+        "worker_state": "running"
       },
       "captions": {
-        "running": false,
-        "channel_id": null,
-        "done": 8437,
-        "left": 4,
-        "total": 15620,
-        "no_sub": 0,
-        "eta_min": 0,
-        "eta_hkt": "2026-09-23 14:52 HKT",
+        "running": true,
+        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
+        "targets": [
+          "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+          "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
+        ],
+        "target_names": [
+          "Data Science",
+          "Entrepreneur",
+          "職場事業心理學"
+        ],
+        "done": 12190,
+        "left": 113,
+        "total": 25851,
+        "no_sub": 311,
+        "eta_min": 9,
+        "eta_hkt": "2026-09-23 14:53 HKT",
         "inflight": null,
-        "jobs": 0,
-        "targets": [],
-        "target_names": [],
+        "jobs": 3,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
-        "note": null,
-        "eta_deadline_utc": "2026-09-23T06:52:24Z",
+        "left_global": 9312,
+        "eta_deadline_utc": "2026-09-23T06:53:41Z",
         "eta_frozen": true,
         "overdue": false,
-        "worker_state": "paused"
+        "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 3070,
-      "stt_pending": 8900,
-      "captions_done": 8437,
-      "captions_left": 4,
-      "captions_total": 15620,
-      "channels_touched": 64,
+      "stt_done": 7415,
+      "stt_pending": 7534,
+      "captions_done": 12190,
+      "captions_left": 9312,
+      "captions_total": 25851,
+      "channels_touched": 71,
       "by_channel": [
+        {
+          "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
+          "name": "理財",
+          "stt_done": 1485,
+          "captions_done": 1768,
+          "captions_left": 0,
+          "stt_left": 1449,
+          "videos_total": 3002
+        },
         {
           "id": "UCGWYKICLOE8Wxy7q3eYXmPA",
           "name": "bestpartners",
@@ -164,84 +199,138 @@
           "videos_total": 1315
         },
         {
-          "id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
-          "name": "理財",
-          "stt_done": 198,
-          "captions_done": 1484,
-          "captions_left": 0,
-          "stt_left": 2195,
-          "videos_total": 3002
+          "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+          "name": "Data Science",
+          "stt_done": 623,
+          "captions_done": 1150,
+          "captions_left": 4,
+          "stt_left": 237,
+          "videos_total": 1429
         },
         {
           "id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
           "name": "#11 课代表立正",
-          "stt_done": 801,
+          "stt_done": 834,
           "captions_done": 632,
           "captions_left": 0,
           "stt_left": 0,
           "videos_total": 635
         },
         {
-          "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-          "name": "Data Science",
-          "stt_done": 23,
-          "captions_done": 1150,
-          "captions_left": 4,
-          "stt_left": 252,
-          "videos_total": 1429
+          "id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+          "name": "Entrepreneur",
+          "stt_done": 559,
+          "captions_done": 559,
+          "captions_left": 100,
+          "stt_left": 55,
+          "videos_total": 716
         },
         {
           "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
           "name": "一个狠人",
-          "stt_done": 119,
+          "stt_done": 552,
           "captions_done": 517,
           "captions_left": 0,
-          "stt_left": 330,
+          "stt_left": 251,
           "videos_total": 737
-        },
-        {
-          "id": "UCAxQ8sjHgjXh26la7jEBw3w",
-          "name": "mike1111",
-          "stt_done": 64,
-          "captions_done": 517,
-          "captions_left": 0,
-          "stt_left": 197,
-          "videos_total": 778
-        },
-        {
-          "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-          "name": "Alan",
-          "stt_done": 90,
-          "captions_done": 325,
-          "captions_left": 0,
-          "stt_left": 175,
-          "videos_total": 590
-        },
-        {
-          "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-          "name": "Learning how to learn",
-          "stt_done": 69,
-          "captions_done": 284,
-          "captions_left": 0,
-          "stt_left": 632,
-          "videos_total": 863
         },
         {
           "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
           "name": "Product Management",
-          "stt_done": 23,
-          "captions_done": 264,
+          "stt_done": 264,
+          "captions_done": 782,
           "captions_left": 0,
-          "stt_left": 778,
+          "stt_left": 652,
           "videos_total": 918
+        },
+        {
+          "id": "UCAxQ8sjHgjXh26la7jEBw3w",
+          "name": "mike1111",
+          "stt_done": 517,
+          "captions_done": 517,
+          "captions_left": 0,
+          "stt_left": 261,
+          "videos_total": 778
+        },
+        {
+          "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+          "name": "Learning how to learn",
+          "stt_done": 151,
+          "captions_done": 714,
+          "captions_left": 0,
+          "stt_left": 550,
+          "videos_total": 863
+        },
+        {
+          "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+          "name": "Alan",
+          "stt_done": 326,
+          "captions_done": 325,
+          "captions_left": 0,
+          "stt_left": 264,
+          "videos_total": 590
+        },
+        {
+          "id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
+          "name": "Productivity",
+          "stt_done": 137,
+          "captions_done": 508,
+          "captions_left": 0,
+          "stt_left": 342,
+          "videos_total": 616
+        },
+        {
+          "id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
+          "name": "下班經濟學",
+          "stt_done": 9,
+          "captions_done": 523,
+          "captions_left": 0,
+          "stt_left": 760,
+          "videos_total": 778
+        },
+        {
+          "id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
+          "name": "The Startup Ideas Podcast Episodes",
+          "stt_done": 64,
+          "captions_done": 405,
+          "captions_left": 0,
+          "stt_left": 285,
+          "videos_total": 414
+        },
+        {
+          "id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
+          "name": "Crypto",
+          "stt_done": 34,
+          "captions_done": 299,
+          "captions_left": 0,
+          "stt_left": 339,
+          "videos_total": 410
+        },
+        {
+          "id": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
+          "name": "MIT RES.6-012 Introduction to Probability, Spring 2018",
+          "stt_done": 27,
+          "captions_done": 266,
+          "captions_left": 0,
+          "stt_left": 212,
+          "videos_total": 266
         },
         {
           "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
           "name": "Job hunting",
-          "stt_done": 60,
+          "stt_done": 63,
           "captions_done": 220,
           "captions_left": 0,
-          "stt_left": 158,
+          "stt_left": 155,
+          "videos_total": 284
+        },
+        {
+          "id": "PL30C54D951E8E1688",
+          "name": "Careers",
+          "stt_done": 40,
+          "captions_done": 165,
+          "captions_left": 0,
+          "stt_left": 204,
           "videos_total": 284
         },
         {
@@ -254,148 +343,71 @@
           "videos_total": 143
         },
         {
-          "id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
-          "name": "Productivity",
-          "stt_done": 7,
-          "captions_done": 137,
+          "id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
+          "name": "⚡️ Framework Thinking & Mental Models ⚡️",
+          "stt_done": 16,
+          "captions_done": 132,
           "captions_left": 0,
-          "stt_left": 472,
-          "videos_total": 616
-        },
-        {
-          "id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
-          "name": "下班經濟學",
-          "stt_done": 1,
-          "captions_done": 138,
-          "captions_left": 0,
-          "stt_left": 768,
-          "videos_total": 778
-        },
-        {
-          "id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
-          "name": "The Startup Ideas Podcast Episodes",
-          "stt_done": 11,
-          "captions_done": 64,
-          "captions_left": 0,
-          "stt_left": 338,
-          "videos_total": 414
+          "stt_left": 107,
+          "videos_total": 141
         },
         {
           "id": "PLbVaWSxd4rLI-VJHIosfjDSggCEhfZqgx",
           "name": "Statistics",
-          "stt_done": 9,
-          "captions_done": 65,
+          "stt_done": 12,
+          "captions_done": 95,
           "captions_left": 0,
-          "stt_left": 93,
+          "stt_left": 90,
           "videos_total": 116
-        },
-        {
-          "id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
-          "name": "⚡️ Framework Thinking & Mental Models ⚡️",
-          "stt_done": 4,
-          "captions_done": 69,
-          "captions_left": 0,
-          "stt_left": 119,
-          "videos_total": 141
-        },
-        {
-          "id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
-          "name": "Crypto",
-          "stt_done": 8,
-          "captions_done": 62,
-          "captions_left": 0,
-          "stt_left": 365,
-          "videos_total": 410
-        },
-        {
-          "id": "PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J",
-          "name": "【機器學習2021】(中文版)",
-          "stt_done": 35,
-          "captions_done": 35,
-          "captions_left": 0,
-          "stt_left": 5,
-          "videos_total": 40
-        },
-        {
-          "id": "PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2",
-          "name": "Stanford CS221: Artificial Intelligence: Principles and Techniques | Autumn 2021",
-          "stt_done": 8,
-          "captions_done": 60,
-          "captions_left": 0,
-          "stt_left": 44,
-          "videos_total": 60
-        },
-        {
-          "id": "PL1328115D3D8A2566",
-          "name": "Statistics",
-          "stt_done": 0,
-          "captions_done": 67,
-          "captions_left": 0,
-          "stt_left": 67,
-          "videos_total": 67
-        },
-        {
-          "id": "PLEMWyuM4E6qQvLqMJ-YdC0rBztBYpZaGv",
-          "name": "尼可拉斯楊Live精發財系列大全集",
-          "stt_done": 2,
-          "captions_done": 65,
-          "captions_left": 0,
-          "stt_left": 64,
-          "videos_total": 69
-        },
-        {
-          "id": "UCaA2cfCpytaARHcNcApboSw",
-          "name": "麥克老李",
-          "stt_done": 33,
-          "captions_done": 33,
-          "captions_left": 0,
-          "stt_left": 17,
-          "videos_total": 78
         },
         {
           "id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
           "name": "LLM / AI",
-          "stt_done": 7,
-          "captions_done": 57,
+          "stt_done": 13,
+          "captions_done": 79,
           "captions_left": 0,
-          "stt_left": 74,
+          "stt_left": 68,
           "videos_total": 94
         },
         {
-          "id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
-          "name": "Algorithms",
-          "stt_done": 6,
-          "captions_done": 50,
+          "id": "UCm-T3PmUW-HYkBao1lIBu3g",
+          "name": "UCm-T3PmUW-HYkBao1lIBu3g",
+          "stt_done": 38,
+          "captions_done": 38,
           "captions_left": 0,
-          "stt_left": 52,
-          "videos_total": 64
+          "stt_left": 19,
+          "videos_total": 95
+        },
+        {
+          "id": "PLFpsDakL_p53mcCG5SbNo30HQJo2PKd39",
+          "name": "English for Work — Phrases, Skills, and Strategies",
+          "stt_done": 0,
+          "captions_done": 74,
+          "captions_left": 0,
+          "stt_left": 74,
+          "videos_total": 74
+        },
+        {
+          "id": "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
+          "name": "職場事業心理學",
+          "stt_done": 37,
+          "captions_done": 37,
+          "captions_left": 9,
+          "stt_left": 9,
+          "videos_total": 46
         }
       ],
       "sources": [
         {
-          "id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-          "title": "Entrepreneur",
-          "kind": "playlist",
-          "videos_total": 3464,
-          "videos_source": "task",
-          "captions_done": 24,
-          "captions_left": 3440,
-          "stt_done": 18,
-          "stt_left": 3446,
-          "status": "waiting_captions",
-          "label": "Waiting captions",
-          "skip": false
-        },
-        {
           "id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
           "title": "Emotional Intelligence",
           "kind": "playlist",
-          "videos_total": 2314,
-          "videos_source": "task",
+          "videos_total": 2334,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 2314,
+          "captions_left": 2315,
           "stt_done": 0,
-          "stt_left": 2314,
+          "stt_left": 2334,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -404,12 +416,12 @@
           "id": "PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2",
           "title": "English",
           "kind": "playlist",
-          "videos_total": 1323,
-          "videos_source": "task",
+          "videos_total": 1322,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 1323,
+          "captions_left": 1272,
           "stt_done": 0,
-          "stt_left": 1323,
+          "stt_left": 1322,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -418,12 +430,12 @@
           "id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
           "title": "Interpersonal",
           "kind": "playlist",
-          "videos_total": 1248,
-          "videos_source": "task",
+          "videos_total": 1251,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 1248,
+          "captions_left": 1232,
           "stt_done": 0,
-          "stt_left": 1248,
+          "stt_left": 1251,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -432,26 +444,12 @@
           "id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
           "title": "Presentation, Public Speaking, Story Telling",
           "kind": "playlist",
-          "videos_total": 1218,
-          "videos_source": "task",
+          "videos_total": 1225,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 1218,
+          "captions_left": 1207,
           "stt_done": 0,
-          "stt_left": 1218,
-          "status": "waiting_captions",
-          "label": "Waiting captions",
-          "skip": false
-        },
-        {
-          "id": "PLbVaWSxd4rLJpG7ELhNF2L7PC_BM32eL_",
-          "title": "Charisma",
-          "kind": "playlist",
-          "videos_total": 1024,
-          "videos_source": "task",
-          "captions_done": 0,
-          "captions_left": 1024,
-          "stt_done": 0,
-          "stt_left": 1024,
+          "stt_left": 1225,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -460,12 +458,12 @@
           "id": "PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
           "title": "Career growth",
           "kind": "playlist",
-          "videos_total": 898,
-          "videos_source": "task",
+          "videos_total": 899,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 898,
+          "captions_left": 894,
           "stt_done": 0,
-          "stt_left": 898,
+          "stt_left": 899,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -474,12 +472,26 @@
           "id": "PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n",
           "title": "斷捨離 簡單匠 Podcast",
           "kind": "playlist",
-          "videos_total": 483,
-          "videos_source": "task",
+          "videos_total": 488,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 483,
+          "captions_left": 488,
           "stt_done": 0,
-          "stt_left": 483,
+          "stt_left": 488,
+          "status": "waiting_captions",
+          "label": "Waiting captions",
+          "skip": false
+        },
+        {
+          "id": "UC6t1O76G0jYXOAoYCm153dA",
+          "title": "Lenny's Podcast",
+          "kind": "channel",
+          "videos_total": 372,
+          "videos_source": "inventory",
+          "captions_done": 0,
+          "captions_left": 372,
+          "stt_done": 0,
+          "stt_left": 372,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -488,12 +500,12 @@
           "id": "PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe",
           "title": "Full Podcast Episodes",
           "kind": "playlist",
-          "videos_total": 260,
-          "videos_source": "task",
+          "videos_total": 264,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 260,
+          "captions_left": 264,
           "stt_done": 0,
-          "stt_left": 260,
+          "stt_left": 264,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -502,12 +514,12 @@
           "id": "PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr",
           "title": "個人成長心理學",
           "kind": "playlist",
-          "videos_total": 198,
-          "videos_source": "task",
+          "videos_total": 199,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 198,
+          "captions_left": 199,
           "stt_done": 0,
-          "stt_left": 198,
+          "stt_left": 199,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -516,25 +528,25 @@
           "id": "PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
           "title": "十分鐘心理學",
           "kind": "playlist",
-          "videos_total": 144,
-          "videos_source": "task",
+          "videos_total": 147,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 144,
+          "captions_left": 147,
           "stt_done": 0,
-          "stt_left": 144,
+          "stt_left": 147,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
         },
         {
-          "id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
-          "title": "Product Management Interview Prep",
-          "kind": "playlist",
-          "videos_total": 132,
-          "videos_source": "task",
+          "id": "UC1q6LKlcco02dF0BxE0G1zg",
+          "title": "AI 101",
+          "kind": "channel",
+          "videos_total": 131,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 132,
-          "stt_done": 1,
+          "captions_left": 131,
+          "stt_done": 0,
           "stt_left": 131,
           "status": "waiting_captions",
           "label": "Waiting captions",
@@ -548,8 +560,64 @@
           "videos_source": "inventory",
           "captions_done": 1150,
           "captions_left": 4,
-          "stt_done": 23,
-          "stt_left": 252,
+          "stt_done": 623,
+          "stt_left": 237,
+          "status": "waiting_captions",
+          "label": "Waiting captions",
+          "skip": false
+        },
+        {
+          "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
+          "title": "Dr Angela C Meyers",
+          "kind": "channel",
+          "videos_total": 169,
+          "videos_source": "inventory",
+          "captions_done": 0,
+          "captions_left": 163,
+          "stt_done": 0,
+          "stt_left": 6,
+          "status": "waiting_captions",
+          "label": "Waiting captions",
+          "skip": false
+        },
+        {
+          "id": "UCuY0tWGuwCI8SI9FFk60zPg",
+          "title": "Sonal Bahl - Career Strategist",
+          "kind": "channel",
+          "videos_total": 80,
+          "videos_source": "inventory",
+          "captions_done": 0,
+          "captions_left": 80,
+          "stt_done": 0,
+          "stt_left": 80,
+          "status": "waiting_captions",
+          "label": "Waiting captions",
+          "skip": false
+        },
+        {
+          "id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+          "title": "Entrepreneur",
+          "kind": "playlist",
+          "videos_total": 716,
+          "videos_source": "inventory",
+          "captions_done": 559,
+          "captions_left": 100,
+          "stt_done": 559,
+          "stt_left": 55,
+          "status": "waiting_captions",
+          "label": "Waiting captions",
+          "skip": false
+        },
+        {
+          "id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+          "title": "Product Management Interview Prep",
+          "kind": "playlist",
+          "videos_total": 132,
+          "videos_source": "inventory",
+          "captions_done": 1,
+          "captions_left": 127,
+          "stt_done": 1,
+          "stt_left": 3,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -558,12 +626,12 @@
           "id": "PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
           "title": "Podcast《不增不減兩分滿》",
           "kind": "playlist",
-          "videos_total": 60,
-          "videos_source": "task",
+          "videos_total": 63,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 60,
+          "captions_left": 63,
           "stt_done": 0,
-          "stt_left": 60,
+          "stt_left": 63,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -573,7 +641,7 @@
           "title": "八字教学从基础入门到精通",
           "kind": "playlist",
           "videos_total": 57,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 57,
           "stt_done": 0,
@@ -583,29 +651,15 @@
           "skip": false
         },
         {
-          "id": "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
-          "title": "職場事業心理學",
-          "kind": "playlist",
-          "videos_total": 46,
-          "videos_source": "task",
+          "id": "UCsguRUxh-0DiryIdPPWFeCQ",
+          "title": "Rise Above Reality",
+          "kind": "channel",
+          "videos_total": 44,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 46,
+          "captions_left": 44,
           "stt_done": 0,
-          "stt_left": 46,
-          "status": "waiting_captions",
-          "label": "Waiting captions",
-          "skip": false
-        },
-        {
-          "id": "PLrtCHHeadkHrIkSw0waA_S8p2G_lYxU_j",
-          "title": "Mock Product Management Interviews",
-          "kind": "playlist",
-          "videos_total": 38,
-          "videos_source": "task",
-          "captions_done": 0,
-          "captions_left": 38,
-          "stt_done": 0,
-          "stt_left": 38,
+          "stt_left": 44,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -615,53 +669,11 @@
           "title": "常用英语口语训练",
           "kind": "playlist",
           "videos_total": 30,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 30,
           "stt_done": 0,
           "stt_left": 30,
-          "status": "waiting_captions",
-          "label": "Waiting captions",
-          "skip": false
-        },
-        {
-          "id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
-          "title": "Advanced Algorithms (COMPSCI 224)",
-          "kind": "playlist",
-          "videos_total": 25,
-          "videos_source": "task",
-          "captions_done": 0,
-          "captions_left": 25,
-          "stt_done": 0,
-          "stt_left": 25,
-          "status": "waiting_captions",
-          "label": "Waiting captions",
-          "skip": false
-        },
-        {
-          "id": "PL2SOU6wwxB0v1kQTpqpuuDKIHmXHRAmeU",
-          "title": "Algorithms for Big Data (COMPSCI 229r)",
-          "kind": "playlist",
-          "videos_total": 25,
-          "videos_source": "task",
-          "captions_done": 0,
-          "captions_left": 25,
-          "stt_done": 0,
-          "stt_left": 25,
-          "status": "waiting_captions",
-          "label": "Waiting captions",
-          "skip": false
-        },
-        {
-          "id": "PLUl4u3cNGP63quuKvMHCt3cmTmt0O2qpv",
-          "title": "MIT 14.12 Game Theory, Fall 2025",
-          "kind": "playlist",
-          "videos_total": 25,
-          "videos_source": "task",
-          "captions_done": 0,
-          "captions_left": 25,
-          "stt_done": 0,
-          "stt_left": 25,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -681,15 +693,15 @@
           "skip": false
         },
         {
-          "id": "PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX",
-          "title": "Productivity Hacks",
+          "id": "PLrtCHHeadkHrIkSw0waA_S8p2G_lYxU_j",
+          "title": "Mock Product Management Interviews",
           "kind": "playlist",
-          "videos_total": 21,
-          "videos_source": "task",
+          "videos_total": 38,
+          "videos_source": "inventory",
           "captions_done": 0,
-          "captions_left": 21,
+          "captions_left": 36,
           "stt_done": 0,
-          "stt_left": 21,
+          "stt_left": 2,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -699,7 +711,7 @@
           "title": "Business Soft Skills",
           "kind": "playlist",
           "videos_total": 18,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 18,
           "stt_done": 0,
@@ -727,7 +739,7 @@
           "title": "【入門級命理課】命盤中的十二地支",
           "kind": "playlist",
           "videos_total": 13,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 13,
           "stt_done": 0,
@@ -741,7 +753,7 @@
           "title": "【入門級命理課】命盤中的十神",
           "kind": "playlist",
           "videos_total": 13,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 13,
           "stt_done": 0,
@@ -751,15 +763,15 @@
           "skip": false
         },
         {
-          "id": "PL2AoD3uiT4PftdqMHCt3cmTmt0O2qpv",
-          "title": "Computational Journalism (JMSC 6041)",
+          "id": "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
+          "title": "職場事業心理學",
           "kind": "playlist",
-          "videos_total": 8,
-          "videos_source": "task",
-          "captions_done": 0,
-          "captions_left": 8,
-          "stt_done": 0,
-          "stt_left": 8,
+          "videos_total": 46,
+          "videos_source": "inventory",
+          "captions_done": 37,
+          "captions_left": 9,
+          "stt_done": 37,
+          "stt_left": 9,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -811,7 +823,7 @@
           "title": "Google Product Management Interview Prep",
           "kind": "playlist",
           "videos_total": 7,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 7,
           "stt_done": 0,
@@ -825,7 +837,7 @@
           "title": "Facebook Product Management Interview Prep",
           "kind": "playlist",
           "videos_total": 6,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 6,
           "stt_done": 0,
@@ -853,7 +865,7 @@
           "title": "Microsoft Product Management Interview Prep",
           "kind": "playlist",
           "videos_total": 5,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 5,
           "stt_done": 0,
@@ -867,7 +879,7 @@
           "title": "【入門級命理課】八字命盤看——天干五合",
           "kind": "playlist",
           "videos_total": 5,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 5,
           "stt_done": 0,
@@ -881,7 +893,7 @@
           "title": "LinkedIn Product Management Interview Prep",
           "kind": "playlist",
           "videos_total": 3,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 3,
           "stt_done": 0,
@@ -895,7 +907,7 @@
           "title": "PMM Interview Prep",
           "kind": "playlist",
           "videos_total": 3,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
           "captions_left": 3,
           "stt_done": 0,
@@ -937,8 +949,22 @@
           "title": "Amazon Product Management Interview Prep",
           "kind": "playlist",
           "videos_total": 2,
-          "videos_source": "task",
+          "videos_source": "inventory",
           "captions_done": 0,
+          "captions_left": 2,
+          "stt_done": 0,
+          "stt_left": 2,
+          "status": "waiting_captions",
+          "label": "Waiting captions",
+          "skip": false
+        },
+        {
+          "id": "UCf_XYgupvdx7rA44Ap3uI5w",
+          "title": "Full Disclosure",
+          "kind": "channel",
+          "videos_total": 2,
+          "videos_source": "inventory",
+          "captions_done": 1,
           "captions_left": 2,
           "stt_done": 0,
           "stt_left": 2,
@@ -956,6 +982,20 @@
           "captions_left": 2,
           "stt_done": 0,
           "stt_left": 2,
+          "status": "waiting_captions",
+          "label": "Waiting captions",
+          "skip": false
+        },
+        {
+          "id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
+          "title": "Advanced Algorithms (COMPSCI 224)",
+          "kind": "playlist",
+          "videos_total": 25,
+          "videos_source": "inventory",
+          "captions_done": 24,
+          "captions_left": 1,
+          "stt_done": 24,
+          "stt_left": 1,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -994,24 +1034,24 @@
           "kind": "playlist",
           "videos_total": 3002,
           "videos_source": "inventory",
-          "captions_done": 1484,
+          "captions_done": 1768,
           "captions_left": 0,
-          "stt_done": 198,
-          "stt_left": 2195,
+          "stt_done": 1485,
+          "stt_left": 1449,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
         },
         {
-          "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-          "title": "Product Management",
+          "id": "PLbVaWSxd4rLJpG7ELhNF2L7PC_BM32eL_",
+          "title": "Charisma",
           "kind": "playlist",
-          "videos_total": 918,
-          "videos_source": "inventory",
-          "captions_done": 264,
+          "videos_total": 1024,
+          "videos_source": "task",
+          "captions_done": 0,
           "captions_left": 0,
-          "stt_done": 23,
-          "stt_left": 778,
+          "stt_done": 0,
+          "stt_left": 1024,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1022,10 +1062,24 @@
           "kind": "playlist",
           "videos_total": 778,
           "videos_source": "inventory",
-          "captions_done": 138,
+          "captions_done": 523,
           "captions_left": 0,
-          "stt_done": 1,
-          "stt_left": 768,
+          "stt_done": 9,
+          "stt_left": 760,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
+          "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+          "title": "Product Management",
+          "kind": "playlist",
+          "videos_total": 918,
+          "videos_source": "inventory",
+          "captions_done": 782,
+          "captions_left": 0,
+          "stt_done": 264,
+          "stt_left": 652,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1045,20 +1099,6 @@
           "skip": false
         },
         {
-          "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-          "title": "Learning how to learn",
-          "kind": "playlist",
-          "videos_total": 863,
-          "videos_source": "inventory",
-          "captions_done": 284,
-          "captions_left": 0,
-          "stt_done": 69,
-          "stt_left": 632,
-          "status": "waiting_stt",
-          "label": "Waiting STT",
-          "skip": false
-        },
-        {
           "id": "PLbVaWSxd4rLK-5XxqWjpetKxUCiLOdhDE",
           "title": "理財 Strategy",
           "kind": "playlist",
@@ -1073,15 +1113,15 @@
           "skip": false
         },
         {
-          "id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
-          "title": "Productivity",
+          "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+          "title": "Learning how to learn",
           "kind": "playlist",
-          "videos_total": 616,
+          "videos_total": 863,
           "videos_source": "inventory",
-          "captions_done": 137,
+          "captions_done": 714,
           "captions_left": 0,
-          "stt_done": 7,
-          "stt_left": 472,
+          "stt_done": 151,
+          "stt_left": 550,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1115,15 +1155,29 @@
           "skip": false
         },
         {
+          "id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
+          "title": "Productivity",
+          "kind": "playlist",
+          "videos_total": 616,
+          "videos_source": "inventory",
+          "captions_done": 508,
+          "captions_left": 0,
+          "stt_done": 137,
+          "stt_left": 342,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
           "id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
           "title": "Crypto",
           "kind": "playlist",
           "videos_total": 410,
           "videos_source": "inventory",
-          "captions_done": 62,
+          "captions_done": 299,
           "captions_left": 0,
-          "stt_done": 8,
-          "stt_left": 365,
+          "stt_done": 34,
+          "stt_left": 339,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1134,10 +1188,38 @@
           "kind": "playlist",
           "videos_total": 414,
           "videos_source": "inventory",
-          "captions_done": 64,
+          "captions_done": 405,
           "captions_left": 0,
-          "stt_done": 11,
-          "stt_left": 338,
+          "stt_done": 64,
+          "stt_left": 285,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
+          "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+          "title": "Alan",
+          "kind": "channel",
+          "videos_total": 590,
+          "videos_source": "inventory",
+          "captions_done": 325,
+          "captions_left": 0,
+          "stt_done": 326,
+          "stt_left": 264,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
+          "id": "UCAxQ8sjHgjXh26la7jEBw3w",
+          "title": "mike1111",
+          "kind": "channel",
+          "videos_total": 778,
+          "videos_source": "inventory",
+          "captions_done": 517,
+          "captions_left": 0,
+          "stt_done": 517,
+          "stt_left": 261,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1150,8 +1232,8 @@
           "videos_source": "inventory",
           "captions_done": 517,
           "captions_left": 0,
-          "stt_done": 119,
-          "stt_left": 330,
+          "stt_done": 552,
+          "stt_left": 251,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1171,34 +1253,6 @@
           "skip": false
         },
         {
-          "id": "PL30C54D951E8E1688",
-          "title": "Careers",
-          "kind": "playlist",
-          "videos_total": 284,
-          "videos_source": "inventory",
-          "captions_done": 40,
-          "captions_left": 0,
-          "stt_done": 9,
-          "stt_left": 235,
-          "status": "waiting_stt",
-          "label": "Waiting STT",
-          "skip": false
-        },
-        {
-          "id": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
-          "title": "MIT RES.6-012 Intro to Probability",
-          "kind": "playlist",
-          "videos_total": 266,
-          "videos_source": "inventory",
-          "captions_done": 47,
-          "captions_left": 0,
-          "stt_done": 4,
-          "stt_left": 235,
-          "status": "waiting_stt",
-          "label": "Waiting STT",
-          "skip": false
-        },
-        {
           "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
           "title": "huanyihe777",
           "kind": "channel",
@@ -1213,15 +1267,29 @@
           "skip": false
         },
         {
-          "id": "UCAxQ8sjHgjXh26la7jEBw3w",
-          "title": "mike1111",
-          "kind": "channel",
-          "videos_total": 778,
+          "id": "PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6",
+          "title": "MIT RES.6-012 Intro to Probability",
+          "kind": "playlist",
+          "videos_total": 266,
           "videos_source": "inventory",
-          "captions_done": 517,
+          "captions_done": 266,
           "captions_left": 0,
-          "stt_done": 64,
-          "stt_left": 197,
+          "stt_done": 27,
+          "stt_left": 212,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
+          "id": "PL30C54D951E8E1688",
+          "title": "Careers",
+          "kind": "playlist",
+          "videos_total": 284,
+          "videos_source": "inventory",
+          "captions_done": 165,
+          "captions_left": 0,
+          "stt_done": 40,
+          "stt_left": 204,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1255,20 +1323,6 @@
           "skip": false
         },
         {
-          "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-          "title": "Alan",
-          "kind": "channel",
-          "videos_total": 590,
-          "videos_source": "inventory",
-          "captions_done": 325,
-          "captions_left": 0,
-          "stt_done": 90,
-          "stt_left": 175,
-          "status": "waiting_stt",
-          "label": "Waiting STT",
-          "skip": false
-        },
-        {
           "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
           "title": "Job hunting",
           "kind": "playlist",
@@ -1276,8 +1330,8 @@
           "videos_source": "inventory",
           "captions_done": 220,
           "captions_left": 0,
-          "stt_done": 60,
-          "stt_left": 158,
+          "stt_done": 63,
+          "stt_left": 155,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1311,20 +1365,6 @@
           "skip": false
         },
         {
-          "id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
-          "title": "⚡️ Framework Thinking & Mental Models ⚡️",
-          "kind": "playlist",
-          "videos_total": 141,
-          "videos_source": "inventory",
-          "captions_done": 69,
-          "captions_left": 0,
-          "stt_done": 4,
-          "stt_left": 119,
-          "status": "waiting_stt",
-          "label": "Waiting STT",
-          "skip": false
-        },
-        {
           "id": "UCP76ZVB1x9udP2UFcQkSvMA",
           "title": "大卢和小田",
           "kind": "channel",
@@ -1334,6 +1374,20 @@
           "captions_left": 0,
           "stt_done": 0,
           "stt_left": 112,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
+          "id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
+          "title": "⚡️ Framework Thinking & Mental Models ⚡️",
+          "kind": "playlist",
+          "videos_total": 141,
+          "videos_source": "inventory",
+          "captions_done": 132,
+          "captions_left": 0,
+          "stt_done": 16,
+          "stt_left": 107,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1358,10 +1412,10 @@
           "kind": "playlist",
           "videos_total": 116,
           "videos_source": "inventory",
-          "captions_done": 65,
+          "captions_done": 95,
           "captions_left": 0,
-          "stt_done": 9,
-          "stt_left": 93,
+          "stt_done": 12,
+          "stt_left": 90,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1372,7 +1426,7 @@
           "kind": "playlist",
           "videos_total": 74,
           "videos_source": "inventory",
-          "captions_done": 32,
+          "captions_done": 74,
           "captions_left": 0,
           "stt_done": 0,
           "stt_left": 74,
@@ -1386,10 +1440,10 @@
           "kind": "playlist",
           "videos_total": 94,
           "videos_source": "inventory",
-          "captions_done": 57,
+          "captions_done": 79,
           "captions_left": 0,
-          "stt_done": 7,
-          "stt_left": 74,
+          "stt_done": 13,
+          "stt_left": 68,
           "status": "waiting_stt",
           "label": "Waiting STT",
           "skip": false
@@ -1549,6 +1603,20 @@
           "skip": false
         },
         {
+          "id": "PL2SOU6wwxB0v1kQTpqpuuDKIHmXHRAmeU",
+          "title": "Algorithms for Big Data (COMPSCI 229r)",
+          "kind": "playlist",
+          "videos_total": 25,
+          "videos_source": "task",
+          "captions_done": 0,
+          "captions_left": 0,
+          "stt_done": 0,
+          "stt_left": 25,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
           "id": "PLwLhCsXo_YKMfYMd8EVmL2g353cwAjSxl",
           "title": "Smart Note Taking (Obsidian & Zettelkasten)",
           "kind": "playlist",
@@ -1697,6 +1765,20 @@
           "captions_done": 23,
           "captions_left": 0,
           "stt_done": 2,
+          "stt_left": 19,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
+          "id": "UCm-T3PmUW-HYkBao1lIBu3g",
+          "title": "Web3101",
+          "kind": "channel",
+          "videos_total": 95,
+          "videos_source": "inventory",
+          "captions_done": 38,
+          "captions_left": 0,
+          "stt_done": 38,
           "stt_left": 19,
           "status": "waiting_stt",
           "label": "Waiting STT",
@@ -1941,6 +2023,20 @@
           "skip": false
         },
         {
+          "id": "PL2AoD3uiT4PftdqMHCt3cmTmt0O2qpv",
+          "title": "Computational Journalism (JMSC 6041)",
+          "kind": "playlist",
+          "videos_total": 8,
+          "videos_source": "task",
+          "captions_done": 0,
+          "captions_left": 0,
+          "stt_done": 0,
+          "stt_left": 8,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
           "id": "PLbdTl8vSSyUDAvDPc1r3j9itciu_kb5vG",
           "title": "Machine Learning & Data Science",
           "kind": "playlist",
@@ -2053,6 +2149,20 @@
           "skip": false
         },
         {
+          "id": "PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX",
+          "title": "Productivity Hacks",
+          "kind": "playlist",
+          "videos_total": 21,
+          "videos_source": "inventory",
+          "captions_done": 20,
+          "captions_left": 0,
+          "stt_done": 20,
+          "stt_left": 1,
+          "status": "waiting_stt",
+          "label": "Waiting STT",
+          "skip": false
+        },
+        {
           "id": "PL-36nHv8kR09YeG27lncUxZBpcDla9dOj",
           "title": "郭宇AI實踐分享 · 十講",
           "kind": "playlist",
@@ -2067,104 +2177,6 @@
           "skip": false
         },
         {
-          "id": "UC1q6LKlcco02dF0BxE0G1zg",
-          "title": "AI 101",
-          "kind": "channel",
-          "videos_total": 0,
-          "videos_source": "none",
-          "captions_done": 0,
-          "captions_left": 0,
-          "stt_done": 0,
-          "stt_left": 0,
-          "status": "not_started",
-          "label": "Not started",
-          "skip": false
-        },
-        {
-          "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
-          "title": "Dr Angela C Meyers",
-          "kind": "channel",
-          "videos_total": 0,
-          "videos_source": "none",
-          "captions_done": 0,
-          "captions_left": 0,
-          "stt_done": 0,
-          "stt_left": 0,
-          "status": "not_started",
-          "label": "Not started",
-          "skip": false
-        },
-        {
-          "id": "UCf_XYgupvdx7rA44Ap3uI5w",
-          "title": "Full Disclosure",
-          "kind": "channel",
-          "videos_total": 0,
-          "videos_source": "none",
-          "captions_done": 0,
-          "captions_left": 0,
-          "stt_done": 0,
-          "stt_left": 0,
-          "status": "not_started",
-          "label": "Not started",
-          "skip": false
-        },
-        {
-          "id": "UC6t1O76G0jYXOAoYCm153dA",
-          "title": "Lenny's Podcast",
-          "kind": "channel",
-          "videos_total": 0,
-          "videos_source": "none",
-          "captions_done": 0,
-          "captions_left": 0,
-          "stt_done": 0,
-          "stt_left": 0,
-          "status": "not_started",
-          "label": "Not started",
-          "skip": false
-        },
-        {
-          "id": "UCsguRUxh-0DiryIdPPWFeCQ",
-          "title": "Rise Above Reality",
-          "kind": "channel",
-          "videos_total": 0,
-          "videos_source": "none",
-          "captions_done": 0,
-          "captions_left": 0,
-          "stt_done": 0,
-          "stt_left": 0,
-          "status": "not_started",
-          "label": "Not started",
-          "skip": false
-        },
-        {
-          "id": "UCuY0tWGuwCI8SI9FFk60zPg",
-          "title": "Sonal Bahl - Career Strategist",
-          "kind": "channel",
-          "videos_total": 0,
-          "videos_source": "none",
-          "captions_done": 0,
-          "captions_left": 0,
-          "stt_done": 0,
-          "stt_left": 0,
-          "status": "not_started",
-          "label": "Not started",
-          "skip": false
-        },
-        {
-          "id": "UCm-T3PmUW-HYkBao1lIBu3g",
-          "title": "Web3101",
-          "kind": "channel",
-          "videos_total": 0,
-          "videos_source": "none",
-          "captions_done": 0,
-          "captions_left": 0,
-          "stt_done": 0,
-          "stt_left": 0,
-          "status": "not_started",
-          "label": "Not started",
-          "skip": false
-        },
-        {
           "id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
           "title": "#11 课代表立正",
           "kind": "channel",
@@ -2172,11 +2184,25 @@
           "videos_source": "inventory",
           "captions_done": 632,
           "captions_left": 0,
-          "stt_done": 801,
+          "stt_done": 834,
           "stt_left": 0,
           "status": "paused",
           "label": "Paused / skip",
           "skip": true
+        },
+        {
+          "id": "PLUl4u3cNGP63quuKvMHCt3cmTmt0O2qpv",
+          "title": "MIT 14.12 Game Theory, Fall 2025",
+          "kind": "playlist",
+          "videos_total": 25,
+          "videos_source": "inventory",
+          "captions_done": 25,
+          "captions_left": 0,
+          "stt_done": 25,
+          "stt_left": 0,
+          "status": "done",
+          "label": "Done",
+          "skip": false
         },
         {
           "id": "PLydduVo-Eiq-qhq-NrQbBejkT05SQtEyM",
@@ -2193,20 +2219,20 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 7562,
+      "captions_files_on_disk": 19786,
       "source": "inventory+disk"
     }
   },
   "note": "Public ping. No cookie bytes, no transcripts, no paths.",
   "git_sync": {
-    "pull": "fetch_failed"
+    "pull": "ok"
   },
   "schedule": {
     "next_cron_utc": "2026-09-23T06:55:00Z",
     "next_cron_hkt": "2026-09-23 14:55 HKT",
     "cron": "*/5",
-    "job_restart": "captions eligible now (4.3G≥1.2); Whisper blocked until 6.0G",
-    "job_restart_at_hkt": "2026-09-23 14:55 HKT",
+    "job_restart": "captions + Whisper running",
+    "job_restart_at_hkt": null,
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -2224,53 +2250,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:51:23Z reboost captions pid 3313 channel PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm alive"
+      "summary": "2026-09-23T06:52:05Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:51:23Z reboost captions pid 3313 channel PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm alive"
+      "summary": "2026-09-23T06:52:05Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
+      "summary": "2026-09-23T06:52:05Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=10.1G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
+      "summary": "2026-09-23T06:52:05Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=10.1G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:51:25Z reboost captions pid 3408 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw alive"
+      "summary": "2026-09-23T06:52:05Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:51:25Z reboost captions pid 3408 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw alive"
+      "summary": "2026-09-23T06:52:05Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:51:26Z inventory missing — building playlist PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3"
+      "summary": "2026-09-23T06:52:05Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:51:26Z inventory missing — building playlist PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3"
+      "summary": "2026-09-23T06:52:05Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-23T06:51:25Z reboost captions pid 3408 channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw alive",
-    "2026-09-23T06:51:26Z inventory missing — building playlist PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
-    "2026-09-23T06:51:26Z inventory missing — building playlist PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
-    "backfill-captions.log: incomplete uJBdR6CsYpk: pending_stt",
-    "incomplete drOd3w9LsEw: pending_stt",
-    "stt_language=en",
-    "Deferring 246 failed_ids (e.g. no transcript) until after 0 fresh IDs",
-    "incomplete uJBdR6CsYpk: pending_stt"
+    "2026-09-23T06:52:05Z captions after fill running=3",
+    "2026-09-23T06:52:05Z STT already running — no second Whisper",
+    "2026-09-23T06:52:05Z STT already running — no second Whisper",
+    "backfill-captions.log: incomplete DAbi8iyokyI: pending_stt",
+    "incomplete fwlAB0P5ojw: pending_stt",
+    "incomplete VSiNhOZ6mIQ: pending_stt",
+    "incomplete 6dc3xaSEhjk: pending_stt",
+    "incomplete DAbi8iyokyI: pending_stt"
   ],
   "pm": {
     "token_free": true,
@@ -2282,9 +2308,53 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 0,
-    "total_n": 17,
+    "running_n": 4,
+    "total_n": 21,
     "jobs": [
+      {
+        "id": "live-cap-PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
+        "title": "職場事業心理學",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
+      },
+      {
+        "id": "live-cap-PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+        "title": "Data Science",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
+      },
+      {
+        "id": "live-cap-PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+        "title": "Entrepreneur",
+        "status": "running",
+        "raw_status": "running",
+        "class": "cpu_light",
+        "priority": 1,
+        "owner": "collector-live",
+        "notes": "live captions target",
+        "target_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
+      },
+      {
+        "id": "live-stt-UCJAPsTtcJJWGk8e-_CJL8TQ",
+        "title": "一个狠人",
+        "status": "running",
+        "raw_status": "running",
+        "class": "ram_heavy",
+        "priority": 2,
+        "owner": "collector-live",
+        "notes": "live STT channel",
+        "target_id": "UCJAPsTtcJJWGk8e-_CJL8TQ"
+      },
       {
         "id": "yt-ch-rest",
         "title": "Channels #2–#9 backfill",
@@ -2509,5 +2579,200 @@
     ],
     "live_overlay": true
   },
-  "ops_recent": []
+  "ops_recent": [
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video jtI4-XyddB8 (video-only)",
+      "at_utc": "2026-09-22T16:29:20Z",
+      "at_hkt": "2026-09-23 00:29 HKT",
+      "op": "intake_share",
+      "id": "jtI4-XyddB8",
+      "ref": "https://youtu.be/jtI4-XyddB8"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video od5pYY61yJ8 (video-only)",
+      "at_utc": "2026-09-22T16:28:59Z",
+      "at_hkt": "2026-09-23 00:28 HKT",
+      "op": "intake_share",
+      "id": "od5pYY61yJ8",
+      "ref": "https://youtu.be/od5pYY61yJ8"
+    },
+    {
+      "kind": "ensure",
+      "label": "Ensure",
+      "summary": "Heartbeat ensure (3 steps)",
+      "at_utc": "2026-09-22T13:44:08Z",
+      "at_hkt": "2026-09-22 21:44 HKT",
+      "op": "heartbeat_ensure"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video uidUolLGrJw (video-only)",
+      "at_utc": "2026-09-22T03:27:56Z",
+      "at_hkt": "2026-09-22 11:27 HKT",
+      "op": "intake_share",
+      "id": "uidUolLGrJw",
+      "ref": "https://youtu.be/uidUolLGrJw"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video uidUolLGrJw (video-only)",
+      "at_utc": "2026-09-22T03:27:50Z",
+      "at_hkt": "2026-09-22 11:27 HKT",
+      "op": "intake_share",
+      "id": "uidUolLGrJw",
+      "ref": "https://youtu.be/uidUolLGrJw"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video 4VBjjkbEthY (video-only)",
+      "at_utc": "2026-09-22T00:43:46Z",
+      "at_hkt": "2026-09-22 08:43 HKT",
+      "op": "intake_share",
+      "id": "4VBjjkbEthY",
+      "ref": "https://youtu.be/4VBjjkbEthY"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video 4VBjjkbEthY (video+channel)",
+      "at_utc": "2026-09-22T00:43:28Z",
+      "at_hkt": "2026-09-22 08:43 HKT",
+      "op": "intake_share",
+      "id": "4VBjjkbEthY",
+      "ref": "https://youtu.be/4VBjjkbEthY"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added channel @RiseAboveReality-01",
+      "at_utc": "2026-09-22T00:43:26Z",
+      "at_hkt": "2026-09-22 08:43 HKT",
+      "op": "intake_share",
+      "id": "@RiseAboveReality-01",
+      "ref": "https://www.youtube.com/@RiseAboveReality-01"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video 4VBjjkbEthY (video-only)",
+      "at_utc": "2026-09-22T00:43:20Z",
+      "at_hkt": "2026-09-22 08:43 HKT",
+      "op": "intake_share",
+      "id": "4VBjjkbEthY",
+      "ref": "https://youtu.be/4VBjjkbEthY"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video 4VBjjkbEthY (video+channel)",
+      "at_utc": "2026-09-22T00:41:50Z",
+      "at_hkt": "2026-09-22 08:41 HKT",
+      "op": "intake_share",
+      "id": "4VBjjkbEthY",
+      "ref": "https://youtu.be/4VBjjkbEthY"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added channel @RiseAboveReality-01",
+      "at_utc": "2026-09-22T00:41:39Z",
+      "at_hkt": "2026-09-22 08:41 HKT",
+      "op": "intake_share",
+      "id": "@RiseAboveReality-01",
+      "ref": "https://www.youtube.com/@RiseAboveReality-01"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video 4VBjjkbEthY (video-only)",
+      "at_utc": "2026-09-22T00:41:33Z",
+      "at_hkt": "2026-09-22 08:41 HKT",
+      "op": "intake_share",
+      "id": "4VBjjkbEthY",
+      "ref": "https://youtu.be/4VBjjkbEthY"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video 4VBjjkbEthY (video-only)",
+      "at_utc": "2026-09-22T00:06:37Z",
+      "at_hkt": "2026-09-22 08:06 HKT",
+      "op": "intake_share",
+      "id": "4VBjjkbEthY",
+      "ref": "https://youtu.be/4VBjjkbEthY"
+    },
+    {
+      "kind": "ensure",
+      "label": "Ensure",
+      "summary": "Heartbeat ensure (2 steps)",
+      "at_utc": "2026-09-21T16:46:54Z",
+      "at_hkt": "2026-09-22 00:46 HKT",
+      "op": "heartbeat_ensure"
+    },
+    {
+      "kind": "ensure",
+      "label": "Ensure",
+      "summary": "Heartbeat ensure (3 steps)",
+      "at_utc": "2026-09-21T16:45:41Z",
+      "at_hkt": "2026-09-22 00:45 HKT",
+      "op": "heartbeat_ensure"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video jNQXAC9IVRw (video-only)",
+      "at_utc": "2026-09-21T16:36:59Z",
+      "at_hkt": "2026-09-22 00:36 HKT",
+      "op": "intake_share",
+      "id": "jNQXAC9IVRw",
+      "ref": "https://youtu.be/jNQXAC9IVRw"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video jNQXAC9IVRw (video+shorts+posts)",
+      "at_utc": "2026-09-21T16:36:30Z",
+      "at_hkt": "2026-09-22 00:36 HKT",
+      "op": "intake_share",
+      "id": "jNQXAC9IVRw",
+      "ref": "https://youtu.be/jNQXAC9IVRw"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video jNQXAC9IVRw (video-only)",
+      "at_utc": "2026-09-21T16:36:25Z",
+      "at_hkt": "2026-09-22 00:36 HKT",
+      "op": "intake_share",
+      "id": "jNQXAC9IVRw",
+      "ref": "https://youtu.be/jNQXAC9IVRw"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video jNQXAC9IVRw (video-only)",
+      "at_utc": "2026-09-21T16:36:01Z",
+      "at_hkt": "2026-09-22 00:36 HKT",
+      "op": "intake_share",
+      "id": "jNQXAC9IVRw",
+      "ref": "https://youtu.be/jNQXAC9IVRw"
+    },
+    {
+      "kind": "added",
+      "label": "Added",
+      "summary": "Added video IS8doeSyVNo (video-only)",
+      "at_utc": "2026-09-21T16:23:35Z",
+      "at_hkt": "2026-09-22 00:23 HKT",
+      "op": "intake_video",
+      "id": "IS8doeSyVNo",
+      "ref": "https://youtu.be/IS8doeSyVNo"
+    }
+  ]
 }
