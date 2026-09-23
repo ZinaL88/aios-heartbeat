@@ -1,41 +1,41 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T03:07:12Z",
+  "written_at_utc": "2026-09-23T03:07:47Z",
   "written_at_hkt": "2026-09-23 11:07 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
     "whisper_n": 2,
-    "backfill_n": 3,
+    "backfill_n": 2,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-    "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+    "captions_channel": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
     "sample": [
       {
         "pid": 1492481,
         "cmd": "proc"
       },
       {
-        "pid": 1503705,
-        "cmd": "proc"
-      },
-      {
-        "pid": 1466861,
+        "pid": 1504534,
         "cmd": "proc"
       },
       {
         "pid": 1477460,
         "cmd": "proc"
+      },
+      {
+        "pid": 1504505,
+        "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 7.1,
+    "mem_available_gi": 7.4,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.87,
+        "rss_gi": 2.96,
         "n": 33
       },
       {
@@ -54,14 +54,19 @@
         "n": 3
       },
       {
-        "comm": "python",
-        "rss_gi": 0.1,
-        "n": 6
-      },
-      {
         "comm": "bash",
         "rss_gi": 0.1,
-        "n": 42
+        "n": 41
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.09,
+        "n": 2
+      },
+      {
+        "comm": "python",
+        "rss_gi": 0.08,
+        "n": 5
       },
       {
         "comm": "websockify",
@@ -77,22 +82,17 @@
         "comm": "plank",
         "rss_gi": 0.06,
         "n": 3
-      },
-      {
-        "comm": "xfwm4",
-        "rss_gi": 0.06,
-        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 3.7,
-      "anon_gi": 2.6,
+      "cached_gi": 3.8,
+      "anon_gi": 2.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 12.6
     },
-    "load1": 0.9,
+    "load1": 0.93,
     "disk_avail": "101G",
     "tmp_du": "532M"
   },
@@ -106,7 +106,7 @@
     "done": 537,
     "total": 737,
     "inflight": null,
-    "last_id": "3eUr34ghmkY",
+    "last_id": "Iu6TiA8PvUk",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -129,7 +129,7 @@
         "pending": 266,
         "done": 7277,
         "transcripts_on_disk": 7277,
-        "inflight": "EzsbLhffF_g",
+        "inflight": "sPZ9gSIffjE",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
@@ -144,30 +144,28 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
+        "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
         "targets": [
-          "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-          "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
+          "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
         ],
         "target_names": [
-          "Data Science",
           "Entrepreneur",
-          "職場事業心理學"
+          "Data Science"
         ],
         "done": 12150,
-        "left": 130,
+        "left": 121,
         "total": 25851,
         "no_sub": 311,
-        "eta_min": 11,
-        "eta_hkt": "2026-09-23 11:17 HKT",
+        "eta_min": 15,
+        "eta_hkt": "2026-09-23 11:22 HKT",
         "inflight": null,
-        "jobs": 3,
+        "jobs": 2,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
         "left_global": 9329,
-        "eta_deadline_utc": "2026-09-23T03:17:10Z",
-        "eta_frozen": true,
+        "eta_deadline_utc": "2026-09-23T03:22:47Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
@@ -2250,53 +2248,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:07:11Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T03:07:11Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T03:07:12Z ensure_venv — start"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T03:07:12Z ensure_venv — ok"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T03:07:12Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T03:07:12Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.4G cap_signal=none"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-23T03:07:12Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-23T03:07:13Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:07:45Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:07:45Z ensure_venv — start"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:07:46Z ensure_venv — ok"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:07:46Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:07:46Z captions running=1 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.4G cap_signal=none"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw/inventory_public.json"
     }
   ],
   "reboost_log": [
-    "2026-09-23T03:07:12Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.4G cap_signal=none",
-    "2026-09-23T03:07:12Z captions after fill running=3",
-    "2026-09-23T03:07:13Z STT already running — no second Whisper",
-    "backfill-captions.log: incomplete 7bL8oYjReNY: pending_stt",
-    "incomplete hmRgQnWzvmc: pending_stt",
-    "incomplete iAe-hMLxdaE: pending_stt",
-    "incomplete W8wSJna_QRk: pending_stt",
-    "incomplete 7bL8oYjReNY: pending_stt"
+    "2026-09-23T03:07:46Z STT_VENV_OK=1 PY=<path>",
+    "2026-09-23T03:07:46Z captions running=1 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.4G cap_signal=none",
+    "<path> --channel-id PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw --access public --limit 9999 --mode captions --language auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
+    "backfill-captions.log: Deferring 255 failed_ids (e.g. no transcript) until after 0 fresh IDs",
+    "incomplete oewnbvCpwDk: pending_stt",
+    "incomplete lfZ8SooiYfs: pending_stt",
+    "stt_language=en",
+    "Deferring 255 failed_ids (e.g. no transcript) until after 0 fresh IDs"
   ],
   "pm": {
     "token_free": true,
@@ -2308,20 +2306,9 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 4,
-    "total_n": 21,
+    "running_n": 3,
+    "total_n": 20,
     "jobs": [
-      {
-        "id": "live-cap-PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
-        "title": "職場事業心理學",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
-      },
       {
         "id": "live-cap-PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
         "title": "Data Science",
