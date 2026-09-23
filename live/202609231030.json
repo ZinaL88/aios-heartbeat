@@ -1,12 +1,12 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T02:33:45Z",
-  "written_at_hkt": "2026-09-23 10:33 HKT",
+  "written_at_utc": "2026-09-23T02:34:04Z",
+  "written_at_hkt": "2026-09-23 10:34 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 2,
+    "whisper_n": 3,
     "backfill_n": 3,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
@@ -20,32 +20,32 @@
         "cmd": "proc"
       },
       {
-        "pid": 1426010,
+        "pid": 1464674,
         "cmd": "proc"
       },
       {
-        "pid": 1444791,
+        "pid": 1426010,
         "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 5.1,
+    "mem_available_gi": 4.7,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.8,
+        "rss_gi": 3.09,
         "n": 33
       },
       {
         "comm": "python",
-        "rss_gi": 2.4,
+        "rss_gi": 2.57,
         "n": 6
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.66,
+        "rss_gi": 0.68,
         "n": 13
       },
       {
@@ -61,7 +61,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.1,
-        "n": 41
+        "n": 40
       },
       {
         "comm": "websockify",
@@ -87,12 +87,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 3.2,
-      "anon_gi": 4.8,
+      "anon_gi": 5.2,
       "shmem_gi": 0.0,
-      "sreclaimable_gi": 0.3,
-      "committed_gi": 18.5
+      "sreclaimable_gi": 0.4,
+      "committed_gi": 18.9
     },
-    "load1": 5.76,
+    "load1": 5.58,
     "disk_avail": "101G",
     "tmp_du": "532M"
   },
@@ -135,10 +135,10 @@
         "eta_this_min": 24,
         "eta_min": 6408,
         "eta_hkt": "2026-09-27 21:21 HKT",
-        "jobs": 2,
+        "jobs": 3,
         "pending_global": 7558,
         "eta_deadline_utc": "2026-09-27T13:21:46Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
@@ -167,7 +167,7 @@
         "next_name": "Lenny's Podcast",
         "left_global": 9329,
         "eta_deadline_utc": "2026-09-23T02:44:46Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -2250,53 +2250,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-/inventory_public.json"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T02:33:43Z reboost captions pid 1464245 channel PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp- alive"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T02:33:43Z reboost captions pid 1464245 channel PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp- alive"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T02:33:44Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T02:33:44Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-23T02:33:44Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T02:33:44Z STT already running — no second Whisper"
+      "summary": "2026-09-23T02:34:03Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T02:34:03Z ensure_venv — start"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T02:34:03Z ensure_venv — ok"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T02:34:04Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T02:34:04Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.6G cap_signal=none"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T02:34:04Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T02:34:04Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-23T02:33:44Z captions after fill running=3",
-    "2026-09-23T02:33:44Z STT already running — no second Whisper",
-    "2026-09-23T02:33:44Z STT already running — no second Whisper",
-    "backfill-captions.log: incomplete z2TqBUouF8I: pending_stt",
-    "Deferring 9 failed_ids (e.g. no transcript) until after 0 fresh IDs",
-    "incomplete 7zZYwa7SJHY: pending_stt",
-    "incomplete y5ks4FhoGfQ: pending_stt",
-    "incomplete z2TqBUouF8I: pending_stt"
+    "2026-09-23T02:34:04Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=7.6G cap_signal=none",
+    "2026-09-23T02:34:04Z captions after fill running=3",
+    "2026-09-23T02:34:04Z STT already running — no second Whisper",
+    "backfill-captions.log: incomplete 6i_t5eIx-GI: pending_stt",
+    "incomplete H2r609EpCpY: pending_stt",
+    "incomplete 3RG1TEpa7Iw: pending_stt",
+    "incomplete VSiNhOZ6mIQ: pending_stt",
+    "incomplete 6i_t5eIx-GI: pending_stt"
   ],
   "pm": {
     "token_free": true,
