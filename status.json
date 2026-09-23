@@ -1,28 +1,24 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T07:12:47Z",
+  "written_at_utc": "2026-09-23T07:12:58Z",
   "written_at_hkt": "2026-09-23 15:12 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
     "backfill": true,
     "whisper_n": 0,
-    "backfill_n": 2,
+    "backfill_n": 1,
     "stt_channel": null,
     "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
     "sample": [
       {
         "pid": 7193,
         "cmd": "proc"
-      },
-      {
-        "pid": 7288,
-        "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 3.4,
+    "mem_available_gi": 3.5,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
@@ -41,24 +37,19 @@
         "n": 2
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.1,
-        "n": 2
-      },
-      {
         "comm": "websockify",
         "rss_gi": 0.07,
         "n": 2
       },
       {
-        "comm": "bash",
-        "rss_gi": 0.07,
-        "n": 29
-      },
-      {
         "comm": "python3",
         "rss_gi": 0.07,
         "n": 3
+      },
+      {
+        "comm": "bash",
+        "rss_gi": 0.07,
+        "n": 28
       },
       {
         "comm": "Xvfb",
@@ -74,6 +65,11 @@
         "comm": "cloudflared",
         "rss_gi": 0.04,
         "n": 1
+      },
+      {
+        "comm": "x11vnc",
+        "rss_gi": 0.03,
+        "n": 2
       }
     ],
     "meminfo": {
@@ -82,9 +78,9 @@
       "anon_gi": 1.4,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 3.8
+      "committed_gi": 3.7
     },
-    "load1": 0.73,
+    "load1": 0.77,
     "disk_avail": "104G",
     "tmp_du": "3.3M"
   },
@@ -98,7 +94,7 @@
     "done": 1150,
     "total": 1429,
     "inflight": null,
-    "last_id": "BLL5F421l94",
+    "last_id": "7kOoDwrj8c0",
     "channel_id": null,
     "inventory": {
       "public_total": 1429,
@@ -135,28 +131,26 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
         "targets": [
-          "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
+          "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
         ],
         "target_names": [
-          "Data Science",
-          "Entrepreneur"
+          "Data Science"
         ],
         "done": 12190,
-        "left": 104,
+        "left": 4,
         "total": 25851,
-        "no_sub": 311,
-        "eta_min": 13,
-        "eta_hkt": "2026-09-23 15:14 HKT",
+        "no_sub": 253,
+        "eta_min": 1,
+        "eta_hkt": "2026-09-23 15:13 HKT",
         "inflight": null,
-        "jobs": 2,
+        "jobs": 1,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
         "left_global": 9336,
-        "eta_deadline_utc": "2026-09-23T07:14:28Z",
-        "eta_frozen": true,
+        "eta_deadline_utc": "2026-09-23T07:13:59Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
@@ -2220,7 +2214,7 @@
     "next_cron_utc": "2026-09-23T07:15:00Z",
     "next_cron_hkt": "2026-09-23 15:15 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.4G)",
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.5G)",
     "job_restart_at_hkt": "2026-09-23 15:15 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -2239,53 +2233,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T07:12:46Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T07:12:46Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T07:12:46Z captions running=2 target=1 stt_live=none mem=3.6G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T07:12:46Z captions running=2 target=1 stt_live=none mem=3.6G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T07:12:46Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T07:12:46Z captions after fill running=2"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-23T07:12:46Z skip STT — headroom 3.6G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T07:12:46Z skip STT — headroom 3.6G < 6G (captions may still run)"
+      "summary": "2026-09-23T07:12:58Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T07:12:58Z ensure_venv — start"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T07:12:58Z ensure_venv — ok"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T07:12:58Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T07:12:58Z captions running=1 target=1 stt_live=none mem=3.4G cap_signal=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T07:12:58Z captions after fill running=1"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T07:12:58Z skip STT — headroom 3.4G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-23T07:12:46Z captions after fill running=2",
-    "2026-09-23T07:12:46Z skip STT — headroom 3.6G < 6G (captions may still run)",
-    "2026-09-23T07:12:46Z skip STT — headroom 3.6G < 6G (captions may still run)",
-    "backfill-captions.log: incomplete oewnbvCpwDk: pending_stt",
-    "incomplete sCv2lsDn93g: pending_stt",
-    "incomplete BLL5F421l94: pending_stt",
-    "incomplete BLL5F421l94: pending_stt",
-    "incomplete oewnbvCpwDk: pending_stt"
+    "2026-09-23T07:12:58Z captions running=1 target=1 stt_live=none mem=3.4G cap_signal=1",
+    "2026-09-23T07:12:58Z captions after fill running=1",
+    "2026-09-23T07:12:58Z skip STT — headroom 3.4G < 6G (captions may still run)",
+    "backfill-captions.log: }",
+    "{",
+    "\"wrote_progress\": \"<path>",
+    "\"done_count\": 559",
+    "}"
   ],
   "pm": {
     "token_free": true,
@@ -2297,8 +2291,8 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 2,
-    "total_n": 19,
+    "running_n": 1,
+    "total_n": 18,
     "jobs": [
       {
         "id": "live-cap-PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
@@ -2310,17 +2304,6 @@
         "owner": "collector-live",
         "notes": "live captions target",
         "target_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw"
-      },
-      {
-        "id": "live-cap-PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-        "title": "Entrepreneur",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
       },
       {
         "id": "yt-ch-rest",
