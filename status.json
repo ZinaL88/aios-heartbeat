@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T09:35:17Z",
+  "written_at_utc": "2026-09-23T09:35:47Z",
   "written_at_hkt": "2026-09-23 17:35 HKT",
   "token_free": true,
   "processes": {
@@ -18,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.0,
+    "mem_available_gi": 3.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.67,
+        "rss_gi": 2.68,
         "n": 32
       },
       {
@@ -67,14 +67,14 @@
         "n": 2
       },
       {
-        "comm": "yt-dlp",
+        "comm": "x11vnc",
         "rss_gi": 0.05,
-        "n": 1
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 1.7,
+      "cached_gi": 1.8,
       "anon_gi": 1.7,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
@@ -94,7 +94,7 @@
     "done": 561,
     "total": 716,
     "inflight": null,
-    "last_id": "Yri-bNUVh60",
+    "last_id": "qnPOySXL6o0",
     "channel_id": null,
     "inventory": {
       "public_total": 716,
@@ -2214,7 +2214,7 @@
     "next_cron_utc": "2026-09-23T09:40:00Z",
     "next_cron_hkt": "2026-09-23 17:40 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.0G)",
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.1G)",
     "job_restart_at_hkt": "2026-09-23 17:40 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -2233,53 +2233,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:34:44Z skip STT — headroom 3.0G < 6G (captions may still run)"
+      "summary": "2026-09-23T09:35:46Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:35:17Z skip — another reboost holds lock"
+      "summary": "2026-09-23T09:35:46Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:35:17Z ensure_venv — start"
+      "summary": "2026-09-23T09:35:47Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:35:17Z ensure_venv — ok"
+      "summary": "2026-09-23T09:35:47Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:35:17Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-23T09:35:47Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:35:17Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1"
+      "summary": "2026-09-23T09:35:47Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:35:17Z captions after fill running=1"
+      "summary": "2026-09-23T09:35:47Z skip STT — headroom 3.1G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:35:17Z skip STT — headroom 3.1G < 6G (captions may still run)"
+      "summary": "2026-09-23T09:35:47Z skip STT — headroom 3.1G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-23T09:35:17Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1",
-    "2026-09-23T09:35:17Z captions after fill running=1",
-    "2026-09-23T09:35:17Z skip STT — headroom 3.1G < 6G (captions may still run)",
-    "backfill-captions.log: incomplete fhB2jAfQk_E: pending_stt",
-    "incomplete tpIE_5pAYv4: pending_stt",
-    "incomplete y5V8wrmp09I: pending_stt",
-    "incomplete Yri-bNUVh60: pending_stt",
-    "incomplete fhB2jAfQk_E: pending_stt"
+    "2026-09-23T09:35:47Z captions after fill running=1",
+    "2026-09-23T09:35:47Z skip STT — headroom 3.1G < 6G (captions may still run)",
+    "2026-09-23T09:35:47Z skip STT — headroom 3.1G < 6G (captions may still run)",
+    "backfill-captions.log: incomplete qnPOySXL6o0: pending_stt",
+    "incomplete kk-1zJYVu9U: pending_stt",
+    "incomplete yjcJFJb8VMU: pending_stt",
+    "incomplete NnpPE-OjEcE: pending_stt",
+    "incomplete qnPOySXL6o0: pending_stt"
   ],
   "pm": {
     "token_free": true,
