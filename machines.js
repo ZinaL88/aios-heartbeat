@@ -42,7 +42,7 @@
   if (typeof module !== 'undefined' && module.exports) module.exports = {parse,normalize,upsert,expired};
   if (!root.document) return;
   const doc = root.document, $ = id => doc.getElementById(id);
-  let hosts = [], pending = null;
+  let hosts = [], pending = null, expiryView = "";
   function node(tag, value, cls) { const el = doc.createElement(tag); if(value) el.textContent=value; if(cls) el.className=cls; return el; }
   function message(value) { $('message').textContent=value; }
   function persist() {
@@ -62,6 +62,7 @@
     }
   } catch (_) { hosts=[];message('Saved links could not be read. Import fresh status JSON to reconnect.'); }
   function render() {
+    expiryView=hosts.map(h=>h.host.host_id+':'+expired(h)).join('|');
     const list=$('machines');list.replaceChildren();$('count').textContent=hosts.length+' saved';
     if (!hosts.length) {
       const empty=node('div',null,'empty');
@@ -96,5 +97,5 @@
   $('remember').addEventListener('change',persist);
   $('clear').addEventListener('click',()=>{hosts=[];pending=null;$('pairPreview').hidden=true;$('pairing').value='';$('remember').checked=false;persist();render();message('Links forgotten. VM services and jobs remain unchanged.');});
   root.addEventListener('storage',e=>{if(e.key===STORAGE){message('Saved connections changed in another tab. Reload to use the latest links.');}});
-  render();root.setInterval(render,15000);
+  render();root.setInterval(()=>{if(hosts.map(h=>h.host.host_id+':'+expired(h)).join('|')!==expiryView)render();},15000);
 })(typeof window !== 'undefined' ? window : globalThis);
