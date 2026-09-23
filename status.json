@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T09:57:13Z",
+  "written_at_utc": "2026-09-23T09:57:27Z",
   "written_at_hkt": "2026-09-23 17:57 HKT",
   "token_free": true,
   "processes": {
@@ -18,17 +18,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.1,
+    "mem_available_gi": 3.0,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.68,
+        "rss_gi": 2.87,
         "n": 32
       },
       {
         "comm": "plank",
-        "rss_gi": 0.22,
+        "rss_gi": 0.21,
         "n": 3
       },
       {
@@ -38,11 +38,6 @@
       },
       {
         "comm": "Xvfb",
-        "rss_gi": 0.1,
-        "n": 3
-      },
-      {
-        "comm": "websockify",
         "rss_gi": 0.1,
         "n": 3
       },
@@ -59,11 +54,16 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 39
+        "n": 38
+      },
+      {
+        "comm": "websockify",
+        "rss_gi": 0.07,
+        "n": 2
       },
       {
         "comm": "cloudflared",
-        "rss_gi": 0.07,
+        "rss_gi": 0.05,
         "n": 2
       },
       {
@@ -74,13 +74,13 @@
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 1.8,
-      "anon_gi": 1.7,
+      "cached_gi": 1.7,
+      "anon_gi": 1.9,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 4.7
+      "committed_gi": 4.9
     },
-    "load1": 0.56,
+    "load1": 0.6,
     "disk_avail": "103G",
     "tmp_du": "3.7M"
   },
@@ -94,7 +94,7 @@
     "done": 562,
     "total": 716,
     "inflight": null,
-    "last_id": "GTAx2waEFdk",
+    "last_id": "ZHHPbdU2_eU",
     "channel_id": null,
     "inventory": {
       "public_total": 716,
@@ -2214,7 +2214,7 @@
     "next_cron_utc": "2026-09-23T10:00:00Z",
     "next_cron_hkt": "2026-09-23 18:00 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.1G)",
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.0G)",
     "job_restart_at_hkt": "2026-09-23 18:00 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -2233,53 +2233,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:56:41Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1"
+      "summary": "2026-09-23T09:57:25Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:56:41Z captions after fill running=1"
+      "summary": "2026-09-23T09:57:25Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:56:41Z skip STT — headroom 3.1G < 6G (captions may still run)"
+      "summary": "2026-09-23T09:57:26Z captions running=1 target=1 stt_live=none mem=2.8G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:57:12Z skip — another reboost holds lock"
+      "summary": "2026-09-23T09:57:26Z captions running=1 target=1 stt_live=none mem=2.8G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:57:12Z ensure_venv — start"
+      "summary": "2026-09-23T09:57:26Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:57:13Z ensure_venv — ok"
+      "summary": "2026-09-23T09:57:26Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:57:13Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-23T09:57:26Z skip STT — headroom 2.8G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T09:57:13Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-23T09:57:26Z skip STT — headroom 2.8G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-23T09:57:13Z ensure_venv — ok",
-    "2026-09-23T09:57:13Z STT_VENV_OK=1 PY=<path>",
-    "2026-09-23T09:57:13Z STT past ETA deadline — restart parent",
-    "backfill-captions.log: incomplete GTAx2waEFdk: pending_stt",
-    "incomplete gmSNlgoT9Kw: pending_stt",
+    "2026-09-23T09:57:26Z captions after fill running=1",
+    "2026-09-23T09:57:26Z skip STT — headroom 2.8G < 6G (captions may still run)",
+    "2026-09-23T09:57:26Z skip STT — headroom 2.8G < 6G (captions may still run)",
+    "backfill-captions.log: incomplete ZHHPbdU2_eU: pending_stt",
     "incomplete aaDv8hq6cOc: pending_stt",
     "incomplete lt6d8kTAzj4: pending_stt",
-    "incomplete GTAx2waEFdk: pending_stt"
+    "incomplete GTAx2waEFdk: pending_stt",
+    "incomplete ZHHPbdU2_eU: pending_stt"
   ],
   "pm": {
     "token_free": true,
