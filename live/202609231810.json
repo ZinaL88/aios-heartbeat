@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T10:13:41Z",
+  "written_at_utc": "2026-09-23T10:13:58Z",
   "written_at_hkt": "2026-09-23 18:13 HKT",
   "token_free": true,
   "processes": {
@@ -18,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.1,
+    "mem_available_gi": 3.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.67,
+        "rss_gi": 2.69,
         "n": 32
       },
       {
@@ -49,7 +49,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 39
+        "n": 38
       },
       {
         "comm": "websockify",
@@ -80,7 +80,7 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 4.6
     },
-    "load1": 0.3,
+    "load1": 0.21,
     "disk_avail": "103G",
     "tmp_du": "3.7M"
   },
@@ -94,7 +94,7 @@
     "done": 562,
     "total": 716,
     "inflight": null,
-    "last_id": "mc4pflw3Ggc",
+    "last_id": "cVustXBAewE",
     "channel_id": null,
     "inventory": {
       "public_total": 716,
@@ -2214,7 +2214,7 @@
     "next_cron_utc": "2026-09-23T10:15:00Z",
     "next_cron_hkt": "2026-09-23 18:15 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.1G)",
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.2G)",
     "job_restart_at_hkt": "2026-09-23 18:15 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -2233,53 +2233,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:13:09Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-23T10:13:57Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:13:09Z captions after fill running=1"
+      "summary": "2026-09-23T10:13:57Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:13:09Z skip STT — headroom 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-23T10:13:58Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:13:41Z skip — another reboost holds lock"
+      "summary": "2026-09-23T10:13:58Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:13:41Z ensure_venv — start"
+      "summary": "2026-09-23T10:13:58Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:13:41Z ensure_venv — ok"
+      "summary": "2026-09-23T10:13:58Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:13:41Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-23T10:13:58Z skip STT — headroom 3.2G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:13:41Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-23T10:13:58Z skip STT — headroom 3.2G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-23T10:13:41Z ensure_venv — ok",
-    "2026-09-23T10:13:41Z STT_VENV_OK=1 PY=<path>",
-    "2026-09-23T10:13:41Z STT past ETA deadline — restart parent",
-    "backfill-captions.log: incomplete mc4pflw3Ggc: pending_stt",
-    "incomplete fwlAB0P5ojw: pending_stt",
-    "incomplete DAbi8iyokyI: pending_stt",
+    "2026-09-23T10:13:58Z captions after fill running=1",
+    "2026-09-23T10:13:58Z skip STT — headroom 3.2G < 6G (captions may still run)",
+    "2026-09-23T10:13:58Z skip STT — headroom 3.2G < 6G (captions may still run)",
+    "backfill-captions.log: incomplete cVustXBAewE: pending_stt",
     "incomplete PsP0EBViBnw: pending_stt",
-    "incomplete mc4pflw3Ggc: pending_stt"
+    "incomplete mc4pflw3Ggc: pending_stt",
+    "incomplete UNsh0LOEpZ8: pending_stt",
+    "incomplete cVustXBAewE: pending_stt"
   ],
   "pm": {
     "token_free": true,
