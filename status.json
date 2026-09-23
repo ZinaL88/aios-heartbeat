@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T03:36:02Z",
+  "written_at_utc": "2026-09-23T03:36:24Z",
   "written_at_hkt": "2026-09-23 11:36 HKT",
   "token_free": true,
   "processes": {
@@ -20,7 +20,7 @@
         "cmd": "proc"
       },
       {
-        "pid": 1536853,
+        "pid": 1537584,
         "cmd": "proc"
       },
       {
@@ -35,17 +35,17 @@
     "mem_top": [
       {
         "comm": "python",
-        "rss_gi": 3.5,
+        "rss_gi": 3.47,
         "n": 7
       },
       {
         "comm": "node",
-        "rss_gi": 2.81,
+        "rss_gi": 2.82,
         "n": 33
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.74,
+        "rss_gi": 0.73,
         "n": 13
       },
       {
@@ -61,12 +61,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.1,
-        "n": 40
-      },
-      {
-        "comm": "yt-dlp",
-        "rss_gi": 0.09,
-        "n": 2
+        "n": 41
       },
       {
         "comm": "websockify",
@@ -82,17 +77,22 @@
         "comm": "plank",
         "rss_gi": 0.06,
         "n": 3
+      },
+      {
+        "comm": "xfwm4",
+        "rss_gi": 0.06,
+        "n": 3
       }
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 3.7,
-      "anon_gi": 5.9,
+      "cached_gi": 3.6,
+      "anon_gi": 5.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 19.7
+      "committed_gi": 19.6
     },
-    "load1": 4.37,
+    "load1": 5.03,
     "disk_avail": "101G",
     "tmp_du": "532M"
   },
@@ -2250,53 +2250,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:35:32Z STT already running — no second Whisper"
+      "summary": "2026-09-23T03:36:23Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:36:01Z skip — another reboost holds lock"
+      "summary": "2026-09-23T03:36:23Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:36:01Z ensure_venv — start"
+      "summary": "2026-09-23T03:36:23Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.3G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:36:01Z ensure_venv — ok"
+      "summary": "2026-09-23T03:36:23Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.3G cap_signal=none"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:36:01Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-23T03:36:23Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:36:01Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.3G cap_signal=none"
+      "summary": "2026-09-23T03:36:23Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:36:01Z captions after fill running=3"
+      "summary": "2026-09-23T03:36:23Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:36:01Z STT already running — no second Whisper"
+      "summary": "2026-09-23T03:36:23Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-23T03:36:01Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.3G cap_signal=none",
-    "2026-09-23T03:36:01Z captions after fill running=3",
-    "2026-09-23T03:36:01Z STT already running — no second Whisper",
-    "backfill-captions.log: incomplete sOS4c8K9fwI: pending_stt",
-    "YouTube captions: none (manual+auto) → STT allowed",
-    "sleep 6.5s  incomplete sOj27iVEVhc: pending_stt",
-    "incomplete mpA3Bsmj8BI: pending_stt",
-    "incomplete sOS4c8K9fwI: pending_stt"
+    "2026-09-23T03:36:23Z captions after fill running=3",
+    "2026-09-23T03:36:23Z STT already running — no second Whisper",
+    "2026-09-23T03:36:23Z STT already running — no second Whisper",
+    "backfill-captions.log: incomplete iAe-hMLxdaE: pending_stt",
+    "incomplete FKn8f33OWM0: pending_stt",
+    "incomplete WYG4PhfhXuY: pending_stt",
+    "incomplete e0aKI2GGZNg: pending_stt",
+    "incomplete iAe-hMLxdaE: pending_stt"
   ],
   "pm": {
     "token_free": true,
