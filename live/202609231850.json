@@ -1,20 +1,16 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T10:52:07Z",
+  "written_at_utc": "2026-09-23T10:52:36Z",
   "written_at_hkt": "2026-09-23 18:52 HKT",
   "token_free": true,
   "processes": {
-    "whisper": true,
+    "whisper": false,
     "backfill": true,
-    "whisper_n": 1,
+    "whisper_n": 0,
     "backfill_n": 1,
     "stt_channel": null,
     "captions_channel": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
     "sample": [
-      {
-        "pid": 241817,
-        "cmd": "proc"
-      },
       {
         "pid": 235153,
         "cmd": "proc"
@@ -22,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.1,
+    "mem_available_gi": 2.9,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.69,
+        "rss_gi": 2.97,
         "n": 32
       },
       {
@@ -79,12 +75,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 1.8,
-      "anon_gi": 1.8,
+      "anon_gi": 2.0,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 4.7
+      "committed_gi": 5.0
     },
-    "load1": 0.3,
+    "load1": 0.98,
     "disk_avail": "104G",
     "tmp_du": "3.7M"
   },
@@ -98,7 +94,7 @@
     "done": 563,
     "total": 716,
     "inflight": null,
-    "last_id": "Y6x_Hw9Oaio",
+    "last_id": "MKwzhG0BWpk",
     "channel_id": null,
     "inventory": {
       "public_total": 716,
@@ -116,9 +112,9 @@
     },
     "tracks": {
       "stt": {
-        "running": true,
+        "running": false,
         "channel_id": null,
-        "pending": null,
+        "pending": 7533,
         "done": 7422,
         "transcripts_on_disk": 7422,
         "inflight": null,
@@ -126,13 +122,12 @@
         "model": "medium",
         "eta_this_min": 0,
         "eta_min": 0,
-        "eta_hkt": null,
-        "jobs": 1,
-        "pending_global": 7533,
-        "eta_deadline_utc": "2026-09-23T10:52:08Z",
+        "eta_hkt": "2026-09-23 18:52 HKT",
+        "jobs": 0,
+        "eta_deadline_utc": "2026-09-23T10:52:37Z",
         "eta_frozen": false,
-        "overdue": false,
-        "worker_state": "running"
+        "overdue": true,
+        "worker_state": "paused"
       },
       "captions": {
         "running": true,
@@ -2219,8 +2214,8 @@
     "next_cron_utc": "2026-09-23T10:55:00Z",
     "next_cron_hkt": "2026-09-23 18:55 HKT",
     "cron": "*/5",
-    "job_restart": "captions + Whisper running",
-    "job_restart_at_hkt": null,
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 2.9G)",
+    "job_restart_at_hkt": "2026-09-23 18:55 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -2238,53 +2233,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:51:35Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-23T10:52:35Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:51:35Z captions after fill running=1"
+      "summary": "2026-09-23T10:52:35Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:51:35Z skip STT — headroom 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-23T10:52:36Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:52:07Z skip — another reboost holds lock"
+      "summary": "2026-09-23T10:52:36Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:52:07Z ensure_venv — start"
+      "summary": "2026-09-23T10:52:36Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:52:07Z ensure_venv — ok"
+      "summary": "2026-09-23T10:52:36Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:52:07Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-23T10:52:36Z skip STT — headroom 3.2G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:52:07Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-23T10:52:36Z skip STT — headroom 3.2G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-23T10:52:07Z ensure_venv — ok",
-    "2026-09-23T10:52:07Z STT_VENV_OK=1 PY=<path>",
-    "2026-09-23T10:52:07Z STT past ETA deadline — restart parent",
-    "backfill-captions.log: incomplete Y6x_Hw9Oaio: pending_stt",
-    "incomplete lR8c3IcGAHU: pending_stt",
-    "incomplete OywNNc2Mt34: pending_stt",
-    "incomplete MsT6pH9i-sU: pending_stt",
-    "incomplete Y6x_Hw9Oaio: pending_stt"
+    "2026-09-23T10:52:36Z captions after fill running=1",
+    "2026-09-23T10:52:36Z skip STT — headroom 3.2G < 6G (captions may still run)",
+    "2026-09-23T10:52:36Z skip STT — headroom 3.2G < 6G (captions may still run)",
+    "backfill-captions.log: incomplete MKwzhG0BWpk: pending_stt",
+    "incomplete 9wNfLvxJPRA: pending_stt",
+    "incomplete k3ts-Zm6Xfk: pending_stt",
+    "incomplete qzRy5L6tJWw: pending_stt",
+    "incomplete MKwzhG0BWpk: pending_stt"
   ],
   "pm": {
     "token_free": true,
