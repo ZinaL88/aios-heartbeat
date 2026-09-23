@@ -1,13 +1,13 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T04:21:06Z",
+  "written_at_utc": "2026-09-23T04:21:26Z",
   "written_at_hkt": "2026-09-23 12:21 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
     "whisper_n": 3,
-    "backfill_n": 3,
+    "backfill_n": 2,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
     "sample": [
@@ -30,17 +30,17 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.7,
+    "mem_available_gi": 3.5,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "python",
-        "rss_gi": 4.33,
-        "n": 7
+        "rss_gi": 3.84,
+        "n": 6
       },
       {
         "comm": "node",
-        "rss_gi": 2.8,
+        "rss_gi": 2.79,
         "n": 33
       },
       {
@@ -54,9 +54,9 @@
         "n": 1
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.14,
-        "n": 3
+        "comm": "python3",
+        "rss_gi": 0.13,
+        "n": 4
       },
       {
         "comm": "Xvfb",
@@ -66,7 +66,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.1,
-        "n": 40
+        "n": 41
       },
       {
         "comm": "websockify",
@@ -74,12 +74,12 @@
         "n": 2
       },
       {
-        "comm": "python3",
-        "rss_gi": 0.07,
+        "comm": "plank",
+        "rss_gi": 0.06,
         "n": 3
       },
       {
-        "comm": "plank",
+        "comm": "xfwm4",
         "rss_gi": 0.06,
         "n": 3
       }
@@ -87,12 +87,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 1.5,
-      "anon_gi": 6.7,
+      "anon_gi": 6.2,
       "shmem_gi": 0.0,
-      "sreclaimable_gi": 0.3,
-      "committed_gi": 22.8
+      "sreclaimable_gi": 0.4,
+      "committed_gi": 22.4
     },
-    "load1": 9.51,
+    "load1": 9.76,
     "disk_avail": "101G",
     "tmp_du": "533M"
   },
@@ -138,36 +138,34 @@
         "jobs": 3,
         "pending_global": 7547,
         "eta_deadline_utc": "2026-09-27T12:21:07Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
+        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
         "targets": [
           "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-          "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
+          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
         ],
         "target_names": [
           "Data Science",
-          "Entrepreneur",
-          "職場事業心理學"
+          "Entrepreneur"
         ],
         "done": 12174,
-        "left": 116,
+        "left": 107,
         "total": 25851,
         "no_sub": 311,
-        "eta_min": 10,
-        "eta_hkt": "2026-09-23 12:28 HKT",
+        "eta_min": 13,
+        "eta_hkt": "2026-09-23 12:34 HKT",
         "inflight": null,
-        "jobs": 3,
+        "jobs": 2,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
         "left_global": 9315,
-        "eta_deadline_utc": "2026-09-23T04:28:08Z",
-        "eta_frozen": true,
+        "eta_deadline_utc": "2026-09-23T04:34:27Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
@@ -2250,53 +2248,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T04:20:32Z STT already running — no second Whisper"
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T04:21:05Z skip — another reboost holds lock"
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T04:21:05Z ensure_venv — start"
+      "summary": "2026-09-23T04:21:24Z reboost captions pid 1592129 channel PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf alive"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T04:21:05Z ensure_venv — ok"
+      "summary": "2026-09-23T04:21:24Z reboost captions pid 1592129 channel PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf alive"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T04:21:06Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-23T04:21:24Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T04:21:06Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=8.3G cap_signal=none"
+      "summary": "2026-09-23T04:21:24Z captions after fill running=3"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T04:21:06Z captions after fill running=3"
+      "summary": "2026-09-23T04:21:25Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T04:21:06Z STT already running — no second Whisper"
+      "summary": "2026-09-23T04:21:25Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-23T04:21:06Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=8.3G cap_signal=none",
-    "2026-09-23T04:21:06Z captions after fill running=3",
-    "2026-09-23T04:21:06Z STT already running — no second Whisper",
-    "backfill-captions.log: [55<path> 5DGrBZk03vk Tesla 你執咗錢未？一個月升20% 目標價$3500 AI 自動駕駛是如何鍊成？How FSD Full Self Driving works",
-    "[54<path> y9b5m3HQ4uw None",
-    "YouTube captions: none (manual+auto) → STT allowed",
-    "sleep 6.0s",
-    "[55<path> 5DGrBZk03vk Tesla 你執咗錢未？一個月升20% 目標價$3500 AI 自動駕駛是如何鍊成？How FSD Full Self Driving works"
+    "2026-09-23T04:21:24Z captions after fill running=3",
+    "2026-09-23T04:21:25Z STT already running — no second Whisper",
+    "2026-09-23T04:21:25Z STT already running — no second Whisper",
+    "backfill-captions.log: }",
+    "{",
+    "\"wrote_progress\": \"<path>",
+    "\"done_count\": 24",
+    "}"
   ],
   "pm": {
     "token_free": true,
@@ -2308,20 +2306,9 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 4,
-    "total_n": 21,
+    "running_n": 3,
+    "total_n": 20,
     "jobs": [
-      {
-        "id": "live-cap-PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
-        "title": "職場事業心理學",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
-      },
       {
         "id": "live-cap-PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
         "title": "Data Science",
