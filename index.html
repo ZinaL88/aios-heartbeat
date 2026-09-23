@@ -322,7 +322,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">7322</div><div class="s" id="mSttSub">7322 done · 262 pending · Running</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">12169</div><div class="s" id="mCapSub">12169 done · 9314 left · Running</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">6.0G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">5.5G</div><div class="s" id="mRamSub">of 15.6G</div></div>
   <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-23 11:30 HKT</div></div>
 </section>
 
@@ -340,17 +340,17 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <p class="ch" id="sttCh">一个狠人</p>
       <div class="row"><span class="big" id="sttNum">7322</span><span class="mono" id="sttFile">7322 done · 262 pending · now: tMYOi5E14eU</span></div>
       <p class="mono" id="sttEta">ETA 2026-09-27 20:18 HKT</p>
-      <p class="mono" id="sttDisk">7322 transcripts on disk · RAM 6.0 of 15.6G · load 7.37</p>
+      <p class="mono" id="sttDisk">7322 transcripts on disk · RAM 5.5 of 15.6G · load 7.16</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">6.0 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">7.37</span></li>
+      <li><span>RAM free</span><span id="boxRam">5.5 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">7.16</span></li>
       <li><span>Disk</span><span id="boxDisk">101G</span></li>
-      <li><span>Tmp</span><span id="boxTmp">—</span></li>
+      <li><span>Tmp</span><span id="boxTmp">532M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
       <li><span>Next ping</span><span id="boxCron">2026-09-23 11:35 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">captions + Whisper running</span></li>
@@ -362,9 +362,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.82G</span> · node ×33</li><li><span class="mono">1.4G</span> · python ×7</li><li><span class="mono">0.65G</span> · chrome ×13</li><li><span class="mono">0.24G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · bash ×41</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.07G</span> · python3 ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">3.22G</span> · node ×33</li><li><span class="mono">1.46G</span> · python ×7</li><li><span class="mono">0.65G</span> · chrome ×13</li><li><span class="mono">0.24G</span> · csnaps ×1</li><li><span class="mono">0.12G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · bash ×40</li><li><span class="mono">0.07G</span> · websockify ×2</li><li><span class="mono">0.07G</span> · python3 ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-23T03:30:07Z captions after fill running=3</li><li class="mono">2026-09-23T03:30:07Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: incomplete VSiNhOZ6mIQ: pending_stt</li><li class="mono">incomplete 89kY9HFLCyg: pending_stt</li><li class="mono">incomplete BdiW50qfEvA: pending_stt</li><li class="mono">incomplete 6vj96QetfTg: pending_stt</li><li class="mono">incomplete VSiNhOZ6mIQ: pending_stt</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-23T03:30:23Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.4G cap_signal=none</li><li class="mono">2026-09-23T03:30:23Z captions after fill running=3</li><li class="mono">2026-09-23T03:30:23Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: incomplete c0ItZrYyEn0: pending_stt</li><li class="mono">incomplete sOj27iVEVhc: pending_stt</li><li class="mono">incomplete pPai5HEq_e0: pending_stt</li><li class="mono">incomplete 41Px1sDO3rI: pending_stt</li><li class="mono">incomplete c0ItZrYyEn0: pending_stt</li><li><span class="mono">reboost.log</span> 2026-09-23T03:30:23Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
