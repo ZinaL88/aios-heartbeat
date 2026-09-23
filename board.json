@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-23 08:18 HKT",
+  "written_at_hkt": "2026-09-23 08:23 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -97,10 +97,10 @@
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "skip": false,
       "reason": "captions done · STT still running",
-      "captions_done": 480,
+      "captions_done": 481,
       "captions_left": 0,
-      "stt_done": 515,
-      "stt_left": 288,
+      "stt_done": 516,
+      "stt_left": 287,
       "videos_total": 737,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1211,8 +1211,8 @@
       "playlist_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
       "captions_done": 781,
       "captions_left": 0,
-      "stt_done": 148,
-      "stt_left": 768,
+      "stt_done": 168,
+      "stt_left": 748,
       "videos_total": 918,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1265,10 +1265,10 @@
       "videos": 1429,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-      "captions_done": 1088,
-      "captions_left": 57,
-      "stt_done": 462,
-      "stt_left": 246,
+      "captions_done": 1103,
+      "captions_left": 43,
+      "stt_done": 477,
+      "stt_left": 245,
       "videos_total": 1429,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1948,20 +1948,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-      "title": "Data Science",
-      "kind": "playlist",
-      "videos_total": 1429,
-      "videos_source": "inventory",
-      "captions_done": 1088,
-      "captions_left": 57,
-      "stt_done": 462,
-      "stt_left": 246,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
       "title": "十分鐘心理學",
       "kind": "playlist",
@@ -1971,6 +1957,20 @@
       "captions_left": 147,
       "stt_done": 0,
       "stt_left": 147,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+      "title": "Data Science",
+      "kind": "playlist",
+      "videos_total": 1429,
+      "videos_source": "inventory",
+      "captions_done": 1103,
+      "captions_left": 43,
+      "stt_done": 477,
+      "stt_left": 245,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2466,20 +2466,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
-      "title": "Product Management",
-      "kind": "playlist",
-      "videos_total": 918,
-      "videos_source": "inventory",
-      "captions_done": 781,
-      "captions_left": 0,
-      "stt_done": 148,
-      "stt_left": 768,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
       "title": "下班經濟學",
       "kind": "playlist",
@@ -2489,6 +2475,20 @@
       "captions_left": 0,
       "stt_done": 9,
       "stt_left": 760,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
+      "title": "Product Management",
+      "kind": "playlist",
+      "videos_total": 918,
+      "videos_source": "inventory",
+      "captions_done": 781,
+      "captions_left": 0,
+      "stt_done": 168,
+      "stt_left": 748,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -2597,10 +2597,10 @@
       "kind": "channel",
       "videos_total": 737,
       "videos_source": "inventory",
-      "captions_done": 480,
+      "captions_done": 481,
       "captions_left": 0,
-      "stt_done": 515,
-      "stt_left": 288,
+      "stt_done": 516,
+      "stt_left": 287,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
