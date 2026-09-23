@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Machines · HEARTBEAT</title>
+<link rel="stylesheet" href="machines.css">
+<script src="machines.js" defer></script>
+</head>
+<body>
+<main>
+<header><a class="brand" href="index.html">HEARTBEAT</a><span class="tag">REMOTE WORKSPACE · PILOT</span></header>
+<section class="intro"><p class="eyebrow">Your machines, one place to begin</p><h1>Choose where<br>the work happens.</h1><p class="lede">Open a terminal on a saved VM. Your running shell stays there when you close this page.</p></section>
+<div class="layout"><section aria-labelledby="machinesTitle"><div class="section-head"><h2 id="machinesTitle">Machines</h2><span id="count" class="muted">0 saved</span></div><div id="machines"></div>
+<p class="note">A saved link does not mean a machine is online. Opening its terminal checks the connection. Expiry closes remote access; work already running may continue on the VM.</p>
+</section>
+<aside><section class="panel" aria-labelledby="pairTitle"><p class="eyebrow">ADD OR RENEW A CONNECTION</p><h2 id="pairTitle">Bring a VM here</h2><p class="muted">Paste the status JSON returned by the terminal pilot. Keep the password in your private login file.</p>
+<form id="pairForm"><label for="pairing">Pilot status JSON</label><textarea id="pairing" rows="7" maxlength="32768" spellcheck="false" autocomplete="off" placeholder='{"schema":"heartbeat-terminal-pilot/v1", …}' required></textarea><button type="submit" class="primary">Review connection</button></form>
+<div id="pairPreview" hidden></div><p id="message" role="status" aria-live="polite"></p>
+</section><section class="panel quiet"><h2>Your Mac stays separate</h2><p>This page shares no Mac folders, clipboard or SSH credentials. Enter the VM password only at its terminal address.</p><label class="remember"><input type="checkbox" id="remember"> Remember machine links in this browser</label><p class="small">Off: links stay in this page until it closes. On: labels, VM paths and connection details are saved locally. Passwords are never stored here.</p><button id="clear" type="button" class="subtle">Forget all saved links</button></section></aside></div>
+<footer>HEARTBEAT opens the connection. The selected VM runs the work. Other Macs and VMs are never enrolled automatically.</footer>
+</main>
+</body></html>
