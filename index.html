@@ -263,10 +263,10 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-09-23 18:57 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-09-23 18:57 HKT · v21</p>
+    <p class="mono" id="pingLine">ping 2026-09-23 19:02 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-09-23 19:02 HKT · v21</p>
     <p class="mono" style="margin:6px 0 0"><a class="lib-link" href="library.html?v=23" style="color:var(--lime);text-decoration:none;font-weight:600">Library</a>
-      <span style="color:var(--muted)"> · search transcripts &amp; check schema fields</span></p>
+      <span style="color:var(--muted)"> · search transcripts &amp; check schema fields · </span><a class="lib-link" href="machines.html" style="color:var(--lime);text-decoration:none;font-weight:600">Machines &amp; terminal</a></p>
   </div>
   <div class="pills" id="livePills">
     <span class="pill on" id="pillPing"><span class="dot"></span>PING —</span>
@@ -286,7 +286,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 
 <section class="now">
   <div><span class="label">now</span> <span class="body" id="nowBody">STT Paused · backlog 7533 · captions Entrepreneur</span></div>
-  <span class="mono" id="nowTs">2026-09-23 18:57 HKT</span>
+  <span class="mono" id="nowTs">2026-09-23 19:02 HKT</span>
 </section>
 
 <section class="card" id="opsCard">
@@ -311,19 +311,29 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
   <p class="mono" id="opsState" style="margin-top:8px;min-height:28px;word-break:break-word;box-sizing:border-box">Paste a Share link — default this video only.</p>
 </section>
 
+<section class="card" id="systemEvents">
+  <h2>SYSTEM EVENTS</h2>
+  <p class="mono">Worker failures, recovery, resource changes and corpus observations.</p>
+  <div id="systemEventList" class="mono" style="white-space:pre-wrap">Loading events…</div>
+</section>
+<section class="card" id="corpusMetrics">
+  <h2>CORPUS</h2>
+  <p id="corpusCounts" class="mono">Loading unique-video totals…</p>
+  <p class="mono">Ever observed totals start with the durable ledger. Current disk counts can decrease. Transcripts include caption-derived text; local STT is counted separately.</p>
+</section>
 <section class="card" id="opsRecent">
   <p class="hlabel">Recent Ops</p>
-  <p class="mono" style="margin:0 0 4px">Adds / removes / priority from the Ops audit (HKT).</p>
-  <ul id="opsRecentList"><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added video jtI4-XyddB8 (video-only)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-23 00:29 HKT</span> · <span class="opsId">jtI4-XyddB8</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added video od5pYY61yJ8 (video-only)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-23 00:28 HKT</span> · <span class="opsId">od5pYY61yJ8</span></div></div></li><li class="opsRow" data-kind="ensure"><span class="opsPill ensure">Ensure</span><div class="opsBody"><div class="opsSum">Heartbeat ensure (3 steps)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 21:44 HKT</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added video uidUolLGrJw (video-only)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 11:27 HKT</span> · <span class="opsId">uidUolLGrJw</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added video uidUolLGrJw (video-only)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 11:27 HKT</span> · <span class="opsId">uidUolLGrJw</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added video 4VBjjkbEthY (video-only)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:43 HKT</span> · <span class="opsId">4VBjjkbEthY</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added video 4VBjjkbEthY (video+channel)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:43 HKT</span> · <span class="opsId">4VBjjkbEthY</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added channel @RiseAboveReality-01</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:43 HKT</span> · <span class="opsId">@RiseAboveReality-01</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added video 4VBjjkbEthY (video-only)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:43 HKT</span> · <span class="opsId">4VBjjkbEthY</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added video 4VBjjkbEthY (video+channel)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:41 HKT</span> · <span class="opsId">4VBjjkbEthY</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added channel @RiseAboveReality-01</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:41 HKT</span> · <span class="opsId">@RiseAboveReality-01</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Added</span><div class="opsBody"><div class="opsSum">Added video 4VBjjkbEthY (video-only)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:41 HKT</span> · <span class="opsId">4VBjjkbEthY</span></div></div></li></ul>
+  <p class="mono" style="margin:0 0 4px">Completed action history (HKT), not a pending queue. Applied means saved to the source; collection may still be in progress.</p>
+  <ul id="opsRecentList"><li class="opsRow" data-kind="added"><span class="opsPill added">Applied</span><div class="opsBody"><div class="opsSum"><a href="https://youtu.be/jtI4-XyddB8" target="_blank" rel="noopener noreferrer">Title unavailable · jtI4-XyddB8 (video)</a></div><div class="opsMeta mono"><span class="opsWhen">2026-09-23 00:29 HKT</span> · <span class="opsId">jtI4-XyddB8</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Applied</span><div class="opsBody"><div class="opsSum"><a href="https://youtu.be/od5pYY61yJ8" target="_blank" rel="noopener noreferrer">Title unavailable · od5pYY61yJ8 (video)</a></div><div class="opsMeta mono"><span class="opsWhen">2026-09-23 00:28 HKT</span> · <span class="opsId">od5pYY61yJ8</span></div></div></li><li class="opsRow" data-kind="ensure"><span class="opsPill ensure">Applied</span><div class="opsBody"><div class="opsSum">heartbeat_ensure</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 21:44 HKT</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Already present</span><div class="opsBody"><div class="opsSum"><a href="https://youtu.be/uidUolLGrJw" target="_blank" rel="noopener noreferrer">Title unavailable · uidUolLGrJw (video)</a></div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 11:27 HKT</span> · <span class="opsId">uidUolLGrJw</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Applied</span><div class="opsBody"><div class="opsSum"><a href="https://youtu.be/uidUolLGrJw" target="_blank" rel="noopener noreferrer">Title unavailable · uidUolLGrJw (video)</a></div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 11:27 HKT</span> · <span class="opsId">uidUolLGrJw</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Already present</span><div class="opsBody"><div class="opsSum"><a href="https://youtu.be/4VBjjkbEthY" target="_blank" rel="noopener noreferrer">Salary Negotiation - 10  tips on how to negotiate a Higher Salary (video)</a></div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:43 HKT</span> · <span class="opsId">4VBjjkbEthY</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Already present</span><div class="opsBody"><div class="opsSum"><a href="https://youtu.be/4VBjjkbEthY" target="_blank" rel="noopener noreferrer">Salary Negotiation - 10  tips on how to negotiate a Higher Salary (video + channel)</a></div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:43 HKT</span> · <span class="opsId">4VBjjkbEthY</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Already present</span><div class="opsBody"><div class="opsSum">https://www.youtube.com/@RiseAboveReality-01 (channel)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:43 HKT</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Applied</span><div class="opsBody"><div class="opsSum"><a href="https://youtu.be/4VBjjkbEthY" target="_blank" rel="noopener noreferrer">Salary Negotiation - 10  tips on how to negotiate a Higher Salary (video + channel)</a></div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:41 HKT</span> · <span class="opsId">4VBjjkbEthY</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Applied</span><div class="opsBody"><div class="opsSum">https://www.youtube.com/@RiseAboveReality-01 (channel)</div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:41 HKT</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Applied</span><div class="opsBody"><div class="opsSum"><a href="https://youtu.be/4VBjjkbEthY" target="_blank" rel="noopener noreferrer">Salary Negotiation - 10  tips on how to negotiate a Higher Salary (video)</a></div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:41 HKT</span> · <span class="opsId">4VBjjkbEthY</span></div></div></li><li class="opsRow" data-kind="added"><span class="opsPill added">Applied</span><div class="opsBody"><div class="opsSum"><a href="https://youtu.be/4VBjjkbEthY" target="_blank" rel="noopener noreferrer">Salary Negotiation - 10  tips on how to negotiate a Higher Salary (video)</a></div><div class="opsMeta mono"><span class="opsWhen">2026-09-22 08:06 HKT</span> · <span class="opsId">4VBjjkbEthY</span></div></div></li></ul>
 </section>
 
 
 
 <section class="metrics" id="metrics">
-  <div class="metric"><div class="k">STT done</div><div class="v" id="mStt">7422</div><div class="s" id="mSttSub">7422 done · 7533 pending · Paused</div></div>
+  <div class="metric"><div class="k">Transcripts on disk</div><div class="v" id="mStt">7422</div><div class="s" id="mSttSub">7422 on disk · 7533 pending in worker scope · Paused</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">12198</div><div class="s" id="mCapSub">12198 done · 9329 left · Running</div></div>
-  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">3.0G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-23 18:57 HKT</div></div>
+  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">3.2G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-23 19:02 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -338,22 +348,22 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
     <div class="work-block">
       <div class="row"><span class="mono"><span class="pill warn" id="sttStatePill"><span class="dot"></span><span id="sttState">Paused · backlog 7533</span></span> STT</span></div>
       <p class="ch" id="sttCh">Paused · backlog 7533</p>
-      <div class="row"><span class="big" id="sttNum">7422</span><span class="mono" id="sttFile">7422 done · 7533 pending</span></div>
+      <div class="row"><span class="big" id="sttNum">7422</span><span class="mono" id="sttFile">7422 on disk · 7533 pending in worker scope</span></div>
       <p class="mono overdue" id="sttEta">ETA overdue · worker stopped</p>
-      <p class="mono" id="sttDisk">7422 transcripts on disk · RAM 3.0 of 15.6G · load 0.43</p>
+      <p class="mono" id="sttDisk">7422 transcripts on disk · RAM 3.2 of 15.6G · load 0.64</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">3.0 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">0.43</span></li>
+      <li><span>RAM free</span><span id="boxRam">3.2 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">0.64</span></li>
       <li><span>Disk</span><span id="boxDisk">104G</span></li>
-      <li><span>Tmp</span><span id="boxTmp">3.7M</span></li>
+      <li><span>Tmp</span><span id="boxTmp">3.8M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
-      <li><span>Next ping</span><span id="boxCron">2026-09-23 19:00 HKT</span></li>
-      <li><span>Jobs</span><span id="boxJobs">captions on · Whisper blocked until 6.0G (now 3.0G)</span></li>
+      <li><span>Next ping</span><span id="boxCron">2026-09-23 19:05 HKT</span></li>
+      <li><span>Jobs</span><span id="boxJobs">captions on · Whisper blocked until 6.0G (now 3.2G)</span></li>
       <li><span>RAM gate</span><span id="boxGate">6.0G</span></li>
     </ul>
     <div class="pills" style="margin-top:10px" id="boxPills">
@@ -362,9 +372,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.67G</span> · node ×32</li><li><span class="mono">0.21G</span> · plank ×3</li><li><span class="mono">0.11G</span> · xfwm4 ×3</li><li><span class="mono">0.11G</span> · csnaps ×1</li><li><span class="mono">0.1G</span> · python3 ×5</li><li><span class="mono">0.1G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · websockify ×3</li><li><span class="mono">0.09G</span> · bash ×39</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.71G</span> · node ×32</li><li><span class="mono">0.18G</span> · plank ×3</li><li><span class="mono">0.11G</span> · csnaps ×1</li><li><span class="mono">0.1G</span> · python3 ×4</li><li><span class="mono">0.1G</span> · Xvfb ×3</li><li><span class="mono">0.09G</span> · xfwm4 ×3</li><li><span class="mono">0.09G</span> · bash ×38</li><li><span class="mono">0.07G</span> · websockify ×2</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-23T10:57:46Z captions after fill running=1</li><li class="mono">2026-09-23T10:57:46Z skip STT — headroom 3.1G &lt; 6G (captions may still run)</li><li class="mono">backfill-captions.log: incomplete xcNTwehA7mc: pending_stt</li><li class="mono">incomplete s86yBEddLoY: pending_stt</li><li class="mono">incomplete BrYLV8Tx9_4: pending_stt</li><li class="mono">incomplete 44HorvhWDPo: pending_stt</li><li class="mono">incomplete xcNTwehA7mc: pending_stt</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-23T11:02:56Z captions after fill running=1</li><li class="mono">2026-09-23T11:02:56Z skip STT — headroom 3.2G &lt; 6G (captions may still run)</li><li class="mono">backfill-captions.log: incomplete zMWMGMe7XXA: pending_stt</li><li class="mono">incomplete 4modzK3Qozg: pending_stt</li><li class="mono">incomplete T2ynZuKG35A: pending_stt</li><li class="mono">incomplete MgRqZT1v9sk: pending_stt</li><li class="mono">incomplete zMWMGMe7XXA: pending_stt</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
@@ -499,17 +509,19 @@ function workerPhase(running, leftover){
 }
 function phasePillClass(phase){
   if(phase==="running") return "on";
-  if(phase==="paused") return "warn";
+  if(phase==="paused"||phase==="failed") return "warn";
   return "done";
 }
 function phaseLabel(phase, jobs, leftover){
   if(phase==="running") return jobs?("Running · "+jobs+" workers"):"Running";
+  if(phase==="failed") return "Failed · restart deferred";
   if(phase==="paused") return "Paused · backlog "+leftover;
   return "Caught up";
 }
 function etaCopy(blk, phase){
   var overdue=!!(blk.overdue||blk.eta_frozen);
   var eta=blk.eta_hkt;
+  if(phase==="failed") return "ETA unavailable · worker failed";
   if(phase==="caught_up") return "—";
   if(phase==="paused") return (overdue||eta)?"ETA overdue · worker stopped":"ETA — · worker stopped";
   if(eta) return "ETA "+eta+(blk.overdue?" · overdue":"");
@@ -530,11 +542,12 @@ function paintOpsRecent(rows){
     if(!row||typeof row!=="object") return;
     var kind=String(row.kind||"added");
     var label=String(row.label||kind);
-    var summary=String(row.summary||"—").replace(/</g,"&lt;");
+    var summary=escHtml(row.summary||"—");
     var when=String(row.at_hkt||"").replace(/</g,"&lt;");
     var rid=String(row.id||"").replace(/</g,"&lt;");
     var ref=String(row.ref||"");
     if(/127\.0\.0\.1|localhost/i.test(ref)) ref="";
+    if(/^https:\/\/(youtu\.be|www\.youtube\.com)\//.test(ref)) summary='<a target="_blank" rel="noopener noreferrer" href="'+escHtml(ref)+'">'+summary+'</a>';
     var pill="opsPill "+({added:"added",removed:"removed",priority:"priority",ensure:"ensure"}[kind]||"");
     var meta=[];
     if(when) meta.push('<span class="opsWhen">'+when+'</span>');
@@ -573,8 +586,8 @@ function paint(d){
     var sttPendEarly=(stt.pending!=null?stt.pending:0);
     var capLeftEarly=(cap.left!=null?cap.left:0);
     if(!capRun && cap.left_global!=null) capLeftEarly=cap.left_global;
-    var sttPhase=workerPhase(sttRun, sttPendEarly);
-    var capPhase=workerPhase(capRun, capLeftEarly);
+    var sttPhase=(stt.operational_state||stt.worker_state)||workerPhase(sttRun, sttPendEarly);
+    var capPhase=(cap.operational_state||cap.worker_state)||workerPhase(capRun, capLeftEarly);
     var sttStateLbl=phaseLabel(sttPhase, 0, sttPendEarly);
     var capStateLbl=phaseLabel(capPhase, jobs, capLeftEarly);
     setPillPhase("pillStt",sttPhase,"STT "+sttStateLbl.split(" · ")[0]);
@@ -582,8 +595,8 @@ function paint(d){
     setPillPhase("boxPillStt",sttPhase,"STT "+sttStateLbl.split(" · ")[0]);
     setPillPhase("boxPillCap",capPhase,"Captions "+capStateLbl.split(" · ")[0]);
 
-    var sttName=sttRun?title(stt.channel_id):(sttPhase==="paused"?("Paused · backlog "+sttPendEarly):"Caught up");
-    var capName=capRun?capLabel(cap):(capPhase==="paused"?("Paused · backlog "+capLeftEarly):"Caught up");
+    var sttName=sttRun?title(stt.channel_id):sttStateLbl;
+    var capName=capRun?capLabel(cap):capStateLbl;
     set("nowBody","STT "+sttName+" · captions "+capName);
     set("nowTs",ping);
 
@@ -598,8 +611,8 @@ function paint(d){
     else if(cap.left!=null) capLeft=cap.left;
     else capLeft=0;
     var totC=(prog.captions_total!=null?prog.captions_total:(cap.total!=null?cap.total:(capDone+capLeft)));
-    capPhase=(cap.worker_state==="running"||cap.worker_state==="paused"||cap.worker_state==="caught_up")?cap.worker_state:workerPhase(capRun, capLeft);
-    sttPhase=(stt.worker_state==="running"||stt.worker_state==="paused"||stt.worker_state==="caught_up")?stt.worker_state:workerPhase(sttRun, sttPend);
+    capPhase=((cap.operational_state||cap.worker_state)==="running"||(cap.operational_state||cap.worker_state)==="paused"||(cap.operational_state||cap.worker_state)==="caught_up"||(cap.operational_state||cap.worker_state)==="failed")?(cap.operational_state||cap.worker_state):workerPhase(capRun, capLeft);
+    sttPhase=((stt.operational_state||stt.worker_state)==="running"||(stt.operational_state||stt.worker_state)==="paused"||(stt.operational_state||stt.worker_state)==="caught_up"||(stt.operational_state||stt.worker_state)==="failed")?(stt.operational_state||stt.worker_state):workerPhase(sttRun, sttPend);
     capStateLbl=phaseLabel(capPhase, jobs, capLeft);
     sttStateLbl=phaseLabel(sttPhase, 0, sttPend);
     setPillPhase("pillStt",sttPhase,"STT "+sttStateLbl.split(" · ")[0]);
@@ -607,7 +620,7 @@ function paint(d){
     setPillPhase("boxPillStt",sttPhase,"STT "+sttStateLbl.split(" · ")[0]);
     setPillPhase("boxPillCap",capPhase,"Captions "+capStateLbl.split(" · ")[0]);
     set("mStt",String(sttDone));
-    set("mSttSub",sttDone+" done · "+sttPend+" pending · "+sttStateLbl.split(" · ")[0]);
+    set("mSttSub",sttDone+" on disk · "+sttPend+" pending in worker scope · "+sttStateLbl.split(" · ")[0]);
     set("mCap",String(capDone));
     set("mCapSub",capDone+" done · "+capLeft+" left · "+capStateLbl.split(" · ")[0]);
     var mem=res.mem_available_gi, tot=res.mem_total_gi;
@@ -621,7 +634,7 @@ function paint(d){
 
     set("capState",capStateLbl);
     var capPill=$("capStatePill"); if(capPill) capPill.className="pill "+phasePillClass(capPhase);
-    set("capCh",capRun?capLabel(cap):(capPhase==="paused"?("Paused · backlog "+capLeft):(cap.next_name||"Caught up")));
+    set("capCh",capRun?capLabel(cap):capStateLbl);
     set("capNum",String(capDone));
     set("capWorkers",capDone+" done · "+capLeft+" left"+(capRun&&jobs?(" · "+jobs+" workers"):""));
     set("capEta",etaCopy(cap, capPhase));
@@ -629,9 +642,9 @@ function paint(d){
 
     set("sttState",sttStateLbl);
     var sttPill=$("sttStatePill"); if(sttPill) sttPill.className="pill "+phasePillClass(sttPhase);
-    set("sttCh",sttRun?title(stt.channel_id):(sttPhase==="paused"?("Paused · backlog "+sttPend):"Caught up"));
+    set("sttCh",sttRun?title(stt.channel_id):sttStateLbl);
     set("sttNum",String(sttDone));
-    set("sttFile",sttDone+" done · "+sttPend+" pending"+(sttRun&&stt.inflight?(" · now: "+stt.inflight):""));
+    set("sttFile",sttDone+" on disk · "+sttPend+" pending in worker scope"+(sttRun&&stt.inflight?(" · now: "+stt.inflight):""));
     set("sttEta",etaCopy(stt, sttPhase));
     var sttEta=$("sttEta"); if(sttEta) sttEta.className="mono"+(((sttPhase==="paused"&&(stt.overdue||stt.eta_frozen))||(sttRun&&stt.overdue))?" overdue":"");
     set("sttDisk",(stt.transcripts_on_disk!=null?stt.transcripts_on_disk:sttDone)+" transcripts on disk · RAM "+(mem!=null?mem:"—")+" of "+(tot!=null?tot:"—")+"G · load "+(res.load1!=null?res.load1:"—"));
@@ -678,6 +691,9 @@ function paint(d){
     setHTML("reboostLog", logs.length?logs.join(""):"<li class='mono'>—</li>");
 
     paintOpsRecent(d.ops_recent||[]);
+    var corpus=(d.collector||{}).corpus||{};
+    set("corpusCounts", corpus.since ? ("Unique transcripts ever observed: "+corpus.transcripts_ever+" · currently present: "+(corpus.transcripts_present==null?"unavailable":corpus.transcripts_present)+" · local STT ever observed: "+corpus.local_stt_ever+" · since "+corpus.since+(corpus.observed_at_utc?" · disk observed "+corpus.observed_at_utc:"")) : "Corpus ledger will initialize on the next source heartbeat.");
+    set("systemEventList", (d.system_events||[]).slice(-12).reverse().map(function(e){return e.at_utc+" · "+e.summary;}).join("\n")||"No recorded changes yet.");
 
     var safe=[];
     if(pm.now) safe.push("<li>"+String(pm.now).replace(/</g,"&lt;")+"</li>");
@@ -1378,6 +1394,7 @@ function opsReadScope(){
     all: all
   };
 }
+var opsRequestPending=null;
 function opsCall(kind){
   opsSaveCreds();
   var base=opsBase();
@@ -1394,6 +1411,11 @@ function opsCall(kind){
   } else if(kind==="heartbeat"){
     path="/ops/heartbeat/ensure"; body={sync:true};
   } else { opsSetResult("Failed: unknown action", "err"); return; }
+  var fingerprint=path+JSON.stringify(body);
+  if(!opsRequestPending || opsRequestPending.fingerprint!==fingerprint){
+    opsRequestPending={fingerprint:fingerprint,id:crypto.randomUUID()};
+  }
+  body.request_id=opsRequestPending.id;
   opsSetResult("Calling… "+path, "busy");
   opsBusy(true);
   var headers={"Content-Type":"application/json"};
@@ -1402,6 +1424,7 @@ function opsCall(kind){
     .then(function(r){ return r.json().then(function(j){ return {status:r.status,j:j}; }).catch(function(){ return {status:r.status,j:{ok:false,error:"bad_json"}}; }); })
     .then(function(x){
       var j=x.j||{};
+      if(x.status!==0 && j.error!=="bad_json") opsRequestPending=null;
       var err=(j.error||"")+"";
       if(x.status===401 || err.indexOf("unauthorized")>=0){
         opsSetResult("Failed: auth on VM proxy — tell Jarvis (tunnel should inject key).", "err");

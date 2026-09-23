@@ -8,18 +8,19 @@ Do NOT dual-maintain a separate v5.html paint path.
 - Header: HEARTBEAT + ping timestamp + live PING/STT/captions pills
 - THREE LANES: Brain (SuperGrok Build) · Source (GitHub ai-os) · Hands (shell loop / watchdog — not crontab)
 - NOW banner: active STT/captions ids **or** honest Paused · backlog N / Caught up
-- Metrics row: **STT done** (primary) + pending secondary · **Captions done** (primary) + left secondary · RAM free · Ping — same three-state language
+- Metrics row: **Transcripts on disk** (primary; includes caption-derived text) + pending secondary · **Captions done** (primary) + left secondary · RAM free · Ping — same failure-aware language
 - WORK panel: CAPTIONS + STT — big number = **done**; subline `N done · M left` (show `now: {name}` only when running; never `file -` when no inflight)
 - PROGRESS card: cumulative totals + top channels by done counts (phone-readable)
 - BOX · HEARTBEAT: RAM/load/disk/tmp/cookies/next ping, RAM TOP, REBOOST LOG
 - QUEUE: Edit, search, filters (Queued / Running / **Done** / All / Channels / Playlists), drag reorder, git-save stamp
 - DO NOT safety panel
 
-## Three worker states only (v19 — never regress)
-Never say **idle**. Exactly three states:
+## Worker states (failure-aware)
+Never say **idle**. Four states:
 1. **Running** (green) — workers alive (`tracks.*.running=true` from live procs)
 2. **Paused** (amber) — no workers BUT pending/left > 0 — copy: `Paused · backlog N`
-3. **Caught up** (muted) — pending/left == 0 — copy: `Caught up`
+3. **Caught up** (muted) — pending/left == 0 and no recorded failure — copy: `Caught up`
+4. **Failed** (amber) — recorded crash/contract failure; restart backoff and circuit state exposed. A live worker remains Running; failed slots remain visible in health/events.
 
 ETA rules:
 - Running → live ETA (or calculating)
@@ -54,7 +55,7 @@ Cache-bust board fetches with `?v=20`.
   - live `backfill_members.py --mode captions` (argv) count >0 but `tracks.captions.running` false OR `jobs==0`
   - live STT/whisper but `tracks.stt.running` false
   - disk STT done >100 but `tracks.stt.done` / `transcripts_on_disk` ==0
-  - pending/left >0 and not running but `worker_state` ≠ `paused` (bare idle banned)
+  - pending/left >0 and not running but `worker_state` not in `paused` / `failed` (bare idle banned)
 - Also prove Pages: `curl` public `status.json` and assert `tracks.captions.running` matches box live count.
 - UI click/DOM QA on `?v=20`: captions pill = Running when workers live, else Paused · backlog N / Caught up. No `file -`. ETA overdue explained when paused.
 
@@ -66,3 +67,6 @@ Cache-bust board fetches with `?v=20`.
 - Queue/other lists scroll inside cards on narrow screens; sticky edit bar + confirm sheet stay phone-friendly.
 - Patch **ops/status/render_public_html.py** (not only mirrored index.html) so status sync keeps fixes.
 - Cache-bust library links / board fetch `?v=21`.
+
+## Operational truth update
+Recent Ops is immutable completed-action history. SYSTEM EVENTS records transitions. Unique-video corpus totals live in a durable ledger; scope progress is separate. Original spoken language must be preserved; automatic audio language detection must not inherit channel/title guesses. See PRINCIPLES.md and the source ops/status/OPERATIONS.md.

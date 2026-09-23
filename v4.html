@@ -66,8 +66,8 @@ body { overflow-x:hidden; max-width:100vw;
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-23 18:57 HKT</span></div>
-<p class="mono" id="ping">2026-09-23 18:57 HKT</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-09-23 19:02 HKT</span></div>
+<p class="mono" id="ping">2026-09-23 19:02 HKT</p>
 
 <div class="card">
   <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">no child</span></div>
@@ -93,9 +93,9 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 3.0G / 15.6G · load 0.43</p>
-  <p class="mono" id="box2">disk 104G · tmp 3.7M · cookies no</p>
-  <p class="mono" id="sched">next ping 2026-09-23 19:00 HKT · captions on · Whisper blocked until 6.0G (now 3.0G)</p>
+  <p class="ch" id="ram">RAM 3.2G / 15.6G · load 0.64</p>
+  <p class="mono" id="box2">disk 104G · tmp 3.8M · cookies no</p>
+  <p class="mono" id="sched">next ping 2026-09-23 19:05 HKT · captions on · Whisper blocked until 6.0G (now 3.2G)</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
@@ -127,7 +127,7 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-23T10:57:45Z STT past ETA deadline — restart parent</li><li><span class="mono">reboost.log</span> 2026-09-23T10:57:46Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1</li><li><span class="mono">reboost.log</span> 2026-09-23T10:57:46Z captions after fill running=1</li><li><span class="mono">reboost.log</span> 2026-09-23T10:57:46Z skip STT — headroom 3.1G &lt; 6G (captions may still run)</li><li class="mono">incomplete BrYLV8Tx9_4: pending_stt</li><li class="mono">incomplete 44HorvhWDPo: pending_stt</li><li class="mono">incomplete xcNTwehA7mc: pending_stt</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-09-23T11:02:55Z STT past ETA deadline — restart parent</li><li><span class="mono">reboost.log</span> 2026-09-23T11:02:56Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1</li><li><span class="mono">reboost.log</span> 2026-09-23T11:02:56Z captions after fill running=1</li><li><span class="mono">reboost.log</span> 2026-09-23T11:02:56Z skip STT — headroom 3.2G &lt; 6G (captions may still run)</li><li class="mono">incomplete T2ynZuKG35A: pending_stt</li><li class="mono">incomplete MgRqZT1v9sk: pending_stt</li><li class="mono">incomplete zMWMGMe7XXA: pending_stt</li></ol>
 </div>
 
 <div class="card">
@@ -191,13 +191,6 @@ function timed(url, headers){
   var c=new AbortController();
   var t=setTimeout(function(){c.abort();},8000);
   return fetch(url,{cache:"no-store",headers:headers||{},signal:c.signal}).finally(function(){clearTimeout(t);});
-}
-function slot(backMin){
-  var t=Date.now()+8*3600*1000-(backMin||0)*60000;
-  var d=new Date(t);
-  var m=d.getUTCMinutes(); m=m-m%5;
-  function p(n){return (n<10?"0":"")+n;}
-  return "live/"+d.getUTCFullYear()+p(d.getUTCMonth()+1)+p(d.getUTCDate())+p(d.getUTCHours())+p(m)+".json";
 }
 function pull(){
   if(window.__hbIn) return;

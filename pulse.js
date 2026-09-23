@@ -48,13 +48,6 @@ function timed(url, headers){
   var t=setTimeout(function(){c.abort();},8000);
   return fetch(url,{cache:"no-store",headers:headers||{},signal:c.signal}).finally(function(){clearTimeout(t);});
 }
-function slot(backMin){
-  var t=Date.now()+8*3600*1000-(backMin||0)*60000;
-  var d=new Date(t);
-  var m=d.getUTCMinutes(); m=m-m%5;
-  function p(n){return (n<10?"0":"")+n;}
-  return "live/"+d.getUTCFullYear()+p(d.getUTCMonth()+1)+p(d.getUTCDate())+p(d.getUTCHours())+p(m)+".json";
-}
 function pull(){
   if(window.__hbIn) return;
   window.__hbIn=1;
