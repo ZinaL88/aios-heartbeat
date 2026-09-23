@@ -340,7 +340,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <p class="ch" id="sttCh">Paused · backlog 7534</p>
       <div class="row"><span class="big" id="sttNum">7416</span><span class="mono" id="sttFile">7416 done · 7534 pending</span></div>
       <p class="mono overdue" id="sttEta">ETA overdue · worker stopped</p>
-      <p class="mono" id="sttDisk">7416 transcripts on disk · RAM 3.2 of 15.6G · load 0.5</p>
+      <p class="mono" id="sttDisk">7416 transcripts on disk · RAM 3.2 of 15.6G · load 0.39</p>
     </div>
   </div>
 
@@ -348,7 +348,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
       <li><span>RAM free</span><span id="boxRam">3.2 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">0.5</span></li>
+      <li><span>Load</span><span id="boxLoad">0.39</span></li>
       <li><span>Disk</span><span id="boxDisk">104G</span></li>
       <li><span>Tmp</span><span id="boxTmp">3.5M</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
@@ -362,9 +362,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.6G</span> · node ×32</li><li><span class="mono">0.23G</span> · plank ×3</li><li><span class="mono">0.14G</span> · xfwm4 ×3</li><li><span class="mono">0.1G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · python3 ×4</li><li><span class="mono">0.09G</span> · bash ×38</li><li><span class="mono">0.08G</span> · cloudflared ×2</li><li><span class="mono">0.07G</span> · websockify ×2</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.61G</span> · node ×32</li><li><span class="mono">0.23G</span> · plank ×3</li><li><span class="mono">0.14G</span> · xfwm4 ×3</li><li><span class="mono">0.1G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · python3 ×4</li><li><span class="mono">0.09G</span> · bash ×38</li><li><span class="mono">0.08G</span> · cloudflared ×2</li><li><span class="mono">0.07G</span> · websockify ×2</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-23T08:13:10Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1</li><li class="mono">2026-09-23T08:13:10Z captions after fill running=1</li><li class="mono">2026-09-23T08:13:10Z skip STT — headroom 3.2G &lt; 6G (captions may still run)</li><li class="mono">backfill-captions.log: incomplete Vv20KYebDdY: pending_stt</li><li class="mono">incomplete -2paEfvTID4: pending_stt</li><li class="mono">incomplete pyNHUm1JFQU: pending_stt</li><li class="mono">incomplete VW8AJq6FgxU: pending_stt</li><li class="mono">incomplete Vv20KYebDdY: pending_stt</li><li><span class="mono">reboost.log</span> 2026-09-23T08:13:10Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-23T08:13:24Z captions after fill running=1</li><li class="mono">2026-09-23T08:13:24Z skip STT — headroom 3.1G &lt; 6G (captions may still run)</li><li class="mono">backfill-captions.log: incomplete JQGFM22hUTo: pending_stt</li><li class="mono">incomplete VW8AJq6FgxU: pending_stt</li><li class="mono">incomplete Vv20KYebDdY: pending_stt</li><li class="mono">incomplete yMOU8_hhLL8: pending_stt</li><li class="mono">incomplete JQGFM22hUTo: pending_stt</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>

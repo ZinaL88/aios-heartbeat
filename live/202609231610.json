@@ -1,6 +1,6 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T08:13:10Z",
+  "written_at_utc": "2026-09-23T08:13:25Z",
   "written_at_hkt": "2026-09-23 16:13 HKT",
   "token_free": true,
   "processes": {
@@ -23,7 +23,7 @@
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.6,
+        "rss_gi": 2.61,
         "n": 32
       },
       {
@@ -80,7 +80,7 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 4.7
     },
-    "load1": 0.5,
+    "load1": 0.39,
     "disk_avail": "104G",
     "tmp_du": "3.5M"
   },
@@ -94,7 +94,7 @@
     "done": 1152,
     "total": 1429,
     "inflight": null,
-    "last_id": "Vv20KYebDdY",
+    "last_id": "JQGFM22hUTo",
     "channel_id": null,
     "inventory": {
       "public_total": 1429,
@@ -150,7 +150,7 @@
         "next_name": "Lenny's Podcast",
         "left_global": 9334,
         "eta_deadline_utc": "2026-09-23T08:14:10Z",
-        "eta_frozen": false,
+        "eta_frozen": true,
         "overdue": false,
         "worker_state": "running"
       }
@@ -2233,53 +2233,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T08:12:37Z skip STT — headroom 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-23T08:13:24Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T08:13:09Z skip — another reboost holds lock"
+      "summary": "2026-09-23T08:13:24Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T08:13:09Z ensure_venv — start"
+      "summary": "2026-09-23T08:13:24Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T08:13:09Z ensure_venv — ok"
+      "summary": "2026-09-23T08:13:24Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T08:13:10Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-23T08:13:24Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T08:13:10Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
+      "summary": "2026-09-23T08:13:24Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T08:13:10Z captions after fill running=1"
+      "summary": "2026-09-23T08:13:24Z skip STT — headroom 3.1G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T08:13:10Z skip STT — headroom 3.2G < 6G (captions may still run)"
+      "summary": "2026-09-23T08:13:24Z skip STT — headroom 3.1G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-23T08:13:10Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1",
-    "2026-09-23T08:13:10Z captions after fill running=1",
-    "2026-09-23T08:13:10Z skip STT — headroom 3.2G < 6G (captions may still run)",
-    "backfill-captions.log: incomplete Vv20KYebDdY: pending_stt",
-    "incomplete -2paEfvTID4: pending_stt",
-    "incomplete pyNHUm1JFQU: pending_stt",
+    "2026-09-23T08:13:24Z captions after fill running=1",
+    "2026-09-23T08:13:24Z skip STT — headroom 3.1G < 6G (captions may still run)",
+    "2026-09-23T08:13:24Z skip STT — headroom 3.1G < 6G (captions may still run)",
+    "backfill-captions.log: incomplete JQGFM22hUTo: pending_stt",
     "incomplete VW8AJq6FgxU: pending_stt",
-    "incomplete Vv20KYebDdY: pending_stt"
+    "incomplete Vv20KYebDdY: pending_stt",
+    "incomplete yMOU8_hhLL8: pending_stt",
+    "incomplete JQGFM22hUTo: pending_stt"
   ],
   "pm": {
     "token_free": true,
