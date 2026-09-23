@@ -1,13 +1,13 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T03:01:58Z",
-  "written_at_hkt": "2026-09-23 11:01 HKT",
+  "written_at_utc": "2026-09-23T03:02:09Z",
+  "written_at_hkt": "2026-09-23 11:02 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
-    "whisper_n": 3,
-    "backfill_n": 3,
+    "whisper_n": 2,
+    "backfill_n": 2,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
     "sample": [
@@ -16,26 +16,26 @@
         "cmd": "proc"
       },
       {
-        "pid": 1497248,
-        "cmd": "proc"
-      },
-      {
-        "pid": 1497250,
+        "pid": 1497554,
         "cmd": "proc"
       },
       {
         "pid": 1466861,
         "cmd": "proc"
+      },
+      {
+        "pid": 1477460,
+        "cmd": "proc"
       }
     ]
   },
   "resources": {
-    "mem_available_gi": 7.2,
+    "mem_available_gi": 7.3,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.84,
+        "rss_gi": 2.83,
         "n": 33
       },
       {
@@ -49,24 +49,24 @@
         "n": 1
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.15,
-        "n": 3
-      },
-      {
         "comm": "Xvfb",
         "rss_gi": 0.12,
         "n": 3
       },
       {
-        "comm": "python",
-        "rss_gi": 0.12,
-        "n": 7
-      },
-      {
         "comm": "bash",
         "rss_gi": 0.1,
-        "n": 41
+        "n": 40
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.09,
+        "n": 2
+      },
+      {
+        "comm": "python",
+        "rss_gi": 0.09,
+        "n": 5
       },
       {
         "comm": "websockify",
@@ -87,14 +87,14 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 3.8,
-      "anon_gi": 2.7,
+      "anon_gi": 2.6,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
-      "committed_gi": 12.7
+      "committed_gi": 12.6
     },
-    "load1": 1.47,
+    "load1": 1.24,
     "disk_avail": "101G",
-    "tmp_du": "533M"
+    "tmp_du": "532M"
   },
   "cookies": {
     "present": false,
@@ -106,7 +106,7 @@
     "done": 537,
     "total": 737,
     "inflight": null,
-    "last_id": "sphqQcFFDTQ",
+    "last_id": "n1tylK7e09o",
     "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "inventory": {
       "public_total": 737,
@@ -129,13 +129,13 @@
         "pending": 266,
         "done": 7276,
         "transcripts_on_disk": 7276,
-        "inflight": "ukzFI9rgwfU",
+        "inflight": "IEhwgCL4N7g",
         "inflight_duration_s": null,
         "model": "medium",
         "eta_this_min": 24,
         "eta_min": 6384,
         "eta_hkt": "2026-09-27 21:03 HKT",
-        "jobs": 3,
+        "jobs": 2,
         "pending_global": 7557,
         "eta_deadline_utc": "2026-09-27T13:03:43Z",
         "eta_frozen": true,
@@ -144,30 +144,28 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
+        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
         "targets": [
           "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-          "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
+          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
         ],
         "target_names": [
           "Data Science",
-          "Entrepreneur",
-          "職場事業心理學"
+          "Entrepreneur"
         ],
         "done": 12150,
-        "left": 130,
+        "left": 121,
         "total": 25851,
         "no_sub": 311,
-        "eta_min": 11,
-        "eta_hkt": "2026-09-23 11:06 HKT",
+        "eta_min": 15,
+        "eta_hkt": "2026-09-23 11:17 HKT",
         "inflight": null,
-        "jobs": 3,
+        "jobs": 2,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
         "left_global": 9329,
-        "eta_deadline_utc": "2026-09-23T03:06:33Z",
-        "eta_frozen": true,
+        "eta_deadline_utc": "2026-09-23T03:17:10Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
@@ -2250,53 +2248,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:01:57Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T03:01:57Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T03:01:57Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.4G cap_signal=none"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T03:01:57Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.4G cap_signal=none"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T03:01:57Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T03:01:57Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-23T03:01:57Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T03:01:57Z STT already running — no second Whisper"
+      "summary": "2026-09-23T03:02:08Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:02:08Z ensure_venv — start"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:02:08Z ensure_venv — ok"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:02:09Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:02:09Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.5G cap_signal=none"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:02:09Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T03:02:09Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-23T03:01:57Z captions after fill running=3",
-    "2026-09-23T03:01:57Z STT already running — no second Whisper",
-    "2026-09-23T03:01:57Z STT already running — no second Whisper",
-    "backfill-captions.log: incomplete ZHHPbdU2_eU: pending_stt",
-    "incomplete GTAx2waEFdk: pending_stt",
-    "incomplete FKn8f33OWM0: pending_stt",
-    "incomplete gcuvZw8nHEc: pending_stt",
-    "incomplete ZHHPbdU2_eU: pending_stt"
+    "2026-09-23T03:02:09Z captions running=3 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=9.5G cap_signal=none",
+    "2026-09-23T03:02:09Z captions after fill running=3",
+    "2026-09-23T03:02:09Z STT already running — no second Whisper",
+    "backfill-captions.log: }",
+    "{",
+    "\"wrote_progress\": \"<path>",
+    "\"done_count\": 37",
+    "}"
   ],
   "pm": {
     "token_free": true,
@@ -2308,20 +2306,9 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 4,
-    "total_n": 21,
+    "running_n": 3,
+    "total_n": 20,
     "jobs": [
-      {
-        "id": "live-cap-PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-",
-        "title": "職場事業心理學",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLNSENJvwfwVIYoLn2ufBajf1Z_pfxnAp-"
-      },
       {
         "id": "live-cap-PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
         "title": "Data Science",
