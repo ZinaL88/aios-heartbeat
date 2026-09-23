@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-23 09:09 HKT",
+  "written_at_hkt": "2026-09-23 09:14 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1265,10 +1265,10 @@
       "videos": 1429,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-      "captions_done": 1127,
-      "captions_left": 19,
-      "stt_done": 501,
-      "stt_left": 245,
+      "captions_done": 1134,
+      "captions_left": 13,
+      "stt_done": 508,
+      "stt_left": 244,
       "videos_total": 1429,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1391,10 +1391,10 @@
       "videos": 3464,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-      "captions_done": 521,
-      "captions_left": 135,
-      "stt_done": 521,
-      "stt_left": 195,
+      "captions_done": 522,
+      "captions_left": 134,
+      "stt_done": 522,
+      "stt_left": 194,
       "videos_total": 716,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1939,10 +1939,10 @@
       "kind": "playlist",
       "videos_total": 716,
       "videos_source": "inventory",
-      "captions_done": 521,
-      "captions_left": 135,
-      "stt_done": 521,
-      "stt_left": 195,
+      "captions_done": 522,
+      "captions_left": 134,
+      "stt_done": 522,
+      "stt_left": 194,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -1962,20 +1962,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-      "title": "Data Science",
-      "kind": "playlist",
-      "videos_total": 1429,
-      "videos_source": "inventory",
-      "captions_done": 1127,
-      "captions_left": 19,
-      "stt_done": 501,
-      "stt_left": 245,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "UC1q6LKlcco02dF0BxE0G1zg",
       "title": "AI 101",
       "kind": "channel",
@@ -1985,6 +1971,20 @@
       "captions_left": 131,
       "stt_done": 0,
       "stt_left": 131,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
+      "title": "Data Science",
+      "kind": "playlist",
+      "videos_total": 1429,
+      "videos_source": "inventory",
+      "captions_done": 1134,
+      "captions_left": 13,
+      "stt_done": 508,
+      "stt_left": 244,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
