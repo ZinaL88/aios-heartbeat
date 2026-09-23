@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T10:07:47Z",
-  "written_at_hkt": "2026-09-23 18:07 HKT",
+  "written_at_utc": "2026-09-23T10:08:12Z",
+  "written_at_hkt": "2026-09-23 18:08 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -18,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.3,
+    "mem_available_gi": 3.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.68,
+        "rss_gi": 2.67,
         "n": 32
       },
       {
@@ -54,7 +54,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 38
+        "n": 39
       },
       {
         "comm": "websockify",
@@ -80,7 +80,7 @@
       "sreclaimable_gi": 0.4,
       "committed_gi": 4.7
     },
-    "load1": 0.33,
+    "load1": 0.58,
     "disk_avail": "103G",
     "tmp_du": "3.7M"
   },
@@ -94,7 +94,7 @@
     "done": 562,
     "total": 716,
     "inflight": null,
-    "last_id": "q8r-WxdHODM",
+    "last_id": "cQAstY4wQE8",
     "channel_id": null,
     "inventory": {
       "public_total": 716,
@@ -2214,7 +2214,7 @@
     "next_cron_utc": "2026-09-23T10:10:00Z",
     "next_cron_hkt": "2026-09-23 18:10 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.3G)",
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.2G)",
     "job_restart_at_hkt": "2026-09-23 18:10 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -2233,31 +2233,6 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:07:46Z STT past ETA deadline — restart parent"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T10:07:46Z STT past ETA deadline — restart parent"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T10:07:47Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T10:07:47Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T10:07:47Z captions after fill running=1"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
       "summary": "2026-09-23T10:07:47Z captions after fill running=1"
     },
     {
@@ -2269,17 +2244,42 @@
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "2026-09-23T10:07:47Z skip STT — headroom 3.2G < 6G (captions may still run)"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T10:08:11Z skip — another reboost holds lock"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T10:08:11Z ensure_venv — start"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T10:08:11Z ensure_venv — ok"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T10:08:12Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T10:08:12Z STT past ETA deadline — restart parent"
     }
   ],
   "reboost_log": [
-    "2026-09-23T10:07:47Z captions after fill running=1",
-    "2026-09-23T10:07:47Z skip STT — headroom 3.2G < 6G (captions may still run)",
-    "2026-09-23T10:07:47Z skip STT — headroom 3.2G < 6G (captions may still run)",
-    "backfill-captions.log: incomplete q8r-WxdHODM: pending_stt",
-    "incomplete Mbi0X8bRl44: pending_stt",
-    "incomplete WutLIhvo45w: pending_stt",
-    "incomplete FWg4qFHZWLU: pending_stt",
-    "incomplete q8r-WxdHODM: pending_stt"
+    "2026-09-23T10:08:11Z ensure_venv — ok",
+    "2026-09-23T10:08:12Z STT_VENV_OK=1 PY=<path>",
+    "2026-09-23T10:08:12Z STT past ETA deadline — restart parent",
+    "backfill-captions.log: incomplete cQAstY4wQE8: pending_stt",
+    "incomplete q8r-WxdHODM: pending_stt",
+    "incomplete j_B_DAmKFjQ: pending_stt",
+    "incomplete o-vAWpb0c-o: pending_stt",
+    "incomplete cQAstY4wQE8: pending_stt"
   ],
   "pm": {
     "token_free": true,
