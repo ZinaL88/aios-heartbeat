@@ -1,13 +1,13 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T06:13:16Z",
+  "written_at_utc": "2026-09-23T06:13:27Z",
   "written_at_hkt": "2026-09-23 14:13 HKT",
   "token_free": true,
   "processes": {
     "whisper": true,
     "backfill": true,
     "whisper_n": 2,
-    "backfill_n": 3,
+    "backfill_n": 2,
     "stt_channel": "UCJAPsTtcJJWGk8e-_CJL8TQ",
     "captions_channel": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
     "sample": [
@@ -30,22 +30,22 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 4.1,
+    "mem_available_gi": 4.0,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "python",
-        "rss_gi": 3.51,
-        "n": 6
+        "rss_gi": 3.49,
+        "n": 5
       },
       {
         "comm": "node",
-        "rss_gi": 2.82,
+        "rss_gi": 2.84,
         "n": 33
       },
       {
         "comm": "chrome",
-        "rss_gi": 0.78,
+        "rss_gi": 0.77,
         "n": 13
       },
       {
@@ -59,14 +59,14 @@
         "n": 3
       },
       {
-        "comm": "yt-dlp",
-        "rss_gi": 0.11,
-        "n": 2
-      },
-      {
         "comm": "bash",
         "rss_gi": 0.1,
         "n": 41
+      },
+      {
+        "comm": "yt-dlp",
+        "rss_gi": 0.09,
+        "n": 2
       },
       {
         "comm": "websockify",
@@ -86,13 +86,13 @@
     ],
     "meminfo": {
       "buffers_gi": 0.1,
-      "cached_gi": 3.6,
+      "cached_gi": 3.5,
       "anon_gi": 6.0,
       "shmem_gi": 0.0,
-      "sreclaimable_gi": 0.3,
+      "sreclaimable_gi": 0.4,
       "committed_gi": 19.7
     },
-    "load1": 4.04,
+    "load1": 4.03,
     "disk_avail": "101G",
     "tmp_du": "533M"
   },
@@ -127,8 +127,8 @@
         "running": true,
         "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
         "pending": 254,
-        "done": 7381,
-        "transcripts_on_disk": 7381,
+        "done": 7382,
+        "transcripts_on_disk": 7382,
         "inflight": "Y5ZH0fhRRWI",
         "inflight_duration_s": null,
         "model": "medium",
@@ -144,36 +144,34 @@
       },
       "captions": {
         "running": true,
-        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
+        "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw,PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
         "targets": [
           "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
-          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-          "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf"
+          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
         ],
         "target_names": [
           "Data Science",
-          "Entrepreneur",
-          "Advanced Algorithms (COMPSCI 224)"
+          "Entrepreneur"
         ],
         "done": 12185,
-        "left": 105,
+        "left": 104,
         "total": 25851,
         "no_sub": 311,
-        "eta_min": 9,
-        "eta_hkt": "2026-09-23 14:16 HKT",
+        "eta_min": 13,
+        "eta_hkt": "2026-09-23 14:26 HKT",
         "inflight": null,
-        "jobs": 3,
+        "jobs": 2,
         "next_id": "UC6t1O76G0jYXOAoYCm153dA",
         "next_name": "Lenny's Podcast",
         "left_global": 9312,
-        "eta_deadline_utc": "2026-09-23T06:16:38Z",
-        "eta_frozen": true,
+        "eta_deadline_utc": "2026-09-23T06:26:27Z",
+        "eta_frozen": false,
         "overdue": false,
         "worker_state": "running"
       }
     },
     "progress": {
-      "stt_done": 7381,
+      "stt_done": 7382,
       "stt_pending": 7539,
       "captions_done": 12185,
       "captions_left": 9312,
@@ -201,7 +199,7 @@
         {
           "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
           "name": "Data Science",
-          "stt_done": 592,
+          "stt_done": 593,
           "captions_done": 1148,
           "captions_left": 4,
           "stt_left": 239,
@@ -560,7 +558,7 @@
           "videos_source": "inventory",
           "captions_done": 1148,
           "captions_left": 4,
-          "stt_done": 592,
+          "stt_done": 593,
           "stt_left": 239,
           "status": "waiting_captions",
           "label": "Waiting captions",
@@ -2219,7 +2217,7 @@
           "skip": false
         }
       ],
-      "captions_files_on_disk": 19688,
+      "captions_files_on_disk": 19698,
       "source": "inventory+disk"
     }
   },
@@ -2250,53 +2248,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T06:12:44Z captions after fill running=3"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T06:12:44Z STT already running — no second Whisper"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T06:13:14Z skip — another reboost holds lock"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T06:13:14Z ensure_venv — start"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T06:13:15Z ensure_venv — ok"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T06:13:15Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
-    },
-    {
-      "at_hkt": "reboost.log",
-      "kind": "reboost",
-      "summary": "2026-09-23T06:13:15Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.3G cap_signal=none"
+      "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf/inventory_public.json"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
       "summary": "guage auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory /workspace/ai-os-tools/youtube-collector/data/channels/PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf/inventory_public.json"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T06:13:25Z reboost captions pid 1740312 channel PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf alive"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T06:13:25Z reboost captions pid 1740312 channel PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf alive"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T06:13:25Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T06:13:25Z captions after fill running=3"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T06:13:25Z STT already running — no second Whisper"
+    },
+    {
+      "at_hkt": "reboost.log",
+      "kind": "reboost",
+      "summary": "2026-09-23T06:13:25Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-09-23T06:13:15Z STT_VENV_OK=1 PY=<path>",
-    "2026-09-23T06:13:15Z captions running=2 target=3 stt_live=UCJAPsTtcJJWGk8e-_CJL8TQ mem=6.3G cap_signal=none",
-    "<path> --channel-id PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf --access public --limit 9999 --mode captions --language auto --captions-jobs 1 --sleep-min 4 --sleep-max 8 --inventory <path>",
-    "backfill-captions.log: Deferring 1 failed_ids (e.g. no transcript) until after 0 fresh IDs",
-    "incomplete 6vj96QetfTg: pending_stt",
-    "incomplete Ex8nVL0CRjI: pending_stt",
-    "stt_language=en",
-    "Deferring 1 failed_ids (e.g. no transcript) until after 0 fresh IDs"
+    "2026-09-23T06:13:25Z captions after fill running=3",
+    "2026-09-23T06:13:25Z STT already running — no second Whisper",
+    "2026-09-23T06:13:25Z STT already running — no second Whisper",
+    "backfill-captions.log: }",
+    "{",
+    "\"wrote_progress\": \"<path>",
+    "\"done_count\": 24",
+    "}"
   ],
   "pm": {
     "token_free": true,
@@ -2308,20 +2306,9 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 4,
-    "total_n": 21,
+    "running_n": 3,
+    "total_n": 20,
     "jobs": [
-      {
-        "id": "live-cap-PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
-        "title": "Advanced Algorithms (COMPSCI 224)",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf"
-      },
       {
         "id": "live-cap-PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
         "title": "Data Science",
