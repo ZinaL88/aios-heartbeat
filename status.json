@@ -1,7 +1,7 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-09-23T10:35:39Z",
-  "written_at_hkt": "2026-09-23 18:35 HKT",
+  "written_at_utc": "2026-09-23T10:36:04Z",
+  "written_at_hkt": "2026-09-23 18:36 HKT",
   "token_free": true,
   "processes": {
     "whisper": false,
@@ -18,12 +18,12 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.0,
+    "mem_available_gi": 3.1,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "node",
-        "rss_gi": 2.85,
+        "rss_gi": 2.69,
         "n": 32
       },
       {
@@ -54,7 +54,7 @@
       {
         "comm": "bash",
         "rss_gi": 0.09,
-        "n": 39
+        "n": 38
       },
       {
         "comm": "websockify",
@@ -75,12 +75,12 @@
     "meminfo": {
       "buffers_gi": 0.1,
       "cached_gi": 1.8,
-      "anon_gi": 1.9,
+      "anon_gi": 1.8,
       "shmem_gi": 0.0,
       "sreclaimable_gi": 0.4,
       "committed_gi": 4.8
     },
-    "load1": 1.38,
+    "load1": 0.97,
     "disk_avail": "104G",
     "tmp_du": "3.7M"
   },
@@ -94,7 +94,7 @@
     "done": 563,
     "total": 716,
     "inflight": null,
-    "last_id": "sZs3c2VbFcQ",
+    "last_id": "5i2_mANNtsE",
     "channel_id": null,
     "inventory": {
       "public_total": 716,
@@ -2214,7 +2214,7 @@
     "next_cron_utc": "2026-09-23T10:40:00Z",
     "next_cron_hkt": "2026-09-23 18:40 HKT",
     "cron": "*/5",
-    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.0G)",
+    "job_restart": "captions on · Whisper blocked until 6.0G (now 3.1G)",
     "job_restart_at_hkt": "2026-09-23 18:40 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
@@ -2233,53 +2233,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:35:07Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1"
+      "summary": "2026-09-23T10:36:02Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:35:07Z captions after fill running=1"
+      "summary": "2026-09-23T10:36:02Z STT past ETA deadline — restart parent"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:35:07Z skip STT — headroom 3.1G < 6G (captions may still run)"
+      "summary": "2026-09-23T10:36:03Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:35:38Z skip — another reboost holds lock"
+      "summary": "2026-09-23T10:36:03Z captions running=1 target=1 stt_live=none mem=3.1G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:35:38Z ensure_venv — start"
+      "summary": "2026-09-23T10:36:03Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:35:39Z ensure_venv — ok"
+      "summary": "2026-09-23T10:36:03Z captions after fill running=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:35:39Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-09-23T10:36:03Z skip STT — headroom 3.1G < 6G (captions may still run)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-09-23T10:35:39Z STT past ETA deadline — restart parent"
+      "summary": "2026-09-23T10:36:03Z skip STT — headroom 3.1G < 6G (captions may still run)"
     }
   ],
   "reboost_log": [
-    "2026-09-23T10:35:39Z ensure_venv — ok",
-    "2026-09-23T10:35:39Z STT_VENV_OK=1 PY=<path>",
-    "2026-09-23T10:35:39Z STT past ETA deadline — restart parent",
-    "backfill-captions.log: incomplete sZs3c2VbFcQ: pending_stt",
-    "incomplete wD_uP_gl9SY: pending_stt",
-    "incomplete KE6D3G48_uc: pending_stt",
-    "incomplete qQm0WEPAb3Q: pending_stt",
-    "incomplete sZs3c2VbFcQ: pending_stt"
+    "2026-09-23T10:36:03Z captions after fill running=1",
+    "2026-09-23T10:36:03Z skip STT — headroom 3.1G < 6G (captions may still run)",
+    "2026-09-23T10:36:03Z skip STT — headroom 3.1G < 6G (captions may still run)",
+    "backfill-captions.log: [88<path> gs3WxZqckLQ AI创业：自嗨型产品烧光一半融资后，如何靠B2B炼出真金？｜灶爷访谈_下",
+    "[87<path> 5i2_mANNtsE 10亿美金帝国生意从卖土豆开始：ClickFunnel创始人的逆袭策略（人人可复制）",
+    "YouTube captions: none (manual+auto) → STT allowed",
+    "sleep 5.9s",
+    "[88<path> gs3WxZqckLQ AI创业：自嗨型产品烧光一半融资后，如何靠B2B炼出真金？｜灶爷访谈_下"
   ],
   "pm": {
     "token_free": true,
