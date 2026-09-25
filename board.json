@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-25 11:14 HKT",
+  "written_at_hkt": "2026-09-25 11:20 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -97,10 +97,10 @@
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "skip": false,
       "reason": "captions done · STT still running",
-      "captions_done": 517,
+      "captions_done": 518,
       "captions_left": 0,
-      "stt_done": 552,
-      "stt_left": 251,
+      "stt_done": 553,
+      "stt_left": 250,
       "videos_total": 737,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -762,7 +762,7 @@
       "skip": false,
       "playlist_id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
       "captions_done": 24,
-      "captions_left": 8,
+      "captions_left": 2,
       "stt_done": 24,
       "stt_left": 1,
       "videos_total": 25,
@@ -2284,20 +2284,6 @@
       "skip": false
     },
     {
-      "id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
-      "title": "Advanced Algorithms (COMPSCI 224)",
-      "kind": "playlist",
-      "videos_total": 25,
-      "videos_source": "inventory",
-      "captions_done": 24,
-      "captions_left": 8,
-      "stt_done": 24,
-      "stt_left": 1,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLrtCHHeadkHrv-IRivEEndYbenYZCBhQ-",
       "title": "LinkedIn Product Management Interview Prep",
       "kind": "playlist",
@@ -2391,6 +2377,20 @@
       "captions_left": 2,
       "stt_done": 0,
       "stt_left": 2,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
+      "title": "Advanced Algorithms (COMPSCI 224)",
+      "kind": "playlist",
+      "videos_total": 25,
+      "videos_source": "inventory",
+      "captions_done": 24,
+      "captions_left": 2,
+      "stt_done": 24,
+      "stt_left": 1,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2625,10 +2625,10 @@
       "kind": "channel",
       "videos_total": 737,
       "videos_source": "inventory",
-      "captions_done": 517,
+      "captions_done": 518,
       "captions_left": 0,
-      "stt_done": 552,
-      "stt_left": 251,
+      "stt_done": 553,
+      "stt_left": 250,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
