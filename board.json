@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-25 23:20 HKT",
+  "written_at_hkt": "2026-09-25 23:26 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -97,10 +97,10 @@
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "skip": false,
       "reason": "captions done · STT still running",
-      "captions_done": 586,
+      "captions_done": 587,
       "captions_left": 0,
-      "stt_done": 621,
-      "stt_left": 182,
+      "stt_done": 622,
+      "stt_left": 181,
       "videos_total": 737,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2676,20 +2676,6 @@
       "skip": false
     },
     {
-      "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-      "title": "一个狠人",
-      "kind": "channel",
-      "videos_total": 737,
-      "videos_source": "inventory",
-      "captions_done": 586,
-      "captions_left": 0,
-      "stt_done": 621,
-      "stt_left": 182,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "UC1CXs5dtO8_Zrsm-48saJfg",
       "title": "Vicky Zhao",
       "kind": "channel",
@@ -2698,6 +2684,20 @@
       "captions_done": 24,
       "captions_left": 0,
       "stt_done": 2,
+      "stt_left": 181,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+      "title": "一个狠人",
+      "kind": "channel",
+      "videos_total": 737,
+      "videos_source": "inventory",
+      "captions_done": 587,
+      "captions_left": 0,
+      "stt_done": 622,
       "stt_left": 181,
       "status": "waiting_stt",
       "label": "Waiting STT",
