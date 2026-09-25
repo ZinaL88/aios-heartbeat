@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-26 05:12 HKT",
+  "written_at_hkt": "2026-09-26 05:18 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -97,10 +97,10 @@
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "skip": false,
       "reason": "captions done · STT still running",
-      "captions_done": 589,
+      "captions_done": 591,
       "captions_left": 0,
-      "stt_done": 624,
-      "stt_left": 179,
+      "stt_done": 626,
+      "stt_left": 177,
       "videos_total": 737,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2690,20 +2690,6 @@
       "skip": false
     },
     {
-      "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-      "title": "一个狠人",
-      "kind": "channel",
-      "videos_total": 737,
-      "videos_source": "inventory",
-      "captions_done": 589,
-      "captions_left": 0,
-      "stt_done": 624,
-      "stt_left": 179,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLLAQ9txP7pKAqZIO1LJIjBt",
       "title": "Innovation",
       "kind": "playlist",
@@ -2713,6 +2699,20 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 178,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+      "title": "一个狠人",
+      "kind": "channel",
+      "videos_total": 737,
+      "videos_source": "inventory",
+      "captions_done": 591,
+      "captions_left": 0,
+      "stt_done": 626,
+      "stt_left": 177,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
