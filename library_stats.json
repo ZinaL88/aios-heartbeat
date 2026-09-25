@@ -1,8 +1,8 @@
 {
-  "built_at_hkt": "2026-09-25 06:48 HKT",
-  "built_at_utc": "2026-09-24T22:48:03Z",
+  "built_at_hkt": "2026-09-25 13:29 HKT",
+  "built_at_utc": "2026-09-25T05:29:53Z",
   "items": 18761,
-  "transcripts_indexed": 8722,
+  "transcripts_indexed": 8750,
   "schema_gaps": 16236,
   "channels": 83,
   "local_search_url": "./library-search.html",
@@ -61,14 +61,14 @@
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "channel_name": "一个狠人",
       "item_count": 803,
-      "transcript_count": 551,
+      "transcript_count": 565,
       "schema_gap_count": 803
     },
     {
       "channel_id": "henren778",
       "channel_name": "一个狠人",
       "item_count": 803,
-      "transcript_count": 551,
+      "transcript_count": 565,
       "schema_gap_count": 803
     },
     {
