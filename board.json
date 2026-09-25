@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-25 14:31 HKT",
+  "written_at_hkt": "2026-09-25 14:32 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1546,12 +1546,12 @@
       "skip": false,
       "playlist_id": "PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd",
       "captions_done": 0,
-      "captions_left": 7,
+      "captions_left": 0,
       "stt_done": 0,
-      "stt_left": 50,
+      "stt_left": 57,
       "videos_total": 57,
-      "status": "waiting_captions",
-      "label": "Waiting captions"
+      "status": "waiting_stt",
+      "label": "Waiting STT"
     },
     {
       "tier": "P1",
@@ -2055,20 +2055,6 @@
       "captions_left": 30,
       "stt_done": 0,
       "stt_left": 30,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd",
-      "title": "八字教学从基础入门到精通",
-      "kind": "playlist",
-      "videos_total": 57,
-      "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 7,
-      "stt_done": 0,
-      "stt_left": 50,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2881,6 +2867,20 @@
       "captions_left": 0,
       "stt_done": 2,
       "stt_left": 64,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd",
+      "title": "八字教学从基础入门到精通",
+      "kind": "playlist",
+      "videos_total": 57,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 57,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
