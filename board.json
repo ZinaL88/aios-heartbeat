@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-25 11:31 HKT",
+  "written_at_hkt": "2026-09-25 11:37 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -97,10 +97,10 @@
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "skip": false,
       "reason": "captions done · STT still running",
-      "captions_done": 519,
+      "captions_done": 520,
       "captions_left": 0,
-      "stt_done": 554,
-      "stt_left": 249,
+      "stt_done": 555,
+      "stt_left": 248,
       "videos_total": 737,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2620,20 +2620,6 @@
       "skip": false
     },
     {
-      "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-      "title": "一个狠人",
-      "kind": "channel",
-      "videos_total": 737,
-      "videos_source": "inventory",
-      "captions_done": 519,
-      "captions_left": 0,
-      "stt_done": 554,
-      "stt_left": 249,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLJiBph9cZ8hcw9NWP-VuJmB",
       "title": "Debate, Argument, Reasoning",
       "kind": "playlist",
@@ -2642,6 +2628,20 @@
       "captions_done": 0,
       "captions_left": 0,
       "stt_done": 0,
+      "stt_left": 248,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+      "title": "一个狠人",
+      "kind": "channel",
+      "videos_total": 737,
+      "videos_source": "inventory",
+      "captions_done": 520,
+      "captions_left": 0,
+      "stt_done": 555,
       "stt_left": 248,
       "status": "waiting_stt",
       "label": "Waiting STT",
