@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-25 13:07 HKT",
+  "written_at_hkt": "2026-09-25 13:12 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1546,9 +1546,9 @@
       "skip": false,
       "playlist_id": "PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd",
       "captions_done": 0,
-      "captions_left": 57,
+      "captions_left": 51,
       "stt_done": 0,
-      "stt_left": 57,
+      "stt_left": 6,
       "videos_total": 57,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2032,20 +2032,6 @@
       "skip": false
     },
     {
-      "id": "PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd",
-      "title": "八字教学从基础入门到精通",
-      "kind": "playlist",
-      "videos_total": 57,
-      "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 57,
-      "stt_done": 0,
-      "stt_left": 57,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "UCsguRUxh-0DiryIdPPWFeCQ",
       "title": "Rise Above Reality",
       "kind": "channel",
@@ -2069,6 +2055,20 @@
       "captions_left": 30,
       "stt_done": 0,
       "stt_left": 30,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd",
+      "title": "八字教学从基础入门到精通",
+      "kind": "playlist",
+      "videos_total": 57,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 51,
+      "stt_done": 0,
+      "stt_left": 6,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
