@@ -1546,9 +1546,9 @@
       "skip": false,
       "playlist_id": "PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd",
       "captions_done": 0,
-      "captions_left": 8,
+      "captions_left": 7,
       "stt_done": 0,
-      "stt_left": 49,
+      "stt_left": 50,
       "videos_total": 57,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2066,9 +2066,9 @@
       "videos_total": 57,
       "videos_source": "inventory",
       "captions_done": 0,
-      "captions_left": 8,
+      "captions_left": 7,
       "stt_done": 0,
-      "stt_left": 49,
+      "stt_left": 50,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
