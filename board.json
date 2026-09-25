@@ -762,7 +762,7 @@
       "skip": false,
       "playlist_id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
       "captions_done": 24,
-      "captions_left": 9,
+      "captions_left": 8,
       "stt_done": 24,
       "stt_left": 1,
       "videos_total": 25,
@@ -2242,20 +2242,6 @@
       "skip": false
     },
     {
-      "id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
-      "title": "Advanced Algorithms (COMPSCI 224)",
-      "kind": "playlist",
-      "videos_total": 25,
-      "videos_source": "inventory",
-      "captions_done": 24,
-      "captions_left": 9,
-      "stt_done": 24,
-      "stt_left": 1,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLrtCHHeadkHoN-ao7qocRS3MkoBYwMA6D",
       "title": "Microsoft Product Management Interview Prep",
       "kind": "playlist",
@@ -2293,6 +2279,20 @@
       "captions_left": 1,
       "stt_done": 37,
       "stt_left": 9,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf",
+      "title": "Advanced Algorithms (COMPSCI 224)",
+      "kind": "playlist",
+      "videos_total": 25,
+      "videos_source": "inventory",
+      "captions_done": 24,
+      "captions_left": 8,
+      "stt_done": 24,
+      "stt_left": 1,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
