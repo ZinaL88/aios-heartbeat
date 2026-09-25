@@ -264,8 +264,8 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-09-26 00:49 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-09-26 00:49 HKT · v21</p>
+    <p class="mono" id="pingLine">ping 2026-09-26 01:24 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-09-26 01:24 HKT · v21</p>
     <p class="mono" style="margin:6px 0 0"><a class="lib-link" href="library.html?v=23" style="color:var(--lime);text-decoration:none;font-weight:600">Library</a>
       <span style="color:var(--muted)"> · search transcripts &amp; check schema fields · </span><a class="lib-link" href="machines.html" style="color:var(--lime);text-decoration:none;font-weight:600">Machines &amp; terminal</a></p>
   </div>
@@ -287,7 +287,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
 
 <section class="now">
   <div><span class="label">now</span> <span class="body" id="nowBody">STT Paused · backlog 7587 · captions Entrepreneur</span></div>
-  <span class="mono" id="nowTs">2026-09-26 00:49 HKT</span>
+  <span class="mono" id="nowTs">2026-09-26 01:24 HKT</span>
 </section>
 
 <section class="card" id="opsCard">
@@ -335,7 +335,7 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
   <div class="metric"><div class="k">Transcripts on disk</div><div class="v" id="mStt">7511</div><div class="s" id="mSttSub">7511 on disk · 7587 pending in worker scope · Paused</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">12287</div><div class="s" id="mCapSub">12287 done · 9142 left · Running</div></div>
   <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">3.0G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-26 00:49 HKT</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-09-26 01:24 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -345,14 +345,14 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <div class="row"><span class="mono"><span class="pill on" id="capStatePill"><span class="dot"></span><span id="capState">Running · 1 workers</span></span> CAPTIONS</span></div>
       <p class="ch" id="capCh">Entrepreneur</p>
       <div class="row"><span class="big" id="capNum">12287</span><span class="mono" id="capWorkers">12287 done · 9142 left · 1 workers</span></div>
-      <p class="mono" id="capEta">ETA 2026-09-26 00:56 HKT</p>
+      <p class="mono" id="capEta">ETA 2026-09-26 01:30 HKT</p>
     </div>
     <div class="work-block">
       <div class="row"><span class="mono"><span class="pill warn" id="sttStatePill"><span class="dot"></span><span id="sttState">Paused · backlog 7587</span></span> STT</span></div>
       <p class="ch" id="sttCh">Paused · backlog 7587</p>
       <div class="row"><span class="big" id="sttNum">7511</span><span class="mono" id="sttFile">7511 on disk · 7587 pending in worker scope</span></div>
       <p class="mono overdue" id="sttEta">ETA overdue · worker stopped</p>
-      <p class="mono" id="sttDisk">7511 transcripts on disk · RAM 3.0 of 15.6G · load 0.94</p>
+      <p class="mono" id="sttDisk">7511 transcripts on disk · RAM 3.0 of 15.6G · load 0.38</p>
     </div>
   </div>
 
@@ -360,11 +360,11 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
       <li><span>RAM free</span><span id="boxRam">3.0 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">0.94</span></li>
+      <li><span>Load</span><span id="boxLoad">0.38</span></li>
       <li><span>Disk</span><span id="boxDisk">103G</span></li>
       <li><span>Tmp</span><span id="boxTmp">—</span></li>
       <li><span>Cookies</span><span id="boxCookies">none</span></li>
-      <li><span>Next ping</span><span id="boxCron">2026-09-26 00:50 HKT</span></li>
+      <li><span>Next ping</span><span id="boxCron">2026-09-26 01:25 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">captions on · Whisper blocked until 6.0G (now 3.0G)</span></li>
       <li><span>RAM gate</span><span id="boxGate">6.0G</span></li>
     </ul>
@@ -374,9 +374,9 @@ a.lib-link { display:inline-flex; align-items:center; min-height:40px; }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">3.23G</span> · node ×40</li><li><span class="mono">0.31G</span> · plank ×4</li><li><span class="mono">0.22G</span> · xfwm4 ×4</li><li><span class="mono">0.13G</span> · Xvfb ×4</li><li><span class="mono">0.09G</span> · bash ×43</li><li><span class="mono">0.09G</span> · python3 ×4</li><li><span class="mono">0.08G</span> · metavr ×1</li><li><span class="mono">0.08G</span> · npm exec metavr ×1</li></ul>
+    <ul id="ramTop"><li><span class="mono">3.22G</span> · node ×40</li><li><span class="mono">0.31G</span> · plank ×4</li><li><span class="mono">0.22G</span> · xfwm4 ×4</li><li><span class="mono">0.13G</span> · Xvfb ×4</li><li><span class="mono">0.1G</span> · bash ×44</li><li><span class="mono">0.09G</span> · python3 ×4</li><li><span class="mono">0.09G</span> · csnaps ×1</li><li><span class="mono">0.08G</span> · metavr ×1</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-09-25T16:48:51Z reboost captions supervised channel PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4</li><li class="mono">2026-09-25T16:48:52Z captions after fill running=1</li><li class="mono">2026-09-25T16:48:52Z skip STT — headroom 2.9G &lt; 6G (captions may still run)</li><li class="mono">backfill-captions.log: ERROR fwlAB0P5ojw: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR 0hfrBADmH2M: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR mOy2BmSVtyQ: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR eiHrGu2Q3PU: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR fwlAB0P5ojw: Cannot verify caption availability; STT deferred</li><li><span class="mono">reboost.log</span> ode captions --language auto --sleep-min 4 --sleep-max 8 --inventory &lt;path&gt;</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-09-25T17:23:46Z reboost captions supervised channel PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4</li><li class="mono">2026-09-25T17:23:47Z captions after fill running=1</li><li class="mono">2026-09-25T17:23:47Z skip STT — headroom 2.8G &lt; 6G (captions may still run)</li><li class="mono">backfill-captions.log: ERROR eiHrGu2Q3PU: Cannot verify caption availability; STT deferred</li><li class="mono">Deferring 29 failed_ids (e.g. no transcript) until after 0 fresh IDs</li><li class="mono">ERROR 0hfrBADmH2M: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR mOy2BmSVtyQ: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR eiHrGu2Q3PU: Cannot verify caption availability; STT deferred</li><li><span class="mono">reboost.log</span> ode captions --language auto --sleep-min 4 --sleep-max 8 --inventory &lt;path&gt;</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
@@ -1488,10 +1488,37 @@ function opsCall(kind){
         human="OK";
         tone="ok";
       }
+      opsCall._didRefresh=false;
       opsSetResult(human, tone);
     })
-    .catch(function(e){ opsSetResult("Failed: "+String(e.message||e), "err"); })
-    .finally(function(){ opsBusy(false); });
+    .catch(function(e){
+      if(opsCall._didRefresh){
+        opsCall._didRefresh=false;
+        opsSetResult("Failed: "+String(e.message||e), "err");
+        return;
+      }
+      opsCall._holdingBusy=true;
+      opsSetResult("Tunnel failed — refreshing front door…", "busy");
+      fetch("./vm_front_door.json",{cache:"no-store"})
+        .then(function(r){ return r.ok?r.json():null; })
+        .then(function(j){
+          var api=(j&&j.api_base)||"";
+          if(!api){ opsCall._holdingBusy=false; opsSetResult("Failed: "+String(e.message||e), "err"); opsBusy(false); return; }
+          api=String(api).trim().replace(/\/$/,"");
+          try{ localStorage.setItem("aios.opsBase", api); }catch(ex){}
+          var bel=$("opsBase"); if(bel) try{ bel.value=api; }catch(ex){}
+          opsCall._didRefresh=true;
+          opsCall._holdingBusy=false;
+          opsCall(kind);
+        })
+        .catch(function(){
+          opsCall._holdingBusy=false;
+          opsCall._didRefresh=false;
+          opsSetResult("Failed: "+String(e.message||e), "err");
+          opsBusy(false);
+        });
+    })
+    .finally(function(){ if(!opsCall._holdingBusy) opsBusy(false); });
 }
 function bootOps(){
   var b=$("opsBase");
@@ -1524,31 +1551,34 @@ function bootOps(){
     });
   });
   opsApplyDetect();
-  function applyBase(url){
+  function applyBase(url, force){
     if(!url) return false;
     url=String(url).trim().replace(/\/$/,"");
     if(!url || /^https?:\/\/(127\.|localhost\b)/i.test(url)) return false;
-    if(b && !(opsBase())){ try{ b.value=url; }catch(e){} }
+    // force=true overwrites sticky localStorage / input (dead tunnel URL after rebuild).
+    if(b){ try{ if(force || !opsLiveVal(b)) b.value=url; }catch(e){} }
     try{ localStorage.setItem("aios.opsBase", url); }catch(e){}
     opsSetState("Ready — paste a YouTube Share link (default this video only).");
     return true;
   }
-  if(opsBase()){ opsSetState("Ready — paste a YouTube Share link (default this video only)."); return; }
+  // Always refresh published front door — hard-refresh does NOT clear aios.opsBase.
   fetch("./vm_front_door.json",{cache:"no-store"})
     .then(function(r){ return r.ok?r.json():null; })
     .then(function(j){
       var api=(j&&j.api_base)||"";
-      if(applyBase(api)) return;
+      if(applyBase(api, true)) return;
+      if(opsBase()){ opsSetState("Ready — paste a YouTube Share link (default this video only)."); return; }
       try{
         var lib=(localStorage.getItem("aios_library_api")||"").trim();
-        if(applyBase(lib)) return;
+        if(applyBase(lib, false)) return;
       }catch(e){}
       opsSetState("Waiting for tunnel base (vm_front_door.json).", "err");
     })
     .catch(function(){
+      if(opsBase()){ opsSetState("Ready — paste a YouTube Share link (default this video only)."); return; }
       try{
         var lib=(localStorage.getItem("aios_library_api")||"").trim();
-        if(applyBase(lib)) return;
+        if(applyBase(lib, false)) return;
       }catch(e){}
       opsSetState("Set tunnel Ops base, then paste a Share link.", "err");
     });
