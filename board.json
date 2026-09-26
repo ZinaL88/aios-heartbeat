@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-26 23:33 HKT",
+  "written_at_hkt": "2026-09-26 23:38 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -123,10 +123,10 @@
       "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "skip": false,
       "reason": "queued",
-      "captions_done": 10,
+      "captions_done": 12,
       "captions_left": 0,
-      "stt_done": 10,
-      "stt_left": 208,
+      "stt_done": 12,
+      "stt_left": 204,
       "videos_total": 228,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2648,20 +2648,6 @@
       "skip": false
     },
     {
-      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-      "title": "huanyihe777",
-      "kind": "channel",
-      "videos_total": 228,
-      "videos_source": "inventory",
-      "captions_done": 10,
-      "captions_left": 0,
-      "stt_done": 10,
-      "stt_left": 208,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PL30C54D951E8E1688",
       "title": "Careers",
       "kind": "playlist",
@@ -2670,6 +2656,20 @@
       "captions_done": 165,
       "captions_left": 0,
       "stt_done": 40,
+      "stt_left": 204,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "title": "huanyihe777",
+      "kind": "channel",
+      "videos_total": 228,
+      "videos_source": "inventory",
+      "captions_done": 12,
+      "captions_left": 0,
+      "stt_done": 12,
       "stt_left": 204,
       "status": "waiting_stt",
       "label": "Waiting STT",
