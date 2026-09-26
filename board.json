@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-26 15:33 HKT",
+  "written_at_hkt": "2026-09-26 15:38 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 353,
+      "captions_done": 354,
       "captions_left": 0,
-      "stt_done": 354,
-      "stt_left": 236,
+      "stt_done": 355,
+      "stt_left": 235,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2625,10 +2625,10 @@
       "kind": "channel",
       "videos_total": 590,
       "videos_source": "inventory",
-      "captions_done": 353,
+      "captions_done": 354,
       "captions_left": 0,
-      "stt_done": 354,
-      "stt_left": 236,
+      "stt_done": 355,
+      "stt_left": 235,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
