@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-26 10:13 HKT",
+  "written_at_hkt": "2026-09-26 10:18 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 341,
+      "captions_done": 342,
       "captions_left": 0,
-      "stt_done": 342,
-      "stt_left": 248,
+      "stt_done": 343,
+      "stt_left": 247,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2578,20 +2578,6 @@
       "skip": false
     },
     {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 341,
-      "captions_left": 0,
-      "stt_done": 342,
-      "stt_left": 248,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLJiBph9cZ8hcw9NWP-VuJmB",
       "title": "Debate, Argument, Reasoning",
       "kind": "playlist",
@@ -2601,6 +2587,20 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 248,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 342,
+      "captions_left": 0,
+      "stt_done": 343,
+      "stt_left": 247,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
