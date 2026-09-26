@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-26 15:27 HKT",
+  "written_at_hkt": "2026-09-26 15:33 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 352,
+      "captions_done": 353,
       "captions_left": 0,
-      "stt_done": 353,
-      "stt_left": 237,
+      "stt_done": 354,
+      "stt_left": 236,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2592,20 +2592,6 @@
       "skip": false
     },
     {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 352,
-      "captions_left": 0,
-      "stt_done": 353,
-      "stt_left": 237,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
       "title": "Data Science",
       "kind": "playlist",
@@ -2629,6 +2615,20 @@
       "captions_left": 0,
       "stt_done": 541,
       "stt_left": 237,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 353,
+      "captions_left": 0,
+      "stt_done": 354,
+      "stt_left": 236,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
