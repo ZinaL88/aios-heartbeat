@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-26 23:10 HKT",
+  "written_at_hkt": "2026-09-26 23:16 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -123,10 +123,10 @@
       "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "skip": false,
       "reason": "queued",
-      "captions_done": 0,
+      "captions_done": 2,
       "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 228,
+      "stt_done": 2,
+      "stt_left": 224,
       "videos_total": 228,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2606,20 +2606,6 @@
       "skip": false
     },
     {
-      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-      "title": "huanyihe777",
-      "kind": "channel",
-      "videos_total": 228,
-      "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 228,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "title": "mike1111",
       "kind": "channel",
@@ -2643,6 +2629,20 @@
       "captions_left": 0,
       "stt_done": 365,
       "stt_left": 225,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "title": "huanyihe777",
+      "kind": "channel",
+      "videos_total": 228,
+      "videos_source": "inventory",
+      "captions_done": 2,
+      "captions_left": 0,
+      "stt_done": 2,
+      "stt_left": 224,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
