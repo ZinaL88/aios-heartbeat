@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-26 14:36 HKT",
+  "written_at_hkt": "2026-09-26 14:41 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -136,10 +136,10 @@
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "skip": false,
       "reason": "",
-      "captions_done": 540,
+      "captions_done": 541,
       "captions_left": 0,
-      "stt_done": 540,
-      "stt_left": 238,
+      "stt_done": 541,
+      "stt_left": 237,
       "videos_total": 778,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2606,20 +2606,6 @@
       "skip": false
     },
     {
-      "id": "UCAxQ8sjHgjXh26la7jEBw3w",
-      "title": "mike1111",
-      "kind": "channel",
-      "videos_total": 778,
-      "videos_source": "inventory",
-      "captions_done": 540,
-      "captions_left": 0,
-      "stt_done": 540,
-      "stt_left": 238,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
       "title": "Data Science",
       "kind": "playlist",
@@ -2628,6 +2614,20 @@
       "captions_done": 1154,
       "captions_left": 0,
       "stt_done": 626,
+      "stt_left": 237,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCAxQ8sjHgjXh26la7jEBw3w",
+      "title": "mike1111",
+      "kind": "channel",
+      "videos_total": 778,
+      "videos_source": "inventory",
+      "captions_done": 541,
+      "captions_left": 0,
+      "stt_done": 541,
       "stt_left": 237,
       "status": "waiting_stt",
       "label": "Waiting STT",
