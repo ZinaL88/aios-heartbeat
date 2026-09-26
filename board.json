@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-26 18:24 HKT",
+  "written_at_hkt": "2026-09-26 18:29 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 356,
+      "captions_done": 357,
       "captions_left": 0,
-      "stt_done": 357,
-      "stt_left": 233,
+      "stt_done": 358,
+      "stt_left": 232,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2606,20 +2606,6 @@
       "skip": false
     },
     {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 356,
-      "captions_left": 0,
-      "stt_done": 357,
-      "stt_left": 233,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "title": "mike1111",
       "kind": "channel",
@@ -2629,6 +2615,20 @@
       "captions_left": 0,
       "stt_done": 545,
       "stt_left": 233,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 357,
+      "captions_left": 0,
+      "stt_done": 358,
+      "stt_left": 232,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
