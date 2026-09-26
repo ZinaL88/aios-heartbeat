@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 361,
+      "captions_done": 362,
       "captions_left": 0,
-      "stt_done": 362,
-      "stt_left": 228,
+      "stt_done": 363,
+      "stt_left": 227,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2620,20 +2620,6 @@
       "skip": false
     },
     {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 361,
-      "captions_left": 0,
-      "stt_done": 362,
-      "stt_left": 228,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "title": "huanyihe777",
       "kind": "channel",
@@ -2643,6 +2629,20 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 228,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 362,
+      "captions_left": 0,
+      "stt_done": 363,
+      "stt_left": 227,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
