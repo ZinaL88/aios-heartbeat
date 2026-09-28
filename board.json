@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-09-28 13:42 HKT",
+  "written_at_hkt": "2026-09-28 13:48 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -123,10 +123,10 @@
       "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "skip": false,
       "reason": "queued",
-      "captions_done": 24,
+      "captions_done": 25,
       "captions_left": 0,
-      "stt_done": 24,
-      "stt_left": 180,
+      "stt_done": 25,
+      "stt_left": 178,
       "videos_total": 228,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2676,20 +2676,6 @@
       "skip": false
     },
     {
-      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-      "title": "huanyihe777",
-      "kind": "channel",
-      "videos_total": 228,
-      "videos_source": "inventory",
-      "captions_done": 24,
-      "captions_left": 0,
-      "stt_done": 24,
-      "stt_left": 180,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLLAQ9txP7pKAqZIO1LJIjBt",
       "title": "Innovation",
       "kind": "playlist",
@@ -2698,6 +2684,20 @@
       "captions_done": 0,
       "captions_left": 0,
       "stt_done": 0,
+      "stt_left": 178,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "title": "huanyihe777",
+      "kind": "channel",
+      "videos_total": 228,
+      "videos_source": "inventory",
+      "captions_done": 25,
+      "captions_left": 0,
+      "stt_done": 25,
       "stt_left": 178,
       "status": "waiting_stt",
       "label": "Waiting STT",
