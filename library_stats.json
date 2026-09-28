@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-09-28 11:24 HKT",
-  "built_at_utc": "2026-09-28T03:24:55Z",
+  "built_at_hkt": "2026-09-28 18:17 HKT",
+  "built_at_utc": "2026-09-28T10:17:36Z",
   "items": 18875,
-  "transcripts_indexed": 9173,
-  "schema_gaps": 16393,
+  "transcripts_indexed": 9221,
+  "schema_gaps": 16412,
   "channels": 85,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -61,14 +61,14 @@
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "channel_name": "一个狠人",
       "item_count": 803,
-      "transcript_count": 676,
+      "transcript_count": 688,
       "schema_gap_count": 803
     },
     {
       "channel_id": "henren778",
       "channel_name": "一个狠人",
       "item_count": 803,
-      "transcript_count": 676,
+      "transcript_count": 688,
       "schema_gap_count": 803
     },
     {
@@ -82,7 +82,7 @@
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
       "item_count": 778,
-      "transcript_count": 568,
+      "transcript_count": 576,
       "schema_gap_count": 778
     },
     {
@@ -103,7 +103,7 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "channel_name": "Alan Chen",
       "item_count": 590,
-      "transcript_count": 391,
+      "transcript_count": 398,
       "schema_gap_count": 590
     },
     {
