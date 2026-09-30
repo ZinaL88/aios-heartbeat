@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-01 05:23 HKT",
-  "built_at_utc": "2026-09-30T21:23:08Z",
-  "items": 18195,
+  "built_at_hkt": "2026-10-01 05:34 HKT",
+  "built_at_utc": "2026-09-30T21:34:48Z",
+  "items": 18194,
   "transcripts_indexed": 8785,
-  "schema_gaps": 15751,
+  "schema_gaps": 15750,
   "access_policy": "public_only",
   "channels": 81,
   "local_search_url": "./library-search.html",
@@ -68,9 +68,9 @@
     {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
-      "item_count": 748,
+      "item_count": 747,
       "transcript_count": 585,
-      "schema_gap_count": 748
+      "schema_gap_count": 747
     },
     {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
