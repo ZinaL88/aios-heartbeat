@@ -1,17 +1,19 @@
-name: Heartbeat stale alarm (RETIRED - manual only)
+name: Heartbeat stale alarm
 
-# RETIRED 2026-09-30 (Z L approved): replaced by Healthchecks.io check
-# "aios-box-heartbeat" (period 10m, grace 10m, email alerts). The box pings it
-# every 5 min from ai-os ops/status/healthcheck_loop.sh -> healthcheck_ping.sh,
-# which reports /fail when the loop/watchdog is dead, local status is old,
-# workers are stuck, or this Pages board is stale (>30 min).
-# Schedule removed on purpose; kept as manual "Run workflow" smoke test only.
-# Why it failed since ~Sep 15: `source /tmp/age.env` ran `HKT=2026-09-30 13:18 HKT`
-# unquoted, so bash tried to execute "13:18" (exit 127) on every run, fresh or
-# stale. Values are now shell-quoted. Source of truth: ai-os
-# ops/status/github-actions/ (mirror_public.py syncs it here).
+# Token-free outside smoke alarm (Z L lock 2026-09-14): watches Pages freshness.
+# Does NOT restart the box. Does NOT wake Jarvis.
+# 2026-09-30: schedule RESTORED. It stays on until the Healthchecks.io
+# replacement (check "aios-box-heartbeat") is proven with a real failure and
+# recovery email and Z L decides to retire it (see ai-os ADR 0013).
+# Bug fixes kept: values are shell-quoted (the unquoted `HKT=2026-09-30 13:18 HKT`
+# in /tmp/age.env made every run exit 127 since ~Sep 15), stale threshold 25 min
+# (public commits are throttled to one per 10 min), raw file tried before Pages.
+# Source of truth: ai-os ops/status/github-actions/ (copied here by hand; the box
+# token has no `workflow` scope).
 
 on:
+  schedule:
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:
