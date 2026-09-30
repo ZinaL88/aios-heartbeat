@@ -60,7 +60,7 @@ function pull(){
         var d=JSON.parse(c);
         var utc=d.written_at_utc||"";
         var age=utc? (Date.now()-Date.parse(utc)) : 1e99;
-        if(age < 15*60*1000){ paint(d); if($("ping")) $("ping").textContent=(d.written_at_hkt||"—")+" · cached"; return; }
+        if(age < 25*60*1000){ paint(d); if($("ping")) $("ping").textContent=(d.written_at_hkt||"—")+" · cached"; return; }
       }
     }catch(e){}
     if($("ping")) $("ping").textContent="live fetch failed";

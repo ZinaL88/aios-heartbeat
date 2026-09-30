@@ -1,21 +1,20 @@
-# Heartbeat stale alarm (GitHub Actions)
+# Heartbeat stale alarm (GitHub Actions) — RETIRED 2026-09-30
 
-**Locked (Z L 2026-09-14):** Outside smoke alarm only — **no separate VPS push**, no Jarvis babysit routines.
+**Replaced by Healthchecks.io** (Z L approved 2026-09-30): check `aios-box-heartbeat`,
+period 10 min, grace 10 min, email alerts to Z L.
 
-## What it does
+- The box pings every 5 min: ai-os `ops/status/healthcheck_loop.sh` → `healthcheck_ping.sh`.
+- Success ping only when: heartbeat loop + watchdog alive, local `status.json` < 2 min old,
+  workers not all circuit-open, and this public board < 30 min old. Otherwise `/fail` + reason.
+- Box silent (dead VM) → Healthchecks alerts after period + grace.
+- Ping URL lives only in box-local `ops/status/.env.local` (gitignored). Never commit it.
 
-Workflow: `.github/workflows/heartbeat-stale-alarm.yml`
+## The old workflow
 
-- Every ~15 minutes (+ manual **Run workflow**).
-- Fetches `status.json` from Pages / raw GitHub.
-- If `written_at` older than **12 minutes** (or unreachable): opens/comments Issue labeled `heartbeat-stale`.
-- If fresh again: auto-closes those Issues.
+`.github/workflows/heartbeat-stale-alarm.yml` keeps only **manual** "Run workflow"
+(schedule removed). It failed on every scheduled run since ~Sep 15 because
+`source /tmp/age.env` executed the unquoted `HKT=2026-09-30 13:18 HKT` (exit 127);
+values are now quoted, threshold raised to 25 min to match the slower public cadence
+(public commits at most every ~10 min, `AIOS_PUBLIC_PUBLISH_MIN_SEC`).
 
-## What it does not do
-
-- Does **not** restart collectors/heartbeat on Grok Bot's computer.
-- Does **not** spend Cursor / Grok Bot tokens.
-
-## Heal path
-
-On next Jarvis wake: shell recover from `ai-os` `ops/WHEN-BOT-RESUMES.md`. Confirm this board's `written_at` moves.
+Durable source: ai-os `ops/status/github-actions/` (synced here by `mirror_public.py`).
