@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-01 07:21 HKT",
-  "built_at_utc": "2026-09-30T23:21:37Z",
-  "items": 18185,
+  "built_at_hkt": "2026-10-01 07:33 HKT",
+  "built_at_utc": "2026-09-30T23:33:31Z",
+  "items": 18177,
   "transcripts_indexed": 8785,
-  "schema_gaps": 15741,
+  "schema_gaps": 15733,
   "access_policy": "public_only",
   "channels": 81,
   "local_search_url": "./library-search.html",
@@ -33,9 +33,9 @@
     {
       "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
       "channel_name": "Best Partners TV",
-      "item_count": 1311,
+      "item_count": 1310,
       "transcript_count": 1272,
-      "schema_gap_count": 1311
+      "schema_gap_count": 1310
     },
     {
       "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
@@ -68,9 +68,9 @@
     {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
-      "item_count": 744,
+      "item_count": 741,
       "transcript_count": 585,
-      "schema_gap_count": 744
+      "schema_gap_count": 741
     },
     {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
@@ -103,9 +103,9 @@
     {
       "channel_id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
       "channel_name": "Crypto",
-      "item_count": 407,
+      "item_count": 406,
       "transcript_count": 34,
-      "schema_gap_count": 407
+      "schema_gap_count": 406
     },
     {
       "channel_id": "PL30C54D951E8E1688",
