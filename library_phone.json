@@ -8,10 +8,10 @@
     "library_phone_4.json",
     "library_phone_5.json"
   ],
-  "items": 15813,
+  "items": 15812,
   "with_transcript": 7397,
   "access_policy": "public_only",
   "note": "Phone catalog: one row per video id (playlists merged); metadata + schema; full transcript via library HTTP API (collector disk), not Pages shards.",
-  "built_at_hkt": "2026-10-01 07:33 HKT",
-  "built_at_utc": "2026-09-30T23:33:31Z"
+  "built_at_hkt": "2026-10-01 07:45 HKT",
+  "built_at_utc": "2026-09-30T23:45:31Z"
 }
