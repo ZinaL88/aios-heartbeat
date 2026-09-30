@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-01 02:42 HKT",
-  "built_at_utc": "2026-09-30T18:42:59Z",
-  "items": 18216,
+  "built_at_hkt": "2026-10-01 03:07 HKT",
+  "built_at_utc": "2026-09-30T19:07:26Z",
+  "items": 18211,
   "transcripts_indexed": 8785,
-  "schema_gaps": 15772,
+  "schema_gaps": 15767,
   "access_policy": "public_only",
   "channels": 81,
   "local_search_url": "./library-search.html",
@@ -33,9 +33,9 @@
     {
       "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
       "channel_name": "Best Partners TV",
-      "item_count": 1315,
+      "item_count": 1314,
       "transcript_count": 1272,
-      "schema_gap_count": 1315
+      "schema_gap_count": 1314
     },
     {
       "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
@@ -68,9 +68,9 @@
     {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
-      "item_count": 758,
+      "item_count": 755,
       "transcript_count": 585,
-      "schema_gap_count": 758
+      "schema_gap_count": 755
     },
     {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
