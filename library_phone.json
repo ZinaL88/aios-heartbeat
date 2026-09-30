@@ -8,9 +8,10 @@
     "library_phone_4.json",
     "library_phone_5.json"
   ],
-  "items": 15020,
-  "with_transcript": 10019,
-  "note": "Phone catalog: one row per video id (playlists merged); metadata + schema + tx_shard pointer (full transcript body in library_tx_*.json).",
-  "built_at_hkt": "2026-09-20 19:22 HKT",
-  "built_at_utc": "2026-09-20T11:22:42Z"
+  "items": 15861,
+  "with_transcript": 7389,
+  "access_policy": "public_only",
+  "note": "Phone catalog: one row per video id (playlists merged); metadata + schema; full transcript via library HTTP API (collector disk), not Pages shards.",
+  "built_at_hkt": "2026-09-30 16:47 HKT",
+  "built_at_utc": "2026-09-30T08:47:44Z"
 }
