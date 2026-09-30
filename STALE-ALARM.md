@@ -6,7 +6,8 @@ replacement is proven with a real failure + recovery email and Z L decides to re
 
 - The box pings every 5 min: ai-os `ops/status/healthcheck_loop.sh` → `healthcheck_ping.sh`.
 - Success ping only when: heartbeat loop + watchdog alive, local `status.json` < 2 min old,
-  workers not all circuit-open, and this public board < 30 min old. Otherwise `/fail` + reason.
+  workers not all circuit-open, the deployed Pages board < 30 min old AND the raw
+  `status.json` < 30 min old (checked separately), and the checker itself finished. Otherwise `/fail` + reason.
 - Box silent (dead VM) → Healthchecks alerts after period + grace.
 - Ping URL lives only in box-local `ops/status/.env.local` (gitignored). Never commit it.
 
