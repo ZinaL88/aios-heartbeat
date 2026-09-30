@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-09-30 23:21 HKT",
-  "built_at_utc": "2026-09-30T15:21:39Z",
-  "items": 18230,
+  "built_at_hkt": "2026-09-30 23:33 HKT",
+  "built_at_utc": "2026-09-30T15:33:23Z",
+  "items": 18228,
   "transcripts_indexed": 8785,
-  "schema_gaps": 15786,
+  "schema_gaps": 15784,
   "access_policy": "public_only",
   "channels": 81,
   "local_search_url": "./library-search.html",
@@ -12,9 +12,9 @@
     {
       "channel_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
       "channel_name": "理財",
-      "item_count": 2932,
+      "item_count": 2931,
       "transcript_count": 1472,
-      "schema_gap_count": 2932
+      "schema_gap_count": 2931
     },
     {
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
@@ -68,9 +68,9 @@
     {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
-      "item_count": 762,
+      "item_count": 761,
       "transcript_count": 585,
-      "schema_gap_count": 762
+      "schema_gap_count": 761
     },
     {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
