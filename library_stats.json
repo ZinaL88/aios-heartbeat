@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-01 03:07 HKT",
-  "built_at_utc": "2026-09-30T19:07:26Z",
-  "items": 18211,
+  "built_at_hkt": "2026-10-01 03:19 HKT",
+  "built_at_utc": "2026-09-30T19:19:11Z",
+  "items": 18203,
   "transcripts_indexed": 8785,
-  "schema_gaps": 15767,
+  "schema_gaps": 15759,
   "access_policy": "public_only",
   "channels": 81,
   "local_search_url": "./library-search.html",
@@ -33,9 +33,9 @@
     {
       "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
       "channel_name": "Best Partners TV",
-      "item_count": 1314,
+      "item_count": 1313,
       "transcript_count": 1272,
-      "schema_gap_count": 1314
+      "schema_gap_count": 1313
     },
     {
       "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
@@ -54,9 +54,9 @@
     {
       "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "channel_name": "Learning how to learn",
-      "item_count": 850,
+      "item_count": 849,
       "transcript_count": 151,
-      "schema_gap_count": 850
+      "schema_gap_count": 849
     },
     {
       "channel_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
@@ -68,9 +68,9 @@
     {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
-      "item_count": 755,
+      "item_count": 750,
       "transcript_count": 585,
-      "schema_gap_count": 755
+      "schema_gap_count": 750
     },
     {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
