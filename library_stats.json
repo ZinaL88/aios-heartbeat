@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-01 12:26 HKT",
-  "built_at_utc": "2026-10-01T04:26:52Z",
-  "items": 18167,
+  "built_at_hkt": "2026-10-01 12:50 HKT",
+  "built_at_utc": "2026-10-01T04:50:24Z",
+  "items": 18164,
   "transcripts_indexed": 8785,
-  "schema_gaps": 15723,
+  "schema_gaps": 15720,
   "access_policy": "public_only",
   "channels": 81,
   "local_search_url": "./library-search.html",
@@ -26,9 +26,9 @@
     {
       "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
       "channel_name": "Data Science",
-      "item_count": 1390,
+      "item_count": 1389,
       "transcript_count": 615,
-      "schema_gap_count": 1390
+      "schema_gap_count": 1389
     },
     {
       "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
@@ -68,9 +68,9 @@
     {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
-      "item_count": 736,
+      "item_count": 734,
       "transcript_count": 585,
-      "schema_gap_count": 736
+      "schema_gap_count": 734
     },
     {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
