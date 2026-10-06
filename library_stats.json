@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-06 22:29 HKT",
-  "built_at_utc": "2026-10-06T14:29:51Z",
-  "items": 18706,
+  "built_at_hkt": "2026-10-06 22:40 HKT",
+  "built_at_utc": "2026-10-06T14:40:55Z",
+  "items": 18702,
   "transcripts_indexed": 9156,
-  "schema_gaps": 16262,
+  "schema_gaps": 16258,
   "access_policy": "public_only",
   "channels": 83,
   "local_search_url": "./library-search.html",
@@ -54,9 +54,9 @@
     {
       "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "channel_name": "Learning how to learn",
-      "item_count": 849,
+      "item_count": 848,
       "transcript_count": 151,
-      "schema_gap_count": 849
+      "schema_gap_count": 848
     },
     {
       "channel_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
@@ -68,9 +68,9 @@
     {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
-      "item_count": 703,
+      "item_count": 701,
       "transcript_count": 585,
-      "schema_gap_count": 703
+      "schema_gap_count": 701
     },
     {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
