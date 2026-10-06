@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-07 02:28 HKT",
-  "built_at_utc": "2026-10-06T18:28:13Z",
-  "items": 18649,
+  "built_at_hkt": "2026-10-07 02:39 HKT",
+  "built_at_utc": "2026-10-06T18:39:23Z",
+  "items": 18648,
   "transcripts_indexed": 9156,
-  "schema_gaps": 16205,
+  "schema_gaps": 16204,
   "access_policy": "public_only",
   "channels": 83,
   "local_search_url": "./library-search.html",
@@ -54,9 +54,9 @@
     {
       "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "channel_name": "Learning how to learn",
-      "item_count": 846,
+      "item_count": 845,
       "transcript_count": 151,
-      "schema_gap_count": 846
+      "schema_gap_count": 845
     },
     {
       "channel_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
