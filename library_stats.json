@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-07 01:21 HKT",
-  "built_at_utc": "2026-10-06T17:21:27Z",
-  "items": 18670,
+  "built_at_hkt": "2026-10-07 01:32 HKT",
+  "built_at_utc": "2026-10-06T17:32:28Z",
+  "items": 18669,
   "transcripts_indexed": 9156,
-  "schema_gaps": 16226,
+  "schema_gaps": 16225,
   "access_policy": "public_only",
   "channels": 83,
   "local_search_url": "./library-search.html",
@@ -33,9 +33,9 @@
     {
       "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
       "channel_name": "Best Partners TV",
-      "item_count": 1304,
+      "item_count": 1303,
       "transcript_count": 1272,
-      "schema_gap_count": 1304
+      "schema_gap_count": 1303
     },
     {
       "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
