@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-06 22:18 HKT",
-  "built_at_utc": "2026-10-06T14:18:43Z",
-  "items": 18707,
+  "built_at_hkt": "2026-10-06 22:29 HKT",
+  "built_at_utc": "2026-10-06T14:29:51Z",
+  "items": 18706,
   "transcripts_indexed": 9156,
-  "schema_gaps": 16263,
+  "schema_gaps": 16262,
   "access_policy": "public_only",
   "channels": 83,
   "local_search_url": "./library-search.html",
