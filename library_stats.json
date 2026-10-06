@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-07 01:43 HKT",
-  "built_at_utc": "2026-10-06T17:43:37Z",
-  "items": 18663,
+  "built_at_hkt": "2026-10-07 02:17 HKT",
+  "built_at_utc": "2026-10-06T18:17:08Z",
+  "items": 18653,
   "transcripts_indexed": 9156,
-  "schema_gaps": 16219,
+  "schema_gaps": 16209,
   "access_policy": "public_only",
   "channels": 83,
   "local_search_url": "./library-search.html",
@@ -26,9 +26,9 @@
     {
       "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
       "channel_name": "Data Science",
-      "item_count": 1387,
+      "item_count": 1386,
       "transcript_count": 615,
-      "schema_gap_count": 1387
+      "schema_gap_count": 1386
     },
     {
       "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
@@ -75,9 +75,9 @@
     {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
-      "item_count": 684,
+      "item_count": 678,
       "transcript_count": 585,
-      "schema_gap_count": 684
+      "schema_gap_count": 678
     },
     {
       "channel_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
@@ -110,9 +110,9 @@
     {
       "channel_id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
       "channel_name": "Crypto",
-      "item_count": 406,
+      "item_count": 405,
       "transcript_count": 34,
-      "schema_gap_count": 406
+      "schema_gap_count": 405
     }
   ]
 }
