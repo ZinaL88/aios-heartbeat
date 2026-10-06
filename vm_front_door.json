@@ -1,8 +1,8 @@
 {
-  "api_base": "https://reveal-pack-contest-cables.trycloudflare.com",
-  "updated_at_hkt": "2026-09-21 23:10 HKT",
-  "services": [
-    "library",
-    "ops"
-  ]
+  "api_base": "",
+  "status": "down",
+  "reason": "tunnel not connected (0 ready connections, URL not answering)",
+  "last_url": "https://holdem-jazz-expanding-toolbar.trycloudflare.com",
+  "updated_at_hkt": "2026-10-07 05:14 HKT",
+  "services": []
 }
