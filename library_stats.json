@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-06 22:07 HKT",
-  "built_at_utc": "2026-10-06T14:07:40Z",
-  "items": 18713,
+  "built_at_hkt": "2026-10-06 22:18 HKT",
+  "built_at_utc": "2026-10-06T14:18:43Z",
+  "items": 18707,
   "transcripts_indexed": 9156,
-  "schema_gaps": 16269,
+  "schema_gaps": 16263,
   "access_policy": "public_only",
   "channels": 83,
   "local_search_url": "./library-search.html",
@@ -68,16 +68,16 @@
     {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
-      "item_count": 705,
+      "item_count": 703,
       "transcript_count": 585,
-      "schema_gap_count": 705
+      "schema_gap_count": 703
     },
     {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
       "channel_name": "Entrepreneur",
-      "item_count": 693,
+      "item_count": 692,
       "transcript_count": 563,
-      "schema_gap_count": 693
+      "schema_gap_count": 692
     },
     {
       "channel_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
