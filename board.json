@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-06 12:39 HKT",
+  "written_at_hkt": "2026-10-06 12:44 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1503,10 +1503,10 @@
       "videos": 2314,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
-      "captions_done": 95,
-      "captions_left": 2122,
-      "stt_done": 95,
-      "stt_left": 3,
+      "captions_done": 107,
+      "captions_left": 2102,
+      "stt_done": 107,
+      "stt_left": 2227,
       "videos_total": 2334,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1808,6 +1808,20 @@
   ],
   "sources": [
     {
+      "id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
+      "title": "Emotional Intelligence",
+      "kind": "playlist",
+      "videos_total": 2334,
+      "videos_source": "inventory",
+      "captions_done": 107,
+      "captions_left": 2102,
+      "stt_done": 107,
+      "stt_left": 2227,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
       "id": "PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2",
       "title": "English",
       "kind": "playlist",
@@ -1845,20 +1859,6 @@
       "captions_left": 1207,
       "stt_done": 0,
       "stt_left": 1225,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
-      "title": "Emotional Intelligence",
-      "kind": "playlist",
-      "videos_total": 2334,
-      "videos_source": "inventory",
-      "captions_done": 95,
-      "captions_left": 2122,
-      "stt_done": 95,
-      "stt_left": 3,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
