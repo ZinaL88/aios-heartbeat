@@ -1,10 +1,10 @@
 {
-  "built_at_hkt": "2026-10-05 21:46 HKT",
-  "built_at_utc": "2026-10-05T13:46:14Z",
-  "items": 18875,
-  "transcripts_indexed": 9244,
-  "schema_gaps": 16431,
-  "channels": 86,
+  "built_at_hkt": "2026-10-06 03:01 HKT",
+  "built_at_utc": "2026-10-06T03:01:31Z",
+  "items": 17223,
+  "transcripts_indexed": 7717,
+  "schema_gaps": 14779,
+  "channels": 84,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
   "top_gap_channels": [
@@ -51,21 +51,7 @@
       "schema_gap_count": 849
     },
     {
-      "channel_id": "kedaibiao",
-      "channel_name": "课代表立正",
-      "item_count": 849,
-      "transcript_count": 834,
-      "schema_gap_count": 849
-    },
-    {
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-      "channel_name": "一个狠人",
-      "item_count": 803,
-      "transcript_count": 693,
-      "schema_gap_count": 803
-    },
-    {
-      "channel_id": "henren778",
       "channel_name": "一个狠人",
       "item_count": 803,
       "transcript_count": 693,
@@ -112,6 +98,20 @@
       "item_count": 413,
       "transcript_count": 64,
       "schema_gap_count": 413
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
+      "channel_name": "Crypto",
+      "item_count": 407,
+      "transcript_count": 32,
+      "schema_gap_count": 407
+    },
+    {
+      "channel_id": "PL30C54D951E8E1688",
+      "channel_name": "Careers",
+      "item_count": 284,
+      "transcript_count": 34,
+      "schema_gap_count": 284
     }
   ]
 }
