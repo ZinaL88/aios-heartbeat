@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-07 00:14 HKT",
-  "built_at_utc": "2026-10-06T16:14:38Z",
-  "items": 18686,
+  "built_at_hkt": "2026-10-07 00:36 HKT",
+  "built_at_utc": "2026-10-06T16:36:52Z",
+  "items": 18680,
   "transcripts_indexed": 9156,
-  "schema_gaps": 16242,
+  "schema_gaps": 16236,
   "access_policy": "public_only",
   "channels": 83,
   "local_search_url": "./library-search.html",
@@ -54,9 +54,9 @@
     {
       "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "channel_name": "Learning how to learn",
-      "item_count": 847,
+      "item_count": 846,
       "transcript_count": 151,
-      "schema_gap_count": 847
+      "schema_gap_count": 846
     },
     {
       "channel_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
@@ -66,18 +66,18 @@
       "schema_gap_count": 778
     },
     {
-      "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-      "channel_name": "Mike是麦克",
-      "item_count": 695,
-      "transcript_count": 585,
-      "schema_gap_count": 695
-    },
-    {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
       "channel_name": "Entrepreneur",
       "item_count": 692,
       "transcript_count": 563,
       "schema_gap_count": 692
+    },
+    {
+      "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
+      "channel_name": "Mike是麦克",
+      "item_count": 691,
+      "transcript_count": 585,
+      "schema_gap_count": 691
     },
     {
       "channel_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
