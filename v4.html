@@ -66,8 +66,8 @@ body { overflow-x:hidden; max-width:100vw;
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-10-06 20:16 HKT</span></div>
-<p class="mono" id="ping">2026-10-06 20:16 HKT</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-10-06 20:27 HKT</span></div>
+<p class="mono" id="ping">2026-10-06 20:27 HKT</p>
 
 <div class="card">
   <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">no child</span></div>
@@ -78,9 +78,9 @@ body { overflow-x:hidden; max-width:100vw;
 <div class="card">
   <div class="row"><h2><span class="dot on" id="capDot"></span>CAPTIONS</h2>
     <span class="mono" id="capState">running</span></div>
-  <p class="ch" id="capCh">PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4</p>
-  <div class="row"><span class="big" id="capNum">28</span>
-    <span class="mono" id="capEta">1 workers · left</span></div>
+  <p class="ch" id="capCh">PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr</p>
+  <div class="row"><span class="big" id="capNum">197</span>
+    <span class="mono" id="capEta">2 workers · left</span></div>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot on" id="sttDot"></span>STT</h2>
@@ -93,15 +93,15 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 6.6G / 15.6G · load 0.66</p>
+  <p class="ch" id="ram">RAM 6.0G / 15.6G · load 0.82</p>
   <p class="mono" id="box2">disk 109G · tmp 52M · cookies no</p>
-  <p class="mono" id="sched">next ping 2026-10-06 20:20 HKT · captions + Whisper running</p>
+  <p class="mono" id="sched">next ping 2026-10-06 20:30 HKT · captions + Whisper running</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li><b>STT</b> · mike1111 · 0 pending</li><li><b>CAPTIONS ×1</b> · PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4 · 12950/25852</li><li class="mono">pid 655683 · proc</li><li class="mono">pid 656811 · proc</li></ol>
+  <ol id="running"><li><b>STT</b> · mike1111 · 0 pending</li><li><b>CAPTIONS ×2</b> · PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr · 12950/25852</li><li class="mono">pid 669354 · proc</li><li class="mono">pid 670505 · proc</li><li class="mono">pid 673530 · proc</li></ol>
 </div>
 
 <div class="card">
@@ -127,7 +127,7 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-10-06T12:15:48Z captions after fill running=3</li><li><span class="mono">reboost.log</span> 2026-10-06T12:15:48Z STT already running — no second Whisper</li><li><span class="mono">reboost.log</span> 2026-10-06T12:16:18Z skip — another reboost holds lock</li><li><span class="mono">reboost.log</span> 2026-10-06T12:16:18Z ensure_venv — start</li><li><span class="mono">reboost.log</span> 2026-10-06T12:16:19Z ensure_venv — ok</li><li><span class="mono">reboost.log</span> 2026-10-06T12:16:19Z STT_VENV_OK=1 PY=&lt;path&gt;</li><li><span class="mono">reboost.log</span> 2026-10-06T12:16:19Z STT parent has no transcribe_audio &gt;3min — restart parent</li><li><span class="mono">reboost.log</span> 2026-10-06T12:16:19Z kill_stt_tree pid=655683</li><li class="mono">ERROR wT7xMJ9QI0w: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR E_Cqqxx3_i4: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR BdiW50qfEvA: Cannot verify caption availability; STT deferred</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> ode captions --language auto --sleep-min 4 --sleep-max 8 --inventory &lt;path&gt;</li><li><span class="mono">reboost.log</span> 2026-10-06T12:27:31Z reboost captions supervised channel PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr</li><li><span class="mono">reboost.log</span> 2026-10-06T12:27:32Z captions after fill running=3</li><li><span class="mono">reboost.log</span> 2026-10-06T12:27:32Z STT already running — no second Whisper</li><li class="mono">&quot;done_count&quot;: 37</li><li class="mono">}</li><li class="mono">ERROR Z2fgB8WNC8Q: Cannot verify caption availability; STT deferred</li></ol>
 </div>
 
 <div class="card">
