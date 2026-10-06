@@ -1,0 +1,15 @@
+time_hkt,worker,label,status,ref
+2026-10-06T10:24:02+08:00,Instinct,information work,done,summary-a
+2026-10-06T11:01:38+08:00,Instinct,document work,done,document-a
+2026-10-06T11:01:38+08:00,Instinct,document work,done,document-b
+2026-10-06T11:28:15+08:00,Instinct,reviewing HEARTBEAT page,started,heartbeat:page-review
+2026-10-06T11:29:48+08:00,Instinct,reviewing HEARTBEAT page,done,heartbeat:page-review
+2026-10-06T11:31:56+08:00,Instinct,reviewing commits and PR #14,started,ai-os:review-round
+2026-10-06T11:36:48+08:00,Instinct,reviewing commits and PR #14,done,ai-os:review-round
+2026-10-06T11:36:48+08:00,Instinct,reviewing PR #15,started,ai-os:pr-15
+2026-10-06T11:38:02+08:00,Instinct,reviewing PR #15,done,ai-os:pr-15
+2026-10-06T12:21:11+08:00,Instinct,control room design,started,heartbeat:design
+2026-10-06T12:24:02+08:00,Instinct,control room design,done,heartbeat:design
+2026-10-06T12:26:09+08:00,Instinct,fleet dashboard sheet,started,heartbeat:dashboard
+2026-10-06T12:28:56+08:00,Instinct,fleet dashboard sheet,done,heartbeat:dashboard
+2026-10-06T12:40:32+08:00,Instinct,heartbeat activity panel handoff,started,heartbeat:activity-route
