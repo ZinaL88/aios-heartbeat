@@ -257,6 +257,6 @@
   "target_shard_bytes": 1750000,
   "avg_chars": 41714,
   "note": "Map videoId → full transcript text (string), or {text,chars,full_chars,truncated:true} when over max_chars. Lazy-loaded by library-search.html.",
-  "built_at_hkt": "2026-10-06 22:40 HKT",
-  "built_at_utc": "2026-10-06T14:40:55Z"
+  "built_at_hkt": "2026-10-06 22:52 HKT",
+  "built_at_utc": "2026-10-06T14:52:10Z"
 }

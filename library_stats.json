@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-06 22:40 HKT",
-  "built_at_utc": "2026-10-06T14:40:55Z",
-  "items": 18702,
+  "built_at_hkt": "2026-10-06 22:52 HKT",
+  "built_at_utc": "2026-10-06T14:52:10Z",
+  "items": 18699,
   "transcripts_indexed": 9156,
-  "schema_gaps": 16258,
+  "schema_gaps": 16255,
   "access_policy": "public_only",
   "channels": 83,
   "local_search_url": "./library-search.html",
@@ -26,9 +26,9 @@
     {
       "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
       "channel_name": "Data Science",
-      "item_count": 1389,
+      "item_count": 1388,
       "transcript_count": 615,
-      "schema_gap_count": 1389
+      "schema_gap_count": 1388
     },
     {
       "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
@@ -54,9 +54,9 @@
     {
       "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "channel_name": "Learning how to learn",
-      "item_count": 848,
+      "item_count": 847,
       "transcript_count": 151,
-      "schema_gap_count": 848
+      "schema_gap_count": 847
     },
     {
       "channel_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
