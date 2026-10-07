@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-07 20:53 HKT",
+  "written_at_hkt": "2026-10-07 20:58 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -234,6 +234,19 @@
       "videos_total": 80,
       "status": "waiting_captions",
       "label": "Waiting captions"
+    },
+    {
+      "name": "UC9oosAco7nIVZwuGhnC0FKg",
+      "channel_id": "UC9oosAco7nIVZwuGhnC0FKg",
+      "skip": false,
+      "reason": "Z L request 2026-10-07 full channel 宏观阿尔法 (video b9-TFYu12zU)",
+      "captions_done": 1,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 1,
+      "videos_total": 1,
+      "status": "waiting_stt",
+      "label": "Waiting STT"
     }
   ],
   "tasks": [
@@ -3566,6 +3579,20 @@
       "captions_done": 20,
       "captions_left": 0,
       "stt_done": 20,
+      "stt_left": 1,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UC9oosAco7nIVZwuGhnC0FKg",
+      "title": "UC9oosAco7nIVZwuGhnC0FKg",
+      "kind": "channel",
+      "videos_total": 1,
+      "videos_source": "folder_count",
+      "captions_done": 1,
+      "captions_left": 0,
+      "stt_done": 0,
       "stt_left": 1,
       "status": "waiting_stt",
       "label": "Waiting STT",
