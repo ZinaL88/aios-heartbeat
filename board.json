@@ -1,11 +1,18 @@
 {
-  "written_at_hkt": "2026-10-08 02:05 HKT",
+  "written_at_hkt": "2026-10-08 02:11 HKT",
   "queue": [
     {
       "name": "seanaistories",
-      "channel_id": null,
-      "skip": true,
-      "reason": "Z L request 2026-10-08: HIGH priority whole-channel (videos/Shorts/posts/playlists/members-if-any); channel-ID lookup awaiting login / 等待登入 (must resolve UC id "
+      "channel_id": "UCx-OfB7xsTN_GnoplitHfXg",
+      "skip": false,
+      "reason": "Z L request 2026-10-08: HIGH priority whole-channel (videos/Shorts/posts/playlists/members-if-any); channel ID resolved logged-out 2026-10-08 per new rule (publ",
+      "captions_done": 7,
+      "captions_left": 93,
+      "stt_done": 7,
+      "stt_left": 93,
+      "videos_total": 100,
+      "status": "waiting_captions",
+      "label": "Waiting captions"
     },
     {
       "name": "Lenny's Podcast",
@@ -256,9 +263,16 @@
     },
     {
       "name": "money_or_life",
-      "channel_id": null,
-      "skip": true,
-      "reason": "Z L request 2026-10-07: LOW priority whole-channel; channel-ID lookup awaiting login / 等待登入 (must resolve UC id with logged-in identity; box deliberately logged"
+      "channel_id": "UC9cfcOuTT9rYkyUimMjLxuw",
+      "skip": false,
+      "reason": "Z L request 2026-10-07: LOW priority whole-channel; channel ID resolved logged-out 2026-10-08 per new rule (public IDs looked up logged-out). Re-added 2026-10-0",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 0,
+      "videos_total": 0,
+      "status": "not_started",
+      "label": "Not started"
     }
   ],
   "tasks": [
@@ -2043,6 +2057,20 @@
       "skip": false
     },
     {
+      "id": "UCx-OfB7xsTN_GnoplitHfXg",
+      "title": "seanaistories",
+      "kind": "channel",
+      "videos_total": 100,
+      "videos_source": "inventory",
+      "captions_done": 7,
+      "captions_left": 93,
+      "stt_done": 7,
+      "stt_left": 93,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
       "id": "PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr",
       "title": "個人成長心理學",
       "kind": "playlist",
@@ -3762,6 +3790,20 @@
       "stt_left": 1,
       "status": "waiting_stt",
       "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UC9cfcOuTT9rYkyUimMjLxuw",
+      "title": "money_or_life",
+      "kind": "channel",
+      "videos_total": 0,
+      "videos_source": "none",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 0,
+      "status": "not_started",
+      "label": "Not started",
       "skip": false
     },
     {
