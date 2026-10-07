@@ -1,15 +1,15 @@
 {
-  "written_at_hkt": "2026-10-08 02:22 HKT",
+  "written_at_hkt": "2026-10-08 02:33 HKT",
   "queue": [
     {
       "name": "seanaistories",
       "channel_id": "UCx-OfB7xsTN_GnoplitHfXg",
       "skip": false,
       "reason": "Z L request 2026-10-08: HIGH priority whole-channel (videos/Shorts/posts/playlists/members-if-any); channel ID resolved logged-out 2026-10-08 per new rule (publ",
-      "captions_done": 68,
-      "captions_left": 32,
-      "stt_done": 68,
-      "stt_left": 32,
+      "captions_done": 93,
+      "captions_left": 5,
+      "stt_done": 93,
+      "stt_left": 7,
       "videos_total": 100,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2169,20 +2169,6 @@
       "skip": false
     },
     {
-      "id": "UCx-OfB7xsTN_GnoplitHfXg",
-      "title": "seanaistories",
-      "kind": "channel",
-      "videos_total": 100,
-      "videos_source": "inventory",
-      "captions_done": 68,
-      "captions_left": 32,
-      "stt_done": 68,
-      "stt_left": 32,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
       "title": "常用英语口语训练",
       "kind": "playlist",
@@ -2346,6 +2332,20 @@
       "captions_left": 6,
       "stt_done": 0,
       "stt_left": 6,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UCx-OfB7xsTN_GnoplitHfXg",
+      "title": "seanaistories",
+      "kind": "channel",
+      "videos_total": 100,
+      "videos_source": "inventory",
+      "captions_done": 93,
+      "captions_left": 5,
+      "stt_done": 93,
+      "stt_left": 7,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
