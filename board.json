@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-07 22:38 HKT",
+  "written_at_hkt": "2026-10-07 22:44 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1817,6 +1817,76 @@
       "videos_total": 6,
       "status": "waiting_captions",
       "label": "Waiting captions"
+    },
+    {
+      "tier": "P0",
+      "title": "代号108",
+      "videos": 8,
+      "skip": false,
+      "playlist_id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
+      "captions_done": 0,
+      "captions_left": 8,
+      "stt_done": 0,
+      "stt_left": 8,
+      "videos_total": 8,
+      "status": "waiting_captions",
+      "label": "Waiting captions"
+    },
+    {
+      "tier": "P0",
+      "title": "康波周期",
+      "videos": 1,
+      "skip": false,
+      "playlist_id": "PLVt93Bo6TqvwWE1e8lD-zPj2PWGy6Fhe7",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 1,
+      "videos_total": 1,
+      "status": "waiting_stt",
+      "label": "Waiting STT"
+    },
+    {
+      "tier": "P0",
+      "title": "系统经济金融",
+      "videos": 98,
+      "skip": false,
+      "playlist_id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
+      "captions_done": 0,
+      "captions_left": 98,
+      "stt_done": 0,
+      "stt_left": 98,
+      "videos_total": 98,
+      "status": "waiting_captions",
+      "label": "Waiting captions"
+    },
+    {
+      "tier": "P0",
+      "title": "系统逻辑学",
+      "videos": 5,
+      "skip": false,
+      "playlist_id": "PLVt93Bo6Tqvyufl7ntJadlQbBWZo-95NV",
+      "captions_done": 0,
+      "captions_left": 4,
+      "stt_done": 0,
+      "stt_left": 1,
+      "videos_total": 5,
+      "status": "waiting_captions",
+      "label": "Waiting captions"
+    },
+    {
+      "tier": "P0",
+      "title": "投機實驗室",
+      "videos": 8,
+      "skip": false,
+      "playlist_id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
+      "captions_done": 0,
+      "captions_left": 8,
+      "stt_done": 0,
+      "stt_left": 8,
+      "videos_total": 8,
+      "status": "waiting_captions",
+      "label": "Waiting captions"
     }
   ],
   "sources": [
@@ -1956,6 +2026,20 @@
       "captions_left": 131,
       "stt_done": 0,
       "stt_left": 131,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
+      "title": "系统经济金融",
+      "kind": "playlist",
+      "videos_total": 98,
+      "videos_source": "task",
+      "captions_done": 0,
+      "captions_left": 98,
+      "stt_done": 0,
+      "stt_left": 98,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2157,6 +2241,34 @@
       "skip": false
     },
     {
+      "id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
+      "title": "代号108",
+      "kind": "playlist",
+      "videos_total": 8,
+      "videos_source": "task",
+      "captions_done": 0,
+      "captions_left": 8,
+      "stt_done": 0,
+      "stt_left": 8,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
+      "title": "投機實驗室",
+      "kind": "playlist",
+      "videos_total": 8,
+      "videos_source": "task",
+      "captions_done": 0,
+      "captions_left": 8,
+      "stt_done": 0,
+      "stt_left": 8,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
       "id": "PLrtCHHeadkHrrX6rxS2sbcMU5Em6L1i5Y",
       "title": "Compensation & Negotiation",
       "kind": "playlist",
@@ -2320,6 +2432,20 @@
       "captions_left": 3,
       "stt_done": 0,
       "stt_left": 3,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLVt93Bo6Tqvyufl7ntJadlQbBWZo-95NV",
+      "title": "系统逻辑学",
+      "kind": "playlist",
+      "videos_total": 5,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 4,
+      "stt_done": 0,
+      "stt_left": 1,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -3591,6 +3717,20 @@
       "videos_total": 1,
       "videos_source": "folder_count",
       "captions_done": 1,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 1,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "PLVt93Bo6TqvwWE1e8lD-zPj2PWGy6Fhe7",
+      "title": "康波周期",
+      "kind": "playlist",
+      "videos_total": 1,
+      "videos_source": "inventory",
+      "captions_done": 0,
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 1,
