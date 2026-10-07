@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-07 22:44 HKT",
+  "written_at_hkt": "2026-10-07 22:55 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1825,12 +1825,12 @@
       "skip": false,
       "playlist_id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
       "captions_done": 0,
-      "captions_left": 8,
+      "captions_left": 0,
       "stt_done": 0,
       "stt_left": 8,
       "videos_total": 8,
-      "status": "waiting_captions",
-      "label": "Waiting captions"
+      "status": "waiting_stt",
+      "label": "Waiting STT"
     },
     {
       "tier": "P0",
@@ -1853,9 +1853,9 @@
       "skip": false,
       "playlist_id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
       "captions_done": 0,
-      "captions_left": 98,
+      "captions_left": 26,
       "stt_done": 0,
-      "stt_left": 98,
+      "stt_left": 72,
       "videos_total": 98,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1867,12 +1867,12 @@
       "skip": false,
       "playlist_id": "PLVt93Bo6Tqvyufl7ntJadlQbBWZo-95NV",
       "captions_done": 0,
-      "captions_left": 4,
+      "captions_left": 0,
       "stt_done": 0,
-      "stt_left": 1,
+      "stt_left": 5,
       "videos_total": 5,
-      "status": "waiting_captions",
-      "label": "Waiting captions"
+      "status": "waiting_stt",
+      "label": "Waiting STT"
     },
     {
       "tier": "P0",
@@ -1881,12 +1881,12 @@
       "skip": false,
       "playlist_id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
       "captions_done": 0,
-      "captions_left": 8,
+      "captions_left": 0,
       "stt_done": 0,
       "stt_left": 8,
       "videos_total": 8,
-      "status": "waiting_captions",
-      "label": "Waiting captions"
+      "status": "waiting_stt",
+      "label": "Waiting STT"
     }
   ],
   "sources": [
@@ -2031,20 +2031,6 @@
       "skip": false
     },
     {
-      "id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
-      "title": "系统经济金融",
-      "kind": "playlist",
-      "videos_total": 98,
-      "videos_source": "task",
-      "captions_done": 0,
-      "captions_left": 98,
-      "stt_done": 0,
-      "stt_left": 98,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr",
       "title": "個人成長心理學",
       "kind": "playlist",
@@ -2124,6 +2110,20 @@
       "captions_left": 63,
       "stt_done": 0,
       "stt_left": 63,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
+      "title": "系统经济金融",
+      "kind": "playlist",
+      "videos_total": 98,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 26,
+      "stt_done": 0,
+      "stt_left": 72,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2229,34 +2229,6 @@
     {
       "id": "PLrtCHHeadkHqFoyAJ8f-cYynn0MhYr7vO",
       "title": "SQL Interview Prep",
-      "kind": "playlist",
-      "videos_total": 8,
-      "videos_source": "task",
-      "captions_done": 0,
-      "captions_left": 8,
-      "stt_done": 0,
-      "stt_left": 8,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
-      "title": "代号108",
-      "kind": "playlist",
-      "videos_total": 8,
-      "videos_source": "task",
-      "captions_done": 0,
-      "captions_left": 8,
-      "stt_done": 0,
-      "stt_left": 8,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
-      "title": "投機實驗室",
       "kind": "playlist",
       "videos_total": 8,
       "videos_source": "task",
@@ -2432,20 +2404,6 @@
       "captions_left": 3,
       "stt_done": 0,
       "stt_left": 3,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "PLVt93Bo6Tqvyufl7ntJadlQbBWZo-95NV",
-      "title": "系统逻辑学",
-      "kind": "playlist",
-      "videos_total": 5,
-      "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 4,
-      "stt_done": 0,
-      "stt_left": 1,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -3599,6 +3557,34 @@
       "skip": false
     },
     {
+      "id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
+      "title": "代号108",
+      "kind": "playlist",
+      "videos_total": 8,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 8,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
+      "title": "投機實驗室",
+      "kind": "playlist",
+      "videos_total": 8,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 8,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
       "id": "PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW",
       "title": "Automate the Boring Stuff with Python",
       "kind": "playlist",
@@ -3635,6 +3621,20 @@
       "captions_done": 35,
       "captions_left": 0,
       "stt_done": 35,
+      "stt_left": 5,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "PLVt93Bo6Tqvyufl7ntJadlQbBWZo-95NV",
+      "title": "系统逻辑学",
+      "kind": "playlist",
+      "videos_total": 5,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
       "stt_left": 5,
       "status": "waiting_stt",
       "label": "Waiting STT",
