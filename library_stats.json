@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-07 08:50 HKT",
-  "built_at_utc": "2026-10-07T00:50:47Z",
-  "items": 18593,
-  "transcripts_indexed": 9156,
-  "schema_gaps": 16149,
+  "built_at_hkt": "2026-10-07 09:01 HKT",
+  "built_at_utc": "2026-10-07T01:01:53Z",
+  "items": 18590,
+  "transcripts_indexed": 9154,
+  "schema_gaps": 16146,
   "access_policy": "public_only",
   "channels": 83,
   "local_search_url": "./library-search.html",
@@ -40,9 +40,9 @@
     {
       "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
       "channel_name": "#11 课代表立正",
-      "item_count": 1266,
-      "transcript_count": 1260,
-      "schema_gap_count": 1266
+      "item_count": 1264,
+      "transcript_count": 1258,
+      "schema_gap_count": 1264
     },
     {
       "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",

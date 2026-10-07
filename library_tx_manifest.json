@@ -250,13 +250,13 @@
     "library_tx_246.json",
     "library_tx_247.json"
   ],
-  "items": 7719,
+  "items": 7718,
   "missing_files": 47,
   "max_chars": 200000,
   "truncated_items": 762,
   "target_shard_bytes": 1750000,
-  "avg_chars": 41714,
+  "avg_chars": 41719,
   "note": "Map videoId → full transcript text (string), or {text,chars,full_chars,truncated:true} when over max_chars. Lazy-loaded by library-search.html.",
-  "built_at_hkt": "2026-10-07 08:50 HKT",
-  "built_at_utc": "2026-10-07T00:50:47Z"
+  "built_at_hkt": "2026-10-07 09:01 HKT",
+  "built_at_utc": "2026-10-07T01:01:53Z"
 }
