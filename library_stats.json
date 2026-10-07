@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-07 08:39 HKT",
-  "built_at_utc": "2026-10-07T00:39:37Z",
-  "items": 18595,
+  "built_at_hkt": "2026-10-07 08:50 HKT",
+  "built_at_utc": "2026-10-07T00:50:47Z",
+  "items": 18593,
   "transcripts_indexed": 9156,
-  "schema_gaps": 16151,
+  "schema_gaps": 16149,
   "access_policy": "public_only",
   "channels": 83,
   "local_search_url": "./library-search.html",
@@ -26,9 +26,9 @@
     {
       "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
       "channel_name": "Data Science",
-      "item_count": 1384,
+      "item_count": 1383,
       "transcript_count": 615,
-      "schema_gap_count": 1384
+      "schema_gap_count": 1383
     },
     {
       "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
