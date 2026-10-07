@@ -1,6 +1,12 @@
 {
-  "written_at_hkt": "2026-10-08 02:00 HKT",
+  "written_at_hkt": "2026-10-08 02:05 HKT",
   "queue": [
+    {
+      "name": "seanaistories",
+      "channel_id": null,
+      "skip": true,
+      "reason": "Z L request 2026-10-08: HIGH priority whole-channel (videos/Shorts/posts/playlists/members-if-any); channel-ID lookup awaiting login / 等待登入 (must resolve UC id "
+    },
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
@@ -247,6 +253,12 @@
       "videos_total": 1,
       "status": "waiting_stt",
       "label": "Waiting STT"
+    },
+    {
+      "name": "money_or_life",
+      "channel_id": null,
+      "skip": true,
+      "reason": "Z L request 2026-10-07: LOW priority whole-channel; channel-ID lookup awaiting login / 等待登入 (must resolve UC id with logged-in identity; box deliberately logged"
     }
   ],
   "tasks": [
