@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-09 00:07 HKT",
+  "written_at_hkt": "2026-10-09 00:13 HKT",
   "queue": [
     {
       "name": "seanaistories",
@@ -260,6 +260,19 @@
       "videos_total": 1,
       "status": "waiting_stt",
       "label": "Waiting STT"
+    },
+    {
+      "name": "Yinuo Li",
+      "channel_id": "UCy1H1D4DkvBBxU3mcxAXDOw",
+      "skip": true,
+      "reason": "Requested via chat 2026-10-09: whole-channel (videos/Shorts/posts/playlists/members-if-any); no priority given -> NORMAL; channel ID resolved logged-out 2026-10",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
+      "stt_left": 0,
+      "videos_total": 0,
+      "status": "paused",
+      "label": "Paused / skip"
     },
     {
       "name": "money_or_life",
@@ -3815,6 +3828,20 @@
       "captions_done": 632,
       "captions_left": 0,
       "stt_done": 834,
+      "stt_left": 0,
+      "status": "paused",
+      "label": "Paused / skip",
+      "skip": true
+    },
+    {
+      "id": "UCy1H1D4DkvBBxU3mcxAXDOw",
+      "title": "Yinuo Li",
+      "kind": "channel",
+      "videos_total": 0,
+      "videos_source": "none",
+      "captions_done": 0,
+      "captions_left": 0,
+      "stt_done": 0,
       "stt_left": 0,
       "status": "paused",
       "label": "Paused / skip",
