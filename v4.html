@@ -66,8 +66,8 @@ body { overflow-x:hidden; max-width:100vw;
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-10-08 13:04 HKT</span></div>
-<p class="mono" id="ping">2026-10-08 13:04 HKT</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-10-08 13:16 HKT</span></div>
+<p class="mono" id="ping">2026-10-08 13:16 HKT</p>
 
 <div class="card">
   <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">no child</span></div>
@@ -76,11 +76,11 @@ body { overflow-x:hidden; max-width:100vw;
   <p class="mono" id="sttDisk">8266 transcripts on disk</p>
 </div>
 <div class="card">
-  <div class="row"><h2><span class="dot " id="capDot"></span>CAPTIONS</h2>
-    <span class="mono" id="capState">idle</span></div>
-  <p class="ch" id="capCh">idle</p>
-  <div class="row"><span class="big" id="capNum">8471</span>
-    <span class="mono" id="capEta">0 workers · left</span></div>
+  <div class="row"><h2><span class="dot on" id="capDot"></span>CAPTIONS</h2>
+    <span class="mono" id="capState">running</span></div>
+  <p class="ch" id="capCh">PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ</p>
+  <div class="row"><span class="big" id="capNum">12</span>
+    <span class="mono" id="capEta">1 workers · left</span></div>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot " id="sttDot"></span>STT</h2>
@@ -93,15 +93,15 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 3.5G / 15.6G · load 0.6</p>
+  <p class="ch" id="ram">RAM 3.5G / 15.6G · load 0.96</p>
   <p class="mono" id="box2">disk 105G · tmp 73M · cookies no</p>
-  <p class="mono" id="sched">next ping 2026-10-08 13:05 HKT · captions eligible now (3.5G≥1.2); Whisper blocked until 6.0G</p>
+  <p class="mono" id="sched">next ping 2026-10-08 13:20 HKT · captions on · Whisper blocked until 6.0G (now 3.5G)</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li>idle</li></ol>
+  <ol id="running"><li><b>CAPTIONS ×1</b> · PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ · 13044/26073</li><li class="mono">pid 2533519 · proc</li></ol>
 </div>
 
 <div class="card">
@@ -127,7 +127,7 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-10-08T05:04:21Z captions running=1 target=1 stt_live=none mem=3.2G cap_signal=1</li><li><span class="mono">reboost.log</span> 2026-10-08T05:04:21Z captions after fill running=1</li><li><span class="mono">reboost.log</span> 2026-10-08T05:04:21Z skip STT — headroom 3.2G &lt; 6G (captions may still run)</li><li><span class="mono">reboost.log</span> 2026-10-08T05:04:53Z skip — another reboost holds lock</li><li><span class="mono">reboost.log</span> 2026-10-08T05:04:53Z ensure_venv — start</li><li><span class="mono">reboost.log</span> 2026-10-08T05:04:53Z ensure_venv — ok</li><li><span class="mono">reboost.log</span> 2026-10-08T05:04:53Z STT_VENV_OK=1 PY=&lt;path&gt;</li><li><span class="mono">reboost.log</span> 2026-10-08T05:04:54Z STT past ETA deadline — restart parent</li><li class="mono">&quot;wrote_progress&quot;: &quot;&lt;path&gt;</li><li class="mono">&quot;done_count&quot;: 0</li><li class="mono">}</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-10-08T05:15:29Z reboost captions supervised channel PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ</li><li><span class="mono">reboost.log</span> 2026-10-08T05:15:29Z captions after fill running=1</li><li><span class="mono">reboost.log</span> 2026-10-08T05:15:29Z skip STT — headroom 3.6G &lt; 6G (captions may still run)</li><li><span class="mono">reboost.log</span> 2026-10-08T05:16:00Z skip — another reboost holds lock</li><li><span class="mono">reboost.log</span> 2026-10-08T05:16:00Z ensure_venv — start</li><li><span class="mono">reboost.log</span> 2026-10-08T05:16:00Z ensure_venv — ok</li><li><span class="mono">reboost.log</span> 2026-10-08T05:16:01Z STT_VENV_OK=1 PY=&lt;path&gt;</li><li><span class="mono">reboost.log</span> 2026-10-08T05:16:01Z STT past ETA deadline — restart parent</li><li class="mono">ERROR wyzC0tt0Q7o: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR 2QwDjE_UQTA: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR 6V5dlBcfCnY: Original caption language unverified; defer rather than save a translation</li></ol>
 </div>
 
 <div class="card">
