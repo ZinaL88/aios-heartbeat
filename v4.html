@@ -66,21 +66,21 @@ body { overflow-x:hidden; max-width:100vw;
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-10-15 04:06 HKT</span></div>
-<p class="mono" id="ping">2026-10-15 04:06 HKT</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-10-15 09:00 HKT</span></div>
+<p class="mono" id="ping">2026-10-15 09:00 HKT</p>
 
 <div class="card">
-  <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">no child</span></div>
+  <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">8zxm0ekADss</span></div>
   <p class="big" id="allNum">0</p>
   <p class="ch" id="sttDeadline">ETA unknown</p>
-  <p class="mono" id="sttDisk">8421 transcripts on disk</p>
+  <p class="mono" id="sttDisk">8474 transcripts on disk</p>
 </div>
 <div class="card">
-  <div class="row"><h2><span class="dot on" id="capDot"></span>CAPTIONS</h2>
-    <span class="mono" id="capState">running</span></div>
-  <p class="ch" id="capCh">PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e,PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2,PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE</p>
-  <div class="row"><span class="big" id="capNum">3478</span>
-    <span class="mono" id="capEta">3 workers · left</span></div>
+  <div class="row"><h2><span class="dot " id="capDot"></span>CAPTIONS</h2>
+    <span class="mono" id="capState">idle</span></div>
+  <p class="ch" id="capCh">idle</p>
+  <div class="row"><span class="big" id="capNum">8156</span>
+    <span class="mono" id="capEta">0 workers · left</span></div>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot on" id="sttDot"></span>STT</h2>
@@ -93,15 +93,15 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 2.8G / 15.6G · load 3.73</p>
-  <p class="mono" id="box2">disk 110G · tmp 19M · cookies no</p>
-  <p class="mono" id="sched">next ping 2026-10-15 04:10 HKT · captions + Whisper running</p>
+  <p class="ch" id="ram">RAM 2.0G / 15.6G · load 4.22</p>
+  <p class="mono" id="box2">disk 108G · tmp 135M · cookies no</p>
+  <p class="mono" id="sched">next ping 2026-10-15 09:05 HKT · Whisper on · captions idle (reboost captions if RAM≥1.2)</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li><b>STT</b> · mike1111 · 0 pending</li><li><b>CAPTIONS ×3</b> · PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e,PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2,PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE · 13199/26073</li><li class="mono">pid 437908 · proc</li><li class="mono">pid 422678 · proc</li><li class="mono">pid 422741 · proc</li><li class="mono">pid 423569 · proc</li></ol>
+  <ol id="running"><li><b>STT</b> · mike1111 · 0 pending</li><li class="mono">pid 463162 · proc</li><li class="mono">pid 471733 · proc</li></ol>
 </div>
 
 <div class="card">
@@ -127,7 +127,7 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-10-14T20:00:23Z STT already running — no second Whisper</li><li><span class="mono">reboost.log</span> 2026-10-14T20:05:55Z ensure_venv — start</li><li><span class="mono">reboost.log</span> 2026-10-14T20:05:56Z ensure_venv — ok</li><li><span class="mono">reboost.log</span> 2026-10-14T20:05:57Z STT_VENV_OK=1 PY=&lt;path&gt;</li><li><span class="mono">reboost.log</span> 2026-10-14T20:05:57Z post-wake: tick gap 334s (VM pause) — stall kills paused for 300s</li><li><span class="mono">reboost.log</span> 2026-10-14T20:05:57Z captions running=3 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.3G cap_signal=none</li><li><span class="mono">reboost.log</span> 2026-10-14T20:05:57Z captions after fill running=3</li><li><span class="mono">reboost.log</span> 2026-10-14T20:05:57Z STT already running — no second Whisper</li><li class="mono">ERROR sSmG9akrKoc: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR t0ym7XQZ-Hw: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR 7--WvAx_tyY: Cannot verify caption availability; STT deferred</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-10-15T01:00:39Z ensure_venv — start</li><li><span class="mono">reboost.log</span> 2026-10-15T01:00:40Z ensure_venv — ok</li><li><span class="mono">reboost.log</span> 2026-10-15T01:00:41Z STT_VENV_OK=1 PY=&lt;path&gt;</li><li><span class="mono">reboost.log</span> 2026-10-15T01:00:41Z post-wake: tick gap 195s (VM pause) — stall kills paused for 300s</li><li><span class="mono">reboost.log</span> 2026-10-15T01:00:41Z captions running=0 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=4.6G cap_signal=none</li><li><span class="mono">reboost.log</span> 2026-10-15T01:00:41Z captions pick empty — stop filling (exclude=UCAxQ8sjHgjXh26la7jEBw3w)</li><li><span class="mono">reboost.log</span> 2026-10-15T01:00:41Z captions after fill running=0</li><li><span class="mono">reboost.log</span> 2026-10-15T01:00:41Z STT already running — no second Whisper</li><li class="mono">}</li><li class="mono">[1&lt;path&gt; aYdprii_X4A CONVERSATION MASTERCLASS: How To STOP TRANSLATING In Your Head! | Learn to Think in English</li><li class="mono">[2&lt;path&gt; nGsEc0HYtmw None</li></ol>
 </div>
 
 <div class="card">
