@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-16 01:22 HKT",
+  "written_at_hkt": "2026-10-16 01:32 HKT",
   "queue": [
     {
       "name": "seanaistories",
@@ -1513,10 +1513,10 @@
       "videos": 1218,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
-      "captions_done": 210,
-      "captions_left": 955,
-      "stt_done": 210,
-      "stt_left": 1015,
+      "captions_done": 243,
+      "captions_left": 916,
+      "stt_done": 243,
+      "stt_left": 982,
       "videos_total": 1225,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1569,10 +1569,10 @@
       "videos": 1248,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
-      "captions_done": 116,
-      "captions_left": 983,
-      "stt_done": 116,
-      "stt_left": 17,
+      "captions_done": 144,
+      "captions_left": 922,
+      "stt_done": 144,
+      "stt_left": 22,
       "videos_total": 1251,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1963,10 +1963,10 @@
       "kind": "playlist",
       "videos_total": 1225,
       "videos_source": "inventory",
-      "captions_done": 210,
-      "captions_left": 955,
-      "stt_done": 210,
-      "stt_left": 1015,
+      "captions_done": 243,
+      "captions_left": 916,
+      "stt_done": 243,
+      "stt_left": 982,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -1981,20 +1981,6 @@
       "captions_left": 810,
       "stt_done": 45,
       "stt_left": 854,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
-      "title": "Interpersonal",
-      "kind": "playlist",
-      "videos_total": 1251,
-      "videos_source": "inventory",
-      "captions_done": 116,
-      "captions_left": 983,
-      "stt_done": 116,
-      "stt_left": 17,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2023,6 +2009,20 @@
       "captions_left": 485,
       "stt_done": 0,
       "stt_left": 485,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
+      "title": "Interpersonal",
+      "kind": "playlist",
+      "videos_total": 1251,
+      "videos_source": "inventory",
+      "captions_done": 144,
+      "captions_left": 922,
+      "stt_done": 144,
+      "stt_left": 22,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
