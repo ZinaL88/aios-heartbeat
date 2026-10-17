@@ -1,10 +1,10 @@
 {
-  "built_at_hkt": "2026-10-17 07:26 HKT",
-  "built_at_utc": "2026-10-16T23:26:40Z",
-  "items": 20940,
-  "transcripts_indexed": 10502,
-  "schema_gaps": 18496,
-  "channels": 99,
+  "built_at_hkt": "2026-10-17 04:26 HKT",
+  "built_at_utc": "2026-10-17T04:26:30Z",
+  "items": 17223,
+  "transcripts_indexed": 7717,
+  "schema_gaps": 14779,
+  "channels": 84,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
   "top_gap_channels": [
@@ -51,21 +51,7 @@
       "schema_gap_count": 849
     },
     {
-      "channel_id": "kedaibiao",
-      "channel_name": "课代表立正",
-      "item_count": 849,
-      "transcript_count": 834,
-      "schema_gap_count": 849
-    },
-    {
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
-      "channel_name": "一个狠人",
-      "item_count": 803,
-      "transcript_count": 693,
-      "schema_gap_count": 803
-    },
-    {
-      "channel_id": "henren778",
       "channel_name": "一个狠人",
       "item_count": 803,
       "transcript_count": 693,
@@ -100,18 +86,32 @@
       "schema_gap_count": 616
     },
     {
-      "channel_id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
-      "channel_name": "Emotional Intelligence",
-      "item_count": 590,
-      "transcript_count": 357,
-      "schema_gap_count": 590
-    },
-    {
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "channel_name": "Alan Chen",
       "item_count": 590,
       "transcript_count": 398,
       "schema_gap_count": 590
+    },
+    {
+      "channel_id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
+      "channel_name": "The Startup Ideas Podcast Episodes",
+      "item_count": 413,
+      "transcript_count": 64,
+      "schema_gap_count": 413
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
+      "channel_name": "Crypto",
+      "item_count": 407,
+      "transcript_count": 32,
+      "schema_gap_count": 407
+    },
+    {
+      "channel_id": "PL30C54D951E8E1688",
+      "channel_name": "Careers",
+      "item_count": 284,
+      "transcript_count": 34,
+      "schema_gap_count": 284
     }
   ]
 }

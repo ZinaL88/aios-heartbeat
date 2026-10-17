@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-17 10:54 HKT",
+  "written_at_hkt": "2026-10-17 12:30 HKT",
   "queue": [
     {
       "name": "seanaistories",
@@ -280,12 +280,12 @@
       "skip": false,
       "reason": "Z L request 2026-10-07: LOW priority whole-channel; channel ID resolved logged-out 2026-10-08 per new rule (public IDs looked up logged-out). Re-added 2026-10-0",
       "captions_done": 0,
-      "captions_left": 0,
+      "captions_left": 316,
       "stt_done": 0,
-      "stt_left": 0,
-      "videos_total": 0,
-      "status": "not_started",
-      "label": "Not started"
+      "stt_left": 316,
+      "videos_total": 316,
+      "status": "waiting_captions",
+      "label": "Waiting captions"
     }
   ],
   "tasks": [
@@ -2037,6 +2037,20 @@
       "captions_left": 372,
       "stt_done": 0,
       "stt_left": 372,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UC9cfcOuTT9rYkyUimMjLxuw",
+      "title": "money_or_life",
+      "kind": "channel",
+      "videos_total": 316,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 316,
+      "stt_done": 0,
+      "stt_left": 316,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -3817,20 +3831,6 @@
       "stt_left": 1,
       "status": "waiting_stt",
       "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "id": "UC9cfcOuTT9rYkyUimMjLxuw",
-      "title": "money_or_life",
-      "kind": "channel",
-      "videos_total": 0,
-      "videos_source": "none",
-      "captions_done": 0,
-      "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 0,
-      "status": "not_started",
-      "label": "Not started",
       "skip": false
     },
     {
