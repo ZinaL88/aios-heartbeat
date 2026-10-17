@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-17 20:44 HKT",
+  "written_at_hkt": "2026-10-17 20:46 HKT",
   "queue": [
     {
       "name": "seanaistories",
@@ -99,7 +99,7 @@
       "reason": "public captions exhausted (834 done). STT leftover only if RAM>=6G later.",
       "captions_done": 632,
       "captions_left": 0,
-      "stt_done": 841,
+      "stt_done": 842,
       "stt_left": 0,
       "videos_total": 635,
       "status": "paused",
@@ -3841,7 +3841,7 @@
       "videos_source": "inventory",
       "captions_done": 632,
       "captions_left": 0,
-      "stt_done": 841,
+      "stt_done": 842,
       "stt_left": 0,
       "status": "paused",
       "label": "Paused / skip",
