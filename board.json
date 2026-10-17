@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-18 00:07 HKT",
+  "written_at_hkt": "2026-10-18 07:51 HKT",
   "queue": [
     {
       "name": "seanaistories",
@@ -1513,7 +1513,7 @@
       "videos": 1218,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
-      "captions_done": 458,
+      "captions_done": 459,
       "captions_left": 676,
       "stt_done": 458,
       "stt_left": 767,
@@ -1977,7 +1977,7 @@
       "kind": "playlist",
       "videos_total": 1225,
       "videos_source": "inventory",
-      "captions_done": 458,
+      "captions_done": 459,
       "captions_left": 676,
       "stt_done": 458,
       "stt_left": 767,
