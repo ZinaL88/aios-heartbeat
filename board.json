@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-18 09:09 HKT",
+  "written_at_hkt": "2026-10-18 09:12 HKT",
   "queue": [
     {
       "name": "seanaistories",
@@ -162,10 +162,10 @@
       "channel_id": "UCeTLfPD7thTMabtL7w87Aug",
       "skip": false,
       "reason": "",
-      "captions_done": 7,
+      "captions_done": 9,
       "captions_left": 0,
-      "stt_done": 7,
-      "stt_left": 127,
+      "stt_done": 9,
+      "stt_left": 125,
       "videos_total": 141,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -188,10 +188,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 400,
+      "captions_done": 401,
       "captions_left": 0,
-      "stt_done": 400,
-      "stt_left": 190,
+      "stt_done": 401,
+      "stt_left": 189,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2831,10 +2831,10 @@
       "kind": "channel",
       "videos_total": 590,
       "videos_source": "inventory",
-      "captions_done": 400,
+      "captions_done": 401,
       "captions_left": 0,
-      "stt_done": 400,
-      "stt_left": 190,
+      "stt_done": 401,
+      "stt_left": 189,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -2929,10 +2929,10 @@
       "kind": "channel",
       "videos_total": 141,
       "videos_source": "inventory",
-      "captions_done": 7,
+      "captions_done": 9,
       "captions_left": 0,
-      "stt_done": 7,
-      "stt_left": 127,
+      "stt_done": 9,
+      "stt_left": 125,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
