@@ -1,10 +1,10 @@
 {
-  "built_at_hkt": "2026-10-18 04:35 HKT",
-  "built_at_utc": "2026-10-18T04:35:43Z",
-  "items": 17223,
-  "transcripts_indexed": 7717,
-  "schema_gaps": 14780,
-  "channels": 84,
+  "built_at_hkt": "2026-10-19 03:00 HKT",
+  "built_at_utc": "2026-10-18T19:00:22Z",
+  "items": 21487,
+  "transcripts_indexed": 10929,
+  "schema_gaps": 19044,
+  "channels": 100,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
   "top_gap_channels": [
@@ -37,6 +37,20 @@
       "schema_gap_count": 916
     },
     {
+      "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
+      "channel_name": "#11 课代表立正",
+      "item_count": 853,
+      "transcript_count": 846,
+      "schema_gap_count": 853
+    },
+    {
+      "channel_id": "kedaibiao",
+      "channel_name": "课代表立正",
+      "item_count": 853,
+      "transcript_count": 846,
+      "schema_gap_count": 853
+    },
+    {
       "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "channel_name": "Learning how to learn",
       "item_count": 852,
@@ -44,18 +58,25 @@
       "schema_gap_count": 852
     },
     {
-      "channel_id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
-      "channel_name": "#11 课代表立正",
-      "item_count": 849,
-      "transcript_count": 834,
-      "schema_gap_count": 849
-    },
-    {
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "channel_name": "一个狠人",
-      "item_count": 803,
-      "transcript_count": 693,
-      "schema_gap_count": 803
+      "item_count": 809,
+      "transcript_count": 698,
+      "schema_gap_count": 809
+    },
+    {
+      "channel_id": "henren778",
+      "channel_name": "一个狠人",
+      "item_count": 809,
+      "transcript_count": 698,
+      "schema_gap_count": 809
+    },
+    {
+      "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
+      "channel_name": "Mike是麦克",
+      "item_count": 780,
+      "transcript_count": 589,
+      "schema_gap_count": 780
     },
     {
       "channel_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
@@ -65,11 +86,11 @@
       "schema_gap_count": 778
     },
     {
-      "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
-      "channel_name": "Mike是麦克",
-      "item_count": 778,
-      "transcript_count": 582,
-      "schema_gap_count": 778
+      "channel_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
+      "channel_name": "Presentation, Public Speaking, Story Telling",
+      "item_count": 735,
+      "transcript_count": 634,
+      "schema_gap_count": 735
     },
     {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
@@ -79,39 +100,18 @@
       "schema_gap_count": 714
     },
     {
+      "channel_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
+      "channel_name": "Interpersonal",
+      "item_count": 700,
+      "transcript_count": 317,
+      "schema_gap_count": 700
+    },
+    {
       "channel_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
       "channel_name": "Productivity",
       "item_count": 616,
       "transcript_count": 133,
       "schema_gap_count": 616
-    },
-    {
-      "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "channel_name": "Alan Chen",
-      "item_count": 590,
-      "transcript_count": 398,
-      "schema_gap_count": 590
-    },
-    {
-      "channel_id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
-      "channel_name": "The Startup Ideas Podcast Episodes",
-      "item_count": 413,
-      "transcript_count": 64,
-      "schema_gap_count": 413
-    },
-    {
-      "channel_id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
-      "channel_name": "Crypto",
-      "item_count": 407,
-      "transcript_count": 32,
-      "schema_gap_count": 407
-    },
-    {
-      "channel_id": "PL30C54D951E8E1688",
-      "channel_name": "Careers",
-      "item_count": 284,
-      "transcript_count": 34,
-      "schema_gap_count": 284
     }
   ]
 }
