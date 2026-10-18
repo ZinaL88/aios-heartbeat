@@ -1,19 +1,6 @@
 {
-  "written_at_hkt": "2026-10-18 09:31 HKT",
+  "written_at_hkt": "2026-10-18 09:34 HKT",
   "queue": [
-    {
-      "name": "seanaistories",
-      "channel_id": "UCx-OfB7xsTN_GnoplitHfXg",
-      "skip": false,
-      "reason": "Z L request 2026-10-08: HIGH priority whole-channel (videos/Shorts/posts/playlists/members-if-any); channel ID resolved logged-out 2026-10-08 per new rule (publ",
-      "captions_done": 93,
-      "captions_left": 5,
-      "stt_done": 93,
-      "stt_left": 7,
-      "videos_total": 100,
-      "status": "waiting_captions",
-      "label": "Waiting captions"
-    },
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
@@ -245,6 +232,19 @@
       "stt_done": 0,
       "stt_left": 80,
       "videos_total": 80,
+      "status": "waiting_captions",
+      "label": "Waiting captions"
+    },
+    {
+      "name": "seanaistories",
+      "channel_id": "UCx-OfB7xsTN_GnoplitHfXg",
+      "skip": false,
+      "reason": "Z L request 2026-10-08: HIGH priority whole-channel (videos/Shorts/posts/playlists/members-if-any); channel ID resolved logged-out 2026-10-08 per new rule (publ",
+      "captions_done": 93,
+      "captions_left": 5,
+      "stt_done": 93,
+      "stt_left": 7,
+      "videos_total": 100,
       "status": "waiting_captions",
       "label": "Waiting captions"
     },
