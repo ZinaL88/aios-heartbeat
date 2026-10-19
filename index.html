@@ -279,8 +279,8 @@ a.act-ref { color:var(--lime); }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-10-20 07:40 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-10-20 07:41 HKT · v21</p>
+    <p class="mono" id="pingLine">ping 2026-10-20 07:48 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-10-20 07:48 HKT · v21</p>
     <p class="mono" style="margin:6px 0 0"><a class="lib-link" href="library.html?v=23" style="color:var(--lime);text-decoration:none;font-weight:600">Library</a>
       <span style="color:var(--muted)"> · search transcripts &amp; check schema fields · </span><a class="lib-link" href="machines.html" style="color:var(--lime);text-decoration:none;font-weight:600">Machines &amp; terminal</a></p>
   </div>
@@ -302,7 +302,7 @@ a.act-ref { color:var(--lime); }
 
 <section class="now">
   <div><span class="label">now</span> <span class="body" id="nowBody">STT Paused · backlog 7466 · captions Failed · restart deferred</span></div>
-  <span class="mono" id="nowTs">2026-10-20 07:40 HKT</span>
+  <span class="mono" id="nowTs">2026-10-20 07:48 HKT</span>
 </section>
 
 <section class="card" id="opsCard">
@@ -355,8 +355,8 @@ a.act-ref { color:var(--lime); }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">Transcripts on disk</div><div class="v" id="mStt">9550</div><div class="s" id="mSttSub">9550 on disk · 7466 pending in worker scope · Paused</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">14315</div><div class="s" id="mCapSub">14315 done · 8325 left · Failed</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">4.5G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-10-20 07:40 HKT</div></div>
+  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">2.7G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-10-20 07:48 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -373,20 +373,20 @@ a.act-ref { color:var(--lime); }
       <p class="ch" id="sttCh">Paused · backlog 7466</p>
       <div class="row"><span class="big" id="sttNum">9550</span><span class="mono" id="sttFile">9550 on disk · 7466 pending in worker scope</span></div>
       <p class="mono overdue" id="sttEta">Paused · ETA frozen (not a crash)</p>
-      <p class="mono" id="sttDisk">9550 transcripts on disk · RAM 4.5 of 15.6G · load 0.79</p>
+      <p class="mono" id="sttDisk">9550 transcripts on disk · RAM 2.7 of 15.6G · load 1.67</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">4.5 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">0.79</span></li>
+      <li><span>RAM free</span><span id="boxRam">2.7 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">1.67</span></li>
       <li><span>Disk</span><span id="boxDisk">106G</span></li>
       <li><span>Tmp</span><span id="boxTmp">58M</span></li>
-      <li><span>Cookies</span><span id="boxCookies">stale · 43.0h</span></li>
-      <li><span>Next ping</span><span id="boxCron">2026-10-20 07:45 HKT</span></li>
-      <li><span>Jobs</span><span id="boxJobs">captions eligible now (4.5G≥1.2); Whisper blocked until 6.0G</span></li>
+      <li><span>Cookies</span><span id="boxCookies">stale · 43.2h</span></li>
+      <li><span>Next ping</span><span id="boxCron">2026-10-20 07:50 HKT</span></li>
+      <li><span>Jobs</span><span id="boxJobs">captions eligible now (2.7G≥1.2); Whisper blocked until 6.0G</span></li>
       <li><span>RAM gate</span><span id="boxGate">6.0G</span></li>
     </ul>
     <div class="pills" style="margin-top:10px" id="boxPills">
@@ -395,9 +395,9 @@ a.act-ref { color:var(--lime); }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.99G</span> · node ×40</li><li><span class="mono">1.1G</span> · chrome ×10</li><li><span class="mono">0.21G</span> · Xvfb ×3</li><li><span class="mono">0.2G</span> · csnaps ×1</li><li><span class="mono">0.09G</span> · bash ×40</li><li><span class="mono">0.09G</span> · orbitd ×1</li><li><span class="mono">0.08G</span> · python3 ×3</li><li><span class="mono">0.07G</span> · x11vnc ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.51G</span> · node ×40</li><li><span class="mono">1.1G</span> · chrome ×10</li><li><span class="mono">0.21G</span> · Xvfb ×3</li><li><span class="mono">0.19G</span> · csnaps ×1</li><li><span class="mono">0.09G</span> · bash ×40</li><li><span class="mono">0.09G</span> · orbitd ×1</li><li><span class="mono">0.08G</span> · python3 ×3</li><li><span class="mono">0.07G</span> · x11vnc ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-10-19T23:40:44Z captions pick empty — stop filling (exclude=none)</li><li class="mono">2026-10-19T23:40:44Z captions after fill running=0</li><li class="mono">2026-10-19T23:40:44Z skip stt — youtube_cooldown until 2026-10-20 11:35 CST</li><li class="mono">backfill-captions.log: [136&lt;path&gt; TiePIi2S9v0 室友相聚 ❌ 室友奪魂鋸 ⭕️ | My roommate be crazy #realfake #podcast #college #funny</li><li class="mono">YouTube captions: none (manual+auto) → STT allowed</li><li class="mono">sleep 4.8s</li><li class="mono">[135&lt;path&gt; OPhq2bhWV6s 阿德勒目的論詳解:過去可以改變,人人都能獲得幸福 | 有聲書《被討厭的勇氣》(橫向關系,心理創傷,課題分離,自卑感,聽書,心理學,原因論)</li><li class="mono">[136&lt;path&gt; TiePIi2S9v0 室友相聚 ❌ 室友奪魂鋸 ⭕️ | My roommate be crazy #realfake #podcast #college #funny</li><li><span class="mono">reboost.log</span> 2026-10-19T23:40:44Z captions running=0 target=3 stt_live=none mem=4.5G cap_signal=none</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-10-19T23:48:09Z captions pick empty — stop filling (exclude=none)</li><li class="mono">2026-10-19T23:48:09Z captions after fill running=0</li><li class="mono">2026-10-19T23:48:09Z skip STT — headroom 2.7G &lt; 3.5G (captions may still run)</li><li class="mono">backfill-captions.log: [136&lt;path&gt; TiePIi2S9v0 室友相聚 ❌ 室友奪魂鋸 ⭕️ | My roommate be crazy #realfake #podcast #college #funny</li><li class="mono">YouTube captions: none (manual+auto) → STT allowed</li><li class="mono">sleep 4.8s</li><li class="mono">[135&lt;path&gt; OPhq2bhWV6s 阿德勒目的論詳解:過去可以改變,人人都能獲得幸福 | 有聲書《被討厭的勇氣》(橫向關系,心理創傷,課題分離,自卑感,聽書,心理學,原因論)</li><li class="mono">[136&lt;path&gt; TiePIi2S9v0 室友相聚 ❌ 室友奪魂鋸 ⭕️ | My roommate be crazy #realfake #podcast #college #funny</li><li><span class="mono">reboost.log</span> 2026-10-19T23:48:09Z captions running=0 target=1 stt_live=none mem=2.7G cap_signal=1</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
