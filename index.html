@@ -279,8 +279,8 @@ a.act-ref { color:var(--lime); }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-10-20 14:23 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-10-20 14:23 HKT · v21</p>
+    <p class="mono" id="pingLine">ping 2026-10-20 14:25 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-10-20 14:25 HKT · v21</p>
     <p class="mono" style="margin:6px 0 0"><a class="lib-link" href="library.html?v=23" style="color:var(--lime);text-decoration:none;font-weight:600">Library</a>
       <span style="color:var(--muted)"> · search transcripts &amp; check schema fields · </span><a class="lib-link" href="machines.html" style="color:var(--lime);text-decoration:none;font-weight:600">Machines &amp; terminal</a></p>
   </div>
@@ -302,7 +302,7 @@ a.act-ref { color:var(--lime); }
 
 <section class="now">
   <div><span class="label">now</span> <span class="body" id="nowBody">STT Paused · backlog 7466 · captions Failed · restart deferred</span></div>
-  <span class="mono" id="nowTs">2026-10-20 14:23 HKT</span>
+  <span class="mono" id="nowTs">2026-10-20 14:25 HKT</span>
 </section>
 
 <section class="card" id="opsCard">
@@ -355,8 +355,8 @@ a.act-ref { color:var(--lime); }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">Transcripts on disk</div><div class="v" id="mStt">9579</div><div class="s" id="mSttSub">9579 on disk · 7466 pending in worker scope · Paused</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">14344</div><div class="s" id="mCapSub">14344 done · 8180 left · Failed</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">8.2G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-10-20 14:23 HKT</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">8.4G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-10-20 14:25 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -373,19 +373,19 @@ a.act-ref { color:var(--lime); }
       <p class="ch" id="sttCh">Paused · backlog 7466</p>
       <div class="row"><span class="big" id="sttNum">9579</span><span class="mono" id="sttFile">9579 on disk · 7466 pending in worker scope</span></div>
       <p class="mono overdue" id="sttEta">Paused · ETA frozen (not a crash)</p>
-      <p class="mono" id="sttDisk">9579 transcripts on disk · RAM 8.2 of 15.6G · load 0.74</p>
+      <p class="mono" id="sttDisk">9579 transcripts on disk · RAM 8.4 of 15.6G · load 0.84</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">8.2 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">0.74</span></li>
+      <li><span>RAM free</span><span id="boxRam">8.4 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">0.84</span></li>
       <li><span>Disk</span><span id="boxDisk">106G</span></li>
       <li><span>Tmp</span><span id="boxTmp">76M</span></li>
       <li><span>Cookies</span><span id="boxCookies">stale · 49.8h</span></li>
-      <li><span>Next ping</span><span id="boxCron">2026-10-20 14:25 HKT</span></li>
+      <li><span>Next ping</span><span id="boxCron">2026-10-20 14:30 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">eligible — captions + Whisper this tick if still dead</span></li>
       <li><span>RAM gate</span><span id="boxGate">6.0G</span></li>
     </ul>
@@ -395,9 +395,9 @@ a.act-ref { color:var(--lime); }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.27G</span> · node ×39</li><li><span class="mono">1.43G</span> · chrome ×10</li><li><span class="mono">0.22G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · orbitd ×1</li><li><span class="mono">0.09G</span> · bash ×40</li><li><span class="mono">0.09G</span> · csnaps ×1</li><li><span class="mono">0.07G</span> · python3 ×3</li><li><span class="mono">0.07G</span> · x11vnc ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.19G</span> · node ×39</li><li><span class="mono">1.42G</span> · chrome ×10</li><li><span class="mono">0.22G</span> · Xvfb ×3</li><li><span class="mono">0.1G</span> · orbitd ×1</li><li><span class="mono">0.09G</span> · bash ×39</li><li><span class="mono">0.09G</span> · csnaps ×1</li><li><span class="mono">0.07G</span> · python3 ×3</li><li><span class="mono">0.07G</span> · x11vnc ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-10-20T06:23:04Z captions pick empty — stop filling (exclude=none)</li><li class="mono">2026-10-20T06:23:04Z captions after fill running=0</li><li class="mono">2026-10-20T06:23:04Z skip stt — youtube_cooldown until 2026-10-20 15:57 CST</li><li class="mono">backfill-captions.log: [64&lt;path&gt; 3V-n0CV5Ojo 改掉講 very 的壞習慣!  5個讓英文能力瞬間升級的單字!【2分鐘英語教室】</li><li class="mono">YouTube captions: none (manual+auto) → STT allowed</li><li class="mono">sleep 7.0s</li><li class="mono">[63&lt;path&gt; K-F7EsHY5qQ 地點前 該用 In, On 還是 At? 一次搞懂 Prepositions of Place 地方 介系詞 Grammar made EASY!</li><li class="mono">[64&lt;path&gt; 3V-n0CV5Ojo 改掉講 very 的壞習慣!  5個讓英文能力瞬間升級的單字!【2分鐘英語教室】</li><li><span class="mono">reboost.log</span> 2026-10-20T06:23:04Z captions running=0 target=3 stt_live=none mem=8.3G cap_signal=none</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-10-20T06:25:16Z captions pick empty — stop filling (exclude=none)</li><li class="mono">2026-10-20T06:25:16Z captions after fill running=0</li><li class="mono">2026-10-20T06:25:16Z skip stt — youtube_cooldown until 2026-10-20 15:57 CST</li><li class="mono">backfill-captions.log: [64&lt;path&gt; 3V-n0CV5Ojo 改掉講 very 的壞習慣!  5個讓英文能力瞬間升級的單字!【2分鐘英語教室】</li><li class="mono">YouTube captions: none (manual+auto) → STT allowed</li><li class="mono">sleep 7.0s</li><li class="mono">[63&lt;path&gt; K-F7EsHY5qQ 地點前 該用 In, On 還是 At? 一次搞懂 Prepositions of Place 地方 介系詞 Grammar made EASY!</li><li class="mono">[64&lt;path&gt; 3V-n0CV5Ojo 改掉講 very 的壞習慣!  5個讓英文能力瞬間升級的單字!【2分鐘英語教室】</li><li><span class="mono">reboost.log</span> 2026-10-20T06:25:16Z captions running=0 target=3 stt_live=none mem=8.4G cap_signal=none</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
