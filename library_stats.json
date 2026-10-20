@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-20 03:48 HKT",
-  "built_at_utc": "2026-10-19T19:48:28Z",
-  "items": 21522,
-  "transcripts_indexed": 10959,
-  "schema_gaps": 19079,
+  "built_at_hkt": "2026-10-20 11:20 HKT",
+  "built_at_utc": "2026-10-20T03:20:43Z",
+  "items": 21580,
+  "transcripts_indexed": 11009,
+  "schema_gaps": 19137,
   "channels": 100,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -102,9 +102,9 @@
     {
       "channel_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
       "channel_name": "Interpersonal",
-      "item_count": 700,
-      "transcript_count": 317,
-      "schema_gap_count": 700
+      "item_count": 701,
+      "transcript_count": 318,
+      "schema_gap_count": 701
     },
     {
       "channel_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
