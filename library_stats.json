@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-20 18:47 HKT",
-  "built_at_utc": "2026-10-20T10:47:03Z",
-  "items": 21628,
-  "transcripts_indexed": 11038,
-  "schema_gaps": 19185,
+  "built_at_hkt": "2026-10-23 06:10 HKT",
+  "built_at_utc": "2026-10-22T22:10:28Z",
+  "items": 22907,
+  "transcripts_indexed": 12010,
+  "schema_gaps": 20464,
   "channels": 100,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -28,6 +28,27 @@
       "item_count": 1315,
       "transcript_count": 1272,
       "schema_gap_count": 1315
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2",
+      "channel_name": "English",
+      "item_count": 1035,
+      "transcript_count": 800,
+      "schema_gap_count": 1035
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
+      "channel_name": "Presentation, Public Speaking, Story Telling",
+      "item_count": 1020,
+      "transcript_count": 895,
+      "schema_gap_count": 1020
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
+      "channel_name": "Interpersonal",
+      "item_count": 1013,
+      "transcript_count": 494,
+      "schema_gap_count": 1013
     },
     {
       "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
@@ -86,32 +107,11 @@
       "schema_gap_count": 778
     },
     {
-      "channel_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
-      "channel_name": "Presentation, Public Speaking, Story Telling",
-      "item_count": 736,
-      "transcript_count": 635,
-      "schema_gap_count": 736
-    },
-    {
       "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
       "channel_name": "Entrepreneur",
       "item_count": 714,
       "transcript_count": 563,
       "schema_gap_count": 714
-    },
-    {
-      "channel_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
-      "channel_name": "Interpersonal",
-      "item_count": 701,
-      "transcript_count": 318,
-      "schema_gap_count": 701
-    },
-    {
-      "channel_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
-      "channel_name": "Productivity",
-      "item_count": 616,
-      "transcript_count": 133,
-      "schema_gap_count": 616
     }
   ]
 }
