@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-23 01:04 HKT",
+  "written_at_hkt": "2026-10-23 01:06 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1513,10 +1513,10 @@
       "videos": 1218,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
-      "captions_done": 837,
-      "captions_left": 249,
-      "stt_done": 837,
-      "stt_left": 388,
+      "captions_done": 844,
+      "captions_left": 242,
+      "stt_done": 844,
+      "stt_left": 381,
       "videos_total": 1225,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1569,10 +1569,10 @@
       "videos": 1248,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
-      "captions_done": 439,
-      "captions_left": 295,
-      "stt_done": 439,
-      "stt_left": 59,
+      "captions_done": 447,
+      "captions_left": 285,
+      "stt_done": 447,
+      "stt_left": 53,
       "videos_total": 1251,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1583,10 +1583,10 @@
       "videos": 1323,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2",
-      "captions_done": 714,
-      "captions_left": 371,
-      "stt_done": 714,
-      "stt_left": 608,
+      "captions_done": 718,
+      "captions_left": 364,
+      "stt_done": 718,
+      "stt_left": 604,
       "videos_total": 1322,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1958,20 +1958,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2",
-      "title": "English",
-      "kind": "playlist",
-      "videos_total": 1322,
-      "videos_source": "inventory",
-      "captions_done": 714,
-      "captions_left": 371,
-      "stt_done": 714,
-      "stt_left": 608,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n",
       "title": "斷捨離 簡單匠 Podcast",
       "kind": "playlist",
@@ -2000,6 +1986,20 @@
       "skip": false
     },
     {
+      "id": "PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2",
+      "title": "English",
+      "kind": "playlist",
+      "videos_total": 1322,
+      "videos_source": "inventory",
+      "captions_done": 718,
+      "captions_left": 364,
+      "stt_done": 718,
+      "stt_left": 604,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
       "id": "UC6t1O76G0jYXOAoYCm153dA",
       "title": "Lenny's Podcast",
       "kind": "channel",
@@ -2014,20 +2014,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
-      "title": "Presentation, Public Speaking, Story Telling",
-      "kind": "playlist",
-      "videos_total": 1225,
-      "videos_source": "inventory",
-      "captions_done": 837,
-      "captions_left": 249,
-      "stt_done": 837,
-      "stt_left": 388,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "UC9cfcOuTT9rYkyUimMjLxuw",
       "title": "money_or_life",
       "kind": "channel",
@@ -2037,6 +2023,20 @@
       "captions_left": 316,
       "stt_done": 0,
       "stt_left": 316,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
+      "title": "Presentation, Public Speaking, Story Telling",
+      "kind": "playlist",
+      "videos_total": 1225,
+      "videos_source": "inventory",
+      "captions_done": 844,
+      "captions_left": 242,
+      "stt_done": 844,
+      "stt_left": 381,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2061,10 +2061,10 @@
       "kind": "playlist",
       "videos_total": 1251,
       "videos_source": "inventory",
-      "captions_done": 439,
-      "captions_left": 295,
-      "stt_done": 439,
-      "stt_left": 59,
+      "captions_done": 447,
+      "captions_left": 285,
+      "stt_done": 447,
+      "stt_left": 53,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
