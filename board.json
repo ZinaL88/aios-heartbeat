@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-22 13:39 HKT",
+  "written_at_hkt": "2026-10-22 13:42 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1514,7 +1514,7 @@
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
       "captions_done": 636,
-      "captions_left": 534,
+      "captions_left": 519,
       "stt_done": 636,
       "stt_left": 589,
       "videos_total": 1225,
@@ -1570,9 +1570,9 @@
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
       "captions_done": 318,
-      "captions_left": 605,
+      "captions_left": 588,
       "stt_done": 318,
-      "stt_left": 27,
+      "stt_left": 33,
       "videos_total": 1251,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1583,10 +1583,10 @@
       "videos": 1323,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2",
-      "captions_done": 477,
-      "captions_left": 658,
-      "stt_done": 477,
-      "stt_left": 845,
+      "captions_done": 491,
+      "captions_left": 642,
+      "stt_done": 491,
+      "stt_left": 831,
       "videos_total": 1322,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1963,10 +1963,10 @@
       "kind": "playlist",
       "videos_total": 1322,
       "videos_source": "inventory",
-      "captions_done": 477,
-      "captions_left": 658,
-      "stt_done": 477,
-      "stt_left": 845,
+      "captions_done": 491,
+      "captions_left": 642,
+      "stt_done": 491,
+      "stt_left": 831,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -1978,7 +1978,7 @@
       "videos_total": 1225,
       "videos_source": "inventory",
       "captions_done": 636,
-      "captions_left": 534,
+      "captions_left": 519,
       "stt_done": 636,
       "stt_left": 589,
       "status": "waiting_captions",
@@ -2028,20 +2028,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
-      "title": "Interpersonal",
-      "kind": "playlist",
-      "videos_total": 1251,
-      "videos_source": "inventory",
-      "captions_done": 318,
-      "captions_left": 605,
-      "stt_done": 318,
-      "stt_left": 27,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "UC9cfcOuTT9rYkyUimMjLxuw",
       "title": "money_or_life",
       "kind": "channel",
@@ -2051,6 +2037,20 @@
       "captions_left": 316,
       "stt_done": 0,
       "stt_left": 316,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
+      "title": "Interpersonal",
+      "kind": "playlist",
+      "videos_total": 1251,
+      "videos_source": "inventory",
+      "captions_done": 318,
+      "captions_left": 588,
+      "stt_done": 318,
+      "stt_left": 33,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
