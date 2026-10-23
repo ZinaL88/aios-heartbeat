@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-23 10:25 HKT",
+  "written_at_hkt": "2026-10-23 10:35 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -561,10 +561,10 @@
       "videos": 144,
       "skip": false,
       "playlist_id": "PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
-      "captions_done": 8,
-      "captions_left": 104,
-      "stt_done": 8,
-      "stt_left": 27,
+      "captions_done": 11,
+      "captions_left": 99,
+      "stt_done": 11,
+      "stt_left": 26,
       "videos_total": 147,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1513,10 +1513,10 @@
       "videos": 1218,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
-      "captions_done": 939,
-      "captions_left": 140,
-      "stt_done": 939,
-      "stt_left": 286,
+      "captions_done": 940,
+      "captions_left": 139,
+      "stt_done": 940,
+      "stt_left": 285,
       "videos_total": 1225,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2047,10 +2047,10 @@
       "kind": "playlist",
       "videos_total": 1225,
       "videos_source": "inventory",
-      "captions_done": 939,
-      "captions_left": 140,
-      "stt_done": 939,
-      "stt_left": 286,
+      "captions_done": 940,
+      "captions_left": 139,
+      "stt_done": 940,
+      "stt_left": 285,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2140,20 +2140,6 @@
       "skip": false
     },
     {
-      "id": "PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
-      "title": "十分鐘心理學",
-      "kind": "playlist",
-      "videos_total": 147,
-      "videos_source": "inventory",
-      "captions_done": 8,
-      "captions_left": 104,
-      "stt_done": 8,
-      "stt_left": 27,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
       "title": "Product Management Interview Prep",
       "kind": "playlist",
@@ -2163,6 +2149,20 @@
       "captions_left": 127,
       "stt_done": 1,
       "stt_left": 3,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
+      "title": "十分鐘心理學",
+      "kind": "playlist",
+      "videos_total": 147,
+      "videos_source": "inventory",
+      "captions_done": 11,
+      "captions_left": 99,
+      "stt_done": 11,
+      "stt_left": 26,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
