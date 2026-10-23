@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-23 10:02 HKT",
+  "written_at_hkt": "2026-10-23 10:06 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -548,9 +548,9 @@
       "skip": false,
       "playlist_id": "PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
       "captions_done": 0,
-      "captions_left": 30,
+      "captions_left": 23,
       "stt_done": 0,
-      "stt_left": 33,
+      "stt_left": 40,
       "videos_total": 63,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -561,10 +561,10 @@
       "videos": 144,
       "skip": false,
       "playlist_id": "PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
-      "captions_done": 0,
-      "captions_left": 147,
-      "stt_done": 0,
-      "stt_left": 147,
+      "captions_done": 2,
+      "captions_left": 143,
+      "stt_done": 2,
+      "stt_left": 145,
       "videos_total": 147,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2061,10 +2061,10 @@
       "kind": "playlist",
       "videos_total": 147,
       "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 147,
-      "stt_done": 0,
-      "stt_left": 147,
+      "captions_done": 2,
+      "captions_left": 143,
+      "stt_done": 2,
+      "stt_left": 145,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2202,9 +2202,9 @@
       "videos_total": 63,
       "videos_source": "inventory",
       "captions_done": 0,
-      "captions_left": 30,
+      "captions_left": 23,
       "stt_done": 0,
-      "stt_left": 33,
+      "stt_left": 40,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
