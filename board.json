@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-23 09:48 HKT",
+  "written_at_hkt": "2026-10-23 09:50 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -869,10 +869,10 @@
       "videos": 30,
       "skip": false,
       "playlist_id": "PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
-      "captions_done": 4,
-      "captions_left": 16,
-      "stt_done": 4,
-      "stt_left": 6,
+      "captions_done": 12,
+      "captions_left": 3,
+      "stt_done": 12,
+      "stt_left": 3,
       "videos_total": 30,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1513,10 +1513,10 @@
       "videos": 1218,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
-      "captions_done": 904,
-      "captions_left": 178,
-      "stt_done": 904,
-      "stt_left": 321,
+      "captions_done": 911,
+      "captions_left": 171,
+      "stt_done": 911,
+      "stt_left": 314,
       "videos_total": 1225,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2047,10 +2047,10 @@
       "kind": "playlist",
       "videos_total": 1225,
       "videos_source": "inventory",
-      "captions_done": 904,
-      "captions_left": 178,
-      "stt_done": 904,
-      "stt_left": 321,
+      "captions_done": 911,
+      "captions_left": 171,
+      "stt_done": 911,
+      "stt_left": 314,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2294,20 +2294,6 @@
       "skip": false
     },
     {
-      "id": "PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
-      "title": "常用英语口语训练",
-      "kind": "playlist",
-      "videos_total": 30,
-      "videos_source": "inventory",
-      "captions_done": 4,
-      "captions_left": 16,
-      "stt_done": 4,
-      "stt_left": 6,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLrtCHHeadkHqFoyAJ8f-cYynn0MhYr7vO",
       "title": "SQL Interview Prep",
       "kind": "playlist",
@@ -2498,6 +2484,20 @@
       "captions_done": 0,
       "captions_left": 3,
       "stt_done": 0,
+      "stt_left": 3,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
+      "title": "常用英语口语训练",
+      "kind": "playlist",
+      "videos_total": 30,
+      "videos_source": "inventory",
+      "captions_done": 12,
+      "captions_left": 3,
+      "stt_done": 12,
       "stt_left": 3,
       "status": "waiting_captions",
       "label": "Waiting captions",
