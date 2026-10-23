@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-23 09:52 HKT",
+  "written_at_hkt": "2026-10-23 09:55 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -548,9 +548,9 @@
       "skip": false,
       "playlist_id": "PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
       "captions_done": 0,
-      "captions_left": 63,
+      "captions_left": 58,
       "stt_done": 0,
-      "stt_left": 63,
+      "stt_left": 5,
       "videos_total": 63,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1513,10 +1513,10 @@
       "videos": 1218,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
-      "captions_done": 918,
-      "captions_left": 164,
-      "stt_done": 918,
-      "stt_left": 307,
+      "captions_done": 926,
+      "captions_left": 156,
+      "stt_done": 926,
+      "stt_left": 299,
       "videos_total": 1225,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2047,10 +2047,10 @@
       "kind": "playlist",
       "videos_total": 1225,
       "videos_source": "inventory",
-      "captions_done": 918,
-      "captions_left": 164,
-      "stt_done": 918,
-      "stt_left": 307,
+      "captions_done": 926,
+      "captions_left": 156,
+      "stt_done": 926,
+      "stt_left": 299,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2168,20 +2168,6 @@
       "skip": false
     },
     {
-      "id": "PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
-      "title": "Podcast《不增不減兩分滿》",
-      "kind": "playlist",
-      "videos_total": 63,
-      "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 63,
-      "stt_done": 0,
-      "stt_left": 63,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
       "title": "系统经济金融",
       "kind": "playlist",
@@ -2205,6 +2191,20 @@
       "captions_left": 44,
       "stt_done": 0,
       "stt_left": 44,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
+      "title": "Podcast《不增不減兩分滿》",
+      "kind": "playlist",
+      "videos_total": 63,
+      "videos_source": "inventory",
+      "captions_done": 0,
+      "captions_left": 58,
+      "stt_done": 0,
+      "stt_left": 5,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
