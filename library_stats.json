@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-24 12:52 HKT",
-  "built_at_utc": "2026-10-24T04:52:31Z",
-  "items": 23742,
-  "transcripts_indexed": 12627,
-  "schema_gaps": 21299,
+  "built_at_hkt": "2026-10-24 19:00 HKT",
+  "built_at_utc": "2026-10-24T11:00:53Z",
+  "items": 23960,
+  "transcripts_indexed": 12768,
+  "schema_gaps": 21517,
   "channels": 109,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -93,6 +93,13 @@
       "schema_gap_count": 809
     },
     {
+      "channel_id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
+      "channel_name": "Emotional Intelligence",
+      "item_count": 807,
+      "transcript_count": 497,
+      "schema_gap_count": 807
+    },
+    {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
       "channel_name": "Mike是麦克",
       "item_count": 780,
@@ -105,13 +112,6 @@
       "item_count": 778,
       "transcript_count": 9,
       "schema_gap_count": 778
-    },
-    {
-      "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-      "channel_name": "Entrepreneur",
-      "item_count": 714,
-      "transcript_count": 563,
-      "schema_gap_count": 714
     }
   ]
 }
