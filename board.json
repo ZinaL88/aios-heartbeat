@@ -1,15 +1,15 @@
 {
-  "written_at_hkt": "2026-10-24 09:42 HKT",
+  "written_at_hkt": "2026-10-24 09:44 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
       "skip": false,
       "reason": "cut-in from chat 2026-09-21",
-      "captions_done": 159,
-      "captions_left": 213,
-      "stt_done": 159,
-      "stt_left": 213,
+      "captions_done": 164,
+      "captions_left": 208,
+      "stt_done": 164,
+      "stt_left": 208,
       "videos_total": 372,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2000,20 +2000,6 @@
       "skip": false
     },
     {
-      "id": "UC6t1O76G0jYXOAoYCm153dA",
-      "title": "Lenny's Podcast",
-      "kind": "channel",
-      "videos_total": 372,
-      "videos_source": "inventory",
-      "captions_done": 159,
-      "captions_left": 213,
-      "stt_done": 159,
-      "stt_left": 213,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
       "title": "Presentation, Public Speaking, Story Telling",
       "kind": "playlist",
@@ -2023,6 +2009,20 @@
       "captions_left": 139,
       "stt_done": 940,
       "stt_left": 285,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UC6t1O76G0jYXOAoYCm153dA",
+      "title": "Lenny's Podcast",
+      "kind": "channel",
+      "videos_total": 372,
+      "videos_source": "inventory",
+      "captions_done": 164,
+      "captions_left": 208,
+      "stt_done": 164,
+      "stt_left": 208,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
