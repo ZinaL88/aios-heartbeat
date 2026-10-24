@@ -1,15 +1,15 @@
 {
-  "written_at_hkt": "2026-10-24 09:06 HKT",
+  "written_at_hkt": "2026-10-24 09:08 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
       "skip": false,
       "reason": "cut-in from chat 2026-09-21",
-      "captions_done": 82,
-      "captions_left": 290,
-      "stt_done": 82,
-      "stt_left": 290,
+      "captions_done": 91,
+      "captions_left": 281,
+      "stt_done": 91,
+      "stt_left": 281,
       "videos_total": 372,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -589,10 +589,10 @@
       "videos": 260,
       "skip": false,
       "playlist_id": "PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe",
-      "captions_done": 200,
-      "captions_left": 64,
-      "stt_done": 200,
-      "stt_left": 64,
+      "captions_done": 209,
+      "captions_left": 55,
+      "stt_done": 209,
+      "stt_left": 55,
       "videos_total": 264,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2005,10 +2005,10 @@
       "kind": "channel",
       "videos_total": 372,
       "videos_source": "inventory",
-      "captions_done": 82,
-      "captions_left": 290,
-      "stt_done": 82,
-      "stt_left": 290,
+      "captions_done": 91,
+      "captions_left": 281,
+      "stt_done": 91,
+      "stt_left": 281,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2140,20 +2140,6 @@
       "skip": false
     },
     {
-      "id": "PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe",
-      "title": "Full Podcast Episodes",
-      "kind": "playlist",
-      "videos_total": 264,
-      "videos_source": "inventory",
-      "captions_done": 200,
-      "captions_left": 64,
-      "stt_done": 200,
-      "stt_left": 64,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
       "title": "十分鐘心理學",
       "kind": "playlist",
@@ -2163,6 +2149,20 @@
       "captions_left": 80,
       "stt_done": 12,
       "stt_left": 43,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PL8xK8kBHHUX4NW8GqUsyFhBF_xCnzIdPe",
+      "title": "Full Podcast Episodes",
+      "kind": "playlist",
+      "videos_total": 264,
+      "videos_source": "inventory",
+      "captions_done": 209,
+      "captions_left": 55,
+      "stt_done": 209,
+      "stt_left": 55,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
