@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-25 22:35 HKT",
+  "written_at_hkt": "2026-10-25 22:38 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -227,10 +227,10 @@
       "channel_id": "UCuY0tWGuwCI8SI9FFk60zPg",
       "skip": false,
       "reason": "ops_api video→channel",
-      "captions_done": 65,
-      "captions_left": 11,
-      "stt_done": 65,
-      "stt_left": 15,
+      "captions_done": 72,
+      "captions_left": 4,
+      "stt_done": 72,
+      "stt_left": 8,
       "videos_total": 80,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -253,10 +253,10 @@
       "channel_id": "UC9oosAco7nIVZwuGhnC0FKg",
       "skip": false,
       "reason": "Z L request 2026-10-07 full channel 宏观阿尔法 (video b9-TFYu12zU)",
-      "captions_done": 33,
-      "captions_left": 452,
-      "stt_done": 33,
-      "stt_left": 452,
+      "captions_done": 39,
+      "captions_left": 446,
+      "stt_done": 39,
+      "stt_left": 446,
       "videos_total": 485,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1963,10 +1963,10 @@
       "kind": "channel",
       "videos_total": 485,
       "videos_source": "inventory",
-      "captions_done": 33,
-      "captions_left": 452,
-      "stt_done": 33,
-      "stt_left": 452,
+      "captions_done": 39,
+      "captions_left": 446,
+      "stt_done": 39,
+      "stt_left": 446,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2210,20 +2210,6 @@
       "skip": false
     },
     {
-      "id": "UCuY0tWGuwCI8SI9FFk60zPg",
-      "title": "Sonal Bahl - Career Strategist",
-      "kind": "channel",
-      "videos_total": 80,
-      "videos_source": "inventory",
-      "captions_done": 65,
-      "captions_left": 11,
-      "stt_done": 65,
-      "stt_left": 15,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLrtCHHeadkHqFoyAJ8f-cYynn0MhYr7vO",
       "title": "SQL Interview Prep",
       "kind": "playlist",
@@ -2303,6 +2289,20 @@
       "captions_left": 6,
       "stt_done": 0,
       "stt_left": 6,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UCuY0tWGuwCI8SI9FFk60zPg",
+      "title": "Sonal Bahl - Career Strategist",
+      "kind": "channel",
+      "videos_total": 80,
+      "videos_source": "inventory",
+      "captions_done": 72,
+      "captions_left": 4,
+      "stt_done": 72,
+      "stt_left": 8,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
