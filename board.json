@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-26 06:46 HKT",
+  "written_at_hkt": "2026-10-26 06:55 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1527,10 +1527,10 @@
       "videos": 898,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
-      "captions_done": 415,
-      "captions_left": 284,
-      "stt_done": 415,
-      "stt_left": 484,
+      "captions_done": 422,
+      "captions_left": 271,
+      "stt_done": 422,
+      "stt_left": 477,
       "videos_total": 899,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1944,20 +1944,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
-      "title": "Career growth",
-      "kind": "playlist",
-      "videos_total": 899,
-      "videos_source": "inventory",
-      "captions_done": 415,
-      "captions_left": 284,
-      "stt_done": 415,
-      "stt_left": 484,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n",
       "title": "斷捨離 簡單匠 Podcast",
       "kind": "playlist",
@@ -1967,6 +1953,20 @@
       "captions_left": 371,
       "stt_done": 92,
       "stt_left": 396,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
+      "title": "Career growth",
+      "kind": "playlist",
+      "videos_total": 899,
+      "videos_source": "inventory",
+      "captions_done": 422,
+      "captions_left": 271,
+      "stt_done": 422,
+      "stt_left": 477,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
