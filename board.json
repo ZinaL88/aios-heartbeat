@@ -1,15 +1,15 @@
 {
-  "written_at_hkt": "2026-10-25 21:25 HKT",
+  "written_at_hkt": "2026-10-25 21:27 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
       "skip": false,
       "reason": "cut-in from chat 2026-09-21",
-      "captions_done": 255,
-      "captions_left": 116,
-      "stt_done": 255,
-      "stt_left": 117,
+      "captions_done": 263,
+      "captions_left": 108,
+      "stt_done": 263,
+      "stt_left": 109,
       "videos_total": 372,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -19,10 +19,10 @@
       "channel_id": "UC1q6LKlcco02dF0BxE0G1zg",
       "skip": false,
       "reason": "cut-in from chat 2026-09-20",
-      "captions_done": 21,
-      "captions_left": 74,
-      "stt_done": 21,
-      "stt_left": 15,
+      "captions_done": 24,
+      "captions_left": 71,
+      "stt_done": 24,
+      "stt_left": 12,
       "videos_total": 131,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2047,10 +2047,10 @@
       "kind": "channel",
       "videos_total": 372,
       "videos_source": "inventory",
-      "captions_done": 255,
-      "captions_left": 116,
-      "stt_done": 255,
-      "stt_left": 117,
+      "captions_done": 263,
+      "captions_left": 108,
+      "stt_done": 263,
+      "stt_left": 109,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2154,20 +2154,6 @@
       "skip": false
     },
     {
-      "id": "UC1q6LKlcco02dF0BxE0G1zg",
-      "title": "AI 101",
-      "kind": "channel",
-      "videos_total": 131,
-      "videos_source": "inventory",
-      "captions_done": 21,
-      "captions_left": 74,
-      "stt_done": 21,
-      "stt_left": 15,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "UCsguRUxh-0DiryIdPPWFeCQ",
       "title": "Rise Above Reality",
       "kind": "channel",
@@ -2177,6 +2163,20 @@
       "captions_left": 44,
       "stt_done": 0,
       "stt_left": 44,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UC1q6LKlcco02dF0BxE0G1zg",
+      "title": "AI 101",
+      "kind": "channel",
+      "videos_total": 131,
+      "videos_source": "inventory",
+      "captions_done": 24,
+      "captions_left": 71,
+      "stt_done": 24,
+      "stt_left": 12,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
