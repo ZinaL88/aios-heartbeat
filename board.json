@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-25 22:31 HKT",
+  "written_at_hkt": "2026-10-25 22:33 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -227,10 +227,10 @@
       "channel_id": "UCuY0tWGuwCI8SI9FFk60zPg",
       "skip": false,
       "reason": "ops_api video→channel",
-      "captions_done": 48,
-      "captions_left": 32,
-      "stt_done": 48,
-      "stt_left": 32,
+      "captions_done": 57,
+      "captions_left": 21,
+      "stt_done": 57,
+      "stt_left": 23,
       "videos_total": 80,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -253,10 +253,10 @@
       "channel_id": "UC9oosAco7nIVZwuGhnC0FKg",
       "skip": false,
       "reason": "Z L request 2026-10-07 full channel 宏观阿尔法 (video b9-TFYu12zU)",
-      "captions_done": 19,
-      "captions_left": 466,
-      "stt_done": 19,
-      "stt_left": 466,
+      "captions_done": 27,
+      "captions_left": 458,
+      "stt_done": 27,
+      "stt_left": 458,
       "videos_total": 485,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -280,9 +280,9 @@
       "skip": false,
       "reason": "Z L request 2026-10-07: LOW priority whole-channel; channel ID resolved logged-out 2026-10-08 per new rule (public IDs looked up logged-out). Re-added 2026-10-0",
       "captions_done": 4,
-      "captions_left": 260,
+      "captions_left": 259,
       "stt_done": 4,
-      "stt_left": 51,
+      "stt_left": 52,
       "videos_total": 316,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1963,10 +1963,10 @@
       "kind": "channel",
       "videos_total": 485,
       "videos_source": "inventory",
-      "captions_done": 19,
-      "captions_left": 466,
-      "stt_done": 19,
-      "stt_left": 466,
+      "captions_done": 27,
+      "captions_left": 458,
+      "stt_done": 27,
+      "stt_left": 458,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2020,9 +2020,9 @@
       "videos_total": 316,
       "videos_source": "inventory",
       "captions_done": 4,
-      "captions_left": 260,
+      "captions_left": 259,
       "stt_done": 4,
-      "stt_left": 51,
+      "stt_left": 52,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2112,20 +2112,6 @@
       "skip": false
     },
     {
-      "id": "UCuY0tWGuwCI8SI9FFk60zPg",
-      "title": "Sonal Bahl - Career Strategist",
-      "kind": "channel",
-      "videos_total": 80,
-      "videos_source": "inventory",
-      "captions_done": 48,
-      "captions_left": 32,
-      "stt_done": 48,
-      "stt_left": 32,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
       "title": "Podcast《不增不減兩分滿》",
       "kind": "playlist",
@@ -2177,6 +2163,20 @@
       "captions_left": 22,
       "stt_done": 0,
       "stt_left": 22,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UCuY0tWGuwCI8SI9FFk60zPg",
+      "title": "Sonal Bahl - Career Strategist",
+      "kind": "channel",
+      "videos_total": 80,
+      "videos_source": "inventory",
+      "captions_done": 57,
+      "captions_left": 21,
+      "stt_done": 57,
+      "stt_left": 23,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
