@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-25 22:05 HKT",
+  "written_at_hkt": "2026-10-25 22:11 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -45,10 +45,10 @@
       "channel_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
       "skip": false,
       "reason": "cut-in from chat 2026-09-19",
-      "captions_done": 130,
-      "captions_left": 33,
-      "stt_done": 130,
-      "stt_left": 39,
+      "captions_done": 139,
+      "captions_left": 24,
+      "stt_done": 139,
+      "stt_left": 30,
       "videos_total": 169,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -214,10 +214,10 @@
       "channel_id": "UCsguRUxh-0DiryIdPPWFeCQ",
       "skip": false,
       "reason": "ops_api intake",
-      "captions_done": 35,
-      "captions_left": 9,
-      "stt_done": 35,
-      "stt_left": 9,
+      "captions_done": 43,
+      "captions_left": 1,
+      "stt_done": 43,
+      "stt_left": 1,
       "videos_total": 44,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2126,20 +2126,6 @@
       "skip": false
     },
     {
-      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
-      "title": "Dr Angela C Meyers",
-      "kind": "channel",
-      "videos_total": 169,
-      "videos_source": "inventory",
-      "captions_done": 130,
-      "captions_left": 33,
-      "stt_done": 130,
-      "stt_left": 39,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
       "title": "Podcast《不增不減兩分滿》",
       "kind": "playlist",
@@ -2177,6 +2163,20 @@
       "captions_left": 58,
       "stt_done": 36,
       "stt_left": 1,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
+      "title": "Dr Angela C Meyers",
+      "kind": "channel",
+      "videos_total": 169,
+      "videos_source": "inventory",
+      "captions_done": 139,
+      "captions_left": 24,
+      "stt_done": 139,
+      "stt_left": 30,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2233,20 +2233,6 @@
       "captions_left": 15,
       "stt_done": 0,
       "stt_left": 15,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "UCsguRUxh-0DiryIdPPWFeCQ",
-      "title": "Rise Above Reality",
-      "kind": "channel",
-      "videos_total": 44,
-      "videos_source": "inventory",
-      "captions_done": 35,
-      "captions_left": 9,
-      "stt_done": 35,
-      "stt_left": 9,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2540,6 +2526,20 @@
       "captions_done": 0,
       "captions_left": 1,
       "stt_done": 0,
+      "stt_left": 1,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UCsguRUxh-0DiryIdPPWFeCQ",
+      "title": "Rise Above Reality",
+      "kind": "channel",
+      "videos_total": 44,
+      "videos_source": "inventory",
+      "captions_done": 43,
+      "captions_left": 1,
+      "stt_done": 43,
       "stt_left": 1,
       "status": "waiting_captions",
       "label": "Waiting captions",
