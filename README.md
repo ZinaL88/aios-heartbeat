@@ -2,6 +2,8 @@
 
 HEARTBEAT is AIOS's partner and control surface for monitoring, instructing, interacting and iterating toward a token-free autonomous setup. It is not AIOS itself. The longer-term Memory/knowledge layer is not part of this change.
 
+Live page: https://zinal88.github.io/aios-heartbeat/
+
 The public UI lives here. Canonical implementation lives in [ZinaL88/ai-os](https://github.com/ZinaL88/ai-os): `ops/api` applies additions, `ops/status` observes workers and publishes this surface, and collector scripts execute work. Fix the source renderer rather than editing only generated HTML.
 
 ## Status and history
