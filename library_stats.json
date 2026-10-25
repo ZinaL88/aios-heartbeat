@@ -1,10 +1,10 @@
 {
-  "built_at_hkt": "2026-10-25 15:20 HKT",
-  "built_at_utc": "2026-10-25T07:20:49Z",
-  "items": 24033,
-  "transcripts_indexed": 12819,
-  "schema_gaps": 21590,
-  "channels": 110,
+  "built_at_hkt": "2026-10-25 22:41 HKT",
+  "built_at_utc": "2026-10-25T14:41:06Z",
+  "items": 24412,
+  "transcripts_indexed": 13334,
+  "schema_gaps": 21969,
+  "channels": 112,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
   "top_gap_channels": [
