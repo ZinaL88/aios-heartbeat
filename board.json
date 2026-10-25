@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-25 21:59 HKT",
+  "written_at_hkt": "2026-10-25 22:01 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -45,10 +45,10 @@
       "channel_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
       "skip": false,
       "reason": "cut-in from chat 2026-09-19",
-      "captions_done": 97,
-      "captions_left": 66,
-      "stt_done": 97,
-      "stt_left": 72,
+      "captions_done": 106,
+      "captions_left": 57,
+      "stt_done": 106,
+      "stt_left": 63,
       "videos_total": 169,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -214,10 +214,10 @@
       "channel_id": "UCsguRUxh-0DiryIdPPWFeCQ",
       "skip": false,
       "reason": "ops_api intake",
-      "captions_done": 6,
-      "captions_left": 38,
-      "stt_done": 6,
-      "stt_left": 38,
+      "captions_done": 15,
+      "captions_left": 29,
+      "stt_done": 15,
+      "stt_left": 29,
       "videos_total": 44,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2084,20 +2084,6 @@
       "skip": false
     },
     {
-      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
-      "title": "Dr Angela C Meyers",
-      "kind": "channel",
-      "videos_total": 169,
-      "videos_source": "inventory",
-      "captions_done": 97,
-      "captions_left": 66,
-      "stt_done": 97,
-      "stt_left": 72,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
       "title": "Product Management Interview Prep",
       "kind": "playlist",
@@ -2126,6 +2112,20 @@
       "skip": false
     },
     {
+      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
+      "title": "Dr Angela C Meyers",
+      "kind": "channel",
+      "videos_total": 169,
+      "videos_source": "inventory",
+      "captions_done": 106,
+      "captions_left": 57,
+      "stt_done": 106,
+      "stt_left": 63,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
       "id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
       "title": "系统经济金融",
       "kind": "playlist",
@@ -2135,20 +2135,6 @@
       "captions_left": 12,
       "stt_done": 0,
       "stt_left": 86,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "UCsguRUxh-0DiryIdPPWFeCQ",
-      "title": "Rise Above Reality",
-      "kind": "channel",
-      "videos_total": 44,
-      "videos_source": "inventory",
-      "captions_done": 6,
-      "captions_left": 38,
-      "stt_done": 6,
-      "stt_left": 38,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2191,6 +2177,20 @@
       "captions_left": 58,
       "stt_done": 36,
       "stt_left": 1,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UCsguRUxh-0DiryIdPPWFeCQ",
+      "title": "Rise Above Reality",
+      "kind": "channel",
+      "videos_total": 44,
+      "videos_source": "inventory",
+      "captions_done": 15,
+      "captions_left": 29,
+      "stt_done": 15,
+      "stt_left": 29,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
