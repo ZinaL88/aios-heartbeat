@@ -1,15 +1,15 @@
 {
-  "written_at_hkt": "2026-10-25 21:49 HKT",
+  "written_at_hkt": "2026-10-25 21:51 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
       "skip": false,
       "reason": "cut-in from chat 2026-09-21",
-      "captions_done": 350,
-      "captions_left": 21,
-      "stt_done": 350,
-      "stt_left": 22,
+      "captions_done": 360,
+      "captions_left": 11,
+      "stt_done": 360,
+      "stt_left": 12,
       "videos_total": 372,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -45,10 +45,10 @@
       "channel_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
       "skip": false,
       "reason": "cut-in from chat 2026-09-19",
-      "captions_done": 62,
-      "captions_left": 101,
-      "stt_done": 62,
-      "stt_left": 107,
+      "captions_done": 74,
+      "captions_left": 89,
+      "stt_done": 74,
+      "stt_left": 95,
       "videos_total": 169,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2047,10 +2047,10 @@
       "kind": "channel",
       "videos_total": 169,
       "videos_source": "inventory",
-      "captions_done": 62,
-      "captions_left": 101,
-      "stt_done": 62,
-      "stt_left": 107,
+      "captions_done": 74,
+      "captions_left": 89,
+      "stt_done": 74,
+      "stt_left": 95,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2210,20 +2210,6 @@
       "skip": false
     },
     {
-      "id": "UC6t1O76G0jYXOAoYCm153dA",
-      "title": "Lenny's Podcast",
-      "kind": "channel",
-      "videos_total": 372,
-      "videos_source": "inventory",
-      "captions_done": 350,
-      "captions_left": 21,
-      "stt_done": 350,
-      "stt_left": 22,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLrtCHHeadkHrIkSw0waA_S8p2G_lYxU_j",
       "title": "Mock Product Management Interviews",
       "kind": "playlist",
@@ -2261,6 +2247,20 @@
       "captions_left": 15,
       "stt_done": 0,
       "stt_left": 15,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UC6t1O76G0jYXOAoYCm153dA",
+      "title": "Lenny's Podcast",
+      "kind": "channel",
+      "videos_total": 372,
+      "videos_source": "inventory",
+      "captions_done": 360,
+      "captions_left": 11,
+      "stt_done": 360,
+      "stt_left": 12,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
