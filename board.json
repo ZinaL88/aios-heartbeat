@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-26 07:08 HKT",
+  "written_at_hkt": "2026-10-26 07:10 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1527,10 +1527,10 @@
       "videos": 898,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
-      "captions_done": 446,
-      "captions_left": 241,
-      "stt_done": 446,
-      "stt_left": 453,
+      "captions_done": 453,
+      "captions_left": 231,
+      "stt_done": 453,
+      "stt_left": 446,
       "videos_total": 899,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1958,20 +1958,6 @@
       "skip": false
     },
     {
-      "id": "PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
-      "title": "Career growth",
-      "kind": "playlist",
-      "videos_total": 899,
-      "videos_source": "inventory",
-      "captions_done": 446,
-      "captions_left": 241,
-      "stt_done": 446,
-      "stt_left": 453,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2",
       "title": "English",
       "kind": "playlist",
@@ -1981,6 +1967,20 @@
       "captions_left": 198,
       "stt_done": 829,
       "stt_left": 493,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
+      "title": "Career growth",
+      "kind": "playlist",
+      "videos_total": 899,
+      "videos_source": "inventory",
+      "captions_done": 453,
+      "captions_left": 231,
+      "stt_done": 453,
+      "stt_left": 446,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
