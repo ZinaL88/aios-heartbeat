@@ -1,18 +1,18 @@
 {
-  "written_at_hkt": "2026-10-25 21:56 HKT",
+  "written_at_hkt": "2026-10-25 21:59 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
       "skip": false,
       "reason": "cut-in from chat 2026-09-21",
-      "captions_done": 370,
-      "captions_left": 1,
-      "stt_done": 370,
-      "stt_left": 2,
+      "captions_done": 371,
+      "captions_left": 0,
+      "stt_done": 371,
+      "stt_left": 1,
       "videos_total": 372,
-      "status": "waiting_captions",
-      "label": "Waiting captions"
+      "status": "waiting_stt",
+      "label": "Waiting STT"
     },
     {
       "name": "AI 101",
@@ -45,10 +45,10 @@
       "channel_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
       "skip": false,
       "reason": "cut-in from chat 2026-09-19",
-      "captions_done": 85,
-      "captions_left": 78,
-      "stt_done": 85,
-      "stt_left": 84,
+      "captions_done": 97,
+      "captions_left": 66,
+      "stt_done": 97,
+      "stt_left": 72,
       "videos_total": 169,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -201,23 +201,23 @@
       "channel_id": "UCf_XYgupvdx7rA44Ap3uI5w",
       "skip": false,
       "reason": "ops phase1: from shared video kBIN2h16Rc4",
-      "captions_done": 1,
-      "captions_left": 2,
-      "stt_done": 0,
-      "stt_left": 2,
+      "captions_done": 2,
+      "captions_left": 0,
+      "stt_done": 2,
+      "stt_left": 0,
       "videos_total": 2,
-      "status": "waiting_captions",
-      "label": "Waiting captions"
+      "status": "done",
+      "label": "Done"
     },
     {
       "name": "Rise Above Reality",
       "channel_id": "UCsguRUxh-0DiryIdPPWFeCQ",
       "skip": false,
       "reason": "ops_api intake",
-      "captions_done": 0,
-      "captions_left": 44,
-      "stt_done": 0,
-      "stt_left": 44,
+      "captions_done": 6,
+      "captions_left": 38,
+      "stt_done": 6,
+      "stt_left": 38,
       "videos_total": 44,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2056,20 +2056,6 @@
       "skip": false
     },
     {
-      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
-      "title": "Dr Angela C Meyers",
-      "kind": "channel",
-      "videos_total": 169,
-      "videos_source": "inventory",
-      "captions_done": 85,
-      "captions_left": 78,
-      "stt_done": 85,
-      "stt_left": 84,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "UCuY0tWGuwCI8SI9FFk60zPg",
       "title": "Sonal Bahl - Career Strategist",
       "kind": "channel",
@@ -2093,6 +2079,20 @@
       "captions_left": 28,
       "stt_done": 563,
       "stt_left": 123,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
+      "title": "Dr Angela C Meyers",
+      "kind": "channel",
+      "videos_total": 169,
+      "videos_source": "inventory",
+      "captions_done": 97,
+      "captions_left": 66,
+      "stt_done": 97,
+      "stt_left": 72,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2145,10 +2145,10 @@
       "kind": "channel",
       "videos_total": 44,
       "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 44,
-      "stt_done": 0,
-      "stt_left": 44,
+      "captions_done": 6,
+      "captions_left": 38,
+      "stt_done": 6,
+      "stt_left": 38,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2504,20 +2504,6 @@
       "skip": false
     },
     {
-      "id": "UCf_XYgupvdx7rA44Ap3uI5w",
-      "title": "Full Disclosure",
-      "kind": "channel",
-      "videos_total": 2,
-      "videos_source": "inventory",
-      "captions_done": 1,
-      "captions_left": 2,
-      "stt_done": 0,
-      "stt_left": 2,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLrtCHHeadkHr0-HlYmPPyX9Fr2hViOHaY",
       "title": "Success Stories",
       "kind": "playlist",
@@ -2541,20 +2527,6 @@
       "captions_left": 2,
       "stt_done": 24,
       "stt_left": 1,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "UC6t1O76G0jYXOAoYCm153dA",
-      "title": "Lenny's Podcast",
-      "kind": "channel",
-      "videos_total": 372,
-      "videos_source": "inventory",
-      "captions_done": 370,
-      "captions_left": 1,
-      "stt_done": 370,
-      "stt_left": 2,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -3792,6 +3764,20 @@
       "skip": false
     },
     {
+      "id": "UC6t1O76G0jYXOAoYCm153dA",
+      "title": "Lenny's Podcast",
+      "kind": "channel",
+      "videos_total": 372,
+      "videos_source": "inventory",
+      "captions_done": 371,
+      "captions_left": 0,
+      "stt_done": 371,
+      "stt_left": 1,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
       "id": "PLwAWbIQiqJ0C1-okYS6RO-7oUwVPE1vWX",
       "title": "Productivity Hacks",
       "kind": "playlist",
@@ -3846,6 +3832,20 @@
       "status": "paused",
       "label": "Paused / skip",
       "skip": true
+    },
+    {
+      "id": "UCf_XYgupvdx7rA44Ap3uI5w",
+      "title": "Full Disclosure",
+      "kind": "channel",
+      "videos_total": 2,
+      "videos_source": "inventory",
+      "captions_done": 2,
+      "captions_left": 0,
+      "stt_done": 2,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
     },
     {
       "id": "PLUl4u3cNGP63quuKvMHCt3cmTmt0O2qpv",
