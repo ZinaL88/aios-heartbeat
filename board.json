@@ -1,15 +1,15 @@
 {
-  "written_at_hkt": "2026-10-25 21:40 HKT",
+  "written_at_hkt": "2026-10-25 21:42 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
       "skip": false,
       "reason": "cut-in from chat 2026-09-21",
-      "captions_done": 309,
-      "captions_left": 62,
-      "stt_done": 309,
-      "stt_left": 63,
+      "captions_done": 320,
+      "captions_left": 51,
+      "stt_done": 320,
+      "stt_left": 52,
       "videos_total": 372,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -45,10 +45,10 @@
       "channel_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
       "skip": false,
       "reason": "cut-in from chat 2026-09-19",
-      "captions_done": 19,
-      "captions_left": 144,
-      "stt_done": 19,
-      "stt_left": 150,
+      "captions_done": 31,
+      "captions_left": 132,
+      "stt_done": 31,
+      "stt_left": 138,
       "videos_total": 169,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2033,10 +2033,10 @@
       "kind": "channel",
       "videos_total": 169,
       "videos_source": "inventory",
-      "captions_done": 19,
-      "captions_left": 144,
-      "stt_done": 19,
-      "stt_left": 150,
+      "captions_done": 31,
+      "captions_left": 132,
+      "stt_done": 31,
+      "stt_left": 138,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2112,20 +2112,6 @@
       "skip": false
     },
     {
-      "id": "UC6t1O76G0jYXOAoYCm153dA",
-      "title": "Lenny's Podcast",
-      "kind": "channel",
-      "videos_total": 372,
-      "videos_source": "inventory",
-      "captions_done": 309,
-      "captions_left": 62,
-      "stt_done": 309,
-      "stt_left": 63,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PL928yt6thY41xuYb7YbADDz1cs5bzb3qS",
       "title": "十分鐘心理學",
       "kind": "playlist",
@@ -2135,6 +2121,20 @@
       "captions_left": 80,
       "stt_done": 12,
       "stt_left": 43,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UC6t1O76G0jYXOAoYCm153dA",
+      "title": "Lenny's Podcast",
+      "kind": "channel",
+      "videos_total": 372,
+      "videos_source": "inventory",
+      "captions_done": 320,
+      "captions_left": 51,
+      "stt_done": 320,
+      "stt_left": 52,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
