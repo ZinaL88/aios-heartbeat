@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-25 22:42 HKT",
+  "written_at_hkt": "2026-10-25 22:44 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -253,10 +253,10 @@
       "channel_id": "UC9oosAco7nIVZwuGhnC0FKg",
       "skip": false,
       "reason": "Z L request 2026-10-07 full channel 宏观阿尔法 (video b9-TFYu12zU)",
-      "captions_done": 50,
-      "captions_left": 435,
-      "stt_done": 50,
-      "stt_left": 435,
+      "captions_done": 54,
+      "captions_left": 431,
+      "stt_done": 54,
+      "stt_left": 431,
       "videos_total": 485,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -280,9 +280,9 @@
       "skip": false,
       "reason": "Z L request 2026-10-07: LOW priority whole-channel; channel ID resolved logged-out 2026-10-08 per new rule (public IDs looked up logged-out). Re-added 2026-10-0",
       "captions_done": 4,
-      "captions_left": 248,
+      "captions_left": 243,
       "stt_done": 4,
-      "stt_left": 63,
+      "stt_left": 68,
       "videos_total": 316,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1963,10 +1963,10 @@
       "kind": "channel",
       "videos_total": 485,
       "videos_source": "inventory",
-      "captions_done": 50,
-      "captions_left": 435,
-      "stt_done": 50,
-      "stt_left": 435,
+      "captions_done": 54,
+      "captions_left": 431,
+      "stt_done": 54,
+      "stt_left": 431,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2020,9 +2020,9 @@
       "videos_total": 316,
       "videos_source": "inventory",
       "captions_done": 4,
-      "captions_left": 248,
+      "captions_left": 243,
       "stt_done": 4,
-      "stt_left": 63,
+      "stt_left": 68,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
