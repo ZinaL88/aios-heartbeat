@@ -1,15 +1,15 @@
 {
-  "written_at_hkt": "2026-10-25 21:45 HKT",
+  "written_at_hkt": "2026-10-25 21:47 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
       "skip": false,
       "reason": "cut-in from chat 2026-09-21",
-      "captions_done": 330,
-      "captions_left": 41,
-      "stt_done": 330,
-      "stt_left": 42,
+      "captions_done": 341,
+      "captions_left": 30,
+      "stt_done": 341,
+      "stt_left": 31,
       "videos_total": 372,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -45,10 +45,10 @@
       "channel_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
       "skip": false,
       "reason": "cut-in from chat 2026-09-19",
-      "captions_done": 40,
-      "captions_left": 123,
-      "stt_done": 40,
-      "stt_left": 129,
+      "captions_done": 51,
+      "captions_left": 112,
+      "stt_done": 51,
+      "stt_left": 118,
       "videos_total": 169,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2028,20 +2028,6 @@
       "skip": false
     },
     {
-      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
-      "title": "Dr Angela C Meyers",
-      "kind": "channel",
-      "videos_total": 169,
-      "videos_source": "inventory",
-      "captions_done": 40,
-      "captions_left": 123,
-      "stt_done": 40,
-      "stt_left": 129,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
       "title": "Interpersonal",
       "kind": "playlist",
@@ -2051,6 +2037,20 @@
       "captions_left": 219,
       "stt_done": 494,
       "stt_left": 25,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
+      "title": "Dr Angela C Meyers",
+      "kind": "channel",
+      "videos_total": 169,
+      "videos_source": "inventory",
+      "captions_done": 51,
+      "captions_left": 112,
+      "stt_done": 51,
+      "stt_left": 118,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2154,20 +2154,6 @@
       "skip": false
     },
     {
-      "id": "UC6t1O76G0jYXOAoYCm153dA",
-      "title": "Lenny's Podcast",
-      "kind": "channel",
-      "videos_total": 372,
-      "videos_source": "inventory",
-      "captions_done": 330,
-      "captions_left": 41,
-      "stt_done": 330,
-      "stt_left": 42,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
       "title": "Podcast《不增不減兩分滿》",
       "kind": "playlist",
@@ -2191,6 +2177,20 @@
       "captions_left": 48,
       "stt_done": 28,
       "stt_left": 15,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UC6t1O76G0jYXOAoYCm153dA",
+      "title": "Lenny's Podcast",
+      "kind": "channel",
+      "videos_total": 372,
+      "videos_source": "inventory",
+      "captions_done": 341,
+      "captions_left": 30,
+      "stt_done": 341,
+      "stt_left": 31,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
