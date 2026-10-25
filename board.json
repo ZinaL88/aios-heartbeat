@@ -1,15 +1,15 @@
 {
-  "written_at_hkt": "2026-10-25 21:16 HKT",
+  "written_at_hkt": "2026-10-25 21:18 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
       "skip": false,
       "reason": "cut-in from chat 2026-09-21",
-      "captions_done": 215,
-      "captions_left": 156,
-      "stt_done": 215,
-      "stt_left": 157,
+      "captions_done": 224,
+      "captions_left": 147,
+      "stt_done": 224,
+      "stt_left": 148,
       "videos_total": 372,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -19,10 +19,10 @@
       "channel_id": "UC1q6LKlcco02dF0BxE0G1zg",
       "skip": false,
       "reason": "cut-in from chat 2026-09-20",
-      "captions_done": 9,
-      "captions_left": 98,
-      "stt_done": 9,
-      "stt_left": 15,
+      "captions_done": 11,
+      "captions_left": 88,
+      "stt_done": 11,
+      "stt_left": 21,
       "videos_total": 131,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2014,20 +2014,6 @@
       "skip": false
     },
     {
-      "id": "UC6t1O76G0jYXOAoYCm153dA",
-      "title": "Lenny's Podcast",
-      "kind": "channel",
-      "videos_total": 372,
-      "videos_source": "inventory",
-      "captions_done": 215,
-      "captions_left": 156,
-      "stt_done": 215,
-      "stt_left": 157,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "UC9cfcOuTT9rYkyUimMjLxuw",
       "title": "money_or_life",
       "kind": "channel",
@@ -2037,6 +2023,20 @@
       "captions_left": 260,
       "stt_done": 4,
       "stt_left": 51,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UC6t1O76G0jYXOAoYCm153dA",
+      "title": "Lenny's Podcast",
+      "kind": "channel",
+      "videos_total": 372,
+      "videos_source": "inventory",
+      "captions_done": 224,
+      "captions_left": 147,
+      "stt_done": 224,
+      "stt_left": 148,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2145,10 +2145,10 @@
       "kind": "channel",
       "videos_total": 131,
       "videos_source": "inventory",
-      "captions_done": 9,
-      "captions_left": 98,
-      "stt_done": 9,
-      "stt_left": 15,
+      "captions_done": 11,
+      "captions_left": 88,
+      "stt_done": 11,
+      "stt_left": 21,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
