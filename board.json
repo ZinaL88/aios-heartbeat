@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-25 22:13 HKT",
+  "written_at_hkt": "2026-10-25 22:24 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -45,13 +45,13 @@
       "channel_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
       "skip": false,
       "reason": "cut-in from chat 2026-09-19",
-      "captions_done": 152,
-      "captions_left": 11,
-      "stt_done": 152,
-      "stt_left": 17,
+      "captions_done": 163,
+      "captions_left": 0,
+      "stt_done": 163,
+      "stt_left": 6,
       "videos_total": 169,
-      "status": "waiting_captions",
-      "label": "Waiting captions"
+      "status": "waiting_stt",
+      "label": "Waiting STT"
     },
     {
       "name": "Vicky Zhao",
@@ -227,10 +227,10 @@
       "channel_id": "UCuY0tWGuwCI8SI9FFk60zPg",
       "skip": false,
       "reason": "ops_api video→channel",
-      "captions_done": 6,
-      "captions_left": 74,
-      "stt_done": 6,
-      "stt_left": 74,
+      "captions_done": 16,
+      "captions_left": 64,
+      "stt_done": 16,
+      "stt_left": 64,
       "videos_total": 80,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2070,20 +2070,6 @@
       "skip": false
     },
     {
-      "id": "UCuY0tWGuwCI8SI9FFk60zPg",
-      "title": "Sonal Bahl - Career Strategist",
-      "kind": "channel",
-      "videos_total": 80,
-      "videos_source": "inventory",
-      "captions_done": 6,
-      "captions_left": 74,
-      "stt_done": 6,
-      "stt_left": 74,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
       "title": "Product Management Interview Prep",
       "kind": "playlist",
@@ -2093,6 +2079,20 @@
       "captions_left": 127,
       "stt_done": 1,
       "stt_left": 3,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UCuY0tWGuwCI8SI9FFk60zPg",
+      "title": "Sonal Bahl - Career Strategist",
+      "kind": "channel",
+      "videos_total": 80,
+      "videos_source": "inventory",
+      "captions_done": 16,
+      "captions_left": 64,
+      "stt_done": 16,
+      "stt_left": 64,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2219,20 +2219,6 @@
       "captions_left": 15,
       "stt_done": 0,
       "stt_left": 15,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
-      "title": "Dr Angela C Meyers",
-      "kind": "channel",
-      "videos_total": 169,
-      "videos_source": "inventory",
-      "captions_done": 152,
-      "captions_left": 11,
-      "stt_done": 152,
-      "stt_left": 17,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -3647,6 +3633,20 @@
       "captions_left": 0,
       "stt_done": 1,
       "stt_left": 7,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
+      "title": "Dr Angela C Meyers",
+      "kind": "channel",
+      "videos_total": 169,
+      "videos_source": "inventory",
+      "captions_done": 163,
+      "captions_left": 0,
+      "stt_done": 163,
+      "stt_left": 6,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
