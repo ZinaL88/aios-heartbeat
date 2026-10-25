@@ -1,15 +1,15 @@
 {
-  "written_at_hkt": "2026-10-25 21:33 HKT",
+  "written_at_hkt": "2026-10-25 21:36 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
       "channel_id": "UC6t1O76G0jYXOAoYCm153dA",
       "skip": false,
       "reason": "cut-in from chat 2026-09-21",
-      "captions_done": 277,
-      "captions_left": 94,
-      "stt_done": 277,
-      "stt_left": 95,
+      "captions_done": 287,
+      "captions_left": 84,
+      "stt_done": 287,
+      "stt_left": 85,
       "videos_total": 372,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -19,10 +19,10 @@
       "channel_id": "UC1q6LKlcco02dF0BxE0G1zg",
       "skip": false,
       "reason": "cut-in from chat 2026-09-20",
-      "captions_done": 34,
-      "captions_left": 60,
-      "stt_done": 34,
-      "stt_left": 3,
+      "captions_done": 35,
+      "captions_left": 59,
+      "stt_done": 35,
+      "stt_left": 2,
       "videos_total": 131,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2042,20 +2042,6 @@
       "skip": false
     },
     {
-      "id": "UC6t1O76G0jYXOAoYCm153dA",
-      "title": "Lenny's Podcast",
-      "kind": "channel",
-      "videos_total": 372,
-      "videos_source": "inventory",
-      "captions_done": 277,
-      "captions_left": 94,
-      "stt_done": 277,
-      "stt_left": 95,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLNSENJvwfwVLHPdPZdYF3t9oir8RHLEpr",
       "title": "個人成長心理學",
       "kind": "playlist",
@@ -2079,6 +2065,20 @@
       "captions_left": 163,
       "stt_done": 0,
       "stt_left": 6,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UC6t1O76G0jYXOAoYCm153dA",
+      "title": "Lenny's Podcast",
+      "kind": "channel",
+      "videos_total": 372,
+      "videos_source": "inventory",
+      "captions_done": 287,
+      "captions_left": 84,
+      "stt_done": 287,
+      "stt_left": 85,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2168,20 +2168,6 @@
       "skip": false
     },
     {
-      "id": "UC1q6LKlcco02dF0BxE0G1zg",
-      "title": "AI 101",
-      "kind": "channel",
-      "videos_total": 131,
-      "videos_source": "inventory",
-      "captions_done": 34,
-      "captions_left": 60,
-      "stt_done": 34,
-      "stt_left": 3,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLKhdFdaREj54QhbAs412Ckjv13gvLn2YO",
       "title": "Podcast《不增不減兩分滿》",
       "kind": "playlist",
@@ -2205,6 +2191,20 @@
       "captions_left": 48,
       "stt_done": 28,
       "stt_left": 15,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UC1q6LKlcco02dF0BxE0G1zg",
+      "title": "AI 101",
+      "kind": "channel",
+      "videos_total": 131,
+      "videos_source": "inventory",
+      "captions_done": 35,
+      "captions_left": 59,
+      "stt_done": 35,
+      "stt_left": 2,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
