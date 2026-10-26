@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-26 22:20 HKT",
+  "written_at_hkt": "2026-10-26 22:27 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -240,10 +240,10 @@
       "channel_id": "UCx-OfB7xsTN_GnoplitHfXg",
       "skip": false,
       "reason": "Z L request 2026-10-08: HIGH priority whole-channel (videos/Shorts/posts/playlists/members-if-any); channel ID resolved logged-out 2026-10-08 per new rule (publ",
-      "captions_done": 93,
-      "captions_left": 5,
-      "stt_done": 93,
-      "stt_left": 7,
+      "captions_done": 96,
+      "captions_left": 2,
+      "stt_done": 96,
+      "stt_left": 4,
       "videos_total": 100,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2280,20 +2280,6 @@
       "skip": false
     },
     {
-      "id": "UCx-OfB7xsTN_GnoplitHfXg",
-      "title": "seanaistories",
-      "kind": "channel",
-      "videos_total": 100,
-      "videos_source": "inventory",
-      "captions_done": 93,
-      "captions_left": 5,
-      "stt_done": 93,
-      "stt_left": 7,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "id": "PLaTR4-VYHk9q2iXWNJF0gqjXVvaXSz23t",
       "title": "【入門級命理課】命盤中的十二地支",
       "kind": "playlist",
@@ -2415,6 +2401,20 @@
       "captions_left": 3,
       "stt_done": 0,
       "stt_left": 3,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "id": "UCx-OfB7xsTN_GnoplitHfXg",
+      "title": "seanaistories",
+      "kind": "channel",
+      "videos_total": 100,
+      "videos_source": "inventory",
+      "captions_done": 96,
+      "captions_left": 2,
+      "stt_done": 96,
+      "stt_left": 4,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
