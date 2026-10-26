@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-26 18:54 HKT",
-  "built_at_utc": "2026-10-26T10:54:14Z",
-  "items": 25919,
-  "transcripts_indexed": 14236,
-  "schema_gaps": 23476,
+  "built_at_hkt": "2026-10-27 01:37 HKT",
+  "built_at_utc": "2026-10-26T17:37:12Z",
+  "items": 26169,
+  "transcripts_indexed": 14385,
+  "schema_gaps": 23726,
   "channels": 112,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -18,9 +18,9 @@
     {
       "channel_id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
       "channel_name": "Emotional Intelligence",
-      "item_count": 1524,
-      "transcript_count": 961,
-      "schema_gap_count": 1524
+      "item_count": 1767,
+      "transcript_count": 1103,
+      "schema_gap_count": 1767
     },
     {
       "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
@@ -46,9 +46,9 @@
     {
       "channel_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
       "channel_name": "Presentation, Public Speaking, Story Telling",
-      "item_count": 1069,
-      "transcript_count": 941,
-      "schema_gap_count": 1069
+      "item_count": 1071,
+      "transcript_count": 943,
+      "schema_gap_count": 1071
     },
     {
       "channel_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
