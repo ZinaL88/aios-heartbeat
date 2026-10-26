@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-26 12:28 HKT",
-  "built_at_utc": "2026-10-26T04:28:25Z",
-  "items": 25200,
-  "transcripts_indexed": 13770,
-  "schema_gaps": 22757,
+  "built_at_hkt": "2026-10-26 18:54 HKT",
+  "built_at_utc": "2026-10-26T10:54:14Z",
+  "items": 25919,
+  "transcripts_indexed": 14236,
+  "schema_gaps": 23476,
   "channels": 112,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -14,6 +14,13 @@
       "item_count": 2934,
       "transcript_count": 1470,
       "schema_gap_count": 2934
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
+      "channel_name": "Emotional Intelligence",
+      "item_count": 1524,
+      "transcript_count": 961,
+      "schema_gap_count": 1524
     },
     {
       "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
@@ -46,9 +53,9 @@
     {
       "channel_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
       "channel_name": "Interpersonal",
-      "item_count": 1013,
-      "transcript_count": 494,
-      "schema_gap_count": 1013
+      "item_count": 1015,
+      "transcript_count": 496,
+      "schema_gap_count": 1015
     },
     {
       "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
@@ -91,13 +98,6 @@
       "item_count": 809,
       "transcript_count": 698,
       "schema_gap_count": 809
-    },
-    {
-      "channel_id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
-      "channel_name": "Emotional Intelligence",
-      "item_count": 807,
-      "transcript_count": 497,
-      "schema_gap_count": 807
     },
     {
       "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
