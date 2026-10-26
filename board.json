@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-26 15:26 HKT",
+  "written_at_hkt": "2026-10-26 15:28 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1555,10 +1555,10 @@
       "videos": 2314,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
-      "captions_done": 629,
-      "captions_left": 1318,
-      "stt_done": 629,
-      "stt_left": 1705,
+      "captions_done": 635,
+      "captions_left": 1308,
+      "stt_done": 635,
+      "stt_left": 1699,
       "videos_total": 2334,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -1935,10 +1935,10 @@
       "kind": "playlist",
       "videos_total": 2334,
       "videos_source": "inventory",
-      "captions_done": 629,
-      "captions_left": 1318,
-      "stt_done": 629,
-      "stt_left": 1705,
+      "captions_done": 635,
+      "captions_left": 1308,
+      "stt_done": 635,
+      "stt_left": 1699,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
