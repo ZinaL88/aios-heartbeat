@@ -19,3 +19,7 @@ The public UI lives here. Canonical implementation lives in [ZinaL88/ai-os](http
 The page shell rebuilds when source rendering code or queue structure changes; live status continues to refresh independently. Git still records changing `status.json` blobs. This reduces duplication without claiming Git is a time-series database.
 
 Existing library/search facilities remain available under their existing access rules. Heartbeat telemetry must not expose cookies, credentials, local filesystem paths or transcript contents. See [PRINCIPLES.md](PRINCIPLES.md).
+
+## Island map
+
+[Island map](https://zinal88.github.io/aios-heartbeat/map.html) (`map.html`) draws ops jobs as buildings on tool islands. It reads `map-data.json` (schema `island-map/ops-public-v0`) about every 2 minutes. That file is counts and status only: no Me-layer numbers, health or energy values, or application detail. The card board stays on `index.html` and links here. Status publishes should keep that Island map link when they patch `index.html`.

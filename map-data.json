@@ -1,0 +1,537 @@
+{
+ "schema": "island-map/ops-public-v0",
+ "generated_hkt": "2026-10-27 21:19:36 HKT",
+ "public": true,
+ "note": "Public ops layer: counts and status only. No personal Me-layer or application detail.",
+ "nodes": [
+  {
+   "id": "box-driver",
+   "kind": "vm",
+   "label": "box loop driver"
+  },
+  {
+   "id": "script",
+   "kind": "tool",
+   "label": "script"
+  },
+  {
+   "id": "opencode",
+   "kind": "tool",
+   "label": "opencode"
+  },
+  {
+   "id": "instinct",
+   "kind": "tool",
+   "label": "instinct"
+  },
+  {
+   "id": "gemini-web",
+   "kind": "tool",
+   "label": "gemini-web"
+  },
+  {
+   "id": "jules",
+   "kind": "tool",
+   "label": "jules"
+  },
+  {
+   "id": "agy",
+   "kind": "tool",
+   "label": "agy"
+  },
+  {
+   "id": "chatgpt-web",
+   "kind": "tool",
+   "label": "chatgpt-web"
+  },
+  {
+   "id": "codex",
+   "kind": "tool",
+   "label": "codex"
+  },
+  {
+   "id": "cursor",
+   "kind": "tool",
+   "label": "cursor"
+  },
+  {
+   "id": "grok2",
+   "kind": "tool",
+   "label": "grok2"
+  },
+  {
+   "id": "grok2-executor",
+   "kind": "tool",
+   "label": "grok2-executor"
+  },
+  {
+   "id": "grok2-browser",
+   "kind": "tool",
+   "label": "grok2-browser"
+  },
+  {
+   "id": "zina",
+   "kind": "tool",
+   "label": "zina"
+  },
+  {
+   "id": "grok2-script",
+   "kind": "tool",
+   "label": "grok2-script"
+  },
+  {
+   "id": "unknown",
+   "kind": "tool",
+   "label": "unknown"
+  },
+  {
+   "id": "gemini-chat-personal",
+   "kind": "tool",
+   "label": "gemini-chat-personal"
+  },
+  {
+   "id": "opencode-zero-retention",
+   "kind": "tool",
+   "label": "opencode-zero-retention"
+  },
+  {
+   "id": "gemini-chat-company",
+   "kind": "tool",
+   "label": "gemini-chat-company"
+  }
+ ],
+ "buildings": [
+  {
+   "id": "g1-cv-gate",
+   "island": "script",
+   "label": "task g1-cv-gate",
+   "state": "Done (needs review)",
+   "source": "queue",
+   "code": "a1"
+  },
+  {
+   "id": "g1-cv-deliver",
+   "island": "grok2",
+   "label": "task g1-cv-deliver",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a2"
+  },
+  {
+   "id": "g2-lark-reconcile",
+   "island": "instinct",
+   "label": "Read-only Lark source reconciliation (counts per source)",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a3"
+  },
+  {
+   "id": "g3-hosted-retest",
+   "island": "instinct",
+   "label": "Re-test same-room path on hosted sit-room site",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a4"
+  },
+  {
+   "id": "g4-checker-parsers",
+   "island": "instinct",
+   "label": "Allowance checker parsers + tests (Grok, Cursor CSV, Codex, ",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a5"
+  },
+  {
+   "id": "g4-merge-cadence",
+   "island": "instinct",
+   "label": "Merge checker + set read cadence + bot->account map",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a6"
+  },
+  {
+   "id": "g5-hours",
+   "island": "grok2",
+   "label": "Propose reminder times from hours",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a7"
+  },
+  {
+   "id": "g1-cv-gate-input",
+   "island": "grok2",
+   "label": "task g1-cv-gate-input",
+   "state": "Done",
+   "source": "queue",
+   "code": "a8"
+  },
+  {
+   "id": "g2-codex-lark-sweep",
+   "island": "codex",
+   "label": "Codex read-only Lark sweep: all chats, minutes/transcripts s",
+   "state": "Handed off",
+   "source": "queue",
+   "code": "a9"
+  },
+  {
+   "id": "g2-lark-status-file",
+   "island": "grok2",
+   "label": "Allow Codex to push counts-only lark-sweep-status.json to ai",
+   "state": "Done",
+   "source": "queue",
+   "code": "a10"
+  },
+  {
+   "id": "bl-autostart-probe",
+   "island": "script",
+   "label": "Driver + watcher autostart after a box reboot: investigate w",
+   "state": "Done (needs review)",
+   "source": "queue",
+   "code": "a11"
+  },
+  {
+   "id": "bl-eval-refresh",
+   "island": "script",
+   "label": "Re-run proof-of-work evals (verify_loop.py) so pending noteb",
+   "state": "Done (needs review)",
+   "source": "queue",
+   "code": "a12"
+  },
+  {
+   "id": "bl-hours-default",
+   "island": "script",
+   "label": "Reminder hours: use a safe default until gives her wake/work",
+   "state": "Done (needs review)",
+   "source": "queue",
+   "code": "a13"
+  },
+  {
+   "id": "bl-review-prompts",
+   "island": "script",
+   "label": "Review-pack gap: Nyxen and Instinct never got the Heartbeat ",
+   "state": "Done (needs review)",
+   "source": "queue",
+   "code": "a14"
+  },
+  {
+   "id": "bl-watcher-guards",
+   "island": "grok2",
+   "label": "HB-0010 open guards: per-hour alert cap and a dead-watcher a",
+   "state": "Done",
+   "source": "queue",
+   "code": "a15"
+  },
+  {
+   "id": "bl-allowance-csv",
+   "island": "grok2",
+   "label": "Allowance reader for the Cursor usage CSV (Grok1 pool), box-",
+   "state": "Done",
+   "source": "queue",
+   "code": "a16"
+  },
+  {
+   "id": "bl-me-layer-defaults",
+   "island": "grok2",
+   "label": "task bl-me-layer-defaults",
+   "state": "Done",
+   "source": "queue",
+   "code": "a17"
+  },
+  {
+   "id": "bl-private-tracker-route",
+   "island": "opencode",
+   "label": "Design a phone-viewable private route for tracker.html (desi",
+   "state": "Done",
+   "source": "queue",
+   "code": "a18"
+  },
+  {
+   "id": "bl-pow-questions",
+   "island": "grok2",
+   "label": "Proof-of-work notebook: 3 open questions (drills, AIXOA+Xero",
+   "state": "Done",
+   "source": "queue",
+   "code": "a19"
+  },
+  {
+   "id": "bl-notebook-refresh",
+   "island": "grok2",
+   "label": "Notebook refresh pass for pending-updates.md (evals README, ",
+   "state": "STALLED",
+   "source": "queue",
+   "code": "a20"
+  },
+  {
+   "id": "bl-pr100-reconcile",
+   "island": "grok2",
+   "label": "Reconcile Instinct PR #100 queue format with the driver queu",
+   "state": "STALLED",
+   "source": "queue",
+   "code": "a21"
+  },
+  {
+   "id": "bl-r15-evals",
+   "island": "grok2",
+   "label": "E-evals for R15: last-ran beat alert, alert cap, read-only w",
+   "state": "STALLED",
+   "source": "queue",
+   "code": "a22"
+  },
+  {
+   "id": "job:build-me-layer-v0",
+   "island": "grok2-executor",
+   "label": "Private Me layer v0: check-in script, private gauges, nudge ",
+   "state": "Failed",
+   "source": "jobs"
+  },
+  {
+   "id": "job:build-signed-relay-fixmenu",
+   "island": "grok2-executor",
+   "label": "Signed relay + fix menu: code written, 111 tests pass, needs",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:codex-lark-sweep",
+   "island": "codex",
+   "label": "Codex read-only Lark sweep (queue a9)",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:cu-052ebbef",
+   "island": "grok2-browser",
+   "label": "computerUse sender 052ebbef (browser helper)",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:cv-content-fails",
+   "island": "zina",
+   "label": "task job:cv-content-fails",
+   "state": "Blocked",
+   "source": "jobs"
+  },
+  {
+   "id": "job:cv-senior-lint",
+   "island": "grok2-script",
+   "label": "task job:cv-senior-lint",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:exec-4a154520",
+   "island": "grok2-executor",
+   "label": "Inventory executor 4a154520",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:exec-86408214",
+   "island": "grok2-executor",
+   "label": "Phone-approval bridge build (executor 86408214)",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:exec-c070a723",
+   "island": "grok2-executor",
+   "label": "Backlog promoter + jobs registry + map export build (executo",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:exec-c0e9ddd5",
+   "island": "grok2-executor",
+   "label": "Executor c0e9ddd5 (title not given to this registry; Grok2 t",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:exec-e7c58270",
+   "island": "grok2-executor",
+   "label": "task job:exec-e7c58270",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:g2-codex-lark-sweep",
+   "island": "unknown",
+   "label": "job:g2-codex-lark-sweep",
+   "state": "Running",
+   "source": "jobs"
+  },
+  {
+   "id": "job:gemini-argon-map",
+   "island": "gemini-chat-personal",
+   "label": "Island map on personal Gemini, 4 Argon, full original prompt",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:install-agy",
+   "island": "script",
+   "label": "Install Antigravity CLI (agy) on box",
+   "state": "Blocked",
+   "source": "jobs"
+  },
+  {
+   "id": "job:install-codex-cli",
+   "island": "script",
+   "label": "Install Codex CLI on box",
+   "state": "Blocked",
+   "source": "jobs"
+  },
+  {
+   "id": "job:install-opencode",
+   "island": "script",
+   "label": "Install OpenCode CLI on box + free-model smoke test",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:instinct-lark-reading",
+   "island": "instinct",
+   "label": "Instinct reading 18 Lark sources (Viewing mode)",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-critique-adr-hb0010-0011",
+   "island": "opencode-zero-retention",
+   "label": "Critique ADRs HB-0010 and HB-0011",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-design-private-tracker-route",
+   "island": "opencode-zero-retention",
+   "label": "Design note: phone-viewable private route for the tracker (d",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-draft-learning-note-heartbeat-ux",
+   "island": "opencode-zero-retention",
+   "label": "Learning note draft: Heartbeat UX principles (public sources",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-map-prototype",
+   "island": "gemini-chat-company",
+   "label": "Heartbeat island map prototype (sample data)",
+   "state": "Blocked",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-review-approval-bridge",
+   "island": "opencode-zero-retention",
+   "label": "Adversarial review: phone-approval bridge design",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-review-watcher-design",
+   "island": "opencode-zero-retention",
+   "label": "Review: watcher registry design (section 14)",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:loop-driver",
+   "island": "script",
+   "label": "Loop driver (run_forever.sh supervisor)",
+   "state": "Running",
+   "source": "jobs"
+  },
+  {
+   "id": "job:oc-me-layer",
+   "island": "opencode",
+   "label": "Me layer v0 code (OpenCode deepseek, staging dir)",
+   "state": "Failed",
+   "source": "jobs"
+  },
+  {
+   "id": "job:opencode-map-live",
+   "island": "opencode",
+   "label": "Make island map read live map-data.json (OpenCode deepseek, ",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:opencode-map-merge",
+   "island": "opencode",
+   "label": "Merge Argon look with live data (OpenCode deepseek)",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:opencode-map-prototype",
+   "island": "opencode",
+   "label": "Map prototype v0 via OpenCode free model (sample data)",
+   "state": "Failed",
+   "source": "jobs"
+  },
+  {
+   "id": "job:opencode-map-v2",
+   "island": "opencode",
+   "label": "Map prototype v2 (compact prompt) via two zero-retention Ope",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:verify-reviews",
+   "island": "grok2-executor",
+   "label": "Verify DeepSeek bridge + watcher reviews against real code",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:watcher-2min",
+   "island": "script",
+   "label": "Zero-token 2-minute watcher process",
+   "state": "Running",
+   "source": "jobs"
+  }
+ ],
+ "edges": [
+  {
+   "from": "box-driver",
+   "to": "codex",
+   "task": "g2-codex-lark-sweep",
+   "kind": "hand-off"
+  },
+  {
+   "from": "box-driver",
+   "to": "grok2",
+   "task": "bl-notebook-refresh",
+   "kind": "hand-off"
+  },
+  {
+   "from": "box-driver",
+   "to": "grok2",
+   "task": "bl-pr100-reconcile",
+   "kind": "hand-off"
+  },
+  {
+   "from": "box-driver",
+   "to": "grok2",
+   "task": "bl-r15-evals",
+   "kind": "hand-off"
+  }
+ ],
+ "counts": {
+  "buildings": 53,
+  "by_state": {
+   "Done (needs review)": 5,
+   "Waiting on Zina": 6,
+   "Done": 20,
+   "Handed off": 1,
+   "STALLED": 11,
+   "Failed": 3,
+   "Blocked": 4,
+   "Running": 3
+  }
+ }
+}
