@@ -1,0 +1,2965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Heartbeat Island Map</title>
+  <meta http-equiv="Cache-Control" content="no-store"/>
+  <style>
+    :root {
+      --ocean-top: #d8f1f7;
+      --ocean-mid: #cbeaf4;
+      --ocean-deep: #b8e1ef;
+      --cream-bg: rgba(255, 252, 245, 0.94);
+      --cream-solid: #fffdf8;
+      --card-border: #e6dcc8;
+      --ink-dark: #2c3539;
+      --ink-mid: #556268;
+      --ink-soft: #78868c;
+
+      /* State colors (always paired with icons + text labels) */
+      --state-running-bg: #fff3d1;
+      --state-running-border: #e5a93c;
+      --state-running-ink: #7a4f06;
+
+      --state-blocked-bg: #ffe3de;
+      --state-blocked-border: #e05a47;
+      --state-blocked-ink: #8a2214;
+
+      --state-stalled-bg: #e3e8f0;
+      --state-stalled-border: #6c7f99;
+      --state-stalled-ink: #2f3e52;
+
+      --state-queued-bg: #f3ead8;
+      --state-queued-border: #a88754;
+      --state-queued-ink: #594322;
+
+      --state-done-bg: #dcf5e6;
+      --state-done-border: #43a670;
+      --state-done-ink: #195936;
+
+      --accent-coral: #e86b58;
+      --accent-coral-hover: #d45542;
+      --accent-teal: #3b9c9c;
+      --accent-gold: #f2b84b;
+      --shadow-soft: 0 8px 24px rgba(44, 53, 57, 0.1);
+      --shadow-card: 0 4px 14px rgba(44, 53, 57, 0.08);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --font-round: ui-rounded, 'Hiragino Maru Gothic ProN', 'Quicksand', 'Comfortaa', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: var(--font-round);
+      color: var(--ink-dark);
+      background: linear-gradient(180deg, var(--ocean-top) 0%, var(--ocean-mid) 55%, var(--ocean-deep) 100%);
+      -webkit-font-smoothing: antialiased;
+      user-select: none;
+    }
+
+    /* ================= TOP HEADER & FILTERS ================= */
+    .top-bar {
+      position: fixed;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 30;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--cream-bg);
+      backdrop-filter: blur(8px);
+      border: 2px solid var(--card-border);
+      border-radius: 999px;
+      padding: 6px 14px;
+      box-shadow: var(--shadow-soft);
+      max-width: calc(100vw - 24px);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .brand-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      font-size: 0.98rem;
+      color: var(--ink-dark);
+      padding-right: 8px;
+      border-right: 2px dashed var(--card-border);
+      white-space: nowrap;
+    }
+
+    .board-link {
+      margin-left: 2px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: #265b6b;
+      text-decoration: none;
+      border: 1.5px solid #b8dce6;
+      background: #e9f3f6;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    .board-link:hover {
+      background: #d7ebf2;
+    }
+
+    .board-link:focus-visible {
+      outline: 3px solid var(--accent-teal);
+      outline-offset: 2px;
+    }
+
+    .heart-pulse {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      background: #ffe0db;
+      color: var(--accent-coral);
+      border-radius: 50%;
+      font-size: 0.85rem;
+      animation: pulseHeart 2.2s infinite ease-in-out;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      appearance: none;
+      border: 1.5px solid transparent;
+      background: #f3efe6;
+      color: var(--ink-mid);
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 5px 11px;
+      border-radius: 999px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .filter-btn:hover {
+      background: #eae3d5;
+    }
+
+    .filter-btn:focus-visible {
+      outline: 3px solid var(--accent-teal);
+      outline-offset: 2px;
+    }
+
+    .filter-btn.active {
+      background: var(--ink-dark);
+      color: #fffdf8;
+      border-color: var(--ink-dark);
+    }
+
+    .filter-btn[data-filter="blocked"].active {
+      background: var(--state-blocked-ink);
+      border-color: var(--state-blocked-ink);
+    }
+
+    .filter-count {
+      background: rgba(255, 255, 255, 0.22);
+      padding: 1px 6px;
+      border-radius: 999px;
+      font-size: 0.74rem;
+    }
+
+    .filter-btn:not(.active) .filter-count {
+      background: rgba(44, 53, 57, 0.1);
+      color: var(--ink-dark);
+    }
+
+    /* ================= FIXED TOP-LEFT PANEL: WHAT NEEDS YOU NOW ================= */
+    .needs-panel {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      z-index: 35;
+      width: 310px;
+      max-width: calc(100vw - 24px);
+      background: var(--cream-bg);
+      backdrop-filter: blur(8px);
+      border: 2px solid #f0b8ae;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      transition: transform 0.2s ease, max-height 0.25s ease;
+    }
+
+    .needs-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: linear-gradient(90deg, #ffe5e0 0%, #fff2eb 100%);
+      border-bottom: 1.5px solid #f2c8c0;
+      cursor: pointer;
+    }
+
+    .needs-header-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      font-size: 0.92rem;
+      color: var(--state-blocked-ink);
+    }
+
+    .needs-badge {
+      background: var(--accent-coral);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    .panel-toggle-btn {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid #e2b4ac;
+      border-radius: 8px;
+      padding: 2px 7px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--state-blocked-ink);
+      cursor: pointer;
+    }
+
+    .needs-list {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-height: 290px;
+      overflow-y: auto;
+    }
+
+    .needs-panel.collapsed .needs-list {
+      display: none;
+    }
+
+    .needs-item {
+      background: var(--cream-solid);
+      border: 1.5px solid #eddcd8;
+      border-left: 5px solid var(--accent-coral);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .needs-item:hover {
+      border-color: var(--accent-coral);
+      transform: translateY(-1px);
+    }
+
+    .needs-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .needs-item-title {
+      font-weight: 800;
+      font-size: 0.85rem;
+      color: var(--ink-dark);
+    }
+
+    .needs-item-tool {
+      font-size: 0.73rem;
+      font-weight: 700;
+      color: var(--ink-mid);
+      background: #f2ede2;
+      padding: 2px 7px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .needs-item-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+    }
+
+    .inspect-link {
+      background: none;
+      border: none;
+      color: var(--accent-teal);
+      font-family: inherit;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 2px 0;
+    }
+
+    .copy-reply-btn {
+      appearance: none;
+      border: 1.5px solid var(--accent-coral);
+      background: #fff4f2;
+      color: var(--state-blocked-ink);
+      font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 4px 9px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.15s ease;
+    }
+
+    .copy-reply-btn:hover {
+      background: var(--accent-coral);
+      color: #fff;
+    }
+
+    .copy-reply-btn.copied {
+      background: var(--state-done-border);
+      border-color: var(--state-done-border);
+      color: #fff;
+    }
+
+    /* ================= MAP VIEWPORT & SVG CANVAS ================= */
+    .map-viewport {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      cursor: grab;
+      touch-action: none;
+    }
+
+    .map-viewport.dragging {
+      cursor: grabbing;
+    }
+
+    .map-stage {
+      width: 100%;
+      height: 100%;
+      transform-origin: center center;
+    }
+
+    .island-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* SVG interactive elements */
+    .building-node {
+      cursor: pointer;
+      transition: opacity 0.25s ease, filter 0.25s ease;
+    }
+
+    .building-node:focus {
+      outline: none;
+    }
+
+    .building-node:focus-visible .building-focus-ring {
+      opacity: 1;
+    }
+
+    .building-focus-ring {
+      opacity: 0;
+      stroke: var(--ink-dark);
+      stroke-width: 3;
+      stroke-dasharray: 5 3;
+      fill: none;
+    }
+
+    .building-node.selected .building-select-halo {
+      opacity: 1;
+    }
+
+    .building-select-halo {
+      opacity: 0;
+      fill: rgba(255, 250, 224, 0.55);
+      stroke: var(--accent-coral);
+      stroke-width: 3;
+      transition: opacity 0.2s ease;
+    }
+
+    .building-node:hover .building-body-group {
+      transform: translateY(-4px);
+    }
+
+    .building-body-group {
+      transition: transform 0.2s ease;
+    }
+
+    .building-node.filtered-out {
+      opacity: 0.22;
+      filter: grayscale(0.75);
+    }
+
+    /* Map zoom/reset controls */
+    .map-controls {
+      position: fixed;
+      right: 14px;
+      bottom: 84px;
+      z-index: 25;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .ctrl-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 12px;
+      border: 2px solid var(--card-border);
+      background: var(--cream-bg);
+      color: var(--ink-dark);
+      font-weight: 800;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ctrl-btn:hover {
+      background: #fff;
+    }
+
+    /* ================= SIDE CARD: BUILDING DETAILS ================= */
+    .side-card {
+      position: fixed;
+      top: 72px;
+      right: 14px;
+      z-index: 35;
+      width: 325px;
+      max-width: calc(100vw - 28px);
+      background: var(--cream-bg);
+      backdrop-filter: blur(10px);
+      border: 2px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .side-card.hidden {
+      transform: translateX(360px);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .side-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+      border-bottom: 1.5px dashed var(--card-border);
+      padding-bottom: 10px;
+    }
+
+    .side-card-title {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--ink-dark);
+      line-height: 1.25;
+    }
+
+    .close-card-btn {
+      background: #f0ebe0;
+      border: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--ink-mid);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .close-card-btn:hover {
+      background: #e2d9c8;
+      color: var(--ink-dark);
+    }
+
+    .meta-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .tool-pill {
+      font-size: 0.78rem;
+      font-weight: 800;
+      background: #e9f3f6;
+      color: #265b6b;
+      border: 1.5px solid #b8dce6;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .state-pill {
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1.5px solid transparent;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .state-pill.state-running {
+      background: var(--state-running-bg);
+      border-color: var(--state-running-border);
+      color: var(--state-running-ink);
+    }
+    .state-pill.state-blocked {
+      background: var(--state-blocked-bg);
+      border-color: var(--state-blocked-border);
+      color: var(--state-blocked-ink);
+    }
+    .state-pill.state-stalled {
+      background: var(--state-stalled-bg);
+      border-color: var(--state-stalled-border);
+      color: var(--state-stalled-ink);
+    }
+    .state-pill.state-queued {
+      background: var(--state-queued-bg);
+      border-color: var(--state-queued-border);
+      color: var(--state-queued-ink);
+    }
+    .state-pill.state-done {
+      background: var(--state-done-bg);
+      border-color: var(--state-done-border);
+      color: var(--state-done-ink);
+    }
+
+    .detail-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .detail-row {
+      background: var(--cream-solid);
+      border: 1.5px solid #eee6d5;
+      border-radius: var(--radius-sm);
+      padding: 8px 11px;
+    }
+
+    .detail-label {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--ink-soft);
+      margin-bottom: 2px;
+    }
+
+    .detail-value {
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--ink-dark);
+      line-height: 1.35;
+    }
+
+    .side-card-action {
+      background: #fff3f0;
+      border: 1.5px solid #f2bdb5;
+      border-radius: var(--radius-sm);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .side-card-action-label {
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: var(--state-blocked-ink);
+    }
+
+    /* ================= LEGEND PANEL ================= */
+    .legend-box {
+      position: fixed;
+      left: 12px;
+      bottom: 82px;
+      z-index: 25;
+      background: var(--cream-bg);
+      backdrop-filter: blur(8px);
+      border: 2px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 8px 12px;
+      box-shadow: var(--shadow-card);
+      max-width: calc(100vw - 70px);
+    }
+
+    .legend-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      color: var(--ink-mid);
+      cursor: pointer;
+    }
+
+    .legend-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      margin-top: 6px;
+      padding-top: 6px;
+      border-top: 1px dashed var(--card-border);
+    }
+
+    .legend-box.collapsed .legend-items {
+      display: none;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--ink-dark);
+    }
+
+    .legend-swatch {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      border: 1.5px solid transparent;
+    }
+
+    /* ================= BOTTOM STRIP: GOLDEN TRIANGLE (ME LAYER) ================= */
+    .golden-strip {
+      position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 30;
+      background: var(--cream-bg);
+      backdrop-filter: blur(10px);
+      border: 2px solid #e2ce9f;
+      border-radius: 999px;
+      padding: 7px 18px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      max-width: calc(100vw - 20px);
+      white-space: nowrap;
+    }
+
+    .golden-title-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-right: 12px;
+      border-right: 2px dashed #e2ce9f;
+    }
+
+    .golden-triangle-icon {
+      width: 24px;
+      height: 24px;
+      background: #fff2cf;
+      border: 1.5px solid var(--accent-gold);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.82rem;
+      color: #9e6b08;
+      font-weight: 900;
+    }
+
+    .golden-labels {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .golden-main-label {
+      font-size: 0.8rem;
+      font-weight: 800;
+      color: var(--ink-dark);
+      line-height: 1.1;
+    }
+
+    .private-tag {
+      font-size: 0.68rem;
+      font-weight: 800;
+      color: #8c6415;
+      background: #faecc8;
+      padding: 1px 6px;
+      border-radius: 999px;
+      display: inline-block;
+      margin-top: 2px;
+    }
+
+    .gauges-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .gauge-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .gauge-ring {
+      width: 34px;
+      height: 34px;
+      flex-shrink: 0;
+    }
+
+    .gauge-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gauge-name {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: var(--ink-mid);
+    }
+
+    .gauge-val {
+      font-size: 0.78rem;
+      font-weight: 800;
+      color: var(--ink-dark);
+    }
+
+    /* ================= SVG ANIMATIONS & REDUCED MOTION ================= */
+    @keyframes pulseHeart {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.14); }
+    }
+
+    @keyframes smokeRise1 {
+      0% { transform: translate(0, 0) scale(0.7); opacity: 0.85; }
+      100% { transform: translate(-5px, -18px) scale(1.35); opacity: 0; }
+    }
+
+    @keyframes smokeRise2 {
+      0% { transform: translate(0, 0) scale(0.6); opacity: 0.8; }
+      100% { transform: translate(4px, -22px) scale(1.4); opacity: 0; }
+    }
+
+    @keyframes waveFlag {
+      0%, 100% { transform: rotate(-6deg); }
+      50% { transform: rotate(9deg); }
+    }
+
+    @keyframes ringBell {
+      0%, 100% { transform: rotate(0deg); }
+      20% { transform: rotate(16deg); }
+      40% { transform: rotate(-16deg); }
+      60% { transform: rotate(10deg); }
+      80% { transform: rotate(-8deg); }
+    }
+
+    @keyframes rainDrop {
+      0% { transform: translateY(0); opacity: 0.9; }
+      100% { transform: translateY(12px); opacity: 0.1; }
+    }
+
+    @keyframes floatCloud {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3px); }
+    }
+
+    @keyframes mascotBob {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-3.5px); }
+    }
+
+    @keyframes confettiTwinkle {
+      0%, 100% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      50% { transform: translateY(-3px) rotate(12deg); opacity: 0.75; }
+    }
+
+    .anim-smoke-1 {
+      animation: smokeRise1 2.4s infinite ease-out;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .anim-smoke-2 {
+      animation: smokeRise2 2.4s infinite 1.1s ease-out;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .anim-flag {
+      animation: waveFlag 1.6s infinite ease-in-out;
+      transform-box: fill-box;
+      transform-origin: left center;
+    }
+
+    .anim-bell {
+      animation: ringBell 1.8s infinite ease-in-out;
+      transform-box: fill-box;
+      transform-origin: top center;
+    }
+
+    .anim-rain-1 {
+      animation: rainDrop 1.1s infinite linear;
+    }
+
+    .anim-rain-2 {
+      animation: rainDrop 1.1s infinite 0.55s linear;
+    }
+
+    .anim-cloud {
+      animation: floatCloud 2.8s infinite ease-in-out;
+    }
+
+    .anim-mascot {
+      animation: mascotBob 3.2s infinite ease-in-out;
+    }
+
+    .anim-confetti {
+      animation: confettiTwinkle 2.2s infinite ease-in-out;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    /* Respect reduced motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .boat-motion {
+        display: none;
+      }
+      .boat-static-fallback {
+        display: block !important;
+      }
+    }
+
+    /* ================= RESPONSIVE / PHONE SCREEN ADAPTATION ================= */
+    @media (max-width: 900px) {
+      .top-bar {
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        transform: none;
+        max-width: none;
+        border-radius: 16px;
+        padding: 6px 10px;
+        justify-content: space-between;
+      }
+
+      .brand-title {
+        font-size: 0.88rem;
+        border-right: none;
+        padding-right: 0;
+      }
+
+      .needs-panel {
+        top: 88px;
+        left: 8px;
+        width: 270px;
+      }
+
+      .side-card {
+        top: auto;
+        bottom: 72px;
+        right: 8px;
+        left: 8px;
+        width: auto;
+        max-width: none;
+        max-height: 56vh;
+        overflow-y: auto;
+        z-index: 40;
+      }
+
+      .side-card.hidden {
+        transform: translateY(110%);
+      }
+
+      .golden-strip {
+        bottom: 6px;
+        padding: 6px 12px;
+        gap: 10px;
+        width: calc(100vw - 16px);
+        justify-content: space-between;
+        overflow-x: auto;
+      }
+
+      .legend-box {
+        bottom: 68px;
+        left: 8px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .needs-panel {
+        top: 96px;
+        width: calc(100vw - 16px);
+      }
+
+      .needs-list {
+        max-height: 155px;
+      }
+
+      .golden-title-group {
+        padding-right: 8px;
+      }
+
+      .gauges-row {
+        gap: 10px;
+      }
+
+      .gauge-ring {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  
+    /* ================= MERGED LIVE MAP ADDITIONS ================= */
+    .live-status-wrap {
+      padding: 7px 12px 0;
+    }
+
+    .live-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      max-width: 100%;
+      padding: 3px 8px;
+      border: 1.5px solid #d8cbb0;
+      border-radius: 999px;
+      background: #f6f1e4;
+      color: #6b5a36;
+      font-size: 0.68rem;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .live-status::before {
+      content: "";
+      flex: 0 0 auto;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #b99a5a;
+    }
+
+    .live-status.live {
+      color: #1f6b4b;
+      border-color: #b7ddc2;
+      background: #eef9f0;
+    }
+    .live-status.live::before {
+      background: #43a670;
+      box-shadow: 0 0 0 3px rgba(67, 166, 112, 0.15);
+    }
+
+    .live-status.snapshot {
+      color: #7b5a18;
+      border-color: #ead3aa;
+      background: #fff8e6;
+    }
+    .live-status.snapshot::before {
+      background: #d49a2f;
+      box-shadow: 0 0 0 3px rgba(212, 154, 47, 0.15);
+    }
+
+    .live-status.connecting {
+      color: #6f877f;
+    }
+    .live-status.connecting::before {
+      background: #9bb1aa;
+    }
+
+    .side-card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .state-pill.state-review {
+      background: #fff3d1;
+      border-color: #c99a2e;
+      color: #6e4b06;
+    }
+    .state-pill.state-handed {
+      background: #e6f2f9;
+      border-color: #4d90ad;
+      color: #1f536b;
+    }
+    .state-pill.state-failed {
+      background: #fde3e0;
+      border-color: #b84438;
+      color: #7a1f16;
+    }
+    .state-pill.state-neutral {
+      background: #eef1f0;
+      border-color: #8b9a96;
+      color: #40514c;
+    }
+
+    .roster-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-height: 44vh;
+      overflow-y: auto;
+    }
+
+    .roster-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      width: 100%;
+      padding: 7px 9px;
+      border: 1.5px solid #eee6d5;
+      border-radius: var(--radius-sm);
+      background: var(--cream-solid);
+      color: inherit;
+      font-family: inherit;
+      text-align: left;
+      cursor: pointer;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .roster-item:hover,
+    .roster-item:focus-visible {
+      border-color: var(--accent-teal);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .roster-item-title {
+      min-width: 0;
+      font-size: 0.8rem;
+      font-weight: 800;
+      line-height: 1.2;
+      color: var(--ink-dark);
+    }
+
+    .roster-item .state-pill {
+      flex: 0 0 auto;
+      padding: 2px 6px;
+      font-size: 0.6rem;
+    }
+
+    .roster-empty {
+      padding: 10px;
+      border: 1.5px dashed var(--card-border);
+      border-radius: var(--radius-sm);
+      color: var(--ink-mid);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .more-chip {
+      cursor: pointer;
+    }
+    .more-chip:focus-visible {
+      outline: none;
+    }
+    .more-chip:focus-visible rect {
+      stroke: var(--accent-teal);
+      stroke-width: 3;
+    }
+
+    @media (max-width: 520px) {
+      .live-status {
+        font-size: 0.64rem;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .top-bar .filter-group {
+        flex: 1 0 100%;
+        justify-content: center;
+        row-gap: 4px;
+      }
+      .top-bar .filter-btn {
+        font-size: 0.76rem;
+        padding: 4px 9px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .golden-strip {
+        gap: 8px;
+        padding: 6px 10px;
+        overflow: hidden;
+      }
+      .golden-title-group {
+        gap: 6px;
+        padding-right: 6px;
+      }
+      .golden-main-label {
+        font-size: 0.74rem;
+      }
+      .private-tag {
+        font-size: 0.62rem;
+      }
+      .gauges-row {
+        gap: 7px;
+      }
+      .gauge-item {
+        gap: 4px;
+      }
+      .gauge-ring {
+        width: 24px;
+        height: 24px;
+      }
+      .gauge-name {
+        font-size: 0.64rem;
+      }
+      .gauge-val {
+        display: none;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .top-bar {
+        gap: 6px;
+        padding: 5px 8px;
+      }
+      .needs-panel {
+        top: 82px;
+      }
+      .top-bar .brand-title {
+        font-size: 0.82rem;
+      }
+      .top-bar .filter-group {
+        flex-wrap: nowrap;
+        gap: 3px;
+        row-gap: 3px;
+      }
+      .top-bar .filter-btn {
+        font-size: 0.66rem;
+        padding: 2px 6px;
+        gap: 3px;
+      }
+      .top-bar .filter-count {
+        font-size: 0.66rem;
+        padding: 0 5px;
+      }
+      .golden-strip {
+        gap: 6px;
+        padding: 5px 7px;
+      }
+      .golden-title-group {
+        gap: 4px;
+        padding-right: 4px;
+      }
+      .golden-triangle-icon {
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
+      }
+      .golden-main-label {
+        font-size: 0.64rem;
+      }
+      .private-tag {
+        font-size: 0.56rem;
+        padding: 1px 4px;
+      }
+      .gauges-row {
+        gap: 3px;
+      }
+      .gauge-item {
+        gap: 3px;
+      }
+      .gauge-ring {
+        width: 18px;
+        height: 18px;
+      }
+      .gauge-name {
+        font-size: 0.54rem;
+      }
+    }
+
+  </style>
+  <script type="application/json" id="snapshot-data">{
+ "schema": "island-map/ops-public-v0",
+ "generated_hkt": "2026-10-27 21:19:36 HKT",
+ "public": true,
+ "note": "Public ops layer: counts and status only. No personal Me-layer or application detail.",
+ "nodes": [
+  {
+   "id": "box-driver",
+   "kind": "vm",
+   "label": "box loop driver"
+  },
+  {
+   "id": "script",
+   "kind": "tool",
+   "label": "script"
+  },
+  {
+   "id": "opencode",
+   "kind": "tool",
+   "label": "opencode"
+  },
+  {
+   "id": "instinct",
+   "kind": "tool",
+   "label": "instinct"
+  },
+  {
+   "id": "gemini-web",
+   "kind": "tool",
+   "label": "gemini-web"
+  },
+  {
+   "id": "jules",
+   "kind": "tool",
+   "label": "jules"
+  },
+  {
+   "id": "agy",
+   "kind": "tool",
+   "label": "agy"
+  },
+  {
+   "id": "chatgpt-web",
+   "kind": "tool",
+   "label": "chatgpt-web"
+  },
+  {
+   "id": "codex",
+   "kind": "tool",
+   "label": "codex"
+  },
+  {
+   "id": "cursor",
+   "kind": "tool",
+   "label": "cursor"
+  },
+  {
+   "id": "grok2",
+   "kind": "tool",
+   "label": "grok2"
+  },
+  {
+   "id": "grok2-executor",
+   "kind": "tool",
+   "label": "grok2-executor"
+  },
+  {
+   "id": "grok2-browser",
+   "kind": "tool",
+   "label": "grok2-browser"
+  },
+  {
+   "id": "zina",
+   "kind": "tool",
+   "label": "zina"
+  },
+  {
+   "id": "grok2-script",
+   "kind": "tool",
+   "label": "grok2-script"
+  },
+  {
+   "id": "unknown",
+   "kind": "tool",
+   "label": "unknown"
+  },
+  {
+   "id": "gemini-chat-personal",
+   "kind": "tool",
+   "label": "gemini-chat-personal"
+  },
+  {
+   "id": "opencode-zero-retention",
+   "kind": "tool",
+   "label": "opencode-zero-retention"
+  },
+  {
+   "id": "gemini-chat-company",
+   "kind": "tool",
+   "label": "gemini-chat-company"
+  }
+ ],
+ "buildings": [
+  {
+   "id": "g1-cv-gate",
+   "island": "script",
+   "label": "task g1-cv-gate",
+   "state": "Done (needs review)",
+   "source": "queue",
+   "code": "a1"
+  },
+  {
+   "id": "g1-cv-deliver",
+   "island": "grok2",
+   "label": "task g1-cv-deliver",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a2"
+  },
+  {
+   "id": "g2-lark-reconcile",
+   "island": "instinct",
+   "label": "Read-only Lark source reconciliation (counts per source)",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a3"
+  },
+  {
+   "id": "g3-hosted-retest",
+   "island": "instinct",
+   "label": "Re-test same-room path on hosted sit-room site",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a4"
+  },
+  {
+   "id": "g4-checker-parsers",
+   "island": "instinct",
+   "label": "Allowance checker parsers + tests (Grok, Cursor CSV, Codex, ",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a5"
+  },
+  {
+   "id": "g4-merge-cadence",
+   "island": "instinct",
+   "label": "Merge checker + set read cadence + bot->account map",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a6"
+  },
+  {
+   "id": "g5-hours",
+   "island": "grok2",
+   "label": "Propose reminder times from hours",
+   "state": "Waiting on Zina",
+   "source": "queue",
+   "code": "a7"
+  },
+  {
+   "id": "g1-cv-gate-input",
+   "island": "grok2",
+   "label": "task g1-cv-gate-input",
+   "state": "Done",
+   "source": "queue",
+   "code": "a8"
+  },
+  {
+   "id": "g2-codex-lark-sweep",
+   "island": "codex",
+   "label": "Codex read-only Lark sweep: all chats, minutes/transcripts s",
+   "state": "Handed off",
+   "source": "queue",
+   "code": "a9"
+  },
+  {
+   "id": "g2-lark-status-file",
+   "island": "grok2",
+   "label": "Allow Codex to push counts-only lark-sweep-status.json to ai",
+   "state": "Done",
+   "source": "queue",
+   "code": "a10"
+  },
+  {
+   "id": "bl-autostart-probe",
+   "island": "script",
+   "label": "Driver + watcher autostart after a box reboot: investigate w",
+   "state": "Done (needs review)",
+   "source": "queue",
+   "code": "a11"
+  },
+  {
+   "id": "bl-eval-refresh",
+   "island": "script",
+   "label": "Re-run proof-of-work evals (verify_loop.py) so pending noteb",
+   "state": "Done (needs review)",
+   "source": "queue",
+   "code": "a12"
+  },
+  {
+   "id": "bl-hours-default",
+   "island": "script",
+   "label": "Reminder hours: use a safe default until gives her wake/work",
+   "state": "Done (needs review)",
+   "source": "queue",
+   "code": "a13"
+  },
+  {
+   "id": "bl-review-prompts",
+   "island": "script",
+   "label": "Review-pack gap: Nyxen and Instinct never got the Heartbeat ",
+   "state": "Done (needs review)",
+   "source": "queue",
+   "code": "a14"
+  },
+  {
+   "id": "bl-watcher-guards",
+   "island": "grok2",
+   "label": "HB-0010 open guards: per-hour alert cap and a dead-watcher a",
+   "state": "Done",
+   "source": "queue",
+   "code": "a15"
+  },
+  {
+   "id": "bl-allowance-csv",
+   "island": "grok2",
+   "label": "Allowance reader for the Cursor usage CSV (Grok1 pool), box-",
+   "state": "Done",
+   "source": "queue",
+   "code": "a16"
+  },
+  {
+   "id": "bl-me-layer-defaults",
+   "island": "grok2",
+   "label": "task bl-me-layer-defaults",
+   "state": "Done",
+   "source": "queue",
+   "code": "a17"
+  },
+  {
+   "id": "bl-private-tracker-route",
+   "island": "opencode",
+   "label": "Design a phone-viewable private route for tracker.html (desi",
+   "state": "Done",
+   "source": "queue",
+   "code": "a18"
+  },
+  {
+   "id": "bl-pow-questions",
+   "island": "grok2",
+   "label": "Proof-of-work notebook: 3 open questions (drills, AIXOA+Xero",
+   "state": "Done",
+   "source": "queue",
+   "code": "a19"
+  },
+  {
+   "id": "bl-notebook-refresh",
+   "island": "grok2",
+   "label": "Notebook refresh pass for pending-updates.md (evals README, ",
+   "state": "STALLED",
+   "source": "queue",
+   "code": "a20"
+  },
+  {
+   "id": "bl-pr100-reconcile",
+   "island": "grok2",
+   "label": "Reconcile Instinct PR #100 queue format with the driver queu",
+   "state": "STALLED",
+   "source": "queue",
+   "code": "a21"
+  },
+  {
+   "id": "bl-r15-evals",
+   "island": "grok2",
+   "label": "E-evals for R15: last-ran beat alert, alert cap, read-only w",
+   "state": "STALLED",
+   "source": "queue",
+   "code": "a22"
+  },
+  {
+   "id": "job:build-me-layer-v0",
+   "island": "grok2-executor",
+   "label": "Private Me layer v0: check-in script, private gauges, nudge ",
+   "state": "Failed",
+   "source": "jobs"
+  },
+  {
+   "id": "job:build-signed-relay-fixmenu",
+   "island": "grok2-executor",
+   "label": "Signed relay + fix menu: code written, 111 tests pass, needs",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:codex-lark-sweep",
+   "island": "codex",
+   "label": "Codex read-only Lark sweep (queue a9)",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:cu-052ebbef",
+   "island": "grok2-browser",
+   "label": "computerUse sender 052ebbef (browser helper)",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:cv-content-fails",
+   "island": "zina",
+   "label": "task job:cv-content-fails",
+   "state": "Blocked",
+   "source": "jobs"
+  },
+  {
+   "id": "job:cv-senior-lint",
+   "island": "grok2-script",
+   "label": "task job:cv-senior-lint",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:exec-4a154520",
+   "island": "grok2-executor",
+   "label": "Inventory executor 4a154520",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:exec-86408214",
+   "island": "grok2-executor",
+   "label": "Phone-approval bridge build (executor 86408214)",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:exec-c070a723",
+   "island": "grok2-executor",
+   "label": "Backlog promoter + jobs registry + map export build (executo",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:exec-c0e9ddd5",
+   "island": "grok2-executor",
+   "label": "Executor c0e9ddd5 (title not given to this registry; Grok2 t",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:exec-e7c58270",
+   "island": "grok2-executor",
+   "label": "task job:exec-e7c58270",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:g2-codex-lark-sweep",
+   "island": "unknown",
+   "label": "job:g2-codex-lark-sweep",
+   "state": "Running",
+   "source": "jobs"
+  },
+  {
+   "id": "job:gemini-argon-map",
+   "island": "gemini-chat-personal",
+   "label": "Island map on personal Gemini, 4 Argon, full original prompt",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:install-agy",
+   "island": "script",
+   "label": "Install Antigravity CLI (agy) on box",
+   "state": "Blocked",
+   "source": "jobs"
+  },
+  {
+   "id": "job:install-codex-cli",
+   "island": "script",
+   "label": "Install Codex CLI on box",
+   "state": "Blocked",
+   "source": "jobs"
+  },
+  {
+   "id": "job:install-opencode",
+   "island": "script",
+   "label": "Install OpenCode CLI on box + free-model smoke test",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:instinct-lark-reading",
+   "island": "instinct",
+   "label": "Instinct reading 18 Lark sources (Viewing mode)",
+   "state": "STALLED",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-critique-adr-hb0010-0011",
+   "island": "opencode-zero-retention",
+   "label": "Critique ADRs HB-0010 and HB-0011",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-design-private-tracker-route",
+   "island": "opencode-zero-retention",
+   "label": "Design note: phone-viewable private route for the tracker (d",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-draft-learning-note-heartbeat-ux",
+   "island": "opencode-zero-retention",
+   "label": "Learning note draft: Heartbeat UX principles (public sources",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-map-prototype",
+   "island": "gemini-chat-company",
+   "label": "Heartbeat island map prototype (sample data)",
+   "state": "Blocked",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-review-approval-bridge",
+   "island": "opencode-zero-retention",
+   "label": "Adversarial review: phone-approval bridge design",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:lane-review-watcher-design",
+   "island": "opencode-zero-retention",
+   "label": "Review: watcher registry design (section 14)",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:loop-driver",
+   "island": "script",
+   "label": "Loop driver (run_forever.sh supervisor)",
+   "state": "Running",
+   "source": "jobs"
+  },
+  {
+   "id": "job:oc-me-layer",
+   "island": "opencode",
+   "label": "Me layer v0 code (OpenCode deepseek, staging dir)",
+   "state": "Failed",
+   "source": "jobs"
+  },
+  {
+   "id": "job:opencode-map-live",
+   "island": "opencode",
+   "label": "Make island map read live map-data.json (OpenCode deepseek, ",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:opencode-map-merge",
+   "island": "opencode",
+   "label": "Merge Argon look with live data (OpenCode deepseek)",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:opencode-map-prototype",
+   "island": "opencode",
+   "label": "Map prototype v0 via OpenCode free model (sample data)",
+   "state": "Failed",
+   "source": "jobs"
+  },
+  {
+   "id": "job:opencode-map-v2",
+   "island": "opencode",
+   "label": "Map prototype v2 (compact prompt) via two zero-retention Ope",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:verify-reviews",
+   "island": "grok2-executor",
+   "label": "Verify DeepSeek bridge + watcher reviews against real code",
+   "state": "Done",
+   "source": "jobs"
+  },
+  {
+   "id": "job:watcher-2min",
+   "island": "script",
+   "label": "Zero-token 2-minute watcher process",
+   "state": "Running",
+   "source": "jobs"
+  }
+ ],
+ "edges": [
+  {
+   "from": "box-driver",
+   "to": "codex",
+   "task": "g2-codex-lark-sweep",
+   "kind": "hand-off"
+  },
+  {
+   "from": "box-driver",
+   "to": "grok2",
+   "task": "bl-notebook-refresh",
+   "kind": "hand-off"
+  },
+  {
+   "from": "box-driver",
+   "to": "grok2",
+   "task": "bl-pr100-reconcile",
+   "kind": "hand-off"
+  },
+  {
+   "from": "box-driver",
+   "to": "grok2",
+   "task": "bl-r15-evals",
+   "kind": "hand-off"
+  }
+ ],
+ "counts": {
+  "buildings": 53,
+  "by_state": {
+   "Done (needs review)": 5,
+   "Waiting on Zina": 6,
+   "Done": 20,
+   "Handed off": 1,
+   "STALLED": 11,
+   "Failed": 3,
+   "Blocked": 4,
+   "Running": 3
+  }
+ }
+}</script>
+</head>
+<body>
+  <!-- 1. FIXED TOP-LEFT PANEL: "What needs you now" -->
+  <aside class="needs-panel" id="needsPanel" aria-label="What needs you now">
+    <div class="needs-header" id="needsHeaderToggle" role="button" tabindex="0" aria-expanded="true">
+      <div class="needs-header-left">
+        <span aria-hidden="true">🔔</span>
+        <span>What needs you now</span>
+        <span class="needs-badge" id="needsCountBadge">0</span>
+      </div>
+      <button class="panel-toggle-btn" id="needsCollapseBtn" type="button" aria-label="Toggle panel">Hide</button>
+    </div>
+    <div class="live-status-wrap">
+      <span class="live-status snapshot" id="liveStatus" role="status">snapshot, not live · loading</span>
+    </div>
+    <div class="needs-list" id="needsList"></div>
+  </aside>
+
+  <!-- 4. TOP HEADER & FILTERS -->
+  <header class="top-bar" role="banner">
+    <div class="brand-title">
+      <span class="heart-pulse" aria-hidden="true">♥</span>
+      <span>Heartbeat Island Map</span>
+      <a class="board-link" href="index.html?v=24">Board</a>
+    </div>
+    <nav class="filter-group" aria-label="Job state filters" id="filterBar">
+      <button class="filter-btn active" type="button" data-filter="all">
+        All <span class="filter-count" id="count-all">43</span>
+      </button>
+      <button class="filter-btn" type="button" data-filter="blocked">
+        🔔 Needs me <span class="filter-count" id="count-blocked">9</span>
+      </button>
+      <button class="filter-btn" type="button" data-filter="running">
+        ⚡ Running <span class="filter-count" id="count-running">2</span>
+      </button>
+      <button class="filter-btn" type="button" data-filter="stalled">
+        🌧️ Stalled <span class="filter-count" id="count-stalled">10</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- INTERACTIVE ISLAND MAP -->
+  <main class="map-viewport" id="mapViewport" aria-label="Interactive AI Archipelago Map">
+    <div class="map-stage" id="mapStage">
+      <svg class="island-svg" id="islandSvg" viewBox="0 0 1600 940" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Heartbeat island map showing islands and job buildings">
+        <defs>
+          <filter id="islandShadow" x="-10%" y="-10%" width="120%" height="125%">
+            <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#6fabbd" flood-opacity="0.38" />
+          </filter>
+          <filter id="bldgShadow" x="-15%" y="-15%" width="130%" height="135%">
+            <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#2c3539" flood-opacity="0.18" />
+          </filter>
+          <g id="transitBoat">
+            <path d="M-11,2 L11,2 L7,8 L-7,8 Z" fill="#d96b43" stroke="#5c2d1c" stroke-width="1.2" />
+            <line x1="0" y1="2" x2="0" y2="-11" stroke="#5c2d1c" stroke-width="1.5" />
+            <path d="M0,-10 L9,-1 L0,-1 Z" fill="#fffdf7" stroke="#5c2d1c" stroke-width="1" />
+            <path d="M-1,-8 L-7,-1 L-1,-1 Z" fill="#ffe082" stroke="#5c2d1c" stroke-width="1" />
+          </g>
+        </defs>
+
+        <g id="oceanDecor" opacity="0.65">
+          <path d="M90,170 Q115,163 140,170 T190,170" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M620,125 Q645,118 670,125 T720,125" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M1080,420 Q1105,413 1130,420 T1180,420" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M180,620 Q205,613 230,620 T280,620" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M610,600 Q635,593 660,600 T710,600" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+          <path d="M1180,760 Q1205,753 1230,760 T1280,760" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" />
+        </g>
+
+        <g id="bridgesLayer"></g>
+        <g id="islandsLayer"></g>
+        <g id="buildingsLayer"></g>
+      </svg>
+    </div>
+  </main>
+
+  <!-- MAP ZOOM / RESET CONTROLS -->
+  <div class="map-controls" aria-label="Map view controls">
+    <button class="ctrl-btn" id="zoomInBtn" type="button" title="Zoom in" aria-label="Zoom in">+</button>
+    <button class="ctrl-btn" id="zoomOutBtn" type="button" title="Zoom out" aria-label="Zoom out">−</button>
+    <button class="ctrl-btn" id="resetViewBtn" type="button" title="Reset map view" aria-label="Reset map view">⟲</button>
+  </div>
+
+  <!-- 2. SIDE CARD: BUILDING INSPECTOR -->
+  <aside class="side-card hidden" id="sideCard" aria-live="polite" aria-label="Selected building details">
+    <div class="side-card-header">
+      <div>
+        <div class="detail-label" id="cardKicker">Selected Building</div>
+        <h2 class="side-card-title" id="cardTitle">Select a building</h2>
+      </div>
+      <button class="close-card-btn" id="closeCardBtn" type="button" aria-label="Close details card">✕</button>
+    </div>
+    <div class="side-card-body" id="sideCardBody"></div>
+  </aside>
+
+  <!-- 4. LEGEND -->
+  <section class="legend-box" id="legendBox" aria-label="Map legend">
+    <div class="legend-header" id="legendToggle" role="button" tabindex="0" aria-expanded="true">
+      <span>🗺️ Building &amp; Bridge Legend (click to toggle)</span>
+      <span id="legendChevron">▾</span>
+    </div>
+    <div class="legend-items">
+      <div class="legend-item">
+        <span class="legend-swatch" style="background: var(--state-running-bg); border-color: var(--state-running-border);">⚡</span>
+        <span>Running (lit windows + chimney)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-swatch" style="background: var(--state-queued-bg); border-color: var(--state-queued-border);">🏗️</span>
+        <span>Queued / next (scaffolding)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-swatch" style="background: var(--state-blocked-bg); border-color: var(--state-blocked-border);">🔔</span>
+        <span>Waiting / blocked (flag + bell)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-swatch" style="background: var(--state-stalled-bg); border-color: var(--state-stalled-border);">🌧️</span>
+        <span>Stalled (rain cloud)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-swatch" style="background: var(--state-done-bg); border-color: var(--state-done-border);">🎉</span>
+        <span>Done (flag + confetti)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-swatch" style="background: #e6f2f9; border-color: #4d90ad;">⛵</span>
+        <span>Handed off (in transit)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-swatch" style="background: #fde3e0; border-color: #b84438;">⚠️</span>
+        <span>Failed / unknown (muted)</span>
+      </div>
+      <div class="legend-item">
+        <span class="legend-swatch" style="background: #e9f5f9; border-color: #67a9bd;">⛵</span>
+        <span>Hand-off bridge (dotted + boat)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. BOTTOM STRIP: GOLDEN TRIANGLE ('Me layer (private)') -->
+  <footer class="golden-strip" aria-label="Golden triangle personal layer">
+    <div class="golden-title-group">
+      <div class="golden-triangle-icon" aria-hidden="true">△</div>
+      <div class="golden-labels">
+        <span class="golden-main-label">Golden triangle</span>
+        <span class="private-tag">🔒 Me layer (private)</span>
+      </div>
+    </div>
+    <div class="gauges-row" id="goldenGauges"></div>
+  </footer>
+
+  <script>
+    /* =========================================================================
+       DATA LAYER
+       - inline snapshot = the real ops export, used when ./map-data.json cannot
+         be fetched (for example when this file is opened with file://).
+       - live refresh about every 2 minutes (120 s) from ./map-data.json.
+       ========================================================================= */
+    const SNAPSHOT = JSON.parse(document.getElementById("snapshot-data").textContent);
+    const SVG_NS = "http://www.w3.org/2000/svg";
+    const $ = (id) => document.getElementById(id);
+    const safeArray = (value) => Array.isArray(value) ? value : [];
+    const norm = (value) => String(value ?? "").trim().toLowerCase();
+    const esc = (value) => String(value).replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
+    const truncateText = (value, maxLen) => {
+      const text = String(value ?? "");
+      return text.length > maxLen ? text.slice(0, maxLen - 1).trimEnd() + "…" : text;
+    };
+
+    const rawState = (building) => {
+      const state = building && building.state;
+      return state === undefined || state === null || String(state).trim() === "" ? "unknown" : String(state);
+    };
+
+    const STATE_META = {
+      waiting: { icon: "🔔", label: "WAITING · ZINA", short: "Waiting on Zina", cls: "blocked" },
+      blocked: { icon: "🔒", label: "BLOCKED", short: "Blocked", cls: "blocked" },
+      running: { icon: "⚡", label: "RUNNING", short: "Running", cls: "running" },
+      stalled: { icon: "🌧️", label: "STALLED", short: "Stalled", cls: "stalled" },
+      next: { icon: "🏗️", label: "NEXT", short: "Next", cls: "queued" },
+      done: { icon: "🎉", label: "DONE", short: "Done", cls: "done" },
+      review: { icon: "🧐", label: "NEEDS REVIEW", short: "Done · needs review", cls: "review" },
+      handed: { icon: "⛵", label: "HANDED OFF", short: "Handed off", cls: "handed" },
+      failed: { icon: "⚠️", label: "FAILED", short: "Failed", cls: "failed" },
+      neutral: { icon: "❔", label: "UNKNOWN", short: "Unknown", cls: "neutral" }
+    };
+
+    function stateKey(building) {
+      switch (norm(rawState(building))) {
+        case "waiting on zina": return "waiting";
+        case "blocked": return "blocked";
+        case "running": return "running";
+        case "stalled": return "stalled";
+        case "next": return "next";
+        case "done": return "done";
+        case "done (needs review)": return "review";
+        case "handed off": return "handed";
+        case "failed": return "failed";
+        default: return "neutral";
+      }
+    }
+    const metaFor = (building) => STATE_META[stateKey(building)] || STATE_META.neutral;
+    const classFor = (building) => metaFor(building).cls;
+    const isWaiting = (building) => stateKey(building) === "waiting";
+    const needsMe = (building) => ["waiting", "blocked"].includes(stateKey(building));
+
+    const STATE_ART = {
+      running: "running", waiting: "blocked", blocked: "blocked", stalled: "stalled",
+      next: "queued", done: "done", review: "done", handed: "running",
+      failed: "stalled", neutral: "queued"
+    };
+
+    /* =========================================================================
+       LAYOUTS — desktop overview and phone stack
+       ========================================================================= */
+    const DESKTOP_VIEW = "0 0 1600 1040";
+    const MOBILE_VIEW = "0 0 640 1580";
+
+    const DESKTOP_LAYOUT = {
+      "box-driver": { cx: 440, cy: 365, rx: 48, ry: 20, quiet: true, grassColor: "#cfe6c1", sandColor: "#f3e3ba", mascotType: "bird" },
+      "gemini-web": { cx: 540, cy: 365, rx: 48, ry: 20, quiet: true, grassColor: "#cbe7dd", sandColor: "#f5e7c4", mascotType: "star" },
+      "jules": { cx: 640, cy: 365, rx: 48, ry: 20, quiet: true, grassColor: "#cfe6c1", sandColor: "#f3e3ba", mascotType: "cat" },
+      "agy": { cx: 740, cy: 365, rx: 48, ry: 20, quiet: true, grassColor: "#d6e8b8", sandColor: "#f7e2b5", mascotType: "owl" },
+      "chatgpt-web": { cx: 840, cy: 365, rx: 48, ry: 20, quiet: true, grassColor: "#cbe7dd", sandColor: "#f5e7c4", mascotType: "bird" },
+      "cursor": { cx: 940, cy: 365, rx: 48, ry: 20, quiet: true, grassColor: "#d6e8b8", sandColor: "#f7e2b5", mascotType: "cat" },
+
+      "script": { cx: 560, cy: 230, rx: 140, ry: 62, grassColor: "#d4e8a7", sandColor: "#f9e3b4", mascotType: "bunny" },
+      "grok2": { cx: 930, cy: 230, rx: 150, ry: 64, grassColor: "#c2e4c8", sandColor: "#f7e2b8", mascotType: "cat" },
+      "grok2-executor": { cx: 1300, cy: 230, rx: 130, ry: 60, grassColor: "#cfe4bf", sandColor: "#f6e3bb", mascotType: "bunny" },
+
+      "instinct": { cx: 560, cy: 470, rx: 135, ry: 62, grassColor: "#c5e8a9", sandColor: "#f7e2b5", mascotType: "sprout" },
+      "opencode": { cx: 850, cy: 470, rx: 125, ry: 58, grassColor: "#c5e8d7", sandColor: "#fae9c2", mascotType: "star" },
+      "opencode-zero-retention": { cx: 1140, cy: 470, rx: 145, ry: 62, grassColor: "#c9e7d1", sandColor: "#f8e6bd", mascotType: "star" },
+      "codex": { cx: 1430, cy: 470, rx: 120, ry: 56, grassColor: "#b8e6b5", sandColor: "#fae5b8", mascotType: "owl" },
+
+      "grok2-browser": { cx: 600, cy: 700, rx: 120, ry: 56, grassColor: "#bde5ba", sandColor: "#fae6bb", mascotType: "bird" },
+      "gemini-chat-personal": { cx: 900, cy: 700, rx: 115, ry: 56, grassColor: "#aee6d8", sandColor: "#faebc3", mascotType: "star" },
+      "gemini-chat-company": { cx: 1200, cy: 700, rx: 130, ry: 58, grassColor: "#aee6d8", sandColor: "#faebc3", mascotType: "star" },
+
+      "zina": { cx: 280, cy: 900, rx: 115, ry: 52, grassColor: "#e7d4c4", sandColor: "#f6e3bb", mascotType: "cat" },
+      "grok2-script": { cx: 640, cy: 900, rx: 130, ry: 54, grassColor: "#cfe4bf", sandColor: "#f7e2b8", mascotType: "bunny" },
+      "unknown": { cx: 1000, cy: 900, rx: 115, ry: 52, grassColor: "#d5dbe3", sandColor: "#efe6d4", mascotType: "owl" }
+    };
+
+    const MOBILE_LAYOUT = {
+      "box-driver": { cx: 160, cy: 86, rx: 58, ry: 22, quiet: true, grassColor: "#cfe6c1", sandColor: "#f3e3ba", mascotType: "bird" },
+      "script": { cx: 450, cy: 100, rx: 150, ry: 58, grassColor: "#d4e8a7", sandColor: "#f9e3b4", mascotType: "bunny" },
+      "grok2": { cx: 160, cy: 270, rx: 150, ry: 60, grassColor: "#c2e4c8", sandColor: "#f7e2b8", mascotType: "cat" },
+      "grok2-executor": { cx: 450, cy: 270, rx: 135, ry: 58, grassColor: "#cfe4bf", sandColor: "#f6e3bb", mascotType: "bunny" },
+      "codex": { cx: 160, cy: 440, rx: 130, ry: 56, grassColor: "#b8e6b5", sandColor: "#fae5b8", mascotType: "owl" },
+      "instinct": { cx: 450, cy: 440, rx: 145, ry: 58, grassColor: "#c5e8a9", sandColor: "#f7e2b5", mascotType: "sprout" },
+      "opencode": { cx: 160, cy: 610, rx: 135, ry: 56, grassColor: "#c5e8d7", sandColor: "#fae9c2", mascotType: "star" },
+      "opencode-zero-retention": { cx: 450, cy: 610, rx: 150, ry: 58, grassColor: "#c9e7d1", sandColor: "#f8e6bd", mascotType: "star" },
+      "grok2-browser": { cx: 160, cy: 780, rx: 130, ry: 54, grassColor: "#bde5ba", sandColor: "#fae6bb", mascotType: "bird" },
+      "gemini-chat-personal": { cx: 450, cy: 780, rx: 125, ry: 54, grassColor: "#aee6d8", sandColor: "#faebc3", mascotType: "star" },
+      "gemini-chat-company": { cx: 160, cy: 950, rx: 140, ry: 56, grassColor: "#aee6d8", sandColor: "#faebc3", mascotType: "star" },
+      "gemini-web": { cx: 450, cy: 950, rx: 60, ry: 24, quiet: true, grassColor: "#cbe7dd", sandColor: "#f5e7c4", mascotType: "star" },
+      "jules": { cx: 160, cy: 1040, rx: 60, ry: 24, quiet: true, grassColor: "#cfe6c1", sandColor: "#f3e3ba", mascotType: "cat" },
+      "agy": { cx: 450, cy: 1040, rx: 60, ry: 24, quiet: true, grassColor: "#d6e8b8", sandColor: "#f7e2b5", mascotType: "owl" },
+      "chatgpt-web": { cx: 160, cy: 1150, rx: 60, ry: 24, quiet: true, grassColor: "#cbe7dd", sandColor: "#f5e7c4", mascotType: "bird" },
+      "cursor": { cx: 450, cy: 1150, rx: 60, ry: 24, quiet: true, grassColor: "#d6e8b8", sandColor: "#f7e2b5", mascotType: "cat" },
+      "zina": { cx: 160, cy: 1280, rx: 140, ry: 56, grassColor: "#e7d4c4", sandColor: "#f6e3bb", mascotType: "cat" },
+      "grok2-script": { cx: 450, cy: 1280, rx: 145, ry: 56, grassColor: "#cfe4bf", sandColor: "#f7e2b8", mascotType: "bunny" },
+      "unknown": { cx: 300, cy: 1460, rx: 150, ry: 56, grassColor: "#d5dbe3", sandColor: "#efe6d4", mascotType: "owl" }
+    };
+
+    const EXTRA_POSITIONS = [
+      { cx: 1500, cy: 780, rx: 105, ry: 48, grassColor: "#c5e8d7", sandColor: "#fae9c2", mascotType: "star" },
+      { cx: 300, cy: 850, rx: 105, ry: 48, grassColor: "#c5e8a9", sandColor: "#f7e2b5", mascotType: "sprout" }
+    ];
+
+    let mobileMode = window.matchMedia("(max-width: 700px)").matches;
+    let current = SNAPSHOT;
+    let live = false;
+    let lastPayload = "";
+    let selectedId = null;
+    let activeFilter = "all";
+    let buildingIndex = new Map();
+    let nodeIndex = new Map();
+    let grouped = { nodes: [], groups: new Map() };
+    let didAutoSelect = false;
+
+    const layoutFor = (id) => (mobileMode ? MOBILE_LAYOUT : DESKTOP_LAYOUT)[id];
+
+    /* =========================================================================
+       GROUPING (live.html logic)
+       ========================================================================= */
+    function groupedIslands(data) {
+      const nodes = safeArray(data.nodes).filter(node => node && node.id).map(node => ({
+        ...node,
+        kind: node.kind || "node",
+        label: node.label || node.id
+      }));
+      const byId = new Map(nodes.map(node => [node.id, node]));
+      const groups = new Map(nodes.map(node => [node.id, []]));
+      const orphans = [];
+      safeArray(data.buildings).forEach(building => {
+        if (!building || !building.id) return;
+        const node = byId.get(building.island);
+        if (node) groups.get(node.id).push(building);
+        else orphans.push(building);
+      });
+      if (orphans.length) {
+        const orphan = { id: "__unassigned", kind: "?", label: "unassigned" };
+        nodes.push(orphan);
+        groups.set(orphan.id, orphans);
+      }
+      return { nodes, groups };
+    }
+
+    /* =========================================================================
+       PANEL 1: WHAT NEEDS YOU NOW
+       ========================================================================= */
+    function renderNeedsPanel() {
+      const list = $("needsList");
+      const badge = $("needsCountBadge");
+      const waiting = [...buildingIndex.values()]
+        .filter(({ building }) => isWaiting(building))
+        .sort((a, b) => String(a.building.code || "").localeCompare(String(b.building.code || ""), undefined, { numeric: true }));
+
+      badge.textContent = waiting.length;
+      list.innerHTML = "";
+
+      if (!waiting.length) {
+        const empty = document.createElement("div");
+        empty.className = "roster-empty";
+        empty.textContent = "Nothing waiting on Zina. All clear for now.";
+        list.appendChild(empty);
+        return;
+      }
+
+      waiting.forEach(({ building, node }) => {
+        const item = document.createElement("div");
+        item.className = "needs-item";
+        item.title = building.label || building.id;
+
+        const topRow = document.createElement("div");
+        topRow.className = "needs-item-top";
+        topRow.innerHTML = `
+          <span class="needs-item-title">🔔 ${esc(truncateText(building.label || building.id, 78))}</span>
+          <span class="needs-item-tool">🏝️ ${esc(truncateText(node.label, 22))}</span>
+        `;
+        topRow.addEventListener("click", () => selectJob(building.id, true));
+
+        const actionsRow = document.createElement("div");
+        actionsRow.className = "needs-item-actions";
+
+        const inspectBtn = document.createElement("button");
+        inspectBtn.type = "button";
+        inspectBtn.className = "inspect-link";
+        inspectBtn.textContent = "View building →";
+        inspectBtn.addEventListener("click", () => selectJob(building.id, true));
+        actionsRow.appendChild(inspectBtn);
+
+        if (building.code) {
+          const code = String(building.code);
+          const copyBtn = document.createElement("button");
+          copyBtn.type = "button";
+          copyBtn.className = "copy-reply-btn";
+          copyBtn.setAttribute("aria-label", `Copy reply code ${code}`);
+          copyBtn.innerHTML = `<span>📋</span> <span>${esc(code)}</span>`;
+          copyBtn.addEventListener("click", (event) => {
+            event.stopPropagation();
+            copyPhraseToClipboard(code, copyBtn);
+          });
+          actionsRow.appendChild(copyBtn);
+        } else {
+          const note = document.createElement("span");
+          note.className = "needs-item-tool";
+          note.textContent = "No reply code";
+          actionsRow.appendChild(note);
+        }
+
+        item.appendChild(topRow);
+        item.appendChild(actionsRow);
+        list.appendChild(item);
+      });
+    }
+
+    /* =========================================================================
+       BUILDING ILLUSTRATIONS PER STATE
+       ========================================================================= */
+    function getBuildingStateArtwork(state) {
+      switch (state) {
+        case "running":
+          return `
+            <circle class="anim-smoke-1" cx="15" cy="-42" r="4.5" fill="#ffffff" opacity="0.85" />
+            <circle class="anim-smoke-2" cx="18" cy="-46" r="5.5" fill="#ffffff" opacity="0.75" />
+            <rect x="11" y="-36" width="8" height="14" fill="#c96f53" stroke="#593325" stroke-width="1.5" />
+            <rect x="-24" y="-18" width="48" height="30" rx="3" fill="#fff6e0" stroke="#614c38" stroke-width="1.8" />
+            <polygon points="-28,-18 0,-36 28,-18" fill="#e88554" stroke="#614c38" stroke-width="1.8" stroke-linejoin="round" />
+            <rect x="-17" y="-11" width="11" height="11" rx="2" fill="#ffdb4d" stroke="#8c5811" stroke-width="1.5" />
+            <line x1="-11.5" y1="-11" x2="-11.5" y2="0" stroke="#8c5811" stroke-width="1.2" />
+            <line x1="-17" y1="-5.5" x2="-6" y2="-5.5" stroke="#8c5811" stroke-width="1.2" />
+            <rect x="6" y="-11" width="11" height="11" rx="2" fill="#ffdb4d" stroke="#8c5811" stroke-width="1.5" />
+            <line x1="11.5" y1="-11" x2="11.5" y2="0" stroke="#8c5811" stroke-width="1.2" />
+            <line x1="6" y1="-5.5" x2="17" y2="-5.5" stroke="#8c5811" stroke-width="1.2" />
+            <rect x="-3.5" y="1" width="7" height="11" rx="1.5" fill="#b87749" stroke="#614c38" stroke-width="1.4" />
+          `;
+
+        case "queued":
+          return `
+            <rect x="-22" y="-18" width="44" height="30" rx="2" fill="#ede0c8" stroke="#756145" stroke-width="1.6" stroke-dasharray="4 2" />
+            <polygon points="-24,-18 0,-32 24,-18" fill="#d8c39e" stroke="#756145" stroke-width="1.6" />
+            <rect x="-14" y="-10" width="9" height="9" fill="#c7b89e" stroke="#756145" stroke-width="1.2" />
+            <rect x="5" y="-10" width="9" height="9" fill="#c7b89e" stroke="#756145" stroke-width="1.2" />
+            <line x1="-27" y1="12" x2="-27" y2="-33" stroke="#b87d32" stroke-width="2.4" stroke-linecap="round" />
+            <line x1="27" y1="12" x2="27" y2="-33" stroke="#b87d32" stroke-width="2.4" stroke-linecap="round" />
+            <line x1="-10" y1="12" x2="-10" y2="-30" stroke="#b87d32" stroke-width="1.8" stroke-linecap="round" />
+            <line x1="10" y1="12" x2="10" y2="-30" stroke="#b87d32" stroke-width="1.8" stroke-linecap="round" />
+            <line x1="-30" y1="-4" x2="30" y2="-4" stroke="#d49542" stroke-width="2.2" stroke-linecap="round" />
+            <line x1="-30" y1="-18" x2="30" y2="-18" stroke="#d49542" stroke-width="2.2" stroke-linecap="round" />
+            <line x1="-27" y1="11" x2="-10" y2="-4" stroke="#9e6722" stroke-width="1.5" />
+            <line x1="10" y1="-4" x2="27" y2="-18" stroke="#9e6722" stroke-width="1.5" />
+          `;
+
+        case "blocked":
+          return `
+            <rect x="-24" y="-18" width="48" height="30" rx="3" fill="#fff0ed" stroke="#7a3228" stroke-width="1.8" />
+            <polygon points="-28,-18 0,-35 28,-18" fill="#e05a47" stroke="#7a3228" stroke-width="1.8" stroke-linejoin="round" />
+            <path d="M-8,12 L-8,-3 A8,8 0 0,1 8,-3 L8,12 Z" fill="#c9402c" stroke="#5e1f16" stroke-width="1.6" />
+            <circle cx="4" cy="5" r="1.5" fill="#ffd54f" />
+            <g class="anim-bell" transform="translate(0, -16)">
+              <path d="M-5,5 L5,5 L3.5,-1 A3.5,3.5 0 0,0 -3.5,-1 Z" fill="#ffc425" stroke="#6e4800" stroke-width="1.4" />
+              <circle cx="0" cy="6.5" r="1.8" fill="#9c6500" />
+            </g>
+            <line x1="16" y1="8" x2="16" y2="-38" stroke="#4f2922" stroke-width="2.2" stroke-linecap="round" />
+            <g class="anim-flag">
+              <path d="M16,-38 L36,-32 L16,-25 Z" fill="#ff5238" stroke="#7a1e10" stroke-width="1.4" />
+              <circle cx="23" cy="-32" r="2" fill="#fffdf7" />
+            </g>
+          `;
+
+        case "stalled":
+          return `
+            <rect x="-22" y="-15" width="44" height="27" rx="3" fill="#dce2eb" stroke="#4d5c70" stroke-width="1.8" />
+            <polygon points="-26,-15 0,-30 26,-15" fill="#7c8ea6" stroke="#4d5c70" stroke-width="1.8" stroke-linejoin="round" />
+            <rect x="-14" y="-8" width="9" height="9" rx="1.5" fill="#8fa0b5" stroke="#4d5c70" stroke-width="1.3" />
+            <rect x="5" y="-8" width="9" height="9" rx="1.5" fill="#8fa0b5" stroke="#4d5c70" stroke-width="1.3" />
+            <g class="anim-cloud" transform="translate(0, -43)">
+              <path d="M-16,5 a7,7 0 0,1 0,-12 a9,9 0 0,1 16,-4 a8,8 0 0,1 15,4 a6.5,6.5 0 0,1 -1,12 Z"
+                    fill="#788ba3" stroke="#3c4b5e" stroke-width="1.6" />
+              <line class="anim-rain-1" x1="-9" y1="8" x2="-11" y2="14" stroke="#4287f5" stroke-width="2" stroke-linecap="round" />
+              <line class="anim-rain-2" x1="0" y1="8" x2="-2" y2="14" stroke="#4287f5" stroke-width="2" stroke-linecap="round" />
+              <line class="anim-rain-1" x1="9" y1="8" x2="7" y2="14" stroke="#4287f5" stroke-width="2" stroke-linecap="round" />
+            </g>
+          `;
+
+        case "done":
+          return `
+            <rect x="-23" y="-18" width="46" height="30" rx="3" fill="#effaf3" stroke="#2c6b47" stroke-width="1.8" />
+            <polygon points="-27,-18 0,-35 27,-18" fill="#4cb87a" stroke="#2c6b47" stroke-width="1.8" stroke-linejoin="round" />
+            <rect x="-15" y="-10" width="9" height="9" rx="2" fill="#b8f2d0" stroke="#2c6b47" stroke-width="1.3" />
+            <rect x="6" y="-10" width="9" height="9" rx="2" fill="#b8f2d0" stroke="#2c6b47" stroke-width="1.3" />
+            <rect x="-3.5" y="0" width="7" height="12" rx="1.5" fill="#3a8f5e" stroke="#2c6b47" stroke-width="1.3" />
+            <line x1="0" y1="-35" x2="0" y2="-52" stroke="#2c6b47" stroke-width="2.2" stroke-linecap="round" />
+            <g class="anim-flag">
+              <path d="M0,-52 L18,-46 L0,-40 Z" fill="#ffd13b" stroke="#7d5c00" stroke-width="1.4" />
+            </g>
+            <g class="anim-confetti">
+              <rect x="-26" y="-40" width="4.5" height="4.5" fill="#ff6b6b" transform="rotate(20 -26 -40)" />
+              <circle cx="-14" cy="-45" r="2.6" fill="#4dabf7" />
+              <rect x="18" y="-42" width="4.5" height="4.5" fill="#fcc419" transform="rotate(-25 18 -42)" />
+              <circle cx="26" cy="-32" r="2.6" fill="#da77f2" />
+              <polygon points="-29,-27 -24,-29 -26,-24" fill="#51cf66" />
+            </g>
+          `;
+
+        default:
+          return `
+            <rect x="-22" y="-18" width="44" height="30" rx="2" fill="#eef1f0" stroke="#8b9a96" stroke-width="1.6" stroke-dasharray="4 3" />
+            <polygon points="-24,-18 0,-32 24,-18" fill="#dfe6e4" stroke="#8b9a96" stroke-width="1.6" />
+            <text x="0" y="4" text-anchor="middle" font-size="14" font-weight="800" fill="#5f756e">?</text>
+          `;
+      }
+    }
+
+    /* =========================================================================
+       MAP RENDERER
+       ========================================================================= */
+    function renderMapSVG() {
+      const bridgesLayer = $("bridgesLayer");
+      const islandsLayer = $("islandsLayer");
+      const buildingsLayer = $("buildingsLayer");
+      bridgesLayer.innerHTML = "";
+      islandsLayer.innerHTML = "";
+      buildingsLayer.innerHTML = "";
+
+      renderBridges(bridgesLayer);
+
+      let extraIndex = 0;
+      grouped.nodes.forEach(node => {
+        let cfg = layoutFor(node.id);
+        if (!cfg) {
+          const fallback = {
+            grassColor: "#c5e8a9", sandColor: "#f7e2b5", mascotType: "sprout",
+            ...(EXTRA_POSITIONS[extraIndex] || EXTRA_POSITIONS[EXTRA_POSITIONS.length - 1])
+          };
+          extraIndex += 1;
+          cfg = fallback;
+        }
+        const buildings = grouped.groups.get(node.id) || [];
+        islandsLayer.appendChild(createIslandElement(node, cfg, buildings.length));
+        if (!cfg.quiet) {
+          const shown = buildings.slice(0, 2);
+          shown.forEach((building, index) => {
+            const dx = shown.length === 1 ? 0 : (index === 0 ? -56 : 56);
+            buildingsLayer.appendChild(createBuildingElement(building, node, cfg.cx + dx, cfg.cy - 8));
+          });
+          if (buildings.length > shown.length) {
+            buildingsLayer.appendChild(createMoreChip(node, cfg, buildings.length - shown.length));
+          }
+        }
+      });
+
+      applyActiveFilter();
+      updateSelectedBuildingVisual();
+    }
+
+    function createIslandElement(node, cfg, count) {
+      const g = document.createElementNS(SVG_NS, "g");
+      g.setAttribute("class", "island-group");
+      g.setAttribute("data-island", node.id);
+      const quiet = Boolean(cfg.quiet);
+      const name = truncateText(node.label, quiet ? 13 : 18);
+      const nameW = quiet ? Math.max(94, name.length * 5.6 + 34) : 168;
+      const nameH = quiet ? 19 : 26;
+      const nameY = cfg.cy + cfg.ry + (quiet ? 4 : 6);
+      const nameFont = quiet ? 8.4 : 12.2;
+      const nameYText = quiet ? 2.6 : 4;
+
+      g.innerHTML = `
+        <ellipse cx="${cfg.cx}" cy="${cfg.cy + 8}" rx="${cfg.rx + (quiet ? 10 : 14)}" ry="${cfg.ry + (quiet ? 6 : 10)}"
+                 fill="#e7f7fb" opacity="0.7" />
+        <ellipse cx="${cfg.cx}" cy="${cfg.cy + 5}" rx="${cfg.rx}" ry="${cfg.ry}"
+                 fill="${cfg.sandColor}" stroke="#dfc48d" stroke-width="${quiet ? 1.8 : 2.5}" filter="url(#islandShadow)" />
+        <ellipse cx="${cfg.cx}" cy="${cfg.cy - 2}" rx="${cfg.rx - (quiet ? 6 : 12)}" ry="${cfg.ry - (quiet ? 6 : 10)}"
+                 fill="${cfg.grassColor}" stroke="#8ec489" stroke-width="${quiet ? 1.5 : 2}" />
+        <ellipse cx="${cfg.cx + 15}" cy="${cfg.cy - 12}" rx="${cfg.rx * 0.55}" ry="${cfg.ry * 0.42}"
+                 fill="#ffffff" opacity="0.22" />
+        ${quiet ? "" : renderIslandTrees(cfg.cx, cfg.cy, cfg.rx, cfg.ry)}
+        ${quiet ? "" : `
+          <g class="anim-mascot" transform="translate(${cfg.cx - cfg.rx + 34}, ${cfg.cy + 14})">
+            ${renderMascotSVG(cfg.mascotType)}
+          </g>`}
+        <g transform="translate(${cfg.cx}, ${nameY})">
+          <rect x="${-nameW / 2}" y="${-nameH / 2 - 1}" width="${nameW}" height="${nameH}" rx="${nameH / 2}"
+                fill="#fffdf8" stroke="#ccbda0" stroke-width="${quiet ? 1.4 : 2}" />
+          <text x="0" y="${nameYText}" text-anchor="middle" font-size="${nameFont}" font-weight="800" fill="#2c3539">
+            ${quiet ? "🏝️" : "🏝️ "}${esc(name)}${quiet ? "" : ` (${count})`}
+          </text>
+        </g>
+      `;
+      return g;
+    }
+
+    function renderIslandTrees(cx, cy, rx, ry) {
+      const tx1 = cx - rx + 26;
+      const ty1 = cy - ry * 0.35;
+      const tx2 = cx + rx - 28;
+      const ty2 = cy - ry * 0.25;
+      return `
+        <g transform="translate(${tx1}, ${ty1})">
+          <rect x="-2.5" y="4" width="5" height="9" rx="2" fill="#8c6239" />
+          <circle cx="0" cy="0" r="10" fill="#6ab87a" />
+          <circle cx="-4" cy="-3" r="6" fill="#82cf91" />
+        </g>
+        <g transform="translate(${tx2}, ${ty2})">
+          <rect x="-2" y="3" width="4" height="8" rx="1.5" fill="#8c6239" />
+          <circle cx="0" cy="0" r="8.5" fill="#77c272" />
+          <circle cx="3" cy="-2" r="5" fill="#95db8f" />
+        </g>
+      `;
+    }
+
+    function renderMascotSVG(type) {
+      switch (type) {
+        case "owl":
+          return `<ellipse cx="0" cy="0" rx="11" ry="12" fill="#8b9dc3" stroke="#3b4963" stroke-width="1.5"/><ellipse cx="0" cy="3" rx="7" ry="7" fill="#fffdf7"/><circle cx="-4" cy="-3" r="2.3" fill="#2c3539"/><circle cx="4" cy="-3" r="2.3" fill="#2c3539"/><polygon points="-2,0 2,0 0,3" fill="#f2a93b"/>`;
+        case "sprout":
+          return `<circle cx="0" cy="2" r="10" fill="#ffe49e" stroke="#6e5725" stroke-width="1.5"/><circle cx="-3.5" cy="1" r="1.6" fill="#2c3539"/><circle cx="3.5" cy="1" r="1.6" fill="#2c3539"/><path d="M0,-8 Q-7,-15 -1,-15 Q0,-11 0,-8" fill="#5cb868" stroke="#2f6b37" stroke-width="1.2"/><path d="M0,-8 Q7,-15 1,-15 Q0,-11 0,-8" fill="#77d183" stroke="#2f6b37" stroke-width="1.2"/>`;
+        case "star":
+          return `<circle cx="0" cy="1" r="10.5" fill="#ffd6e0" stroke="#7a3e4d" stroke-width="1.5"/><circle cx="-3.5" cy="0" r="1.6" fill="#2c3539"/><circle cx="3.5" cy="0" r="1.6" fill="#2c3539"/><path d="M-2,3 Q0,5 2,3" fill="none" stroke="#7a3e4d" stroke-width="1.4" stroke-linecap="round"/>`;
+        case "bunny":
+          return `<ellipse cx="-3.5" cy="-11" rx="3" ry="7" fill="#fffdf7" stroke="#5c5346" stroke-width="1.4"/><ellipse cx="3.5" cy="-11" rx="3" ry="7" fill="#fffdf7" stroke="#5c5346" stroke-width="1.4"/><circle cx="0" cy="1" r="10" fill="#fffdf7" stroke="#5c5346" stroke-width="1.5"/><circle cx="-3.5" cy="0" r="1.6" fill="#2c3539"/><circle cx="3.5" cy="0" r="1.6" fill="#2c3539"/><circle cx="0" cy="2.5" r="1.5" fill="#f08a8a"/>`;
+        case "cat":
+          return `<polygon points="-9,-2 -7,-11 -1,-6" fill="#f7c59f" stroke="#63442b" stroke-width="1.4"/><polygon points="9,-2 7,-11 1,-6" fill="#f7c59f" stroke="#63442b" stroke-width="1.4"/><circle cx="0" cy="1" r="10" fill="#f7c59f" stroke="#63442b" stroke-width="1.5"/><circle cx="-3.5" cy="0" r="1.6" fill="#2c3539"/><circle cx="3.5" cy="0" r="1.6" fill="#2c3539"/>`;
+        default:
+          return `<circle cx="0" cy="1" r="10" fill="#b8e1ff" stroke="#365c78" stroke-width="1.5"/><circle cx="-3" cy="-1" r="1.6" fill="#2c3539"/><circle cx="3" cy="-1" r="1.6" fill="#2c3539"/><polygon points="-2,2 2,2 0,5" fill="#f2a93b"/>`;
+      }
+    }
+
+    function createBuildingElement(building, node, x, y) {
+      const meta = metaFor(building);
+      const state = rawState(building);
+      const label = truncateText(building.label || building.id, 16);
+      const g = document.createElementNS(SVG_NS, "g");
+      g.setAttribute("class", "building-node");
+      g.setAttribute("data-job-id", building.id);
+      g.setAttribute("data-state", state);
+      g.setAttribute("tabindex", "0");
+      g.setAttribute("role", "button");
+      g.setAttribute("aria-label", `${building.label || building.id} on ${node.label}, state ${meta.short}`);
+      g.setAttribute("transform", `translate(${x}, ${y})`);
+
+      const labelColors = {
+        running: { bg: "#fff3d1", stroke: "#e5a93c", ink: "#6e4604" },
+        blocked: { bg: "#ffe3de", stroke: "#e05a47", ink: "#821d10" },
+        stalled: { bg: "#e3e8f0", stroke: "#6c7f99", ink: "#28374a" },
+        queued: { bg: "#f3ead8", stroke: "#a88754", ink: "#4f3a1c" },
+        done: { bg: "#dcf5e6", stroke: "#43a670", ink: "#154f2f" },
+        review: { bg: "#fff3d1", stroke: "#c99a2e", ink: "#6e4b06" },
+        handed: { bg: "#e6f2f9", stroke: "#4d90ad", ink: "#1f536b" },
+        failed: { bg: "#fde3e0", stroke: "#b84438", ink: "#7a1f16" },
+        neutral: { bg: "#eef1f0", stroke: "#8b9a96", ink: "#40514c" }
+      }[meta.cls] || { bg: "#f3ead8", stroke: "#a88754", ink: "#4f3a1c" };
+
+      const illustration = getBuildingStateArtwork(STATE_ART[stateKey(building)] || "queued");
+
+      g.innerHTML = `
+        <ellipse class="building-select-halo" cx="0" cy="-12" rx="44" ry="38" />
+        <rect class="building-focus-ring" x="-48" y="-56" width="96" height="92" rx="14" />
+        <g class="building-body-group" filter="url(#bldgShadow)">
+          ${illustration}
+        </g>
+        <g transform="translate(0, 22)">
+          <rect x="-56" y="-11" width="112" height="20" rx="6"
+                fill="#fffdf9" stroke="${labelColors.stroke}" stroke-width="1.6" />
+          <text x="0" y="2.6" text-anchor="middle" font-size="9.7" font-weight="800" fill="#2c3539">
+            ${esc(label)}
+          </text>
+          <rect x="-46" y="10" width="92" height="15" rx="7.5"
+                fill="${labelColors.bg}" stroke="${labelColors.stroke}" stroke-width="1.3" />
+          <text x="0" y="20.5" text-anchor="middle" font-size="8" font-weight="800" fill="${labelColors.ink}">
+            ${meta.icon} ${meta.label}
+          </text>
+        </g>
+      `;
+
+      g.addEventListener("click", (event) => {
+        event.stopPropagation();
+        selectJob(building.id, false);
+      });
+      g.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          selectJob(building.id, false);
+        }
+      });
+      return g;
+    }
+
+    function createMoreChip(node, cfg, hiddenCount) {
+      const g = document.createElementNS(SVG_NS, "g");
+      g.setAttribute("class", "more-chip");
+      g.setAttribute("tabindex", "0");
+      g.setAttribute("role", "button");
+      g.setAttribute("aria-label", `Show ${hiddenCount} more building${hiddenCount === 1 ? "" : "s"} on ${node.label}`);
+      const y = cfg.cy + cfg.ry + 30;
+      g.setAttribute("transform", `translate(${cfg.cx}, ${y})`);
+      g.innerHTML = `
+        <rect x="-38" y="-10" width="76" height="20" rx="10" fill="#fffdf8" stroke="#ccbda0" stroke-width="1.5" />
+        <text x="0" y="3" text-anchor="middle" font-size="9.5" font-weight="800" fill="#265b6b">+${hiddenCount} more</text>
+      `;
+      g.addEventListener("click", (event) => {
+        event.stopPropagation();
+        showIslandRoster(node.id);
+      });
+      g.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          showIslandRoster(node.id);
+        }
+      });
+      return g;
+    }
+
+    function anchorPoint(cfg, targetX, targetY, pad) {
+      const dx = targetX - cfg.cx;
+      const dy = targetY - cfg.cy;
+      if (!dx && !dy) return { x: cfg.cx, y: cfg.cy };
+      const rx = cfg.rx + pad;
+      const ry = cfg.ry + pad;
+      const t = 1 / Math.sqrt((dx * dx) / (rx * rx) + (dy * dy) / (ry * ry));
+      return { x: cfg.cx + dx * t, y: cfg.cy + dy * t };
+    }
+
+    function renderBridges(layer) {
+      const edges = safeArray(current.edges).filter(edge => edge && edge.from && edge.to && edge.from !== edge.to);
+      const pairCounts = new Map();
+      edges.forEach(edge => {
+        const key = [edge.from, edge.to].sort().join("|");
+        pairCounts.set(key, (pairCounts.get(key) || 0) + 1);
+      });
+      const seen = new Map();
+
+      edges.forEach((edge, idx) => {
+        const a = layoutFor(edge.from);
+        const b = layoutFor(edge.to);
+        if (!a || !b) return;
+        const key = [edge.from, edge.to].sort().join("|");
+        const index = seen.get(key) || 0;
+        seen.set(key, index + 1);
+        const total = pairCounts.get(key) || 1;
+        const offset = (index - (total - 1) / 2) * 24;
+        const start = anchorPoint(a, b.cx, b.cy, 4);
+        const end = anchorPoint(b, a.cx, a.cy, 4);
+        const dx = end.x - start.x;
+        const dy = end.y - start.y;
+        const length = Math.hypot(dx, dy) || 1;
+        const controlX = (start.x + end.x) / 2 + (-dy / length) * offset;
+        const controlY = (start.y + end.y) / 2 + (dx / length) * offset;
+        const d = `M ${start.x.toFixed(1)} ${start.y.toFixed(1)} Q ${controlX.toFixed(1)} ${controlY.toFixed(1)} ${end.x.toFixed(1)} ${end.y.toFixed(1)}`;
+        const fromNode = nodeIndex.get(edge.from);
+        const toNode = nodeIndex.get(edge.to);
+        const title = `${fromNode ? fromNode.label : edge.from} → ${toNode ? toNode.label : edge.to}${edge.task ? ` · ${edge.task}` : ""}`;
+        const g = document.createElementNS(SVG_NS, "g");
+        g.innerHTML = `
+          <title>${esc(title)}</title>
+          <path d="${d}" fill="none" stroke="#5897ab" stroke-width="2.6" stroke-dasharray="7 7" stroke-linecap="round" opacity="0.9" />
+          <g class="boat-motion">
+            <use href="#transitBoat">
+              <animateMotion dur="${7 + idx * 1.4}s" repeatCount="indefinite" rotate="auto" path="${d}" />
+            </use>
+          </g>
+          <g class="boat-static-fallback" style="display:none" transform="translate(${controlX.toFixed(1)}, ${controlY.toFixed(1)})">
+            <use href="#transitBoat" />
+          </g>
+        `;
+        layer.appendChild(g);
+      });
+    }
+
+    /* =========================================================================
+       SIDE CARD
+       ========================================================================= */
+    function selectJob(jobId, centerOnIsland) {
+      const found = buildingIndex.get(jobId);
+      if (!found) return;
+      const { building, node } = found;
+      selectedId = jobId;
+      const sideCard = $("sideCard");
+      sideCard.classList.remove("hidden");
+      $("cardKicker").textContent = "Selected Building";
+      $("cardTitle").textContent = truncateText(building.label || building.id, 96);
+
+      const meta = metaFor(building);
+      const handoffs = safeArray(current.edges)
+        .filter(edge => edge && edge.task === building.id)
+        .map(edge => {
+          const from = nodeIndex.get(edge.from);
+          const to = nodeIndex.get(edge.to);
+          return `${from ? from.label : edge.from} → ${to ? to.label : edge.to}${edge.kind ? ` · ${edge.kind}` : ""}`;
+        });
+
+      const detailRows = [
+        ["Island", `${node.label} (${node.kind})`],
+        ["Source", building.source || "not given"],
+        ["Building id", building.id],
+        ...handoffs.map(handoff => ["Hand-off", handoff])
+      ];
+
+      $("sideCardBody").innerHTML = `
+        <div class="meta-badges">
+          <span class="tool-pill">🏝️ ${esc(truncateText(node.label, 26))}</span>
+          <span class="state-pill state-${meta.cls}">${meta.icon} ${esc(meta.short)}</span>
+        </div>
+        <div class="detail-grid">
+          ${detailRows.map(([label, value]) => `
+            <div class="detail-row">
+              <div class="detail-label">${esc(label)}</div>
+              <div class="detail-value">${label === "Building id" ? `<code>${esc(value)}</code>` : esc(value)}</div>
+            </div>`).join("")}
+        </div>
+        ${building.code ? `
+          <div class="side-card-action">
+            <div class="side-card-action-label">${isWaiting(building) ? "🔔 Waiting on Zina — copy exact reply code:" : "Reply code — copy exact phrase:"}</div>
+            <button class="copy-reply-btn" id="cardCopyBtn" type="button">
+              <span>📋</span> <span>${esc(String(building.code))}</span>
+            </button>
+          </div>` : ""}
+      `;
+
+      const copyBtn = $("cardCopyBtn");
+      if (copyBtn) copyBtn.addEventListener("click", () => copyPhraseToClipboard(String(building.code), copyBtn));
+
+      updateSelectedBuildingVisual();
+      if (centerOnIsland && mobileMode) {
+        const cfg = layoutFor(node.id);
+        if (cfg) {
+          const parts = MOBILE_VIEW.split(" ");
+          panX = (Number(parts[2]) / 2 - cfg.cx) * scale;
+          panY = (Number(parts[3]) / 2 - cfg.cy) * scale;
+          applyMapTransform();
+        }
+      }
+    }
+
+    function showIslandRoster(nodeId) {
+      const node = nodeIndex.get(nodeId);
+      if (!node) return;
+      const buildings = grouped.groups.get(nodeId) || [];
+      selectedId = null;
+      updateSelectedBuildingVisual();
+      const sideCard = $("sideCard");
+      sideCard.classList.remove("hidden");
+      $("cardKicker").textContent = "Island roster";
+      $("cardTitle").textContent = truncateText(`${node.label} · ${buildings.length}`, 44);
+      $("sideCardBody").innerHTML = `
+        <div class="meta-badges">
+          <span class="tool-pill">🏝️ ${esc(truncateText(node.label, 28))}</span>
+          <span class="tool-pill">${esc(node.kind)}</span>
+          <span class="tool-pill">${buildings.length} building${buildings.length === 1 ? "" : "s"}</span>
+        </div>
+        ${buildings.length ? `<div class="roster-list">${buildings.map(building => {
+          const meta = metaFor(building);
+          return `<button type="button" class="roster-item" data-roster-id="${esc(building.id)}">
+            <span class="roster-item-title">${esc(truncateText(building.label || building.id, 58))}</span>
+            <span class="state-pill state-${meta.cls}">${meta.icon} ${esc(meta.short)}</span>
+          </button>`;
+        }).join("")}</div>` : `<div class="roster-empty">No buildings on this island.</div>`}
+      `;
+      sideCard.querySelectorAll("[data-roster-id]").forEach(button => {
+        button.addEventListener("click", () => selectJob(button.getAttribute("data-roster-id"), false));
+      });
+    }
+
+    function updateSelectedBuildingVisual() {
+      document.querySelectorAll(".building-node").forEach(node => {
+        node.classList.toggle("selected", node.getAttribute("data-job-id") === selectedId);
+      });
+    }
+
+    function updateFilterCounts() {
+      const buildings = [...buildingIndex.values()].map(entry => entry.building);
+      $("count-all").textContent = buildings.length;
+      $("count-blocked").textContent = buildings.filter(needsMe).length;
+      $("count-running").textContent = buildings.filter(building => classFor(building) === "running").length;
+      $("count-stalled").textContent = buildings.filter(building => classFor(building) === "stalled").length;
+    }
+
+    function applyActiveFilter() {
+      document.querySelectorAll(".building-node").forEach(node => {
+        const found = buildingIndex.get(node.getAttribute("data-job-id"));
+        if (!found) return;
+        const building = found.building;
+        let match = true;
+        if (activeFilter === "blocked") match = needsMe(building);
+        else if (activeFilter === "running") match = classFor(building) === "running";
+        else if (activeFilter === "stalled") match = classFor(building) === "stalled";
+        node.classList.toggle("filtered-out", !match);
+      });
+    }
+
+    /* =========================================================================
+       GOLDEN TRIANGLE (private layer — no values in the ops export)
+       ========================================================================= */
+    function renderGoldenTriangle() {
+      const container = $("goldenGauges");
+      container.innerHTML = "";
+      const radius = 13;
+      const circumference = 2 * Math.PI * radius;
+      const gauges = [
+        { name: "Time", color: "#3b9c9c" },
+        { name: "Health", color: "#43a670" },
+        { name: "Energy", color: "#e5a93c" }
+      ];
+      gauges.forEach(gauge => {
+        const item = document.createElement("div");
+        item.className = "gauge-item";
+        item.title = `${gauge.name}: private, not included in the ops export`;
+        item.innerHTML = `
+          <svg class="gauge-ring" viewBox="0 0 34 34" aria-hidden="true">
+            <circle cx="17" cy="17" r="${radius}" fill="none" stroke="#ece3d0" stroke-width="4.5" stroke-dasharray="3 4" />
+            <circle cx="17" cy="17" r="${radius}" fill="none" stroke="${gauge.color}" stroke-width="4.5"
+                    stroke-linecap="round" stroke-dasharray="${(circumference * 0.12).toFixed(1)} ${circumference.toFixed(1)}"
+                    opacity="0.35" transform="rotate(-90 17 17)" />
+          </svg>
+          <div class="gauge-info">
+            <span class="gauge-name">${gauge.name}</span>
+            <span class="gauge-val">— · private</span>
+          </div>
+        `;
+        container.appendChild(item);
+      });
+    }
+
+    /* =========================================================================
+       COPY HELPER
+       ========================================================================= */
+    function copyPhraseToClipboard(phrase, btnElement) {
+      if (!phrase) return;
+      const showCopiedFeedback = () => {
+        const originalHTML = btnElement.innerHTML;
+        btnElement.classList.add("copied");
+        btnElement.innerHTML = `<span>✓</span> <span>Copied "${esc(phrase)}"</span>`;
+        setTimeout(() => {
+          btnElement.classList.remove("copied");
+          btnElement.innerHTML = originalHTML;
+        }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(phrase).then(showCopiedFeedback).catch(() => fallbackCopy(phrase, showCopiedFeedback));
+      } else {
+        fallbackCopy(phrase, showCopiedFeedback);
+      }
+    }
+
+    function fallbackCopy(text, callback) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); callback(); } catch (err) {}
+      document.body.removeChild(ta);
+    }
+
+    /* =========================================================================
+       DATA STATUS + LIVE REFRESH (30 s)
+       ========================================================================= */
+    function updateStatus(mode) {
+      const statusEl = $("liveStatus");
+      const generated = current && current.generated_hkt ? String(current.generated_hkt) : "time unknown";
+      if (mode === "live") {
+        statusEl.className = "live-status live";
+        statusEl.textContent = `live · ${generated}`;
+        statusEl.title = "Live export, refreshed about every 2 minutes.";
+      } else if (mode === "refresh-failed") {
+        statusEl.className = "live-status live";
+        statusEl.textContent = `live · ${generated} · refresh failed`;
+        statusEl.title = "The latest fetch failed; keeping the last good live data.";
+      } else if (mode === "snapshot") {
+        statusEl.className = "live-status snapshot";
+        statusEl.textContent = `snapshot, not live · ${generated}`;
+        statusEl.title = "Fetch was blocked; showing the inline copy embedded in this page.";
+      } else {
+        statusEl.className = "live-status connecting";
+        statusEl.textContent = "connecting to live map…";
+        statusEl.title = "Loading ./map-data.json";
+      }
+    }
+
+    function applyLivePayload(next) {
+      if (!next || !Array.isArray(next.nodes) || !Array.isArray(next.buildings)) throw new Error("Unexpected schema");
+      const payload = JSON.stringify({ nodes: next.nodes, buildings: next.buildings, edges: safeArray(next.edges) });
+      const changed = payload !== lastPayload;
+      current = next;
+      live = true;
+      if (changed) {
+        lastPayload = payload;
+        renderAll(next);
+      }
+      updateStatus("live");
+    }
+
+    window.__heartbeatMapReload = function (data) {
+      try { applyLivePayload(data); }
+      catch (error) { console.warn("Live map payload rejected.", error); }
+    };
+
+    async function loadData() {
+      try {
+        const response = await fetch("./map-data.json?v=24&t=" + Date.now(), { cache: "no-store" });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        applyLivePayload(await response.json());
+      } catch (error) {
+        console.warn("Live map fetch failed; using the inline snapshot.", error);
+        if (!live) {
+          if (!current) {
+            renderAll(SNAPSHOT);
+            lastPayload = JSON.stringify({ nodes: SNAPSHOT.nodes, buildings: SNAPSHOT.buildings, edges: safeArray(SNAPSHOT.edges) });
+          }
+          updateStatus("snapshot");
+        } else {
+          updateStatus("refresh-failed");
+        }
+      }
+    }
+
+    /* =========================================================================
+       MASTER RENDER
+       ========================================================================= */
+    function renderAll(data) {
+      current = data;
+      buildingIndex = new Map();
+      grouped = groupedIslands(data);
+      nodeIndex = new Map(grouped.nodes.map(node => [node.id, node]));
+      grouped.nodes.forEach(node => {
+        (grouped.groups.get(node.id) || []).forEach(building => {
+          buildingIndex.set(building.id, { building, node });
+        });
+      });
+
+      updateFilterCounts();
+      renderNeedsPanel();
+      renderMapSVG();
+      renderGoldenTriangle();
+
+      if (selectedId) {
+        if (buildingIndex.has(selectedId)) selectJob(selectedId, false);
+        else closeSideCard();
+      } else if (!didAutoSelect && !mobileMode) {
+        const firstWaiting = [...buildingIndex.values()]
+          .filter(({ building }) => isWaiting(building))
+          .sort((a, b) => String(a.building.code || "").localeCompare(String(b.building.code || ""), undefined, { numeric: true }))[0];
+        const first = firstWaiting || [...buildingIndex.values()][0];
+        if (first) {
+          didAutoSelect = true;
+          selectJob(first.building.id, false);
+        }
+      }
+    }
+
+    function closeSideCard() {
+      selectedId = null;
+      $("sideCard").classList.add("hidden");
+      updateSelectedBuildingVisual();
+    }
+
+    /* =========================================================================
+       PAN & ZOOM INTERACTION
+       ========================================================================= */
+    let scale = 1;
+    let panX = 0;
+    let panY = 0;
+    let isDragging = false;
+    let dragStartX = 0;
+    let dragStartY = 0;
+
+    const mapViewport = $("mapViewport");
+    const mapStage = $("mapStage");
+
+    function applyMapTransform() {
+      mapStage.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+    }
+
+    mapViewport.addEventListener("pointerdown", (e) => {
+      if (e.target.closest(".building-node") || e.target.closest(".more-chip")) return;
+      isDragging = true;
+      dragStartX = e.clientX - panX;
+      dragStartY = e.clientY - panY;
+      mapViewport.classList.add("dragging");
+      mapViewport.setPointerCapture(e.pointerId);
+    });
+
+    mapViewport.addEventListener("pointermove", (e) => {
+      if (!isDragging) return;
+      panX = e.clientX - dragStartX;
+      panY = e.clientY - dragStartY;
+      applyMapTransform();
+    });
+
+    mapViewport.addEventListener("pointerup", () => {
+      isDragging = false;
+      mapViewport.classList.remove("dragging");
+    });
+
+    mapViewport.addEventListener("pointercancel", () => {
+      isDragging = false;
+      mapViewport.classList.remove("dragging");
+    });
+
+    mapViewport.addEventListener("wheel", (e) => {
+      e.preventDefault();
+      const delta = e.deltaY < 0 ? 0.1 : -0.1;
+      scale = Math.min(2.2, Math.max(0.65, scale + delta));
+      applyMapTransform();
+    }, { passive: false });
+
+    $("zoomInBtn").addEventListener("click", () => {
+      scale = Math.min(2.2, scale + 0.18);
+      applyMapTransform();
+    });
+
+    $("zoomOutBtn").addEventListener("click", () => {
+      scale = Math.max(0.65, scale - 0.18);
+      applyMapTransform();
+    });
+
+    $("resetViewBtn").addEventListener("click", () => {
+      scale = 1;
+      panX = 0;
+      panY = 0;
+      applyMapTransform();
+    });
+
+    /* =========================================================================
+       CONTROLS
+       ========================================================================= */
+    function initControls() {
+      document.querySelectorAll("#filterBar .filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll("#filterBar .filter-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          activeFilter = btn.getAttribute("data-filter");
+          applyActiveFilter();
+        });
+      });
+
+      $("closeCardBtn").addEventListener("click", closeSideCard);
+
+      const needsPanel = $("needsPanel");
+      const needsHeaderToggle = $("needsHeaderToggle");
+      const needsCollapseBtn = $("needsCollapseBtn");
+
+      function toggleNeedsPanel() {
+        const collapsed = needsPanel.classList.toggle("collapsed");
+        needsHeaderToggle.setAttribute("aria-expanded", String(!collapsed));
+        needsCollapseBtn.textContent = collapsed ? "Show" : "Hide";
+      }
+
+      needsHeaderToggle.addEventListener("click", toggleNeedsPanel);
+      needsHeaderToggle.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          toggleNeedsPanel();
+        }
+      });
+
+      const legendBox = $("legendBox");
+      const legendToggle = $("legendToggle");
+      const legendChevron = $("legendChevron");
+
+      function toggleLegend() {
+        const collapsed = legendBox.classList.toggle("collapsed");
+        legendToggle.setAttribute("aria-expanded", String(!collapsed));
+        legendChevron.textContent = collapsed ? "▸" : "▾";
+      }
+
+      legendToggle.addEventListener("click", toggleLegend);
+      legendToggle.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          toggleLegend();
+        }
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeSideCard();
+      });
+
+      if (window.innerWidth <= 600) {
+        legendBox.classList.add("collapsed");
+        legendChevron.textContent = "▸";
+      }
+
+      let resizeTimer = 0;
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          const nextMobile = window.matchMedia("(max-width: 700px)").matches;
+          if (nextMobile !== mobileMode) {
+            mobileMode = nextMobile;
+            $("islandSvg").setAttribute("viewBox", mobileMode ? MOBILE_VIEW : DESKTOP_VIEW);
+            scale = 1;
+            panX = 0;
+            panY = 0;
+            applyMapTransform();
+            renderMapSVG();
+          }
+        }, 120);
+      });
+    }
+
+    /* =========================================================================
+       INIT
+       ========================================================================= */
+    $("islandSvg").setAttribute("viewBox", mobileMode ? MOBILE_VIEW : DESKTOP_VIEW);
+    renderAll(SNAPSHOT);
+    lastPayload = JSON.stringify({ nodes: SNAPSHOT.nodes, buildings: SNAPSHOT.buildings, edges: safeArray(SNAPSHOT.edges) });
+    updateStatus("snapshot");
+    initControls();
+    loadData();
+    setInterval(loadData, 120000);
+
+
+  </script>
+
+<script>
+(function(){
+  // Public live wire: refresh counts/status from map-data.json every 120s (snapshot is fallback).
+  const el = document.getElementById('snapshot-data');
+  function apply(data){
+    if (!el || !data) return;
+    el.textContent = JSON.stringify(data);
+    if (typeof window.__heartbeatMapReload === 'function') window.__heartbeatMapReload(data);
+    else if (typeof window.renderMap === 'function') window.renderMap(data);
+    else location.reload(); // last resort if map binds only at boot
+  }
+  function pullMap(){
+    fetch('map-data.json?v=24&t=' + Date.now(), {cache:'no-store'})
+      .then(r => r.ok ? r.json() : Promise.reject(r.status))
+      .then(apply)
+      .catch(() => {/* keep embedded snapshot */});
+  }
+  pullMap();
+  setInterval(pullMap, 120000);
+})();
+</script>
+
+</body>
+</html>
