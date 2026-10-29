@@ -279,10 +279,10 @@ a.act-ref { color:var(--lime); }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-10-29 01:56 HKT · now —</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-10-29 20:19 HKT · v21</p>
+    <p class="mono" id="pingLine">ping 2026-10-29 23:43 HKT · now —</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-10-29 23:43 HKT · v21</p>
     <p class="mono" style="margin:6px 0 0"><a class="lib-link" href="library.html?v=23" style="color:var(--lime);text-decoration:none;font-weight:600">Library</a>
-      <span style="color:var(--muted)"> · search transcripts &amp; check schema fields · </span><a class="lib-link" href="machines.html" style="color:var(--lime);text-decoration:none;font-weight:600">Machines &amp; terminal</a><span style="color:var(--muted)"> · </span><a class="lib-link" href="map.html" style="color:var(--lime);text-decoration:none;font-weight:600">Island map (snapshot)</a></p>
+      <span style="color:var(--muted)"> · search transcripts &amp; check schema fields · </span><a class="lib-link" href="machines.html" style="color:var(--lime);text-decoration:none;font-weight:600">Machines &amp; terminal</a></p>
   </div>
   <div class="pills" id="livePills">
     <span class="pill on" id="pillPing"><span class="dot"></span>PING —</span>
@@ -302,7 +302,7 @@ a.act-ref { color:var(--lime); }
 
 <section class="now">
   <div><span class="label">now</span> <span class="body" id="nowBody">STT Alan · captions 斷捨離 簡單匠 Podcast</span></div>
-  <span class="mono" id="nowTs">2026-10-29 01:56 HKT</span>
+  <span class="mono" id="nowTs">2026-10-29 23:43 HKT</span>
 </section>
 
 <section class="card" id="opsCard">
@@ -328,11 +328,6 @@ a.act-ref { color:var(--lime); }
   <p class="mono" id="opsState" style="margin-top:8px;min-height:28px;word-break:break-word;box-sizing:border-box">Paste a Share link — default this video only.</p>
 </section>
 
-<section class="card" id="workFeed">
-  <h2>WORK FEED</h2>
-  <p class="mono">Counts and coarse states only. Each source keeps its own age. Sources are not added together.</p>
-  <div id="workFeedBody" class="mono">Loading work feed…</div>
-</section>
 <section class="card" id="systemEvents">
   <h2>SYSTEM EVENTS</h2>
   <p class="mono">Worker failures, recovery, resource changes and corpus observations.</p>
@@ -360,8 +355,8 @@ a.act-ref { color:var(--lime); }
 <section class="metrics" id="metrics">
   <div class="metric"><div class="k">Transcripts on disk</div><div class="v" id="mStt">12927</div><div class="s" id="mSttSub">12927 on disk · 187 pending in worker scope · Running</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">17690</div><div class="s" id="mCapSub">17690 done · 2795 left · Running</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">10.8G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-10-29 01:56 HKT</div></div>
+  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">8.8G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-10-29 23:43 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -371,26 +366,26 @@ a.act-ref { color:var(--lime); }
       <div class="row"><span class="mono"><span class="pill on" id="capStatePill"><span class="dot"></span><span id="capState">Running · 1 workers</span></span> CAPTIONS</span></div>
       <p class="ch" id="capCh">斷捨離 簡單匠 Podcast</p>
       <div class="row"><span class="big" id="capNum">17690</span><span class="mono" id="capWorkers">17690 done · 2795 left · 1 workers</span></div>
-      <p class="mono" id="capEta">still running · ETA slipped 2026-10-29 03:22 HKT</p>
+      <p class="mono overdue" id="capEta">still running · ETA slipped 2026-10-29 03:22 HKT</p>
     </div>
     <div class="work-block">
       <div class="row"><span class="mono"><span class="pill on" id="sttStatePill"><span class="dot"></span><span id="sttState">Running</span></span> STT</span></div>
       <p class="ch" id="sttCh">Alan</p>
-      <div class="row"><span class="big" id="sttNum">12927</span><span class="mono" id="sttFile">12927 on disk · 187 pending in worker scope</span></div>
+      <div class="row"><span class="big" id="sttNum">12927</span><span class="mono" id="sttFile">12927 on disk · 187 pending in worker scope · now: QzIoYM17qms</span></div>
       <p class="mono" id="sttEta">still running · ETA slipped 2026-10-30 03:37 HKT</p>
-      <p class="mono" id="sttDisk">12927 transcripts on disk · RAM 10.8 of 15.6G · load 2.22</p>
+      <p class="mono" id="sttDisk">12927 transcripts on disk · RAM 8.8 of 15.6G · load 4.84</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">10.8 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">2.22</span></li>
+      <li><span>RAM free</span><span id="boxRam">8.8 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">4.84</span></li>
       <li><span>Disk</span><span id="boxDisk">107G</span></li>
       <li><span>Tmp</span><span id="boxTmp">274M</span></li>
-      <li><span>Cookies</span><span id="boxCookies">stale · 130.5h</span></li>
-      <li><span>Next ping</span><span id="boxCron">2026-10-29 02:00 HKT</span></li>
+      <li><span>Cookies</span><span id="boxCookies">stale · 152.3h</span></li>
+      <li><span>Next ping</span><span id="boxCron">2026-10-29 23:45 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">captions + Whisper running</span></li>
       <li><span>RAM gate</span><span id="boxGate">6.0G</span></li>
     </ul>
@@ -400,9 +395,9 @@ a.act-ref { color:var(--lime); }
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.52G</span> · node ×35</li><li><span class="mono">1.53G</span> · chrome ×13</li><li><span class="mono">0.29G</span> · Xvfb ×3</li><li><span class="mono">0.12G</span> · plank ×3</li><li><span class="mono">0.12G</span> · python3 ×5</li><li><span class="mono">0.1G</span> · orbitd ×1</li><li><span class="mono">0.09G</span> · bash ×39</li><li><span class="mono">0.08G</span> · x11vnc ×3</li></ul>
+    <ul id="ramTop"><li><span class="mono">2.28G</span> · node ×35</li><li><span class="mono">1.54G</span> · chrome ×13</li><li><span class="mono">0.29G</span> · Xvfb ×3</li><li><span class="mono">0.12G</span> · plank ×3</li><li><span class="mono">0.12G</span> · python3 ×5</li><li><span class="mono">0.1G</span> · orbitd ×1</li><li><span class="mono">0.09G</span> · bash ×39</li><li><span class="mono">0.08G</span> · x11vnc ×3</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-10-28T17:56:46Z captions pick empty — stop filling (exclude=PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n,UCaIIFXfdQUYf3OHPIFNDdrQ)</li><li class="mono">2026-10-28T17:56:46Z captions after fill running=1</li><li class="mono">2026-10-28T17:56:46Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: ERROR fh48oFMDw4I: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR 62le9vT4cnE: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR hVJNjzJNha8: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR J2T6D98kVxg: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR fh48oFMDw4I: Original caption language unverified; defer rather than save a translation</li><li><span class="mono">reboost.log</span> 2026-10-28T17:56:46Z captions running=1 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=10.8G cap_signal=none</li></ul>
+    <ul id="reboostLog"><li class="mono">2026-10-29T15:43:08Z captions pick empty — stop filling (exclude=PLpPcaNOpZRfmxg03WtHkhp4y7vJu6AH8n,UCaIIFXfdQUYf3OHPIFNDdrQ)</li><li class="mono">2026-10-29T15:43:08Z captions after fill running=1</li><li class="mono">2026-10-29T15:43:08Z STT already running — no second Whisper</li><li class="mono">backfill-captions.log: ERROR g-fp57U4I9g: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR O5cYI6uIq4g: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR _242I3XII9g: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR meJXWpvDW9U: Original caption language unverified; defer rather than save a translation</li><li class="mono">ERROR g-fp57U4I9g: Original caption language unverified; defer rather than save a translation</li><li><span class="mono">reboost.log</span> 2026-10-29T15:43:08Z captions running=1 target=3 stt_live=UCaIIFXfdQUYf3OHPIFNDdrQ mem=10.7G cap_signal=none</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
@@ -530,33 +525,19 @@ function setPill(id, on, text, warn){
   var dot=document.createElement("span"); dot.className="dot"; el.appendChild(dot);
   el.appendChild(document.createTextNode(" "+label));
 }
-function parseUtc(s){ if(typeof s!=="string"||!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$/.test(s)) return null; var ms=Date.parse(s); return isNaN(ms)?null:ms; }
-function workerPhase(running, leftover, updated){
-  var n=(leftover===null||leftover===undefined)?null:parseInt(leftover,10); if(n!==null&&isNaN(n)) n=null;
-  var ts=null;
-  if(updated!==null&&updated!==undefined){ var ms=parseUtc(updated); ts=(ms===null)?"bad":ms; }  // strict like the Python side: unparseable = bad, never fresh
-  var now=Date.now();
-  if(ts==="bad") return "unknown";              // unreadable timestamp: never fresh
-  if(ts!==null&&ts>now+5*60*1000) return "unknown";  // future timestamp: never fresh
-  if(running){
-    if(ts===null) return "stale";  // alive but no success timestamp at all: never 'Running' on zero evidence
-    if(now-ts>HB_STALE_MS) return "stale";
-    return "running";
-  }
-  if(ts!==null&&now-ts>HB_STALE_MS&&n===null) return "unknown";
-  if(n===null) return "unknown";
+function workerPhase(running, leftover){
+  var n=parseInt(leftover,10); if(isNaN(n)) n=0;
+  if(running) return "running";
   if(n>0) return "paused";
   return "caught_up";
 }
 function phasePillClass(phase){
   if(phase==="running") return "on";
-  if(phase==="paused"||phase==="failed"||phase==="stale"||phase==="unknown") return "warn";
+  if(phase==="paused"||phase==="failed") return "warn";
   return "done";
 }
 function phaseLabel(phase, jobs, leftover, pauseLabel){
   if(phase==="running") return jobs?("Running · "+jobs+" workers"):"Running";
-  if(phase==="stale") return "Stale · alive, no recent update";
-  if(phase==="unknown") return "Unknown · status data missing";
   if(phase==="failed") return "Failed · restart deferred";
   if(phase==="paused" && pauseLabel) return String(pauseLabel);
   if(phase==="paused") return "Paused · backlog "+leftover;
@@ -565,8 +546,6 @@ function phaseLabel(phase, jobs, leftover, pauseLabel){
 function etaCopy(blk, phase){
   var overdue=!!(blk.overdue||blk.eta_frozen);
   var eta=blk.eta_hkt;
-  if(phase==="stale") return "worker alive · no recent update";
-  if(phase==="unknown") return "status unknown";
   if(phase==="failed") return "ETA unavailable · worker failed";
   if(phase==="caught_up") return "—";
   if(phase==="running" && overdue) return eta?("still running · ETA slipped "+eta):"still running · ETA slipped";
@@ -614,13 +593,13 @@ function paint(d){
     var ping=d.written_at_hkt||"—";
     var age=ageLabel(d.written_at_utc);
     var nowClock=new Date(Date.now()+8*3600*1000).toISOString().slice(11,19);
-    var ageMs=0, tsBad=false;
-    if(d.written_at_utc){ var hbMs=parseUtc(d.written_at_utc); ageMs=(hbMs===null)?NaN:Date.now()-hbMs; if(isNaN(ageMs)||ageMs<0){ ageMs=0; tsBad=true; } }
-    var stale=tsBad||ageMs>HB_STALE_MS;
+    var ageMs=0;
+    if(d.written_at_utc){ ageMs=Date.now()-Date.parse(d.written_at_utc); if(isNaN(ageMs)||ageMs<0) ageMs=0; }
+    var stale=ageMs>HB_STALE_MS;
     var pingEl=$("pingLine");
     if(stale){
       var mins=Math.max(1, Math.floor(ageMs/60000));
-      set("pingLine",tsBad?("STALE · ping timestamp unreadable"):("STALE · "+ping+" · "+mins+"m ago"));
+      set("pingLine","STALE · "+ping+" · "+mins+"m ago");
       if(pingEl){ pingEl.classList.add("warn"); }
       setPill("pillPing",false,"STALE "+age,true);
     }else{
@@ -633,9 +612,8 @@ function paint(d){
     var sttPendEarly=(stt.pending!=null?stt.pending:0);
     var capLeftEarly=(cap.left!=null?cap.left:0);
     if(!capRun && cap.left_global!=null) capLeftEarly=cap.left_global;
-    var knownPhase0=function(v){ return v==="running"||v==="paused"||v==="caught_up"||v==="failed"||v==="stale"||v==="unknown"; };
-    var sttPhase=knownPhase0(stt.operational_state||stt.worker_state)?(stt.operational_state||stt.worker_state):workerPhase(sttRun, sttPendEarly, stt.updated_utc);
-    var capPhase=knownPhase0(cap.operational_state||cap.worker_state)?(cap.operational_state||cap.worker_state):workerPhase(capRun, capLeftEarly, cap.updated_utc);
+    var sttPhase=(stt.operational_state||stt.worker_state)||workerPhase(sttRun, sttPendEarly);
+    var capPhase=(cap.operational_state||cap.worker_state)||workerPhase(capRun, capLeftEarly);
     var sttStateLbl=phaseLabel(sttPhase, 0, sttPendEarly, stt.pause_label);
     var capStateLbl=phaseLabel(capPhase, jobs, capLeftEarly, cap.pause_label);
     setPillPhase("pillStt",sttPhase,"STT "+sttStateLbl.split(" · ")[0]);
@@ -659,9 +637,8 @@ function paint(d){
     else if(cap.left!=null) capLeft=cap.left;
     else capLeft=0;
     var totC=(prog.captions_total!=null?prog.captions_total:(cap.total!=null?cap.total:(capDone+capLeft)));
-    var knownPhase=function(v){ return v==="running"||v==="paused"||v==="caught_up"||v==="failed"||v==="stale"||v==="unknown"; };
-    capPhase=knownPhase(cap.operational_state||cap.worker_state)?(cap.operational_state||cap.worker_state):workerPhase(capRun, capLeft, cap.updated_utc);
-    sttPhase=knownPhase(stt.operational_state||stt.worker_state)?(stt.operational_state||stt.worker_state):workerPhase(sttRun, sttPend, stt.updated_utc);
+    capPhase=((cap.operational_state||cap.worker_state)==="running"||(cap.operational_state||cap.worker_state)==="paused"||(cap.operational_state||cap.worker_state)==="caught_up"||(cap.operational_state||cap.worker_state)==="failed")?(cap.operational_state||cap.worker_state):workerPhase(capRun, capLeft);
+    sttPhase=((stt.operational_state||stt.worker_state)==="running"||(stt.operational_state||stt.worker_state)==="paused"||(stt.operational_state||stt.worker_state)==="caught_up"||(stt.operational_state||stt.worker_state)==="failed")?(stt.operational_state||stt.worker_state):workerPhase(sttRun, sttPend);
     capStateLbl=phaseLabel(capPhase, jobs, capLeft, cap.pause_label);
     sttStateLbl=phaseLabel(sttPhase, 0, sttPend, stt.pause_label);
     setPillPhase("pillStt",sttPhase,"STT "+sttStateLbl.split(" · ")[0]);
@@ -1395,78 +1372,14 @@ function opsSetState(msg, kind){
   s.style.color="";
 }
 function opsBusy(on){
-  // Busy state must never resurrect a control that opsSetOffline disabled:
-  // a clickable dead button is a lie, so offline wins over "not busy".
   ["opsAddShare","opsFixHb"].forEach(function(id){
-    var el=$(id); if(el) el.disabled=!!on || !!opsOffline;
+    var el=$(id); if(el) el.disabled=!!on;
   });
   if(on){
     var add=$("opsAddShare"); if(add) add.textContent="Calling…";
   } else {
     var add2=$("opsAddShare"); if(add2) add2.textContent="Add";
   }
-}
-function opsValidateBase(url){
-  // Read-only proof a base is usable: the existing unauthenticated GET /ops/health
-  // answers {ok:true, service:"aios-ops"}. A bare ok from a foreign endpoint is not
-  // proof. Bounded to ~8s so a hung tunnel fails closed with a clear message instead
-  // of leaving "Checking…" up forever. Never a POST probe, never a URL on faith.
-  url=String(url||"").trim().replace(/\/$/,"");
-  if(!url || /^https?:\/\/(127\.|localhost\b)/i.test(url)) return Promise.resolve({ok:false, reason:"bad_url"});
-  var ctrl=(typeof AbortController!=="undefined")?new AbortController():null;
-  var timer=null;
-  if(ctrl){ timer=setTimeout(function(){ try{ ctrl.abort(); }catch(e){} }, 8000); }
-  var opts={cache:"no-store"};
-  if(ctrl) opts.signal=ctrl.signal;
-  return fetch(url+"/ops/health",opts)
-    .then(function(r){ return r.ok?r.json():null; })
-    .then(function(j){
-      if(j && j.ok===true && j.service==="aios-ops") return {ok:true};
-      if(j && j.ok===true) return {ok:false, reason:"foreign"};
-      return {ok:false, reason:"bad_response"};
-    })
-    .catch(function(e){ return {ok:false, reason:(e && e.name==="AbortError")?"timeout":"dead"}; })
-    .then(function(res){ if(timer) clearTimeout(timer); return res; });
-}
-function opsSetOffline(off){
-  // Intake offline: Add / Fix stale heartbeat both post through the tunnel, so they
-  // are disabled until the front door answers - a clickable dead button is a lie.
-  opsOffline=!!off;
-  ["opsAddShare","opsFixHb"].forEach(function(id){
-    var el=$(id); if(el) el.disabled=!!off;
-  });
-}
-function opsRecheckFrontDoor(){
-  var gen=++opsRecheckGen;   // this run is valid only while it is the latest
-  // A failed call may mean the tunnel dropped after boot: controls went offline, and only a
-  // live answer brings them back - the front door first, then a hand-set base, each proven
-  // against the live health route. A cached URL alone never re-enables.
-  function enableChecked(url){
-    return opsValidateBase(url).then(function(res){
-      if(!res.ok) return false;   // stays offline
-      if(gen!==opsRecheckGen) return false;   // late answer from a superseded recheck: never clobber a hand-set base or a newer offline state
-      url=String(url).trim().replace(/\/$/,"");
-      try{ localStorage.setItem("aios.opsBase", url); }catch(e){}
-      var b=$("opsBase"); if(b){ try{ b.value=url; }catch(e){} }
-      opsSetOffline(false);
-      opsSetState("Ready — paste a YouTube Share link (default this video only).", "ok");
-      return true;
-    });
-  }
-  fetch("./vm_front_door.json",{cache:"no-store"})
-    .then(function(r){ return r.ok?r.json():null; })
-    .then(function(j){
-      var api=(j && j.status!=="down") ? String(j.api_base||"").trim().replace(/\/$/,"") : "";
-      return enableChecked(api).then(function(ok){
-        if(ok) return;
-        var mb=opsBase();   // respect a hand-set base, proven live the same way
-        if(mb && mb!==api) enableChecked(mb);
-      });
-    })
-    .catch(function(){
-      var mb=opsBase();
-      if(mb) enableChecked(mb);
-    });
 }
 function opsDetectKind(url){
   url=(url||"").trim();
@@ -1538,11 +1451,8 @@ function opsReadScope(){
   };
 }
 var opsRequestPending=null;
-var opsOffline=false;
-var opsRecheckGen=0;   // bump: a newer recheck, manual retry or offline transition supersedes older runs
 function opsCall(kind){
   opsSaveCreds();
-  if(opsOffline){ opsSetResult("Failed: Ops intake offline — tunnel not answering. Set a working Ops base above to retry (it is health-checked live first).", "err"); return; }
   var base=opsBase();
   if(!base){ opsSetResult("Failed: Ops base missing — wait for tunnel autofill.", "err"); return; }
   var url=(($("opsUrl")&&$("opsUrl").value)||"").trim();
@@ -1620,42 +1530,13 @@ function opsCall(kind){
       }
       opsSetResult(human, tone);
     })
-    .catch(function(e){ opsSetOffline(true); opsRecheckFrontDoor(); opsSetResult("Failed: "+String(e.message||e), "err"); })
+    .catch(function(e){ opsSetResult("Failed: "+String(e.message||e), "err"); })
     .finally(function(){ opsBusy(false); });
 }
 function bootOps(){
-  opsSetOffline(true);
   var b=$("opsBase");
-  var lastManualCheck="";
-  function opsManualBaseRetry(){
-    // Safe manual retry through the existing base field: while offline, a hand-set
-    // base is health-checked live and the controls enable only if it is usable.
-    if(!opsOffline) return;
-    var v=opsBase();
-    if(!v || v===lastManualCheck) return;
-    ++opsRecheckGen;   // a hand-set base supersedes any in-flight automatic recheck
-    lastManualCheck=v;
-    opsSetState("Checking Ops base…", "busy");
-    opsValidateBase(v).then(function(res){
-      // A late answer may land after the base was edited or the controls recovered;
-      // it must not enable the wrong base or make a false offline claim.
-      if(opsBase()!==v || !opsOffline) return;
-      if(res.ok){
-        applyBase(v);
-        opsSetOffline(false);
-        opsSetState("Ready — paste a YouTube Share link (default this video only).", "ok");
-      } else if(res.reason==="timeout"){
-        opsSetState("Ops base health check timed out after 8s — controls stay disabled.", "err");
-      } else if(res.reason==="foreign"){
-        opsSetState("That URL answered but is not the Ops service — controls stay disabled.", "err");
-      } else {
-        opsSetState("That Ops base did not answer the live health check — controls stay disabled.", "err");
-      }
-    });
-  }
   if(b){ try{ b.value=opsBase()||""; }catch(e){}
-    b.onchange=function(){ opsSaveCreds(); opsManualBaseRetry(); };
-    b.onblur=function(){ opsSaveCreds(); opsManualBaseRetry(); };
+    b.onchange=opsSaveCreds; b.onblur=opsSaveCreds;
   }
   var ta=$("opsUrl");
   if(ta){
@@ -1702,37 +1583,23 @@ function bootOps(){
     if(b && (!b.value || b.value===cachedBase)){ try{ b.value=url; }catch(e){} }
     return applyBase(url);
   }
-  function enableIfUsable(url, viaSwitch){
-    // Every enable goes through the live health check: the front door is re-read at
-    // every boot, and a cached URL is only a fallback candidate - never proof on its
-    // own, since a cached tunnel URL dies when the tunnel restarts.
-    var gen=opsRecheckGen;   // this boot validation is valid only while nothing supersedes it
-    return opsValidateBase(url).then(function(res){
-      if(!res.ok) return false;
-      if(gen!==opsRecheckGen) return false;   // a manual retry or recheck started meanwhile: the late boot answer must not clobber it
-      if(viaSwitch) switchBase(url); else applyBase(url);
-      opsSetOffline(false);
-      return true;
-    });
-  }
+  if(cachedBase) opsSetState("Ready — paste a YouTube Share link (default this video only).");
+  // Always re-check the front door: a cached tunnel URL dies when the tunnel restarts.
   fetch("./vm_front_door.json",{cache:"no-store"})
     .then(function(r){ return r.ok?r.json():null; })
     .then(function(j){
+      if(switchBase(opsPickBase(j, cachedBase))) return;
       if(j&&j.status==="down"){
-        // status "down" means NO base - never fall back to a cached URL here.
         opsSetState("Ops intake offline — tunnel not connected. Heartbeat is separate and still on this page.", "warn");
-        return;
+      }else{
+        opsSetState("Waiting for tunnel base (vm_front_door.json).", "err");
       }
-      enableIfUsable(opsPickBase(j, cachedBase), true).then(function(ok){
-        if(!ok && opsOffline) opsSetState("Front door answered but its base failed the live health check — controls stay disabled.", "err");
-      });
     })
     .catch(function(){
       var lib="";
       try{ lib=(localStorage.getItem("aios_library_api")||"").trim(); }catch(e){}
-      enableIfUsable(opsPickBase(null, cachedBase || lib), false).then(function(ok){
-        if(!ok && opsOffline) opsSetState("Set tunnel Ops base, then paste a Share link.", "err");
-      });
+      if(applyBase(opsPickBase(null, cachedBase || lib))) return;
+      opsSetState("Set tunnel Ops base, then paste a Share link.", "err");
     });
 }
 
@@ -2105,53 +1972,5 @@ if(typeof module!=="undefined" && module.exports){ module.exports=api; } else { 
 return api;
 })();
 
-</script>
-<script>
-/* Work feed renderer (counts and coarse states only). Used by the board card and the map panel.
-   Reads work-feed.json; writes with textContent only. Shows each source's own age; never one total. */
-(function(){
-  function age(iso){
-    var ms = Date.parse(iso);
-    if (isNaN(ms)) return {txt:"age unknown", stale:true};
-    var m = Math.max(0, Math.round((Date.now()-ms)/60000));
-    var t = m < 90 ? m+" min ago" : (m < 4320 ? Math.round(m/60)+" h ago" : Math.round(m/1440)+" d ago");
-    return {txt:t, stale: m > 120};
-  }
-  function el(tag, text, cls){ var e=document.createElement(tag); if(text!==undefined) e.textContent=text; if(cls) e.className=cls; return e; }
-  function paint(root, doc){
-    root.textContent = "";
-    if (!doc || doc.error || !Array.isArray(doc.sources) || !doc.sources.length) {
-      root.appendChild(el("p", "Work feed unavailable" + (doc && doc.error ? ": " + doc.error : "") + ". Nothing is claimed.", "mono"));
-      return;
-    }
-    var g = age(doc.checked_at || doc.generated_at);
-    root.appendChild(el("p", "Feed checked " + g.txt + (doc.content_revision ? " · content rev " + String(doc.content_revision).slice(0,12) : "") + (g.stale ? " · STALE, not live" : ""), "mono"));
-    doc.sources.forEach(function(s){
-      var a = age(s.source_updated_at);
-      var box = el("div", undefined, "wf-src");
-      box.appendChild(el("p", s.name + " · " + s.count + " · source " + a.txt + (a.stale ? " (stale)" : ""), "mono wf-h"));
-      if (s.states) {
-        var ul = el("ul", undefined, "wf-states");
-        Object.keys(s.states).forEach(function(k){ if (s.states[k] > 0) ul.appendChild(el("li", k + ": " + s.states[k], "mono")); });
-        box.appendChild(ul);
-      }
-      if (s.coverage) box.appendChild(el("p", s.coverage, "mono wf-note"));
-      root.appendChild(box);
-    });
-    if (doc.overlap) root.appendChild(el("p", doc.overlap, "mono wf-note"));
-  }
-  function load(root){
-    var q = "?t=" + Date.now();
-    var urls = ["work-feed.json"+q, "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/work-feed.json"+q];
-    (function next(i){
-      if (i >= urls.length) { paint(root, {error:"could not load work-feed.json"}); return; }
-      fetch(urls[i], {cache:"no-store", credentials:"omit"}).then(function(r){ if(!r.ok) throw 0; return r.json(); })
-        .then(function(d){ paint(root, d); }).catch(function(){ next(i+1); });
-    })(0);
-  }
-  window.WorkFeed = {mount: function(id){ var r=document.getElementById(id); if(r) load(r); }};
-})();
-
-WorkFeed.mount("workFeedBody");
 </script>
 </body></html>
