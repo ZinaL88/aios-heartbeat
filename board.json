@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-30 22:46 HKT",
+  "written_at_hkt": "2026-10-30 22:56 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -123,10 +123,10 @@
       "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "skip": false,
       "reason": "queued",
-      "captions_done": 96,
+      "captions_done": 98,
       "captions_left": 0,
-      "stt_done": 96,
-      "stt_left": 36,
+      "stt_done": 98,
+      "stt_left": 32,
       "videos_total": 228,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3078,20 +3078,6 @@
       "skip": false
     },
     {
-      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-      "title": "huanyihe777",
-      "kind": "channel",
-      "videos_total": 228,
-      "videos_source": "inventory",
-      "captions_done": 96,
-      "captions_left": 0,
-      "stt_done": 96,
-      "stt_left": 36,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLJVJ-P_QXfbSqYdM3yvbHJf",
       "title": "Automation",
       "kind": "playlist",
@@ -3115,6 +3101,20 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 33,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "title": "huanyihe777",
+      "kind": "channel",
+      "videos_total": 228,
+      "videos_source": "inventory",
+      "captions_done": 98,
+      "captions_left": 0,
+      "stt_done": 98,
+      "stt_left": 32,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
