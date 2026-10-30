@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-30 22:56 HKT",
+  "written_at_hkt": "2026-10-30 23:06 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -123,10 +123,10 @@
       "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "skip": false,
       "reason": "queued",
-      "captions_done": 98,
+      "captions_done": 102,
       "captions_left": 0,
-      "stt_done": 98,
-      "stt_left": 32,
+      "stt_done": 102,
+      "stt_left": 24,
       "videos_total": 228,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3106,20 +3106,6 @@
       "skip": false
     },
     {
-      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-      "title": "huanyihe777",
-      "kind": "channel",
-      "videos_total": 228,
-      "videos_source": "inventory",
-      "captions_done": 98,
-      "captions_left": 0,
-      "stt_done": 98,
-      "stt_left": 32,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLUl4u3cNGP61MdtwGTqZA0MreSaDybji8",
       "title": "6.041 Probabilistic Systems",
       "kind": "playlist",
@@ -3184,6 +3170,20 @@
       "captions_done": 26,
       "captions_left": 0,
       "stt_done": 1,
+      "stt_left": 24,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "title": "huanyihe777",
+      "kind": "channel",
+      "videos_total": 228,
+      "videos_source": "inventory",
+      "captions_done": 102,
+      "captions_left": 0,
+      "stt_done": 102,
       "stt_left": 24,
       "status": "waiting_stt",
       "label": "Waiting STT",
