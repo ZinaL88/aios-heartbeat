@@ -1,14 +1,33 @@
 #!/usr/bin/env bash
-# Run on Grok2's box (token-free). Fetches wall-handoff pack from public Heartbeat.
-# Install: cron */30 or first line of Grok2 wake routine. No Z L.
+# Grok2 box: curl public handoff pack on thaw — no Z L paste.
 set -euo pipefail
-BASE="${GROK2_HANDOFF_RAW_BASE:-https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/handoff}"
-OUT="${GROK2_HANDOFF_DIR:-$HOME/briefs/grok2-handoff}"
-mkdir -p "$OUT"
-curl -fsSL "$BASE/index.json" -o "$OUT/index.json"
-BOOT=$(python3 -c "import json; print(json.load(open('$OUT/index.json')).get('bootstrap','GROK2-PASTE-BOOTSTRAP-20261030.md'))")
-for f in "$BOOT" grok2-wall-handoff-20261030.md grok2-wall-handoff-live-20261030.md grok2-wall-handoff-live.json grok2-handoff-delivery-20261030.md; do
-  curl -fsSL "$BASE/$f" -o "$OUT/$f" || true
+DEST="${GROK2_HANDOFF_DIR:-$HOME/grok2-handoff}"
+CDN="https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/handoff"
+PAGES="https://zinal88.github.io/aios-heartbeat/handoff"
+RAW="https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/handoff"
+mkdir -p "$DEST"
+BASE=""
+for b in "$CDN" "$PAGES" "$RAW"; do
+  if curl -fsSL "$b/index.json" -o "$DEST/index.json"; then BASE="$b"; break; fi
 done
-date "+%Y-%m-%d %H:%M:%S HKT autopull ok → $OUT" >>"$OUT/autopull.log"
-echo "$OUT/$BOOT"
+if [[ -z "$BASE" ]]; then echo "handoff fetch failed"; exit 1; fi
+# pull listed files
+python3 - <<PY
+import json, urllib.request, pathlib, os
+dest=pathlib.Path(os.environ.get("DEST","$DEST"))
+base=os.environ.get("BASE","$BASE")
+idx=json.loads((dest/"index.json").read_text())
+keys=["bootstrap","playbook","live","live_json","delivery","autopull"]
+for k in keys:
+  name=idx.get(k)
+  if not name: continue
+  url=f"{base}/{name}"
+  try:
+    data=urllib.request.urlopen(url, timeout=60).read()
+    (dest/name).write_bytes(data)
+    print("ok", name)
+  except Exception as e:
+    print("skip", name, e)
+print("BASE", base)
+print("DONE", dest)
+PY

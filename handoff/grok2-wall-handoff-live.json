@@ -1,6 +1,6 @@
 {
   "schema": "grok2-wall-handoff-live/v0",
-  "updated_at_hkt": "2026-10-30 22:46:29 HKT",
+  "updated_at_hkt": "2026-10-30 23:00:00 HKT",
   "token_free": true,
   "usage_stamp": {
     "schema": "grok1-usage-stamp/v0",
@@ -13,19 +13,14 @@
   },
   "queue_counts": {
     "fail": 125,
-    "done": 30,
-    "claimed": 8,
+    "done": 32,
+    "claimed": 9,
     "queued": 2
   },
-  "open_n": 10,
+  "open_n": 11,
   "focus": {
     "handoff": [],
     "decider": [
-      {
-        "job_id": "job-56a8f9291f0f458d",
-        "status": "claimed",
-        "title": "Decider readiness P0: fleet router C autonomous without Grok wake"
-      },
       {
         "job_id": "job-d3dd2996d38642bd",
         "status": "claimed",
@@ -35,6 +30,16 @@
         "job_id": "job-e849403a7517472b",
         "status": "claimed",
         "title": "Decider: Grok-wall failover playbook — route all LE to free tools when Grok EXHAUSTED"
+      },
+      {
+        "job_id": "job-7aaf6e755c074214",
+        "status": "queued",
+        "title": "Decider↔Z L: requirements intake + clarify-when-unclear (sit-room owner channel)"
+      },
+      {
+        "job_id": "job-812efcf7fb574bd1",
+        "status": "queued",
+        "title": "Decider product B: push next build — land G4+G6+G8 PR or continue open PR path"
       }
     ],
     "cold_spare": [
