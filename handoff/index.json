@@ -1,6 +1,6 @@
 {
   "schema": "aios-wall-handoff-pack/v1",
-  "updated_at_hkt": "2026-10-30 23:10:21 HKT",
+  "updated_at_hkt": "2026-10-30 23:13:43 HKT",
   "audience": [
     "grok2",
     "codex",
@@ -22,11 +22,11 @@
   "ask_lizheng": "ask-lizheng-blocker-path-20261030.md",
   "autopull": "grok2_handoff_autopull.sh",
   "pages_base": "https://zinal88.github.io/aios-heartbeat/handoff/",
-  "cdn_base": "https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/handoff/",
+  "cdn_base": "https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@b6d87c033/handoff/",
   "raw_base": "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/handoff/",
   "prefer": [
-    "cdn_base",
     "pages_base",
+    "cdn_base",
     "raw_base"
   ],
   "auto": true,

@@ -1,6 +1,6 @@
 # Grok2 wall handoff — LIVE (auto-refresh)
 
-Updated: **2026-10-30 23:02:31 HKT** · token-free box cron · no Grok wake
+Updated: **2026-10-30 23:12:35 HKT** · token-free box cron · no Grok wake
 
 > Static playbook (method + first-60-min): `/workspace/briefs/grok2-wall-handoff-20261030.md` ✅
 > This file is the **auto-updated snapshot** of open work + stamps. Prefer the static playbook for how to run Loop Engineering.
@@ -9,16 +9,19 @@ Updated: **2026-10-30 23:02:31 HKT** · token-free box cron · no Grok wake
 74.1% weekly used · resets Thu Nov 5 ~23:41 HKT · on-demand none (stops at wall) · stamped 2026-10-30 ~22:45 by Grok1 on natural wake
 
 ## Queue counts
-`{"fail": 125, "done": 32, "claimed": 9, "queued": 3}` · open=12
+`{"fail": 125, "done": 32, "claimed": 13, "queued": 1, "cancelled": 1}` · open=14
 
 ## Focus — handoff
-- `queued` `job-938cfb7b8ea34cf5` — Grok2 handoff autopull: install recipe + threshold WA notify (no Z L)
+- `claimed` `job-1297fe69296f4e2a` — Decider: on Grok allowance reset→100% trigger autopull cron + handoff remind
+- `claimed` `job-f294766f8a3d474d` — Handoff pack: free-maintainer hop — refresh live + push verify CDN (Grok must not author)
+- `claimed` `job-fa9044e895a44e62` — P0: handoff prefer pages_base first (CDN @main stale v0)
 
 ## Focus — Decider readiness
 - `claimed` `job-d3dd2996d38642bd` — Decider product B next gaps G4+G6+G8 (post G1+G2+G5 #6)
 - `claimed` `job-e849403a7517472b` — Decider: Grok-wall failover playbook — route all LE to free tools when Grok EXHAUSTED
-- `queued` `job-7aaf6e755c074214` — Decider↔Z L: requirements intake + clarify-when-unclear (sit-room owner channel)
+- `claimed` `job-7aaf6e755c074214` — Decider↔Z L: requirements intake + clarify-when-unclear (sit-room owner channel)
 - `queued` `job-812efcf7fb574bd1` — Decider product B: push next build — land G4+G6+G8 PR or continue open PR path
+- `claimed` `job-1297fe69296f4e2a` — Decider: on Grok allowance reset→100% trigger autopull cron + handoff remind
 
 ## Focus — cold spare (Jarvis PIC)
 - `claimed` `job-5f9d44b76bf7422b` — Cold spare box P0: failover plan for Heartbeat/ops (not VPS)

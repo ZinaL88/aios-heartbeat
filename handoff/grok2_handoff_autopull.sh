@@ -2,12 +2,12 @@
 # Any box (Grok2/Codex/Gemini host): curl public wall handoff pack — no Z L paste.
 set -euo pipefail
 DEST="${GROK2_HANDOFF_DIR:-$HOME/briefs/grok2-handoff}"
-CDN="https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/handoff"
+CDN="https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@b6d87c033/handoff"
 PAGES="https://zinal88.github.io/aios-heartbeat/handoff"
 RAW="https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/handoff"
 mkdir -p "$DEST"
 BASE=""
-for b in "$CDN" "$PAGES" "$RAW"; do
+for b in "$PAGES" "$CDN" "$RAW"; do
   if curl -fsSL "$b/index.json" -o "$DEST/index.json"; then BASE="$b"; break; fi
 done
 [[ -n "$BASE" ]] || { echo "handoff fetch failed"; exit 1; }

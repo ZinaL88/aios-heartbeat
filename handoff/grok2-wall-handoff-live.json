@@ -1,6 +1,6 @@
 {
   "schema": "grok2-wall-handoff-live/v0",
-  "updated_at_hkt": "2026-10-30 23:02:31 HKT",
+  "updated_at_hkt": "2026-10-30 23:12:35 HKT",
   "token_free": true,
   "usage_stamp": {
     "schema": "grok1-usage-stamp/v0",
@@ -14,16 +14,27 @@
   "queue_counts": {
     "fail": 125,
     "done": 32,
-    "claimed": 9,
-    "queued": 3
+    "claimed": 13,
+    "queued": 1,
+    "cancelled": 1
   },
-  "open_n": 12,
+  "open_n": 14,
   "focus": {
     "handoff": [
       {
-        "job_id": "job-938cfb7b8ea34cf5",
-        "status": "queued",
-        "title": "Grok2 handoff autopull: install recipe + threshold WA notify (no Z L)"
+        "job_id": "job-1297fe69296f4e2a",
+        "status": "claimed",
+        "title": "Decider: on Grok allowance reset→100% trigger autopull cron + handoff remind"
+      },
+      {
+        "job_id": "job-f294766f8a3d474d",
+        "status": "claimed",
+        "title": "Handoff pack: free-maintainer hop — refresh live + push verify CDN (Grok must not author)"
+      },
+      {
+        "job_id": "job-fa9044e895a44e62",
+        "status": "claimed",
+        "title": "P0: handoff prefer pages_base first (CDN @main stale v0)"
       }
     ],
     "decider": [
@@ -39,13 +50,18 @@
       },
       {
         "job_id": "job-7aaf6e755c074214",
-        "status": "queued",
+        "status": "claimed",
         "title": "Decider↔Z L: requirements intake + clarify-when-unclear (sit-room owner channel)"
       },
       {
         "job_id": "job-812efcf7fb574bd1",
         "status": "queued",
         "title": "Decider product B: push next build — land G4+G6+G8 PR or continue open PR path"
+      },
+      {
+        "job_id": "job-1297fe69296f4e2a",
+        "status": "claimed",
+        "title": "Decider: on Grok allowance reset→100% trigger autopull cron + handoff remind"
       }
     ],
     "cold_spare": [
