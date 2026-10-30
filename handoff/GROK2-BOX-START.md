@@ -36,7 +36,7 @@
    ```
    Use the box scheduler (crontab/supercronic/systemd timer). Token-free — never a Grok status ticker.
 4. **Read the two core playbooks** (now in `~/briefs/grok2-handoff/`):
-   - `loop-engineering-playbook-20261030.md` — the Loop Engineering method: claim → spawn ∈3 free doers → checker ≠ doer → close/escalate; free-first ladder OpenCode → Gemini (API/agy) → Cursor → Codex; never park idle no-PIC work; never install this puller on the primary.
+   - `loop-engineering-playbook-20261030.md` — the Loop Engineering method: claim → spawn ≥3 free doers → checker ≠ doer → close/escalate; free-first ladder OpenCode → Gemini (API/agy) → Cursor → Codex; never park idle no-PIC work; never install this puller on the primary.
    - `grok2-wall-handoff-20261030.md` — the wall playbook: trigger conditions, role after takeover, hard gates needing Z L (`merge / deploy / spend / WA-speak-as-Z L / hard-reset`), first-60-minutes checklist, token discipline.
    Full file map: `index.json` (same directory). Every listed file is pulled by step 2.
 5. **Claim idle work.** Now that you have the method:
