@@ -1,6 +1,6 @@
 {
   "schema": "grok2-wall-handoff-live/v0",
-  "updated_at_hkt": "2026-10-30 23:12:35 HKT",
+  "updated_at_hkt": "2026-10-30 23:16:24 HKT",
   "token_free": true,
   "usage_stamp": {
     "schema": "grok1-usage-stamp/v0",
@@ -14,11 +14,11 @@
   "queue_counts": {
     "fail": 125,
     "done": 32,
-    "claimed": 13,
+    "claimed": 14,
     "queued": 1,
     "cancelled": 1
   },
-  "open_n": 14,
+  "open_n": 15,
   "focus": {
     "handoff": [
       {
@@ -35,6 +35,11 @@
         "job_id": "job-fa9044e895a44e62",
         "status": "claimed",
         "title": "P0: handoff prefer pages_base first (CDN @main stale v0)"
+      },
+      {
+        "job_id": "job-71a3271a495c4f57",
+        "status": "claimed",
+        "title": "REFINE handoff pack to GATE ACCEPT (Grok2 100% unambiguous)"
       }
     ],
     "decider": [
