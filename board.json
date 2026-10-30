@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-30 21:48 HKT",
+  "written_at_hkt": "2026-10-30 21:56 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -123,10 +123,10 @@
       "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "skip": false,
       "reason": "queued",
-      "captions_done": 78,
+      "captions_done": 82,
       "captions_left": 0,
-      "stt_done": 78,
-      "stt_left": 72,
+      "stt_done": 82,
+      "stt_left": 64,
       "videos_total": 228,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2938,20 +2938,6 @@
       "skip": false
     },
     {
-      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-      "title": "huanyihe777",
-      "kind": "channel",
-      "videos_total": 228,
-      "videos_source": "inventory",
-      "captions_done": 78,
-      "captions_left": 0,
-      "stt_done": 78,
-      "stt_left": 72,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
       "title": "LLM / AI",
       "kind": "playlist",
@@ -2975,6 +2961,20 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 67,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "title": "huanyihe777",
+      "kind": "channel",
+      "videos_total": 228,
+      "videos_source": "inventory",
+      "captions_done": 82,
+      "captions_left": 0,
+      "stt_done": 82,
+      "stt_left": 64,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
