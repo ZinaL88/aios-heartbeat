@@ -1,6 +1,6 @@
 {
   "schema": "grok2-wall-handoff-live/v0",
-  "updated_at_hkt": "2026-10-30 23:00:00 HKT",
+  "updated_at_hkt": "2026-10-30 23:02:31 HKT",
   "token_free": true,
   "usage_stamp": {
     "schema": "grok1-usage-stamp/v0",
@@ -15,11 +15,17 @@
     "fail": 125,
     "done": 32,
     "claimed": 9,
-    "queued": 2
+    "queued": 3
   },
-  "open_n": 11,
+  "open_n": 12,
   "focus": {
-    "handoff": [],
+    "handoff": [
+      {
+        "job_id": "job-938cfb7b8ea34cf5",
+        "status": "queued",
+        "title": "Grok2 handoff autopull: install recipe + threshold WA notify (no Z L)"
+      }
+    ],
     "decider": [
       {
         "job_id": "job-d3dd2996d38642bd",

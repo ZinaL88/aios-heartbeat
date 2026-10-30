@@ -1,6 +1,6 @@
 # Grok2 wall handoff — LIVE (auto-refresh)
 
-Updated: **2026-10-30 23:00:00 HKT** · token-free box cron · no Grok wake
+Updated: **2026-10-30 23:02:31 HKT** · token-free box cron · no Grok wake
 
 > Static playbook (method + first-60-min): `/workspace/briefs/grok2-wall-handoff-20261030.md` ✅
 > This file is the **auto-updated snapshot** of open work + stamps. Prefer the static playbook for how to run Loop Engineering.
@@ -9,10 +9,10 @@ Updated: **2026-10-30 23:00:00 HKT** · token-free box cron · no Grok wake
 74.1% weekly used · resets Thu Nov 5 ~23:41 HKT · on-demand none (stops at wall) · stamped 2026-10-30 ~22:45 by Grok1 on natural wake
 
 ## Queue counts
-`{"fail": 125, "done": 32, "claimed": 9, "queued": 2}` · open=11
+`{"fail": 125, "done": 32, "claimed": 9, "queued": 3}` · open=12
 
 ## Focus — handoff
-- (none open)
+- `queued` `job-938cfb7b8ea34cf5` — Grok2 handoff autopull: install recipe + threshold WA notify (no Z L)
 
 ## Focus — Decider readiness
 - `claimed` `job-d3dd2996d38642bd` — Decider product B next gaps G4+G6+G8 (post G1+G2+G5 #6)
