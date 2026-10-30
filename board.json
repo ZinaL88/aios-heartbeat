@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-30 22:24 HKT",
+  "written_at_hkt": "2026-10-30 22:26 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -123,10 +123,10 @@
       "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "skip": false,
       "reason": "queued",
-      "captions_done": 91,
+      "captions_done": 92,
       "captions_left": 0,
-      "stt_done": 91,
-      "stt_left": 46,
+      "stt_done": 92,
+      "stt_left": 44,
       "videos_total": 228,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3008,20 +3008,6 @@
       "skip": false
     },
     {
-      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-      "title": "huanyihe777",
-      "kind": "channel",
-      "videos_total": 228,
-      "videos_source": "inventory",
-      "captions_done": 91,
-      "captions_left": 0,
-      "stt_done": 91,
-      "stt_left": 46,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2",
       "title": "Stanford CS221 AI",
       "kind": "playlist",
@@ -3030,6 +3016,20 @@
       "captions_done": 60,
       "captions_left": 0,
       "stt_done": 8,
+      "stt_left": 44,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "title": "huanyihe777",
+      "kind": "channel",
+      "videos_total": 228,
+      "videos_source": "inventory",
+      "captions_done": 92,
+      "captions_left": 0,
+      "stt_done": 92,
       "stt_left": 44,
       "status": "waiting_stt",
       "label": "Waiting STT",
