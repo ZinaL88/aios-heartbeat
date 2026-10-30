@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-30 22:04 HKT",
+  "written_at_hkt": "2026-10-30 22:12 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -123,10 +123,10 @@
       "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "skip": false,
       "reason": "queued",
-      "captions_done": 84,
+      "captions_done": 86,
       "captions_left": 0,
-      "stt_done": 84,
-      "stt_left": 60,
+      "stt_done": 86,
+      "stt_left": 56,
       "videos_total": 228,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2980,20 +2980,6 @@
       "skip": false
     },
     {
-      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-      "title": "huanyihe777",
-      "kind": "channel",
-      "videos_total": 228,
-      "videos_source": "inventory",
-      "captions_done": 84,
-      "captions_left": 0,
-      "stt_done": 84,
-      "stt_left": 60,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLCckmTqOb_MWgcvq2JHXgzjIMszRptxAd",
       "title": "八字教学从基础入门到精通",
       "kind": "playlist",
@@ -3003,6 +2989,20 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 57,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "title": "huanyihe777",
+      "kind": "channel",
+      "videos_total": 228,
+      "videos_source": "inventory",
+      "captions_done": 86,
+      "captions_left": 0,
+      "stt_done": 86,
+      "stt_left": 56,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
