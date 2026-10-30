@@ -1,0 +1,13 @@
+{
+  "schema": "grok2-wall-handoff-pack/v0",
+  "updated_at_hkt": "2026-10-30 23:00:37 HKT",
+  "bootstrap": "GROK2-PASTE-BOOTSTRAP-20261030.md",
+  "playbook": "grok2-wall-handoff-20261030.md",
+  "live": "grok2-wall-handoff-live-20261030.md",
+  "live_json": "grok2-wall-handoff-live.json",
+  "delivery": "grok2-handoff-delivery-20261030.md",
+  "pages_base": "https://zinal88.github.io/aios-heartbeat/handoff/",
+  "raw_base": "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/handoff/",
+  "auto": true,
+  "note": "Grok2 cron/routine should curl index.json then bootstrap — no Z L paste"
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "grok2-wall-handoff-live/v0",
+  "updated_at_hkt": "2026-10-30 22:46:29 HKT",
+  "token_free": true,
+  "usage_stamp": {
+    "schema": "grok1-usage-stamp/v0",
+    "stamped_at_hkt": "2026-10-30 22:45:45 HKT",
+    "plan": "Cursor Pro",
+    "weekly_usage_pct": 74.1,
+    "resets_hkt": "2026-11-05 23:41 HKT",
+    "on_demand": "none — stops at included wall",
+    "line": "74.1% weekly used · resets Thu Nov 5 ~23:41 HKT · on-demand none (stops at wall) · stamped 2026-10-30 ~22:45 by Grok1 on natural wake"
+  },
+  "queue_counts": {
+    "fail": 125,
+    "done": 30,
+    "claimed": 8,
+    "queued": 2
+  },
+  "open_n": 10,
+  "focus": {
+    "handoff": [],
+    "decider": [
+      {
+        "job_id": "job-56a8f9291f0f458d",
+        "status": "claimed",
+        "title": "Decider readiness P0: fleet router C autonomous without Grok wake"
+      },
+      {
+        "job_id": "job-d3dd2996d38642bd",
+        "status": "claimed",
+        "title": "Decider product B next gaps G4+G6+G8 (post G1+G2+G5 #6)"
+      },
+      {
+        "job_id": "job-e849403a7517472b",
+        "status": "claimed",
+        "title": "Decider: Grok-wall failover playbook — route all LE to free tools when Grok EXHAUSTED"
+      }
+    ],
+    "cold_spare": [
+      {
+        "job_id": "job-5f9d44b76bf7422b",
+        "status": "claimed",
+        "title": "Cold spare box P0: failover plan for Heartbeat/ops (not VPS)"
+      },
+      {
+        "job_id": "job-28c14f15db814648",
+        "status": "claimed",
+        "title": "Cold spare box: inventory what primary box must replicate"
+      },
+      {
+        "job_id": "job-37d1f89e53384c2b",
+        "status": "claimed",
+        "title": "Cold spare box: cheapest second Grok Bot computer / machine options research"
+      }
+    ]
+  },
+  "briefs": {
+    "handoff_base": true,
+    "handoff_base_bytes": 10461,
+    "cold_inventory": true,
+    "cold_plan": true,
+    "cold_options": true,
+    "cold_memo": true,
+    "ask_lizheng": true,
+    "gap_fix_wa": true
+  },
+  "toolkit_primary_box": {
+    "opencode": false,
+    "pi": true,
+    "orca": false,
+    "ollama": true,
+    "fleet_assign_hop": true,
+    "gemini_cli": true
+  },
+  "constraints": {
+    "no_vps": true,
+    "wa_fork5_grok1_only": true,
+    "gemini_cli": "not required — use Free AI Studio API key / agy",
+    "role": "coordinator/gatekeeper; free-first OpenCode→Gemini→Cursor→Codex"
+  },
+  "base_brief": "/workspace/briefs/grok2-wall-handoff-20261030.md"
+}
