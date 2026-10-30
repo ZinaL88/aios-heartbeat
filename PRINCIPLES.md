@@ -10,3 +10,6 @@ HEARTBEAT is AIOS's partner and control surface: a place to monitor, instruct, i
 - System events record meaningful transitions. Repeated unchanged pings do not create new system events.
 - Freshness and history have different jobs: latest status every five minutes, local status every ten seconds, compact daily deltas and daily checkpoints retained for 30 days. Legacy snapshots remain a frozen archive. Git still stores versions of latest status; no history rewrite is required.
 - Secrets, cookies, credentials and local paths do not belong in public telemetry. Preserve existing library functionality; do not treat every collected item as public.
+
+## tech_route_free_first
+tech_route: non-secret code → free OpenCode first, then Gemini→Cursor→Codex; Decider/Grok1 decide without Z L babysit
