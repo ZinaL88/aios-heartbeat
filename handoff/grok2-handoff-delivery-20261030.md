@@ -1,17 +1,20 @@
-# Grok2 handoff delivery — automated (no Z L manual) · 2026-10-30
+# Grok2 handoff — automated delivery (no Z L)
 
-## Rule
-Z L does **not** paste, open Drive, or babysit. Delivery is bot/cron only.
+**Primary fetch (works now):**
+https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/handoff/index.json
 
-## How Grok2 gets the pack when frozen/locked
-1. **Grok1 box** refreshes live snapshot every 15m (`refresh_grok2_handoff.sh`) and stages `aios-heartbeat/handoff/`.
-2. **Publish** to public Heartbeat repo → durable URLs (no Grok tokens to read):
-   - `https://zinal88.github.io/aios-heartbeat/handoff/index.json`
-   - `https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/handoff/GROK2-PASTE-BOOTSTRAP-20261030.md`
-3. **Grok2 auto-puller** (install on Grok2 box once via Jarvis/Nyxen/free doer — not Z L): on every wake/thaw, `curl` index.json → write briefs locally → run first-60-min checklist. Script: `/workspace/fleet-monitor/scripts/grok2_handoff_autopull.sh` (portable).
-4. Optional: Instinct WA auto-notify Grok2 with the raw URL when Grok1 usage stamp crosses a threshold (bot-to-bot; not Z L).
+**Pinned commit:** https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@c7a23d3437c467a07f338695dae0a63bf66bcd96/handoff/index.json
 
-## Non-goals
-- No “please paste into Grok2”
-- No Drive open for her
-- No gist unless already approved for other reasons
+**Pages (building):** https://zinal88.github.io/aios-heartbeat/handoff/
+
+**Note:** `raw.githubusercontent.com` currently 404s for this public pack even though the API lists the files — autopull prefers jsdelivr → Pages → raw.
+
+**Grok2 install (Jarvis/Nyxen, no Z L):**
+```bash
+curl -fsSL "https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/handoff/grok2_handoff_autopull.sh" -o ~/bin/grok2_handoff_autopull.sh
+chmod +x ~/bin/grok2_handoff_autopull.sh
+# cron every 30m on Grok2 box:
+# */30 * * * * $HOME/bin/grok2_handoff_autopull.sh >>$HOME/grok2-handoff/pull.log 2>&1
+```
+
+Updated: 2026-10-30 23:02:01 HKT · commit c7a23d343
