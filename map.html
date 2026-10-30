@@ -1782,6 +1782,17 @@
 <summary style="cursor:pointer;font-weight:700">Work feed (current counts)</summary>
 <script>if(window.innerWidth<700)document.getElementById("workFeedPanel").open=false;</script><style>#workFeedMap ul{padding-left:18px;margin:4px 0}#workFeedMap p{margin:4px 0}</style>
 <div id="workFeedMap">Loading…</div></details>
+<details id="aiAllowanceMap" open style="position:fixed;left:12px;bottom:12px;z-index:30;width:300px;max-width:calc(100vw - 24px);max-height:28vh;overflow:auto;background:#fffaf2;border:2px solid #d9c9a8;border-radius:12px;padding:8px 12px;font-size:12px;box-shadow:0 2px 8px rgba(0,0,0,.15)">
+  <summary style="font-weight:700;cursor:pointer">AI tools allowance + decider</summary>
+  <p class="mono" style="margin:4px 0">Flag states only · UNKNOWN valid · no invented %</p>
+  <div id="aiAllowanceChips" class="mono" style="white-space:pre-wrap;margin-bottom:6px">Loading…</div>
+  <p style="font-weight:600;margin:4px 0">Governance / principles</p>
+  <p id="governanceMapPointer" class="mono" style="margin:2px 0">Heartbeat syncs principles · Decider = decision ledger</p>
+  <p class="mono" style="margin:2px 0"><a href="PRINCIPLES.md" id="governanceMapLink" style="color:#3b9c9c">PRINCIPLES.md</a></p>
+  <p style="font-weight:600;margin:4px 0">Last decider reasons</p>
+  <div id="aiDeciderReasons" class="mono" style="white-space:pre-wrap">Loading…</div>
+</details>
+
   <!-- 4. TOP HEADER & FILTERS -->
   <header class="top-bar" role="banner">
     <div class="brand-title">
@@ -3015,5 +3026,54 @@
 /*WF-END*/
 WorkFeed.mount("workFeedMap");
 </script>
+
+<script>
+/* AI allowance + decider reasons on map (token-free). Does not remove existing map features. */
+(function(){
+  function paintAllowance(d){
+    var chips = document.getElementById("aiAllowanceChips");
+    var reasons = document.getElementById("aiDeciderReasons");
+    if(!chips || !reasons) return;
+    var a = (d && d.ai_allowance) || {};
+    var tools = a.tools || [];
+    chips.textContent = tools.length
+      ? tools.map(function(t){ return (t.id||"?")+":"+(t.state||"UNKNOWN"); }).join(" · ")
+      : "no flags yet";
+    var g = (d && d.governance) || (a && a.governance) || {};
+    var gp = document.getElementById("governanceMapPointer");
+    if (gp) {
+      var role = g.role || {};
+      gp.textContent = (role.heartbeat || "Heartbeat syncs principles/rules/preferences")
+        + " · " + (role.decider || "Decider = trigger points + ledger");
+    }
+    var gl = document.getElementById("governanceMapLink");
+    if (gl && g.principles_rel) { gl.setAttribute("href", g.principles_rel); gl.textContent = g.principles_rel; }
+    var ev = (d && d.system_events) || [];
+    var dec = ev.filter(function(e){
+      var t = String(e.type||"");
+      return t.indexOf("decider.") === 0 && e.reason;
+    }).slice(-5).reverse();
+    reasons.textContent = dec.length
+      ? dec.map(function(e){ return (e.at_utc||"")+" · "+(e.type||"")+" · reason="+(e.reason||""); }).join("\n")
+      : "no decider reasons yet";
+  }
+  function pull(){
+    var urls = [
+      "./status.json?t="+Date.now(),
+      "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t="+Date.now()
+    ];
+    function next(i){
+      if(i>=urls.length){ paintAllowance({}); return; }
+      fetch(urls[i], {cache:"no-store", credentials:"omit"}).then(function(r){
+        if(!r.ok) throw 0; return r.json();
+      }).then(paintAllowance).catch(function(){ next(i+1); });
+    }
+    next(0);
+  }
+  pull();
+  setInterval(pull, 60000);
+})();
+</script>
+
 </body>
 </html>

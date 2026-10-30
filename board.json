@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-30 12:44 HKT",
+  "written_at_hkt": "2026-10-30 14:25 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -97,10 +97,10 @@
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "skip": false,
       "reason": "captions done · STT still running",
-      "captions_done": 662,
+      "captions_done": 665,
       "captions_left": 0,
-      "stt_done": 705,
-      "stt_left": 106,
+      "stt_done": 708,
+      "stt_left": 103,
       "videos_total": 737,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -175,10 +175,10 @@
       "channel_id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
       "skip": false,
       "reason": "",
-      "captions_done": 436,
+      "captions_done": 439,
       "captions_left": 0,
-      "stt_done": 436,
-      "stt_left": 154,
+      "stt_done": 439,
+      "stt_left": 151,
       "videos_total": 590,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2812,20 +2812,6 @@
       "skip": false
     },
     {
-      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
-      "title": "Alan",
-      "kind": "channel",
-      "videos_total": 590,
-      "videos_source": "inventory",
-      "captions_done": 436,
-      "captions_left": 0,
-      "stt_done": 436,
-      "stt_left": 154,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLbVaWSxd4rLKh4dlVL_ED5qhKAoInzPcl",
       "title": "Blockchain",
       "kind": "playlist",
@@ -2835,6 +2821,20 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 154,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCaIIFXfdQUYf3OHPIFNDdrQ",
+      "title": "Alan",
+      "kind": "channel",
+      "videos_total": 590,
+      "videos_source": "inventory",
+      "captions_done": 439,
+      "captions_left": 0,
+      "stt_done": 439,
+      "stt_left": 151,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -2901,10 +2901,10 @@
       "kind": "channel",
       "videos_total": 737,
       "videos_source": "inventory",
-      "captions_done": 662,
+      "captions_done": 665,
       "captions_left": 0,
-      "stt_done": 705,
-      "stt_left": 106,
+      "stt_done": 708,
+      "stt_left": 103,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
