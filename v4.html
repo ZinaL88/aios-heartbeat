@@ -66,21 +66,21 @@ body { overflow-x:hidden; max-width:100vw;
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-10-30 19:52 HKT</span></div>
-<p class="mono" id="ping">2026-10-30 19:52 HKT</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-10-30 20:02 HKT</span></div>
+<p class="mono" id="ping">2026-10-30 20:02 HKT</p>
 
 <div class="card">
-  <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">dP-bc97eFR0</span></div>
+  <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">RdDMgV1IN7M</span></div>
   <p class="big" id="allNum">0</p>
   <p class="ch" id="sttDeadline">ETA unknown</p>
-  <p class="mono" id="sttDisk">13001 transcripts on disk</p>
+  <p class="mono" id="sttDisk">13002 transcripts on disk</p>
 </div>
 <div class="card">
-  <div class="row"><h2><span class="dot on" id="capDot"></span>CAPTIONS</h2>
-    <span class="mono" id="capState">running</span></div>
-  <p class="ch" id="capCh">PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE,PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2</p>
-  <div class="row"><span class="big" id="capNum">334</span>
-    <span class="mono" id="capEta">2 workers · left</span></div>
+  <div class="row"><h2><span class="dot " id="capDot"></span>CAPTIONS</h2>
+    <span class="mono" id="capState">idle</span></div>
+  <p class="ch" id="capCh">idle</p>
+  <div class="row"><span class="big" id="capNum">2795</span>
+    <span class="mono" id="capEta">0 workers · left</span></div>
 </div>
 <div class="card">
   <div class="row"><h2><span class="dot on" id="sttDot"></span>STT</h2>
@@ -93,15 +93,15 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 6.6G / 15.6G · load 5.34</p>
-  <p class="mono" id="box2">disk 87G · tmp 4.4G · cookies yes · 16.0h</p>
-  <p class="mono" id="sched">next ping 2026-10-30 19:55 HKT · captions + Whisper running</p>
+  <p class="ch" id="ram">RAM 6.7G / 15.6G · load 5.65</p>
+  <p class="mono" id="box2">disk 87G · tmp 4.5G · cookies yes · 16.2h</p>
+  <p class="mono" id="sched">next ping 2026-10-30 20:05 HKT · Whisper on · captions idle (reboost captions if RAM≥1.2)</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
   <h2>RUNNING</h2>
-  <ol id="running"><li><b>STT</b> · mike1111 · 0 pending</li><li><b>CAPTIONS ×2</b> · PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE,PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2 · 17752/26993</li><li class="mono">pid 933554 · proc</li><li class="mono">pid 1183534 · proc</li><li class="mono">pid 1177836 · proc</li><li class="mono">pid 1177903 · proc</li></ol>
+  <ol id="running"><li><b>STT</b> · mike1111 · 0 pending</li><li class="mono">pid 933554 · proc</li><li class="mono">pid 1200463 · proc</li></ol>
 </div>
 
 <div class="card">
@@ -127,7 +127,7 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-10-30T11:51:51Z STT already running — no second Whisper</li><li><span class="mono">reboost.log</span> 2026-10-30T11:52:00Z ensure_venv — start</li><li><span class="mono">reboost.log</span> 2026-10-30T11:52:00Z ensure_venv — ok</li><li><span class="mono">reboost.log</span> 2026-10-30T11:52:00Z STT_VENV_OK=1 PY=&lt;path&gt;</li><li><span class="mono">reboost.log</span> 2026-10-30T11:52:01Z captions running=2 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.3G cap_signal=none</li><li><span class="mono">reboost.log</span> 2026-10-30T11:52:01Z captions pick empty — stop filling (exclude=PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2,PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE,UCAxQ8sjHgjXh26la7jEBw3w)</li><li><span class="mono">reboost.log</span> 2026-10-30T11:52:01Z captions after fill running=2</li><li><span class="mono">reboost.log</span> 2026-10-30T11:52:01Z STT already running — no second Whisper</li><li class="mono">ERROR 7IRUaMM_Z3M: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR BLL5F421l94: Cannot verify caption availability; STT deferred</li><li class="mono">ERROR gFr4zhuV1g0: Original caption language unverified; defer rather than save a translation</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-10-30T12:01:34Z STT already running — no second Whisper</li><li><span class="mono">reboost.log</span> 2026-10-30T12:02:00Z ensure_venv — start</li><li><span class="mono">reboost.log</span> 2026-10-30T12:02:00Z ensure_venv — ok</li><li><span class="mono">reboost.log</span> 2026-10-30T12:02:01Z STT_VENV_OK=1 PY=&lt;path&gt;</li><li><span class="mono">reboost.log</span> 2026-10-30T12:02:01Z captions running=0 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=6.6G cap_signal=none</li><li><span class="mono">reboost.log</span> 2026-10-30T12:02:01Z captions pick empty — stop filling (exclude=UCAxQ8sjHgjXh26la7jEBw3w)</li><li><span class="mono">reboost.log</span> 2026-10-30T12:02:01Z captions after fill running=0</li><li><span class="mono">reboost.log</span> 2026-10-30T12:02:01Z STT already running — no second Whisper</li><li class="mono">[95&lt;path&gt; Wsbc7I4vHj8 None</li><li class="mono">sleep 6.1s</li><li class="mono">[96&lt;path&gt; NslyMpbRuD8 《快思慢想》我們快思，卻深陷自己的溝通陷阱 你不可不知道改变你思考方式的秘密 | 智慧媒体 Empower through Knowledge</li></ol>
 </div>
 
 <div class="card">
