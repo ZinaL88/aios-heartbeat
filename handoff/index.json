@@ -1,11 +1,26 @@
 {
-  "schema": "grok2-wall-handoff-pack/v0",
-  "updated_at_hkt": "2026-10-30 23:02:32 HKT",
+  "schema": "aios-wall-handoff-pack/v1",
+  "updated_at_hkt": "2026-10-30 23:10:21 HKT",
+  "audience": [
+    "grok2",
+    "codex",
+    "gemini",
+    "cursor",
+    "opencode",
+    "nyxen"
+  ],
   "bootstrap": "GROK2-PASTE-BOOTSTRAP-20261030.md",
+  "wall_pickup_codex_gemini": "wall-pickup-codex-gemini-20261030.md",
+  "loop_engineering": "loop-engineering-playbook-20261030.md",
+  "loop_no_idle": "loop-no-idle-pic-standing-20261030.md",
+  "parallel_free_doers": "parallel-free-doers-20261030.md",
   "playbook": "grok2-wall-handoff-20261030.md",
   "live": "grok2-wall-handoff-live-20261030.md",
   "live_json": "grok2-wall-handoff-live.json",
   "delivery": "grok2-handoff-delivery-20261030.md",
+  "decider_reset_trigger": "decider-allowance-reset-handoff-trigger-20261030.md",
+  "ask_lizheng": "ask-lizheng-blocker-path-20261030.md",
+  "autopull": "grok2_handoff_autopull.sh",
   "pages_base": "https://zinal88.github.io/aios-heartbeat/handoff/",
   "cdn_base": "https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@main/handoff/",
   "raw_base": "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/handoff/",
@@ -14,6 +29,6 @@
     "pages_base",
     "raw_base"
   ],
-  "autopull": "grok2_handoff_autopull.sh",
-  "auto": true
+  "auto": true,
+  "note": "On Grok1 wall: Codex/Gemini/Grok2 curl index then wall_pickup + loop_engineering. Decider fires autopull on Grok reset\u2192100%. No Z L paste. No Instinct WA seed."
 }
