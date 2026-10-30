@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-10-30 20:42 HKT",
+  "written_at_hkt": "2026-10-30 20:52 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -123,10 +123,10 @@
       "channel_id": "UCPpdGTNbIKdiWgxCrbka4Zw",
       "skip": false,
       "reason": "queued",
-      "captions_done": 59,
+      "captions_done": 61,
       "captions_left": 0,
-      "stt_done": 59,
-      "stt_left": 110,
+      "stt_done": 61,
+      "stt_left": 106,
       "videos_total": 228,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2868,20 +2868,6 @@
       "skip": false
     },
     {
-      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
-      "title": "huanyihe777",
-      "kind": "channel",
-      "videos_total": 228,
-      "videos_source": "inventory",
-      "captions_done": 59,
-      "captions_left": 0,
-      "stt_done": 59,
-      "stt_left": 110,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
       "title": "⚡️ Framework Thinking & Mental Models ⚡️",
       "kind": "playlist",
@@ -2891,6 +2877,20 @@
       "captions_left": 0,
       "stt_done": 16,
       "stt_left": 107,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "id": "UCPpdGTNbIKdiWgxCrbka4Zw",
+      "title": "huanyihe777",
+      "kind": "channel",
+      "videos_total": 228,
+      "videos_source": "inventory",
+      "captions_done": 61,
+      "captions_left": 0,
+      "stt_done": 61,
+      "stt_left": 106,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
