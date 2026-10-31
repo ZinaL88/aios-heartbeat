@@ -1,17 +1,17 @@
 {
   "schema": "aios-status/v1",
-  "written_at_utc": "2026-10-31T14:32:43Z",
-  "written_at_hkt": "2026-10-31 22:32 HKT",
+  "written_at_utc": "2026-10-31T14:34:45Z",
+  "written_at_hkt": "2026-10-31 22:34 HKT",
   "host": "grok-bot-vm-271174876",
   "repo_head": "b4122b574",
   "token_free": true,
   "processes": {
     "whisper": true,
-    "backfill": true,
+    "backfill": false,
     "whisper_n": 2,
-    "backfill_n": 1,
+    "backfill_n": 0,
     "stt_channel": "UCAxQ8sjHgjXh26la7jEBw3w",
-    "captions_channel": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+    "captions_channel": null,
     "sample": [
       {
         "pid": 2370052,
@@ -20,13 +20,9 @@
       {
         "pid": 2398025,
         "cmd": "stt:fQUD_pMlZuE"
-      },
-      {
-        "pid": 2385936,
-        "cmd": "cap×1:PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
       }
     ],
-    "caption_workers": 1
+    "caption_workers": 0
   },
   "restarter": {
     "youtube_cooldown": null,
@@ -159,43 +155,43 @@
     ]
   },
   "resources": {
-    "mem_available_gi": 3.5,
+    "mem_available_gi": 3.2,
     "mem_total_gi": 15.6,
     "mem_top": [
       {
         "comm": "opencode",
-        "rss_gi": 5.48,
+        "rss_gi": 5.46,
         "n": 20
       },
       {
+        "comm": "python",
+        "rss_gi": 2.47,
+        "n": 2
+      },
+      {
         "comm": "node",
-        "rss_gi": 2.61,
+        "rss_gi": 2.45,
         "n": 42
       },
       {
-        "comm": "python",
-        "rss_gi": 2.43,
-        "n": 3
-      },
-      {
         "comm": "chrome",
-        "rss_gi": 1.43,
+        "rss_gi": 1.41,
         "n": 15
       },
       {
+        "comm": "git",
+        "rss_gi": 0.53,
+        "n": 5
+      },
+      {
         "comm": "Xvfb",
-        "rss_gi": 0.27,
+        "rss_gi": 0.24,
         "n": 3
       },
       {
         "comm": "csnaps",
-        "rss_gi": 0.21,
+        "rss_gi": 0.23,
         "n": 1
-      },
-      {
-        "comm": "python3",
-        "rss_gi": 0.19,
-        "n": 9
       },
       {
         "comm": "bash",
@@ -203,27 +199,27 @@
         "n": 69
       },
       {
-        "comm": "xfce4-panel",
-        "rss_gi": 0.13,
-        "n": 3
+        "comm": "python3",
+        "rss_gi": 0.17,
+        "n": 8
       },
       {
-        "comm": "xfwm4",
+        "comm": "orbitd",
         "rss_gi": 0.11,
-        "n": 3
+        "n": 1
       }
     ],
     "meminfo": {
       "buffers_gi": 0.2,
-      "cached_gi": 3.0,
-      "anon_gi": 11.2,
+      "cached_gi": 2.7,
+      "anon_gi": 11.5,
       "shmem_gi": 0.2,
       "sreclaimable_gi": 0.5,
-      "committed_gi": 25.1
+      "committed_gi": 25.5
     },
-    "load1": 3.6,
-    "disk_avail": "86G",
-    "tmp_du": "4.5G"
+    "load1": 6.03,
+    "disk_avail": "85G",
+    "tmp_du": null
   },
   "cookies": {
     "present": true,
@@ -279,8 +275,8 @@
           "pending": 0,
           "left": null
         },
-        "pending_global": 7501,
-        "eta_deadline_utc": "2026-10-31T14:32:43Z",
+        "pending_global": 7506,
+        "eta_deadline_utc": "2026-10-31T14:34:46Z",
         "eta_frozen": false,
         "overdue": false,
         "health": {
@@ -374,34 +370,28 @@
         "pause_label": null
       },
       "captions": {
-        "running": true,
-        "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-        "targets": [
-          "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
-        ],
-        "target_names": [
-          "Entrepreneur"
-        ],
+        "running": false,
+        "channel_id": null,
         "done": 17866,
-        "left": 20,
+        "left": 2779,
         "total": 26993,
-        "no_sub": 135,
-        "eta_min": 5,
+        "no_sub": 0,
+        "eta_min": 0,
         "eta_hkt": "2026-10-31 22:37 HKT",
         "inflight": null,
-        "jobs": 1,
+        "jobs": 0,
+        "targets": [],
+        "target_names": [],
+        "note": null,
         "scope_progress": {
-          "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-          "targets": [
-            "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
-          ],
-          "done": 563,
-          "total": 716,
+          "channel_id": null,
+          "targets": [],
+          "done": null,
+          "total": null,
           "pending": null,
-          "left": 20
+          "left": null
         },
-        "left_global": 2784,
-        "eta_deadline_utc": "2026-10-31T14:37:28Z",
+        "eta_deadline_utc": "2026-10-31T14:37:49Z",
         "eta_frozen": true,
         "overdue": false,
         "health": {
@@ -409,10 +399,17 @@
             "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4": {
               "fingerprint": "42b9967b21cf6dc3579ab8612215c65c334c1abc0a0627fbe736b7d6fb11f46d",
               "run_id": "c17b955aa7fe460dbc2ce528ddb530a2",
-              "reservation_until": 1793457188.7105827,
-              "child_pid": 2385936,
-              "child_start": "7498936",
-              "planned_stop": null
+              "reservation_until": 0,
+              "child_pid": null,
+              "child_start": null,
+              "planned_stop": null,
+              "failures": 0,
+              "retry_at": 0,
+              "last_exit": 0,
+              "reason": null,
+              "circuit_open": false,
+              "last_exit_at": 1793457258.3273697,
+              "last_stop_planned": false
             },
             "PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf": {
               "fingerprint": "42b9967b21cf6dc3579ab8612215c65c334c1abc0a0627fbe736b7d6fb11f46d",
@@ -932,17 +929,17 @@
           "circuit_open": true,
           "failed_target": "PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR"
         },
-        "worker_state": "running",
-        "operational_state": "running",
+        "worker_state": "paused",
+        "operational_state": "failed",
         "pause_reason": null,
         "pause_label": null
       }
     },
     "progress": {
       "stt_done": 13120,
-      "stt_pending": 7501,
+      "stt_pending": 7506,
       "captions_done": 17866,
-      "captions_left": 2784,
+      "captions_left": 2779,
       "captions_total": 26993,
       "channels_touched": 96,
       "by_channel": [
@@ -1032,8 +1029,8 @@
           "name": "Entrepreneur",
           "stt_done": 563,
           "captions_done": 563,
-          "captions_left": 20,
-          "stt_left": 131,
+          "captions_left": 15,
+          "stt_left": 136,
           "videos_total": 716
         },
         {
@@ -1297,9 +1294,9 @@
           "videos_total": 716,
           "videos_source": "inventory",
           "captions_done": 563,
-          "captions_left": 20,
+          "captions_left": 15,
           "stt_done": 563,
-          "stt_left": 131,
+          "stt_left": 136,
           "status": "waiting_captions",
           "label": "Waiting captions",
           "skip": false
@@ -3141,7 +3138,7 @@
     "corpus": {
       "schema": "aios-corpus/v1",
       "since": "2026-09-23T11:02:56Z",
-      "observed_at_utc": "2026-10-31T14:32:28Z",
+      "observed_at_utc": "2026-10-31T14:34:45Z",
       "observation_available": true,
       "transcripts_ever": 12331,
       "local_stt_ever": 2587,
@@ -3154,8 +3151,8 @@
     "next_cron_utc": "2026-10-31T14:35:00Z",
     "next_cron_hkt": "2026-10-31 22:35 HKT",
     "cron": "*/5",
-    "job_restart": "captions + Whisper running",
-    "job_restart_at_hkt": null,
+    "job_restart": "Whisper on · captions idle (reboost captions if RAM≥1.2)",
+    "job_restart_at_hkt": "2026-10-31 22:35 HKT",
     "box_reboot": "not scheduled — we do not reboot the host",
     "ram_gate_gi": 6.0
   },
@@ -3495,53 +3492,53 @@
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-10-31T14:32:41Z ensure_venv — start"
+      "summary": "2026-10-31T14:33:50Z STT already running — no second Whisper"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-10-31T14:32:41Z skip — reboost already running (holder: pid=2400692 caller=heartbeat_loop since=2026-10-31T14:32:41Z)"
+      "summary": "2026-10-31T14:34:23Z ensure_venv — start"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-10-31T14:32:41Z ensure_venv — ok"
+      "summary": "2026-10-31T14:34:24Z ensure_venv — ok"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-10-31T14:32:41Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
+      "summary": "2026-10-31T14:34:24Z STT_VENV_OK=1 PY=/workspace/ai-os-tools/youtube-collector/.venv/bin/python"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-10-31T14:32:42Z captions running=1 target=3 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=3.4G cap_signal=none"
+      "summary": "2026-10-31T14:34:24Z captions running=0 target=1 stt_live=UCAxQ8sjHgjXh26la7jEBw3w mem=3.8G cap_signal=1"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-10-31T14:32:42Z captions pick empty — stop filling (exclude=PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,UCAxQ8sjHgjXh26la7jEBw3w)"
+      "summary": "2026-10-31T14:34:24Z captions pick empty — stop filling (exclude=UCAxQ8sjHgjXh26la7jEBw3w)"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-10-31T14:32:42Z captions after fill running=1"
+      "summary": "2026-10-31T14:34:24Z captions after fill running=0"
     },
     {
       "at_hkt": "reboost.log",
       "kind": "reboost",
-      "summary": "2026-10-31T14:32:42Z STT already running — no second Whisper"
+      "summary": "2026-10-31T14:34:24Z STT already running — no second Whisper"
     }
   ],
   "reboost_log": [
-    "2026-10-31T14:32:42Z captions pick empty — stop filling (exclude=PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4,UCAxQ8sjHgjXh26la7jEBw3w)",
-    "2026-10-31T14:32:42Z captions after fill running=1",
-    "2026-10-31T14:32:42Z STT already running — no second Whisper",
-    "backfill-captions.log: ERROR VvGACD7ECxI: Cannot verify caption availability; STT deferred",
-    "incomplete aaDv8hq6cOc: pending_stt",
-    "incomplete GTAx2waEFdk: pending_stt",
-    "incomplete ZHHPbdU2_eU: pending_stt",
-    "ERROR VvGACD7ECxI: Cannot verify caption availability; STT deferred"
+    "2026-10-31T14:34:24Z captions pick empty — stop filling (exclude=UCAxQ8sjHgjXh26la7jEBw3w)",
+    "2026-10-31T14:34:24Z captions after fill running=0",
+    "2026-10-31T14:34:24Z STT already running — no second Whisper",
+    "backfill-captions.log: }",
+    "{",
+    "\"wrote_progress\": \"<path>",
+    "\"done_count\": 563",
+    "}"
   ],
   "pm": {
     "token_free": true,
@@ -3553,20 +3550,9 @@
   },
   "other_jobs": {
     "updated_at": "2026-09-06T19:42:19.671805+08:00",
-    "running_n": 2,
-    "total_n": 19,
+    "running_n": 1,
+    "total_n": 18,
     "jobs": [
-      {
-        "id": "live-cap-PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
-        "title": "Entrepreneur",
-        "status": "running",
-        "raw_status": "running",
-        "class": "cpu_light",
-        "priority": 1,
-        "owner": "collector-live",
-        "notes": "live captions target",
-        "target_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4"
-      },
       {
         "id": "live-stt-UCAxQ8sjHgjXh26la7jEBw3w",
         "title": "mike1111",
@@ -3804,20 +3790,6 @@
   },
   "note": "Heartbeat from cron. Not a Jarvis tick. No cookie bytes, no transcripts.",
   "system_events": [
-    {
-      "schema": "aios-system-event/v1",
-      "event_id": "decider:2026-10-31T14:25:50Z:sample-local-llm-summarize:decider.assign",
-      "at_utc": "2026-10-31T14:25:50Z",
-      "type": "decider.assign",
-      "summary": "assign sample-local-llm-summarize → gemini_personal",
-      "reason": "picked gemini_personal state=OK (live, producer=collect_gemini_live.sh, as_of=2026-10-31 22:25:43 HKT) cost_tier=free_or_cheap cap_match=1/2 complexity=1<=medium (provenance before state; live-proven > fixture/unproven; skip live-proven EXHAUSTED; fixture EXHAUSTED not alone hard-suppress; never invent %)",
-      "severity": "info",
-      "tool": "gemini_personal",
-      "task_id": "sample-local-llm-summarize",
-      "complexity": 1,
-      "actionable": false,
-      "source": "decider"
-    },
     {
       "schema": "aios-system-event/v1",
       "event_id": "decider:2026-10-31T14:25:50Z:sample-paid-pool-only-agent:decider.assign",
@@ -4237,6 +4209,26 @@
       "actionable": false,
       "summary": "resources.low_memory: true",
       "severity": "info"
+    },
+    {
+      "schema": "aios-system-event/v1",
+      "event_id": "70b4b972cde09abfcb94dce5",
+      "sequence": 10086,
+      "at_utc": "2026-10-31T14:34:22Z",
+      "type": "worker.captions",
+      "before": {
+        "state": "running",
+        "reason": "worker_exit",
+        "circuit_open": true
+      },
+      "after": {
+        "state": "failed",
+        "reason": "worker_exit",
+        "circuit_open": true
+      },
+      "actionable": false,
+      "summary": "worker.captions: {\"state\": \"failed\", \"reason\": \"worker_exit\", \"circuit_open\": true}",
+      "severity": "warning"
     }
   ],
   "ai_allowance": {
