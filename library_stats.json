@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-10-31 07:30 HKT",
-  "built_at_utc": "2026-10-30T23:30:28Z",
+  "built_at_hkt": "2026-10-31 18:20 HKT",
+  "built_at_utc": "2026-10-31T10:20:04Z",
   "items": 26170,
-  "transcripts_indexed": 14571,
-  "schema_gaps": 23853,
+  "transcripts_indexed": 14598,
+  "schema_gaps": 23870,
   "channels": 113,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -89,14 +89,14 @@
       "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "channel_name": "一个狠人",
       "item_count": 809,
-      "transcript_count": 722,
+      "transcript_count": 727,
       "schema_gap_count": 809
     },
     {
       "channel_id": "henren778",
       "channel_name": "一个狠人",
       "item_count": 809,
-      "transcript_count": 722,
+      "transcript_count": 727,
       "schema_gap_count": 809
     },
     {
