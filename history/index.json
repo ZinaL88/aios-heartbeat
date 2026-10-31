@@ -1,6 +1,6 @@
 {
   "schema": "aios-history/v1",
-  "latest": "2026-10-31T14:32:04Z",
+  "latest": "2026-10-31T14:34:45Z",
   "retention_days": 30,
   "checkpoints": [
     "2026-10-01.checkpoint.json",
@@ -59,5 +59,7 @@
     "2026-10-29.events.jsonl",
     "2026-10-30.events.jsonl",
     "2026-10-31.events.jsonl"
-  ]
+  ],
+  "reseeded_at_hkt": "2026-10-31 23:47 HKT",
+  "reseed_reason": "history chain diverged (last.after != status digest); blocked all mirror_public publishes"
 }
