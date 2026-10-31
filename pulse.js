@@ -65,12 +65,11 @@ function pull(){
     }catch(e){}
     if($("ping")) $("ping").textContent="live fetch failed";
   }
-  // Prefer raw (or relative), then Pages. Never jsDelivr (ignores ?t= and serves stale).
-  // Match index.html order: when Pages builds are broken/errored, raw still moves.
+  // Prefer Pages, then raw GitHub. Never jsDelivr (ignores ?t= and serves stale).
   var urls=[
+    "https://zinal88.github.io/aios-heartbeat/status.json?t="+Date.now(),
     "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t="+Date.now(),
-    "status.json?t="+Date.now(),
-    "https://zinal88.github.io/aios-heartbeat/status.json?t="+Date.now()
+    "status.json?t="+Date.now()
   ];
   function tryAt(i){
     if(i>=urls.length){ fail(); return; }
