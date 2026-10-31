@@ -1,47 +1,33 @@
 {
   "schema": "grok2-wall-handoff-live/v0",
-  "updated_at_hkt": "2026-10-30 23:16:24 HKT",
+  "updated_at_hkt": "2026-10-31 11:33:30 HKT",
   "token_free": true,
+  "continuous_refresh": {
+    "duty": "free maintainers refresh this strip continuously along the build — never wait for Z L reminder",
+    "standing_updates_at_hkt": "2026-10-31 11:32:38 HKT"
+  },
+  "standing_updates": [
+    "Free/box cron first for Decider + LE dispatch (Z L hard 2026-10-31). Scheduled Grok wake for free-doer work = FAIL. Brief: decider-first-principles-free-box-20261031.md (published in handoff/).",
+    "LE hop = box-only supercronic */15 9-22 -> run_assign_hop.sh. Grok \"Open idle LE auto-assign\" paused.",
+    "Instinct WA follow-up paused (usage); hourly 8-22 when resumed.",
+    "Pack gate ACCEPTED 2026-10-31 08:24 HKT. Continuously refresh this live strip on every material design/ops change — free doers own write/publish; Grok1 gates only. Never wait for Z L poke."
+  ],
   "usage_stamp": {
-    "schema": "grok1-usage-stamp/v0",
-    "stamped_at_hkt": "2026-10-30 22:45:45 HKT",
+    "pct": 83.3,
     "plan": "Cursor Pro",
-    "weekly_usage_pct": 74.1,
-    "resets_hkt": "2026-11-05 23:41 HKT",
-    "on_demand": "none — stops at included wall",
-    "line": "74.1% weekly used · resets Thu Nov 5 ~23:41 HKT · on-demand none (stops at wall) · stamped 2026-10-30 ~22:45 by Grok1 on natural wake"
+    "reset": "2026-11-05 23:41 HKT",
+    "stamped_at_hkt": "2026-10-31 08:24:13 HKT",
+    "note": "natural wake after inactivity check-in"
   },
   "queue_counts": {
-    "fail": 125,
-    "done": 32,
-    "claimed": 14,
-    "queued": 1,
+    "fail": 175,
+    "done": 42,
+    "claimed": 7,
     "cancelled": 1
   },
-  "open_n": 15,
+  "open_n": 7,
   "focus": {
-    "handoff": [
-      {
-        "job_id": "job-1297fe69296f4e2a",
-        "status": "claimed",
-        "title": "Decider: on Grok allowance reset→100% trigger autopull cron + handoff remind"
-      },
-      {
-        "job_id": "job-f294766f8a3d474d",
-        "status": "claimed",
-        "title": "Handoff pack: free-maintainer hop — refresh live + push verify CDN (Grok must not author)"
-      },
-      {
-        "job_id": "job-fa9044e895a44e62",
-        "status": "claimed",
-        "title": "P0: handoff prefer pages_base first (CDN @main stale v0)"
-      },
-      {
-        "job_id": "job-71a3271a495c4f57",
-        "status": "claimed",
-        "title": "REFINE handoff pack to GATE ACCEPT (Grok2 100% unambiguous)"
-      }
-    ],
+    "handoff": [],
     "decider": [
       {
         "job_id": "job-d3dd2996d38642bd",
@@ -57,16 +43,6 @@
         "job_id": "job-7aaf6e755c074214",
         "status": "claimed",
         "title": "Decider↔Z L: requirements intake + clarify-when-unclear (sit-room owner channel)"
-      },
-      {
-        "job_id": "job-812efcf7fb574bd1",
-        "status": "queued",
-        "title": "Decider product B: push next build — land G4+G6+G8 PR or continue open PR path"
-      },
-      {
-        "job_id": "job-1297fe69296f4e2a",
-        "status": "claimed",
-        "title": "Decider: on Grok allowance reset→100% trigger autopull cron + handoff remind"
       }
     ],
     "cold_spare": [
@@ -74,11 +50,6 @@
         "job_id": "job-5f9d44b76bf7422b",
         "status": "claimed",
         "title": "Cold spare box P0: failover plan for Heartbeat/ops (not VPS)"
-      },
-      {
-        "job_id": "job-28c14f15db814648",
-        "status": "claimed",
-        "title": "Cold spare box: inventory what primary box must replicate"
       },
       {
         "job_id": "job-37d1f89e53384c2b",
@@ -111,5 +82,6 @@
     "gemini_cli": "not required — use Free AI Studio API key / agy",
     "role": "coordinator/gatekeeper; free-first OpenCode→Gemini→Cursor→Codex"
   },
-  "base_brief": "/workspace/briefs/grok2-wall-handoff-20261030.md"
+  "base_brief": "/workspace/briefs/grok2-wall-handoff-20261030.md",
+  "first_principles_brief": "decider-first-principles-free-box-20261031.md"
 }

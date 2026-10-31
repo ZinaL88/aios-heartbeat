@@ -18,6 +18,14 @@
 OpenCode → Gemini (Free AI Studio API key / agy) → Cursor → Codex.  
 **Do not** burn Grok as primary doer. Grok = coordinator / gatekeeper only when allowance allows.
 
+## Box cron first (Z L hard 2026-10-31)
+- Dispatch of idle no-PIC work = **box cron / free process** (Decider + LE), never a Grok routine wake. A scheduled **Grok wake for free-doer work = design defect = FAIL**.
+- The Open idle LE hop is **box supercronic `*/15 9-22` → `run_assign_hop.sh`** (box that owns the repo). The Grok "Open idle LE auto-assign" routine is **paused**.
+- Grok wakes only for Z-L-facing results (decision, gate, secret, unblock); active-only digests stay in files/log/board.
+- If a hop already exists as shell (`run_assign_hop.sh`, `run_decider.sh`, handoff seed), wire supercronic/aios.crontab first; pause any Grok duplicate.
+- Any new "monitor X every N min" defaults to box cron; proposing a Grok routine for that class is a design defect. Brief: `decider-first-principles-free-box-20261031.md`.
+- **Continuous pack refresh duty (free maintainers):** refresh `aios-heartbeat/handoff/` + live strip continuously along the build; commit + push so Pages updates; never wait for Z L to remind. Doers never self-accept (`ACCEPTED` lives in the Grok1 gate-review brief).
+
 ## Never
 - Park idle no-PIC work.
 - Ask Z L to paste, open Drive, or fill vault/config forms.
@@ -25,6 +33,7 @@ OpenCode → Gemini (Free AI Studio API key / agy) → Cursor → Codex.
 - Install Grok2 autopull on the Grok1 primary box.
 - Open WhatsApp Web outside Grok1 Fork-5 on the primary box.
 - Rely on Instinct WA to wake Grok2 while Grok2 is at 0 tokens.
+- Wake Grok on a schedule for free-doer work (box cron first — FAIL if violated).
 
 ## Decider (core)
 Always monitor bot/agent allowances. When a Grok seat **resets to 100%**, trigger install of handoff autopull cron **on that bot’s own box** and remind it to read this playbook pack.
@@ -35,4 +44,5 @@ Always monitor bot/agent allowances. When a Grok seat **resets to 100%**, trigge
 - `grok2-wall-handoff-20261030.md`
 - `wall-pickup-codex-gemini-20261030.md`
 - `decider-allowance-reset-handoff-trigger-20261030.md`
+- `decider-first-principles-free-box-20261031.md`
 - `ask-lizheng-blocker-path-20261030.md`

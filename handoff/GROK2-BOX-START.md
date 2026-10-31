@@ -12,6 +12,7 @@
 2. **Token-0 path: while your own allowance is at 0%, the seed for this bootstrap is the product Decider detecting your reset → 100% and firing the autopull install on this box.** Do **NOT** wait on Instinct WA to wake or seed you — that path is dead and explicitly banned.
 3. **No WhatsApp on this box.** WA Fork-5 on the primary is Grok1-only; you never open a competing WA session there.
 4. **Secrets:** path names only, never values (tokens, cookies, PATs).
+5. **Free/box cron first (Z L hard 2026-10-31):** dispatch of idle no-PIC work = box cron / free process (Decider + LE), never a scheduled Grok wake. A **Grok wake for free-doer dispatch = FAIL**. The LE hop is **box supercronic `*/15 9-22` → `run_assign_hop.sh`**; the Grok "Open idle LE auto-assign" routine is **paused**. Grok wakes only when a result must hit Z L’s chat (decision, gate, secret, unblock). Brief: `decider-first-principles-free-box-20261031.md`.
 
 ---
 
@@ -35,9 +36,10 @@
    */30 * * * * $HOME/bin/grok2_handoff_autopull.sh >> $HOME/briefs/grok2-handoff/autopull.log 2>&1
    ```
    Use the box scheduler (crontab/supercronic/systemd timer). Token-free — never a Grok status ticker.
-4. **Read the two core playbooks** (now in `~/briefs/grok2-handoff/`):
-   - `loop-engineering-playbook-20261030.md` — the Loop Engineering method: claim → spawn ≥3 free doers → checker ≠ doer → close/escalate; free-first ladder OpenCode → Gemini (API/agy) → Cursor → Codex; never park idle no-PIC work; never install this puller on the primary.
-   - `grok2-wall-handoff-20261030.md` — the wall playbook: trigger conditions, role after takeover, hard gates needing Z L (`merge / deploy / spend / WA-speak-as-Z L / hard-reset`), first-60-minutes checklist, token discipline.
+4. **Read the core playbooks** (now in `~/briefs/grok2-handoff/`):
+   - `loop-engineering-playbook-20261030.md` — the Loop Engineering method: claim → spawn ≥3 free doers → checker ≠ doer → close/escalate; free-first ladder OpenCode → Gemini (API/agy) → Cursor → Codex; never park idle no-PIC work; never install this puller on the primary; **box cron first** — the LE hop is supercronic `*/15 9-22` → `run_assign_hop.sh`, and scheduled Grok wakes for free-doer work = FAIL.
+   - `decider-first-principles-free-box-20261031.md` — standing dispatch rules: free/box cron first (Decider + LE); Grok wakes only for Z-L-facing results; new monitors default to box cron.
+   - `grok2-wall-handoff-20261030.md` — the wall playbook: trigger conditions, role after takeover, hard gates needing Z L (`merge / deploy / spend / WA-speak-as-Z L / hard-reset`), first-60-minutes checklist, token discipline, **continuous pack refresh duty**.
    Full file map: `index.json` (same directory). Every listed file is pulled by step 2.
 5. **Claim idle work.** Now that you have the method:
    - Inventory open sit-room/fleet/LE tickets with **no PIC** or a stale claim (`alive_workers=0` = FAIL).
@@ -45,6 +47,7 @@
    - Spawn real free doers the **same turn**. Checker never equals doer.
    - Leave a short status stub where the box keeps notes: what you claimed, who is PIC, blockers for Z L.
    - Hard-gate blockers: draft + ask Z L. Tech-methodology judgment calls: `https://ask.lizheng.ai/` (public, no secrets); playbook `ask-lizheng-blocker-path-20261030.md`.
+6. **Keep the pack fresh (continuous duty).** This bootstrap plus the playbooks are maintained continuously along the build — as a free maintainer, fold material design/ops changes into `handoff/` (and the live strip) **same-turn**: edit → `index.json` if new files → commit → push so Pages (`pages_base`, `prefer[0]`) refreshes. **Never wait for Z L’s reminder.** Doers never self-accept: gate stamp `ACCEPTED` lives only in the Grok1 gate-review brief.
 
 ---
 
@@ -57,4 +60,4 @@
 
 ---
 
-*No secrets in this file. Written 2026-10-30 HKT. Supersedes the paste-wording bootstrap; `GROK2-PASTE-BOOTSTRAP-20261030.md` is kept only as a deprecated alias.*
+*No secrets in this file. Written 2026-10-30 HKT. Updated 2026-10-31 HKT: free/box cron first (Grok wake for free dispatch = FAIL), LE hop = supercronic `run_assign_hop.sh` (Grok Open idle LE paused), continuous pack refresh duty for free maintainers. Supersedes the paste-wording bootstrap; `GROK2-PASTE-BOOTSTRAP-20261030.md` is kept only as a deprecated alias.*

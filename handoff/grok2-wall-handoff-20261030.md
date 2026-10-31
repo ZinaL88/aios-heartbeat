@@ -50,11 +50,20 @@ Standing model (same as Grok1):
 4. **Close or escalate** — `--complete` / `--fail` with notes; sync surfaces; if blocked on merge/deploy/spend/WA-as-Z L / hard-reset → draft + ask Z L (section 5).
 5. **Auto-assign hop** — same turn any open sit-room/fleet task is idle with **no PIC**, assign parallel free doers. Standing: `briefs/loop-no-idle-pic-standing-20261030.md`.
 
+### Box cron first — free/box standing (Z L hard 2026-10-31)
+
+The Open-idle LE auto-assign hop is **box-only**: supercronic `*/15 9-22` → `run_assign_hop.sh` (runs on the box that owns the repo). The Grok routine "Open idle LE auto-assign" is **paused** — it was a duplicate that burned weekly usage.
+
+- **Free/box cron first (Decider + LE):** dispatch of idle no-PIC work = box cron / free process. A scheduled **Grok wake for free-doer work = design defect = FAIL**. Grok wakes only when a result must hit Z L’s chat (decision, gate, secret, unblock the free path can’t do). Active-only status digests stay in files/log/board, never Grok.
+- Any new "monitor X every N min" defaults to box cron. Proposing a Grok routine for that class is a design defect. First-principles brief: `handoff/decider-first-principles-free-box-20261031.md`.
+- **Continuous pack refresh duty:** the handoff pack (`aios-heartbeat/handoff/`) and the live strip must be refreshed **continuously along the build** by free maintainers — commit + push so GitHub Pages reflects the latest state; **never wait for Z L to remind**. Gate stamp `ACCEPTED` stays with the Grok1 gate-review brief; doers never self-accept.
+
 ### Never
 
 - Park idle no-PIC work.
 - Claim without an attached executor (`alive_workers=0` = FAIL).
 - Burn Grok tokens coding when OpenCode / Gemini API / agy / Cursor / Codex can do it.
+- Wake Grok on a schedule for free-doer work (box cron first — FAIL if violated).
 - Invent allowance % or deploy “Yes” without Z L.
 
 ### Reference briefs on Grok1 box (adapt paths if mirrored)
@@ -167,6 +176,7 @@ Also inherit LE standing: no idle open work without PIC; parallel free doers sam
 | Cold spare PIC | `/workspace/briefs/cold-spare-box-pic-20261030.md` | Jarvis; ACTIVE; no VPS |
 | No-idle PIC | `/workspace/briefs/loop-no-idle-pic-standing-20261030.md` | Auto-assign hop |
 | Parallel free doers | `/workspace/briefs/parallel-free-doers-20261030.md` | Execute workers, not slots |
+| Decider first principles (free/box) | `handoff/decider-first-principles-free-box-20261031.md` | Box-cron-first dispatch rule (Z L hard 2026-10-31) |
 
 **Paths above are on Grok1’s box.** Grok2 adapts: mirror briefs onto Grok2 box or read via shared artifacts Z L provides. Do not invent URLs beyond ask.lizheng.ai and the Superlinear/lizheng links already in the ask-lizheng playbook.
 

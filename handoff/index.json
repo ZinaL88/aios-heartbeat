@@ -1,6 +1,6 @@
 {
   "schema": "aios-wall-handoff-pack/v1",
-  "updated_at_hkt": "2026-10-30 23:17 HKT",
+  "updated_at_hkt": "2026-10-31 11:35 HKT",
   "audience": [
     "grok2",
     "codex",
@@ -21,6 +21,7 @@
   "live_json": "grok2-wall-handoff-live.json",
   "delivery": "grok2-handoff-delivery-20261030.md",
   "decider_reset_trigger": "decider-allowance-reset-handoff-trigger-20261030.md",
+  "decider_first_principles_free_box": "decider-first-principles-free-box-20261031.md",
   "ask_lizheng": "ask-lizheng-blocker-path-20261030.md",
   "autopull": "grok2_handoff_autopull.sh",
   "pages_base": "https://zinal88.github.io/aios-heartbeat/handoff/",
@@ -32,5 +33,5 @@
     "raw_base"
   ],
   "auto": true,
-  "note": "Grok2 bootstrap is GROK2-BOX-START.md: base = aios-wall-handoff-pack/v1, prefer[0] = pages_base (Pages\u2192CDN\u2192raw), autopull pulls every file below (Pages\u2192CDN\u2192raw), cron */30 on the GROK2 box only (wrong-host ban: never install on Grok1 primary; a curl fetch probe is the only tolerated dry-run, documented in GROK2-BOX-START.md). Token-0: seed = Decider reset\u2192100% fires autopull install on the Grok2 box; never wait on Instinct WA. Old GROK2-PASTE-BOOTSTRAP-20261030.md is a deprecated alias. Doer does not self-accept; gate stamp ACCEPTED lives only in the Grok1 gate-review brief."
+  "note": "Grok2 bootstrap is GROK2-BOX-START.md: base = aios-wall-handoff-pack/v1, prefer[0] = pages_base (Pages\u2192CDN\u2192raw), autopull pulls every file below (Pages\u2192CDN\u2192raw), cron */30 on the GROK2 box only (wrong-host ban: never install on Grok1 primary; a curl fetch probe is the only tolerated dry-run, documented in GROK2-BOX-START.md). Token-0: seed = Decider reset\u2192100% fires autopull install on the Grok2 box; never wait on Instinct WA. Old GROK2-PASTE-BOOTSTRAP-20261030.md is a deprecated alias. 2026-10-31 standing (Z L hard): free/box cron first \u2014 Decider+LE dispatch = box cron / free process; scheduled Grok wake for free-doer work = FAIL; LE hop = supercronic */15 9-22 \u2192 run_assign_hop.sh, Grok Open idle LE routine paused (see decider_first_principles_free_box). Free maintainers refresh this pack continuously along the build \u2014 never wait on a Z L reminder. Doer does not self-accept; gate stamp ACCEPTED lives only in the Grok1 gate-review brief."
 }
