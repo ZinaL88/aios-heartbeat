@@ -1,31 +1,22 @@
 {
   "schema": "grok2-wall-handoff-live/v0",
-  "updated_at_hkt": "2026-10-31 11:33:30 HKT",
+  "updated_at_hkt": "2026-10-31 11:46:19 HKT",
   "token_free": true,
-  "continuous_refresh": {
-    "duty": "free maintainers refresh this strip continuously along the build — never wait for Z L reminder",
-    "standing_updates_at_hkt": "2026-10-31 11:32:38 HKT"
-  },
-  "standing_updates": [
-    "Free/box cron first for Decider + LE dispatch (Z L hard 2026-10-31). Scheduled Grok wake for free-doer work = FAIL. Brief: decider-first-principles-free-box-20261031.md (published in handoff/).",
-    "LE hop = box-only supercronic */15 9-22 -> run_assign_hop.sh. Grok \"Open idle LE auto-assign\" paused.",
-    "Instinct WA follow-up paused (usage); hourly 8-22 when resumed.",
-    "Pack gate ACCEPTED 2026-10-31 08:24 HKT. Continuously refresh this live strip on every material design/ops change — free doers own write/publish; Grok1 gates only. Never wait for Z L poke."
-  ],
   "usage_stamp": {
-    "pct": 83.3,
+    "pct": 88.0,
     "plan": "Cursor Pro",
     "reset": "2026-11-05 23:41 HKT",
-    "stamped_at_hkt": "2026-10-31 08:24:13 HKT",
-    "note": "natural wake after inactivity check-in"
+    "stamped_at_hkt": "2026-10-31 11:45:00 HKT",
+    "note": "88% stamped 2026-10-31 ~11:45 from natural wake share request (token-save → Grok2); no paid usage poll",
+    "line": "Grok1 ~88% week · stamped 2026-10-31 11:45 HKT (natural wake; token-save share for Grok2) · reset 2026-11-05 23:41 HKT"
   },
   "queue_counts": {
-    "fail": 175,
-    "done": 42,
-    "claimed": 7,
+    "fail": 191,
+    "done": 43,
+    "claimed": 8,
     "cancelled": 1
   },
-  "open_n": 7,
+  "open_n": 8,
   "focus": {
     "handoff": [],
     "decider": [
@@ -43,6 +34,11 @@
         "job_id": "job-7aaf6e755c074214",
         "status": "claimed",
         "title": "Decider↔Z L: requirements intake + clarify-when-unclear (sit-room owner channel)"
+      },
+      {
+        "job_id": "job-3c3592ff644e459a",
+        "status": "claimed",
+        "title": "Decider: encode free/box-first standing + CHECKER"
       }
     ],
     "cold_spare": [
@@ -60,7 +56,7 @@
   },
   "briefs": {
     "handoff_base": true,
-    "handoff_base_bytes": 10461,
+    "handoff_base_bytes": 12168,
     "cold_inventory": true,
     "cold_plan": true,
     "cold_options": true,
@@ -83,5 +79,14 @@
     "role": "coordinator/gatekeeper; free-first OpenCode→Gemini→Cursor→Codex"
   },
   "base_brief": "/workspace/briefs/grok2-wall-handoff-20261030.md",
-  "first_principles_brief": "decider-first-principles-free-box-20261031.md"
+  "standing_updates": [
+    "Free/box cron first (Decider+LE); Grok wake for free dispatch = FAIL",
+    "LE hop = box supercronic run_assign_hop.sh; Grok Open idle LE paused",
+    "Instinct WA follow-up paused; hourly when resumed",
+    "Continuous pack refresh — free doers; Grok1 gates only",
+    "Token-save playbook published: token-save-playbook-grok2-20261031.md (Grok1→Grok2); §9 pointer; free doer publish"
+  ],
+  "token_save_playbook": "token-save-playbook-grok2-20261031.md",
+  "first_principles_brief": "decider-first-principles-free-box-20261031.md",
+  "continuous_refresh": true
 }

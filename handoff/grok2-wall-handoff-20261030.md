@@ -159,6 +159,7 @@ Also inherit LE standing: no idle open work without PIC; parallel free doers sam
 3. Watch **Grok2’s own** weekly allowance; if you near wall, prepare the next handoff early (same pattern).
 4. Prefer ask.lizheng.ai for judgment blockers over long Grok essays.
 5. Heartbeat / status cadence must stay **token-free** (loops / supercronic / HC / Pages) — no Grok status ticker.
+6. **Full playbook:** `token-save-playbook-grok2-20261031.md` (Grok1 proven cuts + anti-patterns + day-1 checklist; 2026-10-31).
 
 ---
 
@@ -177,6 +178,7 @@ Also inherit LE standing: no idle open work without PIC; parallel free doers sam
 | No-idle PIC | `/workspace/briefs/loop-no-idle-pic-standing-20261030.md` | Auto-assign hop |
 | Parallel free doers | `/workspace/briefs/parallel-free-doers-20261030.md` | Execute workers, not slots |
 | Decider first principles (free/box) | `handoff/decider-first-principles-free-box-20261031.md` | Box-cron-first dispatch rule (Z L hard 2026-10-31) |
+| Token-save playbook (Grok1→Grok2) | `handoff/token-save-playbook-grok2-20261031.md` | Hard rules, cuts, anti-patterns, day-1 checklist |
 
 **Paths above are on Grok1’s box.** Grok2 adapts: mirror briefs onto Grok2 box or read via shared artifacts Z L provides. Do not invent URLs beyond ask.lizheng.ai and the Superlinear/lizheng links already in the ask-lizheng playbook.
 
