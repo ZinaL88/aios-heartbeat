@@ -1774,6 +1774,7 @@
   }
  }
 }</script>
+<script src="aios-nav.js" defer></script>
 </head>
 <body>
   <!-- 1. FIXED TOP-LEFT PANEL: "What needs you now" -->
@@ -2578,6 +2579,7 @@
               <span>📋</span> <span>${esc(String(building.code))}</span>
             </button>
           </div>` : ""}
+        <div class="side-card-action" id="cardJump">${(window.AIOSNav ? (() => { const l = AIOSNav.links(building.code || building.id, AIOSNav.base()); return `<a href="${l.board}">Board</a>` + (l.room ? ` · <a href="${esc(l.room)}" target="_blank" rel="noopener">SIT ROOM thread ↗</a> · <a href="${esc(l.jobs)}" target="_blank" rel="noopener">Job card ↗</a>` : ""); })() : "")}</div>
       `;
 
       const copyBtn = $("cardCopyBtn");
@@ -3076,7 +3078,14 @@
     lastPayload = JSON.stringify({ nodes: SNAPSHOT.nodes, buildings: SNAPSHOT.buildings, edges: safeArray(SNAPSHOT.edges) });
     updateStatus("snapshot");
     initControls();
-    loadData();
+    window.aiosSelectTask = function (t) {
+      for (const [id, f] of buildingIndex) if (id === t || String(f.building.code || "") === t) { selectJob(id, true); return true; }
+      return false;
+    };
+    Promise.resolve(loadData()).then(() => {
+      const t = new URLSearchParams(location.search).get("task");
+      if (t) window.aiosSelectTask(t);
+    });
     setInterval(loadData, 120000);
     pullHb();
     setInterval(pullHb, 30000);
