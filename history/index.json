@@ -1,6 +1,6 @@
 {
   "schema": "aios-history/v1",
-  "latest": "2026-11-02T23:57:04Z",
+  "latest": "2026-11-03T00:27:46Z",
   "retention_days": 30,
   "checkpoints": [
     "2026-10-05.checkpoint.json",
@@ -30,7 +30,8 @@
     "2026-10-30.checkpoint.json",
     "2026-10-31.checkpoint.json",
     "2026-11-01.checkpoint.json",
-    "2026-11-02.checkpoint.json"
+    "2026-11-02.checkpoint.json",
+    "2026-11-03.checkpoint.json"
   ],
   "event_files": [
     "2026-10-05.events.jsonl",
