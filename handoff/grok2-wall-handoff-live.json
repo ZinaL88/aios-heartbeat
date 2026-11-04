@@ -1,6 +1,6 @@
 {
   "schema": "grok2-wall-handoff-live/v0",
-  "updated_at_hkt": "2026-11-04 15:11:05 HKT",
+  "updated_at_hkt": "2026-11-04 15:15:00 HKT",
   "token_free": true,
   "usage_stamp": {
     "pct": 90.5,
@@ -10,7 +10,7 @@
     "note": "natural wake — Z L wall-control focus; Grok1~88% of week share"
   },
   "queue_counts": {
-    "fail": 294,
+    "fail": 298,
     "done": 48,
     "claimed": 15,
     "cancelled": 1,
