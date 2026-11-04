@@ -2,7 +2,7 @@
 # Any box (Grok2/Codex/Gemini host): curl public wall handoff pack — no Z L paste.
 set -euo pipefail
 DEST="${GROK2_HANDOFF_DIR:-$HOME/briefs/grok2-handoff}"
-CDN="https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@b6d87c033/handoff"
+CDN="https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@58a893a67991bb13b3f0a58bf5e9884ef2e66000/handoff"
 PAGES="https://zinal88.github.io/aios-heartbeat/handoff"
 RAW="https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/handoff"
 mkdir -p "$DEST"

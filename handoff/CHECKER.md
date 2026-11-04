@@ -53,6 +53,16 @@ script tolerates these skips. Known FAIL at re-verify time: live strip freshness
 is with the status writer, not the pack content. Reported to the gate-review
 brief; not fixed from the refine side in this same window.
 
+## Pin refresh (2026-11-04 15:1x HKT, free doer fix)
+
+The open finding from the 2026-10-31 REFINE checker pass (stale `cdn_base`
+pin `@b6d87c033` → 404 on `GROK2-BOX-START.md`, old paste-era `index.json`)
+was fixed: `cdn_base` and the autopull `CDN=` var now pin
+`@58a893a67991bb13b3f0a58bf5e9884ef2e66000` (contains the deprecated PASTE
+stub, `GROK2-BOX-START.md`, `acceptance-checklist.md`, fresh strip). Verdict
+unchanged: checker PASS items only; gate stamp `ACCEPTED` still belongs to
+the Grok1 reviewer only.
+
 ## Verdict
 
 Independent checker verdict for the curl table: **PASS** (14/14 at 23:2x, 2026-10-30).

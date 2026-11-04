@@ -25,7 +25,7 @@
   "ask_lizheng": "ask-lizheng-blocker-path-20261030.md",
   "autopull": "grok2_handoff_autopull.sh",
   "pages_base": "https://zinal88.github.io/aios-heartbeat/handoff/",
-  "cdn_base": "https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@b6d87c033/handoff/",
+  "cdn_base": "https://cdn.jsdelivr.net/gh/ZinaL88/aios-heartbeat@58a893a67991bb13b3f0a58bf5e9884ef2e66000/handoff/",
   "raw_base": "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/handoff/",
   "prefer": [
     "pages_base",
