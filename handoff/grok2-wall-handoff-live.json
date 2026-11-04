@@ -1,22 +1,22 @@
 {
   "schema": "grok2-wall-handoff-live/v0",
-  "updated_at_hkt": "2026-10-31 11:46:19 HKT",
+  "updated_at_hkt": "2026-11-04 15:11:05 HKT",
   "token_free": true,
   "usage_stamp": {
-    "pct": 88.0,
+    "pct": 90.5,
     "plan": "Cursor Pro",
     "reset": "2026-11-05 23:41 HKT",
-    "stamped_at_hkt": "2026-10-31 11:45:00 HKT",
-    "note": "88% stamped 2026-10-31 ~11:45 from natural wake share request (token-save → Grok2); no paid usage poll",
-    "line": "Grok1 ~88% week · stamped 2026-10-31 11:45 HKT (natural wake; token-save share for Grok2) · reset 2026-11-05 23:41 HKT"
+    "stamped_at_hkt": "2026-10-31 11:57:56 HKT",
+    "note": "natural wake — Z L wall-control focus; Grok1~88% of week share"
   },
   "queue_counts": {
-    "fail": 191,
-    "done": 43,
-    "claimed": 8,
-    "cancelled": 1
+    "fail": 294,
+    "done": 48,
+    "claimed": 15,
+    "cancelled": 1,
+    "queued": 1
   },
-  "open_n": 8,
+  "open_n": 16,
   "focus": {
     "handoff": [],
     "decider": [
@@ -39,6 +39,11 @@
         "job_id": "job-3c3592ff644e459a",
         "status": "claimed",
         "title": "Decider: encode free/box-first standing + CHECKER"
+      },
+      {
+        "job_id": "job-33d859b1b97c4f53",
+        "status": "claimed",
+        "title": "OWNER REFINE: Arena Decider plan/review rung (Z L ✅ t393)"
       }
     ],
     "cold_spare": [
@@ -78,15 +83,5 @@
     "gemini_cli": "not required — use Free AI Studio API key / agy",
     "role": "coordinator/gatekeeper; free-first OpenCode→Gemini→Cursor→Codex"
   },
-  "base_brief": "/workspace/briefs/grok2-wall-handoff-20261030.md",
-  "standing_updates": [
-    "Free/box cron first (Decider+LE); Grok wake for free dispatch = FAIL",
-    "LE hop = box supercronic run_assign_hop.sh; Grok Open idle LE paused",
-    "Instinct WA follow-up paused; hourly when resumed",
-    "Continuous pack refresh — free doers; Grok1 gates only",
-    "Token-save playbook published: token-save-playbook-grok2-20261031.md (Grok1→Grok2); §9 pointer; free doer publish"
-  ],
-  "token_save_playbook": "token-save-playbook-grok2-20261031.md",
-  "first_principles_brief": "decider-first-principles-free-box-20261031.md",
-  "continuous_refresh": true
+  "base_brief": "/workspace/briefs/grok2-wall-handoff-20261030.md"
 }
