@@ -2793,7 +2793,7 @@
     const HB_STALE_MS = 5 * 60 * 1000;
     let hbBusy = false;
     const hbBest = { payload: null, age: Infinity };
-    const HB_SOURCE_NAMES = ["raw.githubusercontent.com", "github.io Pages", "same-directory copy"];
+    const HB_SOURCE_NAMES = ["raw.githubusercontent.com", "same-directory copy", "github.io Pages"];
 
     const statusUrls = () => [
       withTs(RAW_BASE, "status.json"),
@@ -2815,7 +2815,7 @@
       if (state === "fresh") {
         statusEl.className = "live-status live";
         statusEl.textContent = `heartbeat live · ${stamp} · ${detail}`;
-        statusEl.title = `status.json written_at fresh (< 5 min), fetched from ${detail}. URL order: raw.githubusercontent → relative → Pages. Refetch every 30 s.`;
+        statusEl.title = `status.json written_at fresh (< 5 min), sourced from ${detail}. URL order: raw.githubusercontent → relative → Pages. Refetch every 30 s.`;
       } else if (state === "stale") {
         statusEl.className = "live-status stale";
         statusEl.textContent = `STALE · ${detail.mins} min ago · heartbeat written ${stamp}`;
