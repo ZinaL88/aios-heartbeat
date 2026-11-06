@@ -445,13 +445,13 @@
     "library_tx_441.json",
     "library_tx_442.json"
   ],
-  "items": 11413,
+  "items": 11417,
   "missing_files": 49,
   "max_chars": 200000,
   "truncated_items": 1695,
   "target_shard_bytes": 1750000,
-  "avg_chars": 54559,
+  "avg_chars": 54541,
   "note": "Map videoId → full transcript text (string), or {text,chars,full_chars,truncated:true} when over max_chars. Lazy-loaded by library-search.html.",
-  "built_at_hkt": "2026-11-01 00:01 HKT",
-  "built_at_utc": "2026-10-31T16:01:08Z"
+  "built_at_hkt": "2026-11-06 16:12 HKT",
+  "built_at_utc": "2026-11-06T08:12:59Z"
 }

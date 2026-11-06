@@ -963,6 +963,20 @@
     /* ================= MERGED LIVE MAP ADDITIONS ================= */
     .live-status-wrap {
       padding: 7px 12px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    .live-status.stale {
+      color: #7b2c12;
+      border-color: #e4a79b;
+      background: #ffece8;
+    }
+    .live-status.stale::before {
+      background: #c0392b;
+      box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
     }
 
     .live-status {
@@ -1772,8 +1786,9 @@
       </div>
       <button class="panel-toggle-btn" id="needsCollapseBtn" type="button" aria-label="Toggle panel">Hide</button>
     </div>
-    <div class="live-status-wrap">
+              <div class="live-status-wrap">
       <span class="live-status snapshot" id="liveStatus" role="status">snapshot, not live · loading</span>
+      <span class="live-status connecting" id="hbFresh">heartbeat freshness · checking…</span>
     </div>
         <div class="needs-list" id="needsList"></div>
   </aside>
@@ -1916,11 +1931,31 @@
   <script>
     /* =========================================================================
        DATA LAYER
-       - inline snapshot = the real ops export, used when ./map-data.json cannot
-         be fetched (for example when this file is opened with file://).
-       - re-reads ./map-data.json every 2 minutes; the file is a static snapshot and no generator refreshes it.
-       ========================================================================= */
+       - RAW-FIRST URL order (same freshness bar as the board after pulse.js):
+         raw.githubusercontent.com ZinaL88/aios-heartbeat → github.io Pages →
+         relative ./ file (covers file:// openings and local mirrors). Raw moves
+         with every publish commit even when GitHub Pages builds error or keep
+         serving the last good deploy, so raw comes first.
+       - inline snapshot = the real ops export, used when NO map-data.json source
+         can be fetched (for example file:// with no network).
+       - re-reads map-data.json every 2 minutes; the file is a static snapshot and
+         no generator refreshes it — heartbeat freshness comes from status.json
+         (written_at), polled every 30 s below.
+        ========================================================================= */
     const SNAPSHOT = JSON.parse(document.getElementById("snapshot-data").textContent);
+    /* RAW-FIRST sources: raw.git first (moves with every publish commit even when
+       Pages builds error / serve the last good deploy), then Pages, then relative
+       (file:// and local mirrors). Map data uses ?v=24 cache-bust like the board. */
+    const RAW_BASE = "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/";
+    const PAGES_BASE = "https://zinal88.github.io/aios-heartbeat/";
+    const withTs = (base, file, version) =>
+      `${base}${file}?${version ? `v=${version}&` : ""}t=${Date.now()}`;
+    const mapDataUrls = () => [
+      withTs(RAW_BASE, "map-data.json", 24),
+      withTs(PAGES_BASE, "map-data.json", 24),
+      withTs("", "./map-data.json", 24)
+    ];
+    window.__mapDataUrls = mapDataUrls;
     const SVG_NS = "http://www.w3.org/2000/svg";
     const $ = (id) => document.getElementById(id);
     const safeArray = (value) => Array.isArray(value) ? value : [];
@@ -2726,21 +2761,125 @@
     };
 
     async function loadData() {
-      try {
-        const response = await fetch("./map-data.json?v=24&t=" + Date.now(), { cache: "no-store" });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        applyLivePayload(await response.json());
-      } catch (error) {
-        console.warn("Live map fetch failed; using the inline snapshot.", error);
-        if (!live) {
-          if (!current) {
-            renderAll(SNAPSHOT);
-            lastPayload = JSON.stringify({ nodes: SNAPSHOT.nodes, buildings: SNAPSHOT.buildings, edges: safeArray(SNAPSHOT.edges) });
-          }
-          updateStatus("snapshot");
-        } else {
-          updateStatus("refresh-failed");
+      const urls = mapDataUrls();
+      for (let i = 0; i < urls.length; i += 1) {
+        try {
+          const response = await fetch(urls[i], { cache: "no-store", credentials: "omit" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          applyLivePayload(await response.json());
+          return;
+        } catch (error) {
+          console.warn(`Map data source ${i + 1}/${urls.length} missed.`, error);
         }
+      }
+      if (!live) {
+        if (!current) {
+          renderAll(SNAPSHOT);
+          lastPayload = JSON.stringify({ nodes: SNAPSHOT.nodes, buildings: SNAPSHOT.buildings, edges: safeArray(SNAPSHOT.edges) });
+        }
+        updateStatus("snapshot");
+      } else {
+        updateStatus("refresh-failed");
+      }
+    }
+
+    /* =========================================================================
+       HEARTBEAT FRESHNESS (status.json, raw-first, 30 s)
+       Same pattern as the board index.html pull(): never paint a payload older
+       than the STALE bar while a fresher source may exist (skip stale → try
+       next); if every source is stale, paint the freshest copy with an honest
+       amber STALE label. Map bar is 5 min per the map freshness P0.
+        ========================================================================= */
+    const HB_STALE_MS = 5 * 60 * 1000;
+    let hbBusy = false;
+    const hbBest = { payload: null, age: Infinity };
+    const HB_SOURCE_NAMES = ["raw.githubusercontent.com", "github.io Pages", "same-directory copy"];
+
+    const statusUrls = () => [
+      withTs(RAW_BASE, "status.json"),
+      withTs("", "./status.json"),
+      withTs(PAGES_BASE, "status.json")
+    ];
+
+    function hbTimed(url) {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 8000);
+      return fetch(url, { cache: "no-store", credentials: "omit", signal: controller.signal })
+        .finally(() => clearTimeout(timer));
+    }
+
+    function paintHb(state, payload, detail) {
+      const statusEl = $("hbFresh");
+      if (!statusEl) return;
+      const stamp = payload && payload.written_at_hkt ? payload.written_at_hkt : "time missing";
+      if (state === "fresh") {
+        statusEl.className = "live-status live";
+        statusEl.textContent = `heartbeat live · ${stamp} · ${detail}`;
+        statusEl.title = `status.json written_at fresh (< 5 min), fetched from ${detail}. URL order: raw.githubusercontent → relative → Pages. Refetch every 30 s.`;
+      } else if (state === "stale") {
+        statusEl.className = "live-status stale";
+        statusEl.textContent = `STALE · ${detail.mins} min ago · heartbeat written ${stamp}`;
+        statusEl.title = "Every status.json source is older than the 5 min STALE bar; showing the freshest copy that any source returned. Same skip-stale behavior as the board heartbeat pill.";
+      } else if (state === "checking") {
+        statusEl.className = "live-status connecting";
+        statusEl.textContent = "heartbeat freshness · checking…";
+        statusEl.title = "Fetching status.json (raw.githubusercontent → relative → Pages).";
+      } else {
+        statusEl.className = "live-status snapshot";
+        statusEl.textContent = "heartbeat freshness · fetch failed";
+        statusEl.title = "All status.json sources missed (raw, relative, Pages) and no fresh cached copy. This line never greys out or disables anything; the board (index.html) keeps its own heartbeat controls.";
+      }
+    }
+
+    async function pullHb() {
+      if (hbBusy) return;
+      hbBusy = true;
+      hbBest.payload = null;
+      hbBest.age = Infinity;
+      paintHb("checking");
+      try {
+        const urls = statusUrls();
+        for (let i = 0; i < urls.length; i += 1) {
+          try {
+            const response = await hbTimed(urls[i]);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const payload = await response.json();
+            const utc = payload && payload.written_at_utc ? Date.parse(payload.written_at_utc) : NaN;
+            const age = Number.isNaN(utc) ? Infinity : Date.now() - utc;
+            // Board rule: a copy can stick for hours on a stale CDN while the
+            // next source is fresh — never paint stale while another source
+            // might still be under the bar.
+            if (!(age < HB_STALE_MS)) {
+              if (age < hbBest.age) {
+                hbBest.payload = payload;
+                hbBest.age = age;
+              }
+              continue;
+            }
+            try { localStorage.setItem("aios-hb-v1", JSON.stringify(payload)); } catch (err) {}
+            paintHb("fresh", payload, HB_SOURCE_NAMES[i] || `source ${i + 1}`);
+            return;
+          } catch (error) {
+            console.warn(`status.json source ${i + 1}/${urls.length} missed.`, error);
+          }
+        }
+        if (hbBest.payload) {
+          paintHb("stale", hbBest.payload, { mins: Math.round(hbBest.age / 60000) });
+          return;
+        }
+        let doc = null;
+        try {
+          const cached = localStorage.getItem("aios-hb-v1");
+          doc = cached ? JSON.parse(cached) : null;
+        } catch (err) {}
+        const ts = doc && doc.written_at_utc ? Date.parse(doc.written_at_utc) : NaN;
+        if (doc && !Number.isNaN(ts) && Date.now() - ts < HB_STALE_MS) {
+          paintHb("fresh", doc, "cached copy (fetches failed)");
+        } else {
+          paintHb("failed");
+        }
+      } finally {
+        hbBusy = false;
       }
     }
 
@@ -2939,13 +3078,17 @@
     initControls();
     loadData();
     setInterval(loadData, 120000);
+    pullHb();
+    setInterval(pullHb, 30000);
 
 
   </script>
 
 <script>
 (function(){
-  // Public live wire: refresh counts/status from map-data.json every 120s (snapshot is fallback).
+  // Public live wire: fetch map-data.json raw-first every 120s (raw.git moves with
+  // every publish commit even when Pages builds error; relative/file:// last).
+  // The embedded snapshot stays the fallback when every source misses.
   const el = document.getElementById('snapshot-data');
   function apply(data){
     if (!el || !data) return;
@@ -2955,10 +3098,16 @@
     else location.reload(); // last resort if map binds only at boot
   }
   function pullMap(){
-    fetch('map-data.json?v=24&t=' + Date.now(), {cache:'no-store'})
-      .then(r => r.ok ? r.json() : Promise.reject(r.status))
-      .then(apply)
-      .catch(() => {/* keep embedded snapshot */});
+    const list = (typeof window.__mapDataUrls === 'function')
+      ? window.__mapDataUrls()
+      : ['./map-data.json?v=24&t=' + Date.now()];
+    (function next(i){
+      if (i >= list.length) return; // keep embedded snapshot
+      fetch(list[i], {cache:'no-store', credentials:'omit'})
+        .then(r => r.ok ? r.json() : Promise.reject(r.status))
+        .then(apply)
+        .catch(function(){ next(i+1); });
+    })(0);
   }
   pullMap();
   setInterval(pullMap, 120000);
