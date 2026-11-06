@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-06 16:05 HKT",
+  "written_at_hkt": "2026-11-06 16:06 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -289,13 +289,6 @@
     }
   ],
   "tasks": [
-    {
-      "tier": "P0",
-      "title": "8mAlTcNt710",
-      "videos": null,
-      "skip": false,
-      "playlist_id": ""
-    },
     {
       "tier": "P0",
       "title": "Thinking",
@@ -1947,6 +1940,13 @@
       "videos_total": 1,
       "status": "done",
       "label": "Done"
+    },
+    {
+      "tier": "P1",
+      "title": "8mAlTcNt710",
+      "videos": null,
+      "skip": false,
+      "playlist_id": ""
     }
   ],
   "sources": [
