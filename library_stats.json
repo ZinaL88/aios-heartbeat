@@ -1,117 +1,118 @@
 {
-  "built_at_hkt": "2026-09-20 12:38 HKT",
-  "built_at_utc": "2026-09-20T04:38:37Z",
-  "items": 17403,
-  "transcripts_indexed": 11130,
-  "schema_gaps": 602,
-  "channels": 70,
+  "built_at_hkt": "2026-11-06 16:13 HKT",
+  "built_at_utc": "2026-11-06T08:13:00Z",
+  "items": 23769,
+  "transcripts_indexed": 12817,
+  "schema_gaps": 21471,
+  "access_policy": "public_only",
+  "channels": 107,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
   "top_gap_channels": [
     {
       "channel_id": "PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ",
       "channel_name": "理財",
-      "item_count": 2934,
-      "transcript_count": 1752,
-      "schema_gap_count": 260
+      "item_count": 2910,
+      "transcript_count": 1463,
+      "schema_gap_count": 2910
     },
     {
-      "channel_id": "PL30C54D951E8E1688",
-      "channel_name": "Careers",
-      "item_count": 284,
-      "transcript_count": 159,
-      "schema_gap_count": 113
+      "channel_id": "PLbVaWSxd4rLIMOvbRUWJVu9iTPrd0DTlV",
+      "channel_name": "Emotional Intelligence",
+      "item_count": 1764,
+      "transcript_count": 1103,
+      "schema_gap_count": 1764
+    },
+    {
+      "channel_id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
+      "channel_name": "一个狠人",
+      "item_count": 1446,
+      "transcript_count": 1346,
+      "schema_gap_count": 1446
     },
     {
       "channel_id": "PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw",
       "channel_name": "Data Science",
-      "item_count": 1391,
-      "transcript_count": 522,
-      "schema_gap_count": 61
+      "item_count": 1369,
+      "transcript_count": 614,
+      "schema_gap_count": 1369
     },
     {
-      "channel_id": "PLbVaWSxd4rLKVsu1jKYPVjB1oMt50bdbm",
-      "channel_name": "Crypto",
-      "item_count": 407,
-      "transcript_count": 297,
-      "schema_gap_count": 38
+      "channel_id": "UCGWYKICLOE8Wxy7q3eYXmPA",
+      "channel_name": "Best Partners TV",
+      "item_count": 1301,
+      "transcript_count": 1271,
+      "schema_gap_count": 1301
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLINHPOXUFrQCB7TVaCwR0x2",
+      "channel_name": "English",
+      "item_count": 1073,
+      "transcript_count": 828,
+      "schema_gap_count": 1073
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
+      "channel_name": "Presentation, Public Speaking, Story Telling",
+      "item_count": 1069,
+      "transcript_count": 943,
+      "schema_gap_count": 1069
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
+      "channel_name": "Interpersonal",
+      "item_count": 1011,
+      "transcript_count": 496,
+      "schema_gap_count": 1011
     },
     {
       "channel_id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
       "channel_name": "Product Management",
-      "item_count": 916,
-      "transcript_count": 563,
-      "schema_gap_count": 33
-    },
-    {
-      "channel_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-      "channel_name": "Job hunting",
-      "item_count": 281,
-      "transcript_count": 216,
-      "schema_gap_count": 21
-    },
-    {
-      "channel_id": "PLuGHfVNSITJf8-v_CISdmnH46QrygUcdK",
-      "channel_name": "Emerging Leaders Initiative: Leadership Lab",
-      "item_count": 33,
-      "transcript_count": 9,
-      "schema_gap_count": 21
+      "item_count": 885,
+      "transcript_count": 247,
+      "schema_gap_count": 885
     },
     {
       "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "channel_name": "Learning how to learn",
-      "item_count": 852,
-      "transcript_count": 703,
-      "schema_gap_count": 18
-    },
-    {
-      "channel_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
-      "channel_name": "Productivity",
-      "item_count": 616,
-      "transcript_count": 251,
-      "schema_gap_count": 16
-    },
-    {
-      "channel_id": "PLQHTakJAwGLMQxKVlKUVpC7aiYTZ2j2J9",
-      "channel_name": "The Startup Ideas Podcast Episodes",
-      "item_count": 413,
-      "transcript_count": 406,
-      "schema_gap_count": 4
-    },
-    {
-      "channel_id": "PLbVaWSxd4rLI-VJHIosfjDSggCEhfZqgx",
-      "channel_name": "Statistics",
-      "item_count": 114,
-      "transcript_count": 95,
-      "schema_gap_count": 4
-    },
-    {
-      "channel_id": "PLEMWyuM4E6qQvLqMJ-YdC0rBztBYpZaGv",
-      "channel_name": "尼可拉斯楊Live精發財系列大全集",
-      "item_count": 68,
-      "transcript_count": 65,
-      "schema_gap_count": 3
+      "item_count": 841,
+      "transcript_count": 151,
+      "schema_gap_count": 841
     },
     {
       "channel_id": "PLKFtWHNRC24QO4lx-I3Ajsscg5eiibJ8-",
       "channel_name": "下班經濟學",
       "item_count": 778,
-      "transcript_count": 523,
-      "schema_gap_count": 3
+      "transcript_count": 9,
+      "schema_gap_count": 778
     },
     {
-      "channel_id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
-      "channel_name": "⚡️ Framework Thinking & Mental Models ⚡️",
-      "item_count": 139,
-      "transcript_count": 132,
-      "schema_gap_count": 3
+      "channel_id": "PLbVaWSxd4rLKoHJUjyY7J5RIBozNjP4d4",
+      "channel_name": "Entrepreneur",
+      "item_count": 676,
+      "transcript_count": 555,
+      "schema_gap_count": 676
     },
     {
-      "channel_id": "PLEAWiihj06OL-zBeazBSgFk-eJYj8xTkF",
-      "channel_name": "Personal Finance",
-      "item_count": 13,
-      "transcript_count": 10,
-      "schema_gap_count": 2
+      "channel_id": "UCAxQ8sjHgjXh26la7jEBw3w",
+      "channel_name": "Mike是麦克",
+      "item_count": 648,
+      "transcript_count": 614,
+      "schema_gap_count": 648
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLLR2CPVFrIjuymHaCKc_Hql",
+      "channel_name": "Career growth",
+      "item_count": 641,
+      "transcript_count": 462,
+      "schema_gap_count": 641
+    },
+    {
+      "channel_id": "PLbVaWSxd4rLLLHUQAgn44adKtBARO_Hv3",
+      "channel_name": "Productivity",
+      "item_count": 611,
+      "transcript_count": 137,
+      "schema_gap_count": 611
     }
   ]
 }
