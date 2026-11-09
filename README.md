@@ -23,3 +23,14 @@ Existing library/search facilities remain available under their existing access 
 ## Island map
 
 [Island map](https://zinal88.github.io/aios-heartbeat/map.html) (`map.html`) draws ops jobs as buildings on tool islands. It reads `map-data.json` (schema `island-map/ops-public-v0`) about every 2 minutes. That file is counts and status only: no Me-layer numbers, health or energy values, or application detail. The card board stays on `index.html` and links here. Status publishes should keep that Island map link when they patch `index.html`.
+
+### Open-task Kanban
+
+Open `kanban.html` through the repository's static server. It reads only
+`./open_tasks.json`; replace that file with the latest `ai-os/open-tasks/v1`
+export to update the board. The initial file is the supplied fixture snapshot,
+not a live sync. A matching test fixture lives in `tests/fixtures/open_tasks.json`.
+`status` takes precedence over `state`; blocked and waiting-on-zina tasks appear
+under Held. Held cards accept `brief_path` (or `brief`) as a repository-relative
+path; exports without a brief display “Brief path unavailable”. Progress ages
+refresh every minute. Run `node --test tests/` to check the board and navigation.
