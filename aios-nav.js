@@ -27,7 +27,7 @@
     return {
       board: t ? "index.html?task=" + t : "index.html",
       map: t ? "map.html?task=" + t : "map.html",
-      machines: "machines.html", library: "library.html",
+      kanban: "kanban.html", machines: "machines.html", library: "library.html",
       room: s ? s + (t ? "/?task=" + t : "/") : "",
       jobs: s ? s + "/board/jobs.html" + (t ? "#task-" + t : "") : "",
     };
@@ -48,7 +48,7 @@
   function buildBar(task, sitroom) {
     const l = links(null, sitroom);
     const nav = el("nav", { className: "aios-jump", "aria-label": "Jump between Heartbeat and SIT ROOM" });
-    [["Board", l.board], ["Map", l.map], ["Machines", l.machines], ["Library", l.library]].forEach(function (pair, i) {
+    [["Board", l.board], ["Kanban", l.kanban], ["Map", l.map], ["Machines", l.machines], ["Library", l.library]].forEach(function (pair, i) {
       if (i) appendSep(nav);
       nav.appendChild(el("a", { href: pair[1] }, pair[0]));
     });
@@ -96,7 +96,7 @@
       const sr = sitroom
         ? '[SIT ROOM](' + l.room + ') · [Job board](' + l.jobs + ')'
         : 'SIT ROOM (set link)';
-      return "Board · Map · Machines · Library · " + sr;
+      return "Board · Kanban · Map · Machines · Library · " + sr;
     }
     return buildBar(task, sitroom).outerHTML;
   }
