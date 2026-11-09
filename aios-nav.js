@@ -5,9 +5,6 @@
    URLs are assigned via DOM properties (never string-interpolated into HTML) to avoid XSS. */
 (function (root) {
   const KEY = "aios.sitroom";
-  function base(store) {
-    try { return ((store || root.localStorage).getItem(KEY) || "").replace(/\/+$/, ""); } catch (e) { return ""; }
-  }
   function safeHttpUrl(raw) {
     const s = String(raw || "").trim();
     if (!/^https?:\/\//i.test(s)) return "";
@@ -15,6 +12,13 @@
       const u = new URL(s);
       if (u.protocol !== "http:" && u.protocol !== "https:") return "";
       return u.toString().replace(/\/+$/, "");
+    } catch (e) { return ""; }
+  }
+
+  function base(store) {
+    try {
+      const raw = (store || root.localStorage).getItem(KEY) || "";
+      return safeHttpUrl(raw); // re-validate every read; never trust stored values
     } catch (e) { return ""; }
   }
   function links(task, sitroom) {
