@@ -1774,6 +1774,7 @@
   }
  }
 }</script>
+<script src="aios-nav.js" defer></script>
 </head>
 <body>
   <!-- 1. FIXED TOP-LEFT PANEL: "What needs you now" -->
@@ -2533,6 +2534,29 @@
     /* =========================================================================
        SIDE CARD
        ========================================================================= */
+    function buildCardJump(container, task) {
+      const nav = window.AIOSNav;
+      if (!nav) return;
+      const links = nav.links(task, nav.base());
+      function appendLink(label, href, external) {
+        if (external) href = nav.safeHttpUrl(href);
+        if (!href) return;
+        if (container.childNodes.length) container.appendChild(document.createTextNode(" · "));
+        const anchor = document.createElement("a");
+        anchor.textContent = label;
+        anchor.href = href;
+        if (external) {
+          anchor.target = "_blank";
+          anchor.rel = "noopener";
+        }
+        container.appendChild(anchor);
+      }
+      // links() generates the local board path with an encoded task id.
+      appendLink("Board", links.board, false);
+      appendLink("SIT ROOM thread ↗", links.room, true);
+      appendLink("Job card ↗", links.jobs, true);
+    }
+
     function selectJob(jobId, centerOnIsland) {
       const found = buildingIndex.get(jobId);
       if (!found) return;
@@ -2578,7 +2602,9 @@
               <span>📋</span> <span>${esc(String(building.code))}</span>
             </button>
           </div>` : ""}
+        <div class="side-card-action" id="cardJump"></div>
       `;
+      buildCardJump($("cardJump"), building.code || building.id);
 
       const copyBtn = $("cardCopyBtn");
       if (copyBtn) copyBtn.addEventListener("click", () => copyPhraseToClipboard(String(building.code), copyBtn));
@@ -3076,7 +3102,14 @@
     lastPayload = JSON.stringify({ nodes: SNAPSHOT.nodes, buildings: SNAPSHOT.buildings, edges: safeArray(SNAPSHOT.edges) });
     updateStatus("snapshot");
     initControls();
-    loadData();
+    window.aiosSelectTask = function (t) {
+      for (const [id, f] of buildingIndex) if (id === t || String(f.building.code || "") === t) { selectJob(id, true); return true; }
+      return false;
+    };
+    Promise.resolve(loadData()).then(() => {
+      const t = new URLSearchParams(location.search).get("task");
+      if (t) window.aiosSelectTask(t);
+    });
     setInterval(loadData, 120000);
     pullHb();
     setInterval(pullHb, 30000);
