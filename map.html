@@ -1774,6 +1774,7 @@
   }
  }
 }</script>
+  <script src="aios-nav.js" defer></script>
 </head>
 <body>
   <!-- 1. FIXED TOP-LEFT PANEL: "What needs you now" -->
@@ -2533,6 +2534,29 @@
     /* =========================================================================
        SIDE CARD
        ========================================================================= */
+    function buildCardJump(container, task) {
+      const nav = window.AIOSNav;
+      const sitroom = nav ? nav.base() : "";
+      const links = nav ? nav.links(task, sitroom) : { board: "index.html?task=" + encodeURIComponent(task) };
+      function addLink(label, href, external) {
+        const anchor = document.createElement("a");
+        anchor.textContent = label;
+        anchor.href = href;
+        if (external) {
+          anchor.target = "_blank";
+          anchor.rel = "noopener";
+        }
+        container.appendChild(anchor);
+      }
+      addLink("Board", links.board, false);
+      if (sitroom) {
+        container.appendChild(document.createTextNode(" · "));
+        addLink("SIT ROOM ↗", links.room, true);
+        container.appendChild(document.createTextNode(" · "));
+        addLink("Job card ↗", links.jobs, true);
+      }
+    }
+
     function selectJob(jobId, centerOnIsland) {
       const found = buildingIndex.get(jobId);
       if (!found) return;
@@ -2578,7 +2602,10 @@
               <span>📋</span> <span>${esc(String(building.code))}</span>
             </button>
           </div>` : ""}
+        <div id="cardJump"></div>
       `;
+
+      buildCardJump($("cardJump"), building.code || building.id);
 
       const copyBtn = $("cardCopyBtn");
       if (copyBtn) copyBtn.addEventListener("click", () => copyPhraseToClipboard(String(building.code), copyBtn));
