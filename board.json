@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-11 02:32 HKT",
+  "written_at_hkt": "2026-11-11 02:42 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -58,10 +58,10 @@
       "channel_id": "UC1CXs5dtO8_Zrsm-48saJfg",
       "skip": false,
       "reason": "cut-in from chat audit",
-      "captions_done": 93,
+      "captions_done": 120,
       "captions_left": 0,
-      "stt_done": 85,
-      "stt_left": 100,
+      "stt_done": 116,
+      "stt_left": 69,
       "videos_total": 185,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2971,21 +2971,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-10T18:32:03Z",
-      "id": "UC1CXs5dtO8_Zrsm-48saJfg",
-      "title": "Vicky Zhao",
-      "kind": "channel",
-      "videos_total": 185,
-      "videos_source": "inventory",
-      "captions_done": 93,
-      "captions_left": 0,
-      "stt_done": 85,
-      "stt_left": 100,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLbVaWSxd4rLJ7n9jWvfSInh4Xi_QwyWgf",
       "title": "Latest Routine",
@@ -3041,6 +3026,21 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 74,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-10T18:39:40Z",
+      "id": "UC1CXs5dtO8_Zrsm-48saJfg",
+      "title": "Vicky Zhao",
+      "kind": "channel",
+      "videos_total": 185,
+      "videos_source": "inventory",
+      "captions_done": 120,
+      "captions_left": 0,
+      "stt_done": 116,
+      "stt_left": 69,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
