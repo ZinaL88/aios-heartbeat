@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-11-10 19:23 HKT",
-  "built_at_utc": "2026-11-10T11:23:26Z",
-  "items": 26173,
-  "transcripts_indexed": 14602,
-  "schema_gaps": 23873,
+  "built_at_hkt": "2026-11-11 02:20 HKT",
+  "built_at_utc": "2026-11-10T18:20:24Z",
+  "items": 26174,
+  "transcripts_indexed": 14618,
+  "schema_gaps": 23890,
   "channels": 113,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -46,9 +46,9 @@
     {
       "channel_id": "PLbVaWSxd4rLIxNgbh1c4G2BLFs22r2glE",
       "channel_name": "Presentation, Public Speaking, Story Telling",
-      "item_count": 1071,
+      "item_count": 1072,
       "transcript_count": 943,
-      "schema_gap_count": 1071
+      "schema_gap_count": 1072
     },
     {
       "channel_id": "PLbVaWSxd4rLI2NrMY_EBqj7f_gJCys07e",
