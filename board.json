@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-11 15:22 HKT",
+  "written_at_hkt": "2026-11-11 15:32 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -279,10 +279,10 @@
       "channel_id": "UC9cfcOuTT9rYkyUimMjLxuw",
       "skip": false,
       "reason": "Z L request 2026-10-07: LOW priority whole-channel; channel ID resolved logged-out 2026-10-08 per new rule (public IDs looked up logged-out). Re-added 2026-10-0",
-      "captions_done": 25,
+      "captions_done": 26,
       "captions_left": 208,
-      "stt_done": 25,
-      "stt_left": 86,
+      "stt_done": 26,
+      "stt_left": 85,
       "videos_total": 316,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2041,16 +2041,16 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-11T07:18:11Z",
+      "last_artifact_mtime": "2026-11-11T07:24:03Z",
       "id": "UC9cfcOuTT9rYkyUimMjLxuw",
       "title": "money_or_life",
       "kind": "channel",
       "videos_total": 316,
       "videos_source": "inventory",
-      "captions_done": 25,
+      "captions_done": 26,
       "captions_left": 208,
-      "stt_done": 25,
-      "stt_left": 86,
+      "stt_done": 26,
+      "stt_left": 85,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
