@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-13 19:44 HKT",
+  "written_at_hkt": "2026-11-13 19:50 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1625,9 +1625,9 @@
       "videos": 132,
       "skip": false,
       "playlist_id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
-      "captions_done": 23,
-      "captions_left": 105,
-      "stt_done": 23,
+      "captions_done": 42,
+      "captions_left": 86,
+      "stt_done": 42,
       "stt_left": 4,
       "videos_total": 132,
       "status": "waiting_captions",
@@ -2116,21 +2116,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-13T11:43:43Z",
-      "id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
-      "title": "Product Management Interview Prep",
-      "kind": "playlist",
-      "videos_total": 132,
-      "videos_source": "inventory",
-      "captions_done": 23,
-      "captions_left": 105,
-      "stt_done": 23,
-      "stt_left": 4,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
       "title": "系统经济金融",
@@ -2171,6 +2156,21 @@
       "captions_left": 48,
       "stt_done": 28,
       "stt_left": 43,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-13T11:49:56Z",
+      "id": "PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+      "title": "Product Management Interview Prep",
+      "kind": "playlist",
+      "videos_total": 132,
+      "videos_source": "inventory",
+      "captions_done": 42,
+      "captions_left": 86,
+      "stt_done": 42,
+      "stt_left": 4,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
