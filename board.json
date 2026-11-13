@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-13 19:20 HKT",
+  "written_at_hkt": "2026-11-13 19:28 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1611,9 +1611,9 @@
       "videos": 38,
       "skip": false,
       "playlist_id": "PLrtCHHeadkHrIkSw0waA_S8p2G_lYxU_j",
-      "captions_done": 3,
-      "captions_left": 33,
-      "stt_done": 3,
+      "captions_done": 24,
+      "captions_left": 12,
+      "stt_done": 24,
       "stt_left": 2,
       "videos_total": 38,
       "status": "waiting_captions",
@@ -1793,10 +1793,10 @@
       "videos": 15,
       "skip": false,
       "playlist_id": "PLrtCHHeadkHqFEO69UiOj9BHA7pah-0fj",
-      "captions_done": 10,
-      "captions_left": 5,
-      "stt_done": 10,
-      "stt_left": 5,
+      "captions_done": 11,
+      "captions_left": 4,
+      "stt_done": 11,
+      "stt_left": 4,
       "videos_total": 15,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2191,21 +2191,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-13T11:19:50Z",
-      "id": "PLrtCHHeadkHrIkSw0waA_S8p2G_lYxU_j",
-      "title": "Mock Product Management Interviews",
-      "kind": "playlist",
-      "videos_total": 38,
-      "videos_source": "inventory",
-      "captions_done": 3,
-      "captions_left": 33,
-      "stt_done": 3,
-      "stt_left": 2,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-13T11:19:23Z",
       "id": "PLrtCHHeadkHqhuz-bwUiGbmdUnN4eonZ2",
       "title": "Solutions Architect Interview Prep",
@@ -2221,6 +2206,21 @@
       "skip": false
     },
     {
+      "last_artifact_mtime": "2026-11-13T11:25:17Z",
+      "id": "PLrtCHHeadkHrIkSw0waA_S8p2G_lYxU_j",
+      "title": "Mock Product Management Interviews",
+      "kind": "playlist",
+      "videos_total": 38,
+      "videos_source": "inventory",
+      "captions_done": 24,
+      "captions_left": 12,
+      "stt_done": 24,
+      "stt_left": 2,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
       "last_artifact_mtime": "2026-11-13T08:13:03Z",
       "id": "PLaTR4-VYHk9oaJILrn03uQrfJiNKbt45P",
       "title": "【入門級命理課】命盤中的十神",
@@ -2231,21 +2231,6 @@
       "captions_left": 5,
       "stt_done": 1,
       "stt_left": 7,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "last_artifact_mtime": "2026-11-13T11:19:22Z",
-      "id": "PLrtCHHeadkHqFEO69UiOj9BHA7pah-0fj",
-      "title": "Data Science Interview Prep",
-      "kind": "playlist",
-      "videos_total": 15,
-      "videos_source": "inventory",
-      "captions_done": 10,
-      "captions_left": 5,
-      "stt_done": 10,
-      "stt_left": 5,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2276,6 +2261,21 @@
       "captions_left": 1,
       "stt_done": 37,
       "stt_left": 8,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-13T11:20:05Z",
+      "id": "PLrtCHHeadkHqFEO69UiOj9BHA7pah-0fj",
+      "title": "Data Science Interview Prep",
+      "kind": "playlist",
+      "videos_total": 15,
+      "videos_source": "inventory",
+      "captions_done": 11,
+      "captions_left": 4,
+      "stt_done": 11,
+      "stt_left": 4,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
