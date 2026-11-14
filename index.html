@@ -279,16 +279,16 @@ a.act-ref { color:var(--lime); }
 <header class="row">
   <div>
     <h1>HEARTBEAT</h1>
-    <p class="mono" id="pingLine">ping 2026-11-14 10:23 HKT · now —</p>
+    <p class="mono" id="pingLine">ping 2026-11-14 13:55 HKT · now —</p>
     <p class="mono" id="syncLine">Sync pull: ok_https · push: skipped_dirty_or_diverged · publish: ok</p>
     <p class="mono">YouTube video captions/STT and inventory IDs, including inventoried Shorts. Community posts pending: unavailable. Other media have no separate backlog metric.</p>
-    <p class="mono" id="src">index · sandbox port · built 2026-11-14 10:23 HKT · v21</p>
+    <p class="mono" id="src">index · sandbox port · built 2026-11-14 13:55 HKT · v21</p>
     <p class="mono" style="margin:6px 0 0"><a class="lib-link" href="library.html?v=23" style="color:var(--lime);text-decoration:none;font-weight:600">Library</a>
       <span style="color:var(--muted)"> · search transcripts &amp; check schema fields · </span><a class="lib-link" href="machines.html" style="color:var(--lime);text-decoration:none;font-weight:600">Machines &amp; terminal</a><span style="color:var(--muted)"> · </span><a class="lib-link" href="map.html" style="color:var(--lime);text-decoration:none;font-weight:600">Island map (snapshot)</a></p>
   </div>
   <div class="pills" id="livePills">
     <span class="pill on" id="pillPing"><span class="dot"></span>PING —</span>
-    <span class="pill on" id="pillStt"><span class="dot"></span>STT Running</span>
+    <span class="pill warn" id="pillStt"><span class="dot"></span>STT Stale</span>
     <span class="pill done" id="pillCap"><span class="dot"></span>Captions Caught up</span>
   </div>
 </header>
@@ -304,7 +304,7 @@ a.act-ref { color:var(--lime); }
 
 <section class="now">
   <div><span class="label">now</span> <span class="body" id="nowBody">STT UC9cfcOuTT9rYkyUimMjLxuw · captions Caught up</span></div>
-  <span class="mono" id="nowTs">2026-11-14 10:23 HKT</span>
+  <span class="mono" id="nowTs">2026-11-14 13:55 HKT</span>
 </section>
 
 <section class="card" id="opsCard">
@@ -360,10 +360,10 @@ a.act-ref { color:var(--lime); }
 
 
 <section class="metrics" id="metrics">
-  <div class="metric"><div class="k">Transcripts on disk</div><div class="v" id="mStt">13437</div><div class="s" id="mSttSub">13437 on disk · 76 pending in worker scope · 10472 pending total (folder sum · 9163 unique video IDs · 32 fresh in worker scope) · Running</div></div>
+  <div class="metric"><div class="k">Transcripts on disk</div><div class="v" id="mStt">13437</div><div class="s" id="mSttSub">13437 on disk · 76 pending in worker scope · 10472 pending total (folder sum · 9163 unique video IDs · 32 fresh in worker scope) · Stale</div></div>
   <div class="metric"><div class="k">Captions done</div><div class="v" id="mCap">18167</div><div class="s" id="mCapSub">18167 done · None left in worker scope · 2682 left total (folder sum · 2325 unique video IDs · 0 fresh in worker scope) · Caught up</div></div>
-  <div class="metric" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">6.6G</div><div class="s" id="mRamSub">of 15.6G</div></div>
-  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-11-14 10:23 HKT</div></div>
+  <div class="metric amber" id="mRamCard"><div class="k">RAM free</div><div class="v" id="mRam">1.9G</div><div class="s" id="mRamSub">of 15.6G</div></div>
+  <div class="metric"><div class="k">Ping</div><div class="v" id="mPing">—</div><div class="s" id="mPingSub">2026-11-14 13:55 HKT</div></div>
 </section>
 
 <section class="grid2">
@@ -376,35 +376,35 @@ a.act-ref { color:var(--lime); }
       <p class="mono" id="capEta">—</p>
     </div>
     <div class="work-block">
-      <div class="row"><span class="mono"><span class="pill on" id="sttStatePill"><span class="dot"></span><span id="sttState">Running</span></span> STT</span></div>
+      <div class="row"><span class="mono"><span class="pill warn" id="sttStatePill"><span class="dot"></span><span id="sttState">Stale · alive, no recent update</span></span> STT</span></div>
       <p class="ch" id="sttCh">UC9cfcOuTT9rYkyUimMjLxuw</p>
       <div class="row"><span class="big" id="sttNum">13437</span><span class="mono" id="sttFile">13437 on disk · 76 pending in worker scope · 10472 pending total (folder sum · 9163 unique video IDs · 32 fresh in worker scope) · now: 7IPe0rg83SI</span></div>
       <p class="mono" id="sttEta">still running · ETA slipped 2026-11-15 16:43 HKT</p>
-      <p class="mono" id="sttDisk">13437 transcripts on disk · RAM 6.6 of 15.6G · load 4.94</p>
+      <p class="mono" id="sttDisk">13437 transcripts on disk · RAM 1.9 of 15.6G · load 5.41</p>
     </div>
   </div>
 
   <div class="card">
     <p class="hlabel">BOX · HEARTBEAT</p>
     <ul class="kv" id="boxKv">
-      <li><span>RAM free</span><span id="boxRam">6.6 of 15.6G</span></li>
-      <li><span>Load</span><span id="boxLoad">4.94</span></li>
+      <li><span>RAM free</span><span id="boxRam">1.9 of 15.6G</span></li>
+      <li><span>Load</span><span id="boxLoad">5.41</span></li>
       <li><span>Disk</span><span id="boxDisk">98G</span></li>
       <li><span>Tmp</span><span id="boxTmp">552M</span></li>
-      <li><span>Cookies</span><span id="boxCookies">yes · 18.2h</span></li>
-      <li><span>Next ping</span><span id="boxCron">2026-11-14 10:25 HKT</span></li>
+      <li><span>Cookies</span><span id="boxCookies">yes · 21.7h</span></li>
+      <li><span>Next ping</span><span id="boxCron">2026-11-14 14:00 HKT</span></li>
       <li><span>Jobs</span><span id="boxJobs">Whisper on · captions retry circuit open on 5 target(s), next retry 2026-11-13 20:02 HKT</span></li>
       <li><span>RAM gate</span><span id="boxGate">6.0G</span></li>
     </ul>
     <div class="pills" style="margin-top:10px" id="boxPills">
-      <span class="pill on" id="boxPillStt"><span class="dot"></span>STT Running</span>
+      <span class="pill warn" id="boxPillStt"><span class="dot"></span>STT Stale</span>
       <span class="pill done" id="boxPillCap"><span class="dot"></span>Captions Caught up</span>
       <span class="pill warn" id="boxPillChrome"><span class="dot"></span>chrome_heavy blocked</span>
     </div>
     <p class="hlabel" style="margin-top:14px">RAM TOP</p>
-    <ul id="ramTop"><li><span class="mono">2.53G</span> · node ×51</li><li><span class="mono">2.48G</span> · python ×2</li><li><span class="mono">0.3G</span> · Xvfb ×4</li><li><span class="mono">0.17G</span> · xfce4-panel ×4</li><li><span class="mono">0.13G</span> · bash ×59</li><li><span class="mono">0.12G</span> · python3 ×5</li><li><span class="mono">0.1G</span> · x11vnc ×4</li><li><span class="mono">0.1G</span> · xfwm4 ×4</li></ul>
+    <ul id="ramTop"><li><span class="mono">3.49G</span> · python ×2</li><li><span class="mono">2.53G</span> · node ×51</li><li><span class="mono">0.23G</span> · Xvfb ×4</li><li><span class="mono">0.13G</span> · bash ×58</li><li><span class="mono">0.12G</span> · python3 ×5</li><li><span class="mono">0.1G</span> · x11vnc ×4</li><li><span class="mono">0.09G</span> · xfce4-panel ×4</li><li><span class="mono">0.07G</span> · csnaps ×1</li></ul>
     <p class="hlabel" style="margin-top:14px">REBOOST LOG</p>
-    <ul id="reboostLog"><li class="mono">2026-11-14T02:23:53Z skip start PLbVaWSxd4rLLanlFkLFxt_QgLKujKcO_I — inventory empty or dead stub</li><li class="mono">th&gt; --channel-id PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ --access public --limit 9999 --mode captions --language auto --sleep-min 4 --sleep-max 8 --inventory &lt;path&gt; --cookies (redacted)</li><li class="mono">2026-11-14T02:23:54Z reboost captions supervised channel PLbVaWSxd4rLK7Oua4f9PYH8yNggDpaiSJ</li><li class="mono">backfill-captions.log: Nothing to do.</li><li class="mono">&quot;already_done&quot;: 1484,</li><li class="mono">&quot;dry_run&quot;: false</li><li class="mono">}</li><li class="mono">Nothing to do.</li><li><span class="mono">reboost.log</span> 2026-11-14T02:23:53Z skip start PLbVaWSxd4rLJwbkDuCRY8lypvThTxp2Vq — inventory empty or dead stub</li><li><span class="mono">reboost.log</span> p-max 8 --inventory &lt;path&gt; --cookies (redacted)</li></ul>
+    <ul id="reboostLog"><li class="mono">th&gt; --channel-id PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw --access public --limit 9999 --mode captions --language auto --sleep-min 4 --sleep-max 8 --inventory &lt;path&gt; --cookies (redacted)</li><li class="mono">2026-11-14T05:54:58Z reboost captions supervised channel PLbVaWSxd4rLJjHRT7HNdxoVyzgvAqanTw</li><li class="mono">backfill-captions.log: Nothing to do.</li><li class="mono">&quot;already_done&quot;: 1154,</li><li class="mono">&quot;dry_run&quot;: false</li><li class="mono">}</li><li class="mono">Nothing to do.</li><li><span class="mono">reboost.log</span> p-max 8 --inventory &lt;path&gt; --cookies (redacted)</li></ul>
     <p class="hlabel" style="margin-top:14px">SAFE NEXT</p>
     <ul id="safeNext"><li>plan-b: captions worker (cpu_light, RAM&gt;=1.2G) parallel to one Whisper (ram_heavy, RAM&gt;=6G)</li><li>plan-c: multi-adapter spine — YouTube / X / LinkedIn / HN / manual share on the same SourceAsset contract (see systems/insight-intake-adapter-poc.md)</li></ul>
   </div>
