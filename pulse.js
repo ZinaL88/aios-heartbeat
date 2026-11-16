@@ -46,7 +46,8 @@ function paint(d){
 function timed(url, headers){
   var c=new AbortController();
   var t=setTimeout(function(){c.abort();},8000);
-  return fetch(url,{cache:"no-store",headers:headers||{},signal:c.signal}).finally(function(){clearTimeout(t);});
+  var h=headers||{};
+  return fetch(url,{cache:"no-cache",headers:h,signal:c.signal}).finally(function(){clearTimeout(t);});
 }
 function pull(){
   if(window.__hbIn) return;
@@ -65,11 +66,11 @@ function pull(){
     }catch(e){}
     if($("ping")) $("ping").textContent="live fetch failed";
   }
-  // Prefer Pages, then raw GitHub. Never jsDelivr (ignores ?t= and serves stale).
+  // Prefer Pages, then raw GitHub. Use the browser's standard revalidation mode.
   var urls=[
-    "https://zinal88.github.io/aios-heartbeat/status.json?t="+Date.now(),
-    "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t="+Date.now(),
-    "status.json?t="+Date.now()
+    "https://zinal88.github.io/aios-heartbeat/status.json",
+    "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json",
+    "status.json"
   ];
   function tryAt(i){
     if(i>=urls.length){ fail(); return; }
