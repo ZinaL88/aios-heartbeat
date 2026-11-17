@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-17 17:05 HKT",
+  "written_at_hkt": "2026-11-17 17:10 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -19,10 +19,10 @@
       "channel_id": "UC1q6LKlcco02dF0BxE0G1zg",
       "skip": false,
       "reason": "cut-in from chat 2026-09-20",
-      "captions_done": 60,
+      "captions_done": 61,
       "captions_left": 58,
-      "stt_done": 60,
-      "stt_left": 13,
+      "stt_done": 61,
+      "stt_left": 12,
       "videos_total": 131,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2146,16 +2146,16 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-17T09:03:25Z",
+      "last_artifact_mtime": "2026-11-17T09:05:59Z",
       "id": "UC1q6LKlcco02dF0BxE0G1zg",
       "title": "AI 101",
       "kind": "channel",
       "videos_total": 131,
       "videos_source": "inventory",
-      "captions_done": 60,
+      "captions_done": 61,
       "captions_left": 58,
-      "stt_done": 60,
-      "stt_left": 13,
+      "stt_done": 61,
+      "stt_left": 12,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
