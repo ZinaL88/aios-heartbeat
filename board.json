@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-17 18:40 HKT",
+  "written_at_hkt": "2026-11-17 18:45 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -188,10 +188,10 @@
       "channel_id": "UCP76ZVB1x9udP2UFcQkSvMA",
       "skip": false,
       "reason": "",
-      "captions_done": 13,
+      "captions_done": 14,
       "captions_left": 0,
-      "stt_done": 13,
-      "stt_left": 99,
+      "stt_done": 14,
+      "stt_left": 98,
       "videos_total": 112,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2896,21 +2896,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-17T10:35:02Z",
-      "id": "UCP76ZVB1x9udP2UFcQkSvMA",
-      "title": "大卢和小田",
-      "kind": "channel",
-      "videos_total": 112,
-      "videos_source": "inventory",
-      "captions_done": 13,
-      "captions_left": 0,
-      "stt_done": 13,
-      "stt_left": 99,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLbVaWSxd4rLJ7n9jWvfSInh4Xi_QwyWgf",
       "title": "Latest Routine",
@@ -2920,6 +2905,21 @@
       "captions_done": 0,
       "captions_left": 0,
       "stt_done": 0,
+      "stt_left": 98,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-17T10:44:49Z",
+      "id": "UCP76ZVB1x9udP2UFcQkSvMA",
+      "title": "大卢和小田",
+      "kind": "channel",
+      "videos_total": 112,
+      "videos_source": "inventory",
+      "captions_done": 14,
+      "captions_left": 0,
+      "stt_done": 14,
       "stt_left": 98,
       "status": "waiting_stt",
       "label": "Waiting STT",
