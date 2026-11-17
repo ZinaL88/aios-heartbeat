@@ -27,7 +27,7 @@ h1 { font-size:14px; letter-spacing:.08em; margin:0; }
 </head>
 <body>
 <div class="row"><h1>HEARTBEAT 4</h1><span class="mono" id="age">2026-09-12 21:31 HKT</span></div>
-<p class="mono" id="ping">2026-09-12 21:31 HKT · baked (JS off still shows this)</p>
+<p class="mono" id="ping">UNVERIFIED baked snapshot · not live evidence</p>
 <div class="card">
   <div class="row"><span class="mono">ALL LEFT</span><span class="mono" id="allEta">~50h 36m</span></div>
   <p class="big" id="allNum">1000 left</p>
@@ -46,7 +46,7 @@ h1 { font-size:14px; letter-spacing:.08em; margin:0; }
   <div class="bar"><i id="sttBar" style="width:12%"></i></div>
 </div>
 <p class="mono" id="ram" style="margin-top:24px">RAM avail 6.5G / 15.6G · load 0.58</p>
-<p class="mono" id="src">v4 · numbers are in the HTML. If you see HEARTBEAT 4 and still dashes, this is the wrong file.</p>
+<p class="mono" id="src">UNVERIFIED baked numbers; five-minute age check requires JavaScript.</p>
 <script type="application/json" id="seed">{
   "schema": "aios-status/v1",
   "written_at_utc": "2026-09-12T13:31:14Z",
@@ -262,18 +262,19 @@ h1 { font-size:14px; letter-spacing:.08em; margin:0; }
   }
 }
 </script>
+<script src="./heartbeat-data.js"></script>
 <script>
 window.onerror=function(m){document.getElementById('src').textContent='js error: '+m;};
 function title(id){return {
-  UC_5lJHgnMP_lb_VpIiXV0hQ:"#11 课代表立正",
-  UCJAPsTtcJJWGk8e-_CJL8TQ:"一个狠人",
-  UCGWYKICLOE8Wxy7q3eYXmPA:"bestpartners",
-  UCPpdGTNbIKdiWgxCrbka4Zw:"huanyihe777",
-  UCAxQ8sjHgjXh26la7jEBw3w:"mike1111",
-  UCeTLfPD7thTMabtL7w87Aug:"清流君",
-  UCP76ZVB1x9udP2UFcQkSvMA:"大卢和小田",
-  UCROR3SZDrohSela1sjD1STg:"王理元",
-  UCaIIFXfdQUYf3OHPIFNDdrQ:"Alan"
+  "UC_5lJHgnMP_lb_VpIiXV0hQ":"#11 课代表立正",
+  "UCJAPsTtcJJWGk8e-_CJL8TQ":"一个狠人",
+  "UCGWYKICLOE8Wxy7q3eYXmPA":"bestpartners",
+  "UCPpdGTNbIKdiWgxCrbka4Zw":"huanyihe777",
+  "UCAxQ8sjHgjXh26la7jEBw3w":"mike1111",
+  "UCeTLfPD7thTMabtL7w87Aug":"清流君",
+  "UCP76ZVB1x9udP2UFcQkSvMA":"大卢和小田",
+  "UCROR3SZDrohSela1sjD1STg":"王理元",
+  "UCaIIFXfdQUYf3OHPIFNDdrQ":"Alan"
 }[id]||id||"—";}
 function eta(min){if(min==null)return "—";if(min<=0)return "done";if(min<60)return "~"+min+"m";return "~"+Math.floor(min/60)+"h "+(min%60)+"m";}
 function paint(d,src){
@@ -308,25 +309,16 @@ function get(url,ms){
     return r.json();
   }).finally(function(){clearTimeout(t);});
 }
-function refresh(){
-  var t=Date.now();
-  var list=[
-    "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json?t="+t,
-    "https://zinal88.github.io/aios-heartbeat/status.json?t="+t
-  ];
-  var i=0;
-  function next(){
-    if(i>=list.length) { document.getElementById("src").textContent="v4 · live blocked, baked numbers stay"; return; }
-    get(list[i++],4000).then(function(d){paint(d,"live");}).catch(next);
-  }
-  next();
+var heartbeat=window.HeartbeatData&&window.HeartbeatData.create(paint,window.HeartbeatData.report);
+if(heartbeat){
+  try{var seed=document.getElementById("seed");heartbeat.seed(seed&&seed.textContent?JSON.parse(seed.textContent):null,"baked snapshot");}catch(e){heartbeat.seed(null);}
+  heartbeat.refresh();setInterval(heartbeat.refresh,20000);setInterval(heartbeat.tick,1000);
+}else{
+  document.getElementById("src").textContent="UNAVAILABLE / STALE baked snapshot — freshness checker unavailable";
+  ["capState","sttState"].forEach(function(id){document.getElementById(id).textContent="unknown · baked snapshot";});
+  ["capDot","sttDot"].forEach(function(id){document.getElementById(id).className="dot";});
 }
-try {
-  var el=document.getElementById("seed");
-  if(el&&el.textContent) paint(JSON.parse(el.textContent),"baked");
-} catch(e) { document.getElementById("src").textContent="seed parse "+e; }
-refresh();
-setInterval(refresh,20000);
+
 </script>
 </body>
 </html>

@@ -1,3 +1,60 @@
+/* Public heartbeat observations, never proof that the Pages status artifact is fresh. */
+(function(global){
+"use strict";
+var RAW="https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/";
+var URLS=[RAW+"status.json","https://zinal88.github.io/aios-heartbeat/status.json"];
+var LIMIT=5*60*1000;
+function age(d){
+  var s=d&&d.written_at_utc;
+  if(typeof s!=="string"||!/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d(?:\.\d+)?Z$/.test(s)) return Infinity;
+  var t=Date.parse(s), a=Date.now()-t;
+  return Number.isFinite(t)&&a>=0?a:Infinity;
+}
+function create(render,report){
+  var last=null, source="baked snapshot", unavailable=true, busy=false;
+  function state(){
+    var a=age(last);
+    report({kind:unavailable?"UNAVAILABLE":(a<=LIMIT?"OBSERVED":"STALE"),
+      age:a,source:source,data:last,history:RAW+"history/index.json",limit:LIMIT});
+  }
+  function show(d,src,failed){last=d;source=src;unavailable=!!failed;if(d) render(d);if(d&&!failed){try{localStorage.setItem("aios-hb-v1",JSON.stringify(d));}catch(e){}}state();}
+  function refresh(){
+    if(busy)return Promise.resolve();busy=true;
+    var best=last, bestSource=source;
+    function at(i){
+      if(i===URLS.length){show(best,bestSource,true);return;}
+      var ctl=new AbortController(),timer=setTimeout(function(){ctl.abort();},4000);
+      return Promise.resolve().then(function(){return fetch(URLS[i],{cache:"no-cache",credentials:"omit",signal:ctl.signal});})
+        .then(function(r){if(!r.ok)throw Error("HTTP "+r.status);return r.json();})
+        .then(function(d){
+          if(!d||typeof d!=="object"||Array.isArray(d))throw Error("invalid heartbeat");
+          var a=age(d);
+          if(a<=LIMIT){show(d,URLS[i],false);return;}
+          if(!best||a<age(best)){best=d;bestSource=URLS[i];}
+          return at(i+1);
+        }).catch(function(){return at(i+1);}).finally(function(){clearTimeout(timer);});
+    }
+    return at(0).finally(function(){busy=false;});
+  }
+  return {refresh:refresh, seed:function(d,src){show(d,src||"baked snapshot",true);},tick:state};
+}
+function report(s){
+  function put(id,text){var e=document.getElementById(id);if(e)e.textContent=text;}
+  var detail=Number.isFinite(s.age)?Math.floor(s.age/1000)+"s old":"timestamp missing/invalid/future";
+  var prefix=s.kind==="UNAVAILABLE"?"UNAVAILABLE / STALE last observation":s.kind;
+  put("ping",prefix+" · "+detail+" · "+s.source);
+  put("age",detail);
+  put("src",prefix+" · "+s.source+" · contract ≤5min when awake; raw/UI does not verify Pages artifact freshness");
+  var e=document.getElementById("src");
+  if(e&&document.createElement){var a=document.createElement("a");a.href=s.history;a.textContent=" · public history (raw main)";e.appendChild(a);}
+  if(s.kind!=="OBSERVED"){
+    put("capState","unknown · last observation");put("sttState","unknown · last observation");
+    ["capDot","sttDot"].forEach(function(id){var e=document.getElementById(id);if(e)e.className="dot";});
+  }
+}
+global.HeartbeatData={create:create,report:report,age:age,LIMIT:LIMIT,URLS:URLS,HISTORY:RAW+"history/index.json"};
+})(window);
+
 (function(){
 function $(id){return document.getElementById(id);}
 var NAMES={"UC_5lJHgnMP_lb_VpIiXV0hQ": "#11 课代表立正", "UCJAPsTtcJJWGk8e-_CJL8TQ": "一个狠人", "UCGWYKICLOE8Wxy7q3eYXmPA": "bestpartners", "UCPpdGTNbIKdiWgxCrbka4Zw": "huanyihe777", "UCAxQ8sjHgjXh26la7jEBw3w": "mike1111", "UCaA2cfCpytaARHcNcApboSw": "麥克老李", "UCeTLfPD7thTMabtL7w87Aug": "清流君", "UCP76ZVB1x9udP2UFcQkSvMA": "大卢和小田", "UCROR3SZDrohSela1sjD1STg": "王理元", "UCaIIFXfdQUYf3OHPIFNDdrQ": "Alan", "UC1CXs5dtO8_Zrsm-48saJfg": "Vicky Zhao", "UCPtFFY5sw8WEi--Ki9SebkA": "Web3 101"};
@@ -40,7 +97,7 @@ function paint(d){
   if($("sttEta")) $("sttEta").textContent="ETA "+(stt.eta_hkt||"unknown"); if($("sttDeadline")) $("sttDeadline").textContent="ETA "+(stt.eta_hkt||"unknown"); if($("sttDisk")) $("sttDisk").textContent=(stt.transcripts_on_disk!=null?stt.transcripts_on_disk:"—")+" transcripts on disk"; if($("capNum") && d.collector && d.collector.tracks && d.collector.tracks.captions) $("capNum").textContent=String(d.collector.tracks.captions.left!=null?d.collector.tracks.captions.left:0);
   var res=d.resources||{};
   if($("ram")) $("ram").textContent="RAM "+(res.mem_available_gi!=null?res.mem_available_gi:"—")+"G / "+(res.mem_total_gi!=null?res.mem_total_gi:"—")+"G · load "+(res.load1!=null?res.load1:"—");
-  if($("src")) $("src").textContent="live GitHub API · no page reload · cache bypassed";
+  if($("src")) $("src").textContent="public observation (freshness checked below)";
   killRefresh();
 }
 function timed(url, headers){
@@ -49,39 +106,9 @@ function timed(url, headers){
   var h=headers||{};
   return fetch(url,{cache:"no-cache",headers:h,signal:c.signal}).finally(function(){clearTimeout(t);});
 }
-function pull(){
-  if(window.__hbIn) return;
-  window.__hbIn=1;
-  function ok(r){ if(!r.ok) throw r.status; return r.json(); }
-  function fail(){
-    window.__hbIn=0;
-    try{
-      var c=localStorage.getItem("aios-hb-v1");
-      if(c){
-        var d=JSON.parse(c);
-        var utc=d.written_at_utc||"";
-        var age=utc? (Date.now()-Date.parse(utc)) : 1e99;
-        if(age < 5*60*1000){ paint(d); if($("ping")) $("ping").textContent=(d.written_at_hkt||"—")+" · cached"; return; }
-      }
-    }catch(e){}
-    if($("ping")) $("ping").textContent="live fetch failed";
-  }
-  // Prefer Pages, then raw GitHub. Use the browser's standard revalidation mode.
-  var urls=[
-    "https://zinal88.github.io/aios-heartbeat/status.json",
-    "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/status.json",
-    "status.json"
-  ];
-  function tryAt(i){
-    if(i>=urls.length){ fail(); return; }
-    timed(urls[i]).then(ok).then(function(d){
-      try{ localStorage.setItem("aios-hb-v1", JSON.stringify(d)); }catch(e){}
-      paint(d);
-      window.__hbIn=0;
-    }).catch(function(){ tryAt(i+1); });
-  }
-  tryAt(0);
-}
+var heartbeat=window.HeartbeatData.create(paint,window.HeartbeatData.report);
+function pull(){return heartbeat.refresh();}
+
 function move(li, dir){
   var ol=li.parentNode;
   if(dir<0 && li.previousElementSibling) ol.insertBefore(li, li.previousElementSibling);
@@ -188,9 +215,10 @@ function bootEdit(){
     inp.onchange=function(){ if(inp.value && inp.value.indexOf("•")<0) localStorage.setItem("aios.pat", inp.value.trim()); };
   }
 }
-try{ var __c=localStorage.getItem("aios-hb-v1"); if(__c) paint(JSON.parse(__c)); }catch(e){}
+try{ var __c=localStorage.getItem("aios-hb-v1"); heartbeat.seed(__c?JSON.parse(__c):null,"cached/baked snapshot"); }catch(e){heartbeat.seed(null);}
 pull();
 setInterval(pull, 15000);
+setInterval(heartbeat.tick,1000);
 if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", function(){ bootTabs(); bootEdit(); filterQueue(); var _ob=document.querySelector("#oTabs button.on"); if(_ob) oFilter(_ob); });
 else { bootTabs(); bootEdit(); filterQueue(); var _ob=document.querySelector("#oTabs button.on"); if(_ob) oFilter(_ob); }
 })();

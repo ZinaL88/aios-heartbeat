@@ -9,14 +9,14 @@
     return {txt:t, stale: m > 120};
   }
   function el(tag, text, cls){ var e=document.createElement(tag); if(text!==undefined) e.textContent=text; if(cls) e.className=cls; return e; }
-  function paint(root, doc){
+  function paint(root, doc, source){
     root.textContent = "";
     if (!doc || doc.error || !Array.isArray(doc.sources) || !doc.sources.length) {
       root.appendChild(el("p", "Work feed unavailable" + (doc && doc.error ? ": " + doc.error : "") + ". Nothing is claimed.", "mono"));
       return;
     }
     var g = age(doc.checked_at || doc.generated_at);
-    root.appendChild(el("p", "Feed checked " + g.txt + (doc.content_revision ? " · content rev " + String(doc.content_revision).slice(0,12) : "") + (g.stale ? " · STALE, not live" : ""), "mono"));
+    root.appendChild(el("p", "Feed checked " + g.txt + " · " + (source||"source unknown") + (doc.content_revision ? " · content rev " + String(doc.content_revision).slice(0,12) : "") + (g.stale ? " · STALE, not live" : ""), "mono"));
     doc.sources.forEach(function(s){
       var a = age(s.source_updated_at);
       var box = el("div", undefined, "wf-src");
@@ -32,13 +32,12 @@
     if (doc.overlap) root.appendChild(el("p", doc.overlap, "mono wf-note"));
   }
   function load(root){
-    var q = "?t=" + Date.now();
-    var urls = ["work-feed.json"+q, "https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/work-feed.json"+q];
+    var urls = ["https://raw.githubusercontent.com/ZinaL88/aios-heartbeat/main/work-feed.json", "work-feed.json"];
     (function next(i){
-      if (i >= urls.length) { paint(root, {error:"could not load work-feed.json"}); return; }
+      if (i >= urls.length) { root.__workFeed=null; paint(root, {error:"could not load work-feed.json"}); return; }
       fetch(urls[i], {cache:"no-store", credentials:"omit"}).then(function(r){ if(!r.ok) throw 0; return r.json(); })
-        .then(function(d){ paint(root, d); }).catch(function(){ next(i+1); });
+        .then(function(d){ if(!d||!Array.isArray(d.sources))throw Error("invalid feed"); root.__workFeed={data:d,source:i===0?"raw main":"Pages fallback — freshness unverified"}; paint(root,d,root.__workFeed.source); }).catch(function(){ next(i+1); });
     })(0);
   }
-  window.WorkFeed = {mount: function(id){ var r=document.getElementById(id); if(r) load(r); }};
+  window.WorkFeed = {mount: function(id){ var r=document.getElementById(id); if(r){load(r);if(!r.__ageTimer)r.__ageTimer=setInterval(function(){if(r.__workFeed)paint(r,r.__workFeed.data,r.__workFeed.source);},15000);} }};
 })();
