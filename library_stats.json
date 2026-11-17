@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-11-16 08:16 HKT",
-  "built_at_utc": "2026-11-16T00:16:27Z",
+  "built_at_hkt": "2026-11-17 10:52 HKT",
+  "built_at_utc": "2026-11-17T02:52:34Z",
   "items": 26238,
-  "transcripts_indexed": 14935,
-  "schema_gaps": 24291,
+  "transcripts_indexed": 14965,
+  "schema_gaps": 24306,
   "channels": 128,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
