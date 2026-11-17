@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-17 18:10 HKT",
+  "written_at_hkt": "2026-11-17 18:25 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -58,10 +58,10 @@
       "channel_id": "UC1CXs5dtO8_Zrsm-48saJfg",
       "skip": false,
       "reason": "cut-in from chat audit",
-      "captions_done": 148,
+      "captions_done": 149,
       "captions_left": 0,
-      "stt_done": 147,
-      "stt_left": 38,
+      "stt_done": 148,
+      "stt_left": 37,
       "videos_total": 185,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3121,16 +3121,16 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-17T10:08:21Z",
+      "last_artifact_mtime": "2026-11-17T10:10:07Z",
       "id": "UC1CXs5dtO8_Zrsm-48saJfg",
       "title": "Vicky Zhao",
       "kind": "channel",
       "videos_total": 185,
       "videos_source": "inventory",
-      "captions_done": 148,
+      "captions_done": 149,
       "captions_left": 0,
-      "stt_done": 147,
-      "stt_left": 38,
+      "stt_done": 148,
+      "stt_left": 37,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
