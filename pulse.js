@@ -47,6 +47,10 @@ function report(s){
   put("src",prefix+" · "+s.source+" · contract ≤5min when awake; raw/UI does not verify Pages artifact freshness");
   var e=document.getElementById("src");
   if(e&&document.createElement){var a=document.createElement("a");a.href=s.history;a.textContent=" · public history (raw main)";e.appendChild(a);}
+  put("runningHeading",s.kind==="OBSERVED"?"WORKERS · LAST OBSERVATION":"WORKERS · UNVERIFIED LAST OBSERVATION");
+  put("runningEvidence",prefix+" · "+detail+" · "+s.source+". Listed workers/PIDs are from that observation, not a live process check.");
+  var pane=document.getElementById("running");
+  if(pane)pane.setAttribute("data-observation",s.kind);
   if(s.kind!=="OBSERVED"){
     put("capState","unknown · last observation");put("sttState","unknown · last observation");
     ["capDot","sttDot"].forEach(function(id){var e=document.getElementById(id);if(e)e.className="dot";});
@@ -73,6 +77,16 @@ function gh(path, opt){
   return fetch("https://api.github.com"+path,{method:opt.method||"GET",headers:h,cache:"no-store",body:opt.body||null});
 }
 function paint(d){
+  var pane=$("running");
+  if(pane){
+    pane.textContent="";
+    var tracks=(d.collector&&d.collector.tracks)||{},c=tracks.captions||{},t=tracks.stt||{},p=d.processes||{};
+    function row(text){var li=document.createElement("li");li.className="mono";li.textContent=text;pane.appendChild(li);}
+    if(p.whisper||t.running)row("STT · "+title(t.channel_id)+" · "+(t.pending||0)+" pending");
+    if(p.backfill||c.running)row("CAPTIONS ×"+(c.jobs||p.backfill_n||1)+" · "+title(c.channel_id)+" · "+(c.done||0)+"/"+(c.total||((c.done||0)+(c.left||0))));
+    (Array.isArray(p.sample)?p.sample:[]).slice(0,4).forEach(function(s){row("pid "+s.pid+" · "+(s.cmd||"unknown command"));});
+    if(!pane.children.length)row("No workers listed in this observation");
+  }
   var tr=(d.collector&&d.collector.tracks)||{};
   var cap=tr.captions||{}, stt=tr.stt||{};
   var capDone=cap.done||0, capLeft=cap.left||0, capTot=cap.total||(capDone+capLeft);

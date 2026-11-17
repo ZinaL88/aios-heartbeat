@@ -47,6 +47,10 @@ function report(s){
   put("src",prefix+" · "+s.source+" · contract ≤5min when awake; raw/UI does not verify Pages artifact freshness");
   var e=document.getElementById("src");
   if(e&&document.createElement){var a=document.createElement("a");a.href=s.history;a.textContent=" · public history (raw main)";e.appendChild(a);}
+  put("runningHeading",s.kind==="OBSERVED"?"WORKERS · LAST OBSERVATION":"WORKERS · UNVERIFIED LAST OBSERVATION");
+  put("runningEvidence",prefix+" · "+detail+" · "+s.source+". Listed workers/PIDs are from that observation, not a live process check.");
+  var pane=document.getElementById("running");
+  if(pane)pane.setAttribute("data-observation",s.kind);
   if(s.kind!=="OBSERVED"){
     put("capState","unknown · last observation");put("sttState","unknown · last observation");
     ["capDot","sttDot"].forEach(function(id){var e=document.getElementById(id);if(e)e.className="dot";});

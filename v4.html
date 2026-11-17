@@ -66,8 +66,8 @@ body { overflow-x:hidden; max-width:100vw;
 </style>
 </head><body>
 <noscript><p class="mono">JavaScript is off — numbers freeze on GitHub cache. Edit queue still opens below (native). Save needs JS.</p></noscript>
-<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-11-17 14:53 HKT</span></div>
-<p class="mono" id="ping">UNVERIFIED snapshot 2026-11-17 14:53 HKT · not live evidence</p>
+<div class="row"><h1>HEARTBEAT</h1><span class="mono" id="age">2026-11-17 14:58 HKT</span></div>
+<p class="mono" id="ping">UNVERIFIED snapshot 2026-11-17 14:58 HKT · not live evidence</p>
 
 <div class="card">
   <div class="row"><h2>WHISPER QUEUE</h2><span class="mono" id="allEta">BZRLlNjPJus</span></div>
@@ -93,14 +93,15 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>BOX</h2>
-  <p class="ch" id="ram">RAM 6.5G / 15.6G · load 6.2</p>
-  <p class="mono" id="box2">disk 97G · tmp 324M · cookies yes · 1.0h</p>
-  <p class="mono" id="sched">next ping 2026-11-17 14:55 HKT · Whisper on · captions retry circuit open on 4 target(s), next retry 2026-11-16 17:19 HKT</p>
+  <p class="ch" id="ram">RAM 9.0G / 15.6G · load 5.5</p>
+  <p class="mono" id="box2">disk 97G · tmp 324M · cookies yes · 1.1h</p>
+  <p class="mono" id="sched">next ping 2026-11-17 15:00 HKT · Whisper on · captions retry circuit open on 4 target(s), next retry 2026-11-16 17:19 HKT</p>
   <p class="mono">not scheduled — we do not reboot the host · RAM gate 6.0G</p>
 </div>
 
 <div class="card">
-  <h2>RUNNING</h2>
+  <h2 id="runningHeading">WORKERS · UNVERIFIED LAST OBSERVATION</h2>
+  <p class="mono" id="runningEvidence">Snapshot only; listed workers and PIDs are not proof of current activity.</p>
   <ol id="running"><li><b>STT</b> · UCy1H1D4DkvBBxU3mcxAXDOw · 42 pending</li><li class="mono">pid 10818 · proc</li><li class="mono">pid 21378 · proc</li></ol>
 </div>
 
@@ -127,7 +128,7 @@ body { overflow-x:hidden; max-width:100vw;
 
 <div class="card">
   <h2>LOG</h2>
-  <ol id="log"><li><span class="mono">reboost.log</span> 2026-11-17T06:53:04Z captions running=0 target=3 stt_live=UCy1H1D4DkvBBxU3mcxAXDOw mem=7.6G cap_signal=none</li><li><span class="mono">reboost.log</span> 2026-11-17T06:53:04Z captions pick empty — stop filling (exclude=UCy1H1D4DkvBBxU3mcxAXDOw)</li><li><span class="mono">reboost.log</span> 2026-11-17T06:53:04Z captions after fill running=0</li><li><span class="mono">reboost.log</span> 2026-11-17T06:53:04Z STT already running — no second Whisper</li><li class="mono">&quot;dry_run&quot;: false</li><li class="mono">}</li><li class="mono">Nothing to do.</li></ol>
+  <ol id="log"><li><span class="mono">reboost.log</span> 2026-11-17T06:57:59Z ensure_venv — start</li><li><span class="mono">reboost.log</span> 2026-11-17T06:58:00Z skip — another reboost holds lock</li><li><span class="mono">reboost.log</span> 2026-11-17T06:58:00Z ensure_venv — ok</li><li><span class="mono">reboost.log</span> 2026-11-17T06:58:00Z STT_VENV_OK=1 PY=&lt;path&gt;</li><li><span class="mono">reboost.log</span> 2026-11-17T06:58:00Z captions running=0 target=3 stt_live=UCy1H1D4DkvBBxU3mcxAXDOw mem=9.0G cap_signal=none</li><li><span class="mono">reboost.log</span> 2026-11-17T06:58:01Z captions pick empty — stop filling (exclude=UCy1H1D4DkvBBxU3mcxAXDOw)</li><li><span class="mono">reboost.log</span> 2026-11-17T06:58:01Z captions after fill running=0</li><li><span class="mono">reboost.log</span> 2026-11-17T06:58:01Z STT already running — no second Whisper</li><li class="mono">&quot;dry_run&quot;: false</li><li class="mono">}</li><li class="mono">Nothing to do.</li></ol>
 </div>
 
 <div class="card">
@@ -191,6 +192,10 @@ function report(s){
   put("src",prefix+" · "+s.source+" · contract ≤5min when awake; raw/UI does not verify Pages artifact freshness");
   var e=document.getElementById("src");
   if(e&&document.createElement){var a=document.createElement("a");a.href=s.history;a.textContent=" · public history (raw main)";e.appendChild(a);}
+  put("runningHeading",s.kind==="OBSERVED"?"WORKERS · LAST OBSERVATION":"WORKERS · UNVERIFIED LAST OBSERVATION");
+  put("runningEvidence",prefix+" · "+detail+" · "+s.source+". Listed workers/PIDs are from that observation, not a live process check.");
+  var pane=document.getElementById("running");
+  if(pane)pane.setAttribute("data-observation",s.kind);
   if(s.kind!=="OBSERVED"){
     put("capState","unknown · last observation");put("sttState","unknown · last observation");
     ["capDot","sttDot"].forEach(function(id){var e=document.getElementById(id);if(e)e.className="dot";});
@@ -217,6 +222,16 @@ function gh(path, opt){
   return fetch("https://api.github.com"+path,{method:opt.method||"GET",headers:h,cache:"no-store",body:opt.body||null});
 }
 function paint(d){
+  var pane=$("running");
+  if(pane){
+    pane.textContent="";
+    var tracks=(d.collector&&d.collector.tracks)||{},c=tracks.captions||{},t=tracks.stt||{},p=d.processes||{};
+    function row(text){var li=document.createElement("li");li.className="mono";li.textContent=text;pane.appendChild(li);}
+    if(p.whisper||t.running)row("STT · "+title(t.channel_id)+" · "+(t.pending||0)+" pending");
+    if(p.backfill||c.running)row("CAPTIONS ×"+(c.jobs||p.backfill_n||1)+" · "+title(c.channel_id)+" · "+(c.done||0)+"/"+(c.total||((c.done||0)+(c.left||0))));
+    (Array.isArray(p.sample)?p.sample:[]).slice(0,4).forEach(function(s){row("pid "+s.pid+" · "+(s.cmd||"unknown command"));});
+    if(!pane.children.length)row("No workers listed in this observation");
+  }
   var tr=(d.collector&&d.collector.tracks)||{};
   var cap=tr.captions||{}, stt=tr.stt||{};
   var capDone=cap.done||0, capLeft=cap.left||0, capTot=cap.total||(capDone+capLeft);

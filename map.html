@@ -1236,6 +1236,21 @@
       }
     }
 
+  
+    /* Narrow truth/layout repair: constrain panels, not hide requested controls. */
+    .side-card.hidden { display: none; }
+    .side-card, .top-bar, .needs-panel, .golden-strip { min-width: 0; }
+    .side-card-header > div { min-width: 0; flex: 1 1 0; }
+    .side-card-title, .detail-value, .detail-value code { min-width: 0; overflow-wrap: anywhere; white-space: normal; }
+    .close-card-btn { flex: 0 0 28px; }
+    .side-card-body, .detail-grid, .detail-row { min-width: 0; }
+    .legend-item { min-width: 0; overflow-wrap: anywhere; }
+    @media (max-width: 900px) {
+      .top-bar { left: 8px; right: auto; width: calc(100% - 16px); max-width: calc(100vw - 16px); transform: none; }
+      .top-bar .filter-group { min-width: 0; flex: 1 1 100%; flex-wrap: wrap; }
+      .side-card { left: 8px; right: auto; width: calc(100% - 16px); max-width: calc(100vw - 16px); }
+      .golden-strip { left: 8px; right: auto; width: calc(100% - 16px); max-width: calc(100vw - 16px); transform: none; overflow-x: auto; }
+    }
   </style>
   <script type="application/json" id="snapshot-data">{
  "schema": "island-map/ops-public-v0",
