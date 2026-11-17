@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-17 20:05 HKT",
+  "written_at_hkt": "2026-11-17 20:10 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -188,10 +188,10 @@
       "channel_id": "UCP76ZVB1x9udP2UFcQkSvMA",
       "skip": false,
       "reason": "",
-      "captions_done": 18,
+      "captions_done": 19,
       "captions_left": 0,
-      "stt_done": 18,
-      "stt_left": 94,
+      "stt_done": 19,
+      "stt_left": 93,
       "videos_total": 112,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2911,16 +2911,16 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-17T11:45:34Z",
+      "last_artifact_mtime": "2026-11-17T12:06:59Z",
       "id": "UCP76ZVB1x9udP2UFcQkSvMA",
       "title": "大卢和小田",
       "kind": "channel",
       "videos_total": 112,
       "videos_source": "inventory",
-      "captions_done": 18,
+      "captions_done": 19,
       "captions_left": 0,
-      "stt_done": 18,
-      "stt_left": 94,
+      "stt_done": 19,
+      "stt_left": 93,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
