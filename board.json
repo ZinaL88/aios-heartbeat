@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-18 13:52 HKT",
+  "written_at_hkt": "2026-11-18 17:45 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -45,10 +45,10 @@
       "channel_id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
       "skip": false,
       "reason": "cut-in from chat 2026-09-19",
-      "captions_done": 163,
+      "captions_done": 166,
       "captions_left": 0,
-      "stt_done": 163,
-      "stt_left": 6,
+      "stt_done": 166,
+      "stt_left": 3,
       "videos_total": 169,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3721,21 +3721,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-18T05:50:46Z",
-      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
-      "title": "Dr Angela C Meyers",
-      "kind": "channel",
-      "videos_total": 169,
-      "videos_source": "inventory",
-      "captions_done": 163,
-      "captions_left": 0,
-      "stt_done": 163,
-      "stt_left": 6,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-18T05:50:10Z",
       "id": "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO",
       "title": "Engineering",
@@ -3806,6 +3791,21 @@
       "captions_left": 0,
       "stt_done": 1,
       "stt_left": 4,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-18T05:54:21Z",
+      "id": "UCD_ew0Ba7bj8JOcggCjzLUQ",
+      "title": "Dr Angela C Meyers",
+      "kind": "channel",
+      "videos_total": 169,
+      "videos_source": "inventory",
+      "captions_done": 166,
+      "captions_left": 0,
+      "stt_done": 166,
+      "stt_left": 3,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
