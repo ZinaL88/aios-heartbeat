@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-20 08:19 HKT",
+  "written_at_hkt": "2026-11-20 08:25 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -227,10 +227,10 @@
       "channel_id": "UCuY0tWGuwCI8SI9FFk60zPg",
       "skip": false,
       "reason": "ops_api video→channel",
-      "captions_done": 76,
+      "captions_done": 77,
       "captions_left": 3,
-      "stt_done": 76,
-      "stt_left": 1,
+      "stt_done": 77,
+      "stt_left": 3,
       "videos_total": 80,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2326,6 +2326,21 @@
       "skip": false
     },
     {
+      "last_artifact_mtime": "2026-11-20T00:19:55Z",
+      "id": "UCuY0tWGuwCI8SI9FFk60zPg",
+      "title": "Sonal Bahl - Career Strategist",
+      "kind": "channel",
+      "videos_total": 80,
+      "videos_source": "inventory",
+      "captions_done": 77,
+      "captions_left": 3,
+      "stt_done": 77,
+      "stt_left": 3,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
       "last_artifact_mtime": null,
       "id": "PLaTR4-VYHk9r3w3JW3KjguIbuhIMvjpd5",
       "title": "【入門級命理課】八字命盤看——天干五合",
@@ -2381,21 +2396,6 @@
       "captions_left": 2,
       "stt_done": 3,
       "stt_left": 2,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
-      "last_artifact_mtime": "2026-11-20T00:16:09Z",
-      "id": "UCuY0tWGuwCI8SI9FFk60zPg",
-      "title": "Sonal Bahl - Career Strategist",
-      "kind": "channel",
-      "videos_total": 80,
-      "videos_source": "inventory",
-      "captions_done": 76,
-      "captions_left": 3,
-      "stt_done": 76,
-      "stt_left": 1,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
