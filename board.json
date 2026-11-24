@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-25 03:19 HKT",
+  "written_at_hkt": "2026-11-25 03:25 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1919,10 +1919,10 @@
       "videos": 8,
       "skip": false,
       "playlist_id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
-      "captions_done": 3,
+      "captions_done": 4,
       "captions_left": 0,
-      "stt_done": 3,
-      "stt_left": 5,
+      "stt_done": 4,
+      "stt_left": 4,
       "videos_total": 8,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3721,21 +3721,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-24T19:18:57Z",
-      "id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
-      "title": "投機實驗室",
-      "kind": "playlist",
-      "videos_total": 8,
-      "videos_source": "inventory",
-      "captions_done": 3,
-      "captions_left": 0,
-      "stt_done": 3,
-      "stt_left": 5,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-24T18:28:44Z",
       "id": "PL-36nHv8kR09YeG27lncUxZBpcDla9dOj",
       "title": "郭宇AI實踐分享 · 十講",
@@ -3760,6 +3745,21 @@
       "captions_done": 5,
       "captions_left": 0,
       "stt_done": 1,
+      "stt_left": 4,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-24T19:23:23Z",
+      "id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
+      "title": "投機實驗室",
+      "kind": "playlist",
+      "videos_total": 8,
+      "videos_source": "inventory",
+      "captions_done": 4,
+      "captions_left": 0,
+      "stt_done": 4,
       "stt_left": 4,
       "status": "waiting_stt",
       "label": "Waiting STT",
