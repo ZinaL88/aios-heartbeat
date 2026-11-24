@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-25 03:03 HKT",
+  "written_at_hkt": "2026-11-25 03:08 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1863,13 +1863,13 @@
       "videos": 8,
       "skip": false,
       "playlist_id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
-      "captions_done": 7,
+      "captions_done": 8,
       "captions_left": 0,
-      "stt_done": 7,
-      "stt_left": 1,
+      "stt_done": 8,
+      "stt_left": 0,
       "videos_total": 8,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P0",
@@ -3841,21 +3841,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-24T18:59:10Z",
-      "id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
-      "title": "代号108",
-      "kind": "playlist",
-      "videos_total": 8,
-      "videos_source": "inventory",
-      "captions_done": 7,
-      "captions_left": 0,
-      "stt_done": 7,
-      "stt_left": 1,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-24T18:30:07Z",
       "id": "UC_5lJHgnMP_lb_VpIiXV0hQ",
       "title": "#11 课代表立正",
@@ -4000,6 +3985,21 @@
       "captions_done": 100,
       "captions_left": 0,
       "stt_done": 100,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-24T19:05:27Z",
+      "id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
+      "title": "代号108",
+      "kind": "playlist",
+      "videos_total": 8,
+      "videos_source": "inventory",
+      "captions_done": 8,
+      "captions_left": 0,
+      "stt_done": 8,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
