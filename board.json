@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-25 02:10 HKT",
+  "written_at_hkt": "2026-11-25 02:15 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1863,10 +1863,10 @@
       "videos": 8,
       "skip": false,
       "playlist_id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
-      "captions_done": 0,
+      "captions_done": 1,
       "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 8,
+      "stt_done": 1,
+      "stt_left": 7,
       "videos_total": 8,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3692,8 +3692,8 @@
     },
     {
       "last_artifact_mtime": null,
-      "id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
-      "title": "代号108",
+      "id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
+      "title": "投機實驗室",
       "kind": "playlist",
       "videos_total": 8,
       "videos_source": "inventory",
@@ -3706,16 +3706,16 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": null,
-      "id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
-      "title": "投機實驗室",
+      "last_artifact_mtime": "2026-11-24T18:11:20Z",
+      "id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
+      "title": "代号108",
       "kind": "playlist",
       "videos_total": 8,
       "videos_source": "inventory",
-      "captions_done": 0,
+      "captions_done": 1,
       "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 8,
+      "stt_done": 1,
+      "stt_left": 7,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
