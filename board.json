@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-25 02:24 HKT",
+  "written_at_hkt": "2026-11-25 02:29 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1863,10 +1863,10 @@
       "videos": 8,
       "skip": false,
       "playlist_id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
-      "captions_done": 2,
+      "captions_done": 3,
       "captions_left": 0,
-      "stt_done": 2,
-      "stt_left": 6,
+      "stt_done": 3,
+      "stt_left": 5,
       "videos_total": 8,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3706,21 +3706,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-24T18:18:32Z",
-      "id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
-      "title": "代号108",
-      "kind": "playlist",
-      "videos_total": 8,
-      "videos_source": "inventory",
-      "captions_done": 2,
-      "captions_left": 0,
-      "stt_done": 2,
-      "stt_left": 6,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-20T00:51:05Z",
       "id": "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO",
       "title": "Engineering",
@@ -3745,6 +3730,21 @@
       "captions_done": 35,
       "captions_left": 0,
       "stt_done": 35,
+      "stt_left": 5,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-24T18:25:55Z",
+      "id": "PLVt93Bo6TqvxUBiyfLdS228KbZtag_wpy",
+      "title": "代号108",
+      "kind": "playlist",
+      "videos_total": 8,
+      "videos_source": "inventory",
+      "captions_done": 3,
+      "captions_left": 0,
+      "stt_done": 3,
       "stt_left": 5,
       "status": "waiting_stt",
       "label": "Waiting STT",
