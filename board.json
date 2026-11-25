@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-26 02:20 HKT",
+  "written_at_hkt": "2026-11-26 02:25 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -311,8 +311,8 @@
       "playlist_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
       "captions_done": 220,
       "captions_left": 0,
-      "stt_done": 94,
-      "stt_left": 187,
+      "stt_done": 116,
+      "stt_left": 165,
       "videos_total": 284,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2761,21 +2761,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-25T18:19:59Z",
-      "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-      "title": "Job hunting",
-      "kind": "playlist",
-      "videos_total": 284,
-      "videos_source": "inventory",
-      "captions_done": 220,
-      "captions_left": 0,
-      "stt_done": 94,
-      "stt_left": 187,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLbVaWSxd4rLLAQ9txP7pKAqZIO1LJIjBt",
       "title": "Innovation",
@@ -2786,6 +2771,21 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 178,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-25T18:25:02Z",
+      "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+      "title": "Job hunting",
+      "kind": "playlist",
+      "videos_total": 284,
+      "videos_source": "inventory",
+      "captions_done": 220,
+      "captions_left": 0,
+      "stt_done": 116,
+      "stt_left": 165,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
