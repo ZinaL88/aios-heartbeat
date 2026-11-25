@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-26 01:44 HKT",
+  "written_at_hkt": "2026-11-26 01:48 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -423,11 +423,11 @@
       "playlist_id": "PLIivdWyY5sqLXR1eSkiM5bE6pFlXC-OSs",
       "captions_done": 30,
       "captions_left": 0,
-      "stt_done": 12,
-      "stt_left": 18,
+      "stt_done": 30,
+      "stt_left": 0,
       "videos_total": 30,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P0",
@@ -633,8 +633,8 @@
       "playlist_id": "PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2",
       "captions_done": 60,
       "captions_left": 0,
-      "stt_done": 8,
-      "stt_left": 52,
+      "stt_done": 15,
+      "stt_left": 45,
       "videos_total": 60,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3046,21 +3046,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-24T18:28:54Z",
-      "id": "PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2",
-      "title": "Stanford CS221 AI",
-      "kind": "playlist",
-      "videos_total": 60,
-      "videos_source": "inventory",
-      "captions_done": 60,
-      "captions_left": 0,
-      "stt_done": 8,
-      "stt_left": 52,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-24T18:28:56Z",
       "id": "UCaA2cfCpytaARHcNcApboSw",
       "title": "麥克老李",
@@ -3071,6 +3056,21 @@
       "captions_left": 0,
       "stt_done": 33,
       "stt_left": 50,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-25T17:48:41Z",
+      "id": "PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2",
+      "title": "Stanford CS221 AI",
+      "kind": "playlist",
+      "videos_total": 60,
+      "videos_source": "inventory",
+      "captions_done": 60,
+      "captions_left": 0,
+      "stt_done": 15,
+      "stt_left": 45,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3385,21 +3385,6 @@
       "captions_done": 20,
       "captions_left": 0,
       "stt_done": 2,
-      "stt_left": 18,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "last_artifact_mtime": "2026-11-25T17:44:19Z",
-      "id": "PLIivdWyY5sqLXR1eSkiM5bE6pFlXC-OSs",
-      "title": "The Agent Factory",
-      "kind": "playlist",
-      "videos_total": 30,
-      "videos_source": "inventory",
-      "captions_done": 30,
-      "captions_left": 0,
-      "stt_done": 12,
       "stt_left": 18,
       "status": "waiting_stt",
       "label": "Waiting STT",
@@ -3970,6 +3955,21 @@
       "captions_done": 3,
       "captions_left": 0,
       "stt_done": 3,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-25T17:47:19Z",
+      "id": "PLIivdWyY5sqLXR1eSkiM5bE6pFlXC-OSs",
+      "title": "The Agent Factory",
+      "kind": "playlist",
+      "videos_total": 30,
+      "videos_source": "inventory",
+      "captions_done": 30,
+      "captions_left": 0,
+      "stt_done": 30,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
