@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-26 01:54 HKT",
+  "written_at_hkt": "2026-11-26 01:59 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -633,11 +633,11 @@
       "playlist_id": "PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2",
       "captions_done": 60,
       "captions_left": 0,
-      "stt_done": 44,
-      "stt_left": 16,
+      "stt_done": 60,
+      "stt_left": 0,
       "videos_total": 60,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P0",
@@ -1891,10 +1891,10 @@
       "videos": 98,
       "skip": false,
       "playlist_id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
-      "captions_done": 0,
+      "captions_done": 17,
       "captions_left": 9,
-      "stt_done": 0,
-      "stt_left": 89,
+      "stt_done": 17,
+      "stt_left": 72,
       "videos_total": 98,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2116,21 +2116,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": null,
-      "id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
-      "title": "系统经济金融",
-      "kind": "playlist",
-      "videos_total": 98,
-      "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 9,
-      "stt_done": 0,
-      "stt_left": 89,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-24T18:30:51Z",
       "id": "UCy1H1D4DkvBBxU3mcxAXDOw",
       "title": "Yinuo Li",
@@ -2141,6 +2126,21 @@
       "captions_left": 48,
       "stt_done": 35,
       "stt_left": 36,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-24T18:26:45Z",
+      "id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
+      "title": "系统经济金融",
+      "kind": "playlist",
+      "videos_total": 98,
+      "videos_source": "inventory",
+      "captions_done": 17,
+      "captions_left": 9,
+      "stt_done": 17,
+      "stt_left": 72,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -3421,21 +3421,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-25T17:54:06Z",
-      "id": "PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2",
-      "title": "Stanford CS221 AI",
-      "kind": "playlist",
-      "videos_total": 60,
-      "videos_source": "inventory",
-      "captions_done": 60,
-      "captions_left": 0,
-      "stt_done": 44,
-      "stt_left": 16,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLbVaWSxd4rLK6ZZxE_Gjjfch0M6z-LFwU",
       "title": "LLM",
@@ -3925,6 +3910,21 @@
       "captions_done": 44,
       "captions_left": 0,
       "stt_done": 44,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-25T17:56:39Z",
+      "id": "PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2",
+      "title": "Stanford CS221 AI",
+      "kind": "playlist",
+      "videos_total": 60,
+      "videos_source": "inventory",
+      "captions_done": 60,
+      "captions_left": 0,
+      "stt_done": 60,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
