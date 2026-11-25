@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-26 02:30 HKT",
+  "written_at_hkt": "2026-11-26 02:35 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -311,8 +311,8 @@
       "playlist_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
       "captions_done": 220,
       "captions_left": 0,
-      "stt_done": 122,
-      "stt_left": 159,
+      "stt_done": 131,
+      "stt_left": 150,
       "videos_total": 284,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2791,21 +2791,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-25T18:29:57Z",
-      "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-      "title": "Job hunting",
-      "kind": "playlist",
-      "videos_total": 284,
-      "videos_source": "inventory",
-      "captions_done": 220,
-      "captions_left": 0,
-      "stt_done": 122,
-      "stt_left": 159,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLbVaWSxd4rLKh4dlVL_ED5qhKAoInzPcl",
       "title": "Blockchain",
@@ -2831,6 +2816,21 @@
       "captions_left": 0,
       "stt_done": 439,
       "stt_left": 151,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-25T18:31:19Z",
+      "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+      "title": "Job hunting",
+      "kind": "playlist",
+      "videos_total": 284,
+      "videos_source": "inventory",
+      "captions_done": 220,
+      "captions_left": 0,
+      "stt_done": 131,
+      "stt_left": 150,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
