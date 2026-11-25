@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-11-25 02:07 HKT",
-  "built_at_utc": "2026-11-24T18:07:30Z",
+  "built_at_hkt": "2026-11-25 10:50 HKT",
+  "built_at_utc": "2026-11-25T02:50:15Z",
   "items": 26238,
-  "transcripts_indexed": 15023,
-  "schema_gaps": 24333,
+  "transcripts_indexed": 15041,
+  "schema_gaps": 24336,
   "channels": 128,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -73,7 +73,7 @@
     },
     {
       "channel_id": "kedaibiao",
-      "channel_name": "课代表立正",
+      "channel_name": "#11 课代表立正",
       "item_count": 853,
       "transcript_count": 846,
       "schema_gap_count": 853
