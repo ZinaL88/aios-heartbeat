@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 07:15 HKT",
+  "written_at_hkt": "2026-11-27 07:23 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -325,8 +325,8 @@
       "playlist_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "captions_done": 716,
       "captions_left": 0,
-      "stt_done": 691,
-      "stt_left": 161,
+      "stt_done": 709,
+      "stt_left": 143,
       "videos_total": 863,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2731,21 +2731,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T23:13:44Z",
-      "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-      "title": "Learning how to learn",
-      "kind": "playlist",
-      "videos_total": 863,
-      "videos_source": "inventory",
-      "captions_done": 716,
-      "captions_left": 0,
-      "stt_done": 691,
-      "stt_left": 161,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLbVaWSxd4rLKh4dlVL_ED5qhKAoInzPcl",
       "title": "Blockchain",
@@ -2771,6 +2756,21 @@
       "captions_left": 0,
       "stt_done": 439,
       "stt_left": 151,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-26T23:23:00Z",
+      "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+      "title": "Learning how to learn",
+      "kind": "playlist",
+      "videos_total": 863,
+      "videos_source": "inventory",
+      "captions_done": 716,
+      "captions_left": 0,
+      "stt_done": 709,
+      "stt_left": 143,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
