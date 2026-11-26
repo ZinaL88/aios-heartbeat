@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-26 21:35 HKT",
+  "written_at_hkt": "2026-11-26 21:40 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -325,8 +325,8 @@
       "playlist_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "captions_done": 714,
       "captions_left": 0,
-      "stt_done": 408,
-      "stt_left": 444,
+      "stt_done": 428,
+      "stt_left": 424,
       "videos_total": 863,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2626,21 +2626,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T13:31:40Z",
-      "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-      "title": "Learning how to learn",
-      "kind": "playlist",
-      "videos_total": 863,
-      "videos_source": "inventory",
-      "captions_done": 714,
-      "captions_left": 0,
-      "stt_done": 408,
-      "stt_left": 444,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLbVaWSxd4rLKeRu6HPYPQJd_XX5g3ukcj",
       "title": "Biz ideas",
@@ -2665,6 +2650,21 @@
       "captions_done": 0,
       "captions_left": 0,
       "stt_done": 0,
+      "stt_left": 424,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-26T13:39:08Z",
+      "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+      "title": "Learning how to learn",
+      "kind": "playlist",
+      "videos_total": 863,
+      "videos_source": "inventory",
+      "captions_done": 714,
+      "captions_left": 0,
+      "stt_done": 428,
       "stt_left": 424,
       "status": "waiting_stt",
       "label": "Waiting STT",
