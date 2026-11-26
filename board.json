@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-26 11:50 HKT",
+  "written_at_hkt": "2026-11-26 11:55 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -311,8 +311,8 @@
       "playlist_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
       "captions_done": 220,
       "captions_left": 0,
-      "stt_done": 214,
-      "stt_left": 67,
+      "stt_done": 216,
+      "stt_left": 65,
       "videos_total": 284,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1891,10 +1891,10 @@
       "videos": 98,
       "skip": false,
       "playlist_id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
-      "captions_done": 77,
+      "captions_done": 86,
       "captions_left": 9,
-      "stt_done": 77,
-      "stt_left": 12,
+      "stt_done": 86,
+      "stt_left": 3,
       "videos_total": 98,
       "status": "waiting_captions",
       "label": "Waiting captions"
@@ -2176,21 +2176,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-25T18:05:12Z",
-      "id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
-      "title": "系统经济金融",
-      "kind": "playlist",
-      "videos_total": 98,
-      "videos_source": "inventory",
-      "captions_done": 77,
-      "captions_left": 9,
-      "stt_done": 77,
-      "stt_left": 12,
-      "status": "waiting_captions",
-      "label": "Waiting captions",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-24T18:30:46Z",
       "id": "PLrtCHHeadkHqhuz-bwUiGbmdUnN4eonZ2",
       "title": "Solutions Architect Interview Prep",
@@ -2231,6 +2216,21 @@
       "captions_left": 5,
       "stt_done": 1,
       "stt_left": 7,
+      "status": "waiting_captions",
+      "label": "Waiting captions",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-25T18:05:12Z",
+      "id": "PLVt93Bo6TqvyDyaVT_pDp2wcUfALtOtuJ",
+      "title": "系统经济金融",
+      "kind": "playlist",
+      "videos_total": 98,
+      "videos_source": "inventory",
+      "captions_done": 86,
+      "captions_left": 9,
+      "stt_done": 86,
+      "stt_left": 3,
       "status": "waiting_captions",
       "label": "Waiting captions",
       "skip": false
@@ -2956,21 +2956,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T03:47:47Z",
-      "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-      "title": "Job hunting",
-      "kind": "playlist",
-      "videos_total": 284,
-      "videos_source": "inventory",
-      "captions_done": 220,
-      "captions_left": 0,
-      "stt_done": 214,
-      "stt_left": 67,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-24T18:28:44Z",
       "id": "PL1328115D3D8A2566",
       "title": "Statistics",
@@ -2996,6 +2981,21 @@
       "captions_left": 0,
       "stt_done": 2,
       "stt_left": 66,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-26T03:51:17Z",
+      "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+      "title": "Job hunting",
+      "kind": "playlist",
+      "videos_total": 284,
+      "videos_source": "inventory",
+      "captions_done": 220,
+      "captions_left": 0,
+      "stt_done": 216,
+      "stt_left": 65,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
