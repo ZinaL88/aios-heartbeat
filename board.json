@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 05:30 HKT",
+  "written_at_hkt": "2026-11-27 05:34 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -325,8 +325,8 @@
       "playlist_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "captions_done": 716,
       "captions_left": 0,
-      "stt_done": 607,
-      "stt_left": 245,
+      "stt_done": 624,
+      "stt_left": 228,
       "videos_total": 863,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2656,21 +2656,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T21:30:15Z",
-      "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-      "title": "Learning how to learn",
-      "kind": "playlist",
-      "videos_total": 863,
-      "videos_source": "inventory",
-      "captions_done": 716,
-      "captions_left": 0,
-      "stt_done": 607,
-      "stt_left": 245,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:07:13Z",
       "id": "PL30C54D951E8E1688",
       "title": "Careers",
@@ -2711,6 +2696,21 @@
       "captions_left": 0,
       "stt_done": 626,
       "stt_left": 237,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-26T21:33:14Z",
+      "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+      "title": "Learning how to learn",
+      "kind": "playlist",
+      "videos_total": 863,
+      "videos_source": "inventory",
+      "captions_done": 716,
+      "captions_left": 0,
+      "stt_done": 624,
+      "stt_left": 228,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
