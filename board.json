@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-26 17:25 HKT",
+  "written_at_hkt": "2026-11-26 17:30 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -325,8 +325,8 @@
       "playlist_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "captions_done": 714,
       "captions_left": 0,
-      "stt_done": 200,
-      "stt_left": 652,
+      "stt_done": 206,
+      "stt_left": 646,
       "videos_total": 863,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2566,21 +2566,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T09:25:25Z",
-      "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-      "title": "Learning how to learn",
-      "kind": "playlist",
-      "videos_total": 863,
-      "videos_source": "inventory",
-      "captions_done": 714,
-      "captions_left": 0,
-      "stt_done": 200,
-      "stt_left": 652,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-24T18:28:49Z",
       "id": "PLbVaWSxd4rLIC9oU22ruUhhANvWlpVmrD",
       "title": "Product Management",
@@ -2591,6 +2576,21 @@
       "captions_left": 0,
       "stt_done": 264,
       "stt_left": 652,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-26T09:27:52Z",
+      "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+      "title": "Learning how to learn",
+      "kind": "playlist",
+      "videos_total": 863,
+      "videos_source": "inventory",
+      "captions_done": 714,
+      "captions_left": 0,
+      "stt_done": 206,
+      "stt_left": 646,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
