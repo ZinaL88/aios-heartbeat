@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 07:23 HKT",
+  "written_at_hkt": "2026-11-27 07:28 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -323,10 +323,10 @@
       "videos": 863,
       "skip": false,
       "playlist_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-      "captions_done": 716,
+      "captions_done": 721,
       "captions_left": 0,
-      "stt_done": 709,
-      "stt_left": 143,
+      "stt_done": 721,
+      "stt_left": 131,
       "videos_total": 863,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2761,21 +2761,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T23:23:00Z",
-      "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
-      "title": "Learning how to learn",
-      "kind": "playlist",
-      "videos_total": 863,
-      "videos_source": "inventory",
-      "captions_done": 716,
-      "captions_left": 0,
-      "stt_done": 709,
-      "stt_left": 143,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:07:47Z",
       "id": "UCeTLfPD7thTMabtL7w87Aug",
       "title": "清流君",
@@ -2786,6 +2771,21 @@
       "captions_left": 0,
       "stt_done": 9,
       "stt_left": 134,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-26T23:27:43Z",
+      "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
+      "title": "Learning how to learn",
+      "kind": "playlist",
+      "videos_total": 863,
+      "videos_source": "inventory",
+      "captions_done": 721,
+      "captions_left": 0,
+      "stt_done": 721,
+      "stt_left": 131,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
