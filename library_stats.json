@@ -1,9 +1,9 @@
 {
-  "built_at_hkt": "2026-11-26 17:59 HKT",
-  "built_at_utc": "2026-11-26T09:59:09Z",
-  "items": 26238,
-  "transcripts_indexed": 15512,
-  "schema_gaps": 24510,
+  "built_at_hkt": "2026-11-26 17:35 HKT",
+  "built_at_utc": "2026-11-26T22:35:19Z",
+  "items": 26245,
+  "transcripts_indexed": 15914,
+  "schema_gaps": 24517,
   "channels": 128,
   "local_search_url": "./library-search.html",
   "how": "Phone/public search: ./library-search.html. Do not use localhost as a board CTA.",
@@ -73,7 +73,7 @@
     },
     {
       "channel_id": "kedaibiao",
-      "channel_name": "#11 课代表立正",
+      "channel_name": "课代表立正",
       "item_count": 853,
       "transcript_count": 846,
       "schema_gap_count": 853
@@ -82,7 +82,7 @@
       "channel_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "channel_name": "Learning how to learn",
       "item_count": 852,
-      "transcript_count": 250,
+      "transcript_count": 645,
       "schema_gap_count": 852
     },
     {
