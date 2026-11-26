@@ -40,6 +40,7 @@
    - `loop-engineering-playbook-20261030.md` — the Loop Engineering method: claim → spawn ≥3 free doers → checker ≠ doer → close/escalate; free-first ladder OpenCode → Gemini (API/agy) → Cursor → Codex; never park idle no-PIC work; never install this puller on the primary; **box cron first** — the LE hop is supercronic `*/15 9-22` → `run_assign_hop.sh`, and scheduled Grok wakes for free-doer work = FAIL.
    - `decider-first-principles-free-box-20261031.md` — standing dispatch rules: free/box cron first (Decider + LE); Grok wakes only for Z-L-facing results; new monitors default to box cron.
    - `token-save-playbook-grok2-20261031.md` — Grok1 proven token cuts, anti-patterns, day-1 checklist (apply same day 1).
+   - `resource-allocation-principle-20261126.md` — Z L's 2026-11-26 standing resource-allocation principle (five points).
    - `grok2-wall-handoff-20261030.md` — the wall playbook: trigger conditions, role after takeover, hard gates needing Z L (`merge / deploy / spend / WA-speak-as-Z L / hard-reset`), first-60-minutes checklist, token discipline, **continuous pack refresh duty**.
    Full file map: `index.json` (same directory). Every listed file is pulled by step 2.
 5. **Claim idle work.** Now that you have the method:
