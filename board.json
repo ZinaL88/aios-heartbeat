@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 07:01 HKT",
+  "written_at_hkt": "2026-11-27 07:06 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -325,8 +325,8 @@
       "playlist_id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "captions_done": 716,
       "captions_left": 0,
-      "stt_done": 687,
-      "stt_left": 165,
+      "stt_done": 688,
+      "stt_left": 164,
       "videos_total": 863,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2716,7 +2716,7 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T22:58:59Z",
+      "last_artifact_mtime": "2026-11-26T23:03:10Z",
       "id": "PLbVaWSxd4rLJiO-avcvo4tN6BLevCUYyN",
       "title": "Learning how to learn",
       "kind": "playlist",
@@ -2724,8 +2724,8 @@
       "videos_source": "inventory",
       "captions_done": 716,
       "captions_left": 0,
-      "stt_done": 687,
-      "stt_left": 165,
+      "stt_done": 688,
+      "stt_left": 164,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
