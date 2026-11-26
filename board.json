@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-26 10:19 HKT",
+  "written_at_hkt": "2026-11-26 10:48 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -311,8 +311,8 @@
       "playlist_id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
       "captions_done": 220,
       "captions_left": 0,
-      "stt_done": 155,
-      "stt_left": 126,
+      "stt_done": 159,
+      "stt_left": 122,
       "videos_total": 284,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2836,21 +2836,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T02:14:23Z",
-      "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
-      "title": "Job hunting",
-      "kind": "playlist",
-      "videos_total": 284,
-      "videos_source": "inventory",
-      "captions_done": 220,
-      "captions_left": 0,
-      "stt_done": 155,
-      "stt_left": 126,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-24T18:28:55Z",
       "id": "PLwLhCsXo_YKNQE8C-WHQNCSXg94NmLYgU",
       "title": "⚡️ Framework Thinking & Mental Models ⚡️",
@@ -2861,6 +2846,21 @@
       "captions_left": 0,
       "stt_done": 16,
       "stt_left": 123,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-26T02:48:27Z",
+      "id": "PLbVaWSxd4rLL0HqDMFsJuMk3daymCuGDt",
+      "title": "Job hunting",
+      "kind": "playlist",
+      "videos_total": 284,
+      "videos_source": "inventory",
+      "captions_done": 220,
+      "captions_left": 0,
+      "stt_done": 159,
+      "stt_left": 122,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
