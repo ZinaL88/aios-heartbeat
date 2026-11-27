@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 23:57 HKT",
+  "written_at_hkt": "2026-11-28 00:03 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -941,8 +941,8 @@
       "playlist_id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
       "captions_done": 79,
       "captions_left": 0,
-      "stt_done": 13,
-      "stt_left": 81,
+      "stt_done": 15,
+      "stt_left": 79,
       "videos_total": 94,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1109,8 +1109,8 @@
       "playlist_id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
       "captions_done": 50,
       "captions_left": 0,
-      "stt_done": 47,
-      "stt_left": 17,
+      "stt_done": 49,
+      "stt_left": 15,
       "videos_total": 64,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2866,21 +2866,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T14:07:20Z",
-      "id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
-      "title": "LLM / AI",
-      "kind": "playlist",
-      "videos_total": 94,
-      "videos_source": "inventory",
-      "captions_done": 79,
-      "captions_left": 0,
-      "stt_done": 13,
-      "stt_left": 81,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:09:27Z",
       "id": "UCJAPsTtcJJWGk8e-_CJL8TQ",
       "title": "一个狠人",
@@ -2891,6 +2876,21 @@
       "captions_left": 0,
       "stt_done": 730,
       "stt_left": 81,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T16:02:05Z",
+      "id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
+      "title": "LLM / AI",
+      "kind": "playlist",
+      "videos_total": 94,
+      "videos_source": "inventory",
+      "captions_done": 79,
+      "captions_left": 0,
+      "stt_done": 15,
+      "stt_left": 79,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3181,7 +3181,7 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-27T15:40:45Z",
+      "last_artifact_mtime": "2026-11-27T16:00:41Z",
       "id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
       "title": "Algorithms",
       "kind": "playlist",
@@ -3189,8 +3189,8 @@
       "videos_source": "inventory",
       "captions_done": 50,
       "captions_left": 0,
-      "stt_done": 47,
-      "stt_left": 17,
+      "stt_done": 49,
+      "stt_left": 15,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
