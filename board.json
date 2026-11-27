@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 20:50 HKT",
+  "written_at_hkt": "2026-11-27 20:54 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1291,8 +1291,8 @@
       "playlist_id": "PL1328115D3D8A2566",
       "captions_done": 67,
       "captions_left": 0,
-      "stt_done": 38,
-      "stt_left": 29,
+      "stt_done": 63,
+      "stt_left": 4,
       "videos_total": 67,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3091,21 +3091,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-27T12:50:03Z",
-      "id": "PL1328115D3D8A2566",
-      "title": "Statistics",
-      "kind": "playlist",
-      "videos_total": 67,
-      "videos_source": "inventory",
-      "captions_done": 67,
-      "captions_left": 0,
-      "stt_done": 38,
-      "stt_left": 29,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:07:13Z",
       "id": "PL2SOU6wwxB0v3c46v2ptuDKIHmXHRAmeU",
       "title": "Econ 2450A Public Economics | Raj Chetty",
@@ -3281,6 +3266,21 @@
       "captions_left": 0,
       "stt_done": 9,
       "stt_left": 5,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T12:54:10Z",
+      "id": "PL1328115D3D8A2566",
+      "title": "Statistics",
+      "kind": "playlist",
+      "videos_total": 67,
+      "videos_source": "inventory",
+      "captions_done": 67,
+      "captions_left": 0,
+      "stt_done": 63,
+      "stt_left": 4,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
