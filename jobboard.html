@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heartbeat · Job board</title>
+  <style>
+    :root{color-scheme:dark}body{margin:0;background:#12151c;color:#f4efe6;font:15px/1.4 system-ui,sans-serif}
+    main{padding:14px 18px}h1{margin:6px 0 2px;font-size:20px}#jb-legend{color:#9aa3b5;font-size:13px;margin:4px 0 10px}
+    #jb h2{margin:18px 0 6px;font-size:13px;letter-spacing:.08em;color:#9aa3b5;text-transform:uppercase}
+    .jb-grid{grid-template-columns:repeat(auto-fill,minmax(360px,1fr))}.jb-sec{font-size:13px;margin-top:4px}
+    .jb-ok{color:#7fe0a2}.jb-no{color:#ff8a7c}.jb-pend{color:#9aa3b5}.jb-sec a{color:#8cc3ff}
+  </style>
+  <script src="aios-nav.js" defer></script>
+  <script src="view-switcher.js" defer></script>
+  <script src="job-board.js" defer></script>
+</head>
+<body><main>
+  <h1>Job board and roadmap</h1>
+  <div><span id="jb-status" class="vs-chip unknown">task data · checking</span></div>
+  <p id="jb-legend">Loading open_tasks.json…</p>
+  <div id="jb"></div>
+  <noscript>Enable JavaScript to see the job board.</noscript>
+</main></body>
+</html>
