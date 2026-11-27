@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 08:10 HKT",
+  "written_at_hkt": "2026-11-27 08:16 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -955,11 +955,11 @@
       "playlist_id": "PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5",
       "captions_done": 5,
       "captions_left": 0,
-      "stt_done": 1,
-      "stt_left": 4,
+      "stt_done": 5,
+      "stt_left": 0,
       "videos_total": 5,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -1179,8 +1179,8 @@
       "playlist_id": "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO",
       "captions_done": 7,
       "captions_left": 0,
-      "stt_done": 2,
-      "stt_left": 5,
+      "stt_done": 6,
+      "stt_left": 1,
       "videos_total": 7,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1919,13 +1919,13 @@
       "videos": 8,
       "skip": false,
       "playlist_id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
-      "captions_done": 5,
+      "captions_done": 8,
       "captions_left": 0,
-      "stt_done": 7,
-      "stt_left": 1,
+      "stt_done": 8,
+      "stt_left": 0,
       "videos_total": 8,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -3571,21 +3571,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T14:07:25Z",
-      "id": "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO",
-      "title": "Engineering",
-      "kind": "playlist",
-      "videos_total": 7,
-      "videos_source": "inventory",
-      "captions_done": 7,
-      "captions_left": 0,
-      "stt_done": 2,
-      "stt_left": 5,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:10:00Z",
       "id": "PLEmTTOfet46PtZClnUPi51RJWhJ4CPo4J",
       "title": "How To Systemize Your Business So It Runs Without You",
@@ -3611,21 +3596,6 @@
       "captions_left": 0,
       "stt_done": 35,
       "stt_left": 5,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "last_artifact_mtime": "2026-11-26T14:07:25Z",
-      "id": "PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5",
-      "title": "AI Product Management",
-      "kind": "playlist",
-      "videos_total": 5,
-      "videos_source": "inventory",
-      "captions_done": 5,
-      "captions_left": 0,
-      "stt_done": 1,
-      "stt_left": 4,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3676,6 +3646,21 @@
       "skip": false
     },
     {
+      "last_artifact_mtime": "2026-11-27T00:15:03Z",
+      "id": "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO",
+      "title": "Engineering",
+      "kind": "playlist",
+      "videos_total": 7,
+      "videos_source": "inventory",
+      "captions_done": 7,
+      "captions_left": 0,
+      "stt_done": 6,
+      "stt_left": 1,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
       "last_artifact_mtime": "2026-11-26T14:08:05Z",
       "id": "UC6t1O76G0jYXOAoYCm153dA",
       "title": "Lenny's Podcast",
@@ -3700,21 +3685,6 @@
       "captions_done": 20,
       "captions_left": 0,
       "stt_done": 20,
-      "stt_left": 1,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "last_artifact_mtime": "2026-11-26T14:09:59Z",
-      "id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
-      "title": "投機實驗室",
-      "kind": "playlist",
-      "videos_total": 8,
-      "videos_source": "inventory",
-      "captions_done": 5,
-      "captions_left": 0,
-      "stt_done": 7,
       "stt_left": 1,
       "status": "waiting_stt",
       "label": "Waiting STT",
@@ -3760,6 +3730,21 @@
       "captions_done": 25,
       "captions_left": 0,
       "stt_done": 25,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T00:11:29Z",
+      "id": "PLrtCHHeadkHqv1zL-85yGZhhEDANBiep5",
+      "title": "AI Product Management",
+      "kind": "playlist",
+      "videos_total": 5,
+      "videos_source": "inventory",
+      "captions_done": 5,
+      "captions_left": 0,
+      "stt_done": 5,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
@@ -4015,6 +4000,21 @@
       "captions_done": 1,
       "captions_left": 0,
       "stt_done": 1,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-26T14:09:59Z",
+      "id": "PLVt93Bo6TqvzfhAVWonVfnqDydiX43fLd",
+      "title": "投機實驗室",
+      "kind": "playlist",
+      "videos_total": 8,
+      "videos_source": "inventory",
+      "captions_done": 8,
+      "captions_left": 0,
+      "stt_done": 8,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
