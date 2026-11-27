@@ -37,13 +37,21 @@
     + ".vs-toggle{padding:4px 12px;border-radius:999px;border:1px solid #f7c948;background:transparent;color:#f7c948;font-weight:600;cursor:pointer}"
     + ".vs-toggle[aria-pressed=true]{background:#f7c948;color:#241a00}"
     + ".vs-banner{width:100%;padding:4px 10px;border-radius:6px;background:#4a3410;color:#ffd27a;font-size:12px}"
-    /* light-up: live data. Idle dims; running and waiting glow. */
-    + "body.vs-lightup .building-node{transition:none}"
-    + "body.vs-lightup.vs-live .building-node{opacity:.28;filter:grayscale(.8) brightness(.8)}"
-    + "body.vs-lightup.vs-live .building-node[data-state=running],body.vs-lightup.vs-live .building-node[data-state=waiting],body.vs-lightup.vs-live .building-node[data-state=blocked]{opacity:1;filter:drop-shadow(0 0 7px #ffd34d) drop-shadow(0 0 16px #ffb300)}"
-    + "body.vs-lightup.vs-live .building-node[data-state=waiting],body.vs-lightup.vs-live .building-node[data-state=blocked]{filter:drop-shadow(0 0 7px #ff7a66) drop-shadow(0 0 14px #e05a47)}"
-    /* light-up on stale data: no glow, hatched dim, so nothing looks live */
-    + "body.vs-lightup.vs-stale .building-node{opacity:.45;filter:grayscale(1) sepia(.3)}";
+    /* light-up board: words first, colour second. Stale rows are grey and say "was ...". */
+    + ".vs-board{position:fixed;left:0;right:0;bottom:0;top:var(--vs-top,46px);z-index:90;overflow:auto;background:#12151c;color:#f4efe6;font:15px/1.4 system-ui,sans-serif;padding:14px}"
+    + ".vs-board[hidden]{display:none}.vs-board h2{margin:14px 0 6px;font-size:14px;letter-spacing:.08em;color:#9aa3b5;text-transform:uppercase}"
+    + ".vs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px}"
+    + ".vs-card{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;padding:8px 10px;border-radius:10px;background:#1c212c;border:1px solid #2c3445}"
+    + ".vs-lamp{grid-row:span 3;width:16px;height:16px;border-radius:50%;margin-top:4px;background:#556;box-shadow:none}"
+    + ".vs-word{font-weight:800;letter-spacing:.04em}.vs-name{font-size:14px;word-break:break-word}.vs-meta{font:12px ui-monospace,monospace;color:#9aa3b5}"
+    + ".vs-eta{font:13px ui-monospace,monospace;color:#f4efe6}.vs-eta.none{color:#8a93a5}"
+    + ".vs-live .vs-doing .vs-lamp{background:#ffd34d;box-shadow:0 0 12px 4px #ffb300}.vs-live .vs-doing .vs-word{color:#ffd34d}"
+    + ".vs-live .vs-stalled .vs-lamp{background:#ff6a5a;box-shadow:0 0 10px 3px #e05a47}.vs-live .vs-stalled .vs-word{color:#ff8a7c}"
+    + ".vs-live .vs-waiting .vs-lamp{background:#c792ff;box-shadow:0 0 10px 3px #a35cf0}.vs-live .vs-waiting .vs-word{color:#d7b0ff}"
+    + ".vs-live .vs-queued .vs-lamp{background:#5aa9ff}.vs-live .vs-queued .vs-word{color:#8cc3ff}"
+    + ".vs-live .vs-done .vs-lamp{background:#4cc27a}.vs-live .vs-done .vs-word{color:#7fe0a2}"
+    + ".vs-stale-board .vs-card{opacity:.7}.vs-stale-board .vs-word{color:#b9b2a0}"
+    + ".vs-legend{font-size:12px;color:#9aa3b5;margin:4px 0 8px}";
   document.addEventListener("DOMContentLoaded", function () {
     var st = el("style"); st.textContent = CSS; document.head.appendChild(st);
     var N = root.AIOSNav, room = N ? N.base() : "";
@@ -91,9 +99,74 @@
         banner.textContent = "Building states are from " + (gen || "an unknown time") + " (" + human(ms) + "). Light-up is paused: nothing here is drawn as live until the map data refreshes.";
       };
       update(); setInterval(update, 60000);
+      var board = el("div", "vs-board"); board.hidden = true; board.setAttribute("aria-label", "Light-up board"); document.body.appendChild(board);
+      var built = false;
+      function word(state) {
+        var k = String(state || "").toLowerCase();
+        if (/^running|doing/.test(k)) return ["doing", "DOING"];
+        if (/stall/.test(k)) return ["stalled", "STALLED"];
+        if (/wait/.test(k)) return ["waiting", "WAITING ON YOU"];
+        if (/block/.test(k)) return ["stalled", "BLOCKED"];
+        if (/next|queue/.test(k)) return ["queued", "QUEUED"];
+        if (/review/.test(k)) return ["done", "DONE, NEEDS REVIEW"];
+        if (/done/.test(k)) return ["done", "DONE"];
+        if (/hand/.test(k)) return ["queued", "HANDED OFF"];
+        if (/fail/.test(k)) return ["stalled", "FAILED"];
+        return ["queued", "UNKNOWN"];
+      }
+      function card(state, name, meta, eta, stale) {
+        var w = word(state), c = el("div", "vs-card vs-" + w[0]);
+        c.appendChild(el("span", "vs-lamp"));
+        c.appendChild(el("div", "vs-word", (stale ? "WAS " : "") + w[1]));
+        c.appendChild(el("div", "vs-name", name));
+        var m = el("div", "vs-meta", meta); c.appendChild(m);
+        c.appendChild(el("span")); c.lastChild.style.display = "none";
+        var e = el("div", "vs-eta" + (eta.ok ? "" : " none"), "ETA: " + eta.text); e.style.gridColumn = "2"; c.appendChild(e);
+        return c;
+      }
+      function etaFor(b, dues) { var d = dues[b.id]; return d ? { ok: true, text: "due " + d + " (deadline, not an estimate)" } : { ok: false, text: "not tracked" }; }
+      function build() {
+        built = true; board.textContent = "";
+        var j = judge(age(gen), SNAPSHOT_FRESH_MS), stale = j !== "live";
+        board.className = "vs-board " + (stale ? "vs-stale-board" : "vs-live");
+        board.appendChild(el("div", "vs-legend", stale
+          ? "Data is from " + gen + " (" + human(age(gen)) + "). Lamps are off. Words say what each item WAS doing then, not now."
+          : "Lit lamp = state right now. Words always match the colour."));
+        var data = {}; try { data = JSON.parse(document.getElementById("snapshot-data").textContent); } catch (e) {}
+        var dues = {};
+        fetch("open_tasks.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) { (d.tasks || []).forEach(function (t) { if (t.due) dues[t.id] = t.due; }); }).catch(function () {}).then(function () {
+          var live = el("div"); live.appendChild(el("h2", null, "Pipelines (live)"));
+          var g0 = el("div", "vs-grid"); live.appendChild(g0); board.appendChild(live);
+          fetch("status.json?cb=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (st) {
+            var hbLive = judge(age(st.written_at_utc), HEARTBEAT_FRESH_MS) === "live";
+            var tr = (st.collector && st.collector.tracks) || {};
+            Object.keys(tr).forEach(function (k) {
+              var t = tr[k], s = String(t.operational_state || t.worker_state || ""), eta;
+              if (t.eta_cleared) eta = { ok: true, text: "none left" };
+              else if (t.eta_hkt) eta = { ok: true, text: "about " + Math.round(t.eta_min / 60) + " h, " + t.eta_hkt + (t.eta_frozen ? " (estimate frozen, may be off)" : "") };
+              else eta = { ok: false, text: "not tracked" };
+              var c = card(/caught/.test(s) ? "done" : s, (k === "stt" ? "Speech to text" : "Captions") + (t.done != null ? " · " + t.done + (t.total ? "/" + t.total : "") + " done" : ""), "source: status.json", eta, !hbLive);
+              if (/caught/.test(s)) c.querySelector(".vs-word").textContent = (hbLive ? "" : "WAS ") + "CAUGHT UP";
+              g0.appendChild(c);
+            });
+          }).catch(function () { g0.appendChild(el("div", "vs-meta", "status.json unreachable: pipelines UNKNOWN")); });
+          var groups = {}; (data.buildings || []).forEach(function (b) { (groups[b.island] = groups[b.island] || []).push(b); });
+          var order = { "doing": 0, "waiting": 1, "stalled": 2, "queued": 3, "done": 4 };
+          board.appendChild(el("h2", null, "Projects by tool (map data)"));
+          Object.keys(groups).sort().forEach(function (isl) {
+            var h = el("div", "vs-meta", isl + " · " + groups[isl].length); h.style.margin = "10px 0 4px"; board.appendChild(h);
+            var g = el("div", "vs-grid");
+            groups[isl].sort(function (a, b) { return order[word(a.state)[0]] - order[word(b.state)[0]]; }).forEach(function (b) {
+              g.appendChild(card(b.state, String(b.label || b.id).replace(/^task\s+/, ""), "tool: " + isl + (b.code ? " · " + b.code : ""), etaFor(b, dues), stale));
+            });
+            board.appendChild(g);
+          });
+        });
+      }
       toggle.addEventListener("click", function () {
         var on = toggle.getAttribute("aria-pressed") !== "true";
-        toggle.setAttribute("aria-pressed", String(on)); document.body.classList.toggle("vs-lightup", on); update();
+        toggle.setAttribute("aria-pressed", String(on)); document.body.classList.toggle("vs-lightup", on);
+        board.hidden = !on; if (on) { board.style.setProperty("--vs-top", bar.offsetHeight + "px"); build(); } update();
       });
       if (/[?&]lightup=1/.test(location.search)) toggle.click();
     }
