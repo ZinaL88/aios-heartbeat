@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 10:06 HKT",
+  "written_at_hkt": "2026-11-27 10:11 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1051,10 +1051,10 @@
       "videos": 19,
       "skip": false,
       "playlist_id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
-      "captions_done": 2,
+      "captions_done": 3,
       "captions_left": 0,
-      "stt_done": 2,
-      "stt_left": 17,
+      "stt_done": 3,
+      "stt_left": 16,
       "videos_total": 19,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3346,21 +3346,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-27T01:55:47Z",
-      "id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
-      "title": "MCP",
-      "kind": "playlist",
-      "videos_total": 19,
-      "videos_source": "inventory",
-      "captions_done": 2,
-      "captions_left": 0,
-      "stt_done": 2,
-      "stt_left": 17,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:07:26Z",
       "id": "PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm",
       "title": "Stock Trading Principles",
@@ -3371,6 +3356,21 @@
       "captions_left": 0,
       "stt_done": 5,
       "stt_left": 17,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T02:11:02Z",
+      "id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
+      "title": "MCP",
+      "kind": "playlist",
+      "videos_total": 19,
+      "videos_source": "inventory",
+      "captions_done": 3,
+      "captions_left": 0,
+      "stt_done": 3,
+      "stt_left": 16,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
