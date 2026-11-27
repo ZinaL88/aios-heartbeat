@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 22:12 HKT",
+  "written_at_hkt": "2026-11-27 22:40 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1109,8 +1109,8 @@
       "playlist_id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
       "captions_done": 50,
       "captions_left": 0,
-      "stt_done": 22,
-      "stt_left": 42,
+      "stt_done": 32,
+      "stt_left": 32,
       "videos_total": 64,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3001,21 +3001,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-27T13:16:51Z",
-      "id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
-      "title": "Algorithms",
-      "kind": "playlist",
-      "videos_total": 64,
-      "videos_source": "inventory",
-      "captions_done": 50,
-      "captions_left": 0,
-      "stt_done": 22,
-      "stt_left": 42,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:09:53Z",
       "id": "UCGWYKICLOE8Wxy7q3eYXmPA",
       "title": "bestpartners",
@@ -3086,6 +3071,21 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 33,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T14:40:29Z",
+      "id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
+      "title": "Algorithms",
+      "kind": "playlist",
+      "videos_total": 64,
+      "videos_source": "inventory",
+      "captions_done": 50,
+      "captions_left": 0,
+      "stt_done": 32,
+      "stt_left": 32,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
