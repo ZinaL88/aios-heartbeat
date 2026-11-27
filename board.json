@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 13:52 HKT",
+  "written_at_hkt": "2026-11-27 13:57 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1011,11 +1011,11 @@
       "playlist_id": "PLoROMvodv4rObv1FMizXqumgVVdzX4_05",
       "captions_done": 26,
       "captions_left": 0,
-      "stt_done": 6,
-      "stt_left": 20,
+      "stt_done": 26,
+      "stt_left": 0,
       "videos_total": 26,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -3226,21 +3226,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-27T05:52:06Z",
-      "id": "PLoROMvodv4rObv1FMizXqumgVVdzX4_05",
-      "title": "Large Language Models (LLMs)",
-      "kind": "playlist",
-      "videos_total": 26,
-      "videos_source": "inventory",
-      "captions_done": 26,
-      "captions_left": 0,
-      "stt_done": 6,
-      "stt_left": 20,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:07:57Z",
       "id": "PL41R2vH_CL41NhefmUPZqjwtV9LFrz4SR",
       "title": "常用英语口语训练",
@@ -3760,6 +3745,21 @@
       "captions_done": 15,
       "captions_left": 0,
       "stt_done": 15,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T05:56:13Z",
+      "id": "PLoROMvodv4rObv1FMizXqumgVVdzX4_05",
+      "title": "Large Language Models (LLMs)",
+      "kind": "playlist",
+      "videos_total": 26,
+      "videos_source": "inventory",
+      "captions_done": 26,
+      "captions_left": 0,
+      "stt_done": 26,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
