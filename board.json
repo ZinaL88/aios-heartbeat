@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 09:45 HKT",
+  "written_at_hkt": "2026-11-27 09:50 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1051,10 +1051,10 @@
       "videos": 19,
       "skip": false,
       "playlist_id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
-      "captions_done": 0,
+      "captions_done": 1,
       "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 19,
+      "stt_done": 1,
+      "stt_left": 18,
       "videos_total": 19,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3301,21 +3301,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": null,
-      "id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
-      "title": "MCP",
-      "kind": "playlist",
-      "videos_total": 19,
-      "videos_source": "inventory",
-      "captions_done": 0,
-      "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 19,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:06:45Z",
       "id": "PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp",
       "title": "How to Delegate Like a Millionaire Entrepreneur",
@@ -3325,6 +3310,21 @@
       "captions_done": 20,
       "captions_left": 0,
       "stt_done": 2,
+      "stt_left": 18,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T01:45:21Z",
+      "id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
+      "title": "MCP",
+      "kind": "playlist",
+      "videos_total": 19,
+      "videos_source": "inventory",
+      "captions_done": 1,
+      "captions_left": 0,
+      "stt_done": 1,
       "stt_left": 18,
       "status": "waiting_stt",
       "label": "Waiting STT",
