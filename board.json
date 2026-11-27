@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 15:51 HKT",
+  "written_at_hkt": "2026-11-27 15:56 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1333,11 +1333,11 @@
       "playlist_id": "PL8dPuuaLjXtPNZwz5_o_5uirJ8gQXnhEO",
       "captions_done": 36,
       "captions_left": 0,
-      "stt_done": 28,
-      "stt_left": 8,
+      "stt_done": 36,
+      "stt_left": 0,
       "videos_total": 36,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -3256,21 +3256,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-27T07:51:10Z",
-      "id": "PL8dPuuaLjXtPNZwz5_o_5uirJ8gQXnhEO",
-      "title": "Economics",
-      "kind": "playlist",
-      "videos_total": 36,
-      "videos_source": "inventory",
-      "captions_done": 36,
-      "captions_left": 0,
-      "stt_done": 28,
-      "stt_left": 8,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-27T00:25:02Z",
       "id": "PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc",
       "title": "The Age of A.I.",
@@ -3655,6 +3640,21 @@
       "captions_done": 7,
       "captions_left": 0,
       "stt_done": 7,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T07:52:24Z",
+      "id": "PL8dPuuaLjXtPNZwz5_o_5uirJ8gQXnhEO",
+      "title": "Economics",
+      "kind": "playlist",
+      "videos_total": 36,
+      "videos_source": "inventory",
+      "captions_done": 36,
+      "captions_left": 0,
+      "stt_done": 36,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
