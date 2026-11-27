@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 08:46 HKT",
+  "written_at_hkt": "2026-11-27 08:51 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -983,8 +983,8 @@
       "playlist_id": "PLqFaTIg4myu-npFrYu6cO7h7AI6bkcOlL",
       "captions_done": 15,
       "captions_left": 0,
-      "stt_done": 3,
-      "stt_left": 12,
+      "stt_done": 12,
+      "stt_left": 3,
       "videos_total": 15,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3421,21 +3421,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T14:07:25Z",
-      "id": "PLqFaTIg4myu-npFrYu6cO7h7AI6bkcOlL",
-      "title": "Kaggle CareerCon 2019 | Full Sessions",
-      "kind": "playlist",
-      "videos_total": 15,
-      "videos_source": "inventory",
-      "captions_done": 15,
-      "captions_left": 0,
-      "stt_done": 3,
-      "stt_left": 12,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:07:12Z",
       "id": "PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW",
       "title": "Automate the Boring Stuff with Python",
@@ -3506,6 +3491,21 @@
       "captions_left": 0,
       "stt_done": 35,
       "stt_left": 5,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T00:51:33Z",
+      "id": "PLqFaTIg4myu-npFrYu6cO7h7AI6bkcOlL",
+      "title": "Kaggle CareerCon 2019 | Full Sessions",
+      "kind": "playlist",
+      "videos_total": 15,
+      "videos_source": "inventory",
+      "captions_done": 15,
+      "captions_left": 0,
+      "stt_done": 12,
+      "stt_left": 3,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
