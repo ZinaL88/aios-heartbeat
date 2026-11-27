@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 11:45 HKT",
+  "written_at_hkt": "2026-11-27 11:50 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1051,13 +1051,13 @@
       "videos": 19,
       "skip": false,
       "playlist_id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
-      "captions_done": 18,
+      "captions_done": 19,
       "captions_left": 0,
-      "stt_done": 18,
-      "stt_left": 1,
+      "stt_done": 19,
+      "stt_left": 0,
       "videos_total": 19,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -1249,8 +1249,8 @@
       "playlist_id": "PLa9dmHsLK9dg",
       "captions_done": 19,
       "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 19,
+      "stt_done": 2,
+      "stt_left": 17,
       "videos_total": 19,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1347,11 +1347,11 @@
       "playlist_id": "PLuGHfVNSITJdM03XJbTbzmojF6_3w1VNC",
       "captions_done": 16,
       "captions_left": 0,
-      "stt_done": 15,
-      "stt_left": 1,
+      "stt_done": 16,
+      "stt_left": 0,
       "videos_total": 16,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -3286,21 +3286,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T14:07:17Z",
-      "id": "PLa9dmHsLK9dg",
-      "title": "AA203 Optimal and Learning-Based Control | Spring 2026",
-      "kind": "playlist",
-      "videos_total": 19,
-      "videos_source": "inventory",
-      "captions_done": 19,
-      "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 19,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:06:45Z",
       "id": "PLEmTTOfet46Mqon0lE9DXSDfEN2CrE9jp",
       "title": "How to Delegate Like a Millionaire Entrepreneur",
@@ -3341,6 +3326,21 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 18,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T03:50:26Z",
+      "id": "PLa9dmHsLK9dg",
+      "title": "AA203 Optimal and Learning-Based Control | Spring 2026",
+      "kind": "playlist",
+      "videos_total": 19,
+      "videos_source": "inventory",
+      "captions_done": 19,
+      "captions_left": 0,
+      "stt_done": 2,
+      "stt_left": 17,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3511,21 +3511,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-27T01:36:15Z",
-      "id": "PLuGHfVNSITJdM03XJbTbzmojF6_3w1VNC",
-      "title": "Economics Amplified",
-      "kind": "playlist",
-      "videos_total": 16,
-      "videos_source": "inventory",
-      "captions_done": 16,
-      "captions_left": 0,
-      "stt_done": 15,
-      "stt_left": 1,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-27T00:15:03Z",
       "id": "PLbVaWSxd4rLLxXVS9_LTDA1vYyYwUs2zO",
       "title": "Engineering",
@@ -3550,21 +3535,6 @@
       "captions_done": 371,
       "captions_left": 0,
       "stt_done": 371,
-      "stt_left": 1,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "last_artifact_mtime": "2026-11-27T03:45:52Z",
-      "id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
-      "title": "MCP",
-      "kind": "playlist",
-      "videos_total": 19,
-      "videos_source": "inventory",
-      "captions_done": 18,
-      "captions_left": 0,
-      "stt_done": 18,
       "stt_left": 1,
       "status": "waiting_stt",
       "label": "Waiting STT",
@@ -3736,6 +3706,21 @@
       "skip": false
     },
     {
+      "last_artifact_mtime": "2026-11-27T03:49:39Z",
+      "id": "PLuGHfVNSITJdM03XJbTbzmojF6_3w1VNC",
+      "title": "Economics Amplified",
+      "kind": "playlist",
+      "videos_total": 16,
+      "videos_source": "inventory",
+      "captions_done": 16,
+      "captions_left": 0,
+      "stt_done": 16,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
       "last_artifact_mtime": "2026-11-26T14:09:59Z",
       "id": "PLrtCHHeadkHqIG9GGyyaJRpVT4vnPWbk3",
       "title": "Forward Deployed Engineer Interview Prep",
@@ -3820,6 +3805,21 @@
       "captions_done": 3,
       "captions_left": 0,
       "stt_done": 3,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T03:49:29Z",
+      "id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
+      "title": "MCP",
+      "kind": "playlist",
+      "videos_total": 19,
+      "videos_source": "inventory",
+      "captions_done": 19,
+      "captions_left": 0,
+      "stt_done": 19,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
