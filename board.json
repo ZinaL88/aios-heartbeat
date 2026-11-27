@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 08:20 HKT",
+  "written_at_hkt": "2026-11-27 08:26 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -927,11 +927,11 @@
       "playlist_id": "PLangBM27OtEA",
       "captions_done": 9,
       "captions_left": 0,
-      "stt_done": 1,
-      "stt_left": 8,
+      "stt_done": 9,
+      "stt_left": 0,
       "videos_total": 9,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -997,8 +997,8 @@
       "playlist_id": "PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK",
       "captions_done": 9,
       "captions_left": 0,
-      "stt_done": 1,
-      "stt_left": 10,
+      "stt_done": 8,
+      "stt_left": 3,
       "videos_total": 11,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -1081,11 +1081,11 @@
       "playlist_id": "PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X",
       "captions_done": 9,
       "captions_left": 0,
-      "stt_done": 1,
-      "stt_left": 8,
+      "stt_done": 9,
+      "stt_left": 0,
       "videos_total": 9,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -1095,8 +1095,8 @@
       "playlist_id": "PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc",
       "captions_done": 9,
       "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 9,
+      "stt_done": 2,
+      "stt_left": 7,
       "videos_total": 9,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3466,21 +3466,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T14:06:36Z",
-      "id": "PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK",
-      "title": "Geospatial Analysis using Real Python",
-      "kind": "playlist",
-      "videos_total": 11,
-      "videos_source": "inventory",
-      "captions_done": 9,
-      "captions_left": 0,
-      "stt_done": 1,
-      "stt_left": 10,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:07:15Z",
       "id": "PLUl4u3cNGP60gb6cVqrZQXQ217r0PwZJg",
       "title": "MIT 14.129 Blockchain and the Design of Financial Systems, Spring 2025",
@@ -3511,36 +3496,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T14:07:25Z",
-      "id": "PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc",
-      "title": "The Age of A.I.",
-      "kind": "playlist",
-      "videos_total": 9,
-      "videos_source": "inventory",
-      "captions_done": 9,
-      "captions_left": 0,
-      "stt_done": 0,
-      "stt_left": 9,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "last_artifact_mtime": "2026-11-27T00:20:39Z",
-      "id": "PLangBM27OtEA",
-      "title": "CS329A Self-Improving AI Agents",
-      "kind": "playlist",
-      "videos_total": 9,
-      "videos_source": "inventory",
-      "captions_done": 9,
-      "captions_left": 0,
-      "stt_done": 1,
-      "stt_left": 8,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PL2AoD3uiT4PftdqMHCt3cmTmt0O2qpv",
       "title": "Computational Journalism (JMSC 6041)",
@@ -3556,16 +3511,16 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T14:07:25Z",
-      "id": "PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X",
-      "title": "Stanford CS230: Deep Learning I Autumn 2025",
+      "last_artifact_mtime": "2026-11-27T00:25:02Z",
+      "id": "PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc",
+      "title": "The Age of A.I.",
       "kind": "playlist",
       "videos_total": 9,
       "videos_source": "inventory",
       "captions_done": 9,
       "captions_left": 0,
-      "stt_done": 1,
-      "stt_left": 8,
+      "stt_done": 2,
+      "stt_left": 7,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3596,6 +3551,21 @@
       "captions_left": 0,
       "stt_done": 35,
       "stt_left": 5,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T00:26:29Z",
+      "id": "PL2ZP94Am5KmnvjkITpy8ojPWHjEtbzIhK",
+      "title": "Geospatial Analysis using Real Python",
+      "kind": "playlist",
+      "videos_total": 11,
+      "videos_source": "inventory",
+      "captions_done": 9,
+      "captions_left": 0,
+      "stt_done": 8,
+      "stt_left": 3,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3781,6 +3751,21 @@
       "skip": false
     },
     {
+      "last_artifact_mtime": "2026-11-27T00:21:59Z",
+      "id": "PLangBM27OtEA",
+      "title": "CS329A Self-Improving AI Agents",
+      "kind": "playlist",
+      "videos_total": 9,
+      "videos_source": "inventory",
+      "captions_done": 9,
+      "captions_left": 0,
+      "stt_done": 9,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
       "last_artifact_mtime": "2026-11-26T14:10:51Z",
       "id": "PLrtCHHeadkHrrX6rxS2sbcMU5Em6L1i5Y",
       "title": "Compensation & Negotiation",
@@ -3910,6 +3895,21 @@
       "captions_done": 60,
       "captions_left": 0,
       "stt_done": 60,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T00:23:41Z",
+      "id": "PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X",
+      "title": "Stanford CS230: Deep Learning I Autumn 2025",
+      "kind": "playlist",
+      "videos_total": 9,
+      "videos_source": "inventory",
+      "captions_done": 9,
+      "captions_left": 0,
+      "stt_done": 9,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
