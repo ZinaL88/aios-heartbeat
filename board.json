@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 10:26 HKT",
+  "written_at_hkt": "2026-11-27 10:31 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1051,10 +1051,10 @@
       "videos": 19,
       "skip": false,
       "playlist_id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
-      "captions_done": 4,
+      "captions_done": 5,
       "captions_left": 0,
-      "stt_done": 4,
-      "stt_left": 15,
+      "stt_done": 5,
+      "stt_left": 14,
       "videos_total": 19,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3361,21 +3361,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-27T02:22:12Z",
-      "id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
-      "title": "MCP",
-      "kind": "playlist",
-      "videos_total": 19,
-      "videos_source": "inventory",
-      "captions_done": 4,
-      "captions_left": 0,
-      "stt_done": 4,
-      "stt_left": 15,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLbVaWSxd4rLK6ZZxE_Gjjfch0M6z-LFwU",
       "title": "LLM",
@@ -3385,6 +3370,21 @@
       "captions_done": 0,
       "captions_left": 0,
       "stt_done": 0,
+      "stt_left": 14,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T02:28:44Z",
+      "id": "PL8ZIecHfGQv5o7Y3ltmywfc-jOv-9N4Ap",
+      "title": "MCP",
+      "kind": "playlist",
+      "videos_total": 19,
+      "videos_source": "inventory",
+      "captions_done": 5,
+      "captions_left": 0,
+      "stt_done": 5,
       "stt_left": 14,
       "status": "waiting_stt",
       "label": "Waiting STT",
