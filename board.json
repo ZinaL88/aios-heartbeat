@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 20:54 HKT",
+  "written_at_hkt": "2026-11-27 20:59 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -1291,11 +1291,11 @@
       "playlist_id": "PL1328115D3D8A2566",
       "captions_done": 67,
       "captions_left": 0,
-      "stt_done": 63,
-      "stt_left": 4,
+      "stt_done": 67,
+      "stt_left": 0,
       "videos_total": 67,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -3271,21 +3271,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-27T12:54:10Z",
-      "id": "PL1328115D3D8A2566",
-      "title": "Statistics",
-      "kind": "playlist",
-      "videos_total": 67,
-      "videos_source": "inventory",
-      "captions_done": 67,
-      "captions_left": 0,
-      "stt_done": 63,
-      "stt_left": 4,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLbVaWSxd4rLJPkE01mgnsv04XlWocs3w8",
       "title": "LLM",
@@ -3895,6 +3880,21 @@
       "captions_done": 9,
       "captions_left": 0,
       "stt_done": 9,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T12:54:46Z",
+      "id": "PL1328115D3D8A2566",
+      "title": "Statistics",
+      "kind": "playlist",
+      "videos_total": 67,
+      "videos_source": "inventory",
+      "captions_done": 67,
+      "captions_left": 0,
+      "stt_done": 67,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
