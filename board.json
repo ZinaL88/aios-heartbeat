@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-28 01:03 HKT",
+  "written_at_hkt": "2026-11-28 01:09 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -941,8 +941,8 @@
       "playlist_id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
       "captions_done": 79,
       "captions_left": 0,
-      "stt_done": 54,
-      "stt_left": 40,
+      "stt_done": 59,
+      "stt_left": 35,
       "videos_total": 94,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3001,21 +3001,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-27T16:59:18Z",
-      "id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
-      "title": "LLM / AI",
-      "kind": "playlist",
-      "videos_total": 94,
-      "videos_source": "inventory",
-      "captions_done": 79,
-      "captions_left": 0,
-      "stt_done": 54,
-      "stt_left": 40,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:09:53Z",
       "id": "UCROR3SZDrohSela1sjD1STg",
       "title": "王理元",
@@ -3041,6 +3026,21 @@
       "captions_left": 0,
       "stt_done": 149,
       "stt_left": 36,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T17:09:10Z",
+      "id": "PLbVaWSxd4rLIubdgaPKg0yZIrDZ2ASlSO",
+      "title": "LLM / AI",
+      "kind": "playlist",
+      "videos_total": 94,
+      "videos_source": "inventory",
+      "captions_done": 79,
+      "captions_left": 0,
+      "stt_done": 59,
+      "stt_left": 35,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
