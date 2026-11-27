@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 13:41 HKT",
+  "written_at_hkt": "2026-11-27 13:47 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -703,11 +703,11 @@
       "playlist_id": "PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0",
       "captions_done": 22,
       "captions_left": 0,
-      "stt_done": 15,
-      "stt_left": 7,
+      "stt_done": 22,
+      "stt_left": 0,
       "videos_total": 22,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -1221,8 +1221,8 @@
       "playlist_id": "PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm",
       "captions_done": 22,
       "captions_left": 0,
-      "stt_done": 5,
-      "stt_left": 17,
+      "stt_done": 20,
+      "stt_left": 2,
       "videos_total": 22,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -3286,21 +3286,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T14:07:26Z",
-      "id": "PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm",
-      "title": "Stock Trading Principles",
-      "kind": "playlist",
-      "videos_total": 22,
-      "videos_source": "inventory",
-      "captions_done": 22,
-      "captions_left": 0,
-      "stt_done": 5,
-      "stt_left": 17,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": null,
       "id": "PLbVaWSxd4rLK6ZZxE_Gjjfch0M6z-LFwU",
       "title": "LLM",
@@ -3341,21 +3326,6 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 8,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "last_artifact_mtime": "2026-11-27T05:41:50Z",
-      "id": "PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0",
-      "title": "MIT 18.650 Statistics",
-      "kind": "playlist",
-      "videos_total": 22,
-      "videos_source": "inventory",
-      "captions_done": 22,
-      "captions_left": 0,
-      "stt_done": 15,
-      "stt_left": 7,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3430,6 +3400,21 @@
       "captions_done": 11,
       "captions_left": 0,
       "stt_done": 11,
+      "stt_left": 2,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T05:47:35Z",
+      "id": "PLvcbYUQ5t0UHdm6bNx3Rnj1fdpt9sGNsm",
+      "title": "Stock Trading Principles",
+      "kind": "playlist",
+      "videos_total": 22,
+      "videos_source": "inventory",
+      "captions_done": 22,
+      "captions_left": 0,
+      "stt_done": 20,
       "stt_left": 2,
       "status": "waiting_stt",
       "label": "Waiting STT",
@@ -3850,6 +3835,21 @@
       "captions_done": 11,
       "captions_left": 0,
       "stt_done": 11,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T05:44:43Z",
+      "id": "PLUl4u3cNGP60uVBMaoNERc6knT_MgPKS0",
+      "title": "MIT 18.650 Statistics",
+      "kind": "playlist",
+      "videos_total": 22,
+      "videos_source": "inventory",
+      "captions_done": 22,
+      "captions_left": 0,
+      "stt_done": 22,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
