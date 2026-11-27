@@ -22,7 +22,30 @@
   // state: "live" only when a timestamp exists AND is within the bar. Unknown age is never live.
   function judge(ms, barMs) { return isNaN(ms) ? "unknown" : (ms < barMs ? "live" : "stale"); }
   function lightUpAllowed(snapshotMs) { return judge(snapshotMs, SNAPSHOT_FRESH_MS) === "live"; }
-  var api = { parseTs: parseTs, age: age, human: human, judge: judge, lightUpAllowed: lightUpAllowed,
+  // ETA resolution. Priority: worker-set eta_hkt (basis "worker") > deadline ("due") > step-count estimate (basis "estimate", by Instinct) > not tracked.
+  // Never guesses without data: the estimate needs steps_total>0, steps_done>0 and a started time.
+  function etaResolve(rec, now) {
+    rec = rec || {}; now = now == null ? Date.now() : now;
+    var st = String(rec.state || "").toLowerCase(), finished = /done|fail|hand/.test(st);
+    if (finished) return { ok: false, kind: "none", text: "n/a (" + (rec.state || "finished") + ")" };
+    function fmt(ms) { return new Date(ms + 8 * 3600000).toISOString().slice(0, 16).replace("T", " ") + " HKT"; }
+    if (rec.eta_hkt) {
+      var t = parseTs(rec.eta_hkt);
+      if (!isNaN(t)) {
+        var basis = rec.eta_basis === "deadline" ? "deadline" : "worker";
+        var late = t < now;
+        return { ok: true, kind: basis, text: (basis === "deadline" ? "deadline " : "") + fmt(t) + " · set by " + (basis === "deadline" ? "owner" : "worker") + (late ? " · PASSED, not updated" : "") };
+      }
+    }
+    if (rec.due) return { ok: true, kind: "deadline", text: "deadline " + rec.due + " · not an estimate" };
+    var d = +rec.steps_done, n = +rec.steps_total, s0 = parseTs(rec.started_hkt);
+    if (n > 0 && d > 0 && d <= n && !isNaN(s0) && s0 < now) {
+      var eta = now + (now - s0) / d * (n - d);
+      return { ok: true, kind: "estimate", text: "≈ " + fmt(eta) + " · ESTIMATE by Instinct from " + d + "/" + n + " steps" };
+    }
+    return { ok: false, kind: "none", text: "not tracked" };
+  }
+  var api = { etaResolve: etaResolve, parseTs: parseTs, age: age, human: human, judge: judge, lightUpAllowed: lightUpAllowed,
               HEARTBEAT_FRESH_MS: HEARTBEAT_FRESH_MS, SNAPSHOT_FRESH_MS: SNAPSHOT_FRESH_MS };
   if (typeof module !== "undefined") module.exports = api;
   if (typeof document === "undefined") return;
@@ -121,10 +144,10 @@
         c.appendChild(el("div", "vs-name", name));
         var m = el("div", "vs-meta", meta); c.appendChild(m);
         c.appendChild(el("span")); c.lastChild.style.display = "none";
-        var e = el("div", "vs-eta" + (eta.ok ? "" : " none"), "ETA: " + eta.text); e.style.gridColumn = "2"; c.appendChild(e);
+        var e = el("div", "vs-eta" + (eta.ok ? "" : " none") + (eta.kind === "estimate" ? " est" : ""), "ETA: " + eta.text); e.style.gridColumn = "2"; c.appendChild(e);
         return c;
       }
-      function etaFor(b, dues) { var d = dues[b.id]; return d ? { ok: true, text: "due " + d + " (deadline, not an estimate)" } : { ok: false, text: "not tracked" }; }
+      function etaFor(b, dues) { var t = dues[b.id] || {}; var r = etaResolve({ state: b.state, eta_hkt: b.eta_hkt || t.eta_hkt, eta_basis: b.eta_basis || t.eta_basis, due: t.due, steps_done: b.steps_done != null ? b.steps_done : t.steps_done, steps_total: b.steps_total != null ? b.steps_total : t.steps_total, started_hkt: b.started_hkt || t.started_hkt }); r.ok = r.ok || r.kind !== "none"; return r; }
       function build() {
         built = true; board.textContent = "";
         var j = judge(age(gen), SNAPSHOT_FRESH_MS), stale = j !== "live";
@@ -134,7 +157,7 @@
           : "Lit lamp = state right now. Words always match the colour."));
         var data = {}; try { data = JSON.parse(document.getElementById("snapshot-data").textContent); } catch (e) {}
         var dues = {};
-        fetch("open_tasks.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) { (d.tasks || []).forEach(function (t) { if (t.due) dues[t.id] = t.due; }); }).catch(function () {}).then(function () {
+        fetch("open_tasks.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) { (d.tasks || []).forEach(function (t) { dues[t.id] = t; }); }).catch(function () {}).then(function () {
           var live = el("div"); live.appendChild(el("h2", null, "Pipelines (live)"));
           var g0 = el("div", "vs-grid"); live.appendChild(g0); board.appendChild(live);
           fetch("status.json?cb=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (st) {
