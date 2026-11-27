@@ -1,5 +1,5 @@
 {
-  "written_at_hkt": "2026-11-27 20:26 HKT",
+  "written_at_hkt": "2026-11-27 20:32 HKT",
   "queue": [
     {
       "name": "Lenny's Podcast",
@@ -659,13 +659,13 @@
       "videos": 40,
       "skip": false,
       "playlist_id": "PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J",
-      "captions_done": 39,
+      "captions_done": 40,
       "captions_left": 0,
-      "stt_done": 39,
-      "stt_left": 1,
+      "stt_done": 40,
+      "stt_left": 0,
       "videos_total": 40,
-      "status": "waiting_stt",
-      "label": "Waiting STT"
+      "status": "done",
+      "label": "Done"
     },
     {
       "tier": "P1",
@@ -1109,8 +1109,8 @@
       "playlist_id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
       "captions_done": 50,
       "captions_left": 0,
-      "stt_done": 6,
-      "stt_left": 58,
+      "stt_done": 8,
+      "stt_left": 56,
       "videos_total": 64,
       "status": "waiting_stt",
       "label": "Waiting STT"
@@ -2956,21 +2956,6 @@
       "skip": false
     },
     {
-      "last_artifact_mtime": "2026-11-26T14:07:20Z",
-      "id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
-      "title": "Algorithms",
-      "kind": "playlist",
-      "videos_total": 64,
-      "videos_source": "inventory",
-      "captions_done": 50,
-      "captions_left": 0,
-      "stt_done": 6,
-      "stt_left": 58,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
       "last_artifact_mtime": "2026-11-26T14:07:28Z",
       "id": "UCm-T3PmUW-HYkBao1lIBu3g",
       "title": "Web3101",
@@ -2996,6 +2981,21 @@
       "captions_left": 0,
       "stt_done": 0,
       "stt_left": 57,
+      "status": "waiting_stt",
+      "label": "Waiting STT",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T12:30:04Z",
+      "id": "PLbVaWSxd4rLIfcZkgBlL3igFyezGeNS1O",
+      "title": "Algorithms",
+      "kind": "playlist",
+      "videos_total": 64,
+      "videos_source": "inventory",
+      "captions_done": 50,
+      "captions_left": 0,
+      "stt_done": 8,
+      "stt_left": 56,
       "status": "waiting_stt",
       "label": "Waiting STT",
       "skip": false
@@ -3445,21 +3445,6 @@
       "captions_done": 22,
       "captions_left": 0,
       "stt_done": 21,
-      "stt_left": 1,
-      "status": "waiting_stt",
-      "label": "Waiting STT",
-      "skip": false
-    },
-    {
-      "last_artifact_mtime": "2026-11-27T11:30:02Z",
-      "id": "PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J",
-      "title": "【機器學習2021】(中文版)",
-      "kind": "playlist",
-      "videos_total": 40,
-      "videos_source": "inventory",
-      "captions_done": 39,
-      "captions_left": 0,
-      "stt_done": 39,
       "stt_left": 1,
       "status": "waiting_stt",
       "label": "Waiting STT",
@@ -3970,6 +3955,21 @@
       "captions_done": 100,
       "captions_left": 0,
       "stt_done": 100,
+      "stt_left": 0,
+      "status": "done",
+      "label": "Done",
+      "skip": false
+    },
+    {
+      "last_artifact_mtime": "2026-11-27T12:29:39Z",
+      "id": "PLJV_el3uVTsMhtt7_Y6sgTHGHp1Vb2P2J",
+      "title": "【機器學習2021】(中文版)",
+      "kind": "playlist",
+      "videos_total": 40,
+      "videos_source": "inventory",
+      "captions_done": 40,
+      "captions_left": 0,
+      "stt_done": 40,
       "stt_left": 0,
       "status": "done",
       "label": "Done",
