@@ -1,4 +1,4 @@
-/* Top view switcher (Board | Map | AI SIT ROOM) + freshness chip + map light-up mode.
+/* Top view switcher (Board | Map | Job board | AI SIT ROOM) + freshness chips.
    Rules: never draw stale data as live. Freshness is computed from timestamps, not asserted.
    Public-safe: no private URL ships here. SIT ROOM address comes from AIOSNav (localStorage, set once via ?sitroom=). */
 (function (root) {
@@ -49,9 +49,10 @@
               HEARTBEAT_FRESH_MS: HEARTBEAT_FRESH_MS, SNAPSHOT_FRESH_MS: SNAPSHOT_FRESH_MS };
   if (typeof module !== "undefined") module.exports = api;
   if (typeof document === "undefined") return;
+  root.HBView = api;
 
   function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
-  var page = /map\.html/.test(location.pathname) ? "map" : "board";
+  var page = /map\.html/.test(location.pathname) ? "map" : /jobboard\.html/.test(location.pathname) ? "jobs" : "board";
   var CSS = ".vs-bar{position:sticky;top:0;z-index:100;display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:6px 12px;background:#1f2430;color:#f4efe6;font:13px/1.4 system-ui,sans-serif;border-bottom:2px solid #d9c9a8}"
     + ".vs-tabs{display:flex;gap:4px}.vs-tab{padding:4px 12px;border-radius:999px;color:#f4efe6;text-decoration:none;border:1px solid #556;font-weight:600}"
     + ".vs-tab[aria-current=page]{background:#f7c948;color:#241a00;border-color:#f7c948}.vs-tab.vs-off{opacity:.6;border-style:dashed}"
@@ -88,16 +89,16 @@
     }
     tabs.appendChild(tab("Board", "index.html", page === "board"));
     tabs.appendChild(tab("Map", "map.html", page === "map"));
+    tabs.appendChild(tab("Job board", "jobboard.html", page === "jobs"));
     var sit = tab("AI SIT ROOM", room || "#", false, room ? "" : " vs-off");
     if (room) { sit.setAttribute("target", "_blank"); sit.setAttribute("rel", "noopener"); sit.href = room + "/"; }
     else { sit.title = "Address not set on this device. Open any Heartbeat page once with ?sitroom=<url>."; sit.addEventListener("click", function (e) { e.preventDefault(); if (N) { var v = N.safeHttpUrl(prompt("SIT ROOM address (kept in this browser only):")); if (v) { localStorage.setItem(N.KEY, v); location.reload(); } } }); }
     tabs.appendChild(sit); bar.appendChild(tabs);
     bar.appendChild(el("span", "vs-spacer"));
     var hb = el("span", "vs-chip unknown", "heartbeat · checking"); bar.appendChild(hb);
-    var snap = null, toggle = null, banner = null;
+    var snap = null, banner = null;
     if (page === "map") {
       snap = el("span", "vs-chip unknown", "building data · checking"); bar.appendChild(snap);
-      toggle = el("button", "vs-toggle", "Light-up"); toggle.type = "button"; toggle.setAttribute("aria-pressed", "false"); bar.appendChild(toggle);
       banner = el("div", "vs-banner"); banner.hidden = true; bar.appendChild(banner);
     }
     document.body.insertBefore(bar, document.body.firstChild);
@@ -117,81 +118,10 @@
       var update = function () {
         var ms = age(gen), j = paint(snap, "buildings", ms, SNAPSHOT_FRESH_MS);
         document.body.classList.toggle("vs-live", j === "live"); document.body.classList.toggle("vs-stale", j !== "live");
-        var on = toggle.getAttribute("aria-pressed") === "true";
-        banner.hidden = !(on && j !== "live");
-        banner.textContent = "Building states are from " + (gen || "an unknown time") + " (" + human(ms) + "). Light-up is paused: nothing here is drawn as live until the map data refreshes.";
+        banner.hidden = j === "live";
+        banner.textContent = "Map buildings are from " + (gen || "an unknown time") + " (" + human(ms) + "). They are a snapshot, not live. The Job board tab shows task state with proof.";
       };
       update(); setInterval(update, 60000);
-      var board = el("div", "vs-board"); board.hidden = true; board.setAttribute("aria-label", "Light-up board"); document.body.appendChild(board);
-      var built = false;
-      function word(state) {
-        var k = String(state || "").toLowerCase();
-        if (/^running|doing/.test(k)) return ["doing", "DOING"];
-        if (/stall/.test(k)) return ["stalled", "STALLED"];
-        if (/wait/.test(k)) return ["waiting", "WAITING ON YOU"];
-        if (/block/.test(k)) return ["stalled", "BLOCKED"];
-        if (/next|queue/.test(k)) return ["queued", "QUEUED"];
-        if (/review/.test(k)) return ["done", "DONE, NEEDS REVIEW"];
-        if (/done/.test(k)) return ["done", "DONE"];
-        if (/hand/.test(k)) return ["queued", "HANDED OFF"];
-        if (/fail/.test(k)) return ["stalled", "FAILED"];
-        return ["queued", "UNKNOWN"];
-      }
-      function card(state, name, meta, eta, stale) {
-        var w = word(state), c = el("div", "vs-card vs-" + w[0]);
-        c.appendChild(el("span", "vs-lamp"));
-        c.appendChild(el("div", "vs-word", (stale ? "WAS " : "") + w[1]));
-        c.appendChild(el("div", "vs-name", name));
-        var m = el("div", "vs-meta", meta); c.appendChild(m);
-        c.appendChild(el("span")); c.lastChild.style.display = "none";
-        var e = el("div", "vs-eta" + (eta.ok ? "" : " none") + (eta.kind === "estimate" ? " est" : ""), "ETA: " + eta.text); e.style.gridColumn = "2"; c.appendChild(e);
-        return c;
-      }
-      function etaFor(b, dues) { var t = dues[b.id] || {}; var r = etaResolve({ state: b.state, eta_hkt: b.eta_hkt || t.eta_hkt, eta_basis: b.eta_basis || t.eta_basis, due: t.due, steps_done: b.steps_done != null ? b.steps_done : t.steps_done, steps_total: b.steps_total != null ? b.steps_total : t.steps_total, started_hkt: b.started_hkt || t.started_hkt }); r.ok = r.ok || r.kind !== "none"; return r; }
-      function build() {
-        built = true; board.textContent = "";
-        var j = judge(age(gen), SNAPSHOT_FRESH_MS), stale = j !== "live";
-        board.className = "vs-board " + (stale ? "vs-stale-board" : "vs-live");
-        board.appendChild(el("div", "vs-legend", stale
-          ? "Data is from " + gen + " (" + human(age(gen)) + "). Lamps are off. Words say what each item WAS doing then, not now."
-          : "Lit lamp = state right now. Words always match the colour."));
-        var data = {}; try { data = JSON.parse(document.getElementById("snapshot-data").textContent); } catch (e) {}
-        var dues = {};
-        fetch("open_tasks.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (d) { (d.tasks || []).forEach(function (t) { dues[t.id] = t; }); }).catch(function () {}).then(function () {
-          var live = el("div"); live.appendChild(el("h2", null, "Pipelines (live)"));
-          var g0 = el("div", "vs-grid"); live.appendChild(g0); board.appendChild(live);
-          fetch("status.json?cb=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (st) {
-            var hbLive = judge(age(st.written_at_utc), HEARTBEAT_FRESH_MS) === "live";
-            var tr = (st.collector && st.collector.tracks) || {};
-            Object.keys(tr).forEach(function (k) {
-              var t = tr[k], s = String(t.operational_state || t.worker_state || ""), eta;
-              if (t.eta_cleared) eta = { ok: true, text: "none left" };
-              else if (t.eta_hkt) eta = { ok: true, text: "about " + Math.round(t.eta_min / 60) + " h, " + t.eta_hkt + (t.eta_frozen ? " (estimate frozen, may be off)" : "") };
-              else eta = { ok: false, text: "not tracked" };
-              var c = card(/caught/.test(s) ? "done" : s, (k === "stt" ? "Speech to text" : "Captions") + (t.done != null ? " · " + t.done + (t.total ? "/" + t.total : "") + " done" : ""), "source: status.json", eta, !hbLive);
-              if (/caught/.test(s)) c.querySelector(".vs-word").textContent = (hbLive ? "" : "WAS ") + "CAUGHT UP";
-              g0.appendChild(c);
-            });
-          }).catch(function () { g0.appendChild(el("div", "vs-meta", "status.json unreachable: pipelines UNKNOWN")); });
-          var groups = {}; (data.buildings || []).forEach(function (b) { (groups[b.island] = groups[b.island] || []).push(b); });
-          var order = { "doing": 0, "waiting": 1, "stalled": 2, "queued": 3, "done": 4 };
-          board.appendChild(el("h2", null, "Projects by tool (map data)"));
-          Object.keys(groups).sort().forEach(function (isl) {
-            var h = el("div", "vs-meta", isl + " · " + groups[isl].length); h.style.margin = "10px 0 4px"; board.appendChild(h);
-            var g = el("div", "vs-grid");
-            groups[isl].sort(function (a, b) { return order[word(a.state)[0]] - order[word(b.state)[0]]; }).forEach(function (b) {
-              g.appendChild(card(b.state, String(b.label || b.id).replace(/^task\s+/, ""), "tool: " + isl + (b.code ? " · " + b.code : ""), etaFor(b, dues), stale));
-            });
-            board.appendChild(g);
-          });
-        });
-      }
-      toggle.addEventListener("click", function () {
-        var on = toggle.getAttribute("aria-pressed") !== "true";
-        toggle.setAttribute("aria-pressed", String(on)); document.body.classList.toggle("vs-lightup", on);
-        board.hidden = !on; if (on) { board.style.setProperty("--vs-top", bar.offsetHeight + "px"); build(); } update();
-      });
-      if (/[?&]lightup=1/.test(location.search)) toggle.click();
     }
   });
 })(typeof window !== "undefined" ? window : globalThis);

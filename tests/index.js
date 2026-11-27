@@ -2,3 +2,4 @@
 require('./kanban.test.js');
 require('./nav-xss-smoke.js');
 require('./view-switcher.test.js');
+require('./job-board.test.js');
